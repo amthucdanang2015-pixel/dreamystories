@@ -1,0 +1,97 @@
+{
+  "id": "su-tu-va-chuot",
+  "title": {
+    "en": "The Lion and the Mouse",
+    "vi": "Sư Tử và Chuột"
+  },
+  "description": {
+    "en": "A great lion lets a tiny mouse go free. Days later, caught in a rope net, he learns how much a small friend can do.",
+    "vi": "Sư Tử to lớn tha cho chú Chuột nhắt. Vài ngày sau, khi bị mắc lưới, Sư Tử mới hiểu một người bạn nhỏ có thể làm được bao nhiêu điều."
+  },
+  "theme": {
+    "en": "No one is too small to help.",
+    "vi": "Bé nhỏ đến đâu cũng giúp được người khác."
+  },
+  "origin": "Aesop’s fable, retold in English and Vietnamese.",
+  "category": "Fable",
+  "ageRange": "3–7 years",
+  "duration": "4 min",
+  "characters": [
+    { "name": "Lion", "look": "enormous, soft-looking golden lion with a fluffy russet mane, gentle half-closed eyes, more cuddly than fierce" },
+    { "name": "Mouse", "look": "tiny brave grey-brown mouse with big round pink ears, a long curly tail and bright eyes" }
+  ],
+  "artDirection": {
+    "mood": "Warm, sunlit and kind; big-and-small humour with a brave heart.",
+    "setting": "Golden savanna of tall grass, one wide flat-topped acacia tree and a low sandy rock.",
+    "light": "Hazy amber afternoon sun, long soft shadows.",
+    "motifs": [
+      "flat-topped acacia tree",
+      "tall swaying golden grass",
+      "rope net with knots",
+      "huge paw beside a tiny mouse for scale"
+    ],
+    "avoid": [
+      "the hunter shown",
+      "teeth or claws bared",
+      "blood or injury"
+    ],
+    "palette": {
+      "sky": "#F7C77E",
+      "skyLow": "#FCE6B0",
+      "ground": "#D9A84A",
+      "groundDeep": "#A6702E",
+      "accent": "#8C4A2A",
+      "glow": "#FFF0C4",
+      "ink": "#3A2414",
+      "paper": "#FBF1DC"
+    }
+  },
+  "cover": {
+    "prompt": "an oversized gentle golden lion lying under a flat-topped acacia tree, a tiny brave mouse standing proudly on his paw, golden savanna at amber afternoon"
+  },
+  "pages": [
+    {
+      "prompt": "an enormous lion asleep in the warm golden grass under an acacia tree, a tiny mouse scampering right across his big nose",
+      "sentences": [
+        ["On the golden savanna, a great lion lay sleeping in the warm sun.", "Trên thảo nguyên vàng óng, một chú Sư Tử to lớn đang nằm ngủ dưới nắng ấm."],
+        ["A tiny mouse scampered by and ran right over his nose.", "Một chú Chuột nhắt chạy ngang qua, giẫm ngay lên mũi Sư Tử."]
+      ]
+    },
+    {
+      "prompt": "the lion awake, gently holding the tiny mouse under one huge paw, the mouse looking up and pleading with her paws together",
+      "sentences": [
+        ["The lion woke up and caught the mouse under one big paw.", "Sư Tử thức giấc, giữ chặt Chuột dưới bàn chân to."],
+        ["“Please let me go,” squeaked Mouse. “One day, I might help you.”", "“Xin ông tha cho cháu,” Chuột kêu chít chít. “Biết đâu một ngày cháu sẽ giúp được ông.”"]
+      ]
+    },
+    {
+      "prompt": "the lion chuckling with his eyes closed, lifting his paw, the mouse dashing away through tall golden grass",
+      "sentences": [
+        ["The lion chuckled. “How could someone so small ever help me?”", "Sư Tử bật cười: “Bé tí như cháu thì giúp ta được gì?”"],
+        ["But he lifted his paw, and Mouse dashed away.", "Nhưng rồi ông vẫn nhấc chân lên, và Chuột chạy biến đi."]
+      ]
+    },
+    {
+      "prompt": "the lion tangled in a loose rope net hanging from the acacia tree, looking worried rather than hurt, roaring at the sky",
+      "sentences": [
+        ["A few days later, the lion stepped into a hunter’s rope net.", "Vài ngày sau, Sư Tử bị mắc vào tấm lưới thừng của người thợ săn."],
+        ["He pulled and roared, but the ropes only held him tighter.", "Ông vùng vẫy và gầm vang, nhưng lưới càng siết chặt hơn."]
+      ]
+    },
+    {
+      "prompt": "the tiny mouse perched on the net, nibbling through a rope knot, cut rope ends falling, the lion watching her with hopeful eyes",
+      "sentences": [
+        ["Mouse heard the roar and came running as fast as she could.", "Nghe tiếng gầm, Chuột vội vàng chạy đến."],
+        ["She nibbled and nibbled, snipping one rope after another.", "Chuột gặm mãi, gặm mãi, cắn đứt từng sợi dây một."]
+      ]
+    },
+    {
+      "prompt": "sunset on the savanna, the lion free, lying down so the tiny mouse can sit on his head among the mane, both smiling, the cut net on the grass",
+      "sentences": [
+        ["Soon the lion stepped free and bowed his great head.", "Chẳng mấy chốc, Sư Tử thoát ra và cúi đầu thật thấp."],
+        ["“Thank you, little friend,” he said. “Small can be mighty.”", "“Cảm ơn bạn nhỏ,” ông nói. “Bé mà chẳng hề yếu chút nào!”"],
+        ["From that day on, the lion and the mouse were the best of friends.", "Từ hôm ấy, Sư Tử và Chuột trở thành đôi bạn thân."]
+      ]
+    }
+  ]
+}

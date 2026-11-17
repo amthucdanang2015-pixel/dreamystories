@@ -1,0 +1,117 @@
+{
+  "id": "so-dua",
+  "title": {
+    "en": "The Coconut-Shell Boy",
+    "vi": "Sọ Dừa"
+  },
+  "description": {
+    "en": "A boy who lives in a coconut shell herds goats, plays the flute and wins the heart of the one sister who looks past his shell.",
+    "vi": "Cậu bé sống trong chiếc sọ dừa chăn dê, thổi sáo và được cô út, người không chê vẻ ngoài của cậu, đem lòng thương mến."
+  },
+  "theme": {
+    "en": "What truly matters is the heart inside.",
+    "vi": "Điều quý nhất là tấm lòng bên trong."
+  },
+  "origin": "Vietnamese folk tale Sọ Dừa, gently adapted for young children.",
+  "category": "Folk Tale",
+  "ageRange": "4–8 years",
+  "duration": "7 min",
+  "characters": [
+    { "name": "Sọ Dừa", "look": "a smooth round brown coconut shell with a friendly little face, rolling and hopping; later a gentle young Vietnamese man in a cream áo with a bamboo flute" },
+    { "name": "his mother", "look": "kind elderly Vietnamese farmer woman, brown áo nâu, black scarf (khăn mỏ quạ), silver hair bun" },
+    { "name": "the youngest sister", "look": "young Vietnamese woman with a long braid, soft rose áo tứ thân, carrying a rice basket" },
+    { "name": "the two older sisters", "look": "two young women in bright teal and plum áo, noses in the air, never frightening" },
+    { "name": "the rich man", "look": "plump village elder with a short beard, dark blue robe and black khăn đóng" }
+  ],
+  "artDirection": {
+    "mood": "Warm, earthy and quietly magical; gentle village realism with one small miracle.",
+    "setting": "Northern Vietnamese village of rammed-clay walls, terraced rice fields, a grassy goat hill with one shade tree.",
+    "light": "Soft late-morning sun on clay and rice, honeyed and hazy.",
+    "motifs": [
+      "smooth round coconut shell with a kind face",
+      "bamboo flute with drifting music notes",
+      "terraced green rice fields",
+      "clay-red earthen walls and pots"
+    ],
+    "avoid": [
+      "mocking the boy's appearance",
+      "night scenes",
+      "the sea journey from the original"
+    ],
+    "palette": {
+      "sky": "#F2D9B0",
+      "skyLow": "#F7E9C8",
+      "ground": "#9DB25A",
+      "groundDeep": "#6A7C38",
+      "accent": "#B5653A",
+      "glow": "#FFE6A8",
+      "ink": "#3A2618",
+      "paper": "#F6EBD8"
+    }
+  },
+  "cover": {
+    "prompt": "the smiling coconut-shell boy on a grassy hill above terraced rice fields, a bamboo flute beside him and music notes drifting up, goats grazing, warm clay-earth light"
+  },
+  "pages": [
+    {
+      "prompt": "an old mother outside a clay-walled cottage beside rice fields, lovingly holding a round coconut shell with a tiny happy face",
+      "sentences": [
+        ["Long ago, a kind old couple lived beside the rice fields.", "Ngày xưa, có hai vợ chồng già hiền lành sống bên cánh đồng lúa."],
+        ["They longed for a child, and one day a baby boy arrived, snug and round inside a coconut shell.", "Hai ông bà mong có một đứa con, và rồi một ngày, một bé trai ra đời, tròn trịa nằm gọn trong chiếc sọ dừa."],
+        ["His mother hugged him close and named him Sọ Dừa.", "Người mẹ ôm con vào lòng và đặt tên cho cậu là Sọ Dừa."]
+      ]
+    },
+    {
+      "prompt": "the coconut-shell boy rolling happily across a green hillside among plump goats, the rich man in a blue robe watching in surprise from a clay gate",
+      "sentences": [
+        ["When Sọ Dừa grew bigger, he asked to herd goats for the rich man of the village.", "Khi lớn hơn, Sọ Dừa xin đến chăn dê cho nhà phú ông trong làng."],
+        ["Everyone laughed, but every evening his goats came home round, full and happy.", "Ai cũng bật cười, nhưng chiều nào đàn dê của cậu cũng về nhà no tròn, vui vẻ."]
+      ]
+    },
+    {
+      "prompt": "three sisters on the hill path with rice baskets, the two older sisters turning their noses up, the youngest kneeling to hand the coconut-shell boy a rice parcel",
+      "sentences": [
+        ["The rich man had three daughters, and they took turns bringing Sọ Dừa his lunch.", "Phú ông có ba cô con gái, các cô thay nhau mang cơm cho Sọ Dừa."],
+        ["The two older sisters wrinkled their noses, but the youngest always spoke to him kindly.", "Hai cô chị thì bĩu môi, còn cô út lúc nào cũng dịu dàng trò chuyện với cậu."]
+      ]
+    },
+    {
+      "prompt": "under the shade tree on the goat hill, a gentle young man playing a bamboo flute with music notes floating, the youngest sister peeking from behind a bush in wonder",
+      "sentences": [
+        ["One noon, the youngest sister heard sweet flute music drifting down from the hill.", "Một buổi trưa, cô út nghe tiếng sáo ngọt ngào vọng xuống từ trên đồi."],
+        ["She saw a gentle young man playing under a tree, but when she came closer, only Sọ Dừa was there.", "Cô thấy một chàng trai hiền hậu đang thổi sáo dưới gốc cây, nhưng khi cô lại gần thì chỉ còn Sọ Dừa ở đó."]
+      ]
+    },
+    {
+      "prompt": "the rich man's clay courtyard filled with wedding gifts: a jar of gold, rolls of peach silk and plump pigs, the rich man astonished, the old mother smiling",
+      "sentences": [
+        ["Sọ Dừa asked his mother to tell the rich man that he wished to marry.", "Sọ Dừa nhờ mẹ sang thưa với phú ông rằng cậu muốn cưới vợ."],
+        ["The rich man asked for a jar of gold, ten rolls of silk and ten fat pigs, sure it could never be done.", "Phú ông thách cưới một chĩnh vàng cốm, mười tấm lụa đào và mười con lợn béo, nghĩ rằng cậu chẳng thể nào lo nổi."],
+        ["On the wedding day, every gift was there, laid out neatly in the yard.", "Đến ngày cưới, sính lễ đã bày đủ cả, ngay ngắn giữa sân."]
+      ]
+    },
+    {
+      "prompt": "a joyful village wedding feast, a soft glow as the coconut shell opens and a handsome young man steps out, the youngest sister beaming, villagers cheering",
+      "sentences": [
+        ["The older sisters turned away, but the youngest smiled and said, “I will marry him.”", "Hai cô chị ngoảnh mặt đi, còn cô út mỉm cười thưa: “Con xin lấy chàng.”"],
+        ["At the wedding feast, Sọ Dừa stepped out of his shell as a handsome young man.", "Trong tiệc cưới, Sọ Dừa bước ra khỏi chiếc vỏ dừa, hóa thành một chàng trai khôi ngô."],
+        ["Everyone gasped, and then the whole village cheered.", "Mọi người sững sờ, rồi cả làng reo hò vui mừng."]
+      ]
+    },
+    {
+      "prompt": "the young man studying at a low wooden desk by a small oil lamp, scrolls and brushes around him, his wife sewing nearby, warm clay walls",
+      "sentences": [
+        ["Sọ Dừa studied day and night by the light of a little oil lamp.", "Sọ Dừa ngày đêm chăm chỉ đèn sách bên ngọn đèn dầu nhỏ."],
+        ["He came first in the royal exam and became a wise official who cared for the people.", "Chàng thi đỗ trạng nguyên và trở thành một vị quan tài giỏi, hết lòng thương dân."]
+      ]
+    },
+    {
+      "prompt": "back in the village by the rice fields, the young official and his wife greeting the two older sisters, who bow their heads shyly, the old mother smiling at the gate",
+      "sentences": [
+        ["The two older sisters felt ashamed of how they had laughed at him.", "Hai cô chị thấy xấu hổ vì ngày trước đã chê cười chàng."],
+        ["Sọ Dừa forgave them with a smile.", "Sọ Dừa mỉm cười tha thứ cho họ."],
+        ["And the village remembered the youngest sister’s kind heart for a long, long time.", "Còn tấm lòng tốt của cô út thì dân làng nhắc mãi về sau."]
+      ]
+    }
+  ]
+}

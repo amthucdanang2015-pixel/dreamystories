@@ -1,0 +1,105 @@
+{
+  "id": "nang-tien-oc",
+  "title": {
+    "en": "The Snail Fairy",
+    "vi": "Nàng Tiên Ốc"
+  },
+  "description": {
+    "en": "A lonely old woman keeps a shimmering snail instead of selling it, and each day she comes home to a swept floor and a warm meal.",
+    "vi": "Bà lão nghèo không nỡ bán con ốc xinh xắn, và rồi ngày nào đi làm về bà cũng thấy nhà cửa gọn gàng, cơm canh nóng hổi."
+  },
+  "theme": {
+    "en": "Kindness comes back to us.",
+    "vi": "Ở hiền thì gặp lành."
+  },
+  "origin": "Vietnamese folk tale Nàng tiên Ốc, gently adapted for young children.",
+  "category": "Folk Tale",
+  "ageRange": "3–8 years",
+  "duration": "5 min",
+  "characters": [
+    { "name": "the old woman", "look": "small, kind elderly Vietnamese woman, brown áo, rolled-up trousers, conical nón lá, wicker fish basket" },
+    { "name": "the snail", "look": "little snail with a spiral shell shimmering jade-green, turquoise and pearl" },
+    { "name": "the Snail Fairy", "look": "graceful young woman in a flowing turquoise and pearl áo with a shell-spiral hairpin, gentle smile" }
+  ],
+  "artDirection": {
+    "mood": "Hushed, tender and dewy; a dawn lullaby by the water.",
+    "setting": "Lotus pond beside a small thatched cottage with a big clay water jar and a vegetable garden.",
+    "light": "Soft pink-gold dawn light and mist over turquoise water.",
+    "motifs": [
+      "spiral jade-and-pearl snail shell",
+      "pink lotus blooms and round leaves",
+      "glazed clay water jar",
+      "shell-spiral curls in water and mist"
+    ],
+    "avoid": [
+      "breaking the shell",
+      "harsh midday light",
+      "spooky magic"
+    ],
+    "palette": {
+      "sky": "#F6D6C8",
+      "skyLow": "#FBEBD6",
+      "ground": "#5FB8AE",
+      "groundDeep": "#2E7F86",
+      "accent": "#E58FA6",
+      "glow": "#FFE9C2",
+      "ink": "#1F3B42",
+      "paper": "#EEF7F3"
+    }
+  },
+  "cover": {
+    "prompt": "a shimmering jade-and-pearl snail on a lotus leaf in a turquoise pond at dawn, pink lotus blooms, the faint graceful silhouette of the fairy in the mist above it"
+  },
+  "pages": [
+    {
+      "prompt": "an old woman in a nón lá wading in a misty turquoise lotus pond at dawn, holding up a tiny shimmering snail in wonder",
+      "sentences": [
+        ["Long ago, a poor old woman lived alone beside a lotus pond.", "Ngày xưa, có một bà lão nghèo sống một mình bên đầm sen."],
+        ["Every day she caught snails and crabs to sell at the market.", "Ngày ngày, bà mò cua bắt ốc đem ra chợ bán."],
+        ["One dawn, she found a little snail whose shell shimmered like green jade.", "Một sớm, bà bắt được một con ốc nhỏ, vỏ óng ánh xanh biếc như ngọc."]
+      ]
+    },
+    {
+      "prompt": "inside the cottage, the old woman gently lowering the snail into a big glazed clay water jar, smiling and talking to it",
+      "sentences": [
+        ["“You are too lovely to sell,” she said, and she placed it in the water jar at home.", "“Ốc đẹp thế này, ta chẳng nỡ bán,” bà nói, rồi thả ốc vào chum nước trong nhà."],
+        ["Every day she gave it fresh water and talked to it softly.", "Ngày nào bà cũng thay nước và thủ thỉ trò chuyện với ốc."]
+      ]
+    },
+    {
+      "prompt": "the old woman returning at noon to find her cottage swept, the vegetable garden watered and a warm meal steaming on a tray, her hands raised in surprise",
+      "sentences": [
+        ["From then on, something wonderful happened whenever she came home.", "Từ hôm ấy, mỗi lần bà đi làm về lại có chuyện lạ."],
+        ["The floor was swept, the garden was watered, and warm rice waited on the tray.", "Nhà cửa sạch sẽ, vườn rau tưới mát, cơm canh nóng hổi đã dọn sẵn trên mâm."]
+      ]
+    },
+    {
+      "prompt": "the old woman peeking from behind the wooden door as a graceful young woman in turquoise rises in a soft glow from the snail shell beside the water jar",
+      "sentences": [
+        ["One morning, she pretended to go out, then tiptoed back and hid behind the door.", "Một buổi sáng, bà giả vờ ra đồng rồi rón rén quay về, nấp sau cánh cửa."],
+        ["She watched as a lovely young woman stepped out of the snail shell.", "Bà thấy một nàng tiên xinh đẹp từ trong vỏ ốc bước ra."]
+      ]
+    },
+    {
+      "prompt": "the fairy sweeping the cottage floor and humming, while the old woman quietly lifts the empty spiral shell from beside the jar and tucks it into a basket",
+      "sentences": [
+        ["The fairy swept the floor, cooked the rice and hummed a gentle song.", "Nàng quét nhà, thổi cơm và khe khẽ hát."],
+        ["The old woman crept to the jar and tucked the empty shell safely away.", "Bà lão rón rén lại gần chum nước, cất chiếc vỏ ốc đi thật kín."]
+      ]
+    },
+    {
+      "prompt": "the old woman and the fairy embracing warmly in the cottage doorway, morning light pouring in, lotus pond glimmering behind",
+      "sentences": [
+        ["Then she hugged the fairy and said, “Please stay with me, my dear daughter.”", "Rồi bà ôm chầm lấy nàng: “Con gái ơi, con ở lại với mẹ nhé!”"],
+        ["The fairy smiled, and she stayed.", "Nàng tiên mỉm cười và ở lại."]
+      ]
+    },
+    {
+      "prompt": "the old woman and the fairy picking lotus flowers together from a little boat on the turquoise pond, the cottage behind, pink and gold evening light",
+      "sentences": [
+        ["From then on, the two of them lived happily together, caring for each other as mother and daughter.", "Từ đó, hai mẹ con sống hạnh phúc bên nhau, chăm sóc nhau như mẹ con ruột."],
+        ["And every summer, the lotus pond bloomed pink outside their door.", "Và mỗi mùa hè, đầm sen trước nhà lại nở hồng rực rỡ."]
+      ]
+    }
+  ]
+}

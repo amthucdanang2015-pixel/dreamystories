@@ -1,0 +1,181 @@
+{
+  "id": "ngoi-sao-be-ti",
+  "title": {
+    "en": "Tí, the Littlest Star",
+    "vi": "Ngôi Sao Bé Tí"
+  },
+  "description": {
+    "en": "Tí is the smallest star in the sky and wishes to shine like the Moon, until one cloudy night a small light is exactly what a little girl needs.",
+    "vi": "Tí là ngôi sao bé nhất trên trời và ước được sáng như chị Trăng, cho đến một đêm nhiều mây, một chút ánh sáng nhỏ lại là điều bé Lan cần nhất."
+  },
+  "theme": {
+    "en": "Even a small light can help someone.",
+    "vi": "Ánh sáng nhỏ vẫn có thể giúp đỡ người khác."
+  },
+  "origin": "Original StoryMoon story, written in Vietnamese with an English companion text.",
+  "category": "Bedtime",
+  "ageRange": "4–8 years",
+  "duration": "5 min",
+  "characters": [
+    {
+      "name": "Tí",
+      "look": "tiny five-pointed silver-white star with a soft lilac halo and small curious eyes"
+    },
+    {
+      "name": "the Moon (chị Trăng)",
+      "look": "large calm round moon with a gentle sleepy face"
+    },
+    {
+      "name": "Lan",
+      "look": "little girl around five with two short braids, in soft blue pyjamas, wrapped in a hand-woven striped blanket"
+    },
+    {
+      "name": "Mother Bird",
+      "look": "small brown bulbul with a dark crest, nesting in a plum tree"
+    }
+  ],
+  "artDirection": {
+    "mood": "Still, deep and tender; a tiny brave light in a vast quiet sky.",
+    "setting": "A misty northern Vietnamese mountain valley at night: terraced fields, a wooden stilt house with a small square window, a plum tree in the garden, layered mountain ridges.",
+    "light": "Deep violet night; the full moon at first, then thick soft clouds, and a single thin silver beam from the small star.",
+    "motifs": [
+      "one tiny star among many",
+      "thin silver beam through a gap in the clouds",
+      "wooden stilt house window",
+      "terraced fields under mist",
+      "plum tree with a nest"
+    ],
+    "avoid": [
+      "frightening darkness or monsters",
+      "a crying, distressed child",
+      "big bright suns or fireflies"
+    ],
+    "palette": {
+      "sky": "#1A1440",
+      "skyLow": "#3A2E6B",
+      "ground": "#2B3550",
+      "groundDeep": "#161C30",
+      "accent": "#B9B3E6",
+      "glow": "#F4F1FF",
+      "ink": "#0C0A1F",
+      "paper": "#EFEEF6"
+    }
+  },
+  "cover": {
+    "prompt": "the tiniest silver star shining a thin beam through a gap in soft night clouds onto a wooden stilt house window in a misty mountain valley"
+  },
+  "pages": [
+    {
+      "prompt": "a vast violet night sky full of stars, one very tiny star with a lilac halo looking around curiously",
+      "sentences": [
+        [
+          "High in the night sky lived a young star named Tí.",
+          "Trên bầu trời đêm, có một ngôi sao nhỏ tên là Tí."
+        ],
+        [
+          "Tí was the smallest star of all, no bigger than a grain of rice.",
+          "Tí là ngôi sao bé nhất, chỉ nhỏ bằng hạt gạo."
+        ]
+      ]
+    },
+    {
+      "prompt": "a big round moon lighting up terraced fields and a stilt house in the valley, the tiny star watching from the side, wistful",
+      "sentences": [
+        [
+          "Every night, Tí watched the round Moon light up the whole valley.",
+          "Đêm nào Tí cũng ngắm chị Trăng tròn soi sáng cả thung lũng."
+        ],
+        [
+          "“My light is so small. Who could it ever help?” Tí sighed.",
+          "Tí thở dài: “Ánh sáng của mình bé thế này, giúp được ai đâu?”"
+        ]
+      ]
+    },
+    {
+      "prompt": "thick soft clouds rolling across the sky and covering the moon, the valley below turning dark and still",
+      "sentences": [
+        [
+          "One night, thick clouds rolled in and covered the Moon.",
+          "Một đêm, mây dày kéo đến, che kín chị Trăng."
+        ],
+        [
+          "The valley became very dark and very quiet.",
+          "Thung lũng bỗng tối om và lặng như tờ."
+        ]
+      ]
+    },
+    {
+      "prompt": "inside a wooden stilt house, a little girl sitting up in bed holding a striped blanket, looking out of a small dark window",
+      "sentences": [
+        [
+          "In a little stilt house on the mountainside, a girl named Lan woke up.",
+          "Trong ngôi nhà sàn nhỏ bên sườn núi, bé Lan chợt thức giấc."
+        ],
+        [
+          "She looked out of the window, but she could not see anything at all.",
+          "Lan nhìn ra cửa sổ, nhưng chẳng thấy gì cả."
+        ],
+        [
+          "“Where has all the light gone?” she whispered, holding her blanket.",
+          "Lan ôm chăn, khẽ hỏi: “Ánh sáng đi đâu hết rồi?”"
+        ]
+      ]
+    },
+    {
+      "prompt": "above the clouds, the tiny star finding a narrow gap and glowing as brightly as it can, eyes squeezed with effort",
+      "sentences": [
+        [
+          "High above, Tí spotted a tiny gap between the clouds.",
+          "Trên cao, Tí nhìn thấy một khe hở nhỏ giữa những đám mây."
+        ],
+        [
+          "Tí shone as brightly as a small star can.",
+          "Tí cố gắng tỏa sáng, sáng hết sức của một ngôi sao bé."
+        ]
+      ]
+    },
+    {
+      "prompt": "a thin silver beam slipping through the cloud gap and into the stilt house window, the girl smiling up at it",
+      "sentences": [
+        [
+          "A thin silver beam slipped through the gap and into Lan's window.",
+          "Một tia sáng bạc mảnh mai lách qua khe mây, chiếu vào cửa sổ nhà Lan."
+        ],
+        [
+          "Lan smiled. “There you are, little star,” she said.",
+          "Lan mỉm cười: “A, ngôi sao nhỏ đây rồi.”"
+        ]
+      ]
+    },
+    {
+      "prompt": "the girl lying back down with eyes closed in the silver light; outside, a small bulbul flying home to its nest in a plum tree",
+      "sentences": [
+        [
+          "Lan was not worried anymore. She lay down and closed her eyes.",
+          "Lan không còn lo nữa. Bé nằm xuống, nhắm mắt lại."
+        ],
+        [
+          "In the garden, a sleepy mother bird saw the light too, and found her way back to her nest.",
+          "Ngoài vườn, chim Mẹ ngái ngủ cũng nhờ tia sáng ấy mà tìm về tổ."
+        ]
+      ]
+    },
+    {
+      "prompt": "the tiny star glowing softly in a calm violet sky above the sleeping valley and stilt house, clouds drifting gently",
+      "sentences": [
+        [
+          "All night long, Tí glowed softly, small and warm.",
+          "Suốt đêm, Tí tỏa sáng dịu dàng, nhỏ bé mà ấm áp."
+        ],
+        [
+          "Tí no longer wished to be bigger. A small light could still warm someone's dreams.",
+          "Tí chẳng còn ước được to hơn nữa. Vì ánh sáng nhỏ cũng có thể sưởi ấm một giấc mơ."
+        ],
+        [
+          "And far below, Lan slept peacefully until morning.",
+          "Còn dưới kia, bé Lan ngủ thật ngon cho đến sáng."
+        ]
+      ]
+    }
+  ]
+}

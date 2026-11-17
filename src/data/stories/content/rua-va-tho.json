@@ -1,0 +1,105 @@
+{
+  "id": "rua-va-tho",
+  "title": {
+    "en": "The Tortoise and the Hare",
+    "vi": "Rùa và Thỏ"
+  },
+  "description": {
+    "en": "A speedy hare laughs at a slow tortoise, so they race through the woods. One naps and one keeps going, step by step.",
+    "vi": "Thỏ nhanh nhẹn chê Rùa chậm chạp, thế là hai bạn thi chạy qua khu rừng. Một bạn ngủ quên, một bạn cứ đi, từng bước một."
+  },
+  "theme": {
+    "en": "Slow and steady, never give up.",
+    "vi": "Chậm mà chắc, không bỏ cuộc."
+  },
+  "origin": "Aesop’s fable, retold in English and Vietnamese.",
+  "category": "Fable",
+  "ageRange": "3–7 years",
+  "duration": "5 min",
+  "characters": [
+    { "name": "Hare", "look": "lanky sand-brown hare with very long ears, white tail puff, cheeky grin and a striped orange scarf" },
+    { "name": "Tortoise", "look": "small round tortoise with an olive-green patterned shell, kind sleepy eyes and a tiny green leaf tucked on his shell" },
+    { "name": "Squirrel", "look": "red squirrel with a bushy tail, holding a little orange flag as the race starter" },
+    { "name": "woodland friends", "look": "a hedgehog, a family of ducks and a badger cheering along the path" }
+  ],
+  "artDirection": {
+    "mood": "Bright, lively and good-humoured, with a calm finish; energetic but never frantic.",
+    "setting": "Sunny broadleaf woodland with a winding dirt race path, a babbling brook, a gentle hill and a ribbon finish line.",
+    "light": "Clear spring morning sun becoming warm late-afternoon gold.",
+    "motifs": [
+      "winding race path with orange pennant flags",
+      "finish line ribbon between two birch trees",
+      "big shady oak where Hare naps",
+      "dust puffs behind Hare, tiny footprints behind Tortoise"
+    ],
+    "avoid": [
+      "mocking Hare cruelly at the end",
+      "dark forest",
+      "night scenes"
+    ],
+    "palette": {
+      "sky": "#BFE3F0",
+      "skyLow": "#EAF5D8",
+      "ground": "#8CC456",
+      "groundDeep": "#4E8C3A",
+      "accent": "#F08A3C",
+      "glow": "#FFF2B8",
+      "ink": "#22361F",
+      "paper": "#F1F7E4"
+    }
+  },
+  "cover": {
+    "prompt": "Tortoise walking steadily along a winding woodland path lined with orange pennants, Hare bounding in the distance, sunny spring woodland"
+  },
+  "pages": [
+    {
+      "prompt": "Hare bouncing in circles on a sunny woodland path, boasting, while Tortoise munches a leaf calmly beside a mossy log",
+      "sentences": [
+        ["In a bright green woodland lived a hare who loved to boast about how fast he could run.", "Ở một khu rừng xanh tươi, có chú Thỏ rất thích khoe mình chạy nhanh."],
+        ["“No one is quicker than me!” he said, bouncing in circles.", "“Chẳng ai nhanh bằng tớ đâu!” Thỏ vừa nói vừa nhảy vòng quanh."]
+      ]
+    },
+    {
+      "prompt": "Tortoise smiling slowly and offering a race, Hare rolling on the grass laughing with his long ears flopping",
+      "sentences": [
+        ["Tortoise smiled slowly. “Shall we have a race?”", "Rùa chậm rãi mỉm cười: “Chúng mình thi chạy nhé?”"],
+        ["Hare laughed so hard that both his ears flopped down.", "Thỏ cười ngặt nghẽo đến cụp cả hai tai."]
+      ]
+    },
+    {
+      "prompt": "the starting line drawn in the dirt, Squirrel waving an orange flag, woodland animals cheering, Hare zooming off in a puff of dust while Tortoise takes one small step",
+      "sentences": [
+        ["Squirrel drew a starting line, and all the woodland animals gathered to watch.", "Chị Sóc vạch vạch xuất phát, muôn thú trong rừng kéo đến xem đông vui."],
+        ["“Ready, set, go!” Hare zoomed away, and Tortoise took one small step.", "“Chuẩn bị, bắt đầu!” Thỏ phóng vút đi, còn Rùa bước một bước nhỏ."]
+      ]
+    },
+    {
+      "prompt": "halfway along the path, Hare stretching and yawning under a big shady oak, the path behind him empty",
+      "sentences": [
+        ["Halfway along, Hare looked back and could not even see Tortoise.", "Đi được nửa đường, Thỏ ngoái lại, chẳng thấy bóng Rùa đâu."],
+        ["“I have time for a nap,” he yawned, and he lay down under a shady tree.", "“Mình thừa thời gian để chợp mắt,” Thỏ ngáp dài rồi nằm xuống dưới bóng cây mát."]
+      ]
+    },
+    {
+      "prompt": "Tortoise crossing a little stepping-stone brook and climbing a gentle sunny hill, tiny footprints behind him, a hedgehog cheering",
+      "sentences": [
+        ["Tortoise kept walking, step by step, across the brook and up the hill.", "Rùa vẫn cứ đi, từng bước một, qua con suối, lên ngọn đồi."],
+        ["Even when his legs felt tired, he did not stop.", "Dù chân đã mỏi, Rùa vẫn không dừng lại."]
+      ]
+    },
+    {
+      "prompt": "late afternoon gold, Hare racing wide-eyed toward the finish ribbon between two birch trees, Tortoise already breaking the ribbon as animals cheer",
+      "sentences": [
+        ["When Hare woke up, the sun was low, and he dashed toward the finish.", "Khi Thỏ tỉnh dậy, mặt trời đã xế bóng, chú vội vàng lao về đích."],
+        ["But Tortoise was already crossing the line as the animals cheered.", "Nhưng Rùa đã bước qua vạch đích giữa tiếng reo hò của muôn thú."]
+      ]
+    },
+    {
+      "prompt": "golden evening, Hare with drooping ears shaking Tortoise's hand, then the two walking home together side by side along the path",
+      "sentences": [
+        ["Hare’s ears drooped. “You were slow, but you never gave up,” he said.", "Thỏ cụp tai: “Cậu chậm thật, nhưng cậu chẳng bao giờ bỏ cuộc.”"],
+        ["Tortoise smiled, and the two friends walked home together, nice and slow.", "Rùa mỉm cười, rồi hai bạn cùng nhau thong thả đi về."]
+      ]
+    }
+  ]
+}

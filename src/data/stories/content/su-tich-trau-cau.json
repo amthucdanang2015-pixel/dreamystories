@@ -1,0 +1,112 @@
+{
+  "id": "su-tich-trau-cau",
+  "title": {
+    "en": "The Legend of Betel and Areca",
+    "vi": "Sự Tích Trầu Cau"
+  },
+  "description": {
+    "en": "Two brothers who look alike, a stream, a white stone, a tall palm and a green vine: the gentle legend behind the betel and areca offered at every Vietnamese wedding.",
+    "vi": "Hai anh em giống nhau như đúc, một dòng suối, một tảng đá trắng, một cây cau cao và một dây trầu xanh: sự tích dịu dàng về miếng trầu trong đám cưới người Việt."
+  },
+  "theme": {
+    "en": "Family love that stays together.",
+    "vi": "Tình thân gắn bó không rời."
+  },
+  "origin": "Vietnamese legend Sự tích trầu cau, gently adapted for young children.",
+  "category": "Legend",
+  "ageRange": "5–8 years",
+  "duration": "6 min",
+  "characters": [
+    { "name": "Tân", "look": "older brother, young Vietnamese man in an emerald-green áo with a black khăn, calm face" },
+    { "name": "Lang", "look": "younger brother, looks almost identical to Tân but wears a pale jade áo and no headscarf" },
+    { "name": "the young wife", "look": "kind young woman in a warm red áo tứ thân with a long black braid" },
+    { "name": "the king", "look": "kindly older king in a golden robe with a small crown, riding with two attendants" }
+  ],
+  "artDirection": {
+    "mood": "Tender, quiet and reverent; a soft legend told with love, never sorrowful.",
+    "setting": "Stilt house among areca palms, a clear rushing stream over pale stones, emerald hills.",
+    "light": "Green-gold filtered daylight through palm fronds, glinting on water.",
+    "motifs": [
+      "tall slender areca palms with nut clusters",
+      "heart-shaped green betel leaves on a winding vine",
+      "smooth white limestone by a stream",
+      "warm red ceremonial tray of betel and areca"
+    ],
+    "avoid": [
+      "death or grief shown directly",
+      "jealous anger",
+      "dark night scenes"
+    ],
+    "palette": {
+      "sky": "#CFE3C8",
+      "skyLow": "#F3E6C6",
+      "ground": "#3E8A5C",
+      "groundDeep": "#1F5A3C",
+      "accent": "#C2362F",
+      "glow": "#FCE7B2",
+      "ink": "#14301F",
+      "paper": "#EEF3E2"
+    }
+  },
+  "cover": {
+    "prompt": "a tall areca palm beside a clear stream, a heart-leaved betel vine winding up its trunk, a smooth white stone at its foot, a red wedding tray of betel and areca in the foreground, green-gold light"
+  },
+  "pages": [
+    {
+      "prompt": "two identical young brothers walking side by side under areca palms, neighbors waving and looking puzzled at which is which",
+      "sentences": [
+        ["Long ago, two brothers named Tân and Lang looked so alike that even their neighbors mixed them up.", "Ngày xưa, có hai anh em tên là Tân và Lang, giống nhau như đúc, đến hàng xóm cũng hay nhầm."],
+        ["They went everywhere together, like two leaves on one branch.", "Hai anh em đi đâu cũng có nhau, như hai chiếc lá trên cùng một cành."]
+      ]
+    },
+    {
+      "prompt": "a simple wedding at a stilt house among areca palms, Tân and his bride in red, Lang standing a little apart at the edge of the scene",
+      "sentences": [
+        ["Tân, the older brother, married a kind young woman, and the three of them lived together.", "Người anh là Tân lấy vợ, một cô gái hiền lành, và cả ba cùng sống chung một nhà."],
+        ["But Tân was busier now, and Lang began to feel a little left out.", "Nhưng Tân bận rộn hơn trước, và Lang bắt đầu thấy mình lẻ loi."]
+      ]
+    },
+    {
+      "prompt": "evening at the stilt house, the young wife greeting Lang by mistake at the door, Tân looking surprised behind, Lang lowering his eyes",
+      "sentences": [
+        ["One evening, the young wife greeted Lang as her husband, because the brothers looked so alike.", "Một buổi tối, người vợ nhận nhầm Lang là chồng mình, vì hai anh em giống nhau quá."],
+        ["The house fell quiet, and Lang thought sadly, “Maybe I am in the way.”", "Cả nhà bỗng lặng đi, và Lang buồn bã nghĩ: “Có lẽ mình là người thừa.”"]
+      ]
+    },
+    {
+      "prompt": "Lang sitting on the bank of a wide clear stream among pale stones, looking back toward home, his figure softly turning into a smooth white stone",
+      "sentences": [
+        ["Lang quietly left home and walked until he reached a wide, rushing stream.", "Lang lặng lẽ rời nhà, đi mãi cho tới bên một dòng suối rộng chảy xiết."],
+        ["He sat on the bank, missing his brother, and waited so long that he became a smooth white stone.", "Chàng ngồi bên bờ nhớ anh, ngồi mãi, ngồi mãi, rồi hóa thành một tảng đá trắng."]
+      ]
+    },
+    {
+      "prompt": "Tân arriving at the stream beside the white stone, rising softly into a tall slender areca palm, fronds unfurling against a pale green sky",
+      "sentences": [
+        ["Tân missed his brother and set out to find him.", "Tân nhớ em, liền lên đường đi tìm."],
+        ["At the stream, he stood beside the white stone until he grew into a tall, slender areca palm.", "Đến bên suối, chàng đứng cạnh tảng đá trắng, đứng mãi cho tới khi hóa thành một cây cau cao vút."]
+      ]
+    },
+    {
+      "prompt": "the young wife in red reaching the areca palm by the stream, her shape becoming a green betel vine with heart-shaped leaves winding gently up the trunk",
+      "sentences": [
+        ["The young wife searched for her husband too.", "Người vợ cũng đi tìm chồng."],
+        ["When she found the palm, she wrapped her arms around it and became a green betel vine, winding gently upward.", "Đến bên cây cau, nàng ôm lấy thân cây và hóa thành một dây trầu xanh, quấn quýt leo quanh."]
+      ]
+    },
+    {
+      "prompt": "a kindly king with attendants beside the palm, stone and vine, holding a betel leaf wrapped around a slice of areca, a soft red glow in his hand",
+      "sentences": [
+        ["Years later, a kind king passed by and heard the story.", "Nhiều năm sau, có một vị vua nhân hậu đi qua và được nghe kể lại câu chuyện."],
+        ["He folded a betel leaf around a slice of areca with a pinch of white lime, and it turned a warm red, like a loving heart.", "Vua cho lấy lá trầu, quả cau và chút vôi trắng têm cùng nhau, thấy hóa ra màu đỏ thắm như tấm lòng yêu thương."]
+      ]
+    },
+    {
+      "prompt": "a joyful Vietnamese wedding today, a red lacquer tray with folded betel leaves and areca nuts offered between two smiling families, areca palms outside",
+      "sentences": [
+        ["Since then, at Vietnamese weddings and at Tết, betel and areca are offered first, as a wish for love and togetherness.", "Từ đó, trong đám cưới và ngày Tết của người Việt, trầu cau luôn được mời đầu tiên, như lời chúc yêu thương, gắn bó."],
+        ["As grandparents still say, “A betel leaf begins every conversation.”", "Như ông bà ta vẫn nói: “Miếng trầu là đầu câu chuyện.”"]
+      ]
+    }
+  ]
+}

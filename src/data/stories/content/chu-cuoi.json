@@ -1,0 +1,112 @@
+{
+  "id": "chu-cuoi",
+  "title": {
+    "en": "Cuội and the Banyan Tree on the Moon",
+    "vi": "Chú Cuội và Cây Đa trên Cung Trăng"
+  },
+  "description": {
+    "en": "A kind woodcutter finds a magical banyan tree with healing leaves, and one evening it carries him all the way up to the moon.",
+    "vi": "Chú tiều phu hiền lành tìm được cây đa thần có lá chữa bệnh, rồi một buổi chiều, cây đưa chú bay lên tận cung trăng."
+  },
+  "theme": {
+    "en": "Caring gently for the things and people we love.",
+    "vi": "Nhẹ nhàng chăm sóc những điều và những người ta yêu thương."
+  },
+  "origin": "Vietnamese folk legend of Chú Cuội, told at the Mid-Autumn Festival (Tết Trung thu).",
+  "category": "Folk Tale",
+  "ageRange": "3–8 years",
+  "duration": "5 min",
+  "characters": [
+    { "name": "Cuội", "look": "young Vietnamese woodcutter, round kind face, short black hair, brown áo nâu shirt and rolled trousers, small axe, barefoot" },
+    { "name": "Cuội's wife", "look": "young Vietnamese woman, hair in a low bun wrapped with a dark khăn, soft indigo áo tứ thân" },
+    { "name": "banyan tree", "look": "small magical banyan tree with heart-shaped glossy leaves and long hanging roots, faint silver glow" }
+  ],
+  "artDirection": {
+    "mood": "Dreamy, hushed, magical lunar night; wonder rather than fear.",
+    "setting": "Northern Vietnamese village edge and forest, then the silver surface of the moon; one great banyan tree with curtains of aerial roots.",
+    "light": "Cool silver-blue moonlight with a single warm lantern-gold accent; soft halo around the banyan.",
+    "motifs": [
+      "banyan tree with hanging aerial roots",
+      "full moon and silver craters",
+      "Mid-Autumn star and carp lanterns",
+      "drifting fireflies"
+    ],
+    "avoid": [
+      "generic green storybook forest",
+      "warm sunset palettes",
+      "harsh shadows"
+    ],
+    "palette": {
+      "sky": "#1C2547",
+      "skyLow": "#3E5384",
+      "ground": "#2A3556",
+      "groundDeep": "#151B33",
+      "accent": "#9FB4DE",
+      "glow": "#F3E3B5",
+      "ink": "#0E1226",
+      "paper": "#E9EDF5"
+    }
+  },
+  "cover": {
+    "prompt": "Cuội sitting peacefully under a glowing banyan tree on a big round full moon, starry indigo night sky, tiny paper lanterns drifting up from a village far below"
+  },
+  "pages": [
+    {
+      "prompt": "Cuội walking happily into a green forest at sunrise, axe on his shoulder, birds around him",
+      "sentences": [
+        ["Long ago, a kind woodcutter named Cuội lived at the edge of a green forest.", "Ngày xưa, ở bìa một khu rừng xanh, có chú tiều phu hiền lành tên là Cuội."],
+        ["Every morning, he walked into the woods with his axe and a happy song.", "Mỗi sáng, chú vác rìu vào rừng và hát một bài ca vui vẻ."]
+      ]
+    },
+    {
+      "prompt": "a gentle mother tiger laying banyan leaves on a tiger cub's paw while Cuội watches in wonder from behind a bush",
+      "sentences": [
+        ["One day, Cuội saw a little tiger cub with a sore paw.", "Một hôm, Cuội thấy một chú hổ con bị đau chân."],
+        ["Soon the mother tiger came and laid some banyan leaves on the cub's paw.", "Lát sau, hổ mẹ đến, đặt mấy chiếc lá đa lên chân hổ con."],
+        ["In a moment, the cub was well again and ran off to play.", "Chỉ một lát, hổ con đã khỏe lại và chạy đi chơi."]
+      ]
+    },
+    {
+      "prompt": "Cuội planting the small glowing banyan tree beside his thatched cottage, smiling neighbors receiving leaves",
+      "sentences": [
+        ["Cuội was amazed, so he carefully dug up the little banyan tree and carried it home.", "Cuội ngạc nhiên lắm, chú cẩn thận đào cây đa nhỏ và mang về nhà."],
+        ["He planted it beside his house, and its leaves helped many sick neighbors feel better.", "Chú trồng cây bên nhà, và lá đa đã giúp nhiều người hàng xóm khỏi bệnh."]
+      ]
+    },
+    {
+      "prompt": "Cuội showing his wife a clay jar of clear water next to the banyan tree, speaking kindly",
+      "sentences": [
+        ["The banyan tree was magical, so it needed special care.", "Cây đa là cây thần, nên cần được chăm sóc thật cẩn thận."],
+        ["Cuội told his wife, “Please water it only with clean, fresh water.”", "Cuội dặn vợ: “Nàng nhớ chỉ tưới cây bằng nước sạch thôi nhé.”"]
+      ]
+    },
+    {
+      "prompt": "evening, Cuội's wife watering the tree with a bucket from a muddy pond, the tree starting to sway and its roots lifting softly",
+      "sentences": [
+        ["One evening, while Cuội was still in the forest, his wife forgot and used water from the muddy pond.", "Một buổi chiều, khi Cuội còn ở trong rừng, vợ chú quên mất và tưới cây bằng nước ao đục."],
+        ["Suddenly, the banyan tree began to sway, and its roots lifted out of the ground.", "Bỗng nhiên, cây đa rung rinh, rễ cây từ từ nhấc lên khỏi mặt đất."]
+      ]
+    },
+    {
+      "prompt": "the banyan tree floating up into a twilight sky with Cuội holding onto a long root, the cottage small below, calm and dreamy not scary",
+      "sentences": [
+        ["Cuội came running home just as the tree floated up into the sky.", "Cuội vừa chạy về tới nơi thì cây đa đã bay lên trời."],
+        ["He held on to a root, and up, up, up they went, all the way to the moon.", "Chú bám lấy rễ cây, rồi cứ thế bay lên, lên mãi, tới tận cung trăng."]
+      ]
+    },
+    {
+      "prompt": "Cuội sitting under the banyan tree on the moon's silvery surface, peaceful, the earth glowing softly far away",
+      "sentences": [
+        ["Now Cuội sits under the banyan tree on the moon, caring for it every night.", "Giờ đây, chú Cuội ngồi dưới gốc cây đa trên cung trăng, đêm nào cũng chăm sóc cây."],
+        ["When you look at the full moon, you might see a tree with a little man beneath it.", "Khi ngắm trăng rằm, bé có thể thấy bóng cây đa và chú Cuội ngồi bên dưới."]
+      ]
+    },
+    {
+      "prompt": "Vietnamese children in a village at night carrying star-shaped and carp-shaped paper lanterns, looking up at the full moon",
+      "sentences": [
+        ["At the Mid-Autumn Festival, children carry glowing lanterns to send their love up to Cuội.", "Vào đêm Trung thu, các bạn nhỏ rước đèn lung linh để gửi lời thương lên chú Cuội."],
+        ["Goodnight, Cuội. Goodnight, bright moon.", "Chúc chú Cuội ngủ ngon. Chúc trăng sáng ngủ ngon."]
+      ]
+    }
+  ]
+}

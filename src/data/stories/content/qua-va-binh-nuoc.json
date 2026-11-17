@@ -1,0 +1,96 @@
+{
+  "id": "qua-va-binh-nuoc",
+  "title": {
+    "en": "The Crow and the Pitcher",
+    "vi": "Quạ và Bình Nước"
+  },
+  "description": {
+    "en": "On a hot, dry day, a thirsty crow finds a tall pitcher with a little water at the bottom, and a clever idea, one pebble at a time.",
+    "vi": "Vào một ngày nắng khô, chú Quạ khát nước tìm thấy chiếc bình cao chỉ còn ít nước dưới đáy, và một ý tưởng thông minh, từng viên sỏi một."
+  },
+  "theme": {
+    "en": "Patience and clever thinking.",
+    "vi": "Kiên nhẫn và sáng tạo."
+  },
+  "origin": "Aesop’s fable, retold in English and Vietnamese.",
+  "category": "Fable",
+  "ageRange": "3–7 years",
+  "duration": "4 min",
+  "characters": [
+    { "name": "Crow", "look": "glossy indigo-black crow with a blue-violet sheen, bright curious amber eye and a slightly ruffled crest" },
+    { "name": "the pitcher", "look": "tall narrow-necked terracotta clay pitcher with a cream wavy band, standing by a garden wall" }
+  ],
+  "artDirection": {
+    "mood": "Sunny, still and thoughtful; a quiet puzzle with a happy splash.",
+    "setting": "Sun-baked flagstone path beside a low whitewashed garden wall, scattered smooth pebbles, a few potted herbs.",
+    "light": "Bright high summer sun, crisp short shadows, cool shade only inside the pitcher.",
+    "motifs": [
+      "terracotta pitcher with a cream wave band",
+      "round smooth pebbles in a counting row",
+      "rising water line with ripples",
+      "glossy indigo feathers"
+    ],
+    "avoid": [
+      "a desperate or suffering crow",
+      "scary black-bird imagery",
+      "night scenes"
+    ],
+    "palette": {
+      "sky": "#F5E3B8",
+      "skyLow": "#FBF0D6",
+      "ground": "#D8C7A6",
+      "groundDeep": "#A8916C",
+      "accent": "#C0623A",
+      "glow": "#FFF4CF",
+      "ink": "#232540",
+      "paper": "#FAF3E2"
+    }
+  },
+  "cover": {
+    "prompt": "a glossy indigo-black crow perched on the rim of a tall terracotta pitcher holding a round pebble in its beak, pebbles in a row on a sunlit stone path"
+  },
+  "pages": [
+    {
+      "prompt": "a crow flying low over a sun-baked flagstone path on a hot summer day, dry cracked puddle spots, a shimmering heat haze",
+      "sentences": [
+        ["On a hot summer day, a thirsty crow flew over a sunny stone path.", "Vào một ngày hè nóng bức, chú Quạ khát nước bay ngang qua con đường lát đá đầy nắng."],
+        ["He looked everywhere for water, but every puddle had dried up.", "Quạ tìm khắp nơi, nhưng vũng nước nào cũng đã khô cạn."]
+      ]
+    },
+    {
+      "prompt": "the crow landing beside a tall terracotta pitcher by a whitewashed garden wall, peering into its narrow neck, a cutaway hint of a little water far below",
+      "sentences": [
+        ["At last, he spotted a tall clay pitcher beside a garden wall.", "Cuối cùng, Quạ nhìn thấy một chiếc bình đất cao bên bức tường vườn."],
+        ["But the water was right at the bottom, and his beak could not reach it.", "Nhưng nước chỉ còn một ít dưới đáy, mỏ Quạ không sao chạm tới."]
+      ]
+    },
+    {
+      "prompt": "the crow pushing against the heavy pitcher with his chest, then sitting on the wall thinking, head tilted",
+      "sentences": [
+        ["Crow tried to tip the pitcher over, but it was far too heavy.", "Quạ thử đẩy cho bình đổ, nhưng bình nặng quá."],
+        ["So he sat on the wall and thought very hard.", "Thế là Quạ đậu lên bức tường, ngẫm nghĩ thật lâu."]
+      ]
+    },
+    {
+      "prompt": "the crow picking up a smooth round pebble from the path in his beak, other pebbles scattered nearby, dropping one into the pitcher with a little splash",
+      "sentences": [
+        ["Then he noticed the little pebbles scattered along the path.", "Rồi Quạ chợt để ý những viên sỏi nhỏ nằm rải rác trên đường."],
+        ["He picked one up in his beak and dropped it into the pitcher. Plink!", "Quạ ngậm một viên sỏi, thả vào trong bình. Tõm!"]
+      ]
+    },
+    {
+      "prompt": "a cutaway view of the pitcher filling with pebbles and the water line rising, the crow carrying another pebble, a counting row of pebbles on the path",
+      "sentences": [
+        ["One pebble, two pebbles, ten pebbles, twenty.", "Một viên, hai viên, mười viên, rồi hai mươi viên."],
+        ["With every pebble, the water rose a little higher.", "Cứ mỗi viên sỏi rơi xuống, nước lại dâng lên một chút."]
+      ]
+    },
+    {
+      "prompt": "the crow happily drinking from the brimming pitcher, water sparkling at the rim, feathers fluffed, sunny garden wall behind",
+      "sentences": [
+        ["At last, the cool water reached the top, and Crow drank and drank.", "Cuối cùng, nước mát dâng lên tận miệng bình, Quạ uống thỏa thích."],
+        ["He fluffed his feathers and cawed a happy thank-you to the little pebbles.", "Quạ xù lông, kêu “quà quạ” thật vui, như để cảm ơn những viên sỏi nhỏ."]
+      ]
+    }
+  ]
+}

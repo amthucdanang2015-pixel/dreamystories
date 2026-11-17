@@ -1,0 +1,116 @@
+{
+  "id": "tam-cam",
+  "title": {
+    "en": "Tấm and Cám",
+    "vi": "Tấm Cám"
+  },
+  "description": {
+    "en": "Gentle, hardworking Tấm is helped by the kind fairy Bụt, a little goby fish, and a flock of sparrows, and her lost slipper finds its way to the king.",
+    "vi": "Cô Tấm hiền lành, chăm chỉ được ông Bụt, chú cá bống và đàn chim sẻ giúp đỡ, và chiếc hài đánh rơi đã đưa cô đến với nhà vua."
+  },
+  "theme": {
+    "en": "Kindness and forgiveness shine brighter than gold.",
+    "vi": "Lòng tốt và sự bao dung còn sáng hơn cả vàng."
+  },
+  "origin": "Vietnamese folk tale Tấm Cám, gently adapted (the darker episodes of the traditional tale are omitted).",
+  "category": "Folk Tale",
+  "ageRange": "3–8 years",
+  "duration": "6 min",
+  "characters": [
+    { "name": "Tấm", "look": "gentle Vietnamese girl about 15, long black hair in a single braid, faded brown áo tứ thân, bare feet" },
+    { "name": "Cám", "look": "Vietnamese girl about 14, short bob hair, bright pink áo tứ thân, playful pout" },
+    { "name": "stepmother", "look": "middle-aged Vietnamese woman, hair in a tight bun, dark purple áo, stern but not scary" },
+    { "name": "Bụt", "look": "kind old man with long white beard and eyebrows, white robe, wooden walking staff, soft halo of light" },
+    { "name": "goby fish", "look": "small round brown-gold bống fish with big friendly eyes" },
+    { "name": "king", "look": "young kind Vietnamese king in a yellow áo long bào with a simple crown, riding a grey elephant" }
+  ],
+  "artDirection": {
+    "mood": "Tender rural fairy tale; warm, golden, quietly hopeful transformation.",
+    "setting": "Red River delta village: lotus pond, stone well, areca palms, bamboo fence, festival lanes.",
+    "light": "Honey-gold afternoon light, glowing haze around Bụt.",
+    "motifs": [
+      "pink lotus pond",
+      "stone well and goby fish",
+      "flock of brown sparrows",
+      "embroidered slipper",
+      "pale blue áo tứ thân"
+    ],
+    "avoid": [
+      "night scenes except Bụt's glow",
+      "cold blues",
+      "forest settings"
+    ],
+    "palette": {
+      "sky": "#F4D58A",
+      "skyLow": "#F8E9C4",
+      "ground": "#8DAA5B",
+      "groundDeep": "#5E7D3C",
+      "accent": "#E59A9A",
+      "glow": "#FFF1C9",
+      "ink": "#4A3622",
+      "paper": "#FBF0DA"
+    }
+  },
+  "cover": {
+    "prompt": "Tấm kneeling by a village well holding a small bowl of rice, the little goby fish peeking up from the water, Bụt glowing softly in the background, sparrows on a bamboo fence"
+  },
+  "pages": [
+    {
+      "prompt": "Tấm sweeping a courtyard and carrying water while Cám plays with a pinwheel in the shade",
+      "sentences": [
+        ["Long ago, there lived a gentle girl named Tấm and her stepsister, Cám.", "Ngày xưa, có cô Tấm hiền lành sống cùng cô em cùng cha khác mẹ tên là Cám."],
+        ["Tấm worked hard all day, while Cám liked to play.", "Tấm chăm chỉ làm việc cả ngày, còn Cám thì chỉ thích rong chơi."]
+      ]
+    },
+    {
+      "prompt": "Tấm and Cám at a pond with fishing baskets, Tấm's basket full, Cám pointing away to distract her",
+      "sentences": [
+        ["One day, their stepmother said, “Whoever catches the most fish will win a red silk top.”", "Một hôm, dì ghẻ bảo: “Đứa nào bắt được nhiều cá hơn sẽ được thưởng cái yếm đỏ.”"],
+        ["Tấm filled her basket, but Cám tricked her and took the fish home.", "Tấm bắt được đầy giỏ cá, nhưng Cám lừa chị rồi mang giỏ cá về nhà."]
+      ]
+    },
+    {
+      "prompt": "Tấm sitting sadly by the pond with an almost empty basket, Bụt appearing in soft light beside her, a tiny goby fish in the basket",
+      "sentences": [
+        ["Tấm sat by the pond and cried, and then a kind old fairy named Bụt appeared.", "Tấm ngồi bên ao khóc, bỗng ông Bụt hiền từ hiện lên."],
+        ["“Don't cry, my child,” said Bụt. “Look, one little goby fish is still in your basket.”", "Bụt nói: “Con đừng khóc nữa. Nhìn xem, trong giỏ vẫn còn một chú cá bống nhỏ.”"]
+      ]
+    },
+    {
+      "prompt": "Tấm leaning over a stone well sharing rice with the happy goby fish, later the fish swimming into a wide sunny river",
+      "sentences": [
+        ["Tấm put the little fish in the well and shared her rice with it every day.", "Tấm thả cá bống xuống giếng, ngày nào cũng chia cơm cho bống."],
+        ["She sang, “Bống bống bang bang, come and eat my gold and silver rice.”", "Tấm hát: “Bống bống bang bang, lên ăn cơm vàng cơm bạc nhà ta.”"],
+        ["Later, Bụt helped the little fish swim off to the wide river, safe and free.", "Về sau, Bụt giúp cá bống bơi ra sông lớn, bình yên và tự do."]
+      ]
+    },
+    {
+      "prompt": "Tấm sitting before a big tray of mixed rice grains, a flock of little brown sparrows sorting them into two neat piles",
+      "sentences": [
+        ["Soon the king held a grand festival, but the stepmother mixed two kinds of rice together for Tấm to sort.", "Ít lâu sau, nhà vua mở hội lớn, nhưng dì ghẻ trộn lẫn thóc với gạo, bắt Tấm phải nhặt cho xong."],
+        ["Bụt sent a flock of little sparrows, and they sorted every grain.", "Bụt sai một đàn chim sẻ xuống giúp, chúng nhặt xong từng hạt một."]
+      ]
+    },
+    {
+      "prompt": "Tấm in a lovely pale blue áo tứ thân and embroidered slippers crossing a little stream on her way to the festival, one slipper slipping into the water",
+      "sentences": [
+        ["Bụt also gave Tấm a lovely dress and a pair of embroidered slippers.", "Bụt còn cho Tấm áo đẹp và một đôi hài thêu."],
+        ["On the way to the festival, one slipper fell into the water, right where the king's elephant was passing.", "Trên đường đi xem hội, Tấm đánh rơi một chiếc hài xuống nước, ngay chỗ voi của nhà vua đi qua."]
+      ]
+    },
+    {
+      "prompt": "the young king holding up the tiny embroidered slipper at a festival, Tấm stepping forward shyly as the slipper fits her foot",
+      "sentences": [
+        ["The king picked up the tiny slipper and said, “Whoever this slipper fits will be my bride.”", "Nhà vua nhặt chiếc hài nhỏ và nói: “Ai đi vừa chiếc hài này, ta sẽ cưới làm vợ.”"],
+        ["Many girls tried it on, but it fit only Tấm's foot.", "Nhiều cô gái thử, nhưng chiếc hài chỉ vừa với chân Tấm."]
+      ]
+    },
+    {
+      "prompt": "Tấm as a gentle queen holding hands with Cám and the stepmother in a palace garden, everyone smiling softly",
+      "sentences": [
+        ["Tấm became queen and kept her kind and gentle heart.", "Tấm trở thành hoàng hậu và vẫn giữ tấm lòng hiền hậu."],
+        ["She forgave Cám and her stepmother, and they learned to be kind, too.", "Cô tha thứ cho Cám và dì ghẻ, và họ cũng học cách sống tử tế."]
+      ]
+    }
+  ]
+}

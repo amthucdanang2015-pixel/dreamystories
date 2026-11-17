@@ -1,0 +1,113 @@
+{
+  "id": "ho-guom",
+  "title": {
+    "en": "The Golden Turtle and the Returned Sword",
+    "vi": "Sự Tích Hồ Gươm"
+  },
+  "description": {
+    "en": "A magic sword is lent to bring peace to the land, and when peace comes, a Golden Turtle rises from the lake to take it home.",
+    "vi": "Thanh gươm thần được cho mượn để mang lại thái bình, và khi đất nước yên vui, Rùa Vàng nổi lên đòi gươm trở về."
+  },
+  "theme": {
+    "en": "Keeping our promises and cherishing peace.",
+    "vi": "Giữ lời hứa và trân trọng hòa bình."
+  },
+  "origin": "Vietnamese legend of Hồ Gươm (Hoàn Kiếm Lake) in Hà Nội and King Lê Lợi.",
+  "category": "Legend",
+  "ageRange": "3–8 years",
+  "duration": "5 min",
+  "characters": [
+    { "name": "Lê Thận", "look": "humble fisherman with a weathered smile, nón lá hat, rolled trousers, holding a fishing net" },
+    { "name": "Lê Lợi", "look": "calm wise leader with a neat black beard, dark green robe; later a king in a yellow robe" },
+    { "name": "Golden Turtle", "look": "huge gentle turtle with a shimmering gold shell and wise old eyes" },
+    { "name": "magic sword", "look": "slender sword with a softly glowing blade and a jade-studded hilt" }
+  ],
+  "artDirection": {
+    "mood": "Serene, misty, reverent; a calm lake legend.",
+    "setting": "Thăng Long lake with willows and morning mist; Turtle Tower on its islet; red Thê Húc bridge.",
+    "light": "Pearl morning mist, soft celadon water, a gold glow from the sword and turtle.",
+    "motifs": [
+      "golden turtle",
+      "glowing sword",
+      "Turtle Tower",
+      "vermilion Thê Húc bridge",
+      "weeping willows"
+    ],
+    "avoid": [
+      "battle scenes",
+      "dark forests",
+      "harsh contrast"
+    ],
+    "palette": {
+      "sky": "#CFE0D6",
+      "skyLow": "#EEF1E4",
+      "ground": "#6E9C8A",
+      "groundDeep": "#3F6E5E",
+      "accent": "#C2402F",
+      "glow": "#E8C46A",
+      "ink": "#22352F",
+      "paper": "#E9F0EA"
+    }
+  },
+  "cover": {
+    "prompt": "the great Golden Turtle rising from a calm green lake holding a softly glowing sword in its mouth, a small royal dragon boat nearby, willow trees and misty morning light"
+  },
+  "pages": [
+    {
+      "prompt": "a quiet green lake with a gentle dragon-like shimmer beneath the water, villagers on the shore looking hopeful",
+      "sentences": [
+        ["Long ago, the land was troubled, and people longed for peace.", "Ngày xưa, đất nước gặp nhiều khó khăn, ai cũng mong có ngày bình yên."],
+        ["The Dragon King who lived beneath the waters decided to lend them a magic sword.", "Đức Long Quân dưới nước quyết định cho nghĩa quân mượn một thanh gươm thần."]
+      ]
+    },
+    {
+      "prompt": "fisherman Lê Thận pulling up his net and finding a glowing sword blade, surprised and happy",
+      "sentences": [
+        ["A fisherman named Lê Thận cast his net and pulled up a shiny blade.", "Một người đánh cá tên là Lê Thận thả lưới và kéo lên được một lưỡi gươm sáng loáng."],
+        ["On it were two words, Thuận Thiên, which mean “following Heaven.”", "Trên lưỡi gươm có hai chữ “Thuận Thiên”, nghĩa là “theo ý trời”."]
+      ]
+    },
+    {
+      "prompt": "Lê Lợi in a forest at dusk looking up at a soft light glowing in a banyan tree, finding a jeweled sword hilt",
+      "sentences": [
+        ["Later, the leader Lê Lợi saw a strange light shining in a banyan tree.", "Ít lâu sau, chủ tướng Lê Lợi thấy ánh sáng lạ trên ngọn cây đa."],
+        ["There he found a jeweled sword handle, and it fit the blade perfectly.", "Ông tìm thấy một chuôi gươm nạm ngọc, tra vào lưỡi gươm thì vừa như in."]
+      ]
+    },
+    {
+      "prompt": "Lê Lợi raising the glowing sword toward the sky, friends gathered around him, a peaceful sunrise over rice fields",
+      "sentences": [
+        ["With the magic sword, Lê Lợi and his friends grew brave and strong.", "Có gươm thần, Lê Lợi và nghĩa quân ngày càng dũng mãnh."],
+        ["Together, they brought peace back to the land.", "Cùng nhau, họ đã mang lại hòa bình cho đất nước."]
+      ]
+    },
+    {
+      "prompt": "King Lê Lợi in a yellow robe on a small dragon boat on a sunny lake, a golden turtle shell breaking the surface",
+      "sentences": [
+        ["One sunny day, King Lê Lợi went boating on Tả Vọng Lake.", "Một ngày nắng đẹp, vua Lê Lợi cưỡi thuyền dạo chơi trên hồ Tả Vọng."],
+        ["Suddenly, a great Golden Turtle rose from the water.", "Bỗng một con Rùa Vàng lớn nhô lên khỏi mặt nước."]
+      ]
+    },
+    {
+      "prompt": "the Golden Turtle speaking gently to the king, the king smiling and holding out the glowing sword with both hands",
+      "sentences": [
+        ["“The Dragon King lent you his sword,” said the turtle. “Now that there is peace, please give it back.”", "Rùa Vàng nói: “Đức Long Quân đã cho nhà vua mượn gươm, nay đất nước thanh bình, xin nhà vua hoàn lại gươm.”"],
+        ["The king smiled and gently held out the sword.", "Nhà vua mỉm cười, nhẹ nhàng nâng gươm lên."]
+      ]
+    },
+    {
+      "prompt": "the turtle diving into the calm water with the sword, a soft golden glow spreading across the lake surface",
+      "sentences": [
+        ["The turtle took the sword in its mouth and dove down into the deep, quiet water.", "Rùa Vàng ngậm lấy thanh gươm rồi lặn sâu xuống làn nước yên ả."],
+        ["A soft glow shimmered on the lake for a long time.", "Ánh sáng lấp lánh còn le lói mãi trên mặt hồ."]
+      ]
+    },
+    {
+      "prompt": "Hoàn Kiếm Lake today at dusk with the small Turtle Tower on its islet, the red Thê Húc bridge, families strolling peacefully",
+      "sentences": [
+        ["From then on, the lake was called Hồ Gươm, the Lake of the Returned Sword.", "Từ đó, hồ Tả Vọng được gọi là Hồ Gươm, hay hồ Hoàn Kiếm."],
+        ["It still sits in the heart of Hà Nội, calm and green, reminding us to cherish peace.", "Hồ vẫn nằm giữa lòng Hà Nội, xanh và yên bình, nhắc chúng ta luôn trân trọng hòa bình."]
+      ]
+    }
+  ]
+}

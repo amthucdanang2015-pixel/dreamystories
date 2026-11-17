@@ -1,0 +1,112 @@
+{
+  "id": "son-tinh-thuy-tinh",
+  "title": {
+    "en": "The Mountain Spirit and the Water Spirit",
+    "vi": "Sơn Tinh, Thủy Tinh"
+  },
+  "description": {
+    "en": "Two mighty spirits hope to marry Princess Mỵ Nương, and their great contest explains why the summer rains come every year.",
+    "vi": "Hai vị thần tài giỏi cùng cầu hôn công chúa Mỵ Nương, và cuộc so tài của họ giải thích vì sao năm nào cũng có mùa mưa lũ."
+  },
+  "theme": {
+    "en": "Staying calm and helping each other through hard times.",
+    "vi": "Bình tĩnh và giúp đỡ nhau vượt qua khó khăn."
+  },
+  "origin": "Vietnamese legend of Sơn Tinh and Thủy Tinh from the Hùng King era.",
+  "category": "Legend",
+  "ageRange": "3–8 years",
+  "duration": "5 min",
+  "characters": [
+    { "name": "Mỵ Nương", "look": "graceful young princess, long black hair with a flower, soft green and gold dress in ancient Văn Lang style" },
+    { "name": "Sơn Tinh", "look": "calm strong young spirit with a cloak of green leaves and moss, earthy brown skin tones, carrying a staff" },
+    { "name": "Thủy Tinh", "look": "proud young spirit with flowing blue-teal robes like waves, hair like sea foam, pearls" },
+    { "name": "Hùng King", "look": "elderly king with a long white beard, red robe, ancient headdress" }
+  ],
+  "artDirection": {
+    "mood": "Mythic and dramatic but safe; a grand contest of land and water seen from a child's height.",
+    "setting": "Hùng-era Văn Lang: stilt palace, terraced jade mountains on one side, a surging river delta on the other.",
+    "light": "Storm-lit indigo sky split by jade mountain light; rim light on the spirits.",
+    "motifs": [
+      "layered jade mountain peaks",
+      "stylised curling wave crests",
+      "swirling ribbon clouds",
+      "nine-tusk elephant, nine-spur rooster, nine-mane horse"
+    ],
+    "avoid": [
+      "destruction or drowning imagery",
+      "grey disaster palettes",
+      "forest backdrops"
+    ],
+    "palette": {
+      "sky": "#27305E",
+      "skyLow": "#5C7FA6",
+      "ground": "#2F6B5E",
+      "groundDeep": "#1D4A42",
+      "accent": "#4FA48C",
+      "glow": "#E9D9A6",
+      "ink": "#141A38",
+      "paper": "#E4EEEA"
+    }
+  },
+  "cover": {
+    "prompt": "Sơn Tinh standing on green mountains on the left and Thủy Tinh rising from gentle blue waves on the right, Princess Mỵ Nương between them on a hill, soft dawn sky"
+  },
+  "pages": [
+    {
+      "prompt": "the Hùng King and Princess Mỵ Nương in a palace courtyard as two glowing spirits approach from mountain and river",
+      "sentences": [
+        ["Long ago, the eighteenth Hùng King had a lovely daughter named Mỵ Nương.", "Ngày xưa, vua Hùng thứ mười tám có một người con gái xinh đẹp tên là Mỵ Nương."],
+        ["Two mighty spirits came to ask to marry her.", "Có hai vị thần tài giỏi đến cầu hôn nàng."]
+      ]
+    },
+    {
+      "prompt": "split scene: Sơn Tinh waving his hand to raise green hills, Thủy Tinh calling swirling rain clouds and wind",
+      "sentences": [
+        ["Sơn Tinh, the Mountain Spirit, could raise hills with a wave of his hand.", "Sơn Tinh, thần núi, vẫy tay là nổi lên những dãy đồi."],
+        ["Thủy Tinh, the Water Spirit, could call the rain and the wind.", "Thủy Tinh, thần nước, có thể gọi mưa, hô gió."]
+      ]
+    },
+    {
+      "prompt": "the king announcing the challenge, small dreamy pictures above him of an elephant with nine tusks, a rooster with nine spurs, and a horse with nine red manes",
+      "sentences": [
+        ["The king said, “Whoever brings the wedding gifts first may marry my daughter.”", "Vua nói: “Ai mang sính lễ đến trước sẽ được cưới con gái ta.”"],
+        ["He asked for an elephant with nine tusks, a rooster with nine spurs, and a horse with nine red manes.", "Vua đòi voi chín ngà, gà chín cựa, ngựa chín hồng mao."]
+      ]
+    },
+    {
+      "prompt": "at sunrise Sơn Tinh arriving at the palace gate leading the nine-tusk elephant, rooster and horse, then walking with Mỵ Nương toward the mountains",
+      "sentences": [
+        ["Early the next morning, Sơn Tinh arrived first with all the gifts.", "Sáng sớm hôm sau, Sơn Tinh đến trước với đủ lễ vật."],
+        ["He took Mỵ Nương home to his mountain.", "Chàng rước Mỵ Nương về núi."]
+      ]
+    },
+    {
+      "prompt": "Thủy Tinh arriving late at an empty palace gate, frowning, grey clouds gathering and the river starting to rise",
+      "sentences": [
+        ["When Thủy Tinh arrived late, he was very upset.", "Thủy Tinh đến sau, chàng buồn bực lắm."],
+        ["He called the rain and the wind, and the river rose higher and higher.", "Chàng gọi mưa gọi gió, làm nước sông dâng lên cao mãi."]
+      ]
+    },
+    {
+      "prompt": "Sơn Tinh calmly lifting hills higher while villagers work together carrying baskets of earth and stones to build a dike, rain falling softly",
+      "sentences": [
+        ["But Sơn Tinh calmly raised the hills even higher, one by one.", "Nhưng Sơn Tinh bình tĩnh nâng những ngọn đồi lên cao hơn nữa."],
+        ["The villagers worked together, carrying earth and stones to keep their homes safe.", "Dân làng cùng nhau gánh đất, chở đá để giữ cho nhà cửa được an toàn."]
+      ]
+    },
+    {
+      "prompt": "the water flowing gently back to the sea, sun breaking through clouds over bright green rice fields, villagers smiling",
+      "sentences": [
+        ["At last, Thủy Tinh grew tired, and the water flowed slowly back to the sea.", "Cuối cùng, Thủy Tinh mệt mỏi, nước lại từ từ rút về biển."],
+        ["The sun came out, and the rice fields turned green again.", "Mặt trời ló dạng, và những cánh đồng lúa lại xanh tươi."]
+      ]
+    },
+    {
+      "prompt": "a cozy village in summer rain, neighbors sharing umbrellas and helping each other, Mỵ Nương and Sơn Tinh watching kindly from a misty mountain",
+      "sentences": [
+        ["Some say Thủy Tinh still remembers, and that is why the rains come each summer.", "Người ta kể rằng Thủy Tinh vẫn chưa quên, nên năm nào mùa hè cũng có mưa lớn."],
+        ["And each year, people help one another stay safe, just like long ago.", "Và năm nào, mọi người cũng giúp đỡ nhau vượt qua, giống như ngày xưa."]
+      ]
+    }
+  ]
+}

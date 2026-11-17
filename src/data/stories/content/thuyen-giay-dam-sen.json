@@ -1,0 +1,185 @@
+{
+  "id": "thuyen-giay-dam-sen",
+  "title": {
+    "en": "The Paper Boat on the Lotus Pond",
+    "vi": "Chiếc Thuyền Giấy Trên Đầm Sen"
+  },
+  "description": {
+    "en": "Na sends a little paper boat across the lotus pond at dusk, and the boat discovers the pond's glowing night-time magic.",
+    "vi": "Lúc chiều tà, bé Na thả chiếc thuyền giấy xuống đầm sen, và thuyền nhỏ khám phá phép màu lung linh của đầm vào ban đêm."
+  },
+  "theme": {
+    "en": "Wonder is waiting in quiet places.",
+    "vi": "Điều kỳ diệu ở ngay những nơi bình yên."
+  },
+  "origin": "Original StoryMoon story, written in Vietnamese with an English companion text.",
+  "category": "Bedtime",
+  "ageRange": "4–8 years",
+  "duration": "5 min",
+  "characters": [
+    {
+      "name": "the paper boat",
+      "look": "small folded paper boat in cream paper with a faint blue grid from a school notebook, a tiny painted star on its side"
+    },
+    {
+      "name": "Na",
+      "look": "little girl around six with a short black bob, wearing a pale yellow áo bà ba, barefoot on stone steps"
+    },
+    {
+      "name": "Frog (Ếch)",
+      "look": "round bright-green frog with a cream belly and a friendly wide smile"
+    },
+    {
+      "name": "the paradise fish (cá cờ)",
+      "look": "small Vietnamese paradise fish with red and blue stripes and a flowing tail"
+    },
+    {
+      "name": "Dragonfly",
+      "look": "slim dragonfly with a teal body and clear wings that catch the light"
+    }
+  ],
+  "artDirection": {
+    "mood": "Dreamy, hushed wonder; a calm adventure that ends at home.",
+    "setting": "A wide lotus pond behind a Vietnamese village house: big round lotus leaves, pink and white lotus flowers, stone steps down to the water, a wooden window above.",
+    "light": "Dusky lavender evening deepening to night; lotus buds glow soft pink like lanterns, starlight on the water.",
+    "motifs": [
+      "glowing pink lotus-bud lanterns",
+      "large round lotus leaves",
+      "silver ripple rings",
+      "folded paper boat with a tiny star",
+      "white lotus holding a dewdrop moon"
+    ],
+    "avoid": [
+      "deep or dangerous-looking water",
+      "storms or waves",
+      "the girl alone in the water"
+    ],
+    "palette": {
+      "sky": "#1D2440",
+      "skyLow": "#5A4A6E",
+      "ground": "#2F5A4E",
+      "groundDeep": "#183A33",
+      "accent": "#E58FA8",
+      "glow": "#FFD6E0",
+      "ink": "#121626",
+      "paper": "#F7EEF0"
+    }
+  },
+  "cover": {
+    "prompt": "a small folded paper boat drifting between big lotus leaves at night, pink lotus buds glowing like lanterns, stars reflected in the pond"
+  },
+  "pages": [
+    {
+      "prompt": "a little girl in a yellow áo bà ba on stone steps folding a paper boat at the edge of a lotus pond at dusk",
+      "sentences": [
+        [
+          "By the lotus pond, a little girl named Na folded a paper boat.",
+          "Bên đầm sen, bé Na gấp một chiếc thuyền giấy nhỏ."
+        ],
+        [
+          "She set it on the water and whispered, “Go and see the pond for me.”",
+          "Na đặt thuyền xuống nước, thì thầm: “Thuyền đi ngắm đầm sen giúp tớ nhé.”"
+        ]
+      ]
+    },
+    {
+      "prompt": "the paper boat drifting slowly between huge round lotus leaves, lavender dusk sky",
+      "sentences": [
+        [
+          "The little boat drifted slowly between the big round lotus leaves.",
+          "Thuyền nhỏ trôi chầm chậm giữa những tàu lá sen tròn xoe."
+        ],
+        [
+          "The evening breeze smelled sweet and cool.",
+          "Gió chiều thơm mùi sen, mát rượi."
+        ]
+      ]
+    },
+    {
+      "prompt": "first stars in the sky, lotus buds across the pond starting to glow soft pink like little lanterns around the boat",
+      "sentences": [
+        [
+          "As the first stars came out, something magical happened.",
+          "Khi những vì sao đầu tiên hiện lên, một điều kỳ diệu xảy ra."
+        ],
+        [
+          "One by one, the lotus buds began to glow like tiny pink lanterns.",
+          "Từng nụ sen một khẽ sáng lên, như những chiếc đèn lồng hồng bé xinh."
+        ]
+      ]
+    },
+    {
+      "prompt": "a round green frog on a lotus leaf greeting the paper boat and nudging it along with one hand",
+      "sentences": [
+        [
+          "A green frog hopped onto a leaf and said, “Good evening, little boat!”",
+          "Chú Ếch xanh nhảy lên tàu lá, chào: “Chào thuyền nhỏ, buổi tối vui nhé!”"
+        ],
+        [
+          "He gave the boat a gentle push to help it along.",
+          "Ếch khẽ đẩy một cái, giúp thuyền đi tiếp."
+        ]
+      ]
+    },
+    {
+      "prompt": "a small red-and-blue paradise fish swimming beside the boat making silver ripples, a teal dragonfly resting on the bow in lotus-lantern light",
+      "sentences": [
+        [
+          "A little paradise fish swam beside the boat, making tiny silver ripples.",
+          "Một chú cá cờ bơi bên cạnh, tạo những gợn sóng bạc lăn tăn."
+        ],
+        [
+          "A dragonfly rested on the bow, her wings shining in the lantern light.",
+          "Một chị chuồn chuồn đậu lên mũi thuyền, đôi cánh lấp lánh dưới ánh đèn sen."
+        ]
+      ]
+    },
+    {
+      "prompt": "in the middle of the pond a large white lotus slowly opening, a dewdrop inside shining like a tiny moon, the boat resting in front of it",
+      "sentences": [
+        [
+          "In the middle of the pond, a big white lotus slowly opened.",
+          "Giữa đầm, một bông sen trắng thật to từ từ hé nở."
+        ],
+        [
+          "Inside, a drop of dew shone like a little moon.",
+          "Bên trong, một giọt sương long lanh như mặt trăng bé xíu."
+        ],
+        [
+          "The boat stayed there for a while, quiet and amazed.",
+          "Thuyền nhỏ đứng lặng một lúc, ngắm mãi không thôi."
+        ]
+      ]
+    },
+    {
+      "prompt": "the breeze turning the boat towards a village house, the frog, the paradise fish and the dragonfly waving goodbye",
+      "sentences": [
+        [
+          "Then the breeze turned and carried the boat back toward home.",
+          "Rồi gió đổi chiều, đưa thuyền trôi về phía nhà."
+        ],
+        [
+          "Frog, the little fish and Dragonfly all waved goodbye.",
+          "Ếch, cá cờ và chuồn chuồn cùng vẫy chào tạm biệt."
+        ]
+      ]
+    },
+    {
+      "prompt": "the paper boat resting by stone steps beneath a wooden window, inside the girl asleep, lotus lanterns dimming over the still pond",
+      "sentences": [
+        [
+          "The little boat came to rest by the steps, just below Na's window.",
+          "Thuyền nhỏ ghé vào bậc đá, ngay dưới cửa sổ nhà Na."
+        ],
+        [
+          "Na was already asleep, dreaming of glowing lotus lanterns.",
+          "Na đã ngủ say, mơ thấy những chiếc đèn sen lung linh."
+        ],
+        [
+          "And the pond grew still, holding the stars until morning.",
+          "Và đầm sen lặng yên, giữ những vì sao đến tận sáng mai."
+        ]
+      ]
+    }
+  ]
+}

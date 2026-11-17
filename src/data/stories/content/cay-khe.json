@@ -1,0 +1,115 @@
+{
+  "id": "cay-khe",
+  "title": {
+    "en": "The Star Fruit Tree",
+    "vi": "Cây Khế"
+  },
+  "description": {
+    "en": "A kind younger brother shares his star fruit with a magical bird, and learns that a small bag of gold is just enough.",
+    "vi": "Người em hiền lành chia khế cho một con chim thần, và hiểu rằng một túi vàng nhỏ là vừa đủ."
+  },
+  "theme": {
+    "en": "Kindness and being happy with enough.",
+    "vi": "Sống tốt bụng và biết đủ."
+  },
+  "origin": "Vietnamese folk tale Cây khế (“Ăn khế trả vàng”).",
+  "category": "Folk Tale",
+  "ageRange": "3–8 years",
+  "duration": "6 min",
+  "characters": [
+    { "name": "younger brother", "look": "slim young Vietnamese man, gentle smile, brown áo nâu, conical nón lá hat on his back" },
+    { "name": "older brother", "look": "taller, rounder young Vietnamese man with a small mustache, dark blue tunic" },
+    { "name": "magic bird", "look": "huge friendly phoenix-like bird with rainbow-tipped golden feathers and kind eyes" },
+    { "name": "star fruit tree", "look": "old leafy khế tree heavy with yellow star-shaped fruit" }
+  ],
+  "artDirection": {
+    "mood": "Bright, breezy and generous; a sunny fable with a soaring sea journey.",
+    "setting": "Village garden around one star fruit tree; an open turquoise sea and a glittering gold island.",
+    "light": "Clear afternoon sun, sparkles on water and gold.",
+    "motifs": [
+      "star fruit tree with yellow five-pointed fruit",
+      "giant golden phoenix-like bird",
+      "turquoise sea",
+      "small cloth bag of three arm-spans"
+    ],
+    "avoid": [
+      "night scenes",
+      "forest",
+      "greed shown as frightening"
+    ],
+    "palette": {
+      "sky": "#9FD3D2",
+      "skyLow": "#F3E2A6",
+      "ground": "#7FA650",
+      "groundDeep": "#4F7A35",
+      "accent": "#F2C230",
+      "glow": "#FFE89A",
+      "ink": "#2F3B2A",
+      "paper": "#F5F0D5"
+    }
+  },
+  "cover": {
+    "prompt": "the giant golden magic bird perched in a leafy star fruit tree heavy with yellow fruit, the younger brother looking up and smiling, warm afternoon light"
+  },
+  "pages": [
+    {
+      "prompt": "two brothers outside a village, the older brother in front of a big tiled house with rice fields, the younger beside a tiny thatched hut and one star fruit tree",
+      "sentences": [
+        ["Once upon a time, two brothers lived in a quiet village.", "Ngày xửa ngày xưa, ở một ngôi làng yên bình, có hai anh em sống cùng nhau."],
+        ["When they grew up, the older brother took the big house and the rice fields.", "Khi lớn lên, người anh lấy ngôi nhà lớn và những thửa ruộng lúa."],
+        ["The younger brother kept only a small hut and an old star fruit tree.", "Người em chỉ giữ một túp lều nhỏ và một cây khế già."]
+      ]
+    },
+    {
+      "prompt": "the younger brother watering the star fruit tree, golden fruit everywhere, the magic bird landing in the branches",
+      "sentences": [
+        ["The younger brother cared for the tree every day, and it grew sweet, golden fruit.", "Ngày nào người em cũng chăm cây, và cây khế ra những quả ngọt vàng ươm."],
+        ["One morning, a huge, beautiful bird flew down and began to eat the star fruit.", "Một buổi sáng, có một con chim lớn rất đẹp bay xuống ăn khế."]
+      ]
+    },
+    {
+      "prompt": "the younger brother talking politely to the giant bird, the bird bending its head kindly toward him",
+      "sentences": [
+        ["“Dear bird, this tree is all I have,” the younger brother said softly.", "Người em nhẹ nhàng nói: “Chim ơi, nhà tôi chỉ có cây khế này thôi.”"],
+        ["The bird answered, “Eat one fruit, pay back with gold. Sew a bag three hands long to carry it home.”", "Chim đáp: “Ăn một quả, trả cục vàng, may túi ba gang, mang đi mà đựng.”"]
+      ]
+    },
+    {
+      "prompt": "the younger brother riding on the bird's back over a blue sea toward a small island glittering with gold, holding a small cloth bag",
+      "sentences": [
+        ["The younger brother sewed a small bag, just as the bird said.", "Người em may một chiếc túi nhỏ, đúng ba gang như lời chim dặn."],
+        ["The bird carried him over the sea to an island that sparkled with gold.", "Chim chở cậu bay qua biển, tới một hòn đảo lấp lánh vàng."],
+        ["He filled his little bag, thanked the bird, and flew home happily.", "Cậu lấy vàng vừa đầy túi nhỏ, cảm ơn chim rồi vui vẻ bay về."]
+      ]
+    },
+    {
+      "prompt": "the younger brother giving rice and gifts to village neighbors in front of a cozy new home, the older brother peeking curiously over a fence",
+      "sentences": [
+        ["He used the gold to help poor neighbors and to build a cozy home.", "Cậu dùng vàng để giúp những người nghèo trong làng và dựng một ngôi nhà ấm cúng."],
+        ["The older brother heard the story and asked to trade his big house for the star fruit tree.", "Người anh nghe chuyện, liền xin đổi ngôi nhà lớn lấy cây khế."]
+      ]
+    },
+    {
+      "prompt": "the older brother on the gold island stuffing an enormous bag, the bird looking worried",
+      "sentences": [
+        ["When the bird came, the older brother sewed a bag that was much too big.", "Khi chim đến, người anh may một chiếc túi to hơn rất nhiều."],
+        ["On the island, he stuffed it so full of gold that the bird could hardly fly.", "Trên đảo, anh nhét vàng đầy ắp đến nỗi chim bay không nổi."]
+      ]
+    },
+    {
+      "prompt": "high over the sea, the older brother opening his hands and golden pieces gently falling into the water, the bird flying steadily, calm not frightening",
+      "sentences": [
+        ["“Your bag is too heavy,” said the bird. “Please let some gold go.”", "Chim nói: “Túi của anh nặng quá. Hãy bỏ bớt vàng đi.”"],
+        ["The older brother opened his hands, and the gold dropped into the sea.", "Người anh buông tay, và vàng rơi hết xuống biển."],
+        ["The bird brought him safely home, and his heart felt lighter.", "Chim đưa anh về nhà an toàn, và anh thấy lòng mình nhẹ nhõm hơn."]
+      ]
+    },
+    {
+      "prompt": "both brothers picking star fruit together under the tree, sharing a basket, the bird resting on a branch at sunset",
+      "sentences": [
+        ["From then on, the two brothers shared what they had and cared for the star fruit tree together.", "Từ đó, hai anh em biết chia sẻ cho nhau và cùng chăm sóc cây khế."],
+        ["And the sweet star fruit was always enough for everyone.", "Và những quả khế ngọt lúc nào cũng đủ cho mọi người."]
+      ]
+    }
+  ]
+}

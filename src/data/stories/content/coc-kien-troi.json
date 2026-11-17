@@ -1,0 +1,112 @@
+{
+  "id": "coc-kien-troi",
+  "title": {
+    "en": "The Little Toad Who Asked the Sky for Rain",
+    "vi": "Cóc Kiện Trời"
+  },
+  "description": {
+    "en": "In a long dry summer, a small toad and his animal friends travel all the way to the sky to politely ask for rain.",
+    "vi": "Trong mùa hạn hán kéo dài, chú cóc nhỏ cùng các bạn muông thú lên tận trời để xin mưa."
+  },
+  "theme": {
+    "en": "Even the smallest friend can be brave, especially when we stand together.",
+    "vi": "Dù nhỏ bé vẫn có thể dũng cảm, nhất là khi chúng ta đồng lòng bên nhau."
+  },
+  "origin": "Vietnamese folk tale Cóc kiện trời, gently adapted so the friends ask politely rather than fight.",
+  "category": "Animal Tale",
+  "ageRange": "3–8 years",
+  "duration": "5 min",
+  "characters": [
+    { "name": "Toad", "look": "small round olive-brown toad with bumpy skin, big determined golden eyes, tiny bamboo staff" },
+    { "name": "friends", "look": "a red crab, a fluffy black bear, an orange tiger with soft stripes, a cloud of fuzzy bees, and a red fox, all cute and rounded" },
+    { "name": "Thunder God", "look": "grumpy but funny cloud spirit with a big drum belt and puffy cheeks" },
+    { "name": "Jade Emperor", "look": "kind old emperor with a white beard, jade-green and gold robe, sitting on a cloud throne" }
+  ],
+  "artDirection": {
+    "mood": "Plucky comic adventure from parched heat to joyful rain.",
+    "setting": "Cracked dry riverbed, a cloud road up to the Jade Emperor's sky palace, then green fields after rain.",
+    "light": "Hot ochre sun on earth; cool lilac and cream cloud light in the sky palace; silver rain.",
+    "motifs": [
+      "little toad with bamboo staff",
+      "giant thunder drum",
+      "cloud palace gates",
+      "silver rain and rainbow"
+    ],
+    "avoid": [
+      "green forest",
+      "scary thunder god",
+      "lightning strikes"
+    ],
+    "palette": {
+      "sky": "#E9B77A",
+      "skyLow": "#F5DDB3",
+      "ground": "#C98A4B",
+      "groundDeep": "#8E5A2E",
+      "accent": "#7C6FB0",
+      "glow": "#F4EFE2",
+      "ink": "#3B2A1E",
+      "paper": "#F5E8D3"
+    }
+  },
+  "cover": {
+    "prompt": "the little toad leading a line of animal friends up a winding path of clouds toward a shining sky palace, dry cracked earth far below"
+  },
+  "pages": [
+    {
+      "prompt": "a dry cracked riverbed under a hot sun, wilted plants, thirsty animals resting in thin shade",
+      "sentences": [
+        ["Long ago, there was a long, dry summer with no rain at all.", "Ngày xửa ngày xưa, có một mùa hè hạn hán kéo dài, trời không mưa một giọt nào."],
+        ["The rivers were empty, and the plants and animals were very thirsty.", "Sông hồ cạn khô, cây cối và muông thú đều khát nước."]
+      ]
+    },
+    {
+      "prompt": "the little toad standing on a rock speaking bravely, a crab, bear, tiger, bees and fox lining up behind him",
+      "sentences": [
+        ["A little toad said, “Let's go up to the sky and ask the Jade Emperor for rain.”", "Một chú cóc nhỏ nói: “Chúng ta hãy lên trời xin Ngọc Hoàng làm mưa.”"],
+        ["Along the way, a crab, a bear, a tiger, some bees, and a fox came along too.", "Dọc đường, cua, gấu, cọp, ong và cáo cũng xin đi theo."]
+      ]
+    },
+    {
+      "prompt": "at the cloud palace gates, the tiny toad beating a giant drum with his bamboo staff, sound rings drawn as soft circles",
+      "sentences": [
+        ["When they reached the sky palace, the toad bravely beat the big drum.", "Đến cửa nhà trời, cóc dũng cảm đánh ba hồi trống thật to."],
+        ["Boom, boom, boom! The sound echoed through the clouds.", "Tùng, tùng, tùng! Tiếng trống vang khắp các tầng mây."]
+      ]
+    },
+    {
+      "prompt": "the puffy-cheeked Thunder God grumbling at the gate while bees buzz around him playfully and the animal friends stand shoulder to shoulder",
+      "sentences": [
+        ["The Thunder God came out grumbling, but the bees buzzed and the friends stood close together.", "Thần Sấm ra cửa càu nhàu, nhưng đàn ong bay vù vù và các bạn đứng sát bên nhau."],
+        ["Seeing them so united, the Thunder God took them to see the Jade Emperor.", "Thấy mọi người đồng lòng, Thần Sấm đành dẫn cả nhóm vào gặp Ngọc Hoàng."]
+      ]
+    },
+    {
+      "prompt": "the little toad bowing politely before the kind Jade Emperor on his cloud throne, friends bowing behind",
+      "sentences": [
+        ["The little toad bowed and said, “Your Majesty, the earth has had no rain for so long.”", "Cóc nhỏ cúi chào rồi thưa: “Muôn tâu Ngọc Hoàng, đã lâu lắm hạ giới không có mưa.”"],
+        ["“The plants are dry, and the animals are thirsty, so please send us rain.”", "“Cây cối khô héo, muông thú khát nước, xin Ngọc Hoàng cho mưa xuống.”"]
+      ]
+    },
+    {
+      "prompt": "the Jade Emperor smiling in surprise, a gentle Rain God pouring silver rain from a cloud jar",
+      "sentences": [
+        ["The Jade Emperor was surprised that such a small toad was so brave.", "Ngọc Hoàng ngạc nhiên vì một chú cóc nhỏ bé mà dũng cảm đến thế."],
+        ["He called the Rain God, and soon cool rain began to fall.", "Ngài cho gọi Thần Mưa, và chẳng bao lâu, những hạt mưa mát lành rơi xuống."]
+      ]
+    },
+    {
+      "prompt": "the animal friends cheering and dancing home along a cloud path through soft rain, the toad leading with a big smile",
+      "sentences": [
+        ["“From now on,” said the Jade Emperor, “when the toad grinds his teeth, I will send rain.”", "Ngọc Hoàng phán: “Từ nay, hễ cóc nghiến răng là trời sẽ cho mưa xuống.”"],
+        ["The friends cheered and hurried home through the falling rain.", "Các bạn reo hò rồi vui vẻ trở về dưới làn mưa."]
+      ]
+    },
+    {
+      "prompt": "a full blue river and green fields after rain, the little toad sitting happily on a lily pad, a rainbow overhead",
+      "sentences": [
+        ["The rivers filled up, and the fields turned green again.", "Sông hồ lại đầy nước, ruộng đồng lại xanh tươi."],
+        ["That is why people say, “The toad is the Sky's uncle.”", "Vì thế người ta vẫn nói: “Con cóc là cậu ông trời.”"]
+      ]
+    }
+  ]
+}

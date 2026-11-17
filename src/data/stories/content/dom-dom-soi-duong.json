@@ -1,0 +1,114 @@
+{
+  "id": "dom-dom-soi-duong",
+  "title": {
+    "en": "The Little Firefly Lights the Way",
+    "vi": "Đom Đóm Nhỏ Soi Đường"
+  },
+  "description": {
+    "en": "Mơ the little firefly has a tiny, flickering light. One night, a lost hedgehog needs help finding the way home.",
+    "vi": "Đom đóm Mơ có ánh đèn nhỏ xíu, lúc tỏ lúc mờ. Một đêm, Nhím Con bị lạc và cần người soi đường về nhà."
+  },
+  "theme": {
+    "en": "A calm, steady light can guide a friend home.",
+    "vi": "Bình tĩnh và kiên nhẫn giúp ta soi đường cho bạn."
+  },
+  "origin": "Original StoryMoon story, written in Vietnamese with an English companion text.",
+  "category": "Bedtime",
+  "ageRange": "4–8 years",
+  "duration": "5 min",
+  "characters": [
+    { "name": "Mơ", "look": "tiny round firefly with soft green-gold glowing tail, big dark friendly eyes, translucent wings" },
+    { "name": "Little Hedgehog (Nhím Con)", "look": "small round hedgehog with soft brown spines, cream face, pink nose and a little leaf tucked on his back" },
+    { "name": "Mother Hedgehog (Nhím Mẹ)", "look": "larger hedgehog with grey-brown spines and a kind face, standing under a banana tree" }
+  ],
+  "artDirection": {
+    "mood": "Hushed, cosy village night; a small warm glow growing steady in the dark.",
+    "setting": "Edge of a Vietnamese village bamboo grove at night: tall bamboo stems, an old stone well, a little wooden bridge over a ditch, banana leaves near a hedgehog burrow.",
+    "light": "Deep teal-green night, the only warm light is the firefly's green-gold glow and faint distant rice-field sparkles.",
+    "motifs": [
+      "tall bamboo stems with crisp leaves",
+      "green-gold firefly glow trails",
+      "old round stone well",
+      "small wooden plank bridge",
+      "broad banana leaves"
+    ],
+    "avoid": [
+      "scary shadows or eyes in the dark",
+      "bright moon dominating the scene",
+      "insect anatomy close-ups"
+    ],
+    "palette": {
+      "sky": "#0F2A2E",
+      "skyLow": "#1F4A45",
+      "ground": "#2E4A2A",
+      "groundDeep": "#152515",
+      "accent": "#B8D45A",
+      "glow": "#E8F59A",
+      "ink": "#0A1514",
+      "paper": "#EEF1DC"
+    }
+  },
+  "cover": {
+    "prompt": "a tiny glowing firefly leading a small hedgehog along a path at the edge of a bamboo grove at night, a soft green-gold trail of light"
+  },
+  "pages": [
+    {
+      "prompt": "a tiny firefly resting on a bamboo leaf at the edge of a quiet bamboo grove at dusk, its little light flickering faintly",
+      "sentences": [
+        ["At the edge of a bamboo grove lived a little firefly named Mơ.", "Ở bìa rừng tre, có một chú đom đóm nhỏ tên là Mơ."],
+        ["Mơ's light was still very small, and it flickered on and off.", "Ánh đèn của Mơ còn nhỏ xíu, lúc tỏ lúc mờ."]
+      ]
+    },
+    {
+      "prompt": "many big fireflies glowing over dark rice fields, the little firefly watching from a bamboo leaf in the foreground",
+      "sentences": [
+        ["Every evening, the big fireflies twinkled over the rice fields.", "Mỗi tối, các anh chị đom đóm bay lượn trên cánh đồng lúa, sáng lấp lánh."],
+        ["Mơ watched them and wished, “When will my light shine like that?”", "Mơ nhìn theo và ước: “Bao giờ đèn của mình mới sáng được như thế nhỉ?”"]
+      ]
+    },
+    {
+      "prompt": "a small hedgehog sitting alone among bamboo roots at night, looking a little worried, the firefly flying down towards him",
+      "sentences": [
+        ["One night, Mơ heard a tiny sniffle near the bamboo roots.", "Một đêm, Mơ nghe thấy tiếng sụt sịt khe khẽ bên gốc tre."],
+        ["It was Little Hedgehog, who had wandered too far and lost his way.", "Thì ra là Nhím Con, mải chơi đi xa nên bị lạc đường."],
+        ["“It's so dark, I can't find my way home,” he whispered.", "“Tối quá, tớ không tìm được đường về nhà,” Nhím Con thì thầm."]
+      ]
+    },
+    {
+      "prompt": "the firefly zipping about in quick zigzags with a sputtering light, the hedgehog peering after it, bamboo stems around",
+      "sentences": [
+        ["“I'll light the way for you!” said Mơ.", "“Để tớ soi đường cho cậu nhé!” Mơ nói."],
+        ["But Mơ hurried so much that her little light sputtered and blinked.", "Nhưng Mơ vội vàng quá, ánh đèn nhỏ cứ chập chờn mãi."]
+      ]
+    },
+    {
+      "prompt": "the firefly hovering still in mid-air with eyes closed, taking a slow breath, its glow becoming a calm round warm light",
+      "sentences": [
+        ["Mơ stopped and took a slow, deep breath, in and out.", "Mơ dừng lại, hít vào thật chậm, rồi thở ra thật nhẹ."],
+        ["Her light grew calm and steady, like a tiny warm lantern.", "Ánh đèn dịu lại và sáng đều, như một chiếc đèn lồng nhỏ ấm áp."]
+      ]
+    },
+    {
+      "prompt": "the firefly leading the hedgehog past an old round stone well and over a small wooden plank bridge, a soft green-gold glow on the path",
+      "sentences": [
+        ["Slowly, slowly, Mơ flew ahead, and Little Hedgehog followed the gentle glow.", "Chầm chậm, chầm chậm, Mơ bay phía trước, Nhím Con lon ton theo sau."],
+        ["Past the old stone well and over the little wooden bridge, they went together.", "Qua cái giếng đá cũ, qua chiếc cầu gỗ nhỏ, hai bạn cùng đi."]
+      ]
+    },
+    {
+      "prompt": "Mother Hedgehog waiting under broad banana leaves by a cosy burrow, Little Hedgehog running into her arms, the firefly glowing above",
+      "sentences": [
+        ["At last, they saw Mother Hedgehog waiting under the banana tree.", "Cuối cùng, hai bạn thấy Nhím Mẹ đang đứng chờ dưới gốc chuối."],
+        ["Little Hedgehog ran into her arms, and everyone smiled.", "Nhím Con chạy ào vào lòng mẹ, ai cũng mỉm cười."]
+      ]
+    },
+    {
+      "prompt": "the little firefly flying home alone over the quiet bamboo grove with a soft steady glow, settling onto a bamboo leaf to sleep",
+      "sentences": [
+        ["On the way home, Mơ's light glowed softly and steadily.", "Trên đường về, ánh đèn của Mơ tỏa sáng dịu dàng và đều đặn."],
+        ["It was still a small light, but tonight it was just enough.", "Đèn của Mơ vẫn nhỏ thôi, nhưng đêm nay, nó vừa đủ để soi một lối về."],
+        ["“Good night, bamboo grove,” Mơ whispered, and curled up to sleep.", "“Chúc rừng tre ngủ ngon,” Mơ thì thầm, rồi cuộn mình đi ngủ."]
+      ]
+    }
+  ]
+}

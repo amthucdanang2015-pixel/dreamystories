@@ -1,0 +1,112 @@
+{
+  "id": "mai-an-tiem",
+  "title": {
+    "en": "Mai An Tiêm and the Watermelon",
+    "vi": "Sự Tích Quả Dưa Hấu"
+  },
+  "description": {
+    "en": "Sent to a faraway island with almost nothing, Mai An Tiêm and his family work hard, plant a few small seeds, and grow the first sweet watermelons.",
+    "vi": "Bị đưa ra hòn đảo xa gần như chẳng có gì, Mai An Tiêm cùng gia đình chăm chỉ làm lụng, gieo mấy hạt nhỏ và trồng nên những quả dưa hấu ngọt đầu tiên."
+  },
+  "theme": {
+    "en": "Hard work and hope can turn hard times into something sweet.",
+    "vi": "Chăm chỉ và hy vọng có thể biến khó khăn thành điều ngọt ngào."
+  },
+  "origin": "Vietnamese legend of Mai An Tiêm and the origin of the watermelon.",
+  "category": "Folk Tale",
+  "ageRange": "3–8 years",
+  "duration": "5 min",
+  "characters": [
+    { "name": "Mai An Tiêm", "look": "strong young Vietnamese man, short hair under a headband, simple sleeveless brown tunic, determined kind eyes" },
+    { "name": "An Tiêm's wife", "look": "young woman with a long braid, light blue áo, warm smile" },
+    { "name": "children", "look": "a small boy and girl in simple clothes, barefoot" },
+    { "name": "king", "look": "elderly king in a yellow robe" }
+  ],
+  "artDirection": {
+    "mood": "Sunny resilience; hard work turning a bare island into a home.",
+    "setting": "Palace garden, then a wide sandy island with rocks, driftwood hut, open sea and trading boats.",
+    "light": "Bright tropical sun, coral sunset, glittering sea.",
+    "motifs": [
+      "striped watermelons with red flesh",
+      "white seabirds",
+      "driftwood hut",
+      "wide cerulean sea"
+    ],
+    "avoid": [
+      "forest",
+      "storms",
+      "loneliness shown as despair"
+    ],
+    "palette": {
+      "sky": "#7CC3E3",
+      "skyLow": "#FBD9B0",
+      "ground": "#EBD3A0",
+      "groundDeep": "#C9A66E",
+      "accent": "#D94A3D",
+      "glow": "#FFE3A8",
+      "ink": "#1E3A4C",
+      "paper": "#EEF5F3"
+    }
+  },
+  "cover": {
+    "prompt": "Mai An Tiêm and his family on a sunny island beach sitting beside a pile of big striped watermelons, one cut open showing bright red flesh, seabirds overhead"
+  },
+  "pages": [
+    {
+      "prompt": "young Mai An Tiêm in a palace garden speaking thoughtfully, holding a hoe",
+      "sentences": [
+        ["Long ago, a young man named Mai An Tiêm lived at the king's palace.", "Ngày xưa, có một chàng trai tên là Mai An Tiêm sống trong cung vua."],
+        ["He believed that everything we have comes from our own hard work.", "Chàng tin rằng mọi thứ mình có đều nhờ vào sức lao động của chính mình."]
+      ]
+    },
+    {
+      "prompt": "a small boat leaving An Tiêm's family on a bare sandy island with rocks and wide blue sea",
+      "sentences": [
+        ["The king did not like these words, so he sent An Tiêm and his family to a faraway island.", "Nhà vua không bằng lòng, liền đày An Tiêm và gia đình ra một hòn đảo xa xôi."],
+        ["The island had only sand, rocks, and the wide blue sea.", "Trên đảo chỉ có cát, đá và biển xanh mênh mông."]
+      ]
+    },
+    {
+      "prompt": "An Tiêm building a little driftwood hut, his wife and children collecting shells and planting a tiny garden",
+      "sentences": [
+        ["An Tiêm did not give up, so he built a little hut and caught fish to eat.", "An Tiêm không nản lòng, chàng dựng một túp lều nhỏ và bắt cá để ăn."],
+        ["His wife and children gathered shells and planted small gardens.", "Vợ con chàng nhặt vỏ sò và trồng những luống rau nhỏ."]
+      ]
+    },
+    {
+      "prompt": "a flock of white birds flying over the beach dropping little black seeds, An Tiêm kneeling to pick them up curiously",
+      "sentences": [
+        ["One day, a flock of birds flew by and dropped some black seeds on the sand.", "Một hôm, có đàn chim bay qua, thả xuống bãi cát mấy hạt màu đen."],
+        ["An Tiêm thought, “If the birds can eat it, people can eat it too.”", "An Tiêm nghĩ: “Chim ăn được thì người cũng ăn được.”"]
+      ]
+    },
+    {
+      "prompt": "An Tiêm watering sprouts in sandy soil with a coconut-shell scoop, then long green vines with big round striped melons",
+      "sentences": [
+        ["He planted the seeds and watered them every day.", "Chàng gieo những hạt ấy và tưới nước mỗi ngày."],
+        ["Soon, long green vines grew big round fruits with dark green stripes.", "Chẳng bao lâu, dây leo xanh mướt đã cho ra những quả tròn to, vỏ xanh sọc thẫm."]
+      ]
+    },
+    {
+      "prompt": "the family sitting together cutting open a watermelon, bright red juicy slices, children laughing",
+      "sentences": [
+        ["Inside, the fruit was bright red, juicy, and sweet.", "Bổ ra, ruột quả đỏ tươi, mọng nước và ngọt lịm."],
+        ["They called it dưa hấu, the watermelon.", "Cả nhà gọi đó là quả dưa hấu."]
+      ]
+    },
+    {
+      "prompt": "An Tiêm setting watermelons afloat on gentle waves, later a trading boat arriving with sacks of rice and rolls of cloth",
+      "sentences": [
+        ["An Tiêm carved his name on some melons and set them floating on the sea.", "An Tiêm khắc tên mình lên vỏ dưa rồi thả trôi ra biển."],
+        ["Sailors found them and came to the island to trade rice and cloth for watermelons.", "Thuyền buôn vớt được, liền tìm ra đảo đổi gạo, đổi vải lấy dưa."]
+      ]
+    },
+    {
+      "prompt": "the king welcoming An Tiêm's family back at the palace gate, a basket of watermelons offered as a gift",
+      "sentences": [
+        ["When the king heard the story, he understood and welcomed An Tiêm's family home.", "Nghe chuyện, nhà vua hiểu ra và cho đón gia đình An Tiêm trở về."],
+        ["And that is how the sweet watermelon came to Vietnam.", "Và từ đó, quả dưa hấu ngọt lành có mặt trên đất Việt."]
+      ]
+    }
+  ]
+}

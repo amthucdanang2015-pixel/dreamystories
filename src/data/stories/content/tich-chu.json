@@ -1,0 +1,113 @@
+{
+  "id": "tich-chu",
+  "title": {
+    "en": "Tích Chu and Grandma Bird",
+    "vi": "Sự Tích Tích Chu"
+  },
+  "description": {
+    "en": "When a busy boy forgets his loving grandma, she turns into a little bird, and he travels far to bring her back with magic spring water.",
+    "vi": "Khi cậu bé mải chơi quên mất người bà yêu thương, bà hóa thành chim nhỏ, và cậu phải đi thật xa lấy nước suối tiên để đưa bà trở về."
+  },
+  "theme": {
+    "en": "We show love to our family by caring for them every day.",
+    "vi": "Ta thể hiện tình yêu với gia đình bằng cách chăm sóc mọi người mỗi ngày."
+  },
+  "origin": "Vietnamese folk tale Sự tích Tích Chu.",
+  "category": "Family Tale",
+  "ageRange": "3–8 years",
+  "duration": "5 min",
+  "characters": [
+    { "name": "Tích Chu", "look": "Vietnamese boy about 7, short messy black hair, light blue shirt and brown shorts, bare feet" },
+    { "name": "Grandma", "look": "small gentle grandmother with white hair in a bun, black khăn headscarf, brown áo bà ba, warm wrinkled smile" },
+    { "name": "Grandma bird", "look": "little soft grey-brown bird with a white head tuft like Grandma's bun and kind dark eyes" },
+    { "name": "fairy", "look": "kind fairy in flowing pale pink and white robes, glowing softly, holding a lotus" }
+  ],
+  "artDirection": {
+    "mood": "Tender and intimate; love, regret and reunion, gentle throughout.",
+    "setting": "A small thatched cottage interior and porch, kite fields, a far mountain spring.",
+    "light": "Plum dusk and amber oil-lamp light; a soft fairy glow; starry violet night.",
+    "motifs": [
+      "grey bird with a white tuft",
+      "oil lamp",
+      "water gourd",
+      "bamboo bed and hammock",
+      "kites"
+    ],
+    "avoid": [
+      "sickness shown graphically",
+      "dark forest",
+      "cold palettes"
+    ],
+    "palette": {
+      "sky": "#4A3B5C",
+      "skyLow": "#C78F8A",
+      "ground": "#6F7F5A",
+      "groundDeep": "#3E4A34",
+      "accent": "#E8B86B",
+      "glow": "#FBE3B0",
+      "ink": "#231B2C",
+      "paper": "#F2E9EE"
+    }
+  },
+  "cover": {
+    "prompt": "Tích Chu hugging his grandmother on a bamboo bed under a starry night sky, a little grey bird feather floating nearby, warm lamp light from their cottage"
+  },
+  "pages": [
+    {
+      "prompt": "Grandma rocking little Chu in a hammock inside a cozy thatched cottage, a bowl of rice nearby, soft lullaby feel",
+      "sentences": [
+        ["Long ago, a little boy named Tích Chu lived with his loving grandmother.", "Ngày xưa, có một cậu bé tên là Tích Chu sống cùng người bà rất mực yêu thương cậu."],
+        ["Grandma gave Chu the best food and sang him to sleep every night.", "Bà dành cho Chu những món ngon nhất và đêm nào cũng hát ru cậu ngủ."]
+      ]
+    },
+    {
+      "prompt": "older Chu running off to play kites with friends in a field, Grandma alone in the doorway watching",
+      "sentences": [
+        ["As Chu grew bigger, he spent all day playing with his friends.", "Khi lớn hơn, Chu mải chơi với bạn bè suốt cả ngày."],
+        ["He forgot that Grandma was home alone.", "Cậu quên mất bà ở nhà một mình."]
+      ]
+    },
+    {
+      "prompt": "Grandma lying on a bamboo bed on a hot day reaching toward an empty water jug, the doorway bright and empty",
+      "sentences": [
+        ["One hot day, Grandma felt sick and very thirsty.", "Một ngày nắng nóng, bà bị ốm và khát nước lắm."],
+        ["“Chu, please bring me some water,” she called softly, but Chu was far away playing.", "Bà gọi khẽ: “Chu ơi, cho bà xin ngụm nước,” nhưng Chu đang mải chơi ở xa."]
+      ]
+    },
+    {
+      "prompt": "a little grey bird with a white tuft flying out of the cottage window toward a soft evening sky",
+      "sentences": [
+        ["Grandma turned into a little bird and flew out the window.", "Bà hóa thành một chú chim nhỏ, bay ra ngoài cửa sổ."],
+        ["“Chu, Chu,” the bird sang as it flew toward the sky.", "Chim kêu “Chu… Chu…” rồi bay về phía bầu trời."]
+      ]
+    },
+    {
+      "prompt": "Chu crying in the empty cottage doorway, a glowing kind fairy appearing beside him and pointing to a far mountain",
+      "sentences": [
+        ["When Chu came home, he cried, “Grandma, please come back, and I will take care of you!”", "Chu về nhà, khóc òa: “Bà ơi, bà về đi, cháu sẽ chăm sóc bà!”"],
+        ["A kind fairy appeared and said, “Bring her water from the spring on the far mountain.”", "Một bà tiên hiện ra và bảo: “Cháu hãy đi lấy nước suối tiên trên ngọn núi xa.”"]
+      ]
+    },
+    {
+      "prompt": "Chu walking bravely through a forest and over green hills, then kneeling at a sparkling spring filling a small gourd",
+      "sentences": [
+        ["Chu walked through forests and climbed over hills without giving up.", "Chu băng qua rừng, vượt qua bao ngọn đồi mà không hề nản lòng."],
+        ["At last, he found the sparkling spring and filled a little gourd.", "Cuối cùng, cậu tìm thấy dòng suối lấp lánh và múc đầy một bầu nước nhỏ."]
+      ]
+    },
+    {
+      "prompt": "Chu gently offering water from the gourd to the little bird on a branch, the bird glowing as it turns back into Grandma",
+      "sentences": [
+        ["Chu found the little bird and gently offered it the fresh water.", "Chu tìm thấy chú chim nhỏ và nhẹ nhàng mời chim uống nước."],
+        ["The bird drank, and right away, it became Grandma again.", "Chim vừa uống xong, lập tức hóa lại thành bà."]
+      ]
+    },
+    {
+      "prompt": "Chu and Grandma sitting together on the porch at night singing under the stars, a cup of tea between them",
+      "sentences": [
+        ["Chu hugged Grandma tight and promised to always look after her.", "Chu ôm chầm lấy bà và hứa sẽ luôn chăm sóc bà."],
+        ["Every evening after that, they sat together and sang under the stars.", "Từ đó, tối nào hai bà cháu cũng ngồi bên nhau hát dưới bầu trời sao."]
+      ]
+    }
+  ]
+}

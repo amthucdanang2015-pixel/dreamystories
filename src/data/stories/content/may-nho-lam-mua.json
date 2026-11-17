@@ -1,0 +1,177 @@
+{
+  "id": "may-nho-lam-mua",
+  "title": {
+    "en": "The Shy Little Rain Cloud",
+    "vi": "Đám Mây Nhỏ Làm Mưa"
+  },
+  "description": {
+    "en": "Bông is a shy little cloud who thinks her rain is too small to matter, until a thirsty tea hill needs her.",
+    "vi": "Bông là đám mây nhỏ nhút nhát, cứ nghĩ mưa của mình bé quá chẳng giúp được ai, cho đến ngày đồi chè khát nước."
+  },
+  "theme": {
+    "en": "Gentle help still helps.",
+    "vi": "Giúp đỡ nhẹ nhàng vẫn là giúp đỡ."
+  },
+  "origin": "Original StoryMoon story, written in Vietnamese with an English companion text.",
+  "category": "Bedtime",
+  "ageRange": "4–8 years",
+  "duration": "5 min",
+  "characters": [
+    {
+      "name": "Bông",
+      "look": "small round cloud, soft white with a faint lavender blush, sleepy half-moon eyes and rosy cheeks"
+    },
+    {
+      "name": "the Breeze (Chị Gió)",
+      "look": "a ribbon of pale mint air with a few swirling tea leaves, kind smile, no body"
+    },
+    {
+      "name": "the tiny sprout",
+      "look": "a two-leaf green sprout with a round dewdrop head between rows of tea bushes"
+    }
+  ],
+  "artDirection": {
+    "mood": "Airy, soft and hopeful; a quiet afternoon turning into a fresh, rain-washed evening.",
+    "setting": "Rolling terraced tea hills in Vietnam's highlands: neat rounded rows of tea bushes, wildflowers on the slopes, a winding red-earth path, distant blue mountains.",
+    "light": "Hazy summer daylight, then a soft silver drizzle, ending in a pastel sunset with a faint rainbow.",
+    "motifs": [
+      "rounded rows of tea bushes",
+      "fine silver drizzle lines",
+      "drooping then lifted tea buds",
+      "pastel rainbow over the hill",
+      "lavender-tinted cloud"
+    ],
+    "avoid": [
+      "dark storm clouds that look threatening",
+      "lightning",
+      "cracked desert imagery"
+    ],
+    "palette": {
+      "sky": "#A9C8E0",
+      "skyLow": "#E6EEF2",
+      "ground": "#7FA36B",
+      "groundDeep": "#4E7347",
+      "accent": "#9A8FC2",
+      "glow": "#FFF1CC",
+      "ink": "#2B3442",
+      "paper": "#F2F5F4"
+    }
+  },
+  "cover": {
+    "prompt": "a small shy lavender-white cloud peeking over a green terraced tea hill, a fine silver drizzle falling, a pastel rainbow behind"
+  },
+  "pages": [
+    {
+      "prompt": "a small shy cloud half-hidden behind the top of a terraced tea hill, other clouds drifting high above",
+      "sentences": [
+        [
+          "High above a green tea hill floated a little cloud named Bông.",
+          "Trên đồi chè xanh, có một đám mây nhỏ tên là Bông."
+        ],
+        [
+          "Bông was very shy, and often hid behind the hilltop.",
+          "Bông rất nhút nhát, hay nấp sau đỉnh đồi."
+        ]
+      ]
+    },
+    {
+      "prompt": "big grey-blue clouds pouring heavy rain over far mountains, the little cloud watching from a distance with wide eyes",
+      "sentences": [
+        [
+          "The big clouds rumbled and poured down heavy rain.",
+          "Các bác mây lớn thường ầm ầm đổ những cơn mưa thật to."
+        ],
+        [
+          "“I could never be that loud,” Bông thought quietly.",
+          "Bông khẽ nghĩ: “Mình chẳng bao giờ ầm ĩ được như thế.”"
+        ]
+      ]
+    },
+    {
+      "prompt": "a dry, sun-faded tea hill, drooping tea buds and bowed wildflowers, a tiny sprout looking up at the sky",
+      "sentences": [
+        [
+          "One hot summer, the tea hill grew very dry.",
+          "Một mùa hè nắng gắt, đồi chè khô cong."
+        ],
+        [
+          "The little tea buds drooped, and the wildflowers bowed their heads.",
+          "Những búp chè non rũ xuống, hoa dại cúi đầu."
+        ],
+        [
+          "A tiny sprout looked up and whispered, “I'm so thirsty.”",
+          "Một mầm cây bé xíu ngước lên thì thầm: “Tớ khát quá.”"
+        ]
+      ]
+    },
+    {
+      "prompt": "the little cloud hovering above the hill, hesitating, looking down at the sprout with a worried face",
+      "sentences": [
+        [
+          "Bông wanted to help, but she was afraid.",
+          "Bông muốn giúp lắm, nhưng lại sợ."
+        ],
+        [
+          "“What if my rain is too small?” she wondered.",
+          "“Nhỡ mưa của mình nhỏ quá thì sao?” Bông băn khoăn."
+        ]
+      ]
+    },
+    {
+      "prompt": "a ribbon of pale mint breeze swirling tea leaves around the little cloud, speaking kindly to her",
+      "sentences": [
+        [
+          "A gentle breeze came by and said, “Small rain is still rain.”",
+          "Chị Gió nhẹ nhàng bay qua, bảo rằng: “Mưa nhỏ thì vẫn là mưa mà em.”"
+        ],
+        [
+          "“Just begin softly, one drop at a time.”",
+          "“Cứ bắt đầu thật khẽ, từng giọt một thôi.”"
+        ]
+      ]
+    },
+    {
+      "prompt": "the little cloud releasing a fine silver drizzle over the tea rows, first single drops then a soft misty curtain",
+      "sentences": [
+        [
+          "So Bông took a breath and let go of one little drop. Pit!",
+          "Thế là Bông hít một hơi, thả xuống một giọt nước nhỏ. Tách!"
+        ],
+        [
+          "Then another, and another, soft as a whisper.",
+          "Rồi giọt nữa, giọt nữa, nhẹ như một lời thì thầm."
+        ],
+        [
+          "A fine, gentle rain fell over the whole hill.",
+          "Một cơn mưa bụi dịu dàng rắc khắp ngọn đồi."
+        ]
+      ]
+    },
+    {
+      "prompt": "fresh rain-washed tea bushes with lifted glossy leaves, wildflowers open again, the sprout stretching up happily",
+      "sentences": [
+        [
+          "The tea buds lifted their leaves, and the flowers opened again.",
+          "Búp chè vươn lá, hoa dại lại nở tươi."
+        ],
+        [
+          "The tiny sprout stretched up and said, “Thank you, Bông!”",
+          "Mầm cây nhỏ vươn vai: “Cảm ơn Bông nhé!”"
+        ]
+      ]
+    },
+    {
+      "prompt": "a pastel sunset over the tea hills with a faint rainbow, the little cloud floating openly in the sky, smiling",
+      "sentences": [
+        [
+          "As the sun went down, a soft rainbow appeared over the hill.",
+          "Khi mặt trời lặn, một cầu vồng mờ hiện lên trên đồi."
+        ],
+        [
+          "That evening, Bông did not hide. She floated gently, feeling light and happy.",
+          "Tối hôm ấy, Bông không nấp nữa. Bông lững lờ trôi, lòng nhẹ tênh và vui vui."
+        ]
+      ]
+    }
+  ]
+}

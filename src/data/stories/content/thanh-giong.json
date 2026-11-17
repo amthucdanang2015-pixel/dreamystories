@@ -1,0 +1,112 @@
+{
+  "id": "thanh-giong",
+  "title": {
+    "en": "Gióng, the Boy Who Grew Tall",
+    "vi": "Thánh Gióng"
+  },
+  "description": {
+    "en": "A quiet little boy speaks for the first time when his land needs help, and the whole village feeds him until he grows as tall as a tree.",
+    "vi": "Cậu bé ít nói bỗng cất tiếng khi đất nước cần giúp đỡ, và cả làng góp gạo nuôi cậu lớn cao như cây cổ thụ."
+  },
+  "theme": {
+    "en": "Courage grows with the love and help of everyone around us.",
+    "vi": "Lòng dũng cảm lớn lên nhờ tình thương và sự giúp đỡ của mọi người."
+  },
+  "origin": "Vietnamese legend of Thánh Gióng of Phù Đổng village, gently adapted with no battle detail.",
+  "category": "Legend",
+  "ageRange": "3–8 years",
+  "duration": "5 min",
+  "characters": [
+    { "name": "Gióng", "look": "little Vietnamese boy with a round face and a tuft of hair, red sash; later a giant friendly young man in shining iron armor" },
+    { "name": "Gióng's mother", "look": "kind elderly village woman, brown áo, black khăn headscarf" },
+    { "name": "messenger", "look": "royal messenger in a blue tunic with a small drum" },
+    { "name": "iron horse", "look": "large iron horse with a gentle face, glowing warm orange breath like embers" }
+  ],
+  "artDirection": {
+    "mood": "Heroic, bronze-age energy; growth and courage, never violence.",
+    "setting": "Phù Đổng village of red earth and bamboo hedges, wide hills, Sóc Sơn mountain.",
+    "light": "Stormy slate sky broken by bronze-gold sunlight; ember glow from the iron horse.",
+    "motifs": [
+      "Đông Sơn bronze-drum sun star",
+      "golden bamboo",
+      "iron horse breathing golden light",
+      "red laterite earth"
+    ],
+    "avoid": [
+      "weapons striking anyone",
+      "blood or fire damage",
+      "soft pastel forest"
+    ],
+    "palette": {
+      "sky": "#4B4F63",
+      "skyLow": "#C9774A",
+      "ground": "#A9472F",
+      "groundDeep": "#6E2B1E",
+      "accent": "#D9B04A",
+      "glow": "#F2C46B",
+      "ink": "#2A1C17",
+      "paper": "#F3E3D6"
+    }
+  },
+  "cover": {
+    "prompt": "tall young Gióng on his glowing iron horse on a green hill, holding a stalk of golden bamboo, villagers waving from a bamboo-hedged village below, morning sky"
+  },
+  "pages": [
+    {
+      "prompt": "an elderly couple in a thatched house in Phù Đổng village with a small quiet boy lying on a bamboo mat, looking at the ceiling",
+      "sentences": [
+        ["In the village of Phù Đổng, an old couple had a little boy named Gióng.", "Ở làng Phù Đổng, có hai ông bà già sinh được một cậu bé tên là Gióng."],
+        ["Gióng was three years old, but he had not yet spoken a word.", "Gióng đã lên ba mà vẫn chưa biết nói câu nào."]
+      ]
+    },
+    {
+      "prompt": "a royal messenger beating a small drum in the village lane, little Gióng sitting up and speaking to his surprised mother",
+      "sentences": [
+        ["One day, the king sent a messenger to find someone brave to protect the land.", "Một hôm, nhà vua cho sứ giả đi khắp nơi tìm người tài giỏi giúp nước."],
+        ["Suddenly, Gióng spoke: “Mother, please invite the messenger in.”", "Bỗng nhiên, Gióng cất tiếng nói: “Mẹ ơi, mẹ mời sứ giả vào đây.”"]
+      ]
+    },
+    {
+      "prompt": "tiny Gióng speaking confidently to the kneeling messenger inside the house, mother watching amazed",
+      "sentences": [
+        ["Gióng told the messenger, “Please ask the king for an iron horse, an iron whip, and iron armor.”", "Gióng bảo sứ giả: “Ông về tâu vua sắm cho ta một con ngựa sắt, một chiếc roi sắt và một tấm áo giáp sắt.”"],
+        ["The messenger hurried back to the palace with the news.", "Sứ giả vội vàng trở về cung tâu với vua."]
+      ]
+    },
+    {
+      "prompt": "villagers bringing baskets of rice, vegetables and fruit to Gióng's house, Gióng growing bigger and eating happily",
+      "sentences": [
+        ["From then on, Gióng grew bigger and bigger every day.", "Từ đó, Gióng lớn nhanh như thổi."],
+        ["The whole village shared rice and vegetables to help feed him.", "Cả làng góp gạo, góp rau nuôi cậu bé."]
+      ]
+    },
+    {
+      "prompt": "Gióng stretching up to stand as tall as a tree beside the iron horse, the horse breathing out a warm golden glow, villagers cheering",
+      "sentences": [
+        ["When the iron horse arrived, Gióng stretched and stood up as tall as a tree.", "Khi ngựa sắt được mang tới, Gióng vươn vai, đứng dậy cao lớn như cây cổ thụ."],
+        ["He jumped on the horse, and it breathed out a bright, warm glow.", "Chàng nhảy lên lưng ngựa, ngựa hí vang và phun ra ánh lửa sáng rực."]
+      ]
+    },
+    {
+      "prompt": "Gióng galloping across the countryside pulling up a tall bamboo stalk, distant figures running away over the hills, no weapons striking anyone",
+      "sentences": [
+        ["Gióng rode bravely and chased the invaders far away from the land.", "Gióng phi ngựa thật dũng mãnh, đuổi giặc chạy thật xa."],
+        ["When his iron whip broke, he pulled up tall bamboo to keep going.", "Khi roi sắt gãy, chàng nhổ những bụi tre bên đường để tiếp tục."]
+      ]
+    },
+    {
+      "prompt": "on top of Sóc Sơn mountain, Gióng leaving his armor on a rock as he and his horse rise gently into golden clouds",
+      "sentences": [
+        ["When the land was peaceful again, Gióng rode up Sóc Sơn mountain.", "Khi đất nước đã yên bình, Gióng phi ngựa lên núi Sóc Sơn."],
+        ["He took off his armor, and he and his horse flew gently up into the sky.", "Chàng cởi áo giáp, rồi cả người lẫn ngựa từ từ bay lên trời."]
+      ]
+    },
+    {
+      "prompt": "a spring festival in Phù Đổng village with flags and drums, golden-yellow bamboo and round ponds nearby, children playing",
+      "sentences": [
+        ["People say the golden bamboo and the round ponds near the village were left by Gióng's horse.", "Người ta kể rằng tre đằng ngà và những ao hồ tròn quanh làng là dấu vết ngựa của Gióng để lại."],
+        ["And every spring, the village holds a festival to remember the brave boy.", "Và mỗi mùa xuân, làng lại mở hội để nhớ ơn cậu bé dũng cảm."]
+      ]
+    }
+  ]
+}

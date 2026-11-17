@@ -1,0 +1,113 @@
+{
+  "id": "banh-chung-banh-giay",
+  "title": {
+    "en": "Lang Liêu's Square and Round Cakes",
+    "vi": "Sự Tích Bánh Chưng, Bánh Giầy"
+  },
+  "description": {
+    "en": "The youngest prince has no treasures to give, so he makes two simple rice cakes full of love for the land and the sky.",
+    "vi": "Hoàng tử út không có của quý, nên chàng làm hai chiếc bánh giản dị chứa đựng tình yêu với đất trời."
+  },
+  "theme": {
+    "en": "Simple gifts made with love and gratitude are the most precious.",
+    "vi": "Món quà giản dị làm bằng tình yêu và lòng biết ơn là quý giá nhất."
+  },
+  "origin": "Vietnamese legend of bánh chưng and bánh giầy from the Hùng King era, linked to Tết.",
+  "category": "Tết Tale",
+  "ageRange": "3–8 years",
+  "duration": "5 min",
+  "characters": [
+    { "name": "Lang Liêu", "look": "humble young prince, tanned skin, simple brown tunic with a cloth belt, hair tied in a small topknot" },
+    { "name": "Hùng King", "look": "kind elderly king with a long grey beard, red and gold robe, ancient Văn Lang style headdress" },
+    { "name": "other princes", "look": "young men in colorful silk robes carrying fancy gifts" },
+    { "name": "spirit", "look": "glowing gentle old spirit made of soft golden light, floating in a dream cloud" }
+  ],
+  "artDirection": {
+    "mood": "Festive, ceremonial ancestral warmth; gratitude and family.",
+    "setting": "Hùng-era wooden hall and rice paddies; a Tết altar; a family kitchen fire.",
+    "light": "Warm hearth and lacquer-red light, gold highlights, peach-blossom pink accents.",
+    "motifs": [
+      "square green bánh chưng tied with bamboo strings",
+      "round white bánh giầy",
+      "dong leaves",
+      "peach blossoms",
+      "Tết altar and incense"
+    ],
+    "avoid": [
+      "moonlit blue palettes",
+      "forests",
+      "overly luxurious gold everywhere"
+    ],
+    "palette": {
+      "sky": "#F1D9B0",
+      "skyLow": "#F6E7CB",
+      "ground": "#4E8A4F",
+      "groundDeep": "#2F5E35",
+      "accent": "#B8372C",
+      "glow": "#E9B44C",
+      "ink": "#3A2416",
+      "paper": "#F7EBD6"
+    }
+  },
+  "cover": {
+    "prompt": "Lang Liêu proudly holding a square green leaf-wrapped bánh chưng and a round white bánh giầy, rice fields and a Hùng-era stilt house behind him, peach blossoms"
+  },
+  "pages": [
+    {
+      "prompt": "the elderly Hùng King speaking to his many sons in an ancient wooden hall decorated for Tết",
+      "sentences": [
+        ["Long ago, the sixth Hùng King wanted to choose which son would be king after him.", "Ngày xưa, vua Hùng thứ sáu muốn chọn một người con để truyền ngôi."],
+        ["He said, “Bring a gift for our ancestors at Tết, and the most meaningful gift will win.”", "Vua phán: “Tết này, các con hãy dâng lễ vật cúng tổ tiên, ai có lễ vật ý nghĩa nhất sẽ được nối ngôi.”"]
+      ]
+    },
+    {
+      "prompt": "princes hurrying off with baskets of rare fruit and seashells, while Lang Liêu works quietly in a rice paddy",
+      "sentences": [
+        ["The princes searched far and wide for rare treasures from the forests and the sea.", "Các hoàng tử đi khắp nơi tìm của ngon vật lạ trên rừng dưới biển."],
+        ["But the youngest prince, Lang Liêu, was poor and lived simply, growing rice.", "Riêng hoàng tử út Lang Liêu nghèo, sống giản dị, chỉ biết trồng lúa."]
+      ]
+    },
+    {
+      "prompt": "Lang Liêu sitting worried by an oil lamp at night in his small house, then sleeping with a soft dream cloud above",
+      "sentences": [
+        ["Lang Liêu worried, “I have no treasures, so what can I give?”", "Lang Liêu lo lắng: “Mình chẳng có của quý, biết lấy gì dâng vua cha?”"],
+        ["One night, a kind spirit came to him in a dream.", "Một đêm, Lang Liêu mơ thấy một vị thần hiền từ."]
+      ]
+    },
+    {
+      "prompt": "the glowing golden spirit holding a handful of shining rice grains toward the sleeping Lang Liêu",
+      "sentences": [
+        ["“Nothing is more precious than rice,” said the spirit.", "Thần bảo: “Trong trời đất, không gì quý bằng hạt gạo.”"],
+        ["“Use it to make your gift.”", "“Hãy lấy gạo làm lễ vật.”"]
+      ]
+    },
+    {
+      "prompt": "Lang Liêu wrapping a square cake in green dong leaves with sticky rice and mung beans, then pounding sticky rice in a wooden mortar",
+      "sentences": [
+        ["Lang Liêu wrapped sticky rice, green beans, and pork in green leaves to make a square cake.", "Lang Liêu lấy gạo nếp, đậu xanh và thịt, gói trong lá dong thành chiếc bánh vuông."],
+        ["Then he pounded sticky rice into a soft, round, white cake.", "Rồi chàng giã xôi thật nhuyễn, nặn thành chiếc bánh tròn trắng mềm."]
+      ]
+    },
+    {
+      "prompt": "the king at a Tết altar table full of fancy gifts, smiling at the simple square and round cakes Lang Liêu presents",
+      "sentences": [
+        ["On Tết, the king tasted every gift and smiled at the two simple cakes.", "Ngày Tết, vua nếm thử mọi lễ vật và mỉm cười khi thấy hai thứ bánh giản dị."],
+        ["“The square cake is like the earth, and the round cake is like the sky,” Lang Liêu explained.", "Lang Liêu thưa: “Bánh vuông tượng trưng cho đất, bánh tròn tượng trưng cho trời.”"]
+      ]
+    },
+    {
+      "prompt": "the moved old king placing his hands on Lang Liêu's shoulders, the other princes smiling and bowing",
+      "sentences": [
+        ["The king was moved and said, “These cakes show love for our land and thanks to our parents.”", "Vua cha rất cảm động: “Bánh này thể hiện tình yêu quê hương và lòng biết ơn cha mẹ.”"],
+        ["He chose Lang Liêu to be the next king.", "Vua chọn Lang Liêu nối ngôi."]
+      ]
+    },
+    {
+      "prompt": "a modern-day Vietnamese family wrapping bánh chưng together around a warm cooking fire at night before Tết, children helping",
+      "sentences": [
+        ["Ever since, Vietnamese families make bánh chưng and bánh giầy for Tết.", "Từ đó, mỗi dịp Tết, các gia đình Việt Nam lại gói bánh chưng và làm bánh giầy."],
+        ["They share them together, giving thanks for rice, family, and home.", "Mọi người quây quần bên nhau, biết ơn hạt gạo, gia đình và quê hương."]
+      ]
+    }
+  ]
+}
