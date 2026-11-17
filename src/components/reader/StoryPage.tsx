@@ -155,7 +155,7 @@ export const StoryPageView: React.FC<StoryPageProps> = ({
           [styles.spreadText, { minHeight: pageHeight }],
           <>
             {text}
-            <View style={{ flex: 1 }} />
+            <View style={styles.folioSpacer} />
             {folio}
           </>
         )}
@@ -177,6 +177,7 @@ export const StoryPageView: React.FC<StoryPageProps> = ({
         styles.textContent,
         <>
           {text}
+          <View style={styles.folioSpacer} />
           {folio}
         </>
       )}
@@ -194,16 +195,20 @@ const styles = StyleSheet.create({
   pageNoShadow: { shadowOpacity: 0, elevation: 0 },
   art: { overflow: 'hidden' },
   textArea: { flex: 1 },
-  /** Wraps the paged text so sentence positions can be measured; grows to fill spreads. */
+  /** Wraps the paged text so sentence positions can be measured. */
   pagedTextInner: { flexGrow: 1 },
+  /** Fills the ScrollView viewport so its inner spacer can pin the folio to the bottom. */
   textContent: {
     width: '100%',
     maxWidth: 640,
     alignSelf: 'center',
+    flexGrow: 1,
     paddingHorizontal: Spacing.lg,
     paddingTop: Spacing.md + 4,
-    paddingBottom: Spacing.md,
+    paddingBottom: 12,
   },
+  /** Pushes the folio down when space remains and collapses when text overflows. */
+  folioSpacer: { flexGrow: 1 },
   flowText: {
     paddingHorizontal: Spacing.lg,
     paddingTop: Spacing.md + 4,
@@ -212,7 +217,8 @@ const styles = StyleSheet.create({
   spreadText: {
     paddingHorizontal: Spacing.xl,
     paddingTop: Spacing.xl,
-    paddingBottom: Spacing.md,
+    paddingBottom: 12,
+    flexGrow: 1,
     justifyContent: 'center',
   },
   gutterShade: {
