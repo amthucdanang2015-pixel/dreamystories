@@ -15,11 +15,11 @@ import { LaunchTransition } from '../src/components/ui/LaunchTransition';
 import { SPLASH_BACKGROUND } from '../src/utils/appearanceScheme';
 import { useUILanguageSync } from '../src/hooks/useUILanguageSync';
 
-// Keep the native splash up until saved preferences and reading progress
-// are loaded, so the first frame already uses the user's settings.
+// Hand off to the matching JS splash as soon as it has drawn. The JS splash
+// animates subtly while saved preferences and reading progress are loading.
 SplashScreen.preventAutoHideAsync();
-// <LaunchTransition> draws an identical frame first and does the fade itself,
-// so the native splash can disappear instantly underneath it.
+// <LaunchTransition> draws an identical frame first, so there is no flash
+// when the native splash is hidden.
 SplashScreen.setOptions({ fade: false });
 
 export default function RootLayout() {
@@ -47,15 +47,18 @@ export default function RootLayout() {
     return () => sub.remove();
   }, []);
 
-  if (!isReady) {
-    // Same colour as the splash background: no flash on web or Android.
-    return <View style={styles.splash} />;
-  }
-
   return (
-    <AppThemeProvider>
-      <ThemedRoot />
-    </AppThemeProvider>
+    <View style={styles.root}>
+      {isReady ? (
+        <AppThemeProvider>
+          <ThemedRoot />
+        </AppThemeProvider>
+      ) : (
+        // Same colour as the splash background: no flash on web or Android.
+        <View style={styles.splash} />
+      )}
+      <LaunchTransition isReady={isReady} />
+    </View>
   );
 }
 
@@ -135,8 +138,6 @@ function ThemedRoot() {
         />
       </Stack>
       </NavigationThemeProvider>
-      {/* Hides the native splash once its own identical frame is up. */}
-      <LaunchTransition />
     </GestureHandlerRootView>
   );
 }

@@ -12,7 +12,7 @@ const LOGO = Platform.select({
   default: { size: 300, source: require('../../../assets/images/splash-logo.png') },
 });
 
-const DURATION_MS = 400;
+const DURATION_MS = 650;
 const REDUCED_MOTION_DURATION_MS = 150;
 // If the overlay's image isn't drawn by then, skip the transition entirely.
 const IMAGE_TIMEOUT_MS = 600;
@@ -28,12 +28,15 @@ const IMAGE_TIMEOUT_MS = 600;
  * pointerEvents="none": the app underneath is live from the first frame, so
  * the animation never blocks access.
  */
-export function LaunchTransition() {
+export function LaunchTransition({ isReady }: { isReady: boolean }) {
   const progress = useRef(new Animated.Value(0)).current;
+  const breathe = useRef(new Animated.Value(0)).current;
+  const [handedOff, setHandedOff] = useState(false);
   const [done, setDone] = useState(false);
   const settled = useRef(false);
 
-  // Image painted → drop the native splash underneath → fade the overlay out.
+  // Image painted → reveal the JS splash immediately so it can gently breathe
+  // while app state hydrates, then fade into the app when it is ready.
   const handOff = () => {
     if (settled.current) return;
     settled.current = true;
@@ -41,19 +44,58 @@ export function LaunchTransition() {
     requestAnimationFrame(() =>
       requestAnimationFrame(() => {
         SplashScreen.hide();
-        AccessibilityInfo.isReduceMotionEnabled()
-          .catch(() => false)
-          .then((reduceMotion) => {
-            Animated.timing(progress, {
-              toValue: 1,
-              duration: reduceMotion ? REDUCED_MOTION_DURATION_MS : DURATION_MS,
-              easing: Easing.out(Easing.cubic),
-              useNativeDriver: true,
-            }).start(() => setDone(true));
-          });
+        setHandedOff(true);
       }),
     );
   };
+
+  const finish = () => {
+    AccessibilityInfo.isReduceMotionEnabled()
+      .catch(() => false)
+      .then((reduceMotion) => {
+        breathe.stopAnimation();
+        Animated.timing(progress, {
+          toValue: 1,
+          duration: reduceMotion ? REDUCED_MOTION_DURATION_MS : DURATION_MS,
+          easing: Easing.out(Easing.cubic),
+          useNativeDriver: true,
+        }).start(() => setDone(true));
+      });
+  };
+
+  useEffect(() => {
+    if (!handedOff || done) return;
+    if (isReady) {
+      finish();
+      return;
+    }
+
+    let animation: Animated.CompositeAnimation | null = null;
+    AccessibilityInfo.isReduceMotionEnabled()
+      .catch(() => false)
+      .then((reduceMotion) => {
+        if (reduceMotion || done || isReady) return;
+        animation = Animated.loop(
+          Animated.sequence([
+            Animated.timing(breathe, {
+              toValue: 1,
+              duration: 1500,
+              easing: Easing.inOut(Easing.sin),
+              useNativeDriver: true,
+            }),
+            Animated.timing(breathe, {
+              toValue: 0,
+              duration: 1500,
+              easing: Easing.inOut(Easing.sin),
+              useNativeDriver: true,
+            }),
+          ]),
+        );
+        animation.start();
+      });
+
+    return () => animation?.stop();
+  }, [isReady, done, breathe, handedOff]);
 
   // Overlay can't match the splash → skip it; reveal the app directly.
   const skip = () => {
@@ -72,7 +114,8 @@ export function LaunchTransition() {
   if (done) return null;
 
   const opacity = progress.interpolate({ inputRange: [0, 1], outputRange: [1, 0] });
-  const scale = progress.interpolate({ inputRange: [0, 1], outputRange: [1, 1.03] });
+  const scale = progress.interpolate({ inputRange: [0, 1], outputRange: [1, 1.025] });
+  const breathingScale = breathe.interpolate({ inputRange: [0, 1], outputRange: [1, 1.012] });
 
   return (
     <Animated.View
@@ -84,7 +127,7 @@ export function LaunchTransition() {
       {/* Dark status-bar content on the light splash, as at launch (Info.plist
           UIStatusBarStyleDarkContent); the app's own style returns on unmount. */}
       <StatusBar style="dark" />
-      <Animated.View style={{ transform: [{ scale }] }}>
+      <Animated.View style={{ transform: [{ scale: Animated.multiply(scale, breathingScale) }] }}>
         <Image
           source={LOGO.source}
           style={{ width: LOGO.size, height: LOGO.size }}

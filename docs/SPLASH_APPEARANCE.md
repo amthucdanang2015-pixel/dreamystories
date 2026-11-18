@@ -11,8 +11,8 @@ With a single Light design there's nothing to choose, so the OS launch screen, t
 ## Launch phases (all Light)
 
 1. **OS launch screen.** iOS draws `SplashScreen.storyboard`, and Android draws its system or starting splash, from Light-only resources.
-2. **Native splash view.** expo-splash-screen shows a copy of the storyboard on iOS, and the `Theme.App.SplashScreen` window on Android. It stays up until JS calls `SplashScreen.hide()`.
-3. **`LaunchTransition` overlay.** It draws the same Light artwork on `SPLASH_BACKGROUND` (`#F7F3E9`), hides the native splash underneath, then fades into the first screen in the user's App Appearance. While the overlay is up it keeps dark status-bar content. When it unmounts, the app's own status-bar style takes over.
+2. **Native splash view.** expo-splash-screen shows a copy of the storyboard on iOS, and the `Theme.App.SplashScreen` window on Android. It stays up until JS has drawn the matching splash artwork.
+3. **`LaunchTransition` overlay.** It draws the same Light artwork on `SPLASH_BACKGROUND` (`#F7F3E9`), hides the native splash underneath, and gently breathes while preferences and reading progress load. Once the app is ready, it fades into the first screen in the user's App Appearance. Reduced Motion skips the breathing animation. While the overlay is up it keeps dark status-bar content. When it unmounts, the app's own status-bar style takes over.
 
 The status bar shows dark content from the first frame on iOS (`UIStatusBarStyleDarkContent` in Info.plist / `app.json` `ios.infoPlist`), so it stays readable on the light splash even when the device is Dark. Once the app runs, `expo-status-bar` controls it (`UIViewControllerBasedStatusBarAppearance` is `false`).
 
