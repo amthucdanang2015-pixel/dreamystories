@@ -5,7 +5,7 @@
 // periods come from the App Store's localized product metadata.
 // ============================================================
 
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   Linking,
   Pressable,
@@ -22,7 +22,7 @@ import { X } from 'lucide-react-native';
 import { useTranslation } from 'react-i18next';
 import type { TFunction } from 'i18next';
 import Svg, { Defs, LinearGradient, Rect, Stop } from 'react-native-svg';
-import { PremiumColors, Spacing, TouchTarget, Typography, BorderRadius } from '../src/constants/theme';
+import { Layout, PremiumColors, Spacing, TouchTarget, Typography, BorderRadius } from '../src/constants/theme';
 import { Themes } from '../src/theme';
 import { LEGAL_URLS, type PlanId } from '../src/constants/iap';
 import { FREE_STORY_IDS } from '../src/constants/entitlements';
@@ -37,8 +37,11 @@ import { BrandMark, Button, IconButton, MoonMark } from '../src/components/ui';
 import { toSupportedLanguage, FALLBACK_UI_LANGUAGE } from '../src/i18n';
 import { storyTitleFor } from '../src/i18n/storyMeta';
 import { formatDate } from '../src/i18n/format';
+import { gutterFor, paywallArrangement } from '../src/utils/responsiveLayout';
 
 const MAX_W = 520;
+/** How far the cover art runs under the top of the text on tablets (it has faded out by then). */
+const ART_OVERLAP = 120;
 const DEFAULT_ART = 'chu-cuoi/cover';
 const SOURCES: PaywallSource[] = ['premium_story', 'completion', 'settings', 'library'];
 /**
@@ -95,9 +98,20 @@ export default function PaywallScreen() {
     else router.push(`/legal?doc=${doc}`);
   };
 
-  // Short phones (iPhone SE / mini) get tighter type and plan cards.
-  const compact = SH < 740;
+  // phone: plans anchored at the bottom · stacked: tablet portrait · split: tablet landscape.
+  const arrangement = paywallArrangement(SW, SH);
+  const tablet = arrangement !== 'phone';
+  const split = arrangement === 'split';
+  // Stacked tablets sit the content low; the cover art fills everything above it.
+  const [groupY, setGroupY] = useState(0);
+  // Short phones (iPhone SE / mini) get tighter type and plan cards. Tablets never do.
+  const compact = !tablet && SH < 740;
   const artH = Math.round(Math.min(SH * 0.3, SW * 0.9, 320));
+  const gutter = gutterFor(SW);
+  // Stacked: the art band is at least this tall, and grows to meet the content.
+  const stackedArtH = Math.round(Math.min(SH * 0.34, 460));
+  // Split: the story side is a little wider than the decision side.
+  const storyW = Math.round(SW * 0.54);
   const coverKey = story?.coverImage ?? DEFAULT_ART;
   const purchasing = purchaseState.status === 'purchasing';
   const restoring = restoreState.status === 'restoring';
@@ -110,128 +124,206 @@ export default function PaywallScreen() {
     : headline(t, source, story ? storyTitleFor(story, uiLanguage) : undefined, premiumCount);
   const yearlySelected = selectedPlan === 'yearly';
 
+  const storyColumn = (
+    <View style={tablet ? styles.tabletBlock : styles.column}>
+      {/* Same moon-over-book mark as the app icon: the premium edition of the same book. */}
+      <View style={styles.eyebrowRow}>
+        <BrandMark size={tablet ? 26 : 22} />
+        <Text style={[nightType.eyebrow, styles.eyebrow]}>{t('paywall.eyebrow')}</Text>
+      </View>
+      <Text
+        style={[styles.title, compact && styles.titleCompact, tablet && styles.titleTablet, split && styles.titleSplit]}
+        accessibilityRole="header"
+      >
+        {copy.title}
+      </Text>
+      <Text style={[styles.description, compact && styles.descriptionCompact, tablet && styles.descriptionTablet]}>
+        {compact && copy.short ? copy.short : copy.body}
+      </Text>
+      {entitlement.isPremium ? null : (
+        <View style={[styles.benefits, compact && styles.benefitsCompact, tablet && styles.benefitsTablet]}>
+          {/* Portrait tablets: a 2×2 grid uses the column's width; the split's story side keeps one list. */}
+          <BenefitList compact={compact} large={tablet} columns={arrangement === 'stacked' ? 2 : 1} />
+        </View>
+      )}
+    </View>
+  );
+
+  const decisionColumn = (
+    <View style={tablet ? styles.tabletBlock : styles.column}>
+      {entitlement.isPremium ? (
+        <PremiumWelcome
+          justPurchased={purchaseState.status === 'purchased'}
+          justRestored={restoreState.status === 'restored'}
+          plan={entitlement.plan}
+          expiresAt={entitlement.expiresAt}
+          actionLabel={story && source === 'premium_story' ? t('paywall.readTheStory') : t('paywall.startReading')}
+          onDone={close}
+        />
+      ) : (
+        <>
+          <PlanSelector
+            products={products}
+            state={productsState}
+            selected={selectedPlan}
+            onSelect={selectPlan}
+            onRetry={() => loadProducts(true)}
+            disabled={busy}
+            compact={compact}
+            large={tablet}
+          />
+
+          <Button
+            style={[styles.cta, tablet && styles.ctaTablet]}
+            label={
+              productsState.status === 'ready'
+                ? purchasing
+                  ? t('paywall.ctaOpening')
+                  : yearlySelected
+                    ? t('paywall.ctaContinueYearly')
+                    : t('paywall.ctaContinueWeekly')
+                : productsState.status === 'error'
+                  ? t('paywall.ctaUnavailable')
+                  : t('paywall.ctaLoading')
+            }
+            color={PremiumColors.moon}
+            textColor={PremiumColors.onMoon}
+            onPress={() =>
+              guard(
+                purchaseSelected,
+                yearlySelected ? t('parentalGate.reasonSubscribeYearly') : t('parentalGate.reasonSubscribeWeekly')
+              )
+            }
+            loading={purchasing}
+            disabled={productsState.status !== 'ready' || !product || restoring || purchaseState.status === 'pending'}
+            accessibilityHint={
+              product
+                ? t(yearlySelected ? 'paywall.ctaHintYearly' : 'paywall.ctaHintWeekly', { price: product.displayPrice })
+                : undefined
+            }
+          />
+
+          <StatusNote />
+
+          <Text style={[styles.disclosure, tablet && styles.disclosureTablet]}>
+            {product ? `${billingLine(t, product)} ` : null}
+            {t('paywall.renewal')}
+          </Text>
+        </>
+      )}
+
+      {/* Restore · Terms · Privacy */}
+      <View style={[styles.links, tablet && styles.linksTablet]}>
+        {entitlement.isPremium ? null : (
+          <>
+            <LinkButton
+              label={restoring ? t('paywall.restoring') : t('paywall.restore')}
+              onPress={() => guard(restore, t('parentalGate.reasonRestore'))}
+              disabled={busy}
+            />
+            <Text style={styles.linkDot}>·</Text>
+          </>
+        )}
+        <LinkButton label={t('paywall.terms')} onPress={() => openLegal('terms')} />
+        <Text style={styles.linkDot}>·</Text>
+        <LinkButton label={t('paywall.privacy')} onPress={() => openLegal('privacy')} />
+      </View>
+      {!entitlement.isPremium ? <RestoreNote /> : null}
+    </View>
+  );
+
   return (
     <View style={styles.screen}>
       <StatusBar style="light" />
 
-      {/* The story: art, promise and benefits. Scrolls if a small screen needs it. */}
-      <ScrollView
-        style={styles.flex}
-        contentContainerStyle={[styles.scroll, { paddingTop: Math.max(insets.top + TouchTarget + Spacing.sm, artH - (compact ? 110 : 96)) }]}
-        showsVerticalScrollIndicator={false}
-      >
-        <PaywallBackdrop coverKey={coverKey} width={SW} height={artH} />
-        <View style={styles.column}>
-          {/* Same moon-over-book mark as the app icon: the premium edition of the same book. */}
-          <View style={styles.eyebrowRow}>
-            <BrandMark size={22} />
-            <Text style={[nightType.eyebrow, styles.eyebrow]}>{t('paywall.eyebrow')}</Text>
+      {split ? (
+        // Tablet landscape: the story side (cover art, promise, benefits) and the
+        // decision side (plans, action, legal) share the canvas as two halves.
+        <View style={styles.splitRow}>
+          <View style={[styles.splitStory, { width: storyW }]}>
+            <PaywallBackdrop coverKey={coverKey} width={storyW} height={SH} variant="panel" />
+            <ScrollView
+              style={styles.flex}
+              contentContainerStyle={[
+                styles.splitStoryContent,
+                {
+                  paddingTop: insets.top + TouchTarget + Spacing.xl,
+                  paddingBottom: Math.max(insets.bottom, Spacing.lg) + Spacing.lg,
+                  paddingLeft: Math.max(insets.left, Spacing.xxl),
+                  paddingRight: Spacing.xxl,
+                },
+              ]}
+              showsVerticalScrollIndicator={false}
+            >
+              {storyColumn}
+            </ScrollView>
           </View>
-          <Text style={[styles.title, compact && styles.titleCompact]} accessibilityRole="header">
-            {copy.title}
-          </Text>
-          <Text style={[styles.description, compact && styles.descriptionCompact]}>
-            {compact && copy.short ? copy.short : copy.body}
-          </Text>
-          {entitlement.isPremium ? null : (
-            <View style={[styles.benefits, compact && styles.benefitsCompact]}>
-              <BenefitList compact={compact} />
-            </View>
-          )}
+          <ScrollView
+            style={styles.flex}
+            contentContainerStyle={[
+              styles.splitDecisionContent,
+              {
+                paddingTop: insets.top + TouchTarget + Spacing.md,
+                paddingBottom: Math.max(insets.bottom, Spacing.lg) + Spacing.lg,
+                paddingLeft: Spacing.xl,
+                paddingRight: Math.max(insets.right, Spacing.xxl),
+              },
+            ]}
+            showsVerticalScrollIndicator={false}
+          >
+            <View style={styles.splitDecision}>{decisionColumn}</View>
+          </ScrollView>
         </View>
-      </ScrollView>
-
-      {/* The decision: anchored at the bottom, above the safe area. */}
-      <View style={[styles.bottom, { paddingBottom: Math.max(insets.bottom, Spacing.sm) }]}>
-        <FadeEdge width={SW} />
-        {/* Scrolls on its own when plans + disclosure + links outgrow ~60% of
-            the screen (small phones, large text), so nothing is pushed off. */}
+      ) : tablet ? (
+        // Tablet portrait, Stage Manager and wide Split View: one wider column sits
+        // low on the screen and the cover art fills everything above it, so there
+        // is no gap between the promise and the plans and no empty band.
         <ScrollView
-          style={{ flexGrow: 0, maxHeight: Math.round(SH * 0.62) }}
-          bounces={false}
+          style={styles.flex}
+          contentContainerStyle={[
+            styles.stackedScroll,
+            {
+              paddingHorizontal: gutter,
+              paddingTop: Math.max(insets.top + TouchTarget + Spacing.md, stackedArtH - ART_OVERLAP),
+              paddingBottom: Math.max(insets.bottom, Spacing.lg) + Spacing.md,
+            },
+          ]}
           showsVerticalScrollIndicator={false}
         >
-        <View style={styles.column}>
-          {entitlement.isPremium ? (
-            <PremiumWelcome
-              justPurchased={purchaseState.status === 'purchased'}
-              justRestored={restoreState.status === 'restored'}
-              plan={entitlement.plan}
-              expiresAt={entitlement.expiresAt}
-              actionLabel={story && source === 'premium_story' ? t('paywall.readTheStory') : t('paywall.startReading')}
-              onDone={close}
-            />
-          ) : (
-            <>
-              <PlanSelector
-                products={products}
-                state={productsState}
-                selected={selectedPlan}
-                onSelect={selectPlan}
-                onRetry={() => loadProducts(true)}
-                disabled={busy}
-                compact={compact}
-              />
-
-              <Button
-                style={styles.cta}
-                label={
-                  productsState.status === 'ready'
-                    ? purchasing
-                      ? t('paywall.ctaOpening')
-                      : yearlySelected
-                        ? t('paywall.ctaContinueYearly')
-                        : t('paywall.ctaContinueWeekly')
-                    : productsState.status === 'error'
-                      ? t('paywall.ctaUnavailable')
-                      : t('paywall.ctaLoading')
-                }
-                color={PremiumColors.moon}
-                textColor={PremiumColors.onMoon}
-                onPress={() =>
-                  guard(
-                    purchaseSelected,
-                    yearlySelected ? t('parentalGate.reasonSubscribeYearly') : t('parentalGate.reasonSubscribeWeekly')
-                  )
-                }
-                loading={purchasing}
-                disabled={productsState.status !== 'ready' || !product || restoring || purchaseState.status === 'pending'}
-                accessibilityHint={
-                  product
-                    ? t(yearlySelected ? 'paywall.ctaHintYearly' : 'paywall.ctaHintWeekly', { price: product.displayPrice })
-                    : undefined
-                }
-              />
-
-              <StatusNote />
-
-              <Text style={styles.disclosure}>
-                {product ? `${billingLine(t, product)} ` : null}
-                {t('paywall.renewal')}
-              </Text>
-            </>
-          )}
-
-          {/* Restore · Terms · Privacy */}
-          <View style={styles.links}>
-            {entitlement.isPremium ? null : (
-              <>
-                <LinkButton
-                  label={restoring ? t('paywall.restoring') : t('paywall.restore')}
-                  onPress={() => guard(restore, t('parentalGate.reasonRestore'))}
-                  disabled={busy}
-                />
-                <Text style={styles.linkDot}>·</Text>
-              </>
-            )}
-            <LinkButton label={t('paywall.terms')} onPress={() => openLegal('terms')} />
-            <Text style={styles.linkDot}>·</Text>
-            <LinkButton label={t('paywall.privacy')} onPress={() => openLegal('privacy')} />
+          <PaywallBackdrop coverKey={coverKey} width={SW} height={Math.max(stackedArtH, groupY + ART_OVERLAP)} />
+          <View onLayout={(e) => setGroupY(Math.round(e.nativeEvent.layout.y))} style={styles.stackedColumn}>
+            {storyColumn}
+            <View style={styles.stackedGap} />
+            {decisionColumn}
           </View>
-          {!entitlement.isPremium ? <RestoreNote /> : null}
-        </View>
         </ScrollView>
-      </View>
+      ) : (
+        <>
+          {/* The story: art, promise and benefits. Scrolls if a small screen needs it. */}
+          <ScrollView
+            style={styles.flex}
+            contentContainerStyle={[styles.scroll, { paddingTop: Math.max(insets.top + TouchTarget + Spacing.sm, artH - (compact ? 110 : 96)) }]}
+            showsVerticalScrollIndicator={false}
+          >
+            <PaywallBackdrop coverKey={coverKey} width={SW} height={artH} />
+            {storyColumn}
+          </ScrollView>
+
+          {/* The decision: anchored at the bottom, above the safe area. */}
+          <View style={[styles.bottom, { paddingBottom: Math.max(insets.bottom, Spacing.sm) }]}>
+            <FadeEdge width={SW} />
+            {/* Scrolls on its own when plans + disclosure + links outgrow ~60% of
+                the screen (small phones, large text), so nothing is pushed off. */}
+            <ScrollView
+              style={{ flexGrow: 0, maxHeight: Math.round(SH * 0.62) }}
+              bounces={false}
+              showsVerticalScrollIndicator={false}
+            >
+              {decisionColumn}
+            </ScrollView>
+          </View>
+        </>
+      )}
 
       {/* Close stays reachable at all times */}
       <View style={[styles.topBar, { paddingTop: insets.top + Spacing.xs }]} pointerEvents="box-none">
@@ -412,6 +504,17 @@ const styles = StyleSheet.create({
   flex: { flex: 1 },
   scroll: { flexGrow: 1, paddingHorizontal: Spacing.gutter, paddingBottom: Spacing.md },
   column: { width: '100%', maxWidth: MAX_W, alignSelf: 'center' },
+  // ── Tablets ──
+  tabletBlock: { width: '100%' },
+  stackedScroll: { flexGrow: 1, justifyContent: 'flex-end' },
+  stackedColumn: { width: '100%', maxWidth: Layout.maxWidth.paywall, alignSelf: 'center' },
+  stackedGap: { height: Spacing.xl },
+  splitRow: { flex: 1, flexDirection: 'row' },
+  splitStory: { height: '100%', overflow: 'hidden' },
+  // The promise sits on the lower, darkened part of the cover art.
+  splitStoryContent: { flexGrow: 1, justifyContent: 'flex-end' },
+  splitDecisionContent: { flexGrow: 1, justifyContent: 'center' },
+  splitDecision: { width: '100%', maxWidth: 480, alignSelf: 'center' },
   bottom: { paddingHorizontal: Spacing.gutter, backgroundColor: PremiumColors.background },
   fade: { position: 'absolute', top: -28, left: 0, right: 0, height: 28 },
   topBar: {
@@ -433,6 +536,8 @@ const styles = StyleSheet.create({
     color: PremiumColors.text,
   },
   titleCompact: { fontSize: 27, lineHeight: 32 },
+  titleTablet: { fontSize: 40, lineHeight: 46, maxWidth: 600 },
+  titleSplit: { fontSize: 42, lineHeight: 48, maxWidth: undefined },
   description: {
     fontSize: Typography.base,
     lineHeight: Typography.base * 1.55,
@@ -440,9 +545,12 @@ const styles = StyleSheet.create({
     marginTop: Spacing.sm + 2,
   },
   descriptionCompact: { fontSize: Typography.sm + 1, lineHeight: 20, marginTop: Spacing.sm },
+  descriptionTablet: { fontSize: Typography.md, lineHeight: 27, marginTop: Spacing.md, maxWidth: 560 },
   benefits: { marginTop: Spacing.md + 4 },
   benefitsCompact: { marginTop: Spacing.md },
+  benefitsTablet: { marginTop: Spacing.lg },
   cta: { marginTop: Spacing.md - 2 },
+  ctaTablet: { marginTop: Spacing.lg, minHeight: 60 },
   note: {
     fontSize: Typography.sm,
     lineHeight: 19,
@@ -459,10 +567,12 @@ const styles = StyleSheet.create({
     marginTop: Spacing.sm,
     paddingHorizontal: Spacing.xs,
   },
+  disclosureTablet: { fontSize: Typography.sm, lineHeight: 19, marginTop: Spacing.md, paddingHorizontal: Spacing.lg },
   // Wraps: "Khôi phục giao dịch · Điều khoản · Quyền riêng tư" is wider than a 375 pt phone.
   links: { flexDirection: 'row', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'center' },
   link: { minHeight: TouchTarget, minWidth: TouchTarget, paddingHorizontal: 8, alignItems: 'center', justifyContent: 'center' },
   linkText: { fontSize: Typography.sm, fontWeight: '600', color: PremiumColors.textSecondary, textDecorationLine: 'underline' },
+  linksTablet: { marginTop: Spacing.sm },
   linkDot: { color: PremiumColors.textMuted, fontSize: Typography.sm },
   welcome: {
     alignItems: 'center',

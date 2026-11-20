@@ -2,6 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { Spacing, Typography } from '../../constants/theme';
 import { createThemedStyles, useTheme } from '../../theme';
+import { useResponsiveLayout } from '../../hooks/useResponsiveLayout';
 
 /** Large editorial title block of a tab screen (sits under CollapsingHeaderScreen's compact bar). */
 export function ScreenHeader({
@@ -15,8 +16,9 @@ export function ScreenHeader({
 }) {
   const { type } = useTheme();
   const styles = useStyles();
+  const { gutter } = useResponsiveLayout();
   return (
-    <View style={styles.block}>
+    <View style={[styles.block, { paddingHorizontal: gutter }]}>
       {eyebrow ? <Text style={[type.eyebrow, styles.eyebrow]}>{eyebrow}</Text> : null}
       <Text style={type.title} accessibilityRole="header">
         {title}

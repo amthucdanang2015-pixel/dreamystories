@@ -5,7 +5,6 @@ import {
   ScrollView,
   StyleSheet,
   Pressable,
-  useWindowDimensions,
 } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import Svg, { Defs, LinearGradient as SvgLinearGradient, Stop, Rect } from 'react-native-svg';
@@ -30,6 +29,7 @@ import {
   Spacing,
   BorderRadius,
   PremiumColors,
+  Layout,
 } from '../../src/constants/theme';
 import { createThemedStyles, useTheme } from '../../src/theme';
 import { StoryIllustration } from '../../src/components/illustrations/StoryIllustration';
@@ -47,6 +47,8 @@ import { storyAge, storyCategory, storyDuration, storyPages } from '../../src/i1
 import { formatSpeed } from '../../src/i18n/format';
 import { useShare } from '../../src/hooks/useShare';
 import { ShareIcon } from '../../src/components/ui/ShareIcon';
+import { useResponsiveLayout } from '../../src/hooks/useResponsiveLayout';
+import { balancedColumns, gridColumns, gridItemWidth } from '../../src/utils/responsiveLayout';
 
 const MODE_LABEL_KEY = {
   bilingual_parallel: 'readingModes.bilingual',
@@ -55,13 +57,20 @@ const MODE_LABEL_KEY = {
   single_vi: 'readingModes.vietnameseOnly',
 } as const satisfies Record<ReadingMode, string>;
 
-const MAX_CONTENT = 680;
+/** Height of the floating back / share bar below the safe area. */
+const HEADER_H = 56;
+/** From this content width the cover sits beside the story information. */
+const SIDE_BY_SIDE_MIN = 680;
+const THUMB_GAP = Spacing.sm + 4;
+/** Page art is 3:2, so preview thumbnails are never cropped. */
+const THUMB_RATIO = 1.5;
 
 export default function StoryDetailScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const router = useRouter();
   const { t } = useTranslation();
-  const { width: SW, height: SH } = useWindowDimensions();
+  const layout = useResponsiveLayout();
+  const { width: SW, height: SH } = layout;
   const setStory = usePlaybackStore((s) => s.setStory);
   const prefs = usePreferencesStore((s) => s.prefs);
   const savedProgress = useProgressStore((s) => (id ? s.progressMap[id] ?? null : null));
@@ -70,8 +79,31 @@ export default function StoryDetailScreen() {
   const theme = useTheme();
   const { colors, type, isDark } = theme;
   const [isScrolled, setIsScrolled] = useState(false);
-  // Keep the cover inside a sensible share of the screen on any phone size, including status bar height.
-  const coverHeight = Math.round(Math.min(SW * 0.82, SH * 0.46, 460)) + insets.top;
+
+  // ── Layout ─────────────────────────────────────────────────
+  //   phone  : full-bleed cover, one column, page strip (unchanged)
+  //   medium : shorter cover, one reading-width column, page grid
+  //   wide   : a short art band with the square cover lifted beside the
+  //            title and "Begin", then a page grid and a two-column "about"
+  const browse = layout.frame(Layout.maxWidth.browse);
+  const sideBySide = !layout.isCompact && browse.contentWidth >= SIDE_BY_SIDE_MIN;
+  const column = sideBySide ? browse : layout.frame(Layout.maxWidth.form);
+  const coverHeight =
+    Math.round(
+      sideBySide
+        ? Math.min(Math.max(SH * 0.24, 200), 300)
+        : layout.isCompact
+          ? // Keep the cover inside a sensible share of the screen on any phone size.
+            Math.min(SW * 0.82, SH * 0.46, 460)
+          : Math.min(SW * 0.62, SH * 0.4, 440)
+    ) + insets.top;
+  // Wide: the cover card starts just under the header bar and overlaps the band;
+  // the text column starts below the band so it never sits on the art.
+  const coverTop = insets.top + HEADER_H + Spacing.sm;
+  const coverSize = Math.round(
+    Math.min(Math.max(column.contentWidth * 0.4, 260), 440, Math.max(SH * 0.46, 260))
+  );
+  const infoOffset = coverHeight - coverTop + Spacing.md;
 
   const story = ALL_STORIES.find((s) => s.id === id);
   const access = useStoryAccess(story?.id);
@@ -124,9 +156,158 @@ export default function StoryDetailScreen() {
     .filter(Boolean)
     .join(t('common.listSeparator'));
 
-  const thumbW = 132;
-  const thumbH = 88;
   const fadeH = 90;
+  // Phone: a horizontal strip of small thumbs. Wider: every page in a grid.
+  const thumbCols = layout.isCompact
+    ? 0
+    : balancedColumns(story.pages.length, gridColumns(column.contentWidth, 150, THUMB_GAP, { min: 3, max: 5 }), 3);
+  const thumbW = layout.isCompact ? 132 : gridItemWidth(column.contentWidth, thumbCols, THUMB_GAP);
+  const thumbH = Math.round(thumbW / THUMB_RATIO);
+  const columnStyle = { width: column.contentWidth, alignSelf: 'center' as const };
+
+  const titleBlock = (
+    <>
+      {/* Title */}
+      <View style={styles.categoryRow}>
+        <View style={[styles.dot, { backgroundColor: palette.accent }]} />
+        <Text style={[type.eyebrow, { color: colors.textAccent }]}>{storyCategory(t, story.category)}</Text>
+        {access.premium ? <PremiumBadge locked={access.locked} tone="light" /> : null}
+      </View>
+      <Text style={[type.display, styles.titleEn, sideBySide && styles.titleEnWide]} accessibilityRole="header">
+        {story.title.en}
+      </Text>
+      <Text style={styles.titleVi}>{story.title.vi}</Text>
+
+      <View style={styles.metaRow}>
+        <MetaPill icon={<Clock size={12} color={colors.textMuted} />} label={storyDuration(t, story.duration)} />
+        <MetaPill icon={<Users size={12} color={colors.textMuted} />} label={storyAge(t, story.ageRange)} />
+        <MetaPill icon={<Languages size={12} color={colors.textMuted} />} label={t('storyDetail.languagesPill')} />
+        <MetaPill icon={<BookOpen size={12} color={colors.textMuted} />} label={storyPages(t, story)} />
+      </View>
+
+      {/* Reading progress */}
+      {info.state !== 'new' ? (
+        <View style={styles.progress}>
+          <ProgressBar value={info.fraction} />
+          <Text style={styles.progressLabel}>
+            {info.state === 'finished'
+              ? t('storyDetail.finishedNote')
+              : t('storyDetail.onPage', { page: info.page, total: info.total })}
+          </Text>
+        </View>
+      ) : null}
+
+      {/* Start / Resume — or unlock, for a premium story */}
+      {access.locked ? (
+        <>
+          <Button
+            // In Dark the indigo sits close to the night page, so a faint moon-gold edge keeps its shape.
+            style={[styles.cta, isDark && styles.ctaPremiumEdge]}
+            label={t('storyDetail.unlock')}
+            // Unlocking is a premium moment: the paywall's moonlit indigo.
+            color={PremiumColors.background}
+            textColor={PremiumColors.moon}
+            icon={<Lock size={17} color={PremiumColors.moon} strokeWidth={2.4} />}
+            onPress={() => handleStartReading()}
+            accessibilityHint={t('storyDetail.unlockHint')}
+          />
+          <Text style={styles.lockNote}>
+            {t('storyDetail.lockNote', { count: FREE_STORY_IDS.length })}
+          </Text>
+        </>
+      ) : (
+        <Button
+          style={styles.cta}
+          label={
+            hasProgress
+              ? t('storyDetail.continue')
+              : info.state === 'finished'
+                ? t('storyDetail.readAgain')
+                : t('storyDetail.begin')
+          }
+          icon={<Play size={18} color={colors.onPrimary} fill={colors.onPrimary} />}
+          onPress={() => handleStartReading(info.state === 'finished' ? 0 : undefined)}
+        />
+      )}
+      {hasProgress && !access.locked ? (
+        <Button
+          variant="ghost"
+          label={t('storyDetail.restart')}
+          icon={<RotateCcw size={15} color={colors.accent} />}
+          onPress={() => handleStartReading(0)}
+        />
+      ) : null}
+    </>
+  );
+
+  const thumb = (page: (typeof story.pages)[number], i: number) => {
+    const current = hasProgress && savedProgress!.pageIndex === i;
+    return (
+      <Pressable
+        key={page.id}
+        onPress={() => handleStartReading(i)}
+        accessibilityRole="button"
+        accessibilityLabel={
+          access.locked
+            ? t('storyDetail.thumbLockedA11y', { page: i + 1 })
+            : t('storyDetail.thumbA11y', { page: i + 1 })
+        }
+        style={({ pressed }) => [{ width: thumbW }, pressed && { opacity: 0.85 }]}
+      >
+        <View
+          style={[
+            styles.thumb,
+            { width: thumbW, height: thumbH, backgroundColor: palette.sky },
+            current && styles.thumbCurrent,
+          ]}
+        >
+          <StoryIllustration pageKey={page.image} width={thumbW} height={thumbH} />
+        </View>
+        <Text style={[styles.thumbLabel, current && styles.thumbLabelCurrent]} numberOfLines={1}>
+          {current ? t('storyDetail.thumbHere', { page: i + 1 }) : t('storyDetail.thumbPage', { page: i + 1 })}
+        </Text>
+      </Pressable>
+    );
+  };
+
+  const aboutBlock = (
+    <>
+      <Text style={[type.eyebrow, styles.blockLabel]}>{t('storyDetail.about')}</Text>
+      <Text style={styles.desc}>{story.description.en}</Text>
+      <Text style={styles.descVi}>{story.description.vi}</Text>
+    </>
+  );
+
+  const lessonBlock = story.theme ? (
+    <View style={[styles.lesson, sideBySide && styles.flushTop]}>
+      <View style={[styles.lessonRule, { backgroundColor: palette.accent }]} />
+      <View style={{ flex: 1 }}>
+        <Text style={[type.eyebrow, { marginBottom: 6 }]}>{t('storyDetail.heart')}</Text>
+        <Text style={styles.lessonEn}>{story.theme.en}</Text>
+        <Text style={styles.lessonVi}>{story.theme.vi}</Text>
+      </View>
+    </View>
+  ) : null;
+
+  const prefsBlock = (
+    <Pressable
+      style={({ pressed }) => [styles.prefsRow, sideBySide && styles.flushTop, pressed && { opacity: 0.85 }]}
+      onPress={() => router.push('/reader-settings')}
+      accessibilityRole="button"
+      accessibilityLabel={t('storyDetail.readingSettingsA11y', { summary: prefSummary })}
+    >
+      <View style={styles.prefsIcon}>
+        <SlidersHorizontal size={16} color={colors.accent} />
+      </View>
+      <View style={{ flex: 1 }}>
+        <Text style={styles.prefsLabel}>{t('storyDetail.readingSettings')}</Text>
+        <Text style={styles.prefsSummary} numberOfLines={sideBySide ? 2 : 1}>
+          {prefSummary}
+        </Text>
+      </View>
+      <ChevronRight size={18} color={colors.textMuted} />
+    </Pressable>
+  );
 
   return (
     <View style={styles.screen}>
@@ -190,7 +371,7 @@ export default function StoryDetailScreen() {
         showsVerticalScrollIndicator={false}
         onScroll={(e) => {
           const y = e.nativeEvent.contentOffset.y;
-          const next = y > coverHeight - insets.top - 56;
+          const next = y > coverHeight - insets.top - HEADER_H;
           if (next !== isScrolled) setIsScrolled(next);
         }}
         scrollEventThrottle={16}
@@ -211,154 +392,49 @@ export default function StoryDetailScreen() {
           </View>
         </View>
 
-        <View style={styles.body}>
-          {/* Title */}
-          <View style={styles.categoryRow}>
-            <View style={[styles.dot, { backgroundColor: palette.accent }]} />
-            <Text style={[type.eyebrow, { color: colors.textAccent }]}>{storyCategory(t, story.category)}</Text>
-            {access.premium ? <PremiumBadge locked={access.locked} tone="light" /> : null}
-          </View>
-          <Text style={[type.display, styles.titleEn]} accessibilityRole="header">
-            {story.title.en}
-          </Text>
-          <Text style={styles.titleVi}>{story.title.vi}</Text>
-
-          <View style={styles.metaRow}>
-            <MetaPill icon={<Clock size={12} color={colors.textMuted} />} label={storyDuration(t, story.duration)} />
-            <MetaPill icon={<Users size={12} color={colors.textMuted} />} label={storyAge(t, story.ageRange)} />
-            <MetaPill icon={<Languages size={12} color={colors.textMuted} />} label={t('storyDetail.languagesPill')} />
-            <MetaPill icon={<BookOpen size={12} color={colors.textMuted} />} label={storyPages(t, story)} />
-          </View>
-
-          {/* Reading progress */}
-          {info.state !== 'new' ? (
-            <View style={styles.progress}>
-              <ProgressBar value={info.fraction} />
-              <Text style={styles.progressLabel}>
-                {info.state === 'finished'
-                  ? t('storyDetail.finishedNote')
-                  : t('storyDetail.onPage', { page: info.page, total: info.total })}
-              </Text>
-            </View>
-          ) : null}
-
-          {/* Start / Resume — or unlock, for a premium story */}
-          {access.locked ? (
-            <>
-              <Button
-                // In Dark the indigo sits close to the night page, so a faint moon-gold edge keeps its shape.
-                style={[styles.cta, isDark && styles.ctaPremiumEdge]}
-                label={t('storyDetail.unlock')}
-                // Unlocking is a premium moment: the paywall's moonlit indigo.
-                color={PremiumColors.background}
-                textColor={PremiumColors.moon}
-                icon={<Lock size={17} color={PremiumColors.moon} strokeWidth={2.4} />}
-                onPress={() => handleStartReading()}
-                accessibilityHint={t('storyDetail.unlockHint')}
-              />
-              <Text style={styles.lockNote}>
-                {t('storyDetail.lockNote', { count: FREE_STORY_IDS.length })}
-              </Text>
-            </>
-          ) : (
-            <Button
-              style={styles.cta}
-              label={
-                hasProgress
-                  ? t('storyDetail.continue')
-                  : info.state === 'finished'
-                    ? t('storyDetail.readAgain')
-                    : t('storyDetail.begin')
-              }
-              icon={<Play size={18} color={colors.onPrimary} fill={colors.onPrimary} />}
-              onPress={() => handleStartReading(info.state === 'finished' ? 0 : undefined)}
-            />
-          )}
-          {hasProgress && !access.locked ? (
-            <Button
-              variant="ghost"
-              label={t('storyDetail.restart')}
-              icon={<RotateCcw size={15} color={colors.accent} />}
-              onPress={() => handleStartReading(0)}
-            />
-          ) : null}
-        </View>
-
-        {/* Page preview strip */}
-        <Text style={[type.eyebrow, styles.stripLabel]}>{t('storyDetail.insideTheBook')}</Text>
-        <ScrollView
-          horizontal
-          showsHorizontalScrollIndicator={false}
-          contentContainerStyle={styles.strip}
-        >
-          {story.pages.map((page, i) => {
-            const current = hasProgress && savedProgress!.pageIndex === i;
-            return (
-              <Pressable
-                key={page.id}
-                onPress={() => handleStartReading(i)}
-                accessibilityRole="button"
-                accessibilityLabel={
-                  access.locked
-                    ? t('storyDetail.thumbLockedA11y', { page: i + 1 })
-                    : t('storyDetail.thumbA11y', { page: i + 1 })
-                }
-                style={({ pressed }) => [pressed && { opacity: 0.85 }]}
-              >
-                <View
-                  style={[
-                    styles.thumb,
-                    { width: thumbW, height: thumbH, backgroundColor: palette.sky },
-                    current && styles.thumbCurrent,
-                  ]}
-                >
-                  <StoryIllustration pageKey={page.image} width={thumbW} height={thumbH} />
-                </View>
-                <Text style={[styles.thumbLabel, current && styles.thumbLabelCurrent]}>
-                  {current ? t('storyDetail.thumbHere', { page: i + 1 }) : t('storyDetail.thumbPage', { page: i + 1 })}
-                </Text>
-              </Pressable>
-            );
-          })}
-        </ScrollView>
-
-        <View style={styles.body}>
-          {/* About */}
-          <Text style={[type.eyebrow, styles.blockLabel]}>{t('storyDetail.about')}</Text>
-          <Text style={styles.desc}>{story.description.en}</Text>
-          <Text style={styles.descVi}>{story.description.vi}</Text>
-
-          {/* Lesson */}
-          {story.theme ? (
-            <View style={styles.lesson}>
-              <View style={[styles.lessonRule, { backgroundColor: palette.accent }]} />
-              <View style={{ flex: 1 }}>
-                <Text style={[type.eyebrow, { marginBottom: 6 }]}>{t('storyDetail.heart')}</Text>
-                <Text style={styles.lessonEn}>{story.theme.en}</Text>
-                <Text style={styles.lessonVi}>{story.theme.vi}</Text>
+        {sideBySide ? (
+          // Cover lifted over the band, beside the title and the primary action.
+          <View style={[columnStyle, styles.heroRow, { marginTop: coverTop - coverHeight }]}>
+            <View style={[styles.coverCard, { width: coverSize, height: coverSize }]}>
+              <View style={[styles.coverCardInner, { backgroundColor: palette.sky }]}>
+                <StoryIllustration pageKey={story.coverImage} width={coverSize} height={coverSize} />
               </View>
             </View>
-          ) : null}
+            <View style={[styles.heroInfo, { paddingTop: infoOffset }]}>{titleBlock}</View>
+          </View>
+        ) : (
+          <View style={columnStyle}>{titleBlock}</View>
+        )}
 
-          {/* Reading settings */}
-          <Pressable
-            style={({ pressed }) => [styles.prefsRow, pressed && { opacity: 0.85 }]}
-            onPress={() => router.push('/reader-settings')}
-            accessibilityRole="button"
-            accessibilityLabel={t('storyDetail.readingSettingsA11y', { summary: prefSummary })}
+        {/* Pages: a strip on phones, every page at once on wider screens */}
+        <Text style={[type.eyebrow, styles.stripLabel, columnStyle]}>{t('storyDetail.insideTheBook')}</Text>
+        {layout.isCompact ? (
+          <ScrollView
+            horizontal
+            showsHorizontalScrollIndicator={false}
+            contentContainerStyle={[styles.strip, { paddingHorizontal: column.inset }]}
           >
-            <View style={styles.prefsIcon}>
-              <SlidersHorizontal size={16} color={colors.accent} />
+            {story.pages.map(thumb)}
+          </ScrollView>
+        ) : (
+          <View style={[columnStyle, styles.thumbGrid]}>{story.pages.map(thumb)}</View>
+        )}
+
+        {sideBySide ? (
+          <View style={[columnStyle, styles.aboutRow]}>
+            <View style={styles.aboutMain}>{aboutBlock}</View>
+            <View style={styles.aside}>
+              {lessonBlock}
+              {prefsBlock}
             </View>
-            <View style={{ flex: 1 }}>
-              <Text style={styles.prefsLabel}>{t('storyDetail.readingSettings')}</Text>
-              <Text style={styles.prefsSummary} numberOfLines={1}>
-                {prefSummary}
-              </Text>
-            </View>
-            <ChevronRight size={18} color={colors.textMuted} />
-          </Pressable>
-        </View>
+          </View>
+        ) : (
+          <View style={columnStyle}>
+            {aboutBlock}
+            {lessonBlock}
+            {prefsBlock}
+          </View>
+        )}
       </ScrollView>
       {gate}
     </View>
@@ -393,15 +469,14 @@ const useStyles = createThemedStyles((t) => ({
   },
   coverContainer: { width: '100%', overflow: 'hidden' },
   coverFade: { position: 'absolute', left: 0, right: 0, bottom: -1 },
-  body: {
-    width: '100%',
-    maxWidth: MAX_CONTENT,
-    alignSelf: 'center',
-    paddingHorizontal: Spacing.gutter,
-  },
+  heroRow: { flexDirection: 'row', alignItems: 'flex-start', gap: Spacing.xl },
+  coverCard: { borderRadius: BorderRadius.xxl, backgroundColor: t.colors.surface, ...t.shadow.cover },
+  coverCardInner: { flex: 1, borderRadius: BorderRadius.xxl, overflow: 'hidden' },
+  heroInfo: { flex: 1, minWidth: 0 },
   categoryRow: { flexDirection: 'row', alignItems: 'center', gap: 6 },
   dot: { width: 8, height: 8, borderRadius: 4 },
   titleEn: { marginTop: Spacing.sm, fontSize: 32, lineHeight: 37 },
+  titleEnWide: { fontSize: Typography.display, lineHeight: Typography.display * 1.12 },
   titleVi: {
     fontSize: Typography.lg,
     lineHeight: Typography.lg * 1.35,
@@ -422,19 +497,21 @@ const useStyles = createThemedStyles((t) => ({
     marginTop: Spacing.sm + 2,
   },
   stripLabel: {
-    width: '100%',
-    maxWidth: MAX_CONTENT,
-    alignSelf: 'center',
-    paddingHorizontal: Spacing.gutter,
     marginTop: Spacing.xl,
     marginBottom: Spacing.sm + 4,
   },
-  strip: { paddingHorizontal: Spacing.gutter, gap: Spacing.sm + 4 },
+  strip: { gap: THUMB_GAP },
+  thumbGrid: { flexDirection: 'row', flexWrap: 'wrap', columnGap: THUMB_GAP, rowGap: Spacing.md },
   thumb: { borderRadius: BorderRadius.lg, overflow: 'hidden', ...t.shadow.paper },
   thumbCurrent: { borderWidth: 2, borderColor: t.colors.gold },
   thumbLabel: { fontSize: Typography.xs, color: t.colors.textMuted, marginTop: 6, fontWeight: '600' },
   thumbLabelCurrent: { color: t.colors.textAccent },
   blockLabel: { marginTop: Spacing.xl, marginBottom: Spacing.sm + 2 },
+  aboutRow: { flexDirection: 'row', alignItems: 'flex-start', gap: Spacing.xl },
+  aboutMain: { flex: 3, minWidth: 0 },
+  // Starts level with the "About" label.
+  aside: { flex: 2, minWidth: 0, marginTop: Spacing.xl, gap: Spacing.md },
+  flushTop: { marginTop: 0 },
   desc: {
     fontFamily: Typography.serif,
     fontSize: Typography.md,

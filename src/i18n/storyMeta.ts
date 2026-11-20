@@ -19,6 +19,7 @@ const CATEGORY_KEYS = {
   'Family Tale': 'categories.familyTale',
   Bedtime: 'categories.bedtime',
   Fable: 'categories.fable',
+  'Language Practice': 'categories.languagePractice',
 } as const;
 
 export function storyCategory(t: TFunction, category: string): string {

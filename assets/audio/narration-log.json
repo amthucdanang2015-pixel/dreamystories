@@ -2,7 +2,7 @@
   "settings": {
     "tool": "VoiceStudio (https://github.com/debpalash/VoiceStudio, AGPL-3.0 app)",
     "endpoint": "http://127.0.0.1:3900/v1/audio/speech",
-    "model": "omnivoice",
+    "model": "tts-1",
     "availableModels": [
       "tts-1",
       "tts-1-hd",
@@ -16,9 +16,9 @@
       "faster-whisper"
     ],
     "voiceEn": "demo0001",
-    "voiceVi": "746d2063",
-    "speed": 0.93,
-    "lastRunAt": "2026-11-13T09:14:35.482Z",
+    "voiceVi": "abf73455",
+    "speed": 0.95,
+    "lastRunAt": "2026-11-18T09:48:39.257Z",
     "licenseNote": "Check the per-model licence in VoiceStudio Model Manager. Default k2-fsa/OmniVoice weights are CC-BY-NC (non-commercial)."
   },
   "files": {
@@ -5586,6 +5586,1806 @@
       "durationSec": 3.96,
       "generatedAt": "2026-11-13T08:43:15.457Z",
       "postProcess": "ffmpeg: removed leading stray syllable (cut 780ms), 30ms fade-in, 80ms lead-in silence"
+    },
+    "assets/audio/100-everyday-conversations/page-01/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "Hello! How are you?",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 23852,
+      "durationSec": 1.49,
+      "generatedAt": "2026-11-18T07:59:26.692Z"
+    },
+    "assets/audio/100-everyday-conversations/page-01/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Xin chào! Bạn khỏe không?",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 31916,
+      "durationSec": 1.99,
+      "generatedAt": "2026-11-18T09:48:47.760Z"
+    },
+    "assets/audio/100-everyday-conversations/page-01/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "I’m good, thank you.",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 26924,
+      "durationSec": 1.68,
+      "generatedAt": "2026-11-18T08:00:39.166Z"
+    },
+    "assets/audio/100-everyday-conversations/page-01/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "Mình khỏe, cảm ơn bạn.",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 26540,
+      "durationSec": 1.66,
+      "generatedAt": "2026-11-18T09:48:55.612Z"
+    },
+    "assets/audio/100-everyday-conversations/page-01/sentence-03-en.mp3": {
+      "lang": "en",
+      "text": "What’s your name?",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 28076,
+      "durationSec": 1.75,
+      "generatedAt": "2026-11-18T08:01:06.482Z"
+    },
+    "assets/audio/100-everyday-conversations/page-01/sentence-03-vi.mp3": {
+      "lang": "vi",
+      "text": "Bạn tên là gì?",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 17324,
+      "durationSec": 1.08,
+      "generatedAt": "2026-11-18T09:49:02.987Z"
+    },
+    "assets/audio/100-everyday-conversations/page-01/sentence-04-en.mp3": {
+      "lang": "en",
+      "text": "My name is Linh.",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 27308,
+      "durationSec": 1.7,
+      "generatedAt": "2026-11-18T08:01:34.316Z"
+    },
+    "assets/audio/100-everyday-conversations/page-01/sentence-04-vi.mp3": {
+      "lang": "vi",
+      "text": "Mình tên là Linh.",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 29996,
+      "durationSec": 1.87,
+      "generatedAt": "2026-11-18T09:49:10.649Z"
+    },
+    "assets/audio/100-everyday-conversations/page-01/sentence-05-en.mp3": {
+      "lang": "en",
+      "text": "Nice to meet you.",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 24236,
+      "durationSec": 1.51,
+      "generatedAt": "2026-11-18T08:02:01.108Z"
+    },
+    "assets/audio/100-everyday-conversations/page-01/sentence-05-vi.mp3": {
+      "lang": "vi",
+      "text": "Rất vui được gặp bạn.",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 30380,
+      "durationSec": 1.9,
+      "generatedAt": "2026-11-18T09:49:18.382Z"
+    },
+    "assets/audio/100-everyday-conversations/page-01/sentence-06-en.mp3": {
+      "lang": "en",
+      "text": "Where are you from?",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 28844,
+      "durationSec": 1.8,
+      "generatedAt": "2026-11-18T08:02:29.025Z"
+    },
+    "assets/audio/100-everyday-conversations/page-01/sentence-06-vi.mp3": {
+      "lang": "vi",
+      "text": "Bạn đến từ đâu?",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 18092,
+      "durationSec": 1.13,
+      "generatedAt": "2026-11-18T09:49:25.911Z"
+    },
+    "assets/audio/100-everyday-conversations/page-01/sentence-07-en.mp3": {
+      "lang": "en",
+      "text": "I’m from Vietnam.",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 26924,
+      "durationSec": 1.68,
+      "generatedAt": "2026-11-18T08:02:56.402Z"
+    },
+    "assets/audio/100-everyday-conversations/page-01/sentence-07-vi.mp3": {
+      "lang": "vi",
+      "text": "Mình đến từ Việt Nam.",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 32300,
+      "durationSec": 2.02,
+      "generatedAt": "2026-11-18T09:49:33.734Z"
+    },
+    "assets/audio/100-everyday-conversations/page-01/sentence-08-en.mp3": {
+      "lang": "en",
+      "text": "Do you live nearby?",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 26924,
+      "durationSec": 1.68,
+      "generatedAt": "2026-11-18T08:03:24.058Z"
+    },
+    "assets/audio/100-everyday-conversations/page-01/sentence-08-vi.mp3": {
+      "lang": "vi",
+      "text": "Bạn sống gần đây à?",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 26156,
+      "durationSec": 1.63,
+      "generatedAt": "2026-11-18T09:49:41.470Z"
+    },
+    "assets/audio/100-everyday-conversations/page-01/sentence-09-en.mp3": {
+      "lang": "en",
+      "text": "Yes, just around the corner.",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 30380,
+      "durationSec": 1.9,
+      "generatedAt": "2026-11-18T08:03:51.601Z"
+    },
+    "assets/audio/100-everyday-conversations/page-01/sentence-09-vi.mp3": {
+      "lang": "vi",
+      "text": "Ừ, ngay gần đây thôi.",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 32684,
+      "durationSec": 2.04,
+      "generatedAt": "2026-11-18T09:49:49.509Z"
+    },
+    "assets/audio/100-everyday-conversations/page-01/sentence-10-en.mp3": {
+      "lang": "en",
+      "text": "See you around!",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 25004,
+      "durationSec": 1.56,
+      "generatedAt": "2026-11-18T08:04:18.781Z"
+    },
+    "assets/audio/100-everyday-conversations/page-01/sentence-10-vi.mp3": {
+      "lang": "vi",
+      "text": "Hẹn gặp lại nhé!",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 23084,
+      "durationSec": 1.44,
+      "generatedAt": "2026-11-18T09:49:57.074Z"
+    },
+    "assets/audio/100-everyday-conversations/page-02/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "Excuse me, may I ask you something?",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 34988,
+      "durationSec": 2.18,
+      "generatedAt": "2026-11-18T08:04:47.045Z"
+    },
+    "assets/audio/100-everyday-conversations/page-02/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Xin lỗi, mình hỏi bạn một chút được không?",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 55340,
+      "durationSec": 3.46,
+      "generatedAt": "2026-11-18T09:50:06.529Z"
+    },
+    "assets/audio/100-everyday-conversations/page-02/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "Of course. What do you need?",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 29996,
+      "durationSec": 1.87,
+      "generatedAt": "2026-11-18T08:05:18.603Z"
+    },
+    "assets/audio/100-everyday-conversations/page-02/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "Được chứ. Bạn cần gì?",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 33068,
+      "durationSec": 2.06,
+      "generatedAt": "2026-11-18T09:50:14.206Z"
+    },
+    "assets/audio/100-everyday-conversations/page-02/sentence-03-en.mp3": {
+      "lang": "en",
+      "text": "Could you help me, please?",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 31532,
+      "durationSec": 1.97,
+      "generatedAt": "2026-11-18T08:05:46.746Z"
+    },
+    "assets/audio/100-everyday-conversations/page-02/sentence-03-vi.mp3": {
+      "lang": "vi",
+      "text": "Bạn giúp mình được không?",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 23084,
+      "durationSec": 1.44,
+      "generatedAt": "2026-11-18T09:50:22.157Z"
+    },
+    "assets/audio/100-everyday-conversations/page-02/sentence-04-en.mp3": {
+      "lang": "en",
+      "text": "Sure, I’d be happy to help.",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 31148,
+      "durationSec": 1.94,
+      "generatedAt": "2026-11-18T08:06:16.669Z"
+    },
+    "assets/audio/100-everyday-conversations/page-02/sentence-04-vi.mp3": {
+      "lang": "vi",
+      "text": "Được chứ, mình sẵn lòng giúp.",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 39212,
+      "durationSec": 2.45,
+      "generatedAt": "2026-11-18T09:50:30.931Z"
+    },
+    "assets/audio/100-everyday-conversations/page-02/sentence-05-en.mp3": {
+      "lang": "en",
+      "text": "Thank you so much.",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 26540,
+      "durationSec": 1.66,
+      "generatedAt": "2026-11-18T08:06:45.368Z"
+    },
+    "assets/audio/100-everyday-conversations/page-02/sentence-05-vi.mp3": {
+      "lang": "vi",
+      "text": "Cảm ơn bạn nhiều lắm.",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 31916,
+      "durationSec": 1.99,
+      "generatedAt": "2026-11-18T09:50:38.841Z"
+    },
+    "assets/audio/100-everyday-conversations/page-02/sentence-06-en.mp3": {
+      "lang": "en",
+      "text": "You’re welcome.",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 26924,
+      "durationSec": 1.68,
+      "generatedAt": "2026-11-18T08:07:15.226Z"
+    },
+    "assets/audio/100-everyday-conversations/page-02/sentence-06-vi.mp3": {
+      "lang": "vi",
+      "text": "Không có gì.",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 23852,
+      "durationSec": 1.49,
+      "generatedAt": "2026-11-18T09:50:46.293Z"
+    },
+    "assets/audio/100-everyday-conversations/page-02/sentence-07-en.mp3": {
+      "lang": "en",
+      "text": "I’m sorry I’m late.",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 25388,
+      "durationSec": 1.58,
+      "generatedAt": "2026-11-18T08:07:45.590Z"
+    },
+    "assets/audio/100-everyday-conversations/page-02/sentence-07-vi.mp3": {
+      "lang": "vi",
+      "text": "Xin lỗi, mình đến muộn.",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 32300,
+      "durationSec": 2.02,
+      "generatedAt": "2026-11-18T09:50:54.187Z"
+    },
+    "assets/audio/100-everyday-conversations/page-02/sentence-08-en.mp3": {
+      "lang": "en",
+      "text": "That’s all right.",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 28460,
+      "durationSec": 1.78,
+      "generatedAt": "2026-11-18T08:08:14.134Z"
+    },
+    "assets/audio/100-everyday-conversations/page-02/sentence-08-vi.mp3": {
+      "lang": "vi",
+      "text": "Không sao đâu.",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 28076,
+      "durationSec": 1.75,
+      "generatedAt": "2026-11-18T09:51:01.677Z"
+    },
+    "assets/audio/100-everyday-conversations/page-02/sentence-09-en.mp3": {
+      "lang": "en",
+      "text": "Could you say that again, please?",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 31532,
+      "durationSec": 1.97,
+      "generatedAt": "2026-11-18T08:08:42.954Z"
+    },
+    "assets/audio/100-everyday-conversations/page-02/sentence-09-vi.mp3": {
+      "lang": "vi",
+      "text": "Bạn nói lại giúp mình được không?",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 31532,
+      "durationSec": 1.97,
+      "generatedAt": "2026-11-18T09:51:10.199Z"
+    },
+    "assets/audio/100-everyday-conversations/page-02/sentence-10-en.mp3": {
+      "lang": "en",
+      "text": "No problem.",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 23468,
+      "durationSec": 1.46,
+      "generatedAt": "2026-11-18T08:09:11.335Z"
+    },
+    "assets/audio/100-everyday-conversations/page-02/sentence-10-vi.mp3": {
+      "lang": "vi",
+      "text": "Được thôi.",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 13868,
+      "durationSec": 0.86,
+      "generatedAt": "2026-11-18T09:51:17.502Z"
+    },
+    "assets/audio/100-everyday-conversations/page-03/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "What time is it?",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 26924,
+      "durationSec": 1.68,
+      "generatedAt": "2026-11-18T08:09:38.438Z"
+    },
+    "assets/audio/100-everyday-conversations/page-03/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Mấy giờ rồi?",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 22316,
+      "durationSec": 1.39,
+      "generatedAt": "2026-11-18T09:51:24.965Z"
+    },
+    "assets/audio/100-everyday-conversations/page-03/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "It’s seven o’clock.",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 27308,
+      "durationSec": 1.7,
+      "generatedAt": "2026-11-18T08:10:06.424Z"
+    },
+    "assets/audio/100-everyday-conversations/page-03/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "Bảy giờ rồi.",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 25772,
+      "durationSec": 1.61,
+      "generatedAt": "2026-11-18T09:51:32.353Z"
+    },
+    "assets/audio/100-everyday-conversations/page-03/sentence-03-en.mp3": {
+      "lang": "en",
+      "text": "I’m getting ready now.",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 26924,
+      "durationSec": 1.68,
+      "generatedAt": "2026-11-18T08:10:33.207Z"
+    },
+    "assets/audio/100-everyday-conversations/page-03/sentence-03-vi.mp3": {
+      "lang": "vi",
+      "text": "Mình đang chuẩn bị đây.",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 21932,
+      "durationSec": 1.37,
+      "generatedAt": "2026-11-18T09:51:40.138Z"
+    },
+    "assets/audio/100-everyday-conversations/page-03/sentence-04-en.mp3": {
+      "lang": "en",
+      "text": "Have you had breakfast?",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 28460,
+      "durationSec": 1.78,
+      "generatedAt": "2026-11-18T08:10:59.369Z"
+    },
+    "assets/audio/100-everyday-conversations/page-03/sentence-04-vi.mp3": {
+      "lang": "vi",
+      "text": "Bạn ăn sáng chưa?",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 20012,
+      "durationSec": 1.25,
+      "generatedAt": "2026-11-18T09:51:47.759Z"
+    },
+    "assets/audio/100-everyday-conversations/page-03/sentence-05-en.mp3": {
+      "lang": "en",
+      "text": "Not yet. I’m still hungry.",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 31148,
+      "durationSec": 1.94,
+      "generatedAt": "2026-11-18T08:11:26.414Z"
+    },
+    "assets/audio/100-everyday-conversations/page-03/sentence-05-vi.mp3": {
+      "lang": "vi",
+      "text": "Chưa. Mình vẫn còn đói.",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 31532,
+      "durationSec": 1.97,
+      "generatedAt": "2026-11-18T09:51:55.594Z"
+    },
+    "assets/audio/100-everyday-conversations/page-03/sentence-06-en.mp3": {
+      "lang": "en",
+      "text": "Let’s eat together.",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 28460,
+      "durationSec": 1.78,
+      "generatedAt": "2026-11-18T08:11:54.082Z"
+    },
+    "assets/audio/100-everyday-conversations/page-03/sentence-06-vi.mp3": {
+      "lang": "vi",
+      "text": "Mình ăn cùng nhau nhé.",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 28460,
+      "durationSec": 1.78,
+      "generatedAt": "2026-11-18T09:52:03.319Z"
+    },
+    "assets/audio/100-everyday-conversations/page-03/sentence-07-en.mp3": {
+      "lang": "en",
+      "text": "Where are my keys?",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 27308,
+      "durationSec": 1.7,
+      "generatedAt": "2026-11-18T08:12:22.859Z"
+    },
+    "assets/audio/100-everyday-conversations/page-03/sentence-07-vi.mp3": {
+      "lang": "vi",
+      "text": "Chìa khóa của mình đâu rồi?",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 33452,
+      "durationSec": 2.09,
+      "generatedAt": "2026-11-18T09:52:11.388Z"
+    },
+    "assets/audio/100-everyday-conversations/page-03/sentence-08-en.mp3": {
+      "lang": "en",
+      "text": "They’re on the table.",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 27692,
+      "durationSec": 1.73,
+      "generatedAt": "2026-11-18T08:12:51.801Z"
+    },
+    "assets/audio/100-everyday-conversations/page-03/sentence-08-vi.mp3": {
+      "lang": "vi",
+      "text": "Ở trên bàn đó.",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 16172,
+      "durationSec": 1.01,
+      "generatedAt": "2026-11-18T09:52:18.834Z"
+    },
+    "assets/audio/100-everyday-conversations/page-03/sentence-09-en.mp3": {
+      "lang": "en",
+      "text": "I have to go now.",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 26540,
+      "durationSec": 1.66,
+      "generatedAt": "2026-11-18T08:13:20.702Z"
+    },
+    "assets/audio/100-everyday-conversations/page-03/sentence-09-vi.mp3": {
+      "lang": "vi",
+      "text": "Mình phải đi bây giờ.",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 31532,
+      "durationSec": 1.97,
+      "generatedAt": "2026-11-18T09:52:26.586Z"
+    },
+    "assets/audio/100-everyday-conversations/page-03/sentence-10-en.mp3": {
+      "lang": "en",
+      "text": "Have a nice day!",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 26156,
+      "durationSec": 1.63,
+      "generatedAt": "2026-11-18T08:13:48.366Z"
+    },
+    "assets/audio/100-everyday-conversations/page-03/sentence-10-vi.mp3": {
+      "lang": "vi",
+      "text": "Chúc bạn một ngày vui nhé!",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 37292,
+      "durationSec": 2.33,
+      "generatedAt": "2026-11-18T09:52:34.810Z"
+    },
+    "assets/audio/100-everyday-conversations/page-04/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "Welcome to our home.",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 26924,
+      "durationSec": 1.68,
+      "generatedAt": "2026-11-18T08:14:16.892Z"
+    },
+    "assets/audio/100-everyday-conversations/page-04/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Chào mừng bạn đến nhà mình.",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 28076,
+      "durationSec": 1.75,
+      "generatedAt": "2026-11-18T09:52:43.164Z"
+    },
+    "assets/audio/100-everyday-conversations/page-04/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "Please come in.",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 25004,
+      "durationSec": 1.56,
+      "generatedAt": "2026-11-18T08:14:44.843Z"
+    },
+    "assets/audio/100-everyday-conversations/page-04/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "Mời bạn vào nhà.",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 29612,
+      "durationSec": 1.85,
+      "generatedAt": "2026-11-18T09:52:51.380Z"
+    },
+    "assets/audio/100-everyday-conversations/page-04/sentence-03-en.mp3": {
+      "lang": "en",
+      "text": "Would you like some water?",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 30380,
+      "durationSec": 1.9,
+      "generatedAt": "2026-11-18T08:15:12.330Z"
+    },
+    "assets/audio/100-everyday-conversations/page-04/sentence-03-vi.mp3": {
+      "lang": "vi",
+      "text": "Bạn uống nước nhé?",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 20396,
+      "durationSec": 1.27,
+      "generatedAt": "2026-11-18T09:53:00.027Z"
+    },
+    "assets/audio/100-everyday-conversations/page-04/sentence-04-en.mp3": {
+      "lang": "en",
+      "text": "Yes, please. Thank you.",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 29996,
+      "durationSec": 1.87,
+      "generatedAt": "2026-11-18T08:15:39.526Z"
+    },
+    "assets/audio/100-everyday-conversations/page-04/sentence-04-vi.mp3": {
+      "lang": "vi",
+      "text": "Có ạ, cảm ơn bạn.",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 23468,
+      "durationSec": 1.46,
+      "generatedAt": "2026-11-18T09:53:09.620Z"
+    },
+    "assets/audio/100-everyday-conversations/page-04/sentence-05-en.mp3": {
+      "lang": "en",
+      "text": "Make yourself comfortable.",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 31148,
+      "durationSec": 1.94,
+      "generatedAt": "2026-11-18T08:16:07.354Z"
+    },
+    "assets/audio/100-everyday-conversations/page-04/sentence-05-vi.mp3": {
+      "lang": "vi",
+      "text": "Bạn cứ tự nhiên nhé.",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 31532,
+      "durationSec": 1.97,
+      "generatedAt": "2026-11-18T09:53:18.670Z"
+    },
+    "assets/audio/100-everyday-conversations/page-04/sentence-06-en.mp3": {
+      "lang": "en",
+      "text": "Where should I put this?",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 31532,
+      "durationSec": 1.97,
+      "generatedAt": "2026-11-18T08:16:35.757Z"
+    },
+    "assets/audio/100-everyday-conversations/page-04/sentence-06-vi.mp3": {
+      "lang": "vi",
+      "text": "Mình để cái này ở đâu?",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 30764,
+      "durationSec": 1.92,
+      "generatedAt": "2026-11-18T09:53:28.811Z"
+    },
+    "assets/audio/100-everyday-conversations/page-04/sentence-07-en.mp3": {
+      "lang": "en",
+      "text": "You can put it over there.",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 30764,
+      "durationSec": 1.92,
+      "generatedAt": "2026-11-18T08:17:03.373Z"
+    },
+    "assets/audio/100-everyday-conversations/page-04/sentence-07-vi.mp3": {
+      "lang": "vi",
+      "text": "Bạn để ở đằng kia nhé.",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 32684,
+      "durationSec": 2.04,
+      "generatedAt": "2026-11-18T09:53:38.098Z"
+    },
+    "assets/audio/100-everyday-conversations/page-04/sentence-08-en.mp3": {
+      "lang": "en",
+      "text": "Can I give you a hand?",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 29228,
+      "durationSec": 1.82,
+      "generatedAt": "2026-11-18T08:17:31.637Z"
+    },
+    "assets/audio/100-everyday-conversations/page-04/sentence-08-vi.mp3": {
+      "lang": "vi",
+      "text": "Mình phụ bạn một tay nhé?",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 34220,
+      "durationSec": 2.14,
+      "generatedAt": "2026-11-18T09:53:48.658Z"
+    },
+    "assets/audio/100-everyday-conversations/page-04/sentence-09-en.mp3": {
+      "lang": "en",
+      "text": "That would be great.",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 28844,
+      "durationSec": 1.8,
+      "generatedAt": "2026-11-18T08:18:00.253Z"
+    },
+    "assets/audio/100-everyday-conversations/page-04/sentence-09-vi.mp3": {
+      "lang": "vi",
+      "text": "Vậy thì tốt quá.",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 29228,
+      "durationSec": 1.82,
+      "generatedAt": "2026-11-18T09:53:57.189Z"
+    },
+    "assets/audio/100-everyday-conversations/page-04/sentence-10-en.mp3": {
+      "lang": "en",
+      "text": "Dinner is ready.",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 25004,
+      "durationSec": 1.56,
+      "generatedAt": "2026-11-18T08:18:28.531Z"
+    },
+    "assets/audio/100-everyday-conversations/page-04/sentence-10-vi.mp3": {
+      "lang": "vi",
+      "text": "Bữa tối sẵn sàng rồi.",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 29996,
+      "durationSec": 1.87,
+      "generatedAt": "2026-11-18T09:54:06.618Z"
+    },
+    "assets/audio/100-everyday-conversations/page-05/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "What would you like to eat?",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 31148,
+      "durationSec": 1.94,
+      "generatedAt": "2026-11-18T08:18:56.269Z"
+    },
+    "assets/audio/100-everyday-conversations/page-05/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Bạn muốn ăn gì?",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 28844,
+      "durationSec": 1.8,
+      "generatedAt": "2026-11-18T09:54:16.383Z"
+    },
+    "assets/audio/100-everyday-conversations/page-05/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "I’d like a sandwich, please.",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 31148,
+      "durationSec": 1.94,
+      "generatedAt": "2026-11-18T08:19:23.932Z"
+    },
+    "assets/audio/100-everyday-conversations/page-05/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "Cho mình một chiếc bánh mì kẹp nhé.",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 36908,
+      "durationSec": 2.3,
+      "generatedAt": "2026-11-18T09:54:27.583Z"
+    },
+    "assets/audio/100-everyday-conversations/page-05/sentence-03-en.mp3": {
+      "lang": "en",
+      "text": "Would you like something to drink?",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 34604,
+      "durationSec": 2.16,
+      "generatedAt": "2026-11-18T08:19:52.228Z"
+    },
+    "assets/audio/100-everyday-conversations/page-05/sentence-03-vi.mp3": {
+      "lang": "vi",
+      "text": "Bạn muốn uống gì không?",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 21932,
+      "durationSec": 1.37,
+      "generatedAt": "2026-11-18T09:54:37.380Z"
+    },
+    "assets/audio/100-everyday-conversations/page-05/sentence-04-en.mp3": {
+      "lang": "en",
+      "text": "A glass of water, please.",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 29612,
+      "durationSec": 1.85,
+      "generatedAt": "2026-11-18T08:20:19.417Z"
+    },
+    "assets/audio/100-everyday-conversations/page-05/sentence-04-vi.mp3": {
+      "lang": "vi",
+      "text": "Cho mình một cốc nước nhé.",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 28460,
+      "durationSec": 1.78,
+      "generatedAt": "2026-11-18T09:54:47.189Z"
+    },
+    "assets/audio/100-everyday-conversations/page-05/sentence-05-en.mp3": {
+      "lang": "en",
+      "text": "Is this seat taken?",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 29228,
+      "durationSec": 1.82,
+      "generatedAt": "2026-11-18T08:20:45.759Z"
+    },
+    "assets/audio/100-everyday-conversations/page-05/sentence-05-vi.mp3": {
+      "lang": "vi",
+      "text": "Chỗ này có ai ngồi chưa?",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 34988,
+      "durationSec": 2.18,
+      "generatedAt": "2026-11-18T09:54:57.857Z"
+    },
+    "assets/audio/100-everyday-conversations/page-05/sentence-06-en.mp3": {
+      "lang": "en",
+      "text": "No, you can sit here.",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 29996,
+      "durationSec": 1.87,
+      "generatedAt": "2026-11-18T08:21:12.972Z"
+    },
+    "assets/audio/100-everyday-conversations/page-05/sentence-06-vi.mp3": {
+      "lang": "vi",
+      "text": "Chưa, bạn ngồi đây đi.",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 30764,
+      "durationSec": 1.92,
+      "generatedAt": "2026-11-18T09:55:07.776Z"
+    },
+    "assets/audio/100-everyday-conversations/page-05/sentence-07-en.mp3": {
+      "lang": "en",
+      "text": "This smells delicious.",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 30764,
+      "durationSec": 1.92,
+      "generatedAt": "2026-11-18T08:21:39.611Z"
+    },
+    "assets/audio/100-everyday-conversations/page-05/sentence-07-vi.mp3": {
+      "lang": "vi",
+      "text": "Món này thơm quá.",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 28076,
+      "durationSec": 1.75,
+      "generatedAt": "2026-11-18T09:55:17.191Z"
+    },
+    "assets/audio/100-everyday-conversations/page-05/sentence-08-en.mp3": {
+      "lang": "en",
+      "text": "Would you like to try some?",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 31532,
+      "durationSec": 1.97,
+      "generatedAt": "2026-11-18T08:22:06.113Z"
+    },
+    "assets/audio/100-everyday-conversations/page-05/sentence-08-vi.mp3": {
+      "lang": "vi",
+      "text": "Bạn muốn nếm thử một chút không?",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 24620,
+      "durationSec": 1.54,
+      "generatedAt": "2026-11-18T09:55:27.632Z"
+    },
+    "assets/audio/100-everyday-conversations/page-05/sentence-09-en.mp3": {
+      "lang": "en",
+      "text": "Yes, just a little.",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 26156,
+      "durationSec": 1.63,
+      "generatedAt": "2026-11-18T08:22:36.017Z"
+    },
+    "assets/audio/100-everyday-conversations/page-05/sentence-09-vi.mp3": {
+      "lang": "vi",
+      "text": "Có, cho mình một chút thôi.",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 31532,
+      "durationSec": 1.97,
+      "generatedAt": "2026-11-18T09:55:37.334Z"
+    },
+    "assets/audio/100-everyday-conversations/page-05/sentence-10-en.mp3": {
+      "lang": "en",
+      "text": "That was really tasty.",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 26924,
+      "durationSec": 1.68,
+      "generatedAt": "2026-11-18T08:23:04.530Z"
+    },
+    "assets/audio/100-everyday-conversations/page-05/sentence-10-vi.mp3": {
+      "lang": "vi",
+      "text": "Món đó ngon thật đấy.",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 28844,
+      "durationSec": 1.8,
+      "generatedAt": "2026-11-18T09:55:46.359Z"
+    },
+    "assets/audio/100-everyday-conversations/page-06/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "How much is this?",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 26156,
+      "durationSec": 1.63,
+      "generatedAt": "2026-11-18T08:23:32.499Z"
+    },
+    "assets/audio/100-everyday-conversations/page-06/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Món này giá bao nhiêu?",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 22316,
+      "durationSec": 1.39,
+      "generatedAt": "2026-11-18T09:55:56.681Z"
+    },
+    "assets/audio/100-everyday-conversations/page-06/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "It’s five dollars.",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 26540,
+      "durationSec": 1.66,
+      "generatedAt": "2026-11-18T08:24:00.990Z"
+    },
+    "assets/audio/100-everyday-conversations/page-06/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "Năm đô la.",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 21932,
+      "durationSec": 1.37,
+      "generatedAt": "2026-11-18T09:56:07.297Z"
+    },
+    "assets/audio/100-everyday-conversations/page-06/sentence-03-en.mp3": {
+      "lang": "en",
+      "text": "That’s a little too expensive for me.",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 38444,
+      "durationSec": 2.4,
+      "generatedAt": "2026-11-18T08:24:29.102Z"
+    },
+    "assets/audio/100-everyday-conversations/page-06/sentence-03-vi.mp3": {
+      "lang": "vi",
+      "text": "Giá đó hơi cao với mình.",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 30764,
+      "durationSec": 1.92,
+      "generatedAt": "2026-11-18T09:56:17.338Z"
+    },
+    "assets/audio/100-everyday-conversations/page-06/sentence-04-en.mp3": {
+      "lang": "en",
+      "text": "Do you have a cheaper one?",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 31532,
+      "durationSec": 1.97,
+      "generatedAt": "2026-11-18T08:24:57.348Z"
+    },
+    "assets/audio/100-everyday-conversations/page-06/sentence-04-vi.mp3": {
+      "lang": "vi",
+      "text": "Bạn có loại nào rẻ hơn không?",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 32684,
+      "durationSec": 2.04,
+      "generatedAt": "2026-11-18T09:56:29.274Z"
+    },
+    "assets/audio/100-everyday-conversations/page-06/sentence-05-en.mp3": {
+      "lang": "en",
+      "text": "Can I try this on?",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 26540,
+      "durationSec": 1.66,
+      "generatedAt": "2026-11-18T08:25:25.697Z"
+    },
+    "assets/audio/100-everyday-conversations/page-06/sentence-05-vi.mp3": {
+      "lang": "vi",
+      "text": "Mình thử món này được không?",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 39596,
+      "durationSec": 2.47,
+      "generatedAt": "2026-11-18T09:56:39.727Z"
+    },
+    "assets/audio/100-everyday-conversations/page-06/sentence-06-en.mp3": {
+      "lang": "en",
+      "text": "Where is the fitting room?",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 31916,
+      "durationSec": 1.99,
+      "generatedAt": "2026-11-18T08:25:53.195Z"
+    },
+    "assets/audio/100-everyday-conversations/page-06/sentence-06-vi.mp3": {
+      "lang": "vi",
+      "text": "Phòng thử đồ ở đâu?",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 23852,
+      "durationSec": 1.49,
+      "generatedAt": "2026-11-18T09:56:48.285Z"
+    },
+    "assets/audio/100-everyday-conversations/page-06/sentence-07-en.mp3": {
+      "lang": "en",
+      "text": "I’m just looking, thank you.",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 32300,
+      "durationSec": 2.02,
+      "generatedAt": "2026-11-18T08:26:19.570Z"
+    },
+    "assets/audio/100-everyday-conversations/page-06/sentence-07-vi.mp3": {
+      "lang": "vi",
+      "text": "Mình chỉ xem thôi, cảm ơn bạn.",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 37676,
+      "durationSec": 2.35,
+      "generatedAt": "2026-11-18T09:56:58.691Z"
+    },
+    "assets/audio/100-everyday-conversations/page-06/sentence-08-en.mp3": {
+      "lang": "en",
+      "text": "I’ll take it.",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 18860,
+      "durationSec": 1.18,
+      "generatedAt": "2026-11-18T08:26:47.195Z"
+    },
+    "assets/audio/100-everyday-conversations/page-06/sentence-08-vi.mp3": {
+      "lang": "vi",
+      "text": "Mình lấy món này.",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 27308,
+      "durationSec": 1.7,
+      "generatedAt": "2026-11-18T09:57:07.195Z"
+    },
+    "assets/audio/100-everyday-conversations/page-06/sentence-09-en.mp3": {
+      "lang": "en",
+      "text": "Can I pay by card?",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 25388,
+      "durationSec": 1.58,
+      "generatedAt": "2026-11-18T08:27:14.969Z"
+    },
+    "assets/audio/100-everyday-conversations/page-06/sentence-09-vi.mp3": {
+      "lang": "vi",
+      "text": "Mình trả bằng thẻ được không?",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 32684,
+      "durationSec": 2.04,
+      "generatedAt": "2026-11-18T09:57:16.344Z"
+    },
+    "assets/audio/100-everyday-conversations/page-06/sentence-10-en.mp3": {
+      "lang": "en",
+      "text": "Here’s your change.",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 26924,
+      "durationSec": 1.68,
+      "generatedAt": "2026-11-18T08:27:42.659Z"
+    },
+    "assets/audio/100-everyday-conversations/page-06/sentence-10-vi.mp3": {
+      "lang": "vi",
+      "text": "Tiền thừa của bạn đây.",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 29996,
+      "durationSec": 1.87,
+      "generatedAt": "2026-11-18T09:57:26.159Z"
+    },
+    "assets/audio/100-everyday-conversations/page-07/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "Excuse me, where is the bus stop?",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 32300,
+      "durationSec": 2.02,
+      "generatedAt": "2026-11-18T08:28:10.259Z"
+    },
+    "assets/audio/100-everyday-conversations/page-07/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Xin lỗi, trạm xe buýt ở đâu vậy?",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 43820,
+      "durationSec": 2.74,
+      "generatedAt": "2026-11-18T09:57:35.349Z"
+    },
+    "assets/audio/100-everyday-conversations/page-07/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "Go straight ahead.",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 26924,
+      "durationSec": 1.68,
+      "generatedAt": "2026-11-18T08:28:38.266Z"
+    },
+    "assets/audio/100-everyday-conversations/page-07/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "Bạn đi thẳng nhé.",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 19628,
+      "durationSec": 1.22,
+      "generatedAt": "2026-11-18T09:57:43.509Z"
+    },
+    "assets/audio/100-everyday-conversations/page-07/sentence-03-en.mp3": {
+      "lang": "en",
+      "text": "Turn left at the next street.",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 32684,
+      "durationSec": 2.04,
+      "generatedAt": "2026-11-18T08:29:04.916Z"
+    },
+    "assets/audio/100-everyday-conversations/page-07/sentence-03-vi.mp3": {
+      "lang": "vi",
+      "text": "Rẽ trái ở con phố kế tiếp.",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 33452,
+      "durationSec": 2.09,
+      "generatedAt": "2026-11-18T09:57:52.314Z"
+    },
+    "assets/audio/100-everyday-conversations/page-07/sentence-04-en.mp3": {
+      "lang": "en",
+      "text": "Is it far from here?",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 26924,
+      "durationSec": 1.68,
+      "generatedAt": "2026-11-18T08:29:32.339Z"
+    },
+    "assets/audio/100-everyday-conversations/page-07/sentence-04-vi.mp3": {
+      "lang": "vi",
+      "text": "Từ đây đến đó có xa không?",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 29228,
+      "durationSec": 1.82,
+      "generatedAt": "2026-11-18T09:58:02.281Z"
+    },
+    "assets/audio/100-everyday-conversations/page-07/sentence-05-en.mp3": {
+      "lang": "en",
+      "text": "No, it’s about a five-minute walk.",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 35372,
+      "durationSec": 2.21,
+      "generatedAt": "2026-11-18T08:29:59.492Z"
+    },
+    "assets/audio/100-everyday-conversations/page-07/sentence-05-vi.mp3": {
+      "lang": "vi",
+      "text": "Không, đi bộ khoảng năm phút thôi.",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 49580,
+      "durationSec": 3.1,
+      "generatedAt": "2026-11-18T09:58:11.984Z"
+    },
+    "assets/audio/100-everyday-conversations/page-07/sentence-06-en.mp3": {
+      "lang": "en",
+      "text": "Which bus goes to the museum?",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 31532,
+      "durationSec": 1.97,
+      "generatedAt": "2026-11-18T08:30:27.650Z"
+    },
+    "assets/audio/100-everyday-conversations/page-07/sentence-06-vi.mp3": {
+      "lang": "vi",
+      "text": "Xe buýt nào đi đến bảo tàng?",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 34988,
+      "durationSec": 2.18,
+      "generatedAt": "2026-11-18T09:58:20.835Z"
+    },
+    "assets/audio/100-everyday-conversations/page-07/sentence-07-en.mp3": {
+      "lang": "en",
+      "text": "Take bus number twelve.",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 30764,
+      "durationSec": 1.92,
+      "generatedAt": "2026-11-18T08:30:54.876Z"
+    },
+    "assets/audio/100-everyday-conversations/page-07/sentence-07-vi.mp3": {
+      "lang": "vi",
+      "text": "Bạn đi xe buýt số mười hai.",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 28076,
+      "durationSec": 1.75,
+      "generatedAt": "2026-11-18T09:58:30.863Z"
+    },
+    "assets/audio/100-everyday-conversations/page-07/sentence-08-en.mp3": {
+      "lang": "en",
+      "text": "Where should I get off?",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 27692,
+      "durationSec": 1.73,
+      "generatedAt": "2026-11-18T08:31:21.987Z"
+    },
+    "assets/audio/100-everyday-conversations/page-07/sentence-08-vi.mp3": {
+      "lang": "vi",
+      "text": "Mình nên xuống ở đâu?",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 29228,
+      "durationSec": 1.82,
+      "generatedAt": "2026-11-18T09:58:39.140Z"
+    },
+    "assets/audio/100-everyday-conversations/page-07/sentence-09-en.mp3": {
+      "lang": "en",
+      "text": "Get off at the next stop.",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 29228,
+      "durationSec": 1.82,
+      "generatedAt": "2026-11-18T08:31:48.319Z"
+    },
+    "assets/audio/100-everyday-conversations/page-07/sentence-09-vi.mp3": {
+      "lang": "vi",
+      "text": "Bạn xuống ở trạm kế tiếp.",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 34220,
+      "durationSec": 2.14,
+      "generatedAt": "2026-11-18T09:58:47.158Z"
+    },
+    "assets/audio/100-everyday-conversations/page-07/sentence-10-en.mp3": {
+      "lang": "en",
+      "text": "Does this bus stop near the park?",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 34220,
+      "durationSec": 2.14,
+      "generatedAt": "2026-11-18T08:32:15.805Z"
+    },
+    "assets/audio/100-everyday-conversations/page-07/sentence-10-vi.mp3": {
+      "lang": "vi",
+      "text": "Xe buýt này có dừng gần công viên không?",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 39212,
+      "durationSec": 2.45,
+      "generatedAt": "2026-11-18T09:58:56.523Z"
+    },
+    "assets/audio/100-everyday-conversations/page-08/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "What are we learning today?",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 30764,
+      "durationSec": 1.92,
+      "generatedAt": "2026-11-18T08:32:44.647Z"
+    },
+    "assets/audio/100-everyday-conversations/page-08/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Hôm nay chúng ta học gì?",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 29612,
+      "durationSec": 1.85,
+      "generatedAt": "2026-11-18T09:59:05.457Z"
+    },
+    "assets/audio/100-everyday-conversations/page-08/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "We’re learning about animals.",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 30764,
+      "durationSec": 1.92,
+      "generatedAt": "2026-11-18T08:33:11.534Z"
+    },
+    "assets/audio/100-everyday-conversations/page-08/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "Chúng ta học về các loài động vật.",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 31148,
+      "durationSec": 1.94,
+      "generatedAt": "2026-11-18T09:59:15.204Z"
+    },
+    "assets/audio/100-everyday-conversations/page-08/sentence-03-en.mp3": {
+      "lang": "en",
+      "text": "May I borrow your pencil?",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 30380,
+      "durationSec": 1.9,
+      "generatedAt": "2026-11-18T08:33:39.882Z"
+    },
+    "assets/audio/100-everyday-conversations/page-08/sentence-03-vi.mp3": {
+      "lang": "vi",
+      "text": "Mình mượn bút chì của bạn được không?",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 35756,
+      "durationSec": 2.23,
+      "generatedAt": "2026-11-18T09:59:25.593Z"
+    },
+    "assets/audio/100-everyday-conversations/page-08/sentence-04-en.mp3": {
+      "lang": "en",
+      "text": "Of course. Here you are.",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 30380,
+      "durationSec": 1.9,
+      "generatedAt": "2026-11-18T08:34:10.484Z"
+    },
+    "assets/audio/100-everyday-conversations/page-08/sentence-04-vi.mp3": {
+      "lang": "vi",
+      "text": "Được chứ. Của bạn đây.",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 31916,
+      "durationSec": 1.99,
+      "generatedAt": "2026-11-18T09:59:34.341Z"
+    },
+    "assets/audio/100-everyday-conversations/page-08/sentence-05-en.mp3": {
+      "lang": "en",
+      "text": "I don’t understand this question.",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 34220,
+      "durationSec": 2.14,
+      "generatedAt": "2026-11-18T08:34:39.387Z"
+    },
+    "assets/audio/100-everyday-conversations/page-08/sentence-05-vi.mp3": {
+      "lang": "vi",
+      "text": "Mình chưa hiểu câu hỏi này.",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 26156,
+      "durationSec": 1.63,
+      "generatedAt": "2026-11-18T09:59:43.530Z"
+    },
+    "assets/audio/100-everyday-conversations/page-08/sentence-06-en.mp3": {
+      "lang": "en",
+      "text": "Let’s work it out together.",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 30380,
+      "durationSec": 1.9,
+      "generatedAt": "2026-11-18T08:35:07.889Z"
+    },
+    "assets/audio/100-everyday-conversations/page-08/sentence-06-vi.mp3": {
+      "lang": "vi",
+      "text": "Mình cùng giải nhé.",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 20396,
+      "durationSec": 1.27,
+      "generatedAt": "2026-11-18T09:59:51.696Z"
+    },
+    "assets/audio/100-everyday-conversations/page-08/sentence-07-en.mp3": {
+      "lang": "en",
+      "text": "How do you spell that word?",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 28844,
+      "durationSec": 1.8,
+      "generatedAt": "2026-11-18T08:35:35.480Z"
+    },
+    "assets/audio/100-everyday-conversations/page-08/sentence-07-vi.mp3": {
+      "lang": "vi",
+      "text": "Từ đó đánh vần thế nào?",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 28076,
+      "durationSec": 1.75,
+      "generatedAt": "2026-11-18T09:59:59.566Z"
+    },
+    "assets/audio/100-everyday-conversations/page-08/sentence-08-en.mp3": {
+      "lang": "en",
+      "text": "It’s spelled S-T-O-R-Y.",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 29612,
+      "durationSec": 1.85,
+      "generatedAt": "2026-11-18T08:36:02.523Z"
+    },
+    "assets/audio/100-everyday-conversations/page-08/sentence-08-vi.mp3": {
+      "lang": "vi",
+      "text": "Từ đó đánh vần là S-T-O-R-Y.",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 36524,
+      "durationSec": 2.28,
+      "generatedAt": "2026-11-18T10:00:07.907Z"
+    },
+    "assets/audio/100-everyday-conversations/page-08/sentence-09-en.mp3": {
+      "lang": "en",
+      "text": "Can I join your game?",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 28460,
+      "durationSec": 1.78,
+      "generatedAt": "2026-11-18T08:36:30.183Z"
+    },
+    "assets/audio/100-everyday-conversations/page-08/sentence-09-vi.mp3": {
+      "lang": "vi",
+      "text": "Mình chơi cùng được không?",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 24620,
+      "durationSec": 1.54,
+      "generatedAt": "2026-11-18T10:00:16.490Z"
+    },
+    "assets/audio/100-everyday-conversations/page-08/sentence-10-en.mp3": {
+      "lang": "en",
+      "text": "Yes, there’s room for one more.",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 32684,
+      "durationSec": 2.04,
+      "generatedAt": "2026-11-18T08:36:57.583Z"
+    },
+    "assets/audio/100-everyday-conversations/page-08/sentence-10-vi.mp3": {
+      "lang": "vi",
+      "text": "Được chứ, vẫn còn chỗ cho một bạn nữa.",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 47660,
+      "durationSec": 2.98,
+      "generatedAt": "2026-11-18T10:00:25.885Z"
+    },
+    "assets/audio/100-everyday-conversations/page-09/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "How are you feeling today?",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 32684,
+      "durationSec": 2.04,
+      "generatedAt": "2026-11-18T08:37:27.488Z"
+    },
+    "assets/audio/100-everyday-conversations/page-09/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Hôm nay bạn cảm thấy thế nào?",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 40364,
+      "durationSec": 2.52,
+      "generatedAt": "2026-11-18T10:00:34.740Z"
+    },
+    "assets/audio/100-everyday-conversations/page-09/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "I feel a little tired.",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 30380,
+      "durationSec": 1.9,
+      "generatedAt": "2026-11-18T08:37:58.816Z"
+    },
+    "assets/audio/100-everyday-conversations/page-09/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "Mình hơi mệt.",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 23468,
+      "durationSec": 1.46,
+      "generatedAt": "2026-11-18T10:00:42.385Z"
+    },
+    "assets/audio/100-everyday-conversations/page-09/sentence-03-en.mp3": {
+      "lang": "en",
+      "text": "Are you feeling all right?",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 32684,
+      "durationSec": 2.04,
+      "generatedAt": "2026-11-18T08:38:28.380Z"
+    },
+    "assets/audio/100-everyday-conversations/page-09/sentence-03-vi.mp3": {
+      "lang": "vi",
+      "text": "Bạn có thấy ổn không?",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 30380,
+      "durationSec": 1.9,
+      "generatedAt": "2026-11-18T10:00:50.452Z"
+    },
+    "assets/audio/100-everyday-conversations/page-09/sentence-04-en.mp3": {
+      "lang": "en",
+      "text": "I have a small headache.",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 29228,
+      "durationSec": 1.82,
+      "generatedAt": "2026-11-18T08:38:56.988Z"
+    },
+    "assets/audio/100-everyday-conversations/page-09/sentence-04-vi.mp3": {
+      "lang": "vi",
+      "text": "Mình hơi đau đầu.",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 24620,
+      "durationSec": 1.54,
+      "generatedAt": "2026-11-18T10:00:58.342Z"
+    },
+    "assets/audio/100-everyday-conversations/page-09/sentence-05-en.mp3": {
+      "lang": "en",
+      "text": "I’m sorry that happened.",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 29996,
+      "durationSec": 1.87,
+      "generatedAt": "2026-11-18T08:39:26.972Z"
+    },
+    "assets/audio/100-everyday-conversations/page-09/sentence-05-vi.mp3": {
+      "lang": "vi",
+      "text": "Mình tiếc vì chuyện đó xảy ra.",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 43436,
+      "durationSec": 2.71,
+      "generatedAt": "2026-11-18T10:01:06.969Z"
+    },
+    "assets/audio/100-everyday-conversations/page-09/sentence-06-en.mp3": {
+      "lang": "en",
+      "text": "It’s okay. I’m feeling better now.",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 34604,
+      "durationSec": 2.16,
+      "generatedAt": "2026-11-18T08:39:56.556Z"
+    },
+    "assets/audio/100-everyday-conversations/page-09/sentence-06-vi.mp3": {
+      "lang": "vi",
+      "text": "Không sao. Bây giờ mình thấy đỡ hơn rồi.",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 50348,
+      "durationSec": 3.14,
+      "generatedAt": "2026-11-18T10:01:16.460Z"
+    },
+    "assets/audio/100-everyday-conversations/page-09/sentence-07-en.mp3": {
+      "lang": "en",
+      "text": "I’m excited about the trip.",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 33068,
+      "durationSec": 2.06,
+      "generatedAt": "2026-11-18T08:40:26.230Z"
+    },
+    "assets/audio/100-everyday-conversations/page-09/sentence-07-vi.mp3": {
+      "lang": "vi",
+      "text": "Mình háo hức về chuyến đi.",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 38060,
+      "durationSec": 2.38,
+      "generatedAt": "2026-11-18T10:01:24.872Z"
+    },
+    "assets/audio/100-everyday-conversations/page-09/sentence-08-en.mp3": {
+      "lang": "en",
+      "text": "I feel a little nervous.",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 31532,
+      "durationSec": 1.97,
+      "generatedAt": "2026-11-18T08:40:54.069Z"
+    },
+    "assets/audio/100-everyday-conversations/page-09/sentence-08-vi.mp3": {
+      "lang": "vi",
+      "text": "Mình hơi lo lắng.",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 29228,
+      "durationSec": 1.82,
+      "generatedAt": "2026-11-18T10:01:32.611Z"
+    },
+    "assets/audio/100-everyday-conversations/page-09/sentence-09-en.mp3": {
+      "lang": "en",
+      "text": "Take your time. There’s no rush.",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 33452,
+      "durationSec": 2.09,
+      "generatedAt": "2026-11-18T08:41:21.195Z"
+    },
+    "assets/audio/100-everyday-conversations/page-09/sentence-09-vi.mp3": {
+      "lang": "vi",
+      "text": "Cứ từ từ nhé. Không cần vội đâu.",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 41132,
+      "durationSec": 2.57,
+      "generatedAt": "2026-11-18T10:01:41.177Z"
+    },
+    "assets/audio/100-everyday-conversations/page-09/sentence-10-en.mp3": {
+      "lang": "en",
+      "text": "I’m glad you told me.",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 28844,
+      "durationSec": 1.8,
+      "generatedAt": "2026-11-18T08:41:49.539Z"
+    },
+    "assets/audio/100-everyday-conversations/page-09/sentence-10-vi.mp3": {
+      "lang": "vi",
+      "text": "Mình mừng vì bạn đã kể cho mình nghe.",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 38060,
+      "durationSec": 2.38,
+      "generatedAt": "2026-11-18T10:01:49.982Z"
+    },
+    "assets/audio/100-everyday-conversations/page-10/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "What are you doing this weekend?",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 34220,
+      "durationSec": 2.14,
+      "generatedAt": "2026-11-18T08:42:18.603Z"
+    },
+    "assets/audio/100-everyday-conversations/page-10/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Cuối tuần này bạn định làm gì?",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 30380,
+      "durationSec": 1.9,
+      "generatedAt": "2026-11-18T10:01:58.791Z"
+    },
+    "assets/audio/100-everyday-conversations/page-10/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "I’m going to visit my grandparents.",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 35372,
+      "durationSec": 2.21,
+      "generatedAt": "2026-11-18T08:42:48.213Z"
+    },
+    "assets/audio/100-everyday-conversations/page-10/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "Mình sẽ đến thăm ông bà.",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 30764,
+      "durationSec": 1.92,
+      "generatedAt": "2026-11-18T10:02:06.752Z"
+    },
+    "assets/audio/100-everyday-conversations/page-10/sentence-03-en.mp3": {
+      "lang": "en",
+      "text": "Would you like to come with us?",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 32300,
+      "durationSec": 2.02,
+      "generatedAt": "2026-11-18T08:43:17.439Z"
+    },
+    "assets/audio/100-everyday-conversations/page-10/sentence-03-vi.mp3": {
+      "lang": "vi",
+      "text": "Bạn muốn đi cùng bọn mình không?",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 28460,
+      "durationSec": 1.78,
+      "generatedAt": "2026-11-18T10:02:15.314Z"
+    },
+    "assets/audio/100-everyday-conversations/page-10/sentence-04-en.mp3": {
+      "lang": "en",
+      "text": "I’d love to, thank you.",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 26540,
+      "durationSec": 1.66,
+      "generatedAt": "2026-11-18T08:43:48.923Z"
+    },
+    "assets/audio/100-everyday-conversations/page-10/sentence-04-vi.mp3": {
+      "lang": "vi",
+      "text": "Mình rất muốn, cảm ơn bạn.",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 35372,
+      "durationSec": 2.21,
+      "generatedAt": "2026-11-18T10:02:23.479Z"
+    },
+    "assets/audio/100-everyday-conversations/page-10/sentence-05-en.mp3": {
+      "lang": "en",
+      "text": "What time shall we meet?",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 30380,
+      "durationSec": 1.9,
+      "generatedAt": "2026-11-18T08:44:18.017Z"
+    },
+    "assets/audio/100-everyday-conversations/page-10/sentence-05-vi.mp3": {
+      "lang": "vi",
+      "text": "Mấy giờ chúng ta gặp nhau?",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 33836,
+      "durationSec": 2.11,
+      "generatedAt": "2026-11-18T10:02:31.505Z"
+    },
+    "assets/audio/100-everyday-conversations/page-10/sentence-06-en.mp3": {
+      "lang": "en",
+      "text": "Let’s meet at ten in the morning.",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 32300,
+      "durationSec": 2.02,
+      "generatedAt": "2026-11-18T08:44:46.642Z"
+    },
+    "assets/audio/100-everyday-conversations/page-10/sentence-06-vi.mp3": {
+      "lang": "vi",
+      "text": "Mình gặp nhau lúc mười giờ sáng nhé.",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 36524,
+      "durationSec": 2.28,
+      "generatedAt": "2026-11-18T10:02:40.253Z"
+    },
+    "assets/audio/100-everyday-conversations/page-10/sentence-07-en.mp3": {
+      "lang": "en",
+      "text": "I’m afraid I can’t make it.",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 31148,
+      "durationSec": 1.94,
+      "generatedAt": "2026-11-18T08:45:16.616Z"
+    },
+    "assets/audio/100-everyday-conversations/page-10/sentence-07-vi.mp3": {
+      "lang": "vi",
+      "text": "Tiếc quá, mình không đến được.",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 33452,
+      "durationSec": 2.09,
+      "generatedAt": "2026-11-18T10:02:48.618Z"
+    },
+    "assets/audio/100-everyday-conversations/page-10/sentence-08-en.mp3": {
+      "lang": "en",
+      "text": "Maybe another time.",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 26156,
+      "durationSec": 1.63,
+      "generatedAt": "2026-11-18T08:45:45.416Z"
+    },
+    "assets/audio/100-everyday-conversations/page-10/sentence-08-vi.mp3": {
+      "lang": "vi",
+      "text": "Để dịp khác nhé.",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 20012,
+      "durationSec": 1.25,
+      "generatedAt": "2026-11-18T10:02:56.514Z"
+    },
+    "assets/audio/100-everyday-conversations/page-10/sentence-09-en.mp3": {
+      "lang": "en",
+      "text": "I had a lovely time.",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 27692,
+      "durationSec": 1.73,
+      "generatedAt": "2026-11-18T08:46:12.530Z"
+    },
+    "assets/audio/100-everyday-conversations/page-10/sentence-09-vi.mp3": {
+      "lang": "vi",
+      "text": "Hôm nay mình vui lắm.",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 22700,
+      "durationSec": 1.42,
+      "generatedAt": "2026-11-18T10:03:04.590Z"
+    },
+    "assets/audio/100-everyday-conversations/page-10/sentence-10-en.mp3": {
+      "lang": "en",
+      "text": "Take care, and talk to you soon!",
+      "voice": "demo0001",
+      "model": "tts-1",
+      "bytes": 33452,
+      "durationSec": 2.09,
+      "generatedAt": "2026-11-18T08:46:40.988Z"
+    },
+    "assets/audio/100-everyday-conversations/page-10/sentence-10-vi.mp3": {
+      "lang": "vi",
+      "text": "Giữ gìn sức khỏe nhé, sớm nói chuyện lại!",
+      "voice": "abf73455",
+      "model": "tts-1",
+      "bytes": 54188,
+      "durationSec": 3.38,
+      "generatedAt": "2026-11-18T10:03:14.240Z"
     }
   }
 }

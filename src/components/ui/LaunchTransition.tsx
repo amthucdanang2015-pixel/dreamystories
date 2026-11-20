@@ -79,13 +79,13 @@ export function LaunchTransition({ isReady }: { isReady: boolean }) {
           Animated.sequence([
             Animated.timing(breathe, {
               toValue: 1,
-              duration: 1500,
+              duration: 1200,
               easing: Easing.inOut(Easing.sin),
               useNativeDriver: true,
             }),
             Animated.timing(breathe, {
               toValue: 0,
-              duration: 1500,
+              duration: 1200,
               easing: Easing.inOut(Easing.sin),
               useNativeDriver: true,
             }),
@@ -115,7 +115,11 @@ export function LaunchTransition({ isReady }: { isReady: boolean }) {
 
   const opacity = progress.interpolate({ inputRange: [0, 1], outputRange: [1, 0] });
   const scale = progress.interpolate({ inputRange: [0, 1], outputRange: [1, 1.025] });
-  const breathingScale = breathe.interpolate({ inputRange: [0, 1], outputRange: [1, 1.012] });
+  // A little more than a pixel-level pulse: the full splash artwork is one
+  // bitmap, so a 4% scale and 4pt float make the motion visible without
+  // separating the wordmark from the illustration.
+  const breathingScale = breathe.interpolate({ inputRange: [0, 1], outputRange: [1, 1.04] });
+  const breathingY = breathe.interpolate({ inputRange: [0, 1], outputRange: [0, -4] });
 
   return (
     <Animated.View
@@ -127,7 +131,9 @@ export function LaunchTransition({ isReady }: { isReady: boolean }) {
       {/* Dark status-bar content on the light splash, as at launch (Info.plist
           UIStatusBarStyleDarkContent); the app's own style returns on unmount. */}
       <StatusBar style="dark" />
-      <Animated.View style={{ transform: [{ scale: Animated.multiply(scale, breathingScale) }] }}>
+      <Animated.View
+        style={{ transform: [{ translateY: breathingY }, { scale: Animated.multiply(scale, breathingScale) }] }}
+      >
         <Image
           source={LOGO.source}
           style={{ width: LOGO.size, height: LOGO.size }}

@@ -11,6 +11,7 @@ import { BilingualText, Story, StoryArtDirection, StoryPalette } from '../../typ
 import { LITTLE_RABBIT_STORY } from './littleRabbit';
 import { STORY_ASSETS } from './storyAssets.generated';
 
+import everydayConversations from './content/100-everyday-conversations.json';
 import chuCuoi from './content/chu-cuoi.json';
 import cayKhe from './content/cay-khe.json';
 import tamCam from './content/tam-cam.json';
@@ -104,7 +105,12 @@ export const ORIGINAL_STORIES: Story[] = [
   ngoiSaoBeTi,
 ].map((c) => buildStory(c as StoryContent));
 
-export const ALL_STORIES: Story[] = [LITTLE_RABBIT_STORY, ...FOLK_TALES, ...ORIGINAL_STORIES];
+export const ALL_STORIES: Story[] = [
+  buildStory(everydayConversations as StoryContent),
+  LITTLE_RABBIT_STORY,
+  ...FOLK_TALES,
+  ...ORIGINAL_STORIES,
+];
 
 /** Illustration lookup by key ('<storyId>/cover' or '<storyId>/page-NN'). */
 const IMAGE_BY_KEY: Record<string, ImageSourcePropType> = {};

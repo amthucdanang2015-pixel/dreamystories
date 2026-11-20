@@ -16,6 +16,10 @@ interface HorizontalReaderProps {
   isLearningMode?: boolean;
   /** Narration is speaking (drives the "reading aloud" indicator). */
   isNarrating?: boolean;
+  /** Widest the page may be (the screen's reading column). */
+  maxPageWidth?: number;
+  /** Side margin between the window edge and the page. */
+  margin?: number;
   /** Called only for pages the reader swiped to (not programmatic scrolls). */
   onPageChange: (index: number) => void;
   onWordSelect?: (definition: WordDefinition) => void;
@@ -35,6 +39,8 @@ export const HorizontalReader = React.forwardRef<FlatList, HorizontalReaderProps
       readerTheme,
       isLearningMode = false,
       isNarrating = false,
+      maxPageWidth = MAX_PAGE_WIDTH,
+      margin = Spacing.md,
       onPageChange,
       onWordSelect,
       onReplaySentence,
@@ -112,7 +118,7 @@ export const HorizontalReader = React.forwardRef<FlatList, HorizontalReaderProps
     const viewabilityConfig = useRef({ viewAreaCoveragePercentThreshold: 50 }).current;
 
     const itemWidth = size?.width ?? 0;
-    const pageWidth = Math.min(itemWidth - Spacing.md * 2, MAX_PAGE_WIDTH);
+    const pageWidth = Math.min(itemWidth - margin * 2, maxPageWidth);
     const pageHeight = (size?.height ?? 0) - Spacing.sm * 3;
 
     const renderPage = useCallback(

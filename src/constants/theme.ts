@@ -332,6 +332,9 @@ export const BorderRadius = {
 /** Minimum comfortable touch target. */
 export const TouchTarget = 44;
 
+/** Breakpoints, responsive gutters and column widths (see src/utils/responsiveLayout). */
+export { Layout } from '../utils/responsiveLayout';
+
 // ─── Elevation ────────────────────────────────────────────────
 
 export type ShadowName = 'paper' | 'card' | 'cover' | 'page' | 'button' | 'hairline' | 'none';

@@ -27,8 +27,10 @@ export function EmptyState({
 
 const useStyles = createThemedStyles((t) => ({
   wrap: { alignItems: 'center', paddingVertical: Spacing.xxl, paddingHorizontal: Spacing.xl, gap: Spacing.sm },
-  title: { textAlign: 'center', marginTop: Spacing.sm },
+  // Comfortable line length on tablets.
+  title: { textAlign: 'center', marginTop: Spacing.sm, maxWidth: 460 },
   message: {
+    maxWidth: 460,
     fontSize: Typography.base,
     color: t.colors.textSecondary,
     textAlign: 'center',

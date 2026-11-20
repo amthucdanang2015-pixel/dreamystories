@@ -3,6 +3,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import {
   buildNarrationSequence,
+  resumeIndex,
   narrateItem,
   MOSTLY_HEARD,
   type ClipOutcome,
@@ -128,4 +129,22 @@ test('a clip paused from outside the app neither falls back to TTS nor reports a
   assert.equal(await narrateItem(withClip, 0.9, where, h.deps), 'paused');
   assert.deepEqual(h.calls, ['clip:101']);
   assert.deepEqual(h.events, []);
+});
+
+// ─── Resume position (Pause → Play) ──────────────────────────
+
+test('resume: Play after Pause continues at the paused sentence and phase', () => {
+  const seq = buildNarrationSequence(sentences, 'en', 'bilingual_parallel');
+  assert.equal(resumeIndex(seq, null), 0);
+  assert.equal(resumeIndex(seq, { sentenceIndex: 1, phase: 'en' }), 2);
+  assert.equal(resumeIndex(seq, { sentenceIndex: 1, phase: 'vi' }), 3);
+  assert.deepEqual(summary(seq.slice(resumeIndex(seq, { sentenceIndex: 1, phase: 'en' }))), [
+    '1en:201', '1vi:-', '2en:-', '2vi:-',
+  ]);
+});
+
+test('resume: a phase the mode does not read falls back to that sentence, unknown sentence to page start', () => {
+  const vi = buildNarrationSequence(sentences, 'en', 'single_vi');
+  assert.equal(resumeIndex(vi, { sentenceIndex: 2, phase: 'en' }), 2);
+  assert.equal(resumeIndex(vi, { sentenceIndex: 9, phase: 'vi' }), 0);
 });

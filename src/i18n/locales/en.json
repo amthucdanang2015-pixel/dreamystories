@@ -27,7 +27,8 @@
     "animalTale": "Animal Tale",
     "familyTale": "Family Tale",
     "bedtime": "Bedtime",
-    "fable": "Fable"
+    "fable": "Fable",
+    "languagePractice": "Language Practice"
   },
   "story": {
     "minutes_one": "{{count}} min",

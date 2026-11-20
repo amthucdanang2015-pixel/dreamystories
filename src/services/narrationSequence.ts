@@ -48,6 +48,24 @@ export function buildNarrationSequence(
   }
 }
 
+export interface NarrationPosition {
+  sentenceIndex: number;
+  phase: Language;
+}
+
+/**
+ * Where in `sequence` narration resumes for a saved reading position: the
+ * item for that sentence in that phase, else that sentence's first item
+ * (the phase is not read in this mode), else the start of the page.
+ */
+export function resumeIndex(sequence: NarrationItem[], at?: NarrationPosition | null): number {
+  if (!at) return 0;
+  const exact = sequence.findIndex((it) => it.sentenceIndex === at.sentenceIndex && it.phase === at.phase);
+  if (exact >= 0) return exact;
+  const sameSentence = sequence.findIndex((it) => it.sentenceIndex === at.sentenceIndex);
+  return sameSentence >= 0 ? sameSentence : 0;
+}
+
 // ─── Fallback policy ─────────────────────────────────────────
 
 /** `paused`: paused from outside the app (call, unplugged headphones, lock-screen button). */

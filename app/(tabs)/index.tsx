@@ -1,9 +1,9 @@
 import React, { useMemo } from 'react';
-import { View, Text, ScrollView, Pressable, useWindowDimensions } from 'react-native';
+import { View, Text, ScrollView, Pressable } from 'react-native';
 import { useRouter } from 'expo-router';
 import { Play } from 'lucide-react-native';
 import { useTranslation } from 'react-i18next';
-import { Typography, Spacing, BorderRadius } from '../../src/constants/theme';
+import { Typography, Spacing, BorderRadius, Layout } from '../../src/constants/theme';
 import { createThemedStyles, useTheme } from '../../src/theme';
 import { BookCover, StoryCard } from '../../src/components/story/StoryCard';
 import {
@@ -19,13 +19,23 @@ import { usePlaybackStore } from '../../src/store/playbackStore';
 import { useProgressStore } from '../../src/store/progressStore';
 import { describeProgress } from '../../src/hooks/useStoryProgress';
 import { usePremiumGate } from '../../src/hooks/usePremiumGate';
+import { useResponsiveLayout } from '../../src/hooks/useResponsiveLayout';
+import { gridColumns, gridItemWidth, shelfItemWidth } from '../../src/utils/responsiveLayout';
+
+const MAX_CONTENT = Layout.maxWidth.browse;
+const SHELF_GAP = Spacing.md;
+/** Story rows (legends, fables) flow into columns once each can be this wide. */
+const MIN_ROW_W = 320;
 
 export default function HomeScreen() {
   const router = useRouter();
   const { t } = useTranslation();
   const styles = useStyles();
   const { colors, type } = useTheme();
-  const { width: SW } = useWindowDimensions();
+  const layout = useResponsiveLayout();
+  // Sections sit in a centred column; the shelf scrolls edge to edge but starts at the column.
+  const { contentWidth, inset } = layout.frame(MAX_CONTENT);
+  const pad = { paddingHorizontal: inset };
   const setStory = usePlaybackStore((s) => s.setStory);
   // Subscribe to the progress map so the Continue card updates after reading.
   const progressMap = useProgressStore((s) => s.progressMap);
@@ -51,7 +61,21 @@ export default function HomeScreen() {
   const fables = ALL_STORIES.filter((s) => s.category === 'Fable');
   const finishedCount = Object.values(progressMap).filter((p) => p.completed).length;
   const greeting = greetingPeriod(new Date().getHours());
-  const shelfW = Math.min(Math.round(SW * 0.4), 190);
+  // Phones keep the original shelf; wider windows fit whole covers plus a peek.
+  const shelfW = layout.isCompact
+    ? Math.min(Math.round(layout.width * 0.4), 190)
+    : shelfItemWidth(contentWidth, gridColumns(contentWidth, Layout.minCoverWidth, SHELF_GAP, { min: 3 }), SHELF_GAP);
+  const rowCols = gridColumns(contentWidth, MIN_ROW_W, Spacing.md, { max: 3 });
+  const rowW = gridItemWidth(contentWidth, rowCols, Spacing.md);
+  const storyRows = (stories: Story[]) => (
+    <View style={[styles.list, pad]}>
+      {stories.map((story) => (
+        <View key={story.id} style={{ width: rowW }}>
+          <StoryCard story={story} onPress={openStory} variant="compact" />
+        </View>
+      ))}
+    </View>
+  );
 
   const resume = () => {
     if (!activeStory || !activeProgress) return;
@@ -64,6 +88,7 @@ export default function HomeScreen() {
   return (
     <CollapsingHeaderScreen
       compactTitle={t('tabs.stories')}
+      maxWidth={MAX_CONTENT}
       header={
         <ScreenHeader
           eyebrow={t(`home.greeting.${greeting}.eyebrow`)}
@@ -76,7 +101,11 @@ export default function HomeScreen() {
       {/* Continue reading */}
       {activeStory && continueInfo?.state === 'reading' ? (
         <Pressable
-          style={({ pressed }) => [styles.continueCard, pressed && { opacity: 0.92 }]}
+          style={({ pressed }) => [
+            styles.continueCard,
+            { marginHorizontal: inset },
+            pressed && { opacity: 0.92 },
+          ]}
           onPress={resume}
           accessibilityRole="button"
           accessibilityLabel={t('home.continueA11y', { title: activeStory.title.en, progress: continueInfo.label })}
@@ -102,11 +131,12 @@ export default function HomeScreen() {
 
       {/* Tonight's story */}
       <View style={styles.section}>
-        <SectionHeader eyebrow={t('home.featuredEyebrow')} title={t('home.featuredTitle')} />
+        <SectionHeader eyebrow={t('home.featuredEyebrow')} title={t('home.featuredTitle')} inset={inset} />
         <StoryCard
           story={featuredStory}
           onPress={openStory}
           variant="featured"
+          width={layout.isCompact ? Math.min(contentWidth, 640) : contentWidth}
           eyebrow={t('home.featuredCardEyebrow')}
         />
       </View>
@@ -122,42 +152,35 @@ export default function HomeScreen() {
           title={t('home.shelfTitle')}
           actionLabel={t('home.seeAll')}
           onAction={() => router.push('/library')}
+          inset={inset}
         />
         <ScrollView
           horizontal
           showsHorizontalScrollIndicator={false}
-          contentContainerStyle={styles.shelf}
+          contentContainerStyle={[styles.shelf, pad]}
           decelerationRate="fast"
-          snapToInterval={shelfW + Spacing.md}
+          snapToInterval={shelfW + SHELF_GAP}
         >
           {ALL_STORIES.map((story) => (
             <StoryCard key={story.id} story={story} onPress={openStory} width={shelfW} />
           ))}
         </ScrollView>
-        <View style={styles.shelfLedge} />
+        <View style={[styles.shelfLedge, { marginHorizontal: inset }]} />
       </View>
 
       {/* Legends */}
       {legends.length > 0 ? (
         <View style={styles.section}>
-          <SectionHeader eyebrow={t('home.legendsEyebrow')} title={t('home.legendsTitle')} />
-          <View style={styles.list}>
-            {legends.map((story) => (
-              <StoryCard key={story.id} story={story} onPress={openStory} variant="compact" />
-            ))}
-          </View>
+          <SectionHeader eyebrow={t('home.legendsEyebrow')} title={t('home.legendsTitle')} inset={inset} />
+          {storyRows(legends)}
         </View>
       ) : null}
 
       {/* Fables */}
       {fables.length > 0 ? (
         <View style={styles.section}>
-          <SectionHeader eyebrow={t('home.fablesEyebrow')} title={t('home.fablesTitle')} />
-          <View style={styles.list}>
-            {fables.map((story) => (
-              <StoryCard key={story.id} story={story} onPress={openStory} variant="compact" />
-            ))}
-          </View>
+          <SectionHeader eyebrow={t('home.fablesEyebrow')} title={t('home.fablesTitle')} inset={inset} />
+          {storyRows(fables)}
         </View>
       ) : null}
 
@@ -183,16 +206,14 @@ function greetingPeriod(hour: number): GreetingPeriod {
 
 const useStyles = createThemedStyles((t) => ({
   section: { marginTop: Spacing.lg },
-  shelf: { paddingHorizontal: Spacing.gutter, gap: Spacing.md, paddingBottom: Spacing.sm },
+  shelf: { gap: SHELF_GAP, paddingBottom: Spacing.sm },
   shelfLedge: {
     height: 1,
-    marginHorizontal: Spacing.gutter,
     backgroundColor: t.colors.border,
     marginTop: Spacing.sm,
   },
-  list: { paddingHorizontal: Spacing.gutter },
+  list: { flexDirection: 'row', flexWrap: 'wrap', columnGap: Spacing.md },
   continueCard: {
-    marginHorizontal: Spacing.gutter,
     marginTop: Spacing.xs,
     flexDirection: 'row',
     alignItems: 'center',

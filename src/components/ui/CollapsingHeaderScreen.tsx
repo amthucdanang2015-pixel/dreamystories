@@ -29,6 +29,7 @@ import {
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Spacing, Typography } from '../../constants/theme';
 import { createThemedStyles } from '../../theme';
+import { useResponsiveLayout } from '../../hooks/useResponsiveLayout';
 import { BrandMark } from './BrandMark';
 import { PaperBackdrop } from './PaperBackdrop';
 
@@ -67,6 +68,7 @@ export function CollapsingHeaderScreen({
 }: CollapsingHeaderScreenProps) {
   const insets = useSafeAreaInsets();
   const styles = useStyles();
+  const { gutter } = useResponsiveLayout();
   const barH = insets.top + COMPACT_BAR_HEIGHT;
   const scrollY = useRef(new Animated.Value(0)).current;
   // Measured once laid out; sensible defaults avoid a first-frame jump.
@@ -168,7 +170,7 @@ export function CollapsingHeaderScreen({
       <View style={[styles.bar, { height: barH, paddingTop: insets.top }]} pointerEvents="box-none">
         <Animated.View style={[StyleSheet.absoluteFill, styles.barFill, { opacity: barFill }]} />
         {sticky ? null : <Animated.View style={[styles.hairline, { opacity: hairline }]} />}
-        <View style={[styles.barRow, centred]} pointerEvents="box-none">
+        <View style={[styles.barRow, { paddingLeft: gutter, paddingRight: gutter - 6 }, centred]} pointerEvents="box-none">
           <Animated.View
             style={[styles.compactTitleWrap, { opacity: compactOpacity, transform: [{ translateY: compactLift }] }]}
             // The large title is the screen's heading; this copy is visual only.
@@ -209,8 +211,6 @@ const useStyles = createThemedStyles((t) => ({
     flex: 1,
     flexDirection: 'row',
     alignItems: 'center',
-    paddingLeft: Spacing.gutter,
-    paddingRight: Spacing.gutter - 6,
     gap: Spacing.sm,
   },
   compactTitleWrap: { flex: 1 },

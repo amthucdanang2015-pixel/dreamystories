@@ -1,6 +1,6 @@
 {
   "schema": "storymoon-asset-manifest/1",
-  "generatedAt": "2026-11-13T10:56:34.881Z",
+  "generatedAt": "2026-11-18T10:04:06.198Z",
   "pathConventions": {
     "cover": "assets/images/stories/<story-id>/cover.png",
     "pageImage": "assets/images/stories/<story-id>/page-NN.png",
@@ -10,7 +10,7 @@
     "source": "VoiceStudio (see assets/audio/narration-log.json)",
     "tool": "VoiceStudio (https://github.com/debpalash/VoiceStudio, AGPL-3.0 app)",
     "endpoint": "http://127.0.0.1:3900/v1/audio/speech",
-    "model": "omnivoice",
+    "model": "tts-1",
     "availableModels": [
       "tts-1",
       "tts-1-hd",
@@ -24,25 +24,2086 @@
       "faster-whisper"
     ],
     "voiceEn": "demo0001",
-    "voiceVi": "746d2063",
-    "speed": 0.93,
-    "lastRunAt": "2026-11-13T09:14:35.482Z",
+    "voiceVi": "abf73455",
+    "speed": 0.95,
+    "lastRunAt": "2026-11-18T09:48:39.257Z",
     "licenseNote": "Check the per-model licence in VoiceStudio Model Manager. Default k2-fsa/OmniVoice weights are CC-BY-NC (non-commercial)."
   },
   "totals": {
-    "stories": 20,
+    "stories": 21,
     "completeStories": 0,
     "images": {
-      "expected": 174,
+      "expected": 185,
       "present": 0
     },
     "audio": {
-      "expected": 654,
-      "present": 582
+      "expected": 854,
+      "present": 782
     }
   },
   "orphans": [],
   "stories": [
+    {
+      "id": "100-everyday-conversations",
+      "title": {
+        "en": "100 Everyday Conversations",
+        "vi": "100 Câu Giao Tiếp Hằng Ngày"
+      },
+      "theme": {
+        "en": "Small phrases make it easier to connect with people every day.",
+        "vi": "Những câu nói nhỏ giúp ta tự tin kết nối với mọi người mỗi ngày."
+      },
+      "origin": "Original English-Vietnamese learning content written for StoryMoon; organized by everyday situations.",
+      "artDirection": {
+        "mood": "Warm, welcoming, and practical; a bright day of friendly everyday encounters.",
+        "setting": "A calm illustrated neighborhood with a home, school, cafe, market, and bus stop.",
+        "light": "Soft morning light with warm paper tones and gentle sage-green details.",
+        "motifs": [
+          "open book",
+          "speech bubbles",
+          "friendly neighborhood",
+          "small golden stars"
+        ],
+        "avoid": [
+          "busy signage",
+          "readable text in illustrations",
+          "photorealistic people"
+        ],
+        "palette": {
+          "sky": "#DCE8E0",
+          "skyLow": "#F7E8C8",
+          "ground": "#78866B",
+          "groundDeep": "#465642",
+          "accent": "#C6A66B",
+          "glow": "#F3E3B5",
+          "ink": "#26271F",
+          "paper": "#FDFAF3"
+        }
+      },
+      "coverPrompt": "an open storybook with two friendly speech bubbles floating above it, a small moon and golden stars, warm ivory and sage palette, no readable text",
+      "coverFullPrompt": "Premium hand-painted picture-book illustration: gouache and soft watercolour textures on warm paper, rounded friendly shapes, gentle rim light, subtle paper grain and a soft vignette. Calm, comforting, never frightening. Respectful, accurate Vietnamese settings and dress. Keep each character identical on every page (see the character sheet). No text, letters, logos, signatures or watermarks. Story identity — mood: Warm, welcoming, and practical; a bright day of friendly everyday encounters. Setting: A calm illustrated neighborhood with a home, school, cafe, market, and bus stop. Light: Soft morning light with warm paper tones and gentle sage-green details. Signature motifs: open book, speech bubbles, friendly neighborhood, small golden stars. Palette: #DCE8E0, #F7E8C8, #78866B, #465642, #C6A66B, #F3E3B5, #26271F, #FDFAF3. Avoid: busy signage, readable text in illustrations, photorealistic people. Scene: an open storybook with two friendly speech bubbles floating above it, a small moon and golden stars, warm ivory and sage palette, no readable text.",
+      "cover": {
+        "path": "assets/images/stories/100-everyday-conversations/cover.png",
+        "exists": false
+      },
+      "pages": [
+        {
+          "id": "page-01",
+          "prompt": "two new friends greeting each other on a sunny neighborhood path",
+          "image": {
+            "path": "assets/images/stories/100-everyday-conversations/page-01.png",
+            "exists": false
+          },
+          "sentences": [
+            {
+              "id": "p01-s01",
+              "en": "Hello! How are you?",
+              "vi": "Xin chào! Bạn khỏe không?",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-01/sentence-01-en.mp3",
+                  "exists": true,
+                  "bytes": 23852,
+                  "durationSec": 1.49
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-01/sentence-01-vi.mp3",
+                  "exists": true,
+                  "bytes": 31916,
+                  "durationSec": 1.99
+                }
+              }
+            },
+            {
+              "id": "p01-s02",
+              "en": "I’m good, thank you.",
+              "vi": "Mình khỏe, cảm ơn bạn.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-01/sentence-02-en.mp3",
+                  "exists": true,
+                  "bytes": 26924,
+                  "durationSec": 1.68
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-01/sentence-02-vi.mp3",
+                  "exists": true,
+                  "bytes": 26540,
+                  "durationSec": 1.66
+                }
+              }
+            },
+            {
+              "id": "p01-s03",
+              "en": "What’s your name?",
+              "vi": "Bạn tên là gì?",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-01/sentence-03-en.mp3",
+                  "exists": true,
+                  "bytes": 28076,
+                  "durationSec": 1.75
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-01/sentence-03-vi.mp3",
+                  "exists": true,
+                  "bytes": 17324,
+                  "durationSec": 1.08
+                }
+              }
+            },
+            {
+              "id": "p01-s04",
+              "en": "My name is Linh.",
+              "vi": "Mình tên là Linh.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-01/sentence-04-en.mp3",
+                  "exists": true,
+                  "bytes": 27308,
+                  "durationSec": 1.7
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-01/sentence-04-vi.mp3",
+                  "exists": true,
+                  "bytes": 29996,
+                  "durationSec": 1.87
+                }
+              }
+            },
+            {
+              "id": "p01-s05",
+              "en": "Nice to meet you.",
+              "vi": "Rất vui được gặp bạn.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-01/sentence-05-en.mp3",
+                  "exists": true,
+                  "bytes": 24236,
+                  "durationSec": 1.51
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-01/sentence-05-vi.mp3",
+                  "exists": true,
+                  "bytes": 30380,
+                  "durationSec": 1.9
+                }
+              }
+            },
+            {
+              "id": "p01-s06",
+              "en": "Where are you from?",
+              "vi": "Bạn đến từ đâu?",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-01/sentence-06-en.mp3",
+                  "exists": true,
+                  "bytes": 28844,
+                  "durationSec": 1.8
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-01/sentence-06-vi.mp3",
+                  "exists": true,
+                  "bytes": 18092,
+                  "durationSec": 1.13
+                }
+              }
+            },
+            {
+              "id": "p01-s07",
+              "en": "I’m from Vietnam.",
+              "vi": "Mình đến từ Việt Nam.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-01/sentence-07-en.mp3",
+                  "exists": true,
+                  "bytes": 26924,
+                  "durationSec": 1.68
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-01/sentence-07-vi.mp3",
+                  "exists": true,
+                  "bytes": 32300,
+                  "durationSec": 2.02
+                }
+              }
+            },
+            {
+              "id": "p01-s08",
+              "en": "Do you live nearby?",
+              "vi": "Bạn sống gần đây à?",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-01/sentence-08-en.mp3",
+                  "exists": true,
+                  "bytes": 26924,
+                  "durationSec": 1.68
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-01/sentence-08-vi.mp3",
+                  "exists": true,
+                  "bytes": 26156,
+                  "durationSec": 1.63
+                }
+              }
+            },
+            {
+              "id": "p01-s09",
+              "en": "Yes, just around the corner.",
+              "vi": "Ừ, ngay gần đây thôi.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-01/sentence-09-en.mp3",
+                  "exists": true,
+                  "bytes": 30380,
+                  "durationSec": 1.9
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-01/sentence-09-vi.mp3",
+                  "exists": true,
+                  "bytes": 32684,
+                  "durationSec": 2.04
+                }
+              }
+            },
+            {
+              "id": "p01-s10",
+              "en": "See you around!",
+              "vi": "Hẹn gặp lại nhé!",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-01/sentence-10-en.mp3",
+                  "exists": true,
+                  "bytes": 25004,
+                  "durationSec": 1.56
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-01/sentence-10-vi.mp3",
+                  "exists": true,
+                  "bytes": 23084,
+                  "durationSec": 1.44
+                }
+              }
+            }
+          ],
+          "fullPrompt": "Premium hand-painted picture-book illustration: gouache and soft watercolour textures on warm paper, rounded friendly shapes, gentle rim light, subtle paper grain and a soft vignette. Calm, comforting, never frightening. Respectful, accurate Vietnamese settings and dress. Keep each character identical on every page (see the character sheet). No text, letters, logos, signatures or watermarks. Story identity — mood: Warm, welcoming, and practical; a bright day of friendly everyday encounters. Setting: A calm illustrated neighborhood with a home, school, cafe, market, and bus stop. Light: Soft morning light with warm paper tones and gentle sage-green details. Signature motifs: open book, speech bubbles, friendly neighborhood, small golden stars. Palette: #DCE8E0, #F7E8C8, #78866B, #465642, #C6A66B, #F3E3B5, #26271F, #FDFAF3. Avoid: busy signage, readable text in illustrations, photorealistic people. Scene: two new friends greeting each other on a sunny neighborhood path."
+        },
+        {
+          "id": "page-02",
+          "prompt": "a child and a shopkeeper sharing a kind exchange at a small local shop",
+          "image": {
+            "path": "assets/images/stories/100-everyday-conversations/page-02.png",
+            "exists": false
+          },
+          "sentences": [
+            {
+              "id": "p02-s01",
+              "en": "Excuse me, may I ask you something?",
+              "vi": "Xin lỗi, mình hỏi bạn một chút được không?",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-02/sentence-01-en.mp3",
+                  "exists": true,
+                  "bytes": 34988,
+                  "durationSec": 2.18
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-02/sentence-01-vi.mp3",
+                  "exists": true,
+                  "bytes": 55340,
+                  "durationSec": 3.46
+                }
+              }
+            },
+            {
+              "id": "p02-s02",
+              "en": "Of course. What do you need?",
+              "vi": "Được chứ. Bạn cần gì?",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-02/sentence-02-en.mp3",
+                  "exists": true,
+                  "bytes": 29996,
+                  "durationSec": 1.87
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-02/sentence-02-vi.mp3",
+                  "exists": true,
+                  "bytes": 33068,
+                  "durationSec": 2.06
+                }
+              }
+            },
+            {
+              "id": "p02-s03",
+              "en": "Could you help me, please?",
+              "vi": "Bạn giúp mình được không?",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-02/sentence-03-en.mp3",
+                  "exists": true,
+                  "bytes": 31532,
+                  "durationSec": 1.97
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-02/sentence-03-vi.mp3",
+                  "exists": true,
+                  "bytes": 23084,
+                  "durationSec": 1.44
+                }
+              }
+            },
+            {
+              "id": "p02-s04",
+              "en": "Sure, I’d be happy to help.",
+              "vi": "Được chứ, mình sẵn lòng giúp.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-02/sentence-04-en.mp3",
+                  "exists": true,
+                  "bytes": 31148,
+                  "durationSec": 1.94
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-02/sentence-04-vi.mp3",
+                  "exists": true,
+                  "bytes": 39212,
+                  "durationSec": 2.45
+                }
+              }
+            },
+            {
+              "id": "p02-s05",
+              "en": "Thank you so much.",
+              "vi": "Cảm ơn bạn nhiều lắm.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-02/sentence-05-en.mp3",
+                  "exists": true,
+                  "bytes": 26540,
+                  "durationSec": 1.66
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-02/sentence-05-vi.mp3",
+                  "exists": true,
+                  "bytes": 31916,
+                  "durationSec": 1.99
+                }
+              }
+            },
+            {
+              "id": "p02-s06",
+              "en": "You’re welcome.",
+              "vi": "Không có gì.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-02/sentence-06-en.mp3",
+                  "exists": true,
+                  "bytes": 26924,
+                  "durationSec": 1.68
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-02/sentence-06-vi.mp3",
+                  "exists": true,
+                  "bytes": 23852,
+                  "durationSec": 1.49
+                }
+              }
+            },
+            {
+              "id": "p02-s07",
+              "en": "I’m sorry I’m late.",
+              "vi": "Xin lỗi, mình đến muộn.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-02/sentence-07-en.mp3",
+                  "exists": true,
+                  "bytes": 25388,
+                  "durationSec": 1.58
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-02/sentence-07-vi.mp3",
+                  "exists": true,
+                  "bytes": 32300,
+                  "durationSec": 2.02
+                }
+              }
+            },
+            {
+              "id": "p02-s08",
+              "en": "That’s all right.",
+              "vi": "Không sao đâu.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-02/sentence-08-en.mp3",
+                  "exists": true,
+                  "bytes": 28460,
+                  "durationSec": 1.78
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-02/sentence-08-vi.mp3",
+                  "exists": true,
+                  "bytes": 28076,
+                  "durationSec": 1.75
+                }
+              }
+            },
+            {
+              "id": "p02-s09",
+              "en": "Could you say that again, please?",
+              "vi": "Bạn nói lại giúp mình được không?",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-02/sentence-09-en.mp3",
+                  "exists": true,
+                  "bytes": 31532,
+                  "durationSec": 1.97
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-02/sentence-09-vi.mp3",
+                  "exists": true,
+                  "bytes": 31532,
+                  "durationSec": 1.97
+                }
+              }
+            },
+            {
+              "id": "p02-s10",
+              "en": "No problem.",
+              "vi": "Được thôi.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-02/sentence-10-en.mp3",
+                  "exists": true,
+                  "bytes": 23468,
+                  "durationSec": 1.46
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-02/sentence-10-vi.mp3",
+                  "exists": true,
+                  "bytes": 13868,
+                  "durationSec": 0.86
+                }
+              }
+            }
+          ],
+          "fullPrompt": "Premium hand-painted picture-book illustration: gouache and soft watercolour textures on warm paper, rounded friendly shapes, gentle rim light, subtle paper grain and a soft vignette. Calm, comforting, never frightening. Respectful, accurate Vietnamese settings and dress. Keep each character identical on every page (see the character sheet). No text, letters, logos, signatures or watermarks. Story identity — mood: Warm, welcoming, and practical; a bright day of friendly everyday encounters. Setting: A calm illustrated neighborhood with a home, school, cafe, market, and bus stop. Light: Soft morning light with warm paper tones and gentle sage-green details. Signature motifs: open book, speech bubbles, friendly neighborhood, small golden stars. Palette: #DCE8E0, #F7E8C8, #78866B, #465642, #C6A66B, #F3E3B5, #26271F, #FDFAF3. Avoid: busy signage, readable text in illustrations, photorealistic people. Scene: a child and a shopkeeper sharing a kind exchange at a small local shop."
+        },
+        {
+          "id": "page-03",
+          "prompt": "a family getting ready for the day at home, sharing breakfast and checking the time",
+          "image": {
+            "path": "assets/images/stories/100-everyday-conversations/page-03.png",
+            "exists": false
+          },
+          "sentences": [
+            {
+              "id": "p03-s01",
+              "en": "What time is it?",
+              "vi": "Mấy giờ rồi?",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-03/sentence-01-en.mp3",
+                  "exists": true,
+                  "bytes": 26924,
+                  "durationSec": 1.68
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-03/sentence-01-vi.mp3",
+                  "exists": true,
+                  "bytes": 22316,
+                  "durationSec": 1.39
+                }
+              }
+            },
+            {
+              "id": "p03-s02",
+              "en": "It’s seven o’clock.",
+              "vi": "Bảy giờ rồi.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-03/sentence-02-en.mp3",
+                  "exists": true,
+                  "bytes": 27308,
+                  "durationSec": 1.7
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-03/sentence-02-vi.mp3",
+                  "exists": true,
+                  "bytes": 25772,
+                  "durationSec": 1.61
+                }
+              }
+            },
+            {
+              "id": "p03-s03",
+              "en": "I’m getting ready now.",
+              "vi": "Mình đang chuẩn bị đây.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-03/sentence-03-en.mp3",
+                  "exists": true,
+                  "bytes": 26924,
+                  "durationSec": 1.68
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-03/sentence-03-vi.mp3",
+                  "exists": true,
+                  "bytes": 21932,
+                  "durationSec": 1.37
+                }
+              }
+            },
+            {
+              "id": "p03-s04",
+              "en": "Have you had breakfast?",
+              "vi": "Bạn ăn sáng chưa?",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-03/sentence-04-en.mp3",
+                  "exists": true,
+                  "bytes": 28460,
+                  "durationSec": 1.78
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-03/sentence-04-vi.mp3",
+                  "exists": true,
+                  "bytes": 20012,
+                  "durationSec": 1.25
+                }
+              }
+            },
+            {
+              "id": "p03-s05",
+              "en": "Not yet. I’m still hungry.",
+              "vi": "Chưa. Mình vẫn còn đói.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-03/sentence-05-en.mp3",
+                  "exists": true,
+                  "bytes": 31148,
+                  "durationSec": 1.94
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-03/sentence-05-vi.mp3",
+                  "exists": true,
+                  "bytes": 31532,
+                  "durationSec": 1.97
+                }
+              }
+            },
+            {
+              "id": "p03-s06",
+              "en": "Let’s eat together.",
+              "vi": "Mình ăn cùng nhau nhé.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-03/sentence-06-en.mp3",
+                  "exists": true,
+                  "bytes": 28460,
+                  "durationSec": 1.78
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-03/sentence-06-vi.mp3",
+                  "exists": true,
+                  "bytes": 28460,
+                  "durationSec": 1.78
+                }
+              }
+            },
+            {
+              "id": "p03-s07",
+              "en": "Where are my keys?",
+              "vi": "Chìa khóa của mình đâu rồi?",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-03/sentence-07-en.mp3",
+                  "exists": true,
+                  "bytes": 27308,
+                  "durationSec": 1.7
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-03/sentence-07-vi.mp3",
+                  "exists": true,
+                  "bytes": 33452,
+                  "durationSec": 2.09
+                }
+              }
+            },
+            {
+              "id": "p03-s08",
+              "en": "They’re on the table.",
+              "vi": "Ở trên bàn đó.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-03/sentence-08-en.mp3",
+                  "exists": true,
+                  "bytes": 27692,
+                  "durationSec": 1.73
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-03/sentence-08-vi.mp3",
+                  "exists": true,
+                  "bytes": 16172,
+                  "durationSec": 1.01
+                }
+              }
+            },
+            {
+              "id": "p03-s09",
+              "en": "I have to go now.",
+              "vi": "Mình phải đi bây giờ.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-03/sentence-09-en.mp3",
+                  "exists": true,
+                  "bytes": 26540,
+                  "durationSec": 1.66
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-03/sentence-09-vi.mp3",
+                  "exists": true,
+                  "bytes": 31532,
+                  "durationSec": 1.97
+                }
+              }
+            },
+            {
+              "id": "p03-s10",
+              "en": "Have a nice day!",
+              "vi": "Chúc bạn một ngày vui nhé!",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-03/sentence-10-en.mp3",
+                  "exists": true,
+                  "bytes": 26156,
+                  "durationSec": 1.63
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-03/sentence-10-vi.mp3",
+                  "exists": true,
+                  "bytes": 37292,
+                  "durationSec": 2.33
+                }
+              }
+            }
+          ],
+          "fullPrompt": "Premium hand-painted picture-book illustration: gouache and soft watercolour textures on warm paper, rounded friendly shapes, gentle rim light, subtle paper grain and a soft vignette. Calm, comforting, never frightening. Respectful, accurate Vietnamese settings and dress. Keep each character identical on every page (see the character sheet). No text, letters, logos, signatures or watermarks. Story identity — mood: Warm, welcoming, and practical; a bright day of friendly everyday encounters. Setting: A calm illustrated neighborhood with a home, school, cafe, market, and bus stop. Light: Soft morning light with warm paper tones and gentle sage-green details. Signature motifs: open book, speech bubbles, friendly neighborhood, small golden stars. Palette: #DCE8E0, #F7E8C8, #78866B, #465642, #C6A66B, #F3E3B5, #26271F, #FDFAF3. Avoid: busy signage, readable text in illustrations, photorealistic people. Scene: a family getting ready for the day at home, sharing breakfast and checking the time."
+        },
+        {
+          "id": "page-04",
+          "prompt": "a child helping set the table and tidy a cozy family home",
+          "image": {
+            "path": "assets/images/stories/100-everyday-conversations/page-04.png",
+            "exists": false
+          },
+          "sentences": [
+            {
+              "id": "p04-s01",
+              "en": "Welcome to our home.",
+              "vi": "Chào mừng bạn đến nhà mình.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-04/sentence-01-en.mp3",
+                  "exists": true,
+                  "bytes": 26924,
+                  "durationSec": 1.68
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-04/sentence-01-vi.mp3",
+                  "exists": true,
+                  "bytes": 28076,
+                  "durationSec": 1.75
+                }
+              }
+            },
+            {
+              "id": "p04-s02",
+              "en": "Please come in.",
+              "vi": "Mời bạn vào nhà.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-04/sentence-02-en.mp3",
+                  "exists": true,
+                  "bytes": 25004,
+                  "durationSec": 1.56
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-04/sentence-02-vi.mp3",
+                  "exists": true,
+                  "bytes": 29612,
+                  "durationSec": 1.85
+                }
+              }
+            },
+            {
+              "id": "p04-s03",
+              "en": "Would you like some water?",
+              "vi": "Bạn uống nước nhé?",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-04/sentence-03-en.mp3",
+                  "exists": true,
+                  "bytes": 30380,
+                  "durationSec": 1.9
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-04/sentence-03-vi.mp3",
+                  "exists": true,
+                  "bytes": 20396,
+                  "durationSec": 1.27
+                }
+              }
+            },
+            {
+              "id": "p04-s04",
+              "en": "Yes, please. Thank you.",
+              "vi": "Có ạ, cảm ơn bạn.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-04/sentence-04-en.mp3",
+                  "exists": true,
+                  "bytes": 29996,
+                  "durationSec": 1.87
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-04/sentence-04-vi.mp3",
+                  "exists": true,
+                  "bytes": 23468,
+                  "durationSec": 1.46
+                }
+              }
+            },
+            {
+              "id": "p04-s05",
+              "en": "Make yourself comfortable.",
+              "vi": "Bạn cứ tự nhiên nhé.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-04/sentence-05-en.mp3",
+                  "exists": true,
+                  "bytes": 31148,
+                  "durationSec": 1.94
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-04/sentence-05-vi.mp3",
+                  "exists": true,
+                  "bytes": 31532,
+                  "durationSec": 1.97
+                }
+              }
+            },
+            {
+              "id": "p04-s06",
+              "en": "Where should I put this?",
+              "vi": "Mình để cái này ở đâu?",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-04/sentence-06-en.mp3",
+                  "exists": true,
+                  "bytes": 31532,
+                  "durationSec": 1.97
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-04/sentence-06-vi.mp3",
+                  "exists": true,
+                  "bytes": 30764,
+                  "durationSec": 1.92
+                }
+              }
+            },
+            {
+              "id": "p04-s07",
+              "en": "You can put it over there.",
+              "vi": "Bạn để ở đằng kia nhé.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-04/sentence-07-en.mp3",
+                  "exists": true,
+                  "bytes": 30764,
+                  "durationSec": 1.92
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-04/sentence-07-vi.mp3",
+                  "exists": true,
+                  "bytes": 32684,
+                  "durationSec": 2.04
+                }
+              }
+            },
+            {
+              "id": "p04-s08",
+              "en": "Can I give you a hand?",
+              "vi": "Mình phụ bạn một tay nhé?",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-04/sentence-08-en.mp3",
+                  "exists": true,
+                  "bytes": 29228,
+                  "durationSec": 1.82
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-04/sentence-08-vi.mp3",
+                  "exists": true,
+                  "bytes": 34220,
+                  "durationSec": 2.14
+                }
+              }
+            },
+            {
+              "id": "p04-s09",
+              "en": "That would be great.",
+              "vi": "Vậy thì tốt quá.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-04/sentence-09-en.mp3",
+                  "exists": true,
+                  "bytes": 28844,
+                  "durationSec": 1.8
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-04/sentence-09-vi.mp3",
+                  "exists": true,
+                  "bytes": 29228,
+                  "durationSec": 1.82
+                }
+              }
+            },
+            {
+              "id": "p04-s10",
+              "en": "Dinner is ready.",
+              "vi": "Bữa tối sẵn sàng rồi.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-04/sentence-10-en.mp3",
+                  "exists": true,
+                  "bytes": 25004,
+                  "durationSec": 1.56
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-04/sentence-10-vi.mp3",
+                  "exists": true,
+                  "bytes": 29996,
+                  "durationSec": 1.87
+                }
+              }
+            }
+          ],
+          "fullPrompt": "Premium hand-painted picture-book illustration: gouache and soft watercolour textures on warm paper, rounded friendly shapes, gentle rim light, subtle paper grain and a soft vignette. Calm, comforting, never frightening. Respectful, accurate Vietnamese settings and dress. Keep each character identical on every page (see the character sheet). No text, letters, logos, signatures or watermarks. Story identity — mood: Warm, welcoming, and practical; a bright day of friendly everyday encounters. Setting: A calm illustrated neighborhood with a home, school, cafe, market, and bus stop. Light: Soft morning light with warm paper tones and gentle sage-green details. Signature motifs: open book, speech bubbles, friendly neighborhood, small golden stars. Palette: #DCE8E0, #F7E8C8, #78866B, #465642, #C6A66B, #F3E3B5, #26271F, #FDFAF3. Avoid: busy signage, readable text in illustrations, photorealistic people. Scene: a child helping set the table and tidy a cozy family home."
+        },
+        {
+          "id": "page-05",
+          "prompt": "friends choosing snacks and drinks together at a bright cafe",
+          "image": {
+            "path": "assets/images/stories/100-everyday-conversations/page-05.png",
+            "exists": false
+          },
+          "sentences": [
+            {
+              "id": "p05-s01",
+              "en": "What would you like to eat?",
+              "vi": "Bạn muốn ăn gì?",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-05/sentence-01-en.mp3",
+                  "exists": true,
+                  "bytes": 31148,
+                  "durationSec": 1.94
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-05/sentence-01-vi.mp3",
+                  "exists": true,
+                  "bytes": 28844,
+                  "durationSec": 1.8
+                }
+              }
+            },
+            {
+              "id": "p05-s02",
+              "en": "I’d like a sandwich, please.",
+              "vi": "Cho mình một chiếc bánh mì kẹp nhé.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-05/sentence-02-en.mp3",
+                  "exists": true,
+                  "bytes": 31148,
+                  "durationSec": 1.94
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-05/sentence-02-vi.mp3",
+                  "exists": true,
+                  "bytes": 36908,
+                  "durationSec": 2.3
+                }
+              }
+            },
+            {
+              "id": "p05-s03",
+              "en": "Would you like something to drink?",
+              "vi": "Bạn muốn uống gì không?",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-05/sentence-03-en.mp3",
+                  "exists": true,
+                  "bytes": 34604,
+                  "durationSec": 2.16
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-05/sentence-03-vi.mp3",
+                  "exists": true,
+                  "bytes": 21932,
+                  "durationSec": 1.37
+                }
+              }
+            },
+            {
+              "id": "p05-s04",
+              "en": "A glass of water, please.",
+              "vi": "Cho mình một cốc nước nhé.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-05/sentence-04-en.mp3",
+                  "exists": true,
+                  "bytes": 29612,
+                  "durationSec": 1.85
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-05/sentence-04-vi.mp3",
+                  "exists": true,
+                  "bytes": 28460,
+                  "durationSec": 1.78
+                }
+              }
+            },
+            {
+              "id": "p05-s05",
+              "en": "Is this seat taken?",
+              "vi": "Chỗ này có ai ngồi chưa?",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-05/sentence-05-en.mp3",
+                  "exists": true,
+                  "bytes": 29228,
+                  "durationSec": 1.82
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-05/sentence-05-vi.mp3",
+                  "exists": true,
+                  "bytes": 34988,
+                  "durationSec": 2.18
+                }
+              }
+            },
+            {
+              "id": "p05-s06",
+              "en": "No, you can sit here.",
+              "vi": "Chưa, bạn ngồi đây đi.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-05/sentence-06-en.mp3",
+                  "exists": true,
+                  "bytes": 29996,
+                  "durationSec": 1.87
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-05/sentence-06-vi.mp3",
+                  "exists": true,
+                  "bytes": 30764,
+                  "durationSec": 1.92
+                }
+              }
+            },
+            {
+              "id": "p05-s07",
+              "en": "This smells delicious.",
+              "vi": "Món này thơm quá.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-05/sentence-07-en.mp3",
+                  "exists": true,
+                  "bytes": 30764,
+                  "durationSec": 1.92
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-05/sentence-07-vi.mp3",
+                  "exists": true,
+                  "bytes": 28076,
+                  "durationSec": 1.75
+                }
+              }
+            },
+            {
+              "id": "p05-s08",
+              "en": "Would you like to try some?",
+              "vi": "Bạn muốn nếm thử một chút không?",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-05/sentence-08-en.mp3",
+                  "exists": true,
+                  "bytes": 31532,
+                  "durationSec": 1.97
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-05/sentence-08-vi.mp3",
+                  "exists": true,
+                  "bytes": 24620,
+                  "durationSec": 1.54
+                }
+              }
+            },
+            {
+              "id": "p05-s09",
+              "en": "Yes, just a little.",
+              "vi": "Có, cho mình một chút thôi.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-05/sentence-09-en.mp3",
+                  "exists": true,
+                  "bytes": 26156,
+                  "durationSec": 1.63
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-05/sentence-09-vi.mp3",
+                  "exists": true,
+                  "bytes": 31532,
+                  "durationSec": 1.97
+                }
+              }
+            },
+            {
+              "id": "p05-s10",
+              "en": "That was really tasty.",
+              "vi": "Món đó ngon thật đấy.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-05/sentence-10-en.mp3",
+                  "exists": true,
+                  "bytes": 26924,
+                  "durationSec": 1.68
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-05/sentence-10-vi.mp3",
+                  "exists": true,
+                  "bytes": 28844,
+                  "durationSec": 1.8
+                }
+              }
+            }
+          ],
+          "fullPrompt": "Premium hand-painted picture-book illustration: gouache and soft watercolour textures on warm paper, rounded friendly shapes, gentle rim light, subtle paper grain and a soft vignette. Calm, comforting, never frightening. Respectful, accurate Vietnamese settings and dress. Keep each character identical on every page (see the character sheet). No text, letters, logos, signatures or watermarks. Story identity — mood: Warm, welcoming, and practical; a bright day of friendly everyday encounters. Setting: A calm illustrated neighborhood with a home, school, cafe, market, and bus stop. Light: Soft morning light with warm paper tones and gentle sage-green details. Signature motifs: open book, speech bubbles, friendly neighborhood, small golden stars. Palette: #DCE8E0, #F7E8C8, #78866B, #465642, #C6A66B, #F3E3B5, #26271F, #FDFAF3. Avoid: busy signage, readable text in illustrations, photorealistic people. Scene: friends choosing snacks and drinks together at a bright cafe."
+        },
+        {
+          "id": "page-06",
+          "prompt": "a child buying fruit with a parent at a friendly neighborhood market",
+          "image": {
+            "path": "assets/images/stories/100-everyday-conversations/page-06.png",
+            "exists": false
+          },
+          "sentences": [
+            {
+              "id": "p06-s01",
+              "en": "How much is this?",
+              "vi": "Món này giá bao nhiêu?",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-06/sentence-01-en.mp3",
+                  "exists": true,
+                  "bytes": 26156,
+                  "durationSec": 1.63
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-06/sentence-01-vi.mp3",
+                  "exists": true,
+                  "bytes": 22316,
+                  "durationSec": 1.39
+                }
+              }
+            },
+            {
+              "id": "p06-s02",
+              "en": "It’s five dollars.",
+              "vi": "Năm đô la.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-06/sentence-02-en.mp3",
+                  "exists": true,
+                  "bytes": 26540,
+                  "durationSec": 1.66
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-06/sentence-02-vi.mp3",
+                  "exists": true,
+                  "bytes": 21932,
+                  "durationSec": 1.37
+                }
+              }
+            },
+            {
+              "id": "p06-s03",
+              "en": "That’s a little too expensive for me.",
+              "vi": "Giá đó hơi cao với mình.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-06/sentence-03-en.mp3",
+                  "exists": true,
+                  "bytes": 38444,
+                  "durationSec": 2.4
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-06/sentence-03-vi.mp3",
+                  "exists": true,
+                  "bytes": 30764,
+                  "durationSec": 1.92
+                }
+              }
+            },
+            {
+              "id": "p06-s04",
+              "en": "Do you have a cheaper one?",
+              "vi": "Bạn có loại nào rẻ hơn không?",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-06/sentence-04-en.mp3",
+                  "exists": true,
+                  "bytes": 31532,
+                  "durationSec": 1.97
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-06/sentence-04-vi.mp3",
+                  "exists": true,
+                  "bytes": 32684,
+                  "durationSec": 2.04
+                }
+              }
+            },
+            {
+              "id": "p06-s05",
+              "en": "Can I try this on?",
+              "vi": "Mình thử món này được không?",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-06/sentence-05-en.mp3",
+                  "exists": true,
+                  "bytes": 26540,
+                  "durationSec": 1.66
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-06/sentence-05-vi.mp3",
+                  "exists": true,
+                  "bytes": 39596,
+                  "durationSec": 2.47
+                }
+              }
+            },
+            {
+              "id": "p06-s06",
+              "en": "Where is the fitting room?",
+              "vi": "Phòng thử đồ ở đâu?",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-06/sentence-06-en.mp3",
+                  "exists": true,
+                  "bytes": 31916,
+                  "durationSec": 1.99
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-06/sentence-06-vi.mp3",
+                  "exists": true,
+                  "bytes": 23852,
+                  "durationSec": 1.49
+                }
+              }
+            },
+            {
+              "id": "p06-s07",
+              "en": "I’m just looking, thank you.",
+              "vi": "Mình chỉ xem thôi, cảm ơn bạn.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-06/sentence-07-en.mp3",
+                  "exists": true,
+                  "bytes": 32300,
+                  "durationSec": 2.02
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-06/sentence-07-vi.mp3",
+                  "exists": true,
+                  "bytes": 37676,
+                  "durationSec": 2.35
+                }
+              }
+            },
+            {
+              "id": "p06-s08",
+              "en": "I’ll take it.",
+              "vi": "Mình lấy món này.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-06/sentence-08-en.mp3",
+                  "exists": true,
+                  "bytes": 18860,
+                  "durationSec": 1.18
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-06/sentence-08-vi.mp3",
+                  "exists": true,
+                  "bytes": 27308,
+                  "durationSec": 1.7
+                }
+              }
+            },
+            {
+              "id": "p06-s09",
+              "en": "Can I pay by card?",
+              "vi": "Mình trả bằng thẻ được không?",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-06/sentence-09-en.mp3",
+                  "exists": true,
+                  "bytes": 25388,
+                  "durationSec": 1.58
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-06/sentence-09-vi.mp3",
+                  "exists": true,
+                  "bytes": 32684,
+                  "durationSec": 2.04
+                }
+              }
+            },
+            {
+              "id": "p06-s10",
+              "en": "Here’s your change.",
+              "vi": "Tiền thừa của bạn đây.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-06/sentence-10-en.mp3",
+                  "exists": true,
+                  "bytes": 26924,
+                  "durationSec": 1.68
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-06/sentence-10-vi.mp3",
+                  "exists": true,
+                  "bytes": 29996,
+                  "durationSec": 1.87
+                }
+              }
+            }
+          ],
+          "fullPrompt": "Premium hand-painted picture-book illustration: gouache and soft watercolour textures on warm paper, rounded friendly shapes, gentle rim light, subtle paper grain and a soft vignette. Calm, comforting, never frightening. Respectful, accurate Vietnamese settings and dress. Keep each character identical on every page (see the character sheet). No text, letters, logos, signatures or watermarks. Story identity — mood: Warm, welcoming, and practical; a bright day of friendly everyday encounters. Setting: A calm illustrated neighborhood with a home, school, cafe, market, and bus stop. Light: Soft morning light with warm paper tones and gentle sage-green details. Signature motifs: open book, speech bubbles, friendly neighborhood, small golden stars. Palette: #DCE8E0, #F7E8C8, #78866B, #465642, #C6A66B, #F3E3B5, #26271F, #FDFAF3. Avoid: busy signage, readable text in illustrations, photorealistic people. Scene: a child buying fruit with a parent at a friendly neighborhood market."
+        },
+        {
+          "id": "page-07",
+          "prompt": "a family asking for directions and waiting together at a city bus stop",
+          "image": {
+            "path": "assets/images/stories/100-everyday-conversations/page-07.png",
+            "exists": false
+          },
+          "sentences": [
+            {
+              "id": "p07-s01",
+              "en": "Excuse me, where is the bus stop?",
+              "vi": "Xin lỗi, trạm xe buýt ở đâu vậy?",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-07/sentence-01-en.mp3",
+                  "exists": true,
+                  "bytes": 32300,
+                  "durationSec": 2.02
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-07/sentence-01-vi.mp3",
+                  "exists": true,
+                  "bytes": 43820,
+                  "durationSec": 2.74
+                }
+              }
+            },
+            {
+              "id": "p07-s02",
+              "en": "Go straight ahead.",
+              "vi": "Bạn đi thẳng nhé.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-07/sentence-02-en.mp3",
+                  "exists": true,
+                  "bytes": 26924,
+                  "durationSec": 1.68
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-07/sentence-02-vi.mp3",
+                  "exists": true,
+                  "bytes": 19628,
+                  "durationSec": 1.22
+                }
+              }
+            },
+            {
+              "id": "p07-s03",
+              "en": "Turn left at the next street.",
+              "vi": "Rẽ trái ở con phố kế tiếp.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-07/sentence-03-en.mp3",
+                  "exists": true,
+                  "bytes": 32684,
+                  "durationSec": 2.04
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-07/sentence-03-vi.mp3",
+                  "exists": true,
+                  "bytes": 33452,
+                  "durationSec": 2.09
+                }
+              }
+            },
+            {
+              "id": "p07-s04",
+              "en": "Is it far from here?",
+              "vi": "Từ đây đến đó có xa không?",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-07/sentence-04-en.mp3",
+                  "exists": true,
+                  "bytes": 26924,
+                  "durationSec": 1.68
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-07/sentence-04-vi.mp3",
+                  "exists": true,
+                  "bytes": 29228,
+                  "durationSec": 1.82
+                }
+              }
+            },
+            {
+              "id": "p07-s05",
+              "en": "No, it’s about a five-minute walk.",
+              "vi": "Không, đi bộ khoảng năm phút thôi.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-07/sentence-05-en.mp3",
+                  "exists": true,
+                  "bytes": 35372,
+                  "durationSec": 2.21
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-07/sentence-05-vi.mp3",
+                  "exists": true,
+                  "bytes": 49580,
+                  "durationSec": 3.1
+                }
+              }
+            },
+            {
+              "id": "p07-s06",
+              "en": "Which bus goes to the museum?",
+              "vi": "Xe buýt nào đi đến bảo tàng?",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-07/sentence-06-en.mp3",
+                  "exists": true,
+                  "bytes": 31532,
+                  "durationSec": 1.97
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-07/sentence-06-vi.mp3",
+                  "exists": true,
+                  "bytes": 34988,
+                  "durationSec": 2.18
+                }
+              }
+            },
+            {
+              "id": "p07-s07",
+              "en": "Take bus number twelve.",
+              "vi": "Bạn đi xe buýt số mười hai.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-07/sentence-07-en.mp3",
+                  "exists": true,
+                  "bytes": 30764,
+                  "durationSec": 1.92
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-07/sentence-07-vi.mp3",
+                  "exists": true,
+                  "bytes": 28076,
+                  "durationSec": 1.75
+                }
+              }
+            },
+            {
+              "id": "p07-s08",
+              "en": "Where should I get off?",
+              "vi": "Mình nên xuống ở đâu?",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-07/sentence-08-en.mp3",
+                  "exists": true,
+                  "bytes": 27692,
+                  "durationSec": 1.73
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-07/sentence-08-vi.mp3",
+                  "exists": true,
+                  "bytes": 29228,
+                  "durationSec": 1.82
+                }
+              }
+            },
+            {
+              "id": "p07-s09",
+              "en": "Get off at the next stop.",
+              "vi": "Bạn xuống ở trạm kế tiếp.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-07/sentence-09-en.mp3",
+                  "exists": true,
+                  "bytes": 29228,
+                  "durationSec": 1.82
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-07/sentence-09-vi.mp3",
+                  "exists": true,
+                  "bytes": 34220,
+                  "durationSec": 2.14
+                }
+              }
+            },
+            {
+              "id": "p07-s10",
+              "en": "Does this bus stop near the park?",
+              "vi": "Xe buýt này có dừng gần công viên không?",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-07/sentence-10-en.mp3",
+                  "exists": true,
+                  "bytes": 34220,
+                  "durationSec": 2.14
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-07/sentence-10-vi.mp3",
+                  "exists": true,
+                  "bytes": 39212,
+                  "durationSec": 2.45
+                }
+              }
+            }
+          ],
+          "fullPrompt": "Premium hand-painted picture-book illustration: gouache and soft watercolour textures on warm paper, rounded friendly shapes, gentle rim light, subtle paper grain and a soft vignette. Calm, comforting, never frightening. Respectful, accurate Vietnamese settings and dress. Keep each character identical on every page (see the character sheet). No text, letters, logos, signatures or watermarks. Story identity — mood: Warm, welcoming, and practical; a bright day of friendly everyday encounters. Setting: A calm illustrated neighborhood with a home, school, cafe, market, and bus stop. Light: Soft morning light with warm paper tones and gentle sage-green details. Signature motifs: open book, speech bubbles, friendly neighborhood, small golden stars. Palette: #DCE8E0, #F7E8C8, #78866B, #465642, #C6A66B, #F3E3B5, #26271F, #FDFAF3. Avoid: busy signage, readable text in illustrations, photorealistic people. Scene: a family asking for directions and waiting together at a city bus stop."
+        },
+        {
+          "id": "page-08",
+          "prompt": "classmates working together at a bright classroom desk with books and pencils",
+          "image": {
+            "path": "assets/images/stories/100-everyday-conversations/page-08.png",
+            "exists": false
+          },
+          "sentences": [
+            {
+              "id": "p08-s01",
+              "en": "What are we learning today?",
+              "vi": "Hôm nay chúng ta học gì?",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-08/sentence-01-en.mp3",
+                  "exists": true,
+                  "bytes": 30764,
+                  "durationSec": 1.92
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-08/sentence-01-vi.mp3",
+                  "exists": true,
+                  "bytes": 29612,
+                  "durationSec": 1.85
+                }
+              }
+            },
+            {
+              "id": "p08-s02",
+              "en": "We’re learning about animals.",
+              "vi": "Chúng ta học về các loài động vật.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-08/sentence-02-en.mp3",
+                  "exists": true,
+                  "bytes": 30764,
+                  "durationSec": 1.92
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-08/sentence-02-vi.mp3",
+                  "exists": true,
+                  "bytes": 31148,
+                  "durationSec": 1.94
+                }
+              }
+            },
+            {
+              "id": "p08-s03",
+              "en": "May I borrow your pencil?",
+              "vi": "Mình mượn bút chì của bạn được không?",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-08/sentence-03-en.mp3",
+                  "exists": true,
+                  "bytes": 30380,
+                  "durationSec": 1.9
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-08/sentence-03-vi.mp3",
+                  "exists": true,
+                  "bytes": 35756,
+                  "durationSec": 2.23
+                }
+              }
+            },
+            {
+              "id": "p08-s04",
+              "en": "Of course. Here you are.",
+              "vi": "Được chứ. Của bạn đây.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-08/sentence-04-en.mp3",
+                  "exists": true,
+                  "bytes": 30380,
+                  "durationSec": 1.9
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-08/sentence-04-vi.mp3",
+                  "exists": true,
+                  "bytes": 31916,
+                  "durationSec": 1.99
+                }
+              }
+            },
+            {
+              "id": "p08-s05",
+              "en": "I don’t understand this question.",
+              "vi": "Mình chưa hiểu câu hỏi này.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-08/sentence-05-en.mp3",
+                  "exists": true,
+                  "bytes": 34220,
+                  "durationSec": 2.14
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-08/sentence-05-vi.mp3",
+                  "exists": true,
+                  "bytes": 26156,
+                  "durationSec": 1.63
+                }
+              }
+            },
+            {
+              "id": "p08-s06",
+              "en": "Let’s work it out together.",
+              "vi": "Mình cùng giải nhé.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-08/sentence-06-en.mp3",
+                  "exists": true,
+                  "bytes": 30380,
+                  "durationSec": 1.9
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-08/sentence-06-vi.mp3",
+                  "exists": true,
+                  "bytes": 20396,
+                  "durationSec": 1.27
+                }
+              }
+            },
+            {
+              "id": "p08-s07",
+              "en": "How do you spell that word?",
+              "vi": "Từ đó đánh vần thế nào?",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-08/sentence-07-en.mp3",
+                  "exists": true,
+                  "bytes": 28844,
+                  "durationSec": 1.8
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-08/sentence-07-vi.mp3",
+                  "exists": true,
+                  "bytes": 28076,
+                  "durationSec": 1.75
+                }
+              }
+            },
+            {
+              "id": "p08-s08",
+              "en": "It’s spelled S-T-O-R-Y.",
+              "vi": "Từ đó đánh vần là S-T-O-R-Y.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-08/sentence-08-en.mp3",
+                  "exists": true,
+                  "bytes": 29612,
+                  "durationSec": 1.85
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-08/sentence-08-vi.mp3",
+                  "exists": true,
+                  "bytes": 36524,
+                  "durationSec": 2.28
+                }
+              }
+            },
+            {
+              "id": "p08-s09",
+              "en": "Can I join your game?",
+              "vi": "Mình chơi cùng được không?",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-08/sentence-09-en.mp3",
+                  "exists": true,
+                  "bytes": 28460,
+                  "durationSec": 1.78
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-08/sentence-09-vi.mp3",
+                  "exists": true,
+                  "bytes": 24620,
+                  "durationSec": 1.54
+                }
+              }
+            },
+            {
+              "id": "p08-s10",
+              "en": "Yes, there’s room for one more.",
+              "vi": "Được chứ, vẫn còn chỗ cho một bạn nữa.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-08/sentence-10-en.mp3",
+                  "exists": true,
+                  "bytes": 32684,
+                  "durationSec": 2.04
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-08/sentence-10-vi.mp3",
+                  "exists": true,
+                  "bytes": 47660,
+                  "durationSec": 2.98
+                }
+              }
+            }
+          ],
+          "fullPrompt": "Premium hand-painted picture-book illustration: gouache and soft watercolour textures on warm paper, rounded friendly shapes, gentle rim light, subtle paper grain and a soft vignette. Calm, comforting, never frightening. Respectful, accurate Vietnamese settings and dress. Keep each character identical on every page (see the character sheet). No text, letters, logos, signatures or watermarks. Story identity — mood: Warm, welcoming, and practical; a bright day of friendly everyday encounters. Setting: A calm illustrated neighborhood with a home, school, cafe, market, and bus stop. Light: Soft morning light with warm paper tones and gentle sage-green details. Signature motifs: open book, speech bubbles, friendly neighborhood, small golden stars. Palette: #DCE8E0, #F7E8C8, #78866B, #465642, #C6A66B, #F3E3B5, #26271F, #FDFAF3. Avoid: busy signage, readable text in illustrations, photorealistic people. Scene: classmates working together at a bright classroom desk with books and pencils."
+        },
+        {
+          "id": "page-09",
+          "prompt": "a child talking kindly with a trusted adult after a small scrape at the playground",
+          "image": {
+            "path": "assets/images/stories/100-everyday-conversations/page-09.png",
+            "exists": false
+          },
+          "sentences": [
+            {
+              "id": "p09-s01",
+              "en": "How are you feeling today?",
+              "vi": "Hôm nay bạn cảm thấy thế nào?",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-09/sentence-01-en.mp3",
+                  "exists": true,
+                  "bytes": 32684,
+                  "durationSec": 2.04
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-09/sentence-01-vi.mp3",
+                  "exists": true,
+                  "bytes": 40364,
+                  "durationSec": 2.52
+                }
+              }
+            },
+            {
+              "id": "p09-s02",
+              "en": "I feel a little tired.",
+              "vi": "Mình hơi mệt.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-09/sentence-02-en.mp3",
+                  "exists": true,
+                  "bytes": 30380,
+                  "durationSec": 1.9
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-09/sentence-02-vi.mp3",
+                  "exists": true,
+                  "bytes": 23468,
+                  "durationSec": 1.46
+                }
+              }
+            },
+            {
+              "id": "p09-s03",
+              "en": "Are you feeling all right?",
+              "vi": "Bạn có thấy ổn không?",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-09/sentence-03-en.mp3",
+                  "exists": true,
+                  "bytes": 32684,
+                  "durationSec": 2.04
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-09/sentence-03-vi.mp3",
+                  "exists": true,
+                  "bytes": 30380,
+                  "durationSec": 1.9
+                }
+              }
+            },
+            {
+              "id": "p09-s04",
+              "en": "I have a small headache.",
+              "vi": "Mình hơi đau đầu.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-09/sentence-04-en.mp3",
+                  "exists": true,
+                  "bytes": 29228,
+                  "durationSec": 1.82
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-09/sentence-04-vi.mp3",
+                  "exists": true,
+                  "bytes": 24620,
+                  "durationSec": 1.54
+                }
+              }
+            },
+            {
+              "id": "p09-s05",
+              "en": "I’m sorry that happened.",
+              "vi": "Mình tiếc vì chuyện đó xảy ra.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-09/sentence-05-en.mp3",
+                  "exists": true,
+                  "bytes": 29996,
+                  "durationSec": 1.87
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-09/sentence-05-vi.mp3",
+                  "exists": true,
+                  "bytes": 43436,
+                  "durationSec": 2.71
+                }
+              }
+            },
+            {
+              "id": "p09-s06",
+              "en": "It’s okay. I’m feeling better now.",
+              "vi": "Không sao. Bây giờ mình thấy đỡ hơn rồi.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-09/sentence-06-en.mp3",
+                  "exists": true,
+                  "bytes": 34604,
+                  "durationSec": 2.16
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-09/sentence-06-vi.mp3",
+                  "exists": true,
+                  "bytes": 50348,
+                  "durationSec": 3.14
+                }
+              }
+            },
+            {
+              "id": "p09-s07",
+              "en": "I’m excited about the trip.",
+              "vi": "Mình háo hức về chuyến đi.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-09/sentence-07-en.mp3",
+                  "exists": true,
+                  "bytes": 33068,
+                  "durationSec": 2.06
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-09/sentence-07-vi.mp3",
+                  "exists": true,
+                  "bytes": 38060,
+                  "durationSec": 2.38
+                }
+              }
+            },
+            {
+              "id": "p09-s08",
+              "en": "I feel a little nervous.",
+              "vi": "Mình hơi lo lắng.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-09/sentence-08-en.mp3",
+                  "exists": true,
+                  "bytes": 31532,
+                  "durationSec": 1.97
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-09/sentence-08-vi.mp3",
+                  "exists": true,
+                  "bytes": 29228,
+                  "durationSec": 1.82
+                }
+              }
+            },
+            {
+              "id": "p09-s09",
+              "en": "Take your time. There’s no rush.",
+              "vi": "Cứ từ từ nhé. Không cần vội đâu.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-09/sentence-09-en.mp3",
+                  "exists": true,
+                  "bytes": 33452,
+                  "durationSec": 2.09
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-09/sentence-09-vi.mp3",
+                  "exists": true,
+                  "bytes": 41132,
+                  "durationSec": 2.57
+                }
+              }
+            },
+            {
+              "id": "p09-s10",
+              "en": "I’m glad you told me.",
+              "vi": "Mình mừng vì bạn đã kể cho mình nghe.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-09/sentence-10-en.mp3",
+                  "exists": true,
+                  "bytes": 28844,
+                  "durationSec": 1.8
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-09/sentence-10-vi.mp3",
+                  "exists": true,
+                  "bytes": 38060,
+                  "durationSec": 2.38
+                }
+              }
+            }
+          ],
+          "fullPrompt": "Premium hand-painted picture-book illustration: gouache and soft watercolour textures on warm paper, rounded friendly shapes, gentle rim light, subtle paper grain and a soft vignette. Calm, comforting, never frightening. Respectful, accurate Vietnamese settings and dress. Keep each character identical on every page (see the character sheet). No text, letters, logos, signatures or watermarks. Story identity — mood: Warm, welcoming, and practical; a bright day of friendly everyday encounters. Setting: A calm illustrated neighborhood with a home, school, cafe, market, and bus stop. Light: Soft morning light with warm paper tones and gentle sage-green details. Signature motifs: open book, speech bubbles, friendly neighborhood, small golden stars. Palette: #DCE8E0, #F7E8C8, #78866B, #465642, #C6A66B, #F3E3B5, #26271F, #FDFAF3. Avoid: busy signage, readable text in illustrations, photorealistic people. Scene: a child talking kindly with a trusted adult after a small scrape at the playground."
+        },
+        {
+          "id": "page-10",
+          "prompt": "friends saying goodbye after a happy day together, with a small calendar showing plans",
+          "image": {
+            "path": "assets/images/stories/100-everyday-conversations/page-10.png",
+            "exists": false
+          },
+          "sentences": [
+            {
+              "id": "p10-s01",
+              "en": "What are you doing this weekend?",
+              "vi": "Cuối tuần này bạn định làm gì?",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-10/sentence-01-en.mp3",
+                  "exists": true,
+                  "bytes": 34220,
+                  "durationSec": 2.14
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-10/sentence-01-vi.mp3",
+                  "exists": true,
+                  "bytes": 30380,
+                  "durationSec": 1.9
+                }
+              }
+            },
+            {
+              "id": "p10-s02",
+              "en": "I’m going to visit my grandparents.",
+              "vi": "Mình sẽ đến thăm ông bà.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-10/sentence-02-en.mp3",
+                  "exists": true,
+                  "bytes": 35372,
+                  "durationSec": 2.21
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-10/sentence-02-vi.mp3",
+                  "exists": true,
+                  "bytes": 30764,
+                  "durationSec": 1.92
+                }
+              }
+            },
+            {
+              "id": "p10-s03",
+              "en": "Would you like to come with us?",
+              "vi": "Bạn muốn đi cùng bọn mình không?",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-10/sentence-03-en.mp3",
+                  "exists": true,
+                  "bytes": 32300,
+                  "durationSec": 2.02
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-10/sentence-03-vi.mp3",
+                  "exists": true,
+                  "bytes": 28460,
+                  "durationSec": 1.78
+                }
+              }
+            },
+            {
+              "id": "p10-s04",
+              "en": "I’d love to, thank you.",
+              "vi": "Mình rất muốn, cảm ơn bạn.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-10/sentence-04-en.mp3",
+                  "exists": true,
+                  "bytes": 26540,
+                  "durationSec": 1.66
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-10/sentence-04-vi.mp3",
+                  "exists": true,
+                  "bytes": 35372,
+                  "durationSec": 2.21
+                }
+              }
+            },
+            {
+              "id": "p10-s05",
+              "en": "What time shall we meet?",
+              "vi": "Mấy giờ chúng ta gặp nhau?",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-10/sentence-05-en.mp3",
+                  "exists": true,
+                  "bytes": 30380,
+                  "durationSec": 1.9
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-10/sentence-05-vi.mp3",
+                  "exists": true,
+                  "bytes": 33836,
+                  "durationSec": 2.11
+                }
+              }
+            },
+            {
+              "id": "p10-s06",
+              "en": "Let’s meet at ten in the morning.",
+              "vi": "Mình gặp nhau lúc mười giờ sáng nhé.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-10/sentence-06-en.mp3",
+                  "exists": true,
+                  "bytes": 32300,
+                  "durationSec": 2.02
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-10/sentence-06-vi.mp3",
+                  "exists": true,
+                  "bytes": 36524,
+                  "durationSec": 2.28
+                }
+              }
+            },
+            {
+              "id": "p10-s07",
+              "en": "I’m afraid I can’t make it.",
+              "vi": "Tiếc quá, mình không đến được.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-10/sentence-07-en.mp3",
+                  "exists": true,
+                  "bytes": 31148,
+                  "durationSec": 1.94
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-10/sentence-07-vi.mp3",
+                  "exists": true,
+                  "bytes": 33452,
+                  "durationSec": 2.09
+                }
+              }
+            },
+            {
+              "id": "p10-s08",
+              "en": "Maybe another time.",
+              "vi": "Để dịp khác nhé.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-10/sentence-08-en.mp3",
+                  "exists": true,
+                  "bytes": 26156,
+                  "durationSec": 1.63
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-10/sentence-08-vi.mp3",
+                  "exists": true,
+                  "bytes": 20012,
+                  "durationSec": 1.25
+                }
+              }
+            },
+            {
+              "id": "p10-s09",
+              "en": "I had a lovely time.",
+              "vi": "Hôm nay mình vui lắm.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-10/sentence-09-en.mp3",
+                  "exists": true,
+                  "bytes": 27692,
+                  "durationSec": 1.73
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-10/sentence-09-vi.mp3",
+                  "exists": true,
+                  "bytes": 22700,
+                  "durationSec": 1.42
+                }
+              }
+            },
+            {
+              "id": "p10-s10",
+              "en": "Take care, and talk to you soon!",
+              "vi": "Giữ gìn sức khỏe nhé, sớm nói chuyện lại!",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/100-everyday-conversations/page-10/sentence-10-en.mp3",
+                  "exists": true,
+                  "bytes": 33452,
+                  "durationSec": 2.09
+                },
+                "vi": {
+                  "path": "assets/audio/100-everyday-conversations/page-10/sentence-10-vi.mp3",
+                  "exists": true,
+                  "bytes": 54188,
+                  "durationSec": 3.38
+                }
+              }
+            }
+          ],
+          "fullPrompt": "Premium hand-painted picture-book illustration: gouache and soft watercolour textures on warm paper, rounded friendly shapes, gentle rim light, subtle paper grain and a soft vignette. Calm, comforting, never frightening. Respectful, accurate Vietnamese settings and dress. Keep each character identical on every page (see the character sheet). No text, letters, logos, signatures or watermarks. Story identity — mood: Warm, welcoming, and practical; a bright day of friendly everyday encounters. Setting: A calm illustrated neighborhood with a home, school, cafe, market, and bus stop. Light: Soft morning light with warm paper tones and gentle sage-green details. Signature motifs: open book, speech bubbles, friendly neighborhood, small golden stars. Palette: #DCE8E0, #F7E8C8, #78866B, #465642, #C6A66B, #F3E3B5, #26271F, #FDFAF3. Avoid: busy signage, readable text in illustrations, photorealistic people. Scene: friends saying goodbye after a happy day together, with a small calendar showing plans."
+        }
+      ],
+      "status": {
+        "images": "0/11",
+        "audio": "200/200",
+        "complete": false
+      }
+    },
     {
       "id": "banh-chung-banh-giay",
       "title": {

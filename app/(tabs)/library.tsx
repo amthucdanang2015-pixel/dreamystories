@@ -8,12 +8,11 @@ import {
   Animated,
   Easing,
   Keyboard,
-  useWindowDimensions,
 } from 'react-native';
 import { Search } from 'lucide-react-native';
 import { useTranslation } from 'react-i18next';
 import { useRouter } from 'expo-router';
-import { Spacing, Typography, TouchTarget } from '../../src/constants/theme';
+import { Layout, Spacing, Typography, TouchTarget } from '../../src/constants/theme';
 import { createThemedStyles, useTheme } from '../../src/theme';
 import { StoryCard } from '../../src/components/story/StoryCard';
 import {
@@ -32,19 +31,22 @@ import { useProgressStore } from '../../src/store/progressStore';
 import { describeProgress, ReadingState } from '../../src/hooks/useStoryProgress';
 import { storyMatchesQuery } from '../../src/utils/storySearch';
 import { storyCategory } from '../../src/i18n/storyMeta';
+import { useResponsiveLayout } from '../../src/hooks/useResponsiveLayout';
+import { gridColumns, gridItemWidth } from '../../src/utils/responsiveLayout';
 
 type StatusFilter = 'all' | 'reading' | 'finished';
 /** Category filter: a story category from the data, or every category. */
 const ALL_CATEGORIES = null;
 
-const MAX_CONTENT = 960;
+const MAX_CONTENT = Layout.maxWidth.browse;
 
 export default function LibraryScreen() {
   const router = useRouter();
   const { t } = useTranslation();
   const styles = useStyles();
   const { colors, type } = useTheme();
-  const { width: SW } = useWindowDimensions();
+  const layout = useResponsiveLayout();
+  const { contentWidth: contentW, inset } = layout.frame(MAX_CONTENT);
   const progressMap = useProgressStore((s) => s.progressMap);
   const [category, setCategory] = useState<string | null>(ALL_CATEGORIES);
   const [status, setStatus] = useState<StatusFilter>('all');
@@ -113,11 +115,10 @@ export default function LibraryScreen() {
   const searching = query.trim().length > 0;
   const filtersActive = category !== ALL_CATEGORIES || status !== 'all';
 
-  // Responsive grid: 2 columns on phones, more on tablets.
-  const contentW = Math.min(SW, MAX_CONTENT) - Spacing.gutter * 2;
-  const cols = contentW > 760 ? 4 : contentW > 520 ? 3 : 2;
+  // Responsive grid: 2 columns on phones, as many readable covers as fit on tablets.
   const gap = Spacing.md;
-  const cardW = Math.floor((contentW - gap * (cols - 1)) / cols);
+  const cols = gridColumns(contentW, Layout.minCoverWidth, gap, { min: 2 });
+  const cardW = gridItemWidth(contentW, cols, gap);
 
   const openStory = (story: Story) => router.push(`/story/${story.id}`);
   const subtitleVars = { count: ALL_STORIES.length, reading, finished };
@@ -141,6 +142,7 @@ export default function LibraryScreen() {
           <Animated.View
             style={[
               styles.searchHeader,
+              { paddingHorizontal: layout.gutter },
               headerH ? { minHeight: headerH } : null,
               {
                 opacity: reveal,
@@ -195,7 +197,7 @@ export default function LibraryScreen() {
       }
       // The primary filter stays reachable: it pins under the compact bar.
       sticky={
-        <View style={styles.statusRow}>
+        <View style={[{ paddingHorizontal: layout.gutter }, !layout.isCompact && styles.statusRowWide]}>
           <Segmented
             accessibilityLabel={t('library.statusA11y')}
             options={[
@@ -212,7 +214,8 @@ export default function LibraryScreen() {
       <ScrollView
         horizontal
         showsHorizontalScrollIndicator={false}
-        contentContainerStyle={styles.filterRow}
+        // Scrolls edge to edge, but starts in line with the grid.
+        contentContainerStyle={[styles.filterRow, { paddingHorizontal: inset }]}
       >
         {categories.map(([cat, count]) => (
           <Chip
@@ -227,7 +230,7 @@ export default function LibraryScreen() {
 
       <View style={styles.center}>
         {visibleStories.length > 0 ? (
-          <View style={[styles.grid, { gap, paddingHorizontal: Spacing.gutter }]}>
+          <View style={[styles.grid, { gap, paddingHorizontal: layout.gutter }]}>
             {visibleStories.map((story) => (
               <StoryCard key={story.id} story={story} onPress={openStory} width={cardW} />
             ))}
@@ -296,12 +299,12 @@ export default function LibraryScreen() {
 
 const useStyles = createThemedStyles((t) => ({
   center: { width: '100%', maxWidth: MAX_CONTENT, alignSelf: 'center' },
-  statusRow: { paddingHorizontal: Spacing.gutter },
-  filterRow: { paddingHorizontal: Spacing.gutter, gap: Spacing.sm, paddingBottom: Spacing.lg },
+  // Three short options don't need the whole width of a tablet.
+  statusRowWide: { maxWidth: 520 },
+  filterRow: { gap: Spacing.sm, paddingBottom: Spacing.lg },
   grid: { flexDirection: 'row', flexWrap: 'wrap', rowGap: Spacing.lg },
   // Same box as ScreenHeader, so opening search never shifts the page.
   searchHeader: {
-    paddingHorizontal: Spacing.gutter,
     paddingTop: Spacing.xs,
     paddingBottom: Spacing.md,
   },

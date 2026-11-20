@@ -17,6 +17,10 @@ interface VerticalReaderProps {
   isLearningMode?: boolean;
   /** Narration is speaking (drives the "reading aloud" indicator). */
   isNarrating?: boolean;
+  /** Widest the page may be (the screen's reading column). */
+  maxPageWidth?: number;
+  /** Side margin between the window edge and the page. */
+  margin?: number;
   onWordSelect?: (definition: WordDefinition) => void;
   onReplaySentence?: (sentenceIndex: number, phase: 'en' | 'vi') => void;
 }
@@ -32,6 +36,8 @@ export const VerticalReader: React.FC<VerticalReaderProps> = ({
   readerTheme,
   isLearningMode = false,
   isNarrating = false,
+  maxPageWidth = MAX_PAGE_WIDTH,
+  margin = Spacing.md,
   onWordSelect,
   onReplaySentence,
 }) => {
@@ -77,7 +83,7 @@ export const VerticalReader: React.FC<VerticalReaderProps> = ({
   currentRef.current = currentPageIndex;
 
   // Pages flow at their natural height: art above the full text, no nested scrolling.
-  const pageWidth = size ? Math.min(size.width - Spacing.md * 2, MAX_PAGE_WIDTH) : 0;
+  const pageWidth = size ? Math.min(size.width - margin * 2, maxPageWidth) : 0;
 
   return (
     <View style={styles.container} onLayout={onLayout}>
@@ -86,7 +92,7 @@ export const VerticalReader: React.FC<VerticalReaderProps> = ({
           ref={scrollRef}
           {...autoScroll.scrollViewProps}
           style={styles.scroll}
-          contentContainerStyle={styles.content}
+          contentContainerStyle={[styles.content, { paddingHorizontal: margin }]}
           showsVerticalScrollIndicator={false}
           onContentSizeChange={(w, h) => {
             autoScroll.scrollViewProps.onContentSizeChange(w, h);

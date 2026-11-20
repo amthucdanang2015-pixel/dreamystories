@@ -1,0 +1,191 @@
+{
+  "id": "100-everyday-conversations",
+  "title": {
+    "en": "100 Everyday Conversations",
+    "vi": "100 Câu Giao Tiếp Hằng Ngày"
+  },
+  "description": {
+    "en": "A friendly collection of 100 useful English phrases with Vietnamese translations, arranged across ten everyday situations.",
+    "vi": "Bộ sưu tập 100 câu tiếng Anh hữu ích kèm nghĩa tiếng Việt, chia theo mười tình huống giao tiếp quen thuộc."
+  },
+  "theme": {
+    "en": "Small phrases make it easier to connect with people every day.",
+    "vi": "Những câu nói nhỏ giúp ta tự tin kết nối với mọi người mỗi ngày."
+  },
+  "origin": "Original English-Vietnamese learning content written for StoryMoon; organized by everyday situations.",
+  "category": "Language Practice",
+  "ageRange": "6–12 years",
+  "duration": "10 min",
+  "artDirection": {
+    "mood": "Warm, welcoming, and practical; a bright day of friendly everyday encounters.",
+    "setting": "A calm illustrated neighborhood with a home, school, cafe, market, and bus stop.",
+    "light": "Soft morning light with warm paper tones and gentle sage-green details.",
+    "motifs": ["open book", "speech bubbles", "friendly neighborhood", "small golden stars"],
+    "avoid": ["busy signage", "readable text in illustrations", "photorealistic people"],
+    "palette": {
+      "sky": "#DCE8E0",
+      "skyLow": "#F7E8C8",
+      "ground": "#78866B",
+      "groundDeep": "#465642",
+      "accent": "#C6A66B",
+      "glow": "#F3E3B5",
+      "ink": "#26271F",
+      "paper": "#FDFAF3"
+    }
+  },
+  "cover": {
+    "prompt": "an open storybook with two friendly speech bubbles floating above it, a small moon and golden stars, warm ivory and sage palette, no readable text"
+  },
+  "pages": [
+    {
+      "prompt": "two new friends greeting each other on a sunny neighborhood path",
+      "sentences": [
+        ["Hello! How are you?", "Xin chào! Bạn khỏe không?"],
+        ["I’m good, thank you.", "Mình khỏe, cảm ơn bạn."],
+        ["What’s your name?", "Bạn tên là gì?"],
+        ["My name is Linh.", "Mình tên là Linh."],
+        ["Nice to meet you.", "Rất vui được gặp bạn."],
+        ["Where are you from?", "Bạn đến từ đâu?"],
+        ["I’m from Vietnam.", "Mình đến từ Việt Nam."],
+        ["Do you live nearby?", "Bạn sống gần đây à?"],
+        ["Yes, just around the corner.", "Ừ, ngay gần đây thôi."],
+        ["See you around!", "Hẹn gặp lại nhé!"]
+      ]
+    },
+    {
+      "prompt": "a child and a shopkeeper sharing a kind exchange at a small local shop",
+      "sentences": [
+        ["Excuse me, may I ask you something?", "Xin lỗi, mình hỏi bạn một chút được không?"],
+        ["Of course. What do you need?", "Được chứ. Bạn cần gì?"],
+        ["Could you help me, please?", "Bạn giúp mình được không?"],
+        ["Sure, I’d be happy to help.", "Được chứ, mình sẵn lòng giúp."],
+        ["Thank you so much.", "Cảm ơn bạn nhiều lắm."],
+        ["You’re welcome.", "Không có gì."],
+        ["I’m sorry I’m late.", "Xin lỗi, mình đến muộn."],
+        ["That’s all right.", "Không sao đâu."],
+        ["Could you say that again, please?", "Bạn nói lại giúp mình được không?"],
+        ["No problem.", "Được thôi."]
+      ]
+    },
+    {
+      "prompt": "a family getting ready for the day at home, sharing breakfast and checking the time",
+      "sentences": [
+        ["What time is it?", "Mấy giờ rồi?"],
+        ["It’s seven o’clock.", "Bảy giờ rồi."],
+        ["I’m getting ready now.", "Mình đang chuẩn bị đây."],
+        ["Have you had breakfast?", "Bạn ăn sáng chưa?"],
+        ["Not yet. I’m still hungry.", "Chưa. Mình vẫn còn đói."],
+        ["Let’s eat together.", "Mình ăn cùng nhau nhé."],
+        ["Where are my keys?", "Chìa khóa của mình đâu rồi?"],
+        ["They’re on the table.", "Ở trên bàn đó."],
+        ["I have to go now.", "Mình phải đi bây giờ."],
+        ["Have a nice day!", "Chúc bạn một ngày vui nhé!"]
+      ]
+    },
+    {
+      "prompt": "a child helping set the table and tidy a cozy family home",
+      "sentences": [
+        ["Welcome to our home.", "Chào mừng bạn đến nhà mình."],
+        ["Please come in.", "Mời bạn vào nhà."],
+        ["Would you like some water?", "Bạn uống nước nhé?"],
+        ["Yes, please. Thank you.", "Có ạ, cảm ơn bạn."],
+        ["Make yourself comfortable.", "Bạn cứ tự nhiên nhé."],
+        ["Where should I put this?", "Mình để cái này ở đâu?"],
+        ["You can put it over there.", "Bạn để ở đằng kia nhé."],
+        ["Can I give you a hand?", "Mình phụ bạn một tay nhé?"],
+        ["That would be great.", "Vậy thì tốt quá."],
+        ["Dinner is ready.", "Bữa tối sẵn sàng rồi."]
+      ]
+    },
+    {
+      "prompt": "friends choosing snacks and drinks together at a bright cafe",
+      "sentences": [
+        ["What would you like to eat?", "Bạn muốn ăn gì?"],
+        ["I’d like a sandwich, please.", "Cho mình một chiếc bánh mì kẹp nhé."],
+        ["Would you like something to drink?", "Bạn muốn uống gì không?"],
+        ["A glass of water, please.", "Cho mình một cốc nước nhé."],
+        ["Is this seat taken?", "Chỗ này có ai ngồi chưa?"],
+        ["No, you can sit here.", "Chưa, bạn ngồi đây đi."],
+        ["This smells delicious.", "Món này thơm quá."],
+        ["Would you like to try some?", "Bạn muốn nếm thử một chút không?"],
+        ["Yes, just a little.", "Có, cho mình một chút thôi."],
+        ["That was really tasty.", "Món đó ngon thật đấy."]
+      ]
+    },
+    {
+      "prompt": "a child buying fruit with a parent at a friendly neighborhood market",
+      "sentences": [
+        ["How much is this?", "Món này giá bao nhiêu?"],
+        ["It’s five dollars.", "Năm đô la."],
+        ["That’s a little too expensive for me.", "Giá đó hơi cao với mình."],
+        ["Do you have a cheaper one?", "Bạn có loại nào rẻ hơn không?"],
+        ["Can I try this on?", "Mình thử món này được không?"],
+        ["Where is the fitting room?", "Phòng thử đồ ở đâu?"],
+        ["I’m just looking, thank you.", "Mình chỉ xem thôi, cảm ơn bạn."],
+        ["I’ll take it.", "Mình lấy món này."],
+        ["Can I pay by card?", "Mình trả bằng thẻ được không?"],
+        ["Here’s your change.", "Tiền thừa của bạn đây."]
+      ]
+    },
+    {
+      "prompt": "a family asking for directions and waiting together at a city bus stop",
+      "sentences": [
+        ["Excuse me, where is the bus stop?", "Xin lỗi, trạm xe buýt ở đâu vậy?"],
+        ["Go straight ahead.", "Bạn đi thẳng nhé."],
+        ["Turn left at the next street.", "Rẽ trái ở con phố kế tiếp."],
+        ["Is it far from here?", "Từ đây đến đó có xa không?"],
+        ["No, it’s about a five-minute walk.", "Không, đi bộ khoảng năm phút thôi."],
+        ["Which bus goes to the museum?", "Xe buýt nào đi đến bảo tàng?"],
+        ["Take bus number twelve.", "Bạn đi xe buýt số mười hai."],
+        ["Where should I get off?", "Mình nên xuống ở đâu?"],
+        ["Get off at the next stop.", "Bạn xuống ở trạm kế tiếp."],
+        ["Does this bus stop near the park?", "Xe buýt này có dừng gần công viên không?"]
+      ]
+    },
+    {
+      "prompt": "classmates working together at a bright classroom desk with books and pencils",
+      "sentences": [
+        ["What are we learning today?", "Hôm nay chúng ta học gì?"],
+        ["We’re learning about animals.", "Chúng ta học về các loài động vật."],
+        ["May I borrow your pencil?", "Mình mượn bút chì của bạn được không?"],
+        ["Of course. Here you are.", "Được chứ. Của bạn đây."],
+        ["I don’t understand this question.", "Mình chưa hiểu câu hỏi này."],
+        ["Let’s work it out together.", "Mình cùng giải nhé."],
+        ["How do you spell that word?", "Từ đó đánh vần thế nào?"],
+        ["It’s spelled S-T-O-R-Y.", "Từ đó đánh vần là S-T-O-R-Y."],
+        ["Can I join your game?", "Mình chơi cùng được không?"],
+        ["Yes, there’s room for one more.", "Được chứ, vẫn còn chỗ cho một bạn nữa."]
+      ]
+    },
+    {
+      "prompt": "a child talking kindly with a trusted adult after a small scrape at the playground",
+      "sentences": [
+        ["How are you feeling today?", "Hôm nay bạn cảm thấy thế nào?"],
+        ["I feel a little tired.", "Mình hơi mệt."],
+        ["Are you feeling all right?", "Bạn có thấy ổn không?"],
+        ["I have a small headache.", "Mình hơi đau đầu."],
+        ["I’m sorry that happened.", "Mình tiếc vì chuyện đó xảy ra."],
+        ["It’s okay. I’m feeling better now.", "Không sao. Bây giờ mình thấy đỡ hơn rồi."],
+        ["I’m excited about the trip.", "Mình háo hức về chuyến đi."],
+        ["I feel a little nervous.", "Mình hơi lo lắng."],
+        ["Take your time. There’s no rush.", "Cứ từ từ nhé. Không cần vội đâu."],
+        ["I’m glad you told me.", "Mình mừng vì bạn đã kể cho mình nghe."]
+      ]
+    },
+    {
+      "prompt": "friends saying goodbye after a happy day together, with a small calendar showing plans",
+      "sentences": [
+        ["What are you doing this weekend?", "Cuối tuần này bạn định làm gì?"],
+        ["I’m going to visit my grandparents.", "Mình sẽ đến thăm ông bà."],
+        ["Would you like to come with us?", "Bạn muốn đi cùng bọn mình không?"],
+        ["I’d love to, thank you.", "Mình rất muốn, cảm ơn bạn."],
+        ["What time shall we meet?", "Mấy giờ chúng ta gặp nhau?"],
+        ["Let’s meet at ten in the morning.", "Mình gặp nhau lúc mười giờ sáng nhé."],
+        ["I’m afraid I can’t make it.", "Tiếc quá, mình không đến được."],
+        ["Maybe another time.", "Để dịp khác nhé."],
+        ["I had a lovely time.", "Hôm nay mình vui lắm."],
+        ["Take care, and talk to you soon!", "Giữ gìn sức khỏe nhé, sớm nói chuyện lại!"]
+      ]
+    }
+  ]
+}

@@ -22,6 +22,8 @@ export type StoryTabBarProps = Parameters<NonNullable<React.ComponentProps<typeo
 const ICON_SIZE = 22;
 const PILL_W = 58;
 const PILL_H = 30;
+/** Width the tabs share on tablets (phones are narrower, so unaffected). */
+const MAX_ROW_W = 560;
 
 export function StoryTabBar({ state, descriptors, navigation, insets }: StoryTabBarProps) {
   const styles = useStyles();
@@ -30,6 +32,8 @@ export function StoryTabBar({ state, descriptors, navigation, insets }: StoryTab
       accessibilityRole="tablist"
       style={[styles.bar, { paddingBottom: Math.max(insets.bottom, Spacing.sm) }]}
     >
+      {/* Three tabs spread across a 13" iPad are a long reach apart: keep them grouped. */}
+      <View style={styles.row}>
       {state.routes.map((route, index) => {
         const { options } = descriptors[route.key];
         const focused = state.index === index;
@@ -55,6 +59,7 @@ export function StoryTabBar({ state, descriptors, navigation, insets }: StoryTab
           />
         );
       })}
+      </View>
     </View>
   );
 }
@@ -132,13 +137,13 @@ function TabItem({
 
 const useStyles = createThemedStyles((t) => ({
   bar: {
-    flexDirection: 'row',
     backgroundColor: t.tabBar.background,
     borderTopWidth: StyleSheet.hairlineWidth,
     borderTopColor: t.tabBar.border,
     paddingTop: 6,
     paddingHorizontal: Spacing.sm,
   },
+  row: { flexDirection: 'row', width: '100%', maxWidth: MAX_ROW_W, alignSelf: 'center' },
   item: {
     flex: 1,
     minHeight: TouchTarget + 8,

@@ -33,11 +33,14 @@ import { ReaderControls } from '../../src/components/reader/ReaderControls';
 import { WordModal } from '../../src/components/reader/WordModal';
 import { ReaderShadow } from '../../src/components/reader/readerShadow';
 import { WordDefinition } from '../../src/data/vocabulary';
+import { useResponsiveLayout } from '../../src/hooks/useResponsiveLayout';
+import { readerColumn } from '../../src/utils/responsiveLayout';
 
 export default function ReaderScreen() {
   const { id, page: pageParam } = useLocalSearchParams<{ id: string; page?: string }>();
   const router = useRouter();
   const insets = useSafeAreaInsets();
+  const screen = useResponsiveLayout();
   // `t` is the reader theme in this screen, so the translator is `tr`.
   const { t: tr, i18n } = useTranslation();
 
@@ -84,6 +87,8 @@ export default function ReaderScreen() {
   const shouldAutoPlayRef = useRef(false);
   /** Bumped on every stop so pending auto page-turns from old narration are dropped. */
   const narrationSessionRef = useRef(0);
+  /** The current page was read to its end (auto-turn off): Play restarts it rather than resuming. */
+  const pageFinishedRef = useRef(false);
 
   // Keep the screen on only while the story is being read aloud on this screen.
   usePlaybackKeepAwake(status);
@@ -189,8 +194,22 @@ export default function ReaderScreen() {
 
   // ─── Narration Logic ──────────────────────────────────────
 
-  const startNarration = useCallback(async () => {
+  /**
+   * Narrate the current page. By default resumes at the stored reading
+   * position (the sentence/phase that was playing when narration paused);
+   * page changes and Replay reset that position to the page start.
+   */
+  const startNarration = useCallback(async (opts?: { fromStart?: boolean }) => {
     if (!story || isNarratingRef.current) return;
+
+    // Capture the position before anything else can move it.
+    const resume = opts?.fromStart || pageFinishedRef.current
+      ? null
+      : (() => {
+          const s = usePlaybackStore.getState();
+          return { sentenceIndex: s.currentSentenceIndex, phase: s.bilingualPhase };
+        })();
+    pageFinishedRef.current = false;
 
     isNarratingRef.current = true;
     setSleepTimerEnded(false);
@@ -227,6 +246,7 @@ export default function ReaderScreen() {
         language: effectiveLang,
         readingMode,
         speed,
+        startAt: resume,
       },
       {
         onSentenceStart: (sentenceIndex, phase) => {
@@ -236,6 +256,7 @@ export default function ReaderScreen() {
         onSentenceDone: () => { },
         onPageDone: () => {
           isNarratingRef.current = false;
+          pageFinishedRef.current = true;
 
           if (!autoTurnPage) {
             setStatus('paused');
@@ -301,7 +322,7 @@ export default function ReaderScreen() {
     if (status === 'finished') {
       setViFirstPhase('vi');
       if (currentPageIndex === 0) {
-        startNarration();
+        startNarration({ fromStart: true });
       } else {
         shouldAutoPlayRef.current = true;
         setCurrentPage(0);
@@ -340,7 +361,7 @@ export default function ReaderScreen() {
     setBilingualPhase('en');
     setStatus('idle');
     setTimeout(() => {
-      startNarration();
+      startNarration({ fromStart: true });
     }, 100);
   }, [startNarration, stopNarration]);
 
@@ -409,6 +430,8 @@ export default function ReaderScreen() {
       if (!page || !page.sentences[sentenceIndex]) return;
 
       stopNarration();
+      // Play afterwards continues the page from this sentence.
+      pageFinishedRef.current = false;
       setCurrentSentence(sentenceIndex);
       setBilingualPhase(phase);
       const sentence = page.sentences[sentenceIndex];
@@ -510,33 +533,41 @@ export default function ReaderScreen() {
 
   const isNarrating = status === 'playing';
 
+  // One reading column for the header, the page and the narration dock, so
+  // their edges line up. Phones keep the original full-width page; tablets
+  // get a book-sized page (a wider spread in landscape) with real margins.
+  const column = readerColumn(screen.width, screen.height, layout);
+  const regular = !screen.isCompact;
+
   return (
     <View style={[styles.container, { backgroundColor: t.background }]}>
       <StatusBar style={t.statusBar} />
 
       {/* Header */}
-      <View style={[styles.header, { paddingTop: insets.top + Spacing.xs }]}>
-        <IconButton onPress={handleClose} accessibilityLabel={tr('reader.closeBook')} variant="outline" borderColor={t.border}>
-          <X size={20} color={t.text} strokeWidth={2} />
-        </IconButton>
+      <View style={[styles.header, { paddingTop: insets.top + Spacing.xs, paddingHorizontal: column.margin }]}>
+        <View style={[styles.headerRow, { maxWidth: column.maxWidth }]}>
+          <IconButton onPress={handleClose} accessibilityLabel={tr('reader.closeBook')} variant="outline" borderColor={t.border}>
+            <X size={20} color={t.text} strokeWidth={2} />
+          </IconButton>
 
-        <View style={styles.headerCenter}>
-          <Text style={[styles.headerTitle, { color: t.text }]} numberOfLines={1}>
-            {story.title.en}
-          </Text>
-          <Text style={[styles.headerSubtitle, { color: t.textMuted }]} numberOfLines={2}>
-            {modeBadgeText}
-          </Text>
+          <View style={styles.headerCenter}>
+            <Text style={[styles.headerTitle, regular && styles.headerTitleRegular, { color: t.text }]} numberOfLines={1}>
+              {story.title.en}
+            </Text>
+            <Text style={[styles.headerSubtitle, { color: t.textMuted }]} numberOfLines={2}>
+              {modeBadgeText}
+            </Text>
+          </View>
+
+          <IconButton
+            onPress={handleOpenSettings}
+            accessibilityLabel={tr('reader.settings')}
+            variant="outline"
+            borderColor={t.border}
+          >
+            <SlidersHorizontal size={18} color={t.text} strokeWidth={2} />
+          </IconButton>
         </View>
-
-        <IconButton
-          onPress={handleOpenSettings}
-          accessibilityLabel={tr('reader.settings')}
-          variant="outline"
-          borderColor={t.border}
-        >
-          <SlidersHorizontal size={18} color={t.text} strokeWidth={2} />
-        </IconButton>
       </View>
 
       {sleepTimerEnded && status !== 'playing' && (
@@ -561,6 +592,8 @@ export default function ReaderScreen() {
             readerTheme={t}
             isLearningMode={isLearningMode}
             isNarrating={isNarrating}
+            maxPageWidth={column.maxWidth}
+            margin={column.margin}
             onPageChange={handleManualPageChange}
             onWordSelect={(def) => setSelectedWord(def)}
             onReplaySentence={handleReplaySentence}
@@ -575,6 +608,8 @@ export default function ReaderScreen() {
             readerTheme={t}
             isLearningMode={isLearningMode}
             isNarrating={isNarrating}
+            maxPageWidth={column.maxWidth}
+            margin={column.margin}
             onWordSelect={(def) => setSelectedWord(def)}
             onReplaySentence={handleReplaySentence}
           />
@@ -588,6 +623,7 @@ export default function ReaderScreen() {
         totalPages={story.pages.length}
         readerTheme={t}
         narrationLanguage={narrationLanguage}
+        columnWidth={regular ? column.width : undefined}
         onPlay={handlePlay}
         onPause={handlePause}
         onReplay={handleReplay}
@@ -605,7 +641,7 @@ export default function ReaderScreen() {
           ]}
           bounces={false}
         >
-          <View style={[styles.finishedCard, { backgroundColor: t.name === 'paper' ? Palette.night : t.surface }]}>
+          <View style={[styles.finishedCard, regular && styles.finishedCardRegular, { backgroundColor: t.name === 'paper' ? Palette.night : t.surface }]}>
             <MoonMark size={64} color={Palette.moonGlow} halo="rgba(243,227,181,0.12)" />
             <Text style={styles.finishedTitle} accessibilityRole="header">
               {tr('reader.theEnd')}
@@ -656,15 +692,18 @@ const styles = StyleSheet.create({
   container: { flex: 1 },
   loading: { flex: 1, alignItems: 'center', justifyContent: 'center', gap: Spacing.md },
   loadingText: { fontFamily: Typography.serif, fontSize: Typography.md, fontStyle: 'italic' },
-  header: {
+  // Padded by the reading column's margin; the row is as wide as the page below it.
+  header: { paddingBottom: Spacing.xs },
+  headerRow: {
     flexDirection: 'row',
     alignItems: 'center',
     gap: Spacing.sm,
-    paddingHorizontal: Spacing.md,
-    paddingBottom: Spacing.xs,
+    width: '100%',
+    alignSelf: 'center',
   },
   headerCenter: { flex: 1, alignItems: 'center', paddingHorizontal: Spacing.xs },
   headerTitle: { fontFamily: Typography.serif, fontSize: Typography.md, fontWeight: '700' },
+  headerTitleRegular: { fontSize: Typography.lg },
   headerSubtitle: { fontSize: Typography.xs, marginTop: 2, fontWeight: '600', textAlign: 'center' },
   sleepBanner: {
     flexDirection: 'row',
@@ -699,6 +738,7 @@ const styles = StyleSheet.create({
     borderColor: PremiumColors.borderMoon,
     ...ReaderShadow.page,
   },
+  finishedCardRegular: { maxWidth: 440, paddingVertical: Spacing.xxl, paddingHorizontal: Spacing.xl },
   finishedTitle: {
     fontFamily: Typography.serif,
     fontSize: Typography.display,

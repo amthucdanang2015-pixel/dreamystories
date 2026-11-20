@@ -26,14 +26,17 @@ interface PlanSelectorProps {
   disabled?: boolean;
   /** Shorter cards for small phones. */
   compact?: boolean;
+  /** Roomier cards and larger prices for tablets. */
+  large?: boolean;
 }
 
 const ORDER: PlanId[] = ['weekly', 'yearly'];
 const CARD_MIN_H = 138;
+const CARD_MIN_H_LARGE = 164;
 
-export function PlanSelector({ products, state, selected, onSelect, onRetry, disabled, compact }: PlanSelectorProps) {
+export function PlanSelector({ products, state, selected, onSelect, onRetry, disabled, compact, large }: PlanSelectorProps) {
   const { t } = useTranslation();
-  const minHeight = compact ? CARD_MIN_H - 12 : CARD_MIN_H;
+  const minHeight = large ? CARD_MIN_H_LARGE : compact ? CARD_MIN_H - 12 : CARD_MIN_H;
   if (state.status === 'error') {
     return (
       <View style={[styles.error, { minHeight }]} accessibilityLiveRegion="polite">
@@ -54,9 +57,9 @@ export function PlanSelector({ products, state, selected, onSelect, onRetry, dis
 
   if (state.status !== 'ready') {
     return (
-      <View style={styles.row} accessible accessibilityLabel={t('plans.loading')}>
+      <View style={[styles.row, large && styles.rowLarge]} accessible accessibilityLabel={t('plans.loading')}>
         {ORDER.map((p) => (
-          <View key={p} style={[styles.card, styles.skeleton, { minHeight }]}>
+          <View key={p} style={[styles.card, large && styles.cardLarge, styles.skeleton, { minHeight }]}>
             <View style={[styles.bar, { width: '45%' }]} />
             <View style={[styles.bar, styles.barTall, { width: '70%' }]} />
             <View style={[styles.bar, { width: '55%' }]} />
@@ -71,7 +74,7 @@ export function PlanSelector({ products, state, selected, onSelect, onRetry, dis
   const savings = yearlySavingsPercent(yearly, weekly);
 
   return (
-    <View style={styles.row} accessibilityRole="radiogroup" accessibilityLabel={t('plans.choose')}>
+    <View style={[styles.row, large && styles.rowLarge]} accessibilityRole="radiogroup" accessibilityLabel={t('plans.choose')}>
       {ORDER.map((plan) => {
         const product = plan === 'yearly' ? yearly : weekly;
         if (!product) return null;
@@ -83,6 +86,7 @@ export function PlanSelector({ products, state, selected, onSelect, onRetry, dis
             savings={plan === 'yearly' ? savings : null}
             disabled={disabled}
             minHeight={minHeight}
+            large={large}
             onPress={() => onSelect(plan)}
           />
         );
@@ -97,6 +101,7 @@ function PlanCard({
   savings,
   disabled,
   minHeight,
+  large,
   onPress,
 }: {
   product: SubscriptionProduct;
@@ -104,6 +109,7 @@ function PlanCard({
   savings: number | null;
   disabled?: boolean;
   minHeight: number;
+  large?: boolean;
   onPress: () => void;
 }) {
   const { t } = useTranslation();
@@ -129,6 +135,7 @@ function PlanCard({
       accessibilityLabel={a11y.filter(Boolean).join(', ')}
       style={({ pressed }) => [
         styles.card,
+        large && styles.cardLarge,
         { minHeight },
         yearly ? styles.cardYearly : null,
         selected ? (yearly ? styles.selectedYearly : styles.selectedWeekly) : null,
@@ -153,16 +160,16 @@ function PlanCard({
       ) : null}
 
       <View style={styles.headRow}>
-        <Text style={[styles.planLabel, yearly && styles.planLabelYearly]}>
+        <Text style={[styles.planLabel, large && styles.planLabelLarge, yearly && styles.planLabelYearly]}>
           {yearly ? t('plans.yearlyCaps') : t('plans.weeklyCaps')}
         </Text>
-        <View style={[styles.radio, selected && styles.radioOn]}>
-          {selected ? <Check size={12} color={PremiumColors.onSage} strokeWidth={3} /> : null}
+        <View style={[styles.radio, large && styles.radioLarge, selected && styles.radioOn]}>
+          {selected ? <Check size={large ? 14 : 12} color={PremiumColors.onSage} strokeWidth={3} /> : null}
         </View>
       </View>
 
       <Text
-        style={[styles.price, !yearly && styles.priceWeekly]}
+        style={[styles.price, !yearly && styles.priceWeekly, large && (yearly ? styles.priceLarge : styles.priceWeeklyLarge)]}
         numberOfLines={1}
         adjustsFontSizeToFit
         minimumFontScale={0.7}
@@ -175,7 +182,7 @@ function PlanCard({
           {perWeek ? (
             <>
               <Text style={styles.only}>{t('plans.only')}</Text>
-              <Text style={styles.perWeek} numberOfLines={1} adjustsFontSizeToFit minimumFontScale={0.75}>
+              <Text style={[styles.perWeek, large && styles.perWeekLarge]} numberOfLines={1} adjustsFontSizeToFit minimumFontScale={0.75}>
                 {t('plans.perWeekShort', { price: perWeek })}
               </Text>
             </>
@@ -196,6 +203,13 @@ function PlanCard({
 
 const styles = StyleSheet.create({
   row: { flexDirection: 'row', gap: Spacing.sm + 4, paddingTop: 12 },
+  rowLarge: { gap: Spacing.md },
+  cardLarge: { paddingHorizontal: Spacing.md + 4, paddingTop: Spacing.md + 4, paddingBottom: Spacing.md },
+  planLabelLarge: { fontSize: Typography.sm },
+  radioLarge: { width: 24, height: 24, borderRadius: 12 },
+  priceLarge: { fontSize: Typography.xxl, lineHeight: 36 },
+  priceWeeklyLarge: { fontSize: Typography.xl, lineHeight: 30 },
+  perWeekLarge: { fontSize: Typography.base },
   card: {
     flex: 1,
     minHeight: CARD_MIN_H,

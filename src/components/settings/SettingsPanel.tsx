@@ -28,6 +28,7 @@ import { useTranslation } from 'react-i18next';
 import { useLocales } from 'expo-localization';
 import { Typography, Spacing, BorderRadius } from '../../constants/theme';
 import { createThemedStyles, useTheme } from '../../theme';
+import { useResponsiveLayout } from '../../hooks/useResponsiveLayout';
 import { AppAppearancePicker, ReadingAppearancePicker } from './AppearancePicker';
 import { Chip, Segmented } from '../ui/Chip';
 import { usePreferencesStore } from '../../store/preferencesStore';
@@ -296,9 +297,11 @@ export function SettingsPanel({ showAppSettings = true }: { showAppSettings?: bo
 
 export function SettingsSection({ title, children }: { title: string; children: React.ReactNode }) {
   const sectionStyles = useSectionStyles();
+  const { gutter, sizeClass } = useResponsiveLayout();
+  const tabletScale = sizeClass === 'expanded' ? 1.12 : sizeClass === 'medium' ? 1.06 : 1;
   return (
-    <View style={sectionStyles.container}>
-      <Text style={sectionStyles.title} accessibilityRole="header">{title}</Text>
+    <View style={[sectionStyles.container, { paddingHorizontal: gutter }]}>
+      <Text style={[sectionStyles.title, { fontSize: Typography.sm * tabletScale }]} accessibilityRole="header">{title}</Text>
       <View style={sectionStyles.card}>{children}</View>
     </View>
   );
@@ -323,20 +326,21 @@ export function SettingsItem({
   stackControl?: boolean;
 }) {
   const itemStyles = useItemStyles();
-  const { compact, roomy } = useSettingsDensity();
+  const { compact, roomy, scale } = useSettingsDensity();
+  const iconSize = Math.round(ICON_SIZE * scale);
   const stacked = !!children && !!stackControl && compact;
   return (
     <View style={[itemStyles.container, last && itemStyles.last]}>
-      <View style={itemStyles.top}>
-        <View style={itemStyles.iconWrapper}>{icon}</View>
+      <View style={[itemStyles.top, { paddingVertical: (Spacing.sm + 6) * scale, minHeight: 60 * scale }]}>
+        <View style={[itemStyles.iconWrapper, { width: iconSize, height: iconSize, borderRadius: iconSize / 2 }]}>{icon}</View>
         <View style={itemStyles.textBlock}>
-          <Text style={itemStyles.label}>{label}</Text>
-          {description ? <Text style={itemStyles.description}>{description}</Text> : null}
+          <Text style={[itemStyles.label, { fontSize: Typography.base * scale }]}>{label}</Text>
+          {description ? <Text style={[itemStyles.description, { fontSize: Typography.xs * scale, lineHeight: Typography.xs * scale * 1.45 }]}>{description}</Text> : null}
         </View>
         {children && !stacked ? <View style={itemStyles.control}>{children}</View> : null}
       </View>
-      {stacked ? <View style={[itemStyles.below, !roomy && itemStyles.belowFull]}>{children}</View> : null}
-      {below ? <View style={[itemStyles.below, !roomy && itemStyles.belowFull]}>{below}</View> : null}
+      {stacked ? <View style={[itemStyles.below, { paddingLeft: Spacing.md + iconSize + Spacing.sm + 4 }, !roomy && itemStyles.belowFull]}>{children}</View> : null}
+      {below ? <View style={[itemStyles.below, { paddingLeft: Spacing.md + iconSize + Spacing.sm + 4 }, !roomy && itemStyles.belowFull]}>{below}</View> : null}
     </View>
   );
 }
@@ -350,11 +354,12 @@ export function SettingsItem({
 function useSettingsDensity() {
   const { width, fontScale } = useWindowDimensions();
   const effective = width / Math.max(1, fontScale);
-  return { compact: effective < 400, roomy: effective >= 330 };
+  const scale = effective >= 900 ? 1.12 : effective >= 600 ? 1.06 : 1;
+  return { compact: effective < 400, roomy: effective >= 330, scale };
 }
 
 const useSectionStyles = createThemedStyles((t) => ({
-  container: { marginTop: Spacing.lg, paddingHorizontal: Spacing.gutter },
+  container: { marginTop: Spacing.lg },
   title: { ...t.type.eyebrow, marginBottom: Spacing.sm, paddingHorizontal: 4 },
   card: {
     backgroundColor: t.colors.surface,

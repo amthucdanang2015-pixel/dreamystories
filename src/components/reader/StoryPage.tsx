@@ -36,6 +36,8 @@ interface StoryPageProps {
 }
 
 const SPREAD_MIN_WIDTH = 700;
+/** Longest comfortable line for the story text (pt): roughly 55–65 characters at the tablet size. */
+const READING_MEASURE = 600;
 
 export const StoryPageView: React.FC<StoryPageProps> = ({
   page,
@@ -60,6 +62,8 @@ export const StoryPageView: React.FC<StoryPageProps> = ({
   // desktop web); portrait tablets keep the stacked layout so the art isn't cropped.
   const spread = !flow && pageWidth >= SPREAD_MIN_WIDTH && pageWidth > (pageHeight ?? 0) * 1.1;
   const large = pageWidth >= 520;
+  // Tablet pages get wider inner margins, like a printed book.
+  const textPadH = large ? Spacing.xl : Spacing.lg;
 
   // Book layout: the text scrolls inside the page, so the page follows the
   // sentence being read. (In the scroll layout the whole story scrolls, and
@@ -135,7 +139,7 @@ export const StoryPageView: React.FC<StoryPageProps> = ({
     return (
       <View style={cardStyle}>
         {art(pageWidth, artH)}
-        <View style={styles.flowText}>
+        <View style={[styles.flowText, large && styles.flowTextLarge, { paddingHorizontal: textPadH }]}>
           {text}
           {folio}
         </View>
@@ -146,13 +150,15 @@ export const StoryPageView: React.FC<StoryPageProps> = ({
   // ── Book layout, wide: two-page spread ─────────────────────
   if (spread) {
     const half = Math.floor(pageWidth / 2);
+    // Keep the right-hand page's lines at a book measure on very wide spreads.
+    const spreadPadH = Math.max(Spacing.xl, Math.floor((pageWidth - half - READING_MEASURE) / 2));
     return (
       <View style={[cardStyle, { height: pageHeight, flexDirection: 'row' }]}>
         {art(half, pageHeight!)}
         <View style={[styles.gutterShade, { left: half - 10 }]} pointerEvents="none" />
         {pagedText(
           { width: pageWidth - half },
-          [styles.spreadText, { minHeight: pageHeight }],
+          [styles.spreadText, { minHeight: pageHeight, paddingHorizontal: spreadPadH }],
           <>
             {text}
             <View style={styles.folioSpacer} />
@@ -174,7 +180,7 @@ export const StoryPageView: React.FC<StoryPageProps> = ({
       {art(pageWidth, artH)}
       {pagedText(
         styles.textArea,
-        styles.textContent,
+        [styles.textContent, large && styles.textContentLarge],
         <>
           {text}
           <View style={styles.folioSpacer} />
@@ -200,13 +206,14 @@ const styles = StyleSheet.create({
   /** Fills the ScrollView viewport so its inner spacer can pin the folio to the bottom. */
   textContent: {
     width: '100%',
-    maxWidth: 640,
+    maxWidth: READING_MEASURE + Spacing.xl * 2,
     alignSelf: 'center',
     flexGrow: 1,
     paddingHorizontal: Spacing.lg,
     paddingTop: Spacing.md + 4,
     paddingBottom: 12,
   },
+  textContentLarge: { paddingHorizontal: Spacing.xl, paddingTop: Spacing.lg },
   /** Pushes the folio down when space remains and collapses when text overflows. */
   folioSpacer: { flexGrow: 1 },
   flowText: {
@@ -214,8 +221,8 @@ const styles = StyleSheet.create({
     paddingTop: Spacing.md + 4,
     paddingBottom: Spacing.md,
   },
+  flowTextLarge: { paddingTop: Spacing.lg, paddingBottom: Spacing.lg },
   spreadText: {
-    paddingHorizontal: Spacing.xl,
     paddingTop: Spacing.xl,
     paddingBottom: 12,
     flexGrow: 1,

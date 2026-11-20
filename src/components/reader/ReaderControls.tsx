@@ -2,6 +2,11 @@
 // ReaderControls — the narration dock under the book.
 // Status line (page + what the narrator is doing), page track,
 // then: replay page · previous · PLAY · next · language badge.
+//
+// Tablets (columnWidth set): a floating dock as wide as the page,
+// with the track on top and one row underneath — page and narrator
+// state on the left, previous · play · next centred, replay page and
+// language on the right.
 // ============================================================
 
 import React, { useEffect, useRef } from 'react';
@@ -21,6 +26,8 @@ interface ReaderControlsProps {
   readerTheme: ReaderTheme;
   /** Language the narrator is reading (or will read) right now. */
   narrationLanguage?: 'en' | 'vi';
+  /** Tablets: width of the reading column the dock lines up with. Omit on phones. */
+  columnWidth?: number;
   onPlay: () => void;
   onPause: () => void;
   onReplay: () => void;
@@ -34,6 +41,7 @@ export const ReaderControls: React.FC<ReaderControlsProps> = ({
   totalPages,
   readerTheme: t,
   narrationLanguage = 'en',
+  columnWidth,
   onPlay,
   onPause,
   onReplay,
@@ -59,6 +67,108 @@ export const ReaderControls: React.FC<ReaderControlsProps> = ({
             ? tr('controls.statusFinished')
             : tr('controls.statusIdle');
 
+  const tablet = typeof columnWidth === 'number' && columnWidth > 0;
+  // Larger buttons when the dock has room; narrow tablet windows keep the 48 pt phone size.
+  const roomy = tablet && columnWidth! >= 640;
+  const btn = roomy ? styles.navBtnLarge : null;
+
+  const pageText = (
+    <Text style={[styles.pageText, tablet && styles.pageTextLarge, { color: t.textSecondary }]}>
+      <Trans
+        i18nKey="controls.pageOf"
+        values={{ page: currentPageIndex + 1, total: totalPages }}
+        components={{ muted: <Text style={{ color: t.textMuted }} /> }}
+      />
+    </Text>
+  );
+  const narrState = (
+    <View style={[styles.narrState, tablet && styles.narrStateLeft]} accessibilityLiveRegion="polite">
+      {status === 'playing' ? <PulseDot color={t.highlightBar} /> : null}
+      <Text style={[styles.narrText, tablet && styles.narrTextLeft, { color: t.textMuted }]}>{statusText}</Text>
+    </View>
+  );
+  const replay = (
+    <RoundButton t={t} onPress={onReplay} label={tr('controls.replayPage')} style={btn}>
+      <RotateCcw size={tablet ? 20 : 18} color={t.textSecondary} strokeWidth={2} />
+    </RoundButton>
+  );
+  // previous · PLAY · next — symmetric, so Play sits on the centre line.
+  const transport = (
+    <>
+      <RoundButton t={t} onPress={onPrevPage} label={tr('controls.previousPage')} disabled={atStart} style={btn}>
+        <ChevronLeft size={tablet ? 26 : 24} color={atStart ? t.disabled : t.text} strokeWidth={2} />
+      </RoundButton>
+
+      <Pressable
+        style={({ pressed }) => [
+          styles.playBtn,
+          roomy && styles.playBtnLarge,
+          { backgroundColor: t.primary },
+          pressed && styles.pressed,
+        ]}
+        onPress={isPlaying ? onPause : onPlay}
+        accessibilityRole="button"
+        accessibilityLabel={
+          isPlaying ? tr('controls.pause') : status === 'finished' ? tr('controls.readAgain') : tr('controls.play')
+        }
+      >
+        {isPlaying ? (
+          <Pause size={tablet ? 28 : 26} color={t.onPrimary} fill={t.onPrimary} />
+        ) : (
+          <Play size={tablet ? 28 : 26} color={t.onPrimary} fill={t.onPrimary} style={{ marginLeft: 3 }} />
+        )}
+      </Pressable>
+
+      <RoundButton t={t} onPress={onNextPage} label={tr('controls.nextPage')} disabled={atEnd} style={btn}>
+        <ChevronRight size={tablet ? 26 : 24} color={atEnd ? t.disabled : t.text} strokeWidth={2} />
+      </RoundButton>
+    </>
+  );
+  const langBadge = (
+    <View
+      style={[styles.langBadge, btn, { borderColor: t.border }]}
+      accessible
+      accessibilityLabel={tr('controls.narrationLanguage', { language: languageName })}
+    >
+      <Text
+        style={[styles.langText, { color: narrationLanguage === 'vi' ? t.vi : t.textSecondary }]}
+        maxFontSizeMultiplier={1.4}
+      >
+        {narrationLanguage.toUpperCase()}
+      </Text>
+    </View>
+  );
+
+  if (tablet) {
+    return (
+      <View
+        style={[
+          styles.dock,
+          {
+            width: columnWidth,
+            backgroundColor: t.controlBg,
+            borderColor: t.border,
+            marginBottom: Math.max(insets.bottom, Spacing.md),
+          },
+          t.name === 'paper' ? styles.daylift : null,
+        ]}
+      >
+        <PageTrack total={totalPages} current={currentPageIndex} active={t.highlightBar} inactive={t.dotInactive} />
+        <View style={styles.dockRow}>
+          <View style={styles.dockSide}>
+            {pageText}
+            {narrState}
+          </View>
+          <View style={[styles.dockTransport, !roomy && styles.dockTransportTight]}>{transport}</View>
+          <View style={[styles.dockSide, styles.dockSideEnd]}>
+            {replay}
+            {langBadge}
+          </View>
+        </View>
+      </View>
+    );
+  }
+
   return (
     <View
       style={[
@@ -72,59 +182,16 @@ export const ReaderControls: React.FC<ReaderControlsProps> = ({
       ]}
     >
       <View style={styles.statusRow}>
-        <Text style={[styles.pageText, { color: t.textSecondary }]}>
-          <Trans
-            i18nKey="controls.pageOf"
-            values={{ page: currentPageIndex + 1, total: totalPages }}
-            components={{ muted: <Text style={{ color: t.textMuted }} /> }}
-          />
-        </Text>
-        <View style={styles.narrState} accessibilityLiveRegion="polite">
-          {status === 'playing' ? <PulseDot color={t.highlightBar} /> : null}
-          <Text style={[styles.narrText, { color: t.textMuted }]}>{statusText}</Text>
-        </View>
+        {pageText}
+        {narrState}
       </View>
 
       <PageTrack total={totalPages} current={currentPageIndex} active={t.highlightBar} inactive={t.dotInactive} />
 
       <View style={styles.controls}>
-        <RoundButton t={t} onPress={onReplay} label={tr('controls.replayPage')}>
-          <RotateCcw size={18} color={t.textSecondary} strokeWidth={2} />
-        </RoundButton>
-        <RoundButton t={t} onPress={onPrevPage} label={tr('controls.previousPage')} disabled={atStart}>
-          <ChevronLeft size={24} color={atStart ? t.disabled : t.text} strokeWidth={2} />
-        </RoundButton>
-
-        <Pressable
-          style={({ pressed }) => [styles.playBtn, { backgroundColor: t.primary }, pressed && styles.pressed]}
-          onPress={isPlaying ? onPause : onPlay}
-          accessibilityRole="button"
-          accessibilityLabel={
-            isPlaying ? tr('controls.pause') : status === 'finished' ? tr('controls.readAgain') : tr('controls.play')
-          }
-        >
-          {isPlaying ? (
-            <Pause size={26} color={t.onPrimary} fill={t.onPrimary} />
-          ) : (
-            <Play size={26} color={t.onPrimary} fill={t.onPrimary} style={{ marginLeft: 3 }} />
-          )}
-        </Pressable>
-
-        <RoundButton t={t} onPress={onNextPage} label={tr('controls.nextPage')} disabled={atEnd}>
-          <ChevronRight size={24} color={atEnd ? t.disabled : t.text} strokeWidth={2} />
-        </RoundButton>
-        <View
-          style={[styles.langBadge, { borderColor: t.border }]}
-          accessible
-          accessibilityLabel={tr('controls.narrationLanguage', { language: languageName })}
-        >
-          <Text
-            style={[styles.langText, { color: narrationLanguage === 'vi' ? t.vi : t.textSecondary }]}
-            maxFontSizeMultiplier={1.4}
-          >
-            {narrationLanguage.toUpperCase()}
-          </Text>
-        </View>
+        {replay}
+        {transport}
+        {langBadge}
       </View>
     </View>
   );
@@ -135,17 +202,19 @@ function RoundButton({
   onPress,
   label,
   disabled,
+  style,
   children,
 }: {
   t: ReaderTheme;
   onPress: () => void;
   label: string;
   disabled?: boolean;
+  style?: object | null;
   children: React.ReactNode;
 }) {
   return (
     <Pressable
-      style={({ pressed }) => [styles.navBtn, { borderColor: t.border }, pressed && !disabled && styles.pressed]}
+      style={({ pressed }) => [styles.navBtn, style, { borderColor: t.border }, pressed && !disabled && styles.pressed]}
       onPress={onPress}
       disabled={disabled}
       accessibilityRole="button"
@@ -181,6 +250,23 @@ const styles = StyleSheet.create({
     borderTopLeftRadius: BorderRadius.xxl,
     borderTopRightRadius: BorderRadius.xxl,
   },
+  // Tablet dock: floats above the safe area, as wide as the page above it.
+  dock: {
+    alignSelf: 'center',
+    paddingTop: Spacing.md,
+    paddingBottom: Spacing.md,
+    paddingHorizontal: Spacing.lg,
+    gap: Spacing.md,
+    borderWidth: StyleSheet.hairlineWidth,
+    borderRadius: BorderRadius.xxl,
+  },
+  dockRow: { flexDirection: 'row', alignItems: 'center', gap: Spacing.md },
+  // Equal flex on both sides keeps the transport on the page's centre line.
+  dockSide: { flex: 1, minWidth: 0, gap: 2 },
+  dockSideEnd: { flexDirection: 'row', justifyContent: 'flex-end', alignItems: 'center', gap: Spacing.sm + 4 },
+  dockTransport: { flexDirection: 'row', alignItems: 'center', gap: Spacing.md },
+  // Narrow split views: leave room for the page and narrator state beside the buttons.
+  dockTransportTight: { gap: Spacing.sm },
   daylift: {
     shadowColor: '#2A2214',
     shadowOffset: { width: 0, height: -4 },
@@ -188,10 +274,22 @@ const styles = StyleSheet.create({
     shadowRadius: 12,
     elevation: 8,
   },
-  statusRow: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: Spacing.sm },
+  // On tablets the page count and narration state stay near the buttons, not at the screen edges.
+  statusRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    gap: Spacing.sm,
+    width: '100%',
+    maxWidth: 560,
+    alignSelf: 'center',
+  },
   pageText: { fontFamily: Typography.serif, fontSize: Typography.sm, fontWeight: '700' },
+  pageTextLarge: { fontSize: Typography.base },
   narrState: { flexDirection: 'row', alignItems: 'center', gap: 6, flexShrink: 1 },
   narrText: { fontSize: Typography.xs, fontWeight: '600', flexShrink: 1, textAlign: 'right' },
+  narrStateLeft: { alignSelf: 'flex-start' },
+  narrTextLeft: { textAlign: 'left', fontSize: Typography.sm },
   dot: { width: 7, height: 7, borderRadius: 3.5 },
   controls: {
     flexDirection: 'row',
@@ -210,6 +308,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  navBtnLarge: { width: 54, height: 54, borderRadius: 27 },
+  playBtnLarge: { width: 76, height: 76, borderRadius: 38 },
   playBtn: {
     width: 68,
     height: 68,

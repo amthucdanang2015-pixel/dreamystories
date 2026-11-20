@@ -5,7 +5,7 @@
 //   compact  : list row with thumbnail and reading state
 // ============================================================
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Pressable, StyleSheet, Text, View, useWindowDimensions } from 'react-native';
 import { Check, Clock, Lock } from 'lucide-react-native';
 import { useTranslation } from 'react-i18next';
@@ -26,13 +26,15 @@ interface StoryCardProps {
   story: Story;
   onPress: (story: Story) => void;
   variant?: 'default' | 'featured' | 'compact';
-  /** Cover width for the default (shelf) variant. */
+  /** Cover width for the default (shelf) variant; card width for the featured one. */
   width?: number;
   /** Eyebrow shown on the featured card. */
   eyebrow?: string;
 }
 
 const COVER_RATIO = 1.34;
+/** From this card width the featured card lays its art beside the text (tablets). */
+const FEATURED_SIDE_BY_SIDE_MIN = 640;
 
 export const StoryCard: React.FC<StoryCardProps> = ({
   story,
@@ -45,7 +47,9 @@ export const StoryCard: React.FC<StoryCardProps> = ({
   const { locked } = useStoryAccess(story.id);
   if (variant === 'compact') return <CompactCard story={story} onPress={onPress} info={info} locked={locked} />;
   if (variant === 'featured')
-    return <FeaturedCard story={story} onPress={onPress} info={info} eyebrow={eyebrow} locked={locked} />;
+    return (
+      <FeaturedCard story={story} onPress={onPress} info={info} eyebrow={eyebrow} locked={locked} width={width} />
+    );
   return <ShelfCard story={story} onPress={onPress} info={info} width={width} locked={locked} />;
 };
 
@@ -189,25 +193,43 @@ function FeaturedCard({
   info,
   eyebrow,
   locked,
+  width,
 }: {
   story: Story;
   onPress: (s: Story) => void;
   info: StoryProgressInfo;
   eyebrow?: string;
   locked: boolean;
+  width?: number;
 }) {
   const { t } = useTranslation();
   const featuredStyles = useFeaturedStyles();
   const shelfStyles = useShelfStyles();
   const coverStyles = useCoverStyles();
   const { colors, type } = useTheme();
-  const { width: SW } = useWindowDimensions();
-  const cardW = Math.min(SW - Spacing.gutter * 2, 640);
-  const artH = Math.round(Math.min(cardW * 0.56, 300));
+  const { width: SW, height: SH } = useWindowDimensions();
+  // Sized by the column it sits in (falls back to the phone column).
+  const cardW = width ?? Math.min(SW - Spacing.gutter * 2, 640);
+  // Tablets: art beside the text, so the card stays a calm height and the
+  // square cover is only gently cropped (a 2:1 banner would slice it).
+  const sideBySide = cardW >= FEATURED_SIDE_BY_SIDE_MIN;
+  const artW = sideBySide ? Math.round(cardW * 0.5) : cardW;
+  const minArtH = sideBySide
+    ? // Landscape tablets: leave room for the bookshelf above the fold.
+      Math.round(Math.min(Math.max(cardW * 0.36, 260), 380, Math.max(SH * 0.34, 260)))
+    : Math.round(Math.min(cardW * 0.56, 300));
+  // With large text the body can outgrow the art: the art then grows with it.
+  const [bodyH, setBodyH] = useState(0);
+  const artH = sideBySide ? Math.max(minArtH, bodyH) : minArtH;
   const palette = getStoryPalette(story);
   return (
     <Pressable
-      style={({ pressed }) => [featuredStyles.card, { width: cardW }, pressed && styles.pressed]}
+      style={({ pressed }) => [
+        featuredStyles.card,
+        { width: cardW },
+        sideBySide && featuredStyles.cardRow,
+        pressed && styles.pressed,
+      ]}
       onPress={() => onPress(story)}
       accessibilityRole="button"
       accessibilityLabel={
@@ -216,15 +238,18 @@ function FeaturedCard({
           : a11yLabel(t, story, info, locked)
       }
     >
-      <View style={{ height: artH, backgroundColor: palette.sky }}>
-        <StoryIllustration pageKey={story.coverImage} width={cardW} height={artH} />
+      <View style={{ width: artW, height: artH, backgroundColor: palette.sky }}>
+        <StoryIllustration pageKey={story.coverImage} width={artW} height={artH} />
         {locked ? (
           <View style={coverStyles.premium}>
             <PremiumBadge locked />
           </View>
         ) : null}
       </View>
-      <View style={featuredStyles.body}>
+      <View
+        style={[featuredStyles.body, sideBySide && featuredStyles.bodySide]}
+        onLayout={sideBySide ? (e) => setBodyH(Math.ceil(e.nativeEvent.layout.height)) : undefined}
+      >
         <View style={shelfStyles.categoryRow}>
           <View style={[styles.dot, { backgroundColor: palette.accent }]} />
           <Text style={[type.eyebrow, { color: colors.textAccent }]} numberOfLines={1}>
@@ -233,13 +258,13 @@ function FeaturedCard({
               : storyCategory(t, story.category)}
           </Text>
         </View>
-        <Text style={[type.title, featuredStyles.title]} numberOfLines={2}>
+        <Text style={[type.title, featuredStyles.title, sideBySide && featuredStyles.titleSide]} numberOfLines={sideBySide ? 3 : 2}>
           {story.title.en}
         </Text>
-        <Text style={[type.viTitle, featuredStyles.vi]} numberOfLines={1}>
+        <Text style={[type.viTitle, featuredStyles.vi, sideBySide && featuredStyles.viSide]} numberOfLines={sideBySide ? 2 : 1}>
           {story.title.vi}
         </Text>
-        <Text style={featuredStyles.desc} numberOfLines={2}>
+        <Text style={featuredStyles.desc} numberOfLines={sideBySide ? 4 : 2}>
           {story.description.en}
         </Text>
         <View style={featuredStyles.metaRow}>
@@ -375,9 +400,13 @@ const useFeaturedStyles = createThemedStyles((t) => ({
     overflow: 'hidden',
     ...t.shadow.card,
   },
+  cardRow: { flexDirection: 'row', alignItems: 'flex-start' },
   body: { padding: Spacing.gutter, paddingTop: Spacing.md },
+  bodySide: { flex: 1, alignSelf: 'center', padding: Spacing.xl },
   title: { fontSize: Typography.xl, lineHeight: Typography.xl * 1.18, marginTop: 2 },
+  titleSide: { fontSize: Typography.xxl, lineHeight: Typography.xxl * 1.15, marginTop: 4 },
   vi: { fontSize: Typography.base, marginTop: 4 },
+  viSide: { fontSize: Typography.md, lineHeight: Typography.md * 1.4 },
   desc: { ...t.type.body, marginTop: Spacing.sm + 2 },
   metaRow: { flexDirection: 'row', flexWrap: 'wrap', gap: 6, marginTop: Spacing.md },
   progress: { marginTop: Spacing.md, gap: 6 },

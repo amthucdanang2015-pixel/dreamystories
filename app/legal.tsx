@@ -10,9 +10,10 @@ import { useLocalSearchParams, useRouter } from 'expo-router';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { X } from 'lucide-react-native';
 import { useTranslation } from 'react-i18next';
-import { BorderRadius, Palette, Spacing, Typography } from '../src/constants/theme';
+import { BorderRadius, Layout, Palette, Spacing, Typography } from '../src/constants/theme';
 import { createThemedStyles, useTheme } from '../src/theme';
 import { IconButton, PaperBackdrop } from '../src/components/ui';
+import { useResponsiveLayout } from '../src/hooks/useResponsiveLayout';
 
 const DOCS = {
   terms: {
@@ -44,16 +45,19 @@ export default function LegalScreen() {
   const { t } = useTranslation();
   const styles = useStyles();
   const { colors, type } = useTheme();
+  const { gutter } = useResponsiveLayout();
 
   return (
     <View style={styles.screen}>
       <PaperBackdrop />
-      <View style={[styles.header, { paddingTop: insets.top + Spacing.xs }]}>
+      <View style={[styles.header, { paddingTop: insets.top + Spacing.xs, paddingHorizontal: Math.max(Spacing.md, gutter - 4) }]}>
         <IconButton onPress={() => router.back()} accessibilityLabel={t('common.close')} variant="outline">
           <X size={20} color={colors.textPrimary} strokeWidth={2.2} />
         </IconButton>
       </View>
-      <ScrollView contentContainerStyle={[styles.body, { paddingBottom: insets.bottom + Spacing.xxl }]}>
+      <ScrollView
+        contentContainerStyle={[styles.body, { paddingHorizontal: gutter, paddingBottom: insets.bottom + Spacing.xxl }]}
+      >
         <Text style={[type.eyebrow, styles.eyebrow]}>{t(content.eyebrow)}</Text>
         <Text style={type.title} accessibilityRole="header">
           {t(content.title)}
@@ -75,7 +79,7 @@ export default function LegalScreen() {
 const useStyles = createThemedStyles((t) => ({
   screen: { flex: 1, backgroundColor: t.colors.background },
   header: { flexDirection: 'row', justifyContent: 'flex-end', paddingHorizontal: Spacing.md },
-  body: { paddingHorizontal: Spacing.gutter, width: '100%', maxWidth: 680, alignSelf: 'center' },
+  body: { width: '100%', maxWidth: Layout.maxWidth.form, alignSelf: 'center' },
   eyebrow: { color: t.colors.textAccent, marginBottom: 6 },
   draft: {
     marginTop: Spacing.md,

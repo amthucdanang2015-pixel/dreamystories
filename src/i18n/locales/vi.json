@@ -27,7 +27,8 @@
     "animalTale": "Truyện loài vật",
     "familyTale": "Truyện gia đình",
     "bedtime": "Trước giờ ngủ",
-    "fable": "Truyện ngụ ngôn"
+    "fable": "Truyện ngụ ngôn",
+    "languagePractice": "Luyện giao tiếp"
   },
   "story": {
     "minutes_other": "{{count}} phút",

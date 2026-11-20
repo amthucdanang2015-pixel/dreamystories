@@ -6,7 +6,7 @@
 import { Sentence, Language, ReadingMode } from '../types/story';
 import { speechService } from './speechService';
 import { narrationAudioService, scheduleNarrationSessionRelease } from './narrationAudioService';
-import { buildNarrationSequence, narrateItem } from './narrationSequence';
+import { buildNarrationSequence, narrateItem, resumeIndex, type NarrationPosition } from './narrationSequence';
 import { reportNarrationEvent } from './narrationDiagnostics';
 
 export interface PageNarrationContext {
@@ -18,6 +18,8 @@ export interface PageNarrationContext {
   speed: number;
   /** Index of sentences[0] on the page (for single-sentence replays); diagnostics only. */
   sentenceIndexBase?: number;
+  /** Resume at this sentence/phase (e.g. after Pause) instead of the page start. */
+  startAt?: NarrationPosition | null;
 }
 
 export interface PlaybackCallbacks {
@@ -66,7 +68,7 @@ class PlaybackController {
     const base = ctx.sentenceIndexBase ?? 0;
     const where = { storyId: ctx.storyId, pageIndex: ctx.pageIndex };
 
-    for (let i = 0; i < sequence.length; i++) {
+    for (let i = resumeIndex(sequence, ctx.startAt); i < sequence.length; i++) {
       if (!isCurrent()) return;
 
       const item = sequence[i];

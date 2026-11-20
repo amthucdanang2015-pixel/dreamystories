@@ -1,16 +1,17 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 import { useTranslation } from 'react-i18next';
-import { Typography, Spacing, BorderRadius } from '../../src/constants/theme';
+import { Typography, Spacing, BorderRadius, Layout } from '../../src/constants/theme';
 import { createThemedStyles, useTheme } from '../../src/theme';
 import { SettingsPanel } from '../../src/components/settings/SettingsPanel';
 import { SubscriptionSettingsSection } from '../../src/components/payment';
 import { BrandMark, Button, CollapsingHeaderScreen, ScreenHeader, ShareIcon } from '../../src/components/ui';
 import { useShare } from '../../src/hooks/useShare';
+import { useResponsiveLayout } from '../../src/hooks/useResponsiveLayout';
 import { ALL_STORIES } from '../../src/data/stories';
 import { useProgressStore } from '../../src/store/progressStore';
 
-const APP_VERSION = '1.0.1';
+const APP_VERSION = '1.0.2';
 
 export default function SettingsScreen() {
   const { t } = useTranslation();
@@ -19,20 +20,22 @@ export default function SettingsScreen() {
   const progressMap = useProgressStore((s) => s.progressMap);
   const finished = Object.values(progressMap).filter((p) => p.completed).length;
   const { shareApp, sharing, gate } = useShare();
+  const { gutter, sizeClass } = useResponsiveLayout();
+  const settingsMaxWidth = sizeClass === 'expanded' ? 920 : Layout.maxWidth.form;
 
   return (
     <CollapsingHeaderScreen
       compactTitle={t('settings.title')}
-      maxWidth={680}
+      maxWidth={settingsMaxWidth}
       contentPaddingBottom={Spacing.xxl + 20}
       header={<ScreenHeader eyebrow={t('settings.eyebrow')} title={t('settings.title')} subtitle={t('settings.subtitle')} />}
     >
-      <View style={styles.center}>
+      <View style={[styles.center, { maxWidth: settingsMaxWidth }]}>
         <SubscriptionSettingsSection />
 
         <SettingsPanel />
 
-        <View style={styles.about}>
+        <View style={[styles.about, { marginHorizontal: gutter }]}>
           <BrandMark size={44} />
           <Text style={[type.heading, styles.aboutTitle]}>{t('share.appTitle')}</Text>
           <Text style={styles.aboutText}>{t('settings.aboutText')}</Text>
@@ -57,11 +60,10 @@ export default function SettingsScreen() {
 }
 
 const useStyles = createThemedStyles((t) => ({
-  center: { width: '100%', maxWidth: 680, alignSelf: 'center' },
+  center: { width: '100%', maxWidth: Layout.maxWidth.form, alignSelf: 'center' },
   about: {
     alignItems: 'center',
     marginTop: Spacing.xl,
-    marginHorizontal: Spacing.gutter,
     paddingVertical: Spacing.lg,
     paddingHorizontal: Spacing.lg,
     gap: 6,
