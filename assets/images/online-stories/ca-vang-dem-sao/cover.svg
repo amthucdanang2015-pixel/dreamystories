@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="720" viewBox="0 0 360 360">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0E1E3A"/><stop offset="1" stop-color="#23406A"/></linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1F4A62"/><stop offset="1" stop-color="#0F2A2C"/></linearGradient>
+    <radialGradient id="moonGlow" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#FFF1C9" stop-opacity="0.5"/><stop offset="1" stop-color="#FFF1C9" stop-opacity="0"/></radialGradient>
+    <radialGradient id="fishGlow" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#F28C38" stop-opacity="0.35"/><stop offset="1" stop-color="#F28C38" stop-opacity="0"/></radialGradient>
+    <radialGradient id="vig" cx="0.5" cy="0.5" r="0.75"><stop offset="0.6" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity="0.35"/></radialGradient>
+  </defs>
+  <rect width="360" height="360" fill="url(#sky)"/>
+  <g fill="#FFF1C9">
+    <circle cx="70" cy="40" r="1.8"/><circle cx="120" cy="70" r="1.3"/><circle cx="160" cy="30" r="2"/><circle cx="210" cy="60" r="1.4"/>
+    <circle cx="300" cy="44" r="1.6"/><circle cx="90" cy="110" r="1.2"/><circle cx="250" cy="110" r="1.8"/><circle cx="40" cy="90" r="1.1"/>
+    <circle cx="330" cy="100" r="1.2"/><circle cx="190" cy="120" r="1.1"/>
+    <path d="M140 92 l2 5 l5 2 l-5 2 l-2 5 l-2 -5 l-5 -2 l5 -2 z"/><path d="M228 28 l1.6 4 l4 1.6 l-4 1.6 l-1.6 4 l-1.6 -4 l-4 -1.6 l4 -1.6 z"/>
+  </g>
+  <circle cx="280" cy="72" r="44" fill="url(#moonGlow)"/>
+  <circle cx="280" cy="72" r="20" fill="#FFF1C9"/>
+  <!-- reeds silhouettes -->
+  <g stroke="#0B1A2C" stroke-width="3" stroke-linecap="round"><path d="M24 160 q4 -50 -6 -80"/><path d="M36 160 q2 -40 10 -66"/><path d="M332 160 q-4 -44 6 -72"/><path d="M320 160 q-2 -34 -10 -56"/></g>
+  <ellipse cx="18" cy="84" rx="4" ry="12" fill="#3A2A1E"/><ellipse cx="338" cy="92" rx="4" ry="12" fill="#3A2A1E"/>
+  <!-- water -->
+  <rect x="0" y="158" width="360" height="202" fill="url(#water)"/>
+  <path d="M0 160 q30 -4 60 0 t60 0 t60 0 t60 0 t60 0 t60 0" stroke="#5A86A8" stroke-width="2" fill="none" opacity="0.6"/>
+  <!-- moon + star reflections -->
+  <ellipse cx="280" cy="196" rx="18" ry="5" fill="#FFF1C9" opacity="0.45"/>
+  <ellipse cx="280" cy="212" rx="12" ry="3" fill="#FFF1C9" opacity="0.3"/>
+  <g fill="#FFF1C9" opacity="0.7">
+    <circle cx="70" cy="200" r="1.6"/><circle cx="120" cy="230" r="1.2"/><circle cx="160" cy="190" r="1.8"/><circle cx="210" cy="220" r="1.2"/>
+    <circle cx="90" cy="270" r="1.2"/><circle cx="250" cy="270" r="1.6"/><circle cx="300" cy="250" r="1.2"/><circle cx="40" cy="250" r="1.1"/>
+    <path d="M140 252 l1.6 4 l4 1.6 l-4 1.6 l-1.6 4 l-1.6 -4 l-4 -1.6 l4 -1.6 z"/>
+  </g>
+  <!-- lily pads -->
+  <path d="M40 300 a26 9 0 1 0 52 0 a26 9 0 1 0 -52 0 z" fill="#2E6B4A"/><path d="M66 300 l24 -4" stroke="#1F4A62" stroke-width="2"/>
+  <circle cx="62" cy="294" r="5" fill="#F4B6C2"/><circle cx="62" cy="294" r="2" fill="#FFF1C9"/>
+  <!-- old turtle -->
+  <ellipse cx="282" cy="306" rx="30" ry="14" fill="#5E7A4E"/>
+  <path d="M262 304 q20 -14 40 0" stroke="#3E5634" stroke-width="2" fill="none"/>
+  <circle cx="314" cy="300" r="8" fill="#7E9A66"/><circle cx="316" cy="298" r="1.4" fill="#0B1A2C"/>
+  <path d="M312 304 q3 2 6 0" stroke="#3E5634" stroke-width="1.4" fill="none"/>
+  <!-- goldfish -->
+  <circle cx="176" cy="250" r="48" fill="url(#fishGlow)"/>
+  <path d="M146 250 q-28 -26 -38 -10 q8 10 0 20 q10 16 38 -10 z" fill="#F7A85A" opacity="0.9"/>
+  <ellipse cx="178" cy="250" rx="34" ry="22" fill="#F28C38"/>
+  <path d="M176 230 q10 -18 26 -10 q-10 6 -14 12 z" fill="#F7A85A"/>
+  <path d="M170 268 q6 12 16 10 q-4 -6 -6 -12 z" fill="#F7A85A"/>
+  <path d="M164 240 q6 10 0 20 M174 236 q6 14 0 28" stroke="#E0741E" stroke-width="2" fill="none" opacity="0.7"/>
+  <circle cx="198" cy="244" r="6" fill="#FFFFFF"/><circle cx="200" cy="243" r="3.4" fill="#0B1A2C"/><circle cx="201" cy="241.5" r="1.1" fill="#FFFFFF"/>
+  <path d="M206 256 q4 2 6 -1" stroke="#B5521E" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+  <!-- bubbles -->
+  <g fill="none" stroke="#BFE0F0" stroke-width="1.4" opacity="0.8"><circle cx="218" cy="226" r="3"/><circle cx="224" cy="212" r="4"/><circle cx="220" cy="196" r="2.4"/></g>
+  <rect width="360" height="360" fill="url(#vig)"/>
+</svg>

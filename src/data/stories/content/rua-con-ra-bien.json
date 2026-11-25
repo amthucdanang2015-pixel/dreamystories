@@ -1,0 +1,164 @@
+{
+  "id": "rua-con-ra-bien",
+  "title": {
+    "en": "Little Turtle Finds the Sea",
+    "vi": "Rùa Con Tìm Đường Ra Biển"
+  },
+  "description": {
+    "en": "The last baby sea turtle to hatch on a quiet island beach must find the sea on his own, with a little help from a crab, the moon and the whispering waves.",
+    "vi": "Chú rùa biển nở sau cùng trên bãi cát đảo vắng phải tự tìm đường ra biển, nhờ chút giúp đỡ của chú còng, ông trăng và tiếng sóng thì thầm."
+  },
+  "theme": {
+    "en": "Even the smallest traveller finds the way, one step at a time.",
+    "vi": "Dù nhỏ bé đến đâu, từng bước một, ta sẽ tìm được đường."
+  },
+  "origin": "Original StoryMoon story, written in Vietnamese with an English companion text.",
+  "category": "Animal Tale",
+  "ageRange": "3–7 years",
+  "duration": "4 min",
+  "characters": [
+    {
+      "name": "Rùa Con",
+      "look": "tiny dark-olive baby green sea turtle with a heart-shaped shell and bright curious eyes"
+    },
+    {
+      "name": "the crab",
+      "look": "small pale-sand ghost crab with tall stalk eyes and a friendly wave of one claw"
+    },
+    {
+      "name": "the brothers and sisters",
+      "look": "a few more baby sea turtles, same colouring, swimming in the moonlit water"
+    }
+  ],
+  "artDirection": {
+    "mood": "Quiet, wide and reassuring; a brave little journey under a gentle moon.",
+    "setting": "A protected island beach at Côn Đảo: pale soft sand, sea grape plants at the top of the beach, smooth dark rocks, low green hills behind.",
+    "light": "Deep blue night with a low full moon laying a silver path across the sea.",
+    "motifs": [
+      "a silver moon path on the water",
+      "small turtle tracks in the sand",
+      "a ghost crab by its hole",
+      "a single seashell",
+      "gentle curling waves"
+    ],
+    "avoid": [
+      "predators, gulls or danger",
+      "beach lights or litter",
+      "rough stormy seas"
+    ],
+    "palette": {
+      "sky": "#0F2440",
+      "skyLow": "#24476A",
+      "ground": "#C9B48E",
+      "groundDeep": "#8C7A5E",
+      "accent": "#5FB3A8",
+      "glow": "#EAF2FF",
+      "ink": "#08121F",
+      "paper": "#ECF2F4"
+    }
+  },
+  "cover": {
+    "prompt": "a tiny baby sea turtle crawling across pale moonlit sand toward a silver moon path on the sea, a small ghost crab watching"
+  },
+  "pages": [
+    {
+      "prompt": "a quiet island beach at night, a small egg cracking open in the sand, a tiny baby sea turtle wriggling out",
+      "sentences": [
+        [
+          "On a quiet beach at Côn Đảo, a little egg cracked open in the warm sand.",
+          "Trên bãi cát yên tĩnh ở Côn Đảo, một quả trứng nhỏ nứt ra trong lớp cát ấm."
+        ],
+        [
+          "Out wriggled a baby sea turtle, no bigger than a leaf.",
+          "Một chú rùa biển con bò ra, chỉ nhỏ bằng chiếc lá."
+        ]
+      ]
+    },
+    {
+      "prompt": "the baby turtle alone by the empty nest, many small tracks leading away, looking around under the stars",
+      "sentences": [
+        [
+          "Rùa Con looked around. His brothers and sisters had already gone.",
+          "Rùa Con nhìn quanh. Các anh chị đã đi hết cả rồi."
+        ],
+        [
+          "“Which way is the sea?” he wondered.",
+          "Rùa Con tự hỏi: “Biển ở phía nào nhỉ?”"
+        ]
+      ]
+    },
+    {
+      "prompt": "a small ghost crab popping out of its hole and pointing a claw toward the moonlit sea",
+      "sentences": [
+        [
+          "A little ghost crab popped out of its hole.",
+          "Một chú còng nhỏ ló ra khỏi hang."
+        ],
+        [
+          "“Follow the silver light,” said the crab. “The moon always shines on the sea.”",
+          "Còng bảo: “Cứ đi theo ánh bạc ấy. Trăng luôn soi sáng mặt biển mà.”"
+        ]
+      ]
+    },
+    {
+      "prompt": "a shining silver moon path on the water, the baby turtle crawling across the sand leaving little tracks",
+      "sentences": [
+        [
+          "Rùa Con looked up and saw a shining path of moonlight on the water.",
+          "Rùa Con ngước lên, thấy một con đường ánh trăng lấp lánh trên mặt nước."
+        ],
+        [
+          "He began to crawl, flip-flap, flip-flap, across the sand.",
+          "Chú bắt đầu bò, lạch bạch, lạch bạch, băng qua bãi cát."
+        ]
+      ]
+    },
+    {
+      "prompt": "the baby turtle resting beside a seashell halfway down the beach, small waves curling in the distance",
+      "sentences": [
+        [
+          "The sand was soft, and the way was long.",
+          "Cát mềm mà đường thì xa."
+        ],
+        [
+          "Rùa Con stopped to rest by a seashell, his little flippers tired.",
+          "Rùa Con dừng lại nghỉ bên một vỏ ốc, đôi chân chèo bé nhỏ mỏi nhừ."
+        ],
+        [
+          "Then he heard the waves whispering, “Shhh… shhh… come home.”",
+          "Rồi chú nghe tiếng sóng thì thầm: “Rì rào… rì rào… về đây nào.”"
+        ]
+      ]
+    },
+    {
+      "prompt": "a gentle wave lifting the baby turtle off the wet sand, the turtle starting to swim in the silver water",
+      "sentences": [
+        [
+          "With one last push, Rùa Con reached the wet sand, and a gentle wave lifted him up.",
+          "Cố thêm một chút nữa, Rùa Con đã tới bãi cát ướt, và một con sóng hiền nâng chú lên."
+        ],
+        [
+          "He was swimming! The sea felt cool and soft, like a blanket.",
+          "Chú đang bơi! Nước biển mát rượi, êm như tấm chăn."
+        ]
+      ]
+    },
+    {
+      "prompt": "several baby sea turtles swimming together along the moon path under a sky full of stars",
+      "sentences": [
+        [
+          "Out in the moonlit water, his brothers and sisters were waiting.",
+          "Ngoài làn nước ánh trăng, các anh chị đang đợi chú."
+        ],
+        [
+          "Together they swam toward their new home, under a sky full of stars.",
+          "Cả nhà cùng bơi về ngôi nhà mới, dưới bầu trời đầy sao."
+        ],
+        [
+          "And the moon kept shining softly, lighting the way for every little one.",
+          "Còn ông trăng vẫn dịu dàng soi sáng, dẫn lối cho mọi bạn nhỏ."
+        ]
+      ]
+    }
+  ]
+}

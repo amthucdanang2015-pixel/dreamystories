@@ -156,6 +156,17 @@ node scripts/story-assets.mjs --check  # same, exit 1 unless every asset is pres
 
 ---
 
+## ☁️ Online Stories
+
+The Library has an **Online Stories** section. These stories keep their text, metadata and covers in the app, so they display offline, but their narration MP3s stream from `HOST_ONLINE`. Set it in `src/constants/onlineStories.ts`; until then the stories stay readable and Play shows a clear message. The MP3s live outside the app in `../online-stories/<story-id>/page-NN/sentence-NN-<en|vi>.mp3` and are never bundled.
+
+```bash
+node scripts/voicestudio/generate-narration.mjs --online --all --voice-en <profile> --voice-vi <profile>
+node scripts/online-stories.mjs          # covers, registry, MP3 audit, durations
+```
+
+See [docs/ONLINE_STORIES.md](docs/ONLINE_STORIES.md) for host setup, URL mapping and how to add a story.
+
 ## 🔗 Sharing
 
 "Share StoryMoon" (Settings → About) and "Share story" (Story Detail header) open the native share sheet through React Native's `Share` API, after the same grown-up check used for purchases and external links. Shared text contains only public catalogue text (title, theme, age range), never reading progress, purchases, preferences or device data.

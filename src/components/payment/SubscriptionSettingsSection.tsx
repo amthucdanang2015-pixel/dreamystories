@@ -8,7 +8,7 @@
 import React from 'react';
 import { ActivityIndicator, Pressable, Text, View } from 'react-native';
 import { useRouter } from 'expo-router';
-import { ChevronRight, CreditCard, ExternalLink, Moon, RefreshCw } from 'lucide-react-native';
+import { ChevronRight, CreditCard, ExternalLink, RefreshCw } from 'lucide-react-native';
 import { useTranslation } from 'react-i18next';
 import { PremiumColors, Spacing, TouchTarget, Typography } from '../../constants/theme';
 import { createThemedStyles, useTheme } from '../../theme';
@@ -18,7 +18,7 @@ import { iapService } from '../../services/iapService';
 import { useSubscriptionStore } from '../../store/subscriptionStore';
 import { paywallHref } from '../../hooks/usePremiumGate';
 import { SettingsItem, SettingsSection } from '../settings/SettingsPanel';
-import { PremiumBadge } from './PremiumBadge';
+import { PremiumStatusPill } from './PremiumBadge';
 import { MoonMark } from '../ui/MoonMark';
 import { useParentalGate } from './ParentalGate';
 import { formatDate } from '../../i18n/format';
@@ -27,7 +27,7 @@ export function SubscriptionSettingsSection() {
   const router = useRouter();
   const { t } = useTranslation();
   const styles = useStyles();
-  const { colors } = useTheme();
+  const { colors, isDark } = useTheme();
   const ICON = colors.accent;
   const entitlement = useSubscriptionStore((s) => s.entitlement);
   const restoreState = useSubscriptionStore((s) => s.restoreState);
@@ -53,7 +53,9 @@ export function SubscriptionSettingsSection() {
           ? t('premiumSettings.restoreNothing')
           : restoreState.status === 'error'
             ? restoreState.error ?? t('premiumSettings.restoreErrorDefault')
-            : t('premiumSettings.restoreIdle');
+            : entitlement.isPremium
+              ? t('premiumSettings.restoreIdleSubscriber')
+              : t('premiumSettings.restoreIdle');
 
   const renewal = entitlement.expiresAt ? formatDate(entitlement.expiresAt) : null;
   const activeLabel =
@@ -62,17 +64,25 @@ export function SubscriptionSettingsSection() {
       : entitlement.plan === 'weekly'
         ? t('premiumSettings.activeWeekly')
         : t('premiumSettings.active');
+  const renewsText = renewal ? t('premiumSettings.renews', { date: renewal }) : undefined;
+  const statusLabel = t('premiumSettings.statusActive');
+  // Light mode: the moon is drawn in textAccent, since plain gold is only 2.2:1 on paper.
+  const moonColor = isDark ? colors.gold : colors.textAccent;
 
   return (
     <SettingsSection title={t('premiumSettings.section')}>
       {entitlement.isPremium ? (
-        <SettingsItem
-          icon={<Moon size={18} color={colors.textAccent} />}
-          label={activeLabel}
-          description={renewal ? t('premiumSettings.renews', { date: renewal }) : undefined}
-        >
-          <PremiumBadge locked={false} tone="light" />
-        </SettingsItem>
+        // Status, not an action: no chevron, no pressed state. One VoiceOver stop.
+        <View accessible accessibilityLabel={[activeLabel, renewsText, statusLabel].filter(Boolean).join('. ')}>
+          <SettingsItem
+            tone="premium"
+            icon={(size) => <MoonMark size={size} color={moonColor} halo={colors.goldHalo} />}
+            label={activeLabel}
+            description={renewsText}
+          >
+            <PremiumStatusPill label={statusLabel} />
+          </SettingsItem>
+        </View>
       ) : (
         // A glimpse of the paywall's moonlit edition, so the two read as one.
         <Pressable
@@ -125,9 +135,9 @@ export function SubscriptionSettingsSection() {
           </SettingsItem>
         </Row>
       ) : (
-        <View accessible accessibilityLabel={t('premiumSettings.manageUnavailable')} style={styles.inactive}>
+        <View accessible accessibilityLabel={t('premiumSettings.manageUnavailable')}>
           <SettingsItem
-            icon={<CreditCard size={17} color={ICON} />}
+            icon={<CreditCard size={17} color={colors.textMuted} />}
             label={t('premiumSettings.manage')}
             description={t('premiumSettings.manageUnavailable')}
             last
@@ -179,5 +189,4 @@ const useStyles = createThemedStyles(() => ({
   moonlitText: { flex: 1, gap: 3 },
   moonlitTitle: { fontFamily: Typography.serif, fontSize: Typography.md, fontWeight: '700', color: PremiumColors.text },
   moonlitBody: { fontSize: Typography.sm, lineHeight: 18, color: PremiumColors.textSecondary },
-  inactive: { opacity: 0.62 },
 }));

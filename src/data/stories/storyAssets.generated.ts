@@ -220,6 +220,63 @@ export const STORY_ASSETS: Record<string, StoryAssetEntry> = {
       },
     ],
   },
+  'canh-dieu-cua-na': {
+    cover: undefined,
+    pages: [
+      {
+        image: undefined,
+        sentences: [
+          { en: require('../../../assets/audio/canh-dieu-cua-na/page-01/sentence-01-en.mp3'), vi: require('../../../assets/audio/canh-dieu-cua-na/page-01/sentence-01-vi.mp3') },
+          { en: require('../../../assets/audio/canh-dieu-cua-na/page-01/sentence-02-en.mp3'), vi: require('../../../assets/audio/canh-dieu-cua-na/page-01/sentence-02-vi.mp3') },
+        ],
+      },
+      {
+        image: undefined,
+        sentences: [
+          { en: require('../../../assets/audio/canh-dieu-cua-na/page-02/sentence-01-en.mp3'), vi: require('../../../assets/audio/canh-dieu-cua-na/page-02/sentence-01-vi.mp3') },
+          { en: require('../../../assets/audio/canh-dieu-cua-na/page-02/sentence-02-en.mp3'), vi: require('../../../assets/audio/canh-dieu-cua-na/page-02/sentence-02-vi.mp3') },
+        ],
+      },
+      {
+        image: undefined,
+        sentences: [
+          { en: require('../../../assets/audio/canh-dieu-cua-na/page-03/sentence-01-en.mp3'), vi: require('../../../assets/audio/canh-dieu-cua-na/page-03/sentence-01-vi.mp3') },
+          { en: require('../../../assets/audio/canh-dieu-cua-na/page-03/sentence-02-en.mp3'), vi: require('../../../assets/audio/canh-dieu-cua-na/page-03/sentence-02-vi.mp3') },
+        ],
+      },
+      {
+        image: undefined,
+        sentences: [
+          { en: require('../../../assets/audio/canh-dieu-cua-na/page-04/sentence-01-en.mp3'), vi: require('../../../assets/audio/canh-dieu-cua-na/page-04/sentence-01-vi.mp3') },
+          { en: require('../../../assets/audio/canh-dieu-cua-na/page-04/sentence-02-en.mp3'), vi: require('../../../assets/audio/canh-dieu-cua-na/page-04/sentence-02-vi.mp3') },
+        ],
+      },
+      {
+        image: undefined,
+        sentences: [
+          { en: require('../../../assets/audio/canh-dieu-cua-na/page-05/sentence-01-en.mp3'), vi: require('../../../assets/audio/canh-dieu-cua-na/page-05/sentence-01-vi.mp3') },
+          { en: require('../../../assets/audio/canh-dieu-cua-na/page-05/sentence-02-en.mp3'), vi: require('../../../assets/audio/canh-dieu-cua-na/page-05/sentence-02-vi.mp3') },
+          { en: require('../../../assets/audio/canh-dieu-cua-na/page-05/sentence-03-en.mp3'), vi: require('../../../assets/audio/canh-dieu-cua-na/page-05/sentence-03-vi.mp3') },
+        ],
+      },
+      {
+        image: undefined,
+        sentences: [
+          { en: require('../../../assets/audio/canh-dieu-cua-na/page-06/sentence-01-en.mp3'), vi: require('../../../assets/audio/canh-dieu-cua-na/page-06/sentence-01-vi.mp3') },
+          { en: require('../../../assets/audio/canh-dieu-cua-na/page-06/sentence-02-en.mp3'), vi: require('../../../assets/audio/canh-dieu-cua-na/page-06/sentence-02-vi.mp3') },
+          { en: require('../../../assets/audio/canh-dieu-cua-na/page-06/sentence-03-en.mp3'), vi: require('../../../assets/audio/canh-dieu-cua-na/page-06/sentence-03-vi.mp3') },
+        ],
+      },
+      {
+        image: undefined,
+        sentences: [
+          { en: require('../../../assets/audio/canh-dieu-cua-na/page-07/sentence-01-en.mp3'), vi: require('../../../assets/audio/canh-dieu-cua-na/page-07/sentence-01-vi.mp3') },
+          { en: require('../../../assets/audio/canh-dieu-cua-na/page-07/sentence-02-en.mp3'), vi: require('../../../assets/audio/canh-dieu-cua-na/page-07/sentence-02-vi.mp3') },
+          { en: require('../../../assets/audio/canh-dieu-cua-na/page-07/sentence-03-en.mp3'), vi: require('../../../assets/audio/canh-dieu-cua-na/page-07/sentence-03-vi.mp3') },
+        ],
+      },
+    ],
+  },
   'cay-khe': {
     cover: undefined,
     pages: [
@@ -407,6 +464,63 @@ export const STORY_ASSETS: Record<string, StoryAssetEntry> = {
       },
     ],
   },
+  'den-ong-sao-cua-ba': {
+    cover: undefined,
+    pages: [
+      {
+        image: undefined,
+        sentences: [
+          { en: require('../../../assets/audio/den-ong-sao-cua-ba/page-01/sentence-01-en.mp3'), vi: require('../../../assets/audio/den-ong-sao-cua-ba/page-01/sentence-01-vi.mp3') },
+          { en: require('../../../assets/audio/den-ong-sao-cua-ba/page-01/sentence-02-en.mp3'), vi: require('../../../assets/audio/den-ong-sao-cua-ba/page-01/sentence-02-vi.mp3') },
+        ],
+      },
+      {
+        image: undefined,
+        sentences: [
+          { en: require('../../../assets/audio/den-ong-sao-cua-ba/page-02/sentence-01-en.mp3'), vi: require('../../../assets/audio/den-ong-sao-cua-ba/page-02/sentence-01-vi.mp3') },
+          { en: require('../../../assets/audio/den-ong-sao-cua-ba/page-02/sentence-02-en.mp3'), vi: require('../../../assets/audio/den-ong-sao-cua-ba/page-02/sentence-02-vi.mp3') },
+        ],
+      },
+      {
+        image: undefined,
+        sentences: [
+          { en: require('../../../assets/audio/den-ong-sao-cua-ba/page-03/sentence-01-en.mp3'), vi: require('../../../assets/audio/den-ong-sao-cua-ba/page-03/sentence-01-vi.mp3') },
+          { en: require('../../../assets/audio/den-ong-sao-cua-ba/page-03/sentence-02-en.mp3'), vi: require('../../../assets/audio/den-ong-sao-cua-ba/page-03/sentence-02-vi.mp3') },
+          { en: require('../../../assets/audio/den-ong-sao-cua-ba/page-03/sentence-03-en.mp3'), vi: require('../../../assets/audio/den-ong-sao-cua-ba/page-03/sentence-03-vi.mp3') },
+        ],
+      },
+      {
+        image: undefined,
+        sentences: [
+          { en: require('../../../assets/audio/den-ong-sao-cua-ba/page-04/sentence-01-en.mp3'), vi: require('../../../assets/audio/den-ong-sao-cua-ba/page-04/sentence-01-vi.mp3') },
+          { en: require('../../../assets/audio/den-ong-sao-cua-ba/page-04/sentence-02-en.mp3'), vi: require('../../../assets/audio/den-ong-sao-cua-ba/page-04/sentence-02-vi.mp3') },
+        ],
+      },
+      {
+        image: undefined,
+        sentences: [
+          { en: require('../../../assets/audio/den-ong-sao-cua-ba/page-05/sentence-01-en.mp3'), vi: require('../../../assets/audio/den-ong-sao-cua-ba/page-05/sentence-01-vi.mp3') },
+          { en: require('../../../assets/audio/den-ong-sao-cua-ba/page-05/sentence-02-en.mp3'), vi: require('../../../assets/audio/den-ong-sao-cua-ba/page-05/sentence-02-vi.mp3') },
+        ],
+      },
+      {
+        image: undefined,
+        sentences: [
+          { en: require('../../../assets/audio/den-ong-sao-cua-ba/page-06/sentence-01-en.mp3'), vi: require('../../../assets/audio/den-ong-sao-cua-ba/page-06/sentence-01-vi.mp3') },
+          { en: require('../../../assets/audio/den-ong-sao-cua-ba/page-06/sentence-02-en.mp3'), vi: require('../../../assets/audio/den-ong-sao-cua-ba/page-06/sentence-02-vi.mp3') },
+          { en: require('../../../assets/audio/den-ong-sao-cua-ba/page-06/sentence-03-en.mp3'), vi: require('../../../assets/audio/den-ong-sao-cua-ba/page-06/sentence-03-vi.mp3') },
+        ],
+      },
+      {
+        image: undefined,
+        sentences: [
+          { en: require('../../../assets/audio/den-ong-sao-cua-ba/page-07/sentence-01-en.mp3'), vi: require('../../../assets/audio/den-ong-sao-cua-ba/page-07/sentence-01-vi.mp3') },
+          { en: require('../../../assets/audio/den-ong-sao-cua-ba/page-07/sentence-02-en.mp3'), vi: require('../../../assets/audio/den-ong-sao-cua-ba/page-07/sentence-02-vi.mp3') },
+          { en: require('../../../assets/audio/den-ong-sao-cua-ba/page-07/sentence-03-en.mp3'), vi: require('../../../assets/audio/den-ong-sao-cua-ba/page-07/sentence-03-vi.mp3') },
+        ],
+      },
+    ],
+  },
   'dom-dom-soi-duong': {
     cover: undefined,
     pages: [
@@ -466,6 +580,121 @@ export const STORY_ASSETS: Record<string, StoryAssetEntry> = {
           { en: undefined, vi: require('../../../assets/audio/dom-dom-soi-duong/page-08/sentence-01-vi.mp3') },
           { en: undefined, vi: require('../../../assets/audio/dom-dom-soi-duong/page-08/sentence-02-vi.mp3') },
           { en: undefined, vi: require('../../../assets/audio/dom-dom-soi-duong/page-08/sentence-03-vi.mp3') },
+        ],
+      },
+    ],
+  },
+  'ech-con-hat-ru': {
+    cover: undefined,
+    pages: [
+      {
+        image: undefined,
+        sentences: [
+          { en: require('../../../assets/audio/ech-con-hat-ru/page-01/sentence-01-en.mp3'), vi: require('../../../assets/audio/ech-con-hat-ru/page-01/sentence-01-vi.mp3') },
+          { en: require('../../../assets/audio/ech-con-hat-ru/page-01/sentence-02-en.mp3'), vi: require('../../../assets/audio/ech-con-hat-ru/page-01/sentence-02-vi.mp3') },
+        ],
+      },
+      {
+        image: undefined,
+        sentences: [
+          { en: require('../../../assets/audio/ech-con-hat-ru/page-02/sentence-01-en.mp3'), vi: require('../../../assets/audio/ech-con-hat-ru/page-02/sentence-01-vi.mp3') },
+          { en: require('../../../assets/audio/ech-con-hat-ru/page-02/sentence-02-en.mp3'), vi: require('../../../assets/audio/ech-con-hat-ru/page-02/sentence-02-vi.mp3') },
+          { en: require('../../../assets/audio/ech-con-hat-ru/page-02/sentence-03-en.mp3'), vi: require('../../../assets/audio/ech-con-hat-ru/page-02/sentence-03-vi.mp3') },
+        ],
+      },
+      {
+        image: undefined,
+        sentences: [
+          { en: require('../../../assets/audio/ech-con-hat-ru/page-03/sentence-01-en.mp3'), vi: require('../../../assets/audio/ech-con-hat-ru/page-03/sentence-01-vi.mp3') },
+          { en: require('../../../assets/audio/ech-con-hat-ru/page-03/sentence-02-en.mp3'), vi: require('../../../assets/audio/ech-con-hat-ru/page-03/sentence-02-vi.mp3') },
+        ],
+      },
+      {
+        image: undefined,
+        sentences: [
+          { en: require('../../../assets/audio/ech-con-hat-ru/page-04/sentence-01-en.mp3'), vi: require('../../../assets/audio/ech-con-hat-ru/page-04/sentence-01-vi.mp3') },
+          { en: require('../../../assets/audio/ech-con-hat-ru/page-04/sentence-02-en.mp3'), vi: require('../../../assets/audio/ech-con-hat-ru/page-04/sentence-02-vi.mp3') },
+        ],
+      },
+      {
+        image: undefined,
+        sentences: [
+          { en: require('../../../assets/audio/ech-con-hat-ru/page-05/sentence-01-en.mp3'), vi: require('../../../assets/audio/ech-con-hat-ru/page-05/sentence-01-vi.mp3') },
+          { en: require('../../../assets/audio/ech-con-hat-ru/page-05/sentence-02-en.mp3'), vi: require('../../../assets/audio/ech-con-hat-ru/page-05/sentence-02-vi.mp3') },
+        ],
+      },
+      {
+        image: undefined,
+        sentences: [
+          { en: require('../../../assets/audio/ech-con-hat-ru/page-06/sentence-01-en.mp3'), vi: require('../../../assets/audio/ech-con-hat-ru/page-06/sentence-01-vi.mp3') },
+          { en: require('../../../assets/audio/ech-con-hat-ru/page-06/sentence-02-en.mp3'), vi: require('../../../assets/audio/ech-con-hat-ru/page-06/sentence-02-vi.mp3') },
+          { en: require('../../../assets/audio/ech-con-hat-ru/page-06/sentence-03-en.mp3'), vi: require('../../../assets/audio/ech-con-hat-ru/page-06/sentence-03-vi.mp3') },
+        ],
+      },
+      {
+        image: undefined,
+        sentences: [
+          { en: require('../../../assets/audio/ech-con-hat-ru/page-07/sentence-01-en.mp3'), vi: require('../../../assets/audio/ech-con-hat-ru/page-07/sentence-01-vi.mp3') },
+          { en: require('../../../assets/audio/ech-con-hat-ru/page-07/sentence-02-en.mp3'), vi: require('../../../assets/audio/ech-con-hat-ru/page-07/sentence-02-vi.mp3') },
+          { en: require('../../../assets/audio/ech-con-hat-ru/page-07/sentence-03-en.mp3'), vi: require('../../../assets/audio/ech-con-hat-ru/page-07/sentence-03-vi.mp3') },
+        ],
+      },
+    ],
+  },
+  'hat-bi-cua-be-su': {
+    cover: undefined,
+    pages: [
+      {
+        image: undefined,
+        sentences: [
+          { en: require('../../../assets/audio/hat-bi-cua-be-su/page-01/sentence-01-en.mp3'), vi: require('../../../assets/audio/hat-bi-cua-be-su/page-01/sentence-01-vi.mp3') },
+          { en: require('../../../assets/audio/hat-bi-cua-be-su/page-01/sentence-02-en.mp3'), vi: require('../../../assets/audio/hat-bi-cua-be-su/page-01/sentence-02-vi.mp3') },
+        ],
+      },
+      {
+        image: undefined,
+        sentences: [
+          { en: require('../../../assets/audio/hat-bi-cua-be-su/page-02/sentence-01-en.mp3'), vi: require('../../../assets/audio/hat-bi-cua-be-su/page-02/sentence-01-vi.mp3') },
+          { en: require('../../../assets/audio/hat-bi-cua-be-su/page-02/sentence-02-en.mp3'), vi: require('../../../assets/audio/hat-bi-cua-be-su/page-02/sentence-02-vi.mp3') },
+        ],
+      },
+      {
+        image: undefined,
+        sentences: [
+          { en: require('../../../assets/audio/hat-bi-cua-be-su/page-03/sentence-01-en.mp3'), vi: require('../../../assets/audio/hat-bi-cua-be-su/page-03/sentence-01-vi.mp3') },
+          { en: require('../../../assets/audio/hat-bi-cua-be-su/page-03/sentence-02-en.mp3'), vi: require('../../../assets/audio/hat-bi-cua-be-su/page-03/sentence-02-vi.mp3') },
+          { en: require('../../../assets/audio/hat-bi-cua-be-su/page-03/sentence-03-en.mp3'), vi: require('../../../assets/audio/hat-bi-cua-be-su/page-03/sentence-03-vi.mp3') },
+        ],
+      },
+      {
+        image: undefined,
+        sentences: [
+          { en: require('../../../assets/audio/hat-bi-cua-be-su/page-04/sentence-01-en.mp3'), vi: require('../../../assets/audio/hat-bi-cua-be-su/page-04/sentence-01-vi.mp3') },
+          { en: require('../../../assets/audio/hat-bi-cua-be-su/page-04/sentence-02-en.mp3'), vi: require('../../../assets/audio/hat-bi-cua-be-su/page-04/sentence-02-vi.mp3') },
+        ],
+      },
+      {
+        image: undefined,
+        sentences: [
+          { en: require('../../../assets/audio/hat-bi-cua-be-su/page-05/sentence-01-en.mp3'), vi: require('../../../assets/audio/hat-bi-cua-be-su/page-05/sentence-01-vi.mp3') },
+          { en: require('../../../assets/audio/hat-bi-cua-be-su/page-05/sentence-02-en.mp3'), vi: require('../../../assets/audio/hat-bi-cua-be-su/page-05/sentence-02-vi.mp3') },
+          { en: require('../../../assets/audio/hat-bi-cua-be-su/page-05/sentence-03-en.mp3'), vi: require('../../../assets/audio/hat-bi-cua-be-su/page-05/sentence-03-vi.mp3') },
+        ],
+      },
+      {
+        image: undefined,
+        sentences: [
+          { en: require('../../../assets/audio/hat-bi-cua-be-su/page-06/sentence-01-en.mp3'), vi: require('../../../assets/audio/hat-bi-cua-be-su/page-06/sentence-01-vi.mp3') },
+          { en: require('../../../assets/audio/hat-bi-cua-be-su/page-06/sentence-02-en.mp3'), vi: require('../../../assets/audio/hat-bi-cua-be-su/page-06/sentence-02-vi.mp3') },
+          { en: require('../../../assets/audio/hat-bi-cua-be-su/page-06/sentence-03-en.mp3'), vi: require('../../../assets/audio/hat-bi-cua-be-su/page-06/sentence-03-vi.mp3') },
+        ],
+      },
+      {
+        image: undefined,
+        sentences: [
+          { en: require('../../../assets/audio/hat-bi-cua-be-su/page-07/sentence-01-en.mp3'), vi: require('../../../assets/audio/hat-bi-cua-be-su/page-07/sentence-01-vi.mp3') },
+          { en: require('../../../assets/audio/hat-bi-cua-be-su/page-07/sentence-02-en.mp3'), vi: require('../../../assets/audio/hat-bi-cua-be-su/page-07/sentence-02-vi.mp3') },
+          { en: require('../../../assets/audio/hat-bi-cua-be-su/page-07/sentence-03-en.mp3'), vi: require('../../../assets/audio/hat-bi-cua-be-su/page-07/sentence-03-vi.mp3') },
         ],
       },
     ],
@@ -816,6 +1045,62 @@ export const STORY_ASSETS: Record<string, StoryAssetEntry> = {
         sentences: [
           { en: require('../../../assets/audio/qua-va-binh-nuoc/page-06/sentence-01-en.mp3'), vi: require('../../../assets/audio/qua-va-binh-nuoc/page-06/sentence-01-vi.mp3') },
           { en: require('../../../assets/audio/qua-va-binh-nuoc/page-06/sentence-02-en.mp3'), vi: require('../../../assets/audio/qua-va-binh-nuoc/page-06/sentence-02-vi.mp3') },
+        ],
+      },
+    ],
+  },
+  'rua-con-ra-bien': {
+    cover: undefined,
+    pages: [
+      {
+        image: undefined,
+        sentences: [
+          { en: require('../../../assets/audio/rua-con-ra-bien/page-01/sentence-01-en.mp3'), vi: require('../../../assets/audio/rua-con-ra-bien/page-01/sentence-01-vi.mp3') },
+          { en: require('../../../assets/audio/rua-con-ra-bien/page-01/sentence-02-en.mp3'), vi: require('../../../assets/audio/rua-con-ra-bien/page-01/sentence-02-vi.mp3') },
+        ],
+      },
+      {
+        image: undefined,
+        sentences: [
+          { en: require('../../../assets/audio/rua-con-ra-bien/page-02/sentence-01-en.mp3'), vi: require('../../../assets/audio/rua-con-ra-bien/page-02/sentence-01-vi.mp3') },
+          { en: require('../../../assets/audio/rua-con-ra-bien/page-02/sentence-02-en.mp3'), vi: require('../../../assets/audio/rua-con-ra-bien/page-02/sentence-02-vi.mp3') },
+        ],
+      },
+      {
+        image: undefined,
+        sentences: [
+          { en: require('../../../assets/audio/rua-con-ra-bien/page-03/sentence-01-en.mp3'), vi: require('../../../assets/audio/rua-con-ra-bien/page-03/sentence-01-vi.mp3') },
+          { en: require('../../../assets/audio/rua-con-ra-bien/page-03/sentence-02-en.mp3'), vi: require('../../../assets/audio/rua-con-ra-bien/page-03/sentence-02-vi.mp3') },
+        ],
+      },
+      {
+        image: undefined,
+        sentences: [
+          { en: require('../../../assets/audio/rua-con-ra-bien/page-04/sentence-01-en.mp3'), vi: require('../../../assets/audio/rua-con-ra-bien/page-04/sentence-01-vi.mp3') },
+          { en: require('../../../assets/audio/rua-con-ra-bien/page-04/sentence-02-en.mp3'), vi: require('../../../assets/audio/rua-con-ra-bien/page-04/sentence-02-vi.mp3') },
+        ],
+      },
+      {
+        image: undefined,
+        sentences: [
+          { en: require('../../../assets/audio/rua-con-ra-bien/page-05/sentence-01-en.mp3'), vi: require('../../../assets/audio/rua-con-ra-bien/page-05/sentence-01-vi.mp3') },
+          { en: require('../../../assets/audio/rua-con-ra-bien/page-05/sentence-02-en.mp3'), vi: require('../../../assets/audio/rua-con-ra-bien/page-05/sentence-02-vi.mp3') },
+          { en: require('../../../assets/audio/rua-con-ra-bien/page-05/sentence-03-en.mp3'), vi: require('../../../assets/audio/rua-con-ra-bien/page-05/sentence-03-vi.mp3') },
+        ],
+      },
+      {
+        image: undefined,
+        sentences: [
+          { en: require('../../../assets/audio/rua-con-ra-bien/page-06/sentence-01-en.mp3'), vi: require('../../../assets/audio/rua-con-ra-bien/page-06/sentence-01-vi.mp3') },
+          { en: require('../../../assets/audio/rua-con-ra-bien/page-06/sentence-02-en.mp3'), vi: require('../../../assets/audio/rua-con-ra-bien/page-06/sentence-02-vi.mp3') },
+        ],
+      },
+      {
+        image: undefined,
+        sentences: [
+          { en: require('../../../assets/audio/rua-con-ra-bien/page-07/sentence-01-en.mp3'), vi: require('../../../assets/audio/rua-con-ra-bien/page-07/sentence-01-vi.mp3') },
+          { en: require('../../../assets/audio/rua-con-ra-bien/page-07/sentence-02-en.mp3'), vi: require('../../../assets/audio/rua-con-ra-bien/page-07/sentence-02-vi.mp3') },
+          { en: require('../../../assets/audio/rua-con-ra-bien/page-07/sentence-03-en.mp3'), vi: require('../../../assets/audio/rua-con-ra-bien/page-07/sentence-03-vi.mp3') },
         ],
       },
     ],
@@ -1352,6 +1637,61 @@ export const STORY_ASSETS: Record<string, StoryAssetEntry> = {
         sentences: [
           { en: require('../../../assets/audio/tich-chu/page-08/sentence-01-en.mp3'), vi: require('../../../assets/audio/tich-chu/page-08/sentence-01-vi.mp3') },
           { en: require('../../../assets/audio/tich-chu/page-08/sentence-02-en.mp3'), vi: require('../../../assets/audio/tich-chu/page-08/sentence-02-vi.mp3') },
+        ],
+      },
+    ],
+  },
+  'voi-con-ban-don': {
+    cover: undefined,
+    pages: [
+      {
+        image: undefined,
+        sentences: [
+          { en: require('../../../assets/audio/voi-con-ban-don/page-01/sentence-01-en.mp3'), vi: require('../../../assets/audio/voi-con-ban-don/page-01/sentence-01-vi.mp3') },
+          { en: require('../../../assets/audio/voi-con-ban-don/page-01/sentence-02-en.mp3'), vi: require('../../../assets/audio/voi-con-ban-don/page-01/sentence-02-vi.mp3') },
+        ],
+      },
+      {
+        image: undefined,
+        sentences: [
+          { en: require('../../../assets/audio/voi-con-ban-don/page-02/sentence-01-en.mp3'), vi: require('../../../assets/audio/voi-con-ban-don/page-02/sentence-01-vi.mp3') },
+          { en: require('../../../assets/audio/voi-con-ban-don/page-02/sentence-02-en.mp3'), vi: require('../../../assets/audio/voi-con-ban-don/page-02/sentence-02-vi.mp3') },
+        ],
+      },
+      {
+        image: undefined,
+        sentences: [
+          { en: require('../../../assets/audio/voi-con-ban-don/page-03/sentence-01-en.mp3'), vi: require('../../../assets/audio/voi-con-ban-don/page-03/sentence-01-vi.mp3') },
+          { en: require('../../../assets/audio/voi-con-ban-don/page-03/sentence-02-en.mp3'), vi: require('../../../assets/audio/voi-con-ban-don/page-03/sentence-02-vi.mp3') },
+        ],
+      },
+      {
+        image: undefined,
+        sentences: [
+          { en: require('../../../assets/audio/voi-con-ban-don/page-04/sentence-01-en.mp3'), vi: require('../../../assets/audio/voi-con-ban-don/page-04/sentence-01-vi.mp3') },
+          { en: require('../../../assets/audio/voi-con-ban-don/page-04/sentence-02-en.mp3'), vi: require('../../../assets/audio/voi-con-ban-don/page-04/sentence-02-vi.mp3') },
+        ],
+      },
+      {
+        image: undefined,
+        sentences: [
+          { en: require('../../../assets/audio/voi-con-ban-don/page-05/sentence-01-en.mp3'), vi: require('../../../assets/audio/voi-con-ban-don/page-05/sentence-01-vi.mp3') },
+          { en: require('../../../assets/audio/voi-con-ban-don/page-05/sentence-02-en.mp3'), vi: require('../../../assets/audio/voi-con-ban-don/page-05/sentence-02-vi.mp3') },
+        ],
+      },
+      {
+        image: undefined,
+        sentences: [
+          { en: require('../../../assets/audio/voi-con-ban-don/page-06/sentence-01-en.mp3'), vi: require('../../../assets/audio/voi-con-ban-don/page-06/sentence-01-vi.mp3') },
+          { en: require('../../../assets/audio/voi-con-ban-don/page-06/sentence-02-en.mp3'), vi: require('../../../assets/audio/voi-con-ban-don/page-06/sentence-02-vi.mp3') },
+          { en: require('../../../assets/audio/voi-con-ban-don/page-06/sentence-03-en.mp3'), vi: require('../../../assets/audio/voi-con-ban-don/page-06/sentence-03-vi.mp3') },
+        ],
+      },
+      {
+        image: undefined,
+        sentences: [
+          { en: require('../../../assets/audio/voi-con-ban-don/page-07/sentence-01-en.mp3'), vi: require('../../../assets/audio/voi-con-ban-don/page-07/sentence-01-vi.mp3') },
+          { en: require('../../../assets/audio/voi-con-ban-don/page-07/sentence-02-en.mp3'), vi: require('../../../assets/audio/voi-con-ban-don/page-07/sentence-02-vi.mp3') },
         ],
       },
     ],

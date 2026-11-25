@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="720" viewBox="0 0 360 360">
+  <defs>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2A2350"/><stop offset="1" stop-color="#3B3266"/></linearGradient>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3E2F78"/><stop offset="1" stop-color="#7A5FA8"/></linearGradient>
+    <radialGradient id="moonGlow" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#F6E3B4" stop-opacity="0.55"/><stop offset="1" stop-color="#F6E3B4" stop-opacity="0"/></radialGradient>
+    <radialGradient id="lamp" cx="0.5" cy="0.75" r="0.6"><stop offset="0" stop-color="#E8A86B" stop-opacity="0.35"/><stop offset="1" stop-color="#E8A86B" stop-opacity="0"/></radialGradient>
+    <radialGradient id="vig" cx="0.5" cy="0.5" r="0.75"><stop offset="0.6" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity="0.35"/></radialGradient>
+  </defs>
+  <rect width="360" height="360" fill="url(#wall)"/>
+  <!-- window -->
+  <rect x="104" y="40" width="152" height="130" rx="10" fill="url(#sky)"/>
+  <circle cx="210" cy="86" r="46" fill="url(#moonGlow)"/>
+  <circle cx="210" cy="86" r="22" fill="#F6E3B4"/>
+  <circle cx="203" cy="82" r="3" fill="#E5CC92"/><circle cx="216" cy="93" r="4" fill="#E5CC92"/>
+  <g fill="#FFFFFF" opacity="0.85"><circle cx="128" cy="62" r="1.6"/><circle cx="150" cy="96" r="1.2"/><circle cx="170" cy="58" r="1.4"/><circle cx="240" cy="132" r="1.2"/><circle cx="132" cy="138" r="1.4"/><circle cx="244" cy="56" r="1.1"/></g>
+  <g fill="#1D1838" opacity="0.9"><rect x="106" y="148" width="148" height="20"/><path d="M106 150 l14 -18 l14 18 l12 -26 l16 26 l10 -14 l14 14 l14 -22 l16 22 l12 -16 l20 16 z"/></g>
+  <rect x="104" y="40" width="152" height="130" rx="10" fill="none" stroke="#C9A77A" stroke-width="7"/>
+  <line x1="180" y1="40" x2="180" y2="170" stroke="#C9A77A" stroke-width="5"/>
+  <line x1="104" y1="105" x2="256" y2="105" stroke="#C9A77A" stroke-width="5"/>
+  <!-- sill + flowers -->
+  <rect x="94" y="168" width="172" height="10" rx="3" fill="#B08960"/>
+  <path d="M120 168 h22 l-3 -14 h-16 z" fill="#C77B55"/>
+  <path d="M131 154 q-2 -14 -10 -20 M131 154 q2 -16 10 -22" stroke="#6E9A62" stroke-width="2.4" fill="none"/>
+  <ellipse cx="120" cy="133" rx="6" ry="4" fill="#E8A86B"/><ellipse cx="142" cy="131" rx="6" ry="4" fill="#F0C6D2"/>
+  <!-- fishbowl -->
+  <ellipse cx="232" cy="156" rx="17" ry="14" fill="#9FD3E0" opacity="0.55"/>
+  <path d="M220 147 h24" stroke="#DCEFF4" stroke-width="2" opacity="0.8"/>
+  <path d="M228 158 q6 -5 11 0 q-5 5 -11 0 z M228 158 l-5 -3 v6 z" fill="#F28C38"/>
+  <!-- floor -->
+  <rect x="0" y="262" width="360" height="98" fill="#4E3F33"/>
+  <rect x="0" y="262" width="360" height="4" fill="#6E5A48"/>
+  <ellipse cx="180" cy="300" rx="150" ry="60" fill="url(#lamp)"/>
+  <!-- rug -->
+  <ellipse cx="180" cy="306" rx="118" ry="26" fill="#7A4E6E"/>
+  <ellipse cx="180" cy="306" rx="100" ry="19" fill="none" stroke="#E8A86B" stroke-width="2" stroke-dasharray="4 5" opacity="0.7"/>
+  <!-- basket -->
+  <path d="M110 264 q70 -22 140 0 l-12 38 q-58 14 -116 0 z" fill="#C08A4E"/>
+  <path d="M118 278 q62 12 124 0 M122 292 q58 12 116 0" stroke="#9A6A38" stroke-width="2" fill="none"/>
+  <path d="M110 264 q70 -22 140 0" stroke="#E0B07A" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <!-- blanket -->
+  <path d="M120 262 q60 -26 120 -2 q-60 10 -120 2 z" fill="#E7DDF2"/>
+  <!-- kitten curled -->
+  <ellipse cx="182" cy="246" rx="44" ry="22" fill="#F2B27A"/>
+  <path d="M146 252 q-14 -4 -6 -16 q6 -8 18 -2" fill="none" stroke="#F2B27A" stroke-width="10" stroke-linecap="round"/>
+  <path d="M168 236 q10 -8 24 -2 M188 252 q14 -6 26 0" stroke="#D98E52" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <circle cx="214" cy="238" r="20" fill="#F2B27A"/>
+  <path d="M200 226 l2 -16 l12 10 z M216 222 l12 -10 l2 16 z" fill="#F2B27A"/>
+  <path d="M204 222 l1 -7 l5 5 z M222 220 l5 -5 l1 7 z" fill="#F0C6D2"/>
+  <path d="M205 240 q4 3 8 0 M218 240 q4 3 8 0" stroke="#3B2A22" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <ellipse cx="215" cy="246" rx="2.2" ry="1.6" fill="#C9677A"/>
+  <circle cx="203" cy="247" r="3" fill="#F0A0A0" opacity="0.45"/><circle cx="228" cy="247" r="3" fill="#F0A0A0" opacity="0.45"/>
+  <!-- zzz -->
+  <g fill="#F6E3B4" font-family="Georgia, serif" font-style="italic" opacity="0.85"><text x="238" y="214" font-size="13">z</text><text x="248" y="200" font-size="10">z</text><text x="256" y="189" font-size="8">z</text></g>
+  <rect width="360" height="360" fill="url(#vig)"/>
+</svg>

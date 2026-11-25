@@ -18,7 +18,8 @@ import { getStoryPalette } from '../../data/stories';
 import { StoryProgressInfo, useStoryProgress } from '../../hooks/useStoryProgress';
 import { ProgressBar } from '../ui/ProgressBar';
 import { MetaPill } from '../ui/MetaPill';
-import { PremiumBadge } from '../payment/PremiumBadge';
+import { FreeBadge, PremiumBadge } from '../payment/PremiumBadge';
+import { OnlineBadge } from './OnlineBadge';
 import { useStoryAccess } from '../../hooks/usePremiumGate';
 import { storyAge, storyCategory, storyDuration, storyPages } from '../../i18n/storyMeta';
 
@@ -44,21 +45,23 @@ export const StoryCard: React.FC<StoryCardProps> = ({
   eyebrow,
 }) => {
   const info = useStoryProgress(story);
-  const { locked } = useStoryAccess(story.id);
-  if (variant === 'compact') return <CompactCard story={story} onPress={onPress} info={info} locked={locked} />;
+  const { locked, premium } = useStoryAccess(story.id);
+  const free = !premium;
+  if (variant === 'compact') return <CompactCard story={story} onPress={onPress} info={info} locked={locked} free={free} />;
   if (variant === 'featured')
     return (
-      <FeaturedCard story={story} onPress={onPress} info={info} eyebrow={eyebrow} locked={locked} width={width} />
+      <FeaturedCard story={story} onPress={onPress} info={info} eyebrow={eyebrow} locked={locked} free={free} width={width} />
     );
-  return <ShelfCard story={story} onPress={onPress} info={info} width={width} locked={locked} />;
+  return <ShelfCard story={story} onPress={onPress} info={info} width={width} locked={locked} free={free} />;
 };
 
 /** Screen-reader summary: a list of facts, read with a pause between each. */
-function a11yLabel(t: TFunction, story: Story, info: StoryProgressInfo, locked: boolean) {
+function a11yLabel(t: TFunction, story: Story, info: StoryProgressInfo, locked: boolean, free: boolean) {
   return [
     story.title.en,
     story.title.vi,
-    locked ? t('story.premiumLocked') : null,
+    story.online ? t('online.badgeA11y') : null,
+    locked ? t('story.premiumLocked') : free && !story.online ? t('story.free') : null,
     storyCategory(t, story.category),
     storyAge(t, story.ageRange),
     storyDuration(t, story.duration),
@@ -94,7 +97,7 @@ export function BookCover({
   const { t } = useTranslation();
   const coverStyles = useCoverStyles();
   const palette = getStoryPalette(story);
-  const { locked } = useStoryAccess(story.id);
+  const { locked, premium } = useStoryAccess(story.id);
   return (
     <View style={[coverStyles.frame, { width, height, borderRadius: radius, backgroundColor: palette.sky }]}>
       <StoryIllustration pageKey={story.coverImage} width={width} height={height} />
@@ -120,6 +123,15 @@ export function BookCover({
             <Lock size={10} color={Palette.moonGlow} strokeWidth={2.6} />
           </View>
         )
+      ) : story.online && width >= 100 ? (
+        // Online stories: "needs internet" matters more than "free".
+        <View style={coverStyles.premium}>
+          <OnlineBadge />
+        </View>
+      ) : !premium && width >= 100 ? (
+        <View style={coverStyles.premium}>
+          <FreeBadge />
+        </View>
       ) : null}
       {info?.state === 'finished' ? (
         <View style={coverStyles.finished} accessibilityLabel={t('story.finished')}>
@@ -143,12 +155,14 @@ function ShelfCard({
   info,
   width,
   locked,
+  free,
 }: {
   story: Story;
   onPress: (s: Story) => void;
   info: StoryProgressInfo;
   width?: number;
   locked: boolean;
+  free: boolean;
 }) {
   const { t } = useTranslation();
   const shelfStyles = useShelfStyles();
@@ -161,7 +175,7 @@ function ShelfCard({
       style={({ pressed }) => [{ width: w }, pressed && styles.pressed]}
       onPress={() => onPress(story)}
       accessibilityRole="button"
-      accessibilityLabel={a11yLabel(t, story, info, locked)}
+      accessibilityLabel={a11yLabel(t, story, info, locked, free)}
     >
       <BookCover story={story} width={w} height={Math.round(w * COVER_RATIO)} info={info} />
       <View style={shelfStyles.info}>
@@ -193,6 +207,7 @@ function FeaturedCard({
   info,
   eyebrow,
   locked,
+  free,
   width,
 }: {
   story: Story;
@@ -200,6 +215,7 @@ function FeaturedCard({
   info: StoryProgressInfo;
   eyebrow?: string;
   locked: boolean;
+  free: boolean;
   width?: number;
 }) {
   const { t } = useTranslation();
@@ -234,8 +250,8 @@ function FeaturedCard({
       accessibilityRole="button"
       accessibilityLabel={
         eyebrow
-          ? t('story.a11yWithEyebrow', { eyebrow, label: a11yLabel(t, story, info, locked) })
-          : a11yLabel(t, story, info, locked)
+          ? t('story.a11yWithEyebrow', { eyebrow, label: a11yLabel(t, story, info, locked, free) })
+          : a11yLabel(t, story, info, locked, free)
       }
     >
       <View style={{ width: artW, height: artH, backgroundColor: palette.sky }}>
@@ -243,6 +259,10 @@ function FeaturedCard({
         {locked ? (
           <View style={coverStyles.premium}>
             <PremiumBadge locked />
+          </View>
+        ) : free ? (
+          <View style={coverStyles.premium}>
+            <FreeBadge />
           </View>
         ) : null}
       </View>
@@ -290,11 +310,13 @@ function CompactCard({
   onPress,
   info,
   locked,
+  free,
 }: {
   story: Story;
   onPress: (s: Story) => void;
   info: StoryProgressInfo;
   locked: boolean;
+  free: boolean;
 }) {
   const { t } = useTranslation();
   const compactStyles = useCompactStyles();
@@ -306,7 +328,7 @@ function CompactCard({
       style={({ pressed }) => [compactStyles.card, pressed && styles.pressed]}
       onPress={() => onPress(story)}
       accessibilityRole="button"
-      accessibilityLabel={a11yLabel(t, story, info, locked)}
+      accessibilityLabel={a11yLabel(t, story, info, locked, free)}
     >
       <BookCover story={story} width={64} height={86} info={info} radius={BorderRadius.md} showDuration={false} />
       <View style={compactStyles.info}>

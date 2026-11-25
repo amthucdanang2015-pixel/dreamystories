@@ -315,8 +315,10 @@ export function SettingsItem({
   below,
   last,
   stackControl,
+  tone = 'default',
 }: {
-  icon: React.ReactNode;
+  /** A node, or a render function given the row's (density-scaled) icon size. */
+  icon: React.ReactNode | ((size: number) => React.ReactNode);
   label: string;
   description?: string;
   children?: React.ReactNode;
@@ -324,15 +326,27 @@ export function SettingsItem({
   last?: boolean;
   /** A wide control (segmented) that moves under the text when the row gets tight. */
   stackControl?: boolean;
+  /** premium: subscriber status row, with a brand icon that brings its own halo. */
+  tone?: 'default' | 'premium';
 }) {
   const itemStyles = useItemStyles();
   const { compact, roomy, scale } = useSettingsDensity();
   const iconSize = Math.round(ICON_SIZE * scale);
+  const premium = tone === 'premium';
   const stacked = !!children && !!stackControl && compact;
+  const padV = (Spacing.sm + 6) * scale;
   return (
     <View style={[itemStyles.container, last && itemStyles.last]}>
-      <View style={[itemStyles.top, { paddingVertical: (Spacing.sm + 6) * scale, minHeight: 60 * scale }]}>
-        <View style={[itemStyles.iconWrapper, { width: iconSize, height: iconSize, borderRadius: iconSize / 2 }]}>{icon}</View>
+      <View style={[itemStyles.top, { paddingVertical: padV, minHeight: 60 * scale }]}>
+        <View
+          style={[
+            itemStyles.iconWrapper,
+            premium && itemStyles.iconWrapperBare,
+            { width: iconSize, height: iconSize, borderRadius: iconSize / 2 },
+          ]}
+        >
+          {typeof icon === 'function' ? icon(iconSize) : icon}
+        </View>
         <View style={itemStyles.textBlock}>
           <Text style={[itemStyles.label, { fontSize: Typography.base * scale }]}>{label}</Text>
           {description ? <Text style={[itemStyles.description, { fontSize: Typography.xs * scale, lineHeight: Typography.xs * scale * 1.45 }]}>{description}</Text> : null}
@@ -392,6 +406,7 @@ const useItemStyles = createThemedStyles((t) => ({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  iconWrapperBare: { backgroundColor: 'transparent' },
   textBlock: { flex: 1 },
   label: { fontSize: Typography.base, fontWeight: '600', color: t.colors.textPrimary },
   description: { fontSize: Typography.xs, color: t.colors.textMuted, marginTop: 3, lineHeight: Typography.xs * 1.45 },

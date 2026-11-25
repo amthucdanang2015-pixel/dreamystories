@@ -1,0 +1,172 @@
+{
+  "id": "ech-con-hat-ru",
+  "title": {
+    "en": "The Little Frog's Lullaby",
+    "vi": "Bài Hát Ru Của Ếch Con"
+  },
+  "description": {
+    "en": "Ếch Con's voice is too small for the big frogs' evening choir, until one night a lost duckling needs a song soft enough to fall asleep to.",
+    "vi": "Giọng Ếch Con bé quá, chẳng hòa được vào dàn đồng ca của các bác ếch, cho đến một đêm có chú vịt con lạc mẹ cần một bài hát thật khẽ để ngủ."
+  },
+  "theme": {
+    "en": "A small, gentle voice can be just what someone needs.",
+    "vi": "Giọng nói nhỏ nhẹ cũng có thể là điều ai đó cần nhất."
+  },
+  "origin": "Original StoryMoon story, written in Vietnamese with an English companion text.",
+  "category": "Bedtime",
+  "ageRange": "3–7 years",
+  "duration": "5 min",
+  "characters": [
+    {
+      "name": "Ếch Con",
+      "look": "small bright-green frog with round golden eyes and a pale cream belly"
+    },
+    {
+      "name": "the big frogs",
+      "look": "plump olive-brown frogs with puffed throats, kindly faces"
+    },
+    {
+      "name": "Vịt Con",
+      "look": "fluffy pale-yellow duckling with a small orange beak"
+    },
+    {
+      "name": "Mother Duck",
+      "look": "white farm duck with a soft grey wing band"
+    }
+  ],
+  "artDirection": {
+    "mood": "Hushed and cosy; the soft hum of a rice field settling into night.",
+    "setting": "Mekong Delta rice paddies at dusk: a narrow canal, water-lily leaves, a coconut palm and a thatched house on the far bank.",
+    "light": "Blue-green dusk turning to a calm starry night, fireflies and one warm window.",
+    "motifs": [
+      "water-lily leaves on still water",
+      "rows of young rice",
+      "fireflies",
+      "a tiny frog on a lily leaf",
+      "a duckling's ripples"
+    ],
+    "avoid": [
+      "snakes or predators",
+      "a frightened, crying duckling",
+      "harsh bright colours"
+    ],
+    "palette": {
+      "sky": "#1F3A4A",
+      "skyLow": "#4F7A78",
+      "ground": "#3F6B3A",
+      "groundDeep": "#1F3B24",
+      "accent": "#8CC07A",
+      "glow": "#F2E6B0",
+      "ink": "#0E1A1C",
+      "paper": "#EEF3E6"
+    }
+  },
+  "cover": {
+    "prompt": "a tiny green frog singing softly on a water-lily leaf beside a sleeping duckling, rice field and fireflies at blue dusk"
+  },
+  "pages": [
+    {
+      "prompt": "a rice field at dusk with a narrow canal, a small green frog on a water-lily leaf, big frogs singing on the bank",
+      "sentences": [
+        [
+          "At the edge of a rice field lived a little green frog called Ếch Con.",
+          "Ở bờ ruộng lúa có một chú ếch xanh nhỏ tên là Ếch Con."
+        ],
+        [
+          "Every evening, the big frogs sang loud songs to the first stars.",
+          "Chiều nào các bác ếch cũng cất tiếng hát vang chào những vì sao đầu tiên."
+        ]
+      ]
+    },
+    {
+      "prompt": "the little frog trying to sing with a tiny open mouth while the big frogs croak loudly, nobody noticing",
+      "sentences": [
+        [
+          "Ếch Con wanted to sing too, but his voice was very small.",
+          "Ếch Con cũng muốn hát, nhưng giọng của chú bé xíu."
+        ],
+        [
+          "“Ộp… ộp…” he tried softly, and nobody heard.",
+          "Chú thử khẽ: “Ộp… ộp…”, mà chẳng ai nghe thấy."
+        ],
+        [
+          "So he sat quietly on his lily leaf and listened.",
+          "Thế là chú ngồi im trên chiếc lá súng, lắng nghe."
+        ]
+      ]
+    },
+    {
+      "prompt": "a little yellow duckling paddling alone along a dark canal, small ripples behind her, thatched house far away",
+      "sentences": [
+        [
+          "One night, a little duckling came paddling along the canal all alone.",
+          "Một đêm, có chú vịt con bơi dọc con mương một mình."
+        ],
+        [
+          "She had drifted away from her mother and could not fall asleep.",
+          "Vịt con lạc mẹ, cứ trằn trọc mãi không ngủ được."
+        ]
+      ]
+    },
+    {
+      "prompt": "the big frogs croaking loudly with puffed throats, the duckling tucking her head under her wing",
+      "sentences": [
+        [
+          "“ỘP! ỘP! ỘP!” sang the big frogs, so loudly that the duckling tucked her head under her wing.",
+          "Các bác ếch hát “Ộp! Ộp! Ộp!” to quá, vịt con phải rúc đầu vào cánh."
+        ],
+        [
+          "“I want my mama,” she peeped.",
+          "Vịt con khẽ kêu: “Con muốn về với mẹ.”"
+        ]
+      ]
+    },
+    {
+      "prompt": "the little frog hopping close to the duckling and singing softly, a few fireflies gathering around them",
+      "sentences": [
+        [
+          "Ếch Con hopped close and sang his tiny song, as soft as a breeze.",
+          "Ếch Con nhảy lại gần, hát bài hát bé xíu của mình, nhẹ như gió thoảng."
+        ],
+        [
+          "“Ộp… ộp… sleep now, little one. Your mama will find you.”",
+          "“Ộp… ộp… ngủ đi nào, mẹ sẽ tìm thấy bạn thôi.”"
+        ]
+      ]
+    },
+    {
+      "prompt": "pale dawn over the canal, a white mother duck swimming up to her sleeping duckling beside the lily leaf, the frog watching",
+      "sentences": [
+        [
+          "The duckling's eyes grew heavy, and she fell asleep beside the lily leaf.",
+          "Mắt vịt con díu lại, rồi bé ngủ thiếp đi bên chiếc lá súng."
+        ],
+        [
+          "At dawn, Mother Duck came paddling along the canal and found her.",
+          "Sáng sớm, vịt Mẹ bơi dọc con mương và tìm thấy con."
+        ],
+        [
+          "“Thank you for singing to my baby,” said Mother Duck.",
+          "Vịt Mẹ nói: “Cảm ơn cháu đã hát ru cho con cô.”"
+        ]
+      ]
+    },
+    {
+      "prompt": "a calm starry night over the rice field, the little frog singing while the big frogs listen with sleepy eyes",
+      "sentences": [
+        [
+          "That night, the big frogs asked Ếch Con to sing the very last song.",
+          "Tối hôm ấy, các bác ếch mời Ếch Con hát bài cuối cùng."
+        ],
+        [
+          "His small, soft lullaby drifted over the rice field, and everyone fell fast asleep.",
+          "Bài hát ru nhỏ nhẹ của chú lan khắp cánh đồng, và ai nấy đều ngủ say."
+        ],
+        [
+          "Ếch Con smiled. A small voice can sing a whole field to sleep.",
+          "Ếch Con mỉm cười. Giọng hát nhỏ cũng có thể ru cả cánh đồng vào giấc ngủ."
+        ]
+      ]
+    }
+  ]
+}

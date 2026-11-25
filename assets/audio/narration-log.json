@@ -2,7 +2,7 @@
   "settings": {
     "tool": "VoiceStudio (https://github.com/debpalash/VoiceStudio, AGPL-3.0 app)",
     "endpoint": "http://127.0.0.1:3900/v1/audio/speech",
-    "model": "tts-1",
+    "model": "omnivoice",
     "availableModels": [
       "tts-1",
       "tts-1-hd",
@@ -16,9 +16,9 @@
       "faster-whisper"
     ],
     "voiceEn": "demo0001",
-    "voiceVi": "abf73455",
+    "voiceVi": "746d2063",
     "speed": 0.95,
-    "lastRunAt": "2026-11-18T09:48:39.257Z",
+    "lastRunAt": "2026-11-21T04:11:38.776Z",
     "licenseNote": "Check the per-model licence in VoiceStudio Model Manager. Default k2-fsa/OmniVoice weights are CC-BY-NC (non-commercial)."
   },
   "files": {
@@ -7386,6 +7386,1806 @@
       "bytes": 54188,
       "durationSec": 3.38,
       "generatedAt": "2026-11-18T10:03:14.240Z"
+    },
+    "assets/audio/ech-con-hat-ru/page-01/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "At the edge of a rice field lived a little green frog called Ếch Con.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 67628,
+      "durationSec": 4.22,
+      "generatedAt": "2026-11-21T03:41:46.399Z"
+    },
+    "assets/audio/canh-dieu-cua-na/page-01/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "On summer evenings, children flew kites on the long green dyke.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 63020,
+      "durationSec": 3.94,
+      "generatedAt": "2026-11-21T03:43:01.527Z"
+    },
+    "assets/audio/canh-dieu-cua-na/page-01/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Những chiều hè, bọn trẻ thả diều trên con đê dài xanh cỏ.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 76460,
+      "durationSec": 4.78,
+      "generatedAt": "2026-11-21T03:43:33.197Z"
+    },
+    "assets/audio/canh-dieu-cua-na/page-01/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "Na had a new kite that she and Dad had made from bamboo and paper.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 65708,
+      "durationSec": 4.1,
+      "generatedAt": "2026-11-21T03:44:07.935Z"
+    },
+    "assets/audio/canh-dieu-cua-na/page-01/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "Na có một cánh diều mới, bố con Na đã cùng làm từ tre và giấy.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 80684,
+      "durationSec": 5.04,
+      "generatedAt": "2026-11-21T03:44:29.175Z"
+    },
+    "assets/audio/canh-dieu-cua-na/page-02/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "She held the string tight and ran as fast as she could.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 56108,
+      "durationSec": 3.5,
+      "generatedAt": "2026-11-21T03:44:43.986Z"
+    },
+    "assets/audio/canh-dieu-cua-na/page-02/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Na nắm chặt dây diều, chạy thật nhanh.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 52652,
+      "durationSec": 3.29,
+      "generatedAt": "2026-11-21T03:45:04.179Z"
+    },
+    "assets/audio/canh-dieu-cua-na/page-02/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "But the kite wobbled, flipped and landed, plop, in the grass.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 59564,
+      "durationSec": 3.72,
+      "generatedAt": "2026-11-21T03:45:16.963Z"
+    },
+    "assets/audio/canh-dieu-cua-na/page-02/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "Nhưng cánh diều chao đảo, lộn một vòng rồi rơi “bộp” xuống bãi cỏ.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 87596,
+      "durationSec": 5.47,
+      "generatedAt": "2026-11-21T03:45:39.230Z"
+    },
+    "assets/audio/canh-dieu-cua-na/page-03/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "Na tried again, and again it fell.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 34604,
+      "durationSec": 2.16,
+      "generatedAt": "2026-11-21T03:45:49.392Z"
+    },
+    "assets/audio/canh-dieu-cua-na/page-03/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Na thử lần nữa, diều lại rơi.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 39212,
+      "durationSec": 2.45,
+      "generatedAt": "2026-11-21T03:46:07.938Z"
+    },
+    "assets/audio/canh-dieu-cua-na/page-03/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "“My kite doesn't want to fly,” she sighed, sitting down on the dyke.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 66476,
+      "durationSec": 4.15,
+      "generatedAt": "2026-11-21T03:46:21.695Z"
+    },
+    "assets/audio/canh-dieu-cua-na/page-03/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "Na ngồi phịch xuống đê, thở dài: “Diều của con không chịu bay.”",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 84140,
+      "durationSec": 5.26,
+      "generatedAt": "2026-11-21T03:46:42.541Z"
+    },
+    "assets/audio/canh-dieu-cua-na/page-04/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "Dad sat beside her. “Kites need the wind, and the wind likes to take its time.”",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 76844,
+      "durationSec": 4.8,
+      "generatedAt": "2026-11-21T03:46:55.812Z"
+    },
+    "assets/audio/canh-dieu-cua-na/page-04/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Bố ngồi xuống bên Na: “Diều cần có gió, mà gió thì thong thả lắm con ạ.”",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 94124,
+      "durationSec": 5.88,
+      "generatedAt": "2026-11-21T03:47:16.628Z"
+    },
+    "assets/audio/canh-dieu-cua-na/page-04/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "“Let's wait and listen for it together.”",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 39980,
+      "durationSec": 2.5,
+      "generatedAt": "2026-11-21T03:47:26.862Z"
+    },
+    "assets/audio/canh-dieu-cua-na/page-04/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "“Mình cùng ngồi đợi và lắng nghe gió nhé.”",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 56108,
+      "durationSec": 3.5,
+      "generatedAt": "2026-11-21T03:47:45.362Z"
+    },
+    "assets/audio/canh-dieu-cua-na/page-05/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "They watched the buffalo walking home and the river turning gold.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 67628,
+      "durationSec": 4.22,
+      "generatedAt": "2026-11-21T03:47:56.951Z"
+    },
+    "assets/audio/canh-dieu-cua-na/page-05/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Hai bố con ngắm chú trâu thong thả về nhà, dòng sông nhuộm ánh vàng.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 93356,
+      "durationSec": 5.83,
+      "generatedAt": "2026-11-21T03:48:17.169Z"
+    },
+    "assets/audio/canh-dieu-cua-na/page-05/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "Then the rice began to sway, and Na's pigtails fluttered.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 59180,
+      "durationSec": 3.7,
+      "generatedAt": "2026-11-21T03:48:28.448Z"
+    },
+    "assets/audio/canh-dieu-cua-na/page-05/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "Rồi những ngọn lúa bắt đầu đung đưa, tóc Na bay bay.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 68396,
+      "durationSec": 4.27,
+      "generatedAt": "2026-11-21T03:48:47.659Z"
+    },
+    "assets/audio/canh-dieu-cua-na/page-05/sentence-03-en.mp3": {
+      "lang": "en",
+      "text": "“Bố ơi, the wind is here!”",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 31532,
+      "durationSec": 1.97,
+      "generatedAt": "2026-11-21T03:48:57.311Z"
+    },
+    "assets/audio/canh-dieu-cua-na/page-05/sentence-03-vi.mp3": {
+      "lang": "vi",
+      "text": "“Bố ơi, gió về rồi!”",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 31148,
+      "durationSec": 1.94,
+      "generatedAt": "2026-11-21T03:49:14.422Z"
+    },
+    "assets/audio/canh-dieu-cua-na/page-06/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "Na let out the string little by little, and up went the kite.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 62636,
+      "durationSec": 3.91,
+      "generatedAt": "2026-11-21T03:49:26.179Z"
+    },
+    "assets/audio/canh-dieu-cua-na/page-06/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Na thả dây từ từ, từng chút một, và cánh diều vút lên cao.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 77612,
+      "durationSec": 4.85,
+      "generatedAt": "2026-11-21T03:49:45.859Z"
+    },
+    "assets/audio/canh-dieu-cua-na/page-06/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "Higher and higher it went, until it danced among the pink evening clouds.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 74156,
+      "durationSec": 4.63,
+      "generatedAt": "2026-11-21T03:49:57.915Z"
+    },
+    "assets/audio/canh-dieu-cua-na/page-06/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "Cao mãi, cao mãi, cho đến khi nó nhảy múa giữa những đám mây hồng.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 87596,
+      "durationSec": 5.47,
+      "generatedAt": "2026-11-21T03:50:17.677Z"
+    },
+    "assets/audio/canh-dieu-cua-na/page-06/sentence-03-en.mp3": {
+      "lang": "en",
+      "text": "Its little bamboo flute sang “vi vu, vi vu” in the wind.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 55340,
+      "durationSec": 3.46,
+      "generatedAt": "2026-11-21T03:50:28.791Z"
+    },
+    "assets/audio/canh-dieu-cua-na/page-06/sentence-03-vi.mp3": {
+      "lang": "vi",
+      "text": "Chiếc sáo tre nhỏ trên diều cất tiếng “vi vu, vi vu” trong gió.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 82604,
+      "durationSec": 5.16,
+      "generatedAt": "2026-11-21T03:50:48.776Z"
+    },
+    "assets/audio/canh-dieu-cua-na/page-07/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "When the first star appeared, Na and Dad brought the kite gently down.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 73388,
+      "durationSec": 4.58,
+      "generatedAt": "2026-11-21T03:51:00.780Z"
+    },
+    "assets/audio/canh-dieu-cua-na/page-07/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Khi ngôi sao đầu tiên hiện lên, hai bố con nhẹ nhàng thu diều về.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 86828,
+      "durationSec": 5.42,
+      "generatedAt": "2026-11-21T03:51:20.855Z"
+    },
+    "assets/audio/canh-dieu-cua-na/page-07/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "“Good night, sky,” Na whispered. “I'll fly again tomorrow.”",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 57260,
+      "durationSec": 3.58,
+      "generatedAt": "2026-11-21T03:51:32.203Z"
+    },
+    "assets/audio/canh-dieu-cua-na/page-07/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "Na thì thầm: “Chúc bầu trời ngủ ngon. Mai con lại bay nhé.”",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 76844,
+      "durationSec": 4.8,
+      "generatedAt": "2026-11-21T03:51:51.736Z"
+    },
+    "assets/audio/canh-dieu-cua-na/page-07/sentence-03-en.mp3": {
+      "lang": "en",
+      "text": "And that night, she dreamed she was soaring with the kites.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 60332,
+      "durationSec": 3.77,
+      "generatedAt": "2026-11-21T03:52:03.127Z"
+    },
+    "assets/audio/canh-dieu-cua-na/page-07/sentence-03-vi.mp3": {
+      "lang": "vi",
+      "text": "Đêm ấy, Na mơ thấy mình bay lượn cùng những cánh diều.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 73004,
+      "durationSec": 4.56,
+      "generatedAt": "2026-11-21T03:52:23.066Z"
+    },
+    "assets/audio/den-ong-sao-cua-ba/page-01/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "The Mid-Autumn Festival was coming, and the old town smelled of mooncakes.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 78380,
+      "durationSec": 4.9,
+      "generatedAt": "2026-11-21T03:52:35.604Z"
+    },
+    "assets/audio/den-ong-sao-cua-ba/page-01/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Tết Trung thu sắp đến, phố cổ thơm mùi bánh nướng.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 68012,
+      "durationSec": 4.25,
+      "generatedAt": "2026-11-21T03:52:55.091Z"
+    },
+    "assets/audio/den-ong-sao-cua-ba/page-01/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "Mai ran to Grandma. “Bà ơi, can we make a star lantern?”",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 54956,
+      "durationSec": 3.43,
+      "generatedAt": "2026-11-21T03:53:06.327Z"
+    },
+    "assets/audio/den-ong-sao-cua-ba/page-01/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "Mai chạy đến bên bà: “Bà ơi, mình làm đèn ông sao nhé?”",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 70316,
+      "durationSec": 4.39,
+      "generatedAt": "2026-11-21T03:53:26.053Z"
+    },
+    "assets/audio/den-ong-sao-cua-ba/page-02/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "Grandma brought thin bamboo sticks, red paper and a little bowl of rice glue.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 76076,
+      "durationSec": 4.75,
+      "generatedAt": "2026-11-21T03:53:38.327Z"
+    },
+    "assets/audio/den-ong-sao-cua-ba/page-02/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Bà mang ra những nan tre mỏng, giấy bóng đỏ và một bát hồ dán.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 82988,
+      "durationSec": 5.18,
+      "generatedAt": "2026-11-21T03:53:58.751Z"
+    },
+    "assets/audio/den-ong-sao-cua-ba/page-02/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "Together they tied the sticks into a star with five points.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 63020,
+      "durationSec": 3.94,
+      "generatedAt": "2026-11-21T03:54:10.434Z"
+    },
+    "assets/audio/den-ong-sao-cua-ba/page-02/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "Hai bà cháu buộc nan tre thành một ngôi sao năm cánh.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 72236,
+      "durationSec": 4.51,
+      "generatedAt": "2026-11-21T03:54:29.875Z"
+    },
+    "assets/audio/den-ong-sao-cua-ba/page-03/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "But one point of Mai's star came out crooked.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 46508,
+      "durationSec": 2.9,
+      "generatedAt": "2026-11-21T03:54:40.404Z"
+    },
+    "assets/audio/den-ong-sao-cua-ba/page-03/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Nhưng một cánh sao của Mai bị lệch.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 46508,
+      "durationSec": 2.9,
+      "generatedAt": "2026-11-21T03:54:57.998Z"
+    },
+    "assets/audio/den-ong-sao-cua-ba/page-03/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "“Oh, it's not as pretty as yours,” Mai said with a pout.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 52268,
+      "durationSec": 3.26,
+      "generatedAt": "2026-11-21T03:55:09.140Z"
+    },
+    "assets/audio/den-ong-sao-cua-ba/page-03/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "Mai phụng phịu: “Ôi, nó không đẹp bằng của bà.”",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 61868,
+      "durationSec": 3.86,
+      "generatedAt": "2026-11-21T03:55:28.147Z"
+    },
+    "assets/audio/den-ong-sao-cua-ba/page-03/sentence-03-en.mp3": {
+      "lang": "en",
+      "text": "Grandma smiled. “A lantern made with love shines just as bright.”",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 63020,
+      "durationSec": 3.94,
+      "generatedAt": "2026-11-21T03:55:39.731Z"
+    },
+    "assets/audio/den-ong-sao-cua-ba/page-03/sentence-03-vi.mp3": {
+      "lang": "vi",
+      "text": "Bà cười hiền: “Đèn làm bằng cả tấm lòng thì sáng chẳng kém đâu cháu.”",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 93356,
+      "durationSec": 5.83,
+      "generatedAt": "2026-11-21T03:56:00.284Z"
+    },
+    "assets/audio/den-ong-sao-cua-ba/page-04/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "On the night of the full moon, Grandma lit a little candle inside.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 66092,
+      "durationSec": 4.13,
+      "generatedAt": "2026-11-21T03:56:12.345Z"
+    },
+    "assets/audio/den-ong-sao-cua-ba/page-04/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Đêm rằm, bà thắp một ngọn nến nhỏ bên trong.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 59180,
+      "durationSec": 3.7,
+      "generatedAt": "2026-11-21T03:56:30.808Z"
+    },
+    "assets/audio/den-ong-sao-cua-ba/page-04/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "The crooked star glowed warm and red.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 38444,
+      "durationSec": 2.4,
+      "generatedAt": "2026-11-21T03:56:41.171Z"
+    },
+    "assets/audio/den-ong-sao-cua-ba/page-04/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "Ngôi sao lệch cánh bừng lên ánh đỏ ấm áp.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 54188,
+      "durationSec": 3.38,
+      "generatedAt": "2026-11-21T03:56:59.459Z"
+    },
+    "assets/audio/den-ong-sao-cua-ba/page-05/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "Mai joined the children walking with their lanterns along the river.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 69548,
+      "durationSec": 4.34,
+      "generatedAt": "2026-11-21T03:57:11.425Z"
+    },
+    "assets/audio/den-ong-sao-cua-ba/page-05/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Mai cùng các bạn rước đèn dọc bờ sông.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 50732,
+      "durationSec": 3.17,
+      "generatedAt": "2026-11-21T03:57:29.398Z"
+    },
+    "assets/audio/den-ong-sao-cua-ba/page-05/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "The drums went tùng tùng cắc, and little lanterns floated on the water.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 72620,
+      "durationSec": 4.54,
+      "generatedAt": "2026-11-21T03:57:41.685Z"
+    },
+    "assets/audio/den-ong-sao-cua-ba/page-05/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "Trống “tùng tùng cắc” rộn ràng, đèn hoa đăng trôi lững lờ trên mặt nước.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 95276,
+      "durationSec": 5.95,
+      "generatedAt": "2026-11-21T03:58:03.287Z"
+    },
+    "assets/audio/den-ong-sao-cua-ba/page-06/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "Then a little boy stopped. A gust of wind had blown out his candle.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 66092,
+      "durationSec": 4.13,
+      "generatedAt": "2026-11-21T03:58:16.865Z"
+    },
+    "assets/audio/den-ong-sao-cua-ba/page-06/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Bỗng một cậu bé dừng lại. Cơn gió đã thổi tắt nến của cậu.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 76076,
+      "durationSec": 4.75,
+      "generatedAt": "2026-11-21T03:58:36.551Z"
+    },
+    "assets/audio/den-ong-sao-cua-ba/page-06/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "Mai held out her star. “Here, light yours from mine.”",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 51884,
+      "durationSec": 3.24,
+      "generatedAt": "2026-11-21T03:58:47.544Z"
+    },
+    "assets/audio/den-ong-sao-cua-ba/page-06/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "Mai giơ ngôi sao ra: “Đây, bạn mồi lửa từ đèn của tớ nhé.”",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 74924,
+      "durationSec": 4.68,
+      "generatedAt": "2026-11-21T03:59:07.503Z"
+    },
+    "assets/audio/den-ong-sao-cua-ba/page-06/sentence-03-en.mp3": {
+      "lang": "en",
+      "text": "Soon his carp lantern was glowing again.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 40364,
+      "durationSec": 2.52,
+      "generatedAt": "2026-11-21T03:59:18.239Z"
+    },
+    "assets/audio/den-ong-sao-cua-ba/page-06/sentence-03-vi.mp3": {
+      "lang": "vi",
+      "text": "Chẳng mấy chốc, chiếc đèn cá chép của cậu lại sáng lung linh.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 82604,
+      "durationSec": 5.16,
+      "generatedAt": "2026-11-21T03:59:38.286Z"
+    },
+    "assets/audio/den-ong-sao-cua-ba/page-07/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "Walking home, Mai held Grandma's hand and her crooked little star.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 67628,
+      "durationSec": 4.22,
+      "generatedAt": "2026-11-21T03:59:50.334Z"
+    },
+    "assets/audio/den-ong-sao-cua-ba/page-07/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Trên đường về, Mai nắm tay bà, tay kia cầm ngôi sao nhỏ lệch cánh.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 87596,
+      "durationSec": 5.47,
+      "generatedAt": "2026-11-21T04:00:10.688Z"
+    },
+    "assets/audio/den-ong-sao-cua-ba/page-07/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "“Bà ơi, you were right. It shines just as bright.”",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 48812,
+      "durationSec": 3.05,
+      "generatedAt": "2026-11-21T04:00:21.622Z"
+    },
+    "assets/audio/den-ong-sao-cua-ba/page-07/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "“Bà ơi, bà nói đúng. Đèn của cháu sáng lắm.”",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 56108,
+      "durationSec": 3.5,
+      "generatedAt": "2026-11-21T04:00:39.936Z"
+    },
+    "assets/audio/den-ong-sao-cua-ba/page-07/sentence-03-en.mp3": {
+      "lang": "en",
+      "text": "That night, Mai hung her lantern by the window and fell asleep smiling.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 71468,
+      "durationSec": 4.46,
+      "generatedAt": "2026-11-21T04:00:51.777Z"
+    },
+    "assets/audio/den-ong-sao-cua-ba/page-07/sentence-03-vi.mp3": {
+      "lang": "vi",
+      "text": "Đêm ấy, Mai treo đèn bên cửa sổ và ngủ với nụ cười trên môi.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 80300,
+      "durationSec": 5.02,
+      "generatedAt": "2026-11-21T04:01:11.616Z"
+    },
+    "assets/audio/ech-con-hat-ru/page-01/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Ở bờ ruộng lúa có một chú ếch xanh nhỏ tên là Ếch Con.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 71468,
+      "durationSec": 4.46,
+      "generatedAt": "2026-11-21T04:01:30.963Z"
+    },
+    "assets/audio/ech-con-hat-ru/page-01/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "Every evening, the big frogs sang loud songs to the first stars.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 67244,
+      "durationSec": 4.2,
+      "generatedAt": "2026-11-21T04:01:42.527Z"
+    },
+    "assets/audio/ech-con-hat-ru/page-01/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "Chiều nào các bác ếch cũng cất tiếng hát vang chào những vì sao đầu tiên.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 94892,
+      "durationSec": 5.93,
+      "generatedAt": "2026-11-21T04:02:03.879Z"
+    },
+    "assets/audio/ech-con-hat-ru/page-02/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "Ếch Con wanted to sing too, but his voice was very small.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 56876,
+      "durationSec": 3.55,
+      "generatedAt": "2026-11-21T04:02:15.399Z"
+    },
+    "assets/audio/ech-con-hat-ru/page-02/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Ếch Con cũng muốn hát, nhưng giọng của chú bé xíu.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 67628,
+      "durationSec": 4.22,
+      "generatedAt": "2026-11-21T04:02:34.362Z"
+    },
+    "assets/audio/ech-con-hat-ru/page-02/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "“Ộp… ộp…” he tried softly, and nobody heard.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 44588,
+      "durationSec": 2.78,
+      "generatedAt": "2026-11-21T04:02:44.637Z"
+    },
+    "assets/audio/ech-con-hat-ru/page-02/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "Chú thử khẽ: “Ộp… ộp…”, mà chẳng ai nghe thấy.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 59180,
+      "durationSec": 3.7,
+      "generatedAt": "2026-11-21T04:03:03.601Z"
+    },
+    "assets/audio/ech-con-hat-ru/page-02/sentence-03-en.mp3": {
+      "lang": "en",
+      "text": "So he sat quietly on his lily leaf and listened.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 47660,
+      "durationSec": 2.98,
+      "generatedAt": "2026-11-21T04:03:14.234Z"
+    },
+    "assets/audio/ech-con-hat-ru/page-02/sentence-03-vi.mp3": {
+      "lang": "vi",
+      "text": "Thế là chú ngồi im trên chiếc lá súng, lắng nghe.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 66092,
+      "durationSec": 4.13,
+      "generatedAt": "2026-11-21T04:03:33.001Z"
+    },
+    "assets/audio/ech-con-hat-ru/page-03/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "One night, a little duckling came paddling along the canal all alone.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 71852,
+      "durationSec": 4.49,
+      "generatedAt": "2026-11-21T04:03:45.038Z"
+    },
+    "assets/audio/ech-con-hat-ru/page-03/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Một đêm, có chú vịt con bơi dọc con mương một mình.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 68012,
+      "durationSec": 4.25,
+      "generatedAt": "2026-11-21T04:04:03.981Z"
+    },
+    "assets/audio/ech-con-hat-ru/page-03/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "She had drifted away from her mother and could not fall asleep.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 61868,
+      "durationSec": 3.86,
+      "generatedAt": "2026-11-21T04:04:15.457Z"
+    },
+    "assets/audio/ech-con-hat-ru/page-03/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "Vịt con lạc mẹ, cứ trằn trọc mãi không ngủ được.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 64172,
+      "durationSec": 4.01,
+      "generatedAt": "2026-11-21T04:04:34.258Z"
+    },
+    "assets/audio/ech-con-hat-ru/page-04/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "“ỘP! ỘP! ỘP!” sang the big frogs, so loudly that the duckling tucked her head under her wing.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 92972,
+      "durationSec": 5.81,
+      "generatedAt": "2026-11-21T04:04:47.876Z"
+    },
+    "assets/audio/ech-con-hat-ru/page-04/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Các bác ếch hát “Ộp! Ộp! Ộp!” to quá, vịt con phải rúc đầu vào cánh.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 86828,
+      "durationSec": 5.42,
+      "generatedAt": "2026-11-21T04:05:08.169Z"
+    },
+    "assets/audio/ech-con-hat-ru/page-04/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "“I want my mama,” she peeped.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 31148,
+      "durationSec": 1.94,
+      "generatedAt": "2026-11-21T04:05:18.483Z"
+    },
+    "assets/audio/ech-con-hat-ru/page-04/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "Vịt con khẽ kêu: “Con muốn về với mẹ.”",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 48812,
+      "durationSec": 3.05,
+      "generatedAt": "2026-11-21T04:05:36.874Z"
+    },
+    "assets/audio/ech-con-hat-ru/page-05/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "Ếch Con hopped close and sang his tiny song, as soft as a breeze.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 65324,
+      "durationSec": 4.08,
+      "generatedAt": "2026-11-21T04:05:48.467Z"
+    },
+    "assets/audio/ech-con-hat-ru/page-05/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Ếch Con nhảy lại gần, hát bài hát bé xíu của mình, nhẹ như gió thoảng.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 93740,
+      "durationSec": 5.86,
+      "generatedAt": "2026-11-21T04:06:08.879Z"
+    },
+    "assets/audio/ech-con-hat-ru/page-05/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "“Ộp… ộp… sleep now, little one. Your mama will find you.”",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 56492,
+      "durationSec": 3.53,
+      "generatedAt": "2026-11-21T04:06:20.045Z"
+    },
+    "assets/audio/ech-con-hat-ru/page-05/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "“Ộp… ộp… ngủ đi nào, mẹ sẽ tìm thấy bạn thôi.”",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 59180,
+      "durationSec": 3.7,
+      "generatedAt": "2026-11-21T04:06:38.866Z"
+    },
+    "assets/audio/ech-con-hat-ru/page-06/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "The duckling's eyes grew heavy, and she fell asleep beside the lily leaf.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 75308,
+      "durationSec": 4.7,
+      "generatedAt": "2026-11-21T04:06:51.005Z"
+    },
+    "assets/audio/ech-con-hat-ru/page-06/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Mắt vịt con díu lại, rồi bé ngủ thiếp đi bên chiếc lá súng.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 78380,
+      "durationSec": 4.9,
+      "generatedAt": "2026-11-21T04:07:11.295Z"
+    },
+    "assets/audio/ech-con-hat-ru/page-06/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "At dawn, Mother Duck came paddling along the canal and found her.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 67244,
+      "durationSec": 4.2,
+      "generatedAt": "2026-11-21T04:07:23.228Z"
+    },
+    "assets/audio/ech-con-hat-ru/page-06/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "Sáng sớm, vịt Mẹ bơi dọc con mương và tìm thấy con.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 68012,
+      "durationSec": 4.25,
+      "generatedAt": "2026-11-21T04:07:42.907Z"
+    },
+    "assets/audio/ech-con-hat-ru/page-06/sentence-03-en.mp3": {
+      "lang": "en",
+      "text": "“Thank you for singing to my baby,” said Mother Duck.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 53420,
+      "durationSec": 3.34,
+      "generatedAt": "2026-11-21T04:07:54.242Z"
+    },
+    "assets/audio/ech-con-hat-ru/page-06/sentence-03-vi.mp3": {
+      "lang": "vi",
+      "text": "Vịt Mẹ nói: “Cảm ơn cháu đã hát ru cho con cô.”",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 61484,
+      "durationSec": 3.84,
+      "generatedAt": "2026-11-21T04:08:13.337Z"
+    },
+    "assets/audio/ech-con-hat-ru/page-07/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "That night, the big frogs asked Ếch Con to sing the very last song.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 65324,
+      "durationSec": 4.08,
+      "generatedAt": "2026-11-21T04:08:30.326Z"
+    },
+    "assets/audio/ech-con-hat-ru/page-07/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Tối hôm ấy, các bác ếch mời Ếch Con hát bài cuối cùng.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 72236,
+      "durationSec": 4.51,
+      "generatedAt": "2026-11-21T04:08:53.143Z"
+    },
+    "assets/audio/ech-con-hat-ru/page-07/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "His small, soft lullaby drifted over the rice field, and everyone fell fast asleep.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 87980,
+      "durationSec": 5.5,
+      "generatedAt": "2026-11-21T04:09:09.912Z"
+    },
+    "assets/audio/ech-con-hat-ru/page-07/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "Bài hát ru nhỏ nhẹ của chú lan khắp cánh đồng, và ai nấy đều ngủ say.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 91436,
+      "durationSec": 5.71,
+      "generatedAt": "2026-11-21T04:09:31.961Z"
+    },
+    "assets/audio/ech-con-hat-ru/page-07/sentence-03-en.mp3": {
+      "lang": "en",
+      "text": "Ếch Con smiled. A small voice can sing a whole field to sleep.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 63404,
+      "durationSec": 3.96,
+      "generatedAt": "2026-11-21T04:11:51.327Z"
+    },
+    "assets/audio/ech-con-hat-ru/page-07/sentence-03-vi.mp3": {
+      "lang": "vi",
+      "text": "Ếch Con mỉm cười. Giọng hát nhỏ cũng có thể ru cả cánh đồng vào giấc ngủ.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 97196,
+      "durationSec": 6.07,
+      "generatedAt": "2026-11-21T04:12:53.277Z"
+    },
+    "assets/audio/hat-bi-cua-be-su/page-01/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "One spring morning, Grandpa gave Su a flat white seed.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 55340,
+      "durationSec": 3.46,
+      "generatedAt": "2026-11-21T04:13:04.218Z"
+    },
+    "assets/audio/hat-bi-cua-be-su/page-01/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Một sáng mùa xuân, ông đưa cho Su một hạt giống trắng, dẹt.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 77996,
+      "durationSec": 4.87,
+      "generatedAt": "2026-11-21T04:13:23.253Z"
+    },
+    "assets/audio/hat-bi-cua-be-su/page-01/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "“This is a pumpkin seed. Let's plant it together.”",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 51116,
+      "durationSec": 3.19,
+      "generatedAt": "2026-11-21T04:13:34.126Z"
+    },
+    "assets/audio/hat-bi-cua-be-su/page-01/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "“Đây là hạt bí. Ông cháu mình cùng gieo nhé.”",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 59564,
+      "durationSec": 3.72,
+      "generatedAt": "2026-11-21T04:13:52.494Z"
+    },
+    "assets/audio/hat-bi-cua-be-su/page-02/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "Su dug a little hole, dropped in the seed and patted the soil gently.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 68780,
+      "durationSec": 4.3,
+      "generatedAt": "2026-11-21T04:14:04.567Z"
+    },
+    "assets/audio/hat-bi-cua-be-su/page-02/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Su đào một cái hố nhỏ, thả hạt bí vào rồi vỗ nhẹ lớp đất.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 72620,
+      "durationSec": 4.54,
+      "generatedAt": "2026-11-21T04:14:24.297Z"
+    },
+    "assets/audio/hat-bi-cua-be-su/page-02/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "Then he gave it a drink from his small watering can.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 49964,
+      "durationSec": 3.12,
+      "generatedAt": "2026-11-21T04:14:35.263Z"
+    },
+    "assets/audio/hat-bi-cua-be-su/page-02/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "Rồi bé tưới cho hạt một chút nước bằng bình tưới bé xinh.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 76844,
+      "durationSec": 4.8,
+      "generatedAt": "2026-11-21T04:14:54.869Z"
+    },
+    "assets/audio/hat-bi-cua-be-su/page-03/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "The next morning, Su ran outside. Nothing!",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 44972,
+      "durationSec": 2.81,
+      "generatedAt": "2026-11-21T04:15:07.388Z"
+    },
+    "assets/audio/hat-bi-cua-be-su/page-03/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Sáng hôm sau, Su chạy ra vườn. Chẳng thấy gì cả!",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 63788,
+      "durationSec": 3.98,
+      "generatedAt": "2026-11-21T04:15:26.605Z"
+    },
+    "assets/audio/hat-bi-cua-be-su/page-03/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "The morning after that, still nothing.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 39980,
+      "durationSec": 2.5,
+      "generatedAt": "2026-11-21T04:15:36.966Z"
+    },
+    "assets/audio/hat-bi-cua-be-su/page-03/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "Sáng hôm sau nữa, vẫn chẳng thấy gì.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 49196,
+      "durationSec": 3.07,
+      "generatedAt": "2026-11-21T04:15:54.937Z"
+    },
+    "assets/audio/hat-bi-cua-be-su/page-03/sentence-03-en.mp3": {
+      "lang": "en",
+      "text": "“Maybe I should dig it up and look,” Su said.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 42284,
+      "durationSec": 2.64,
+      "generatedAt": "2026-11-21T04:16:05.717Z"
+    },
+    "assets/audio/hat-bi-cua-be-su/page-03/sentence-03-vi.mp3": {
+      "lang": "vi",
+      "text": "Su bảo: “Hay cháu đào lên xem thử nhé ông?”",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 54956,
+      "durationSec": 3.43,
+      "generatedAt": "2026-11-21T04:16:23.947Z"
+    },
+    "assets/audio/hat-bi-cua-be-su/page-04/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "Grandpa laughed softly. “Seeds grow in the dark first. It is busy making roots.”",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 81452,
+      "durationSec": 5.09,
+      "generatedAt": "2026-11-21T04:16:36.404Z"
+    },
+    "assets/audio/hat-bi-cua-be-su/page-04/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Ông cười hiền: “Hạt giống lớn trong bóng tối trước cháu ạ. Nó đang bận mọc rễ đấy.”",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 110252,
+      "durationSec": 6.89,
+      "generatedAt": "2026-11-21T04:16:58.483Z"
+    },
+    "assets/audio/hat-bi-cua-be-su/page-04/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "“All it needs from you is water, sunshine and a little patience.”",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 64172,
+      "durationSec": 4.01,
+      "generatedAt": "2026-11-21T04:17:10.693Z"
+    },
+    "assets/audio/hat-bi-cua-be-su/page-04/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "“Cháu chỉ cần cho nó nước, nắng và một chút kiên nhẫn.”",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 72620,
+      "durationSec": 4.54,
+      "generatedAt": "2026-11-21T04:17:30.487Z"
+    },
+    "assets/audio/hat-bi-cua-be-su/page-05/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "So Su watered the soil each morning and sang to it each evening.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 66092,
+      "durationSec": 4.13,
+      "generatedAt": "2026-11-21T04:17:44.318Z"
+    },
+    "assets/audio/hat-bi-cua-be-su/page-05/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Thế là sáng nào Su cũng tưới nước, chiều nào cũng hát cho hạt nghe.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 90284,
+      "durationSec": 5.64,
+      "generatedAt": "2026-11-21T04:18:05.359Z"
+    },
+    "assets/audio/hat-bi-cua-be-su/page-05/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "One day, two tiny green leaves peeked out of the ground.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 57260,
+      "durationSec": 3.58,
+      "generatedAt": "2026-11-21T04:18:18.231Z"
+    },
+    "assets/audio/hat-bi-cua-be-su/page-05/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "Rồi một ngày, hai chiếc lá xanh bé xíu ló lên khỏi mặt đất.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 77612,
+      "durationSec": 4.85,
+      "generatedAt": "2026-11-21T04:18:38.088Z"
+    },
+    "assets/audio/hat-bi-cua-be-su/page-05/sentence-03-en.mp3": {
+      "lang": "en",
+      "text": "“Ông ơi! It's awake!” Su shouted.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 32684,
+      "durationSec": 2.04,
+      "generatedAt": "2026-11-21T04:18:49.715Z"
+    },
+    "assets/audio/hat-bi-cua-be-su/page-05/sentence-03-vi.mp3": {
+      "lang": "vi",
+      "text": "Su reo lên: “Ông ơi! Hạt bí dậy rồi!”",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 48044,
+      "durationSec": 3,
+      "generatedAt": "2026-11-21T04:19:07.748Z"
+    },
+    "assets/audio/hat-bi-cua-be-su/page-06/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "The vine climbed up the bamboo trellis, curling and growing every day.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 73772,
+      "durationSec": 4.61,
+      "generatedAt": "2026-11-21T04:19:19.956Z"
+    },
+    "assets/audio/hat-bi-cua-be-su/page-06/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Dây bí leo lên giàn tre, mỗi ngày một vươn dài, cuộn tròn những tua xoăn.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 97964,
+      "durationSec": 6.12,
+      "generatedAt": "2026-11-21T04:19:41.685Z"
+    },
+    "assets/audio/hat-bi-cua-be-su/page-06/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "Big yellow flowers opened, and bees came to visit.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 49964,
+      "durationSec": 3.12,
+      "generatedAt": "2026-11-21T04:19:52.901Z"
+    },
+    "assets/audio/hat-bi-cua-be-su/page-06/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "Những bông hoa vàng to nở rộ, ong bướm kéo nhau về thăm.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 74924,
+      "durationSec": 4.68,
+      "generatedAt": "2026-11-21T04:20:13.165Z"
+    },
+    "assets/audio/hat-bi-cua-be-su/page-06/sentence-03-en.mp3": {
+      "lang": "en",
+      "text": "Under the leaves, a round green pumpkin grew bigger and bigger.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 65324,
+      "durationSec": 4.08,
+      "generatedAt": "2026-11-21T04:20:26.640Z"
+    },
+    "assets/audio/hat-bi-cua-be-su/page-06/sentence-03-vi.mp3": {
+      "lang": "vi",
+      "text": "Dưới tán lá, một quả bí xanh tròn cứ lớn dần, lớn dần.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 70700,
+      "durationSec": 4.42,
+      "generatedAt": "2026-11-21T04:20:46.036Z"
+    },
+    "assets/audio/hat-bi-cua-be-su/page-07/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "At last, Su and Grandpa picked the pumpkin together.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 53420,
+      "durationSec": 3.34,
+      "generatedAt": "2026-11-21T04:20:57.345Z"
+    },
+    "assets/audio/hat-bi-cua-be-su/page-07/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Cuối cùng, hai ông cháu cùng hái quả bí.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 53804,
+      "durationSec": 3.36,
+      "generatedAt": "2026-11-21T04:21:15.546Z"
+    },
+    "assets/audio/hat-bi-cua-be-su/page-07/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "That evening, the whole family shared a warm pumpkin soup.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 60332,
+      "durationSec": 3.77,
+      "generatedAt": "2026-11-21T04:21:26.999Z"
+    },
+    "assets/audio/hat-bi-cua-be-su/page-07/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "Tối hôm ấy, cả nhà quây quần bên bát canh bí nóng hổi.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 72236,
+      "durationSec": 4.51,
+      "generatedAt": "2026-11-21T04:21:46.901Z"
+    },
+    "assets/audio/hat-bi-cua-be-su/page-07/sentence-03-en.mp3": {
+      "lang": "en",
+      "text": "Su smiled. The best things grow slowly, with a little patience.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 63404,
+      "durationSec": 3.96,
+      "generatedAt": "2026-11-21T04:21:58.932Z"
+    },
+    "assets/audio/hat-bi-cua-be-su/page-07/sentence-03-vi.mp3": {
+      "lang": "vi",
+      "text": "Su mỉm cười. Những điều tốt đẹp lớn lên chậm rãi, nhờ một chút kiên nhẫn.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 97196,
+      "durationSec": 6.07,
+      "generatedAt": "2026-11-21T04:22:20.016Z"
+    },
+    "assets/audio/rua-con-ra-bien/page-01/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "On a quiet beach at Côn Đảo, a little egg cracked open in the warm sand.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 67244,
+      "durationSec": 4.2,
+      "generatedAt": "2026-11-21T04:22:34.213Z"
+    },
+    "assets/audio/rua-con-ra-bien/page-01/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Trên bãi cát yên tĩnh ở Côn Đảo, một quả trứng nhỏ nứt ra trong lớp cát ấm.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 99116,
+      "durationSec": 6.19,
+      "generatedAt": "2026-11-21T04:22:55.577Z"
+    },
+    "assets/audio/rua-con-ra-bien/page-01/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "Out wriggled a baby sea turtle, no bigger than a leaf.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 52652,
+      "durationSec": 3.29,
+      "generatedAt": "2026-11-21T04:23:06.822Z"
+    },
+    "assets/audio/rua-con-ra-bien/page-01/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "Một chú rùa biển con bò ra, chỉ nhỏ bằng chiếc lá.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 66860,
+      "durationSec": 4.18,
+      "generatedAt": "2026-11-21T04:23:25.977Z"
+    },
+    "assets/audio/rua-con-ra-bien/page-02/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "Rùa Con looked around. His brothers and sisters had already gone.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 67244,
+      "durationSec": 4.2,
+      "generatedAt": "2026-11-21T04:23:37.818Z"
+    },
+    "assets/audio/rua-con-ra-bien/page-02/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Rùa Con nhìn quanh. Các anh chị đã đi hết cả rồi.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 64940,
+      "durationSec": 4.06,
+      "generatedAt": "2026-11-21T04:23:57.034Z"
+    },
+    "assets/audio/rua-con-ra-bien/page-02/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "“Which way is the sea?” he wondered.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 35756,
+      "durationSec": 2.23,
+      "generatedAt": "2026-11-21T04:24:07.263Z"
+    },
+    "assets/audio/rua-con-ra-bien/page-02/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "Rùa Con tự hỏi: “Biển ở phía nào nhỉ?”",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 48812,
+      "durationSec": 3.05,
+      "generatedAt": "2026-11-21T04:24:24.892Z"
+    },
+    "assets/audio/rua-con-ra-bien/page-03/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "A little ghost crab popped out of its hole.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 43052,
+      "durationSec": 2.69,
+      "generatedAt": "2026-11-21T04:24:36.872Z"
+    },
+    "assets/audio/rua-con-ra-bien/page-03/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Một chú còng nhỏ ló ra khỏi hang.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 44588,
+      "durationSec": 2.78,
+      "generatedAt": "2026-11-21T04:24:54.758Z"
+    },
+    "assets/audio/rua-con-ra-bien/page-03/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "“Follow the silver light,” said the crab. “The moon always shines on the sea.”",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 78764,
+      "durationSec": 4.92,
+      "generatedAt": "2026-11-21T04:25:08.190Z"
+    },
+    "assets/audio/rua-con-ra-bien/page-03/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "Còng bảo: “Cứ đi theo ánh bạc ấy. Trăng luôn soi sáng mặt biển mà.”",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 87596,
+      "durationSec": 5.47,
+      "generatedAt": "2026-11-21T04:25:29.224Z"
+    },
+    "assets/audio/rua-con-ra-bien/page-04/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "Rùa Con looked up and saw a shining path of moonlight on the water.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 65708,
+      "durationSec": 4.1,
+      "generatedAt": "2026-11-21T04:25:42.753Z"
+    },
+    "assets/audio/rua-con-ra-bien/page-04/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Rùa Con ngước lên, thấy một con đường ánh trăng lấp lánh trên mặt nước.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 96044,
+      "durationSec": 6,
+      "generatedAt": "2026-11-21T04:26:03.701Z"
+    },
+    "assets/audio/rua-con-ra-bien/page-04/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "He began to crawl, flip-flap, flip-flap, across the sand.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 56492,
+      "durationSec": 3.53,
+      "generatedAt": "2026-11-21T04:26:15.021Z"
+    },
+    "assets/audio/rua-con-ra-bien/page-04/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "Chú bắt đầu bò, lạch bạch, lạch bạch, băng qua bãi cát.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 72620,
+      "durationSec": 4.54,
+      "generatedAt": "2026-11-21T04:26:34.625Z"
+    },
+    "assets/audio/rua-con-ra-bien/page-05/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "The sand was soft, and the way was long.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 40364,
+      "durationSec": 2.52,
+      "generatedAt": "2026-11-21T04:26:45.809Z"
+    },
+    "assets/audio/rua-con-ra-bien/page-05/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Cát mềm mà đường thì xa.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 34604,
+      "durationSec": 2.16,
+      "generatedAt": "2026-11-21T04:27:02.731Z"
+    },
+    "assets/audio/rua-con-ra-bien/page-05/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "Rùa Con stopped to rest by a seashell, his little flippers tired.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 65708,
+      "durationSec": 4.1,
+      "generatedAt": "2026-11-21T04:27:14.468Z"
+    },
+    "assets/audio/rua-con-ra-bien/page-05/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "Rùa Con dừng lại nghỉ bên một vỏ ốc, đôi chân chèo bé nhỏ mỏi nhừ.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 87212,
+      "durationSec": 5.45,
+      "generatedAt": "2026-11-21T04:27:34.677Z"
+    },
+    "assets/audio/rua-con-ra-bien/page-05/sentence-03-en.mp3": {
+      "lang": "en",
+      "text": "Then he heard the waves whispering, “Shhh… shhh… come home.”",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 58796,
+      "durationSec": 3.67,
+      "generatedAt": "2026-11-21T04:27:46.006Z"
+    },
+    "assets/audio/rua-con-ra-bien/page-05/sentence-03-vi.mp3": {
+      "lang": "vi",
+      "text": "Rồi chú nghe tiếng sóng thì thầm: “Rì rào… rì rào… về đây nào.”",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 82220,
+      "durationSec": 5.14,
+      "generatedAt": "2026-11-21T04:28:06.420Z"
+    },
+    "assets/audio/rua-con-ra-bien/page-06/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "With one last push, Rùa Con reached the wet sand, and a gentle wave lifted him up.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 81836,
+      "durationSec": 5.11,
+      "generatedAt": "2026-11-21T04:28:19.613Z"
+    },
+    "assets/audio/rua-con-ra-bien/page-06/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Cố thêm một chút nữa, Rùa Con đã tới bãi cát ướt, và một con sóng hiền nâng chú lên.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 110252,
+      "durationSec": 6.89,
+      "generatedAt": "2026-11-21T04:28:41.653Z"
+    },
+    "assets/audio/rua-con-ra-bien/page-06/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "He was swimming! The sea felt cool and soft, like a blanket.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 60716,
+      "durationSec": 3.79,
+      "generatedAt": "2026-11-21T04:28:53.637Z"
+    },
+    "assets/audio/rua-con-ra-bien/page-06/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "Chú đang bơi! Nước biển mát rượi, êm như tấm chăn.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 66860,
+      "durationSec": 4.18,
+      "generatedAt": "2026-11-21T04:29:13.058Z"
+    },
+    "assets/audio/rua-con-ra-bien/page-07/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "Out in the moonlit water, his brothers and sisters were waiting.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 65324,
+      "durationSec": 4.08,
+      "generatedAt": "2026-11-21T04:29:25.298Z"
+    },
+    "assets/audio/rua-con-ra-bien/page-07/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Ngoài làn nước ánh trăng, các anh chị đang đợi chú.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 68780,
+      "durationSec": 4.3,
+      "generatedAt": "2026-11-21T04:29:44.872Z"
+    },
+    "assets/audio/rua-con-ra-bien/page-07/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "Together they swam toward their new home, under a sky full of stars.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 71084,
+      "durationSec": 4.44,
+      "generatedAt": "2026-11-21T04:29:57.235Z"
+    },
+    "assets/audio/rua-con-ra-bien/page-07/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "Cả nhà cùng bơi về ngôi nhà mới, dưới bầu trời đầy sao.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 73388,
+      "durationSec": 4.58,
+      "generatedAt": "2026-11-21T04:30:17.639Z"
+    },
+    "assets/audio/rua-con-ra-bien/page-07/sentence-03-en.mp3": {
+      "lang": "en",
+      "text": "And the moon kept shining softly, lighting the way for every little one.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 75308,
+      "durationSec": 4.7,
+      "generatedAt": "2026-11-21T04:30:30.112Z"
+    },
+    "assets/audio/rua-con-ra-bien/page-07/sentence-03-vi.mp3": {
+      "lang": "vi",
+      "text": "Còn ông trăng vẫn dịu dàng soi sáng, dẫn lối cho mọi bạn nhỏ.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 81836,
+      "durationSec": 5.11,
+      "generatedAt": "2026-11-21T04:30:50.626Z"
+    },
+    "assets/audio/voi-con-ban-don/page-01/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "In the forest of Bản Đôn lived a baby elephant named Bin.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 56108,
+      "durationSec": 3.5,
+      "generatedAt": "2026-11-21T04:31:02.298Z"
+    },
+    "assets/audio/voi-con-ban-don/page-01/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Ở rừng Bản Đôn có một chú voi con tên là Bin.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 59180,
+      "durationSec": 3.7,
+      "generatedAt": "2026-11-21T04:31:21.145Z"
+    },
+    "assets/audio/voi-con-ban-don/page-01/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "Bin loved splashing in the cool stream more than anything.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 59948,
+      "durationSec": 3.74,
+      "generatedAt": "2026-11-21T04:31:32.487Z"
+    },
+    "assets/audio/voi-con-ban-don/page-01/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "Bin thích nhất là được nghịch nước dưới con suối mát.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 73004,
+      "durationSec": 4.56,
+      "generatedAt": "2026-11-21T04:31:51.759Z"
+    },
+    "assets/audio/voi-con-ban-don/page-02/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "But that year the dry season was long, and the stream grew thinner and thinner.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 80300,
+      "durationSec": 5.02,
+      "generatedAt": "2026-11-21T04:32:04.430Z"
+    },
+    "assets/audio/voi-con-ban-don/page-02/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Nhưng năm ấy mùa khô kéo dài, con suối cứ cạn dần, cạn dần.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 78380,
+      "durationSec": 4.9,
+      "generatedAt": "2026-11-21T04:32:24.519Z"
+    },
+    "assets/audio/voi-con-ban-don/page-02/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "Only one small pool was left, deep in the shade of the big trees.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 64172,
+      "durationSec": 4.01,
+      "generatedAt": "2026-11-21T04:32:36.281Z"
+    },
+    "assets/audio/voi-con-ban-don/page-02/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "Chỉ còn lại một vũng nước nhỏ dưới bóng những cây cổ thụ.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 77228,
+      "durationSec": 4.82,
+      "generatedAt": "2026-11-21T04:32:55.835Z"
+    },
+    "assets/audio/voi-con-ban-don/page-03/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "Bin found it first and drank and drank, happily flapping his ears.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 66860,
+      "durationSec": 4.18,
+      "generatedAt": "2026-11-21T04:33:07.846Z"
+    },
+    "assets/audio/voi-con-ban-don/page-03/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Bin tìm thấy trước, uống mãi, uống mãi, đôi tai phe phẩy vui sướng.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 89516,
+      "durationSec": 5.59,
+      "generatedAt": "2026-11-21T04:33:28.663Z"
+    },
+    "assets/audio/voi-con-ban-don/page-03/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "“This is my pool,” he thought.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 31148,
+      "durationSec": 1.94,
+      "generatedAt": "2026-11-21T04:33:39.229Z"
+    },
+    "assets/audio/voi-con-ban-don/page-03/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "Bin nghĩ: “Vũng nước này là của mình.”",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 50732,
+      "durationSec": 3.17,
+      "generatedAt": "2026-11-21T04:33:57.571Z"
+    },
+    "assets/audio/voi-con-ban-don/page-04/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "Then a little deer, a squirrel and two sunbirds came out of the bushes.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 71852,
+      "durationSec": 4.49,
+      "generatedAt": "2026-11-21T04:34:09.964Z"
+    },
+    "assets/audio/voi-con-ban-don/page-04/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Rồi một chú nai nhỏ, một chị sóc và hai chú chim hút mật bước ra từ bụi cây.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 99884,
+      "durationSec": 6.24,
+      "generatedAt": "2026-11-21T04:34:31.590Z"
+    },
+    "assets/audio/voi-con-ban-don/page-04/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "They were very thirsty, but the banks were steep and they were too small to reach the water.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 94892,
+      "durationSec": 5.93,
+      "generatedAt": "2026-11-21T04:34:46.108Z"
+    },
+    "assets/audio/voi-con-ban-don/page-04/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "Chúng khát lắm, nhưng bờ vũng dốc quá, mà chúng thì bé, chẳng với tới được.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 99500,
+      "durationSec": 6.22,
+      "generatedAt": "2026-11-21T04:35:08.066Z"
+    },
+    "assets/audio/voi-con-ban-don/page-05/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "Bin looked at their dry little faces and thought for a moment.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 62636,
+      "durationSec": 3.91,
+      "generatedAt": "2026-11-21T04:35:21.644Z"
+    },
+    "assets/audio/voi-con-ban-don/page-05/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Bin nhìn những gương mặt khô khát ấy và nghĩ một lúc.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 71084,
+      "durationSec": 4.44,
+      "generatedAt": "2026-11-21T04:35:41.908Z"
+    },
+    "assets/audio/voi-con-ban-don/page-05/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "Then he dipped his trunk into the pool and filled it to the brim.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 64940,
+      "durationSec": 4.06,
+      "generatedAt": "2026-11-21T04:35:54.114Z"
+    },
+    "assets/audio/voi-con-ban-don/page-05/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "Rồi chú nhúng vòi xuống vũng, hút đầy một vòi nước.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 68396,
+      "durationSec": 4.27,
+      "generatedAt": "2026-11-21T04:36:14.024Z"
+    },
+    "assets/audio/voi-con-ban-don/page-06/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "Whoosh! Bin sprayed a gentle shower over his new friends.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 57644,
+      "durationSec": 3.6,
+      "generatedAt": "2026-11-21T04:36:25.601Z"
+    },
+    "assets/audio/voi-con-ban-don/page-06/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Phù! Bin phun một cơn mưa nhẹ lên các bạn.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 55724,
+      "durationSec": 3.48,
+      "generatedAt": "2026-11-21T04:36:44.033Z"
+    },
+    "assets/audio/voi-con-ban-don/page-06/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "The deer drank, the squirrel giggled, and the sunbirds bathed in the sparkles.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 81068,
+      "durationSec": 5.06,
+      "generatedAt": "2026-11-21T04:36:56.751Z"
+    },
+    "assets/audio/voi-con-ban-don/page-06/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "Nai uống nước, sóc cười khúc khích, chim hút mật tắm trong những giọt nước lấp lánh.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 114476,
+      "durationSec": 7.15,
+      "generatedAt": "2026-11-21T04:37:19.344Z"
+    },
+    "assets/audio/voi-con-ban-don/page-06/sentence-03-en.mp3": {
+      "lang": "en",
+      "text": "Bin laughed too. Sharing felt even better than splashing alone.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 65324,
+      "durationSec": 4.08,
+      "generatedAt": "2026-11-21T04:37:32.605Z"
+    },
+    "assets/audio/voi-con-ban-don/page-06/sentence-03-vi.mp3": {
+      "lang": "vi",
+      "text": "Bin cũng bật cười. Chia sẻ còn vui hơn cả nghịch nước một mình.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 85676,
+      "durationSec": 5.35,
+      "generatedAt": "2026-11-21T04:37:52.847Z"
+    },
+    "assets/audio/voi-con-ban-don/page-07/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "That evening, clouds rolled over the hills, and the first rain of the season began to fall.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 92588,
+      "durationSec": 5.78,
+      "generatedAt": "2026-11-21T04:38:06.915Z"
+    },
+    "assets/audio/voi-con-ban-don/page-07/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Chiều hôm ấy, mây kéo về trên những ngọn đồi, cơn mưa đầu mùa bắt đầu rơi.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 98348,
+      "durationSec": 6.14,
+      "generatedAt": "2026-11-21T04:38:28.832Z"
+    },
+    "assets/audio/voi-con-ban-don/page-07/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "The friends danced together in the rain, and that night they slept side by side under the big trees.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 103340,
+      "durationSec": 6.46,
+      "generatedAt": "2026-11-21T04:38:43.286Z"
+    },
+    "assets/audio/voi-con-ban-don/page-07/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "Các bạn cùng nhau nhảy múa dưới mưa, rồi đêm ấy cùng ngủ bên nhau dưới tán cây cổ thụ.",
+      "voice": "746d2063",
+      "model": "omnivoice",
+      "bytes": 115628,
+      "durationSec": 7.22,
+      "generatedAt": "2026-11-21T04:39:05.744Z"
     }
   }
 }

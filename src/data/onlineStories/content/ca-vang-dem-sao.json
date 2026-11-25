@@ -1,0 +1,147 @@
+{
+  "id": "ca-vang-dem-sao",
+  "title": {
+    "en": "Little Goldfish Counts the Stars",
+    "vi": "Cá Vàng Đếm Sao"
+  },
+  "description": {
+    "en": "Cam the goldfish tries to count the stars reflected in his pond, until a kind old turtle shows him that some things are just for loving.",
+    "vi": "Chú cá vàng Cam cố đếm những ngôi sao in bóng trên mặt ao, cho đến khi bác rùa già hiền hậu cho Cam biết có những điều chỉ để yêu thương."
+  },
+  "theme": {
+    "en": "Some wonders are for enjoying, not for counting.",
+    "vi": "Có những điều kỳ diệu chỉ để ngắm nhìn, không phải để đếm."
+  },
+  "origin": "Original StoryMoon online story, written in English and Vietnamese.",
+  "category": "Bedtime",
+  "ageRange": "3–7 years",
+  "duration": "3 min",
+  "estimatedDurationSec": 73,
+  "requiresInternet": true,
+  "artDirection": {
+    "palette": {
+      "sky": "#0E1E3A",
+      "skyLow": "#23406A",
+      "ground": "#1F4A4A",
+      "groundDeep": "#0F2A2C",
+      "accent": "#F28C38",
+      "glow": "#FFF1C9",
+      "ink": "#07101F",
+      "paper": "#EAF0F5"
+    }
+  },
+  "pages": [
+    {
+      "sentences": [
+        {
+          "en": "In a quiet pond, a little goldfish named Cam loved looking up at the night sky.",
+          "vi": "Trong một chiếc ao yên tĩnh, có chú cá vàng tên Cam rất thích ngắm bầu trời đêm.",
+          "audio": {
+            "en": "ca-vang-dem-sao/page-01/sentence-01-en.mp3",
+            "vi": "ca-vang-dem-sao/page-01/sentence-01-vi.mp3"
+          },
+          "audioUrl": {
+            "en": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795350378/ca-vang-dem-sao/page-01/sentence-01-en_h5xlb7.mp3",
+            "vi": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795350378/ca-vang-dem-sao/page-01/sentence-01-vi_m3x052.mp3"
+          }
+        },
+        {
+          "en": "“How many stars are there?” Cam wondered.",
+          "vi": "“Trên trời có bao nhiêu ngôi sao nhỉ?” Cam tự hỏi.",
+          "audio": {
+            "en": "ca-vang-dem-sao/page-01/sentence-02-en.mp3",
+            "vi": "ca-vang-dem-sao/page-01/sentence-02-vi.mp3"
+          },
+          "audioUrl": {
+            "en": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795350378/ca-vang-dem-sao/page-01/sentence-02-en_k9ubzw.mp3",
+            "vi": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795350377/ca-vang-dem-sao/page-01/sentence-02-vi_vmkdae.mp3"
+          }
+        }
+      ]
+    },
+    {
+      "sentences": [
+        {
+          "en": "One, two, three… Cam counted the stars reflected on the water.",
+          "vi": "Một, hai, ba… Cam đếm những ngôi sao in bóng trên mặt nước.",
+          "audio": {
+            "en": "ca-vang-dem-sao/page-02/sentence-01-en.mp3",
+            "vi": "ca-vang-dem-sao/page-02/sentence-01-vi.mp3"
+          },
+          "audioUrl": {
+            "en": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795350376/ca-vang-dem-sao/page-02/sentence-01-en_xlskd6.mp3",
+            "vi": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795350376/ca-vang-dem-sao/page-02/sentence-01-vi_orzspq.mp3"
+          }
+        },
+        {
+          "en": "But every time a breeze passed, the stars wobbled and Cam lost count.",
+          "vi": "Nhưng mỗi lần làn gió thổi qua, những ngôi sao lại rung rinh và Cam đếm lẫn mất.",
+          "audio": {
+            "en": "ca-vang-dem-sao/page-02/sentence-02-en.mp3",
+            "vi": "ca-vang-dem-sao/page-02/sentence-02-vi.mp3"
+          },
+          "audioUrl": {
+            "en": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795350376/ca-vang-dem-sao/page-02/sentence-02-en_kzcrxn.mp3",
+            "vi": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795350376/ca-vang-dem-sao/page-02/sentence-02-vi_zqs8m9.mp3"
+          }
+        }
+      ]
+    },
+    {
+      "sentences": [
+        {
+          "en": "An old turtle swam by and smiled kindly.",
+          "vi": "Một bác rùa già bơi ngang qua và mỉm cười hiền hậu.",
+          "audio": {
+            "en": "ca-vang-dem-sao/page-03/sentence-01-en.mp3",
+            "vi": "ca-vang-dem-sao/page-03/sentence-01-vi.mp3"
+          },
+          "audioUrl": {
+            "en": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795350377/ca-vang-dem-sao/page-03/sentence-01-en_xp02fi.mp3",
+            "vi": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795350377/ca-vang-dem-sao/page-03/sentence-01-vi_boccww.mp3"
+          }
+        },
+        {
+          "en": "“Some things are not for counting, little one, only for loving,” he said.",
+          "vi": "“Có những điều không phải để đếm đâu cháu ạ, mà để yêu thương thôi,” bác nói.",
+          "audio": {
+            "en": "ca-vang-dem-sao/page-03/sentence-02-en.mp3",
+            "vi": "ca-vang-dem-sao/page-03/sentence-02-vi.mp3"
+          },
+          "audioUrl": {
+            "en": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795350377/ca-vang-dem-sao/page-03/sentence-02-en_dcp3hw.mp3",
+            "vi": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795350377/ca-vang-dem-sao/page-03/sentence-02-vi_t5gs8q.mp3"
+          }
+        }
+      ]
+    },
+    {
+      "sentences": [
+        {
+          "en": "So Cam stopped counting and simply watched the stars twinkle.",
+          "vi": "Thế là Cam thôi không đếm nữa, chỉ lặng ngắm những vì sao lấp lánh.",
+          "audio": {
+            "en": "ca-vang-dem-sao/page-04/sentence-01-en.mp3",
+            "vi": "ca-vang-dem-sao/page-04/sentence-01-vi.mp3"
+          },
+          "audioUrl": {
+            "en": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795350377/ca-vang-dem-sao/page-04/sentence-01-en_yxvrsu.mp3",
+            "vi": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795350377/ca-vang-dem-sao/page-04/sentence-01-vi_hmaxgi.mp3"
+          }
+        },
+        {
+          "en": "Soon his eyes grew heavy, and he drifted into a sparkling dream.",
+          "vi": "Chẳng mấy chốc, mắt Cam díu lại, và chú chìm vào một giấc mơ lấp lánh.",
+          "audio": {
+            "en": "ca-vang-dem-sao/page-04/sentence-02-en.mp3",
+            "vi": "ca-vang-dem-sao/page-04/sentence-02-vi.mp3"
+          },
+          "audioUrl": {
+            "en": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795350376/ca-vang-dem-sao/page-04/sentence-02-en_fnyajf.mp3",
+            "vi": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795350376/ca-vang-dem-sao/page-04/sentence-02-vi_gtpuc6.mp3"
+          }
+        }
+      ]
+    }
+  ]
+}

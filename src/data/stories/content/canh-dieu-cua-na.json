@@ -1,0 +1,168 @@
+{
+  "id": "canh-dieu-cua-na",
+  "title": {
+    "en": "Na's Kite and the Evening Wind",
+    "vi": "Cánh Diều Của Bé Na"
+  },
+  "description": {
+    "en": "Na's new kite keeps tumbling into the grass. Sitting on the dyke with Dad, she learns to wait for the evening wind and try again.",
+    "vi": "Cánh diều mới của Na cứ rơi xuống bãi cỏ. Ngồi trên đê cùng bố, Na học cách đợi gió chiều và thử lại lần nữa."
+  },
+  "theme": {
+    "en": "When something doesn't work, rest, breathe and try again.",
+    "vi": "Khi chưa thành công, hãy nghỉ một chút, bình tĩnh rồi thử lại."
+  },
+  "origin": "Original StoryMoon story, written in Vietnamese with an English companion text.",
+  "category": "Bedtime",
+  "ageRange": "3–8 years",
+  "duration": "5 min",
+  "characters": [
+    {
+      "name": "Na",
+      "look": "girl around five with two high pigtails, in a sunflower-yellow dress"
+    },
+    {
+      "name": "Dad (Bố)",
+      "look": "tall young father with short hair, a white short-sleeved shirt and rolled trousers"
+    },
+    {
+      "name": "the kite",
+      "look": "diamond-shaped blue paper kite with a long ribbon tail and a small bamboo flute"
+    }
+  ],
+  "artDirection": {
+    "mood": "Open, breezy and gently hopeful, settling into a peaceful dusk.",
+    "setting": "A long grassy river dyke in the northern countryside: rice fields on one side, a wide river on the other, a water buffalo walking home, a bamboo grove.",
+    "light": "Late-afternoon gold turning into a pink and lavender sunset, then the first evening star.",
+    "motifs": [
+      "a blue diamond kite with a ribbon tail",
+      "a bamboo kite flute",
+      "swaying rice",
+      "a water buffalo on the dyke",
+      "pink evening clouds"
+    ],
+    "avoid": [
+      "power lines",
+      "falling or injured children",
+      "stormy weather"
+    ],
+    "palette": {
+      "sky": "#E79A7A",
+      "skyLow": "#F6CF9A",
+      "ground": "#6E8A4A",
+      "groundDeep": "#3E5532",
+      "accent": "#3E7CB1",
+      "glow": "#FFE2A8",
+      "ink": "#2A1E22",
+      "paper": "#FCF1E6"
+    }
+  },
+  "cover": {
+    "prompt": "a little girl and her father on a grassy dyke at sunset, a blue diamond kite soaring among pink clouds above rice fields and a river"
+  },
+  "pages": [
+    {
+      "prompt": "a long green dyke on a summer evening, children with kites, a little girl holding a new blue kite next to her father",
+      "sentences": [
+        [
+          "On summer evenings, children flew kites on the long green dyke.",
+          "Những chiều hè, bọn trẻ thả diều trên con đê dài xanh cỏ."
+        ],
+        [
+          "Na had a new kite that she and Dad had made from bamboo and paper.",
+          "Na có một cánh diều mới, bố con Na đã cùng làm từ tre và giấy."
+        ]
+      ]
+    },
+    {
+      "prompt": "the girl running along the dyke with the kite string, the kite wobbling and tumbling into the grass",
+      "sentences": [
+        [
+          "She held the string tight and ran as fast as she could.",
+          "Na nắm chặt dây diều, chạy thật nhanh."
+        ],
+        [
+          "But the kite wobbled, flipped and landed, plop, in the grass.",
+          "Nhưng cánh diều chao đảo, lộn một vòng rồi rơi “bộp” xuống bãi cỏ."
+        ]
+      ]
+    },
+    {
+      "prompt": "the girl sitting on the dyke with her chin in her hands, the blue kite lying in the grass beside her",
+      "sentences": [
+        [
+          "Na tried again, and again it fell.",
+          "Na thử lần nữa, diều lại rơi."
+        ],
+        [
+          "“My kite doesn't want to fly,” she sighed, sitting down on the dyke.",
+          "Na ngồi phịch xuống đê, thở dài: “Diều của con không chịu bay.”"
+        ]
+      ]
+    },
+    {
+      "prompt": "father sitting beside the girl on the dyke, pointing to the sky, both listening",
+      "sentences": [
+        [
+          "Dad sat beside her. “Kites need the wind, and the wind likes to take its time.”",
+          "Bố ngồi xuống bên Na: “Diều cần có gió, mà gió thì thong thả lắm con ạ.”"
+        ],
+        [
+          "“Let's wait and listen for it together.”",
+          "“Mình cùng ngồi đợi và lắng nghe gió nhé.”"
+        ]
+      ]
+    },
+    {
+      "prompt": "a water buffalo walking home along the dyke, the river turning gold, rice stalks swaying, the girl's pigtails fluttering",
+      "sentences": [
+        [
+          "They watched the buffalo walking home and the river turning gold.",
+          "Hai bố con ngắm chú trâu thong thả về nhà, dòng sông nhuộm ánh vàng."
+        ],
+        [
+          "Then the rice began to sway, and Na's pigtails fluttered.",
+          "Rồi những ngọn lúa bắt đầu đung đưa, tóc Na bay bay."
+        ],
+        [
+          "“Bố ơi, the wind is here!”",
+          "“Bố ơi, gió về rồi!”"
+        ]
+      ]
+    },
+    {
+      "prompt": "the blue kite soaring high among pink evening clouds, the girl letting out the string, father cheering",
+      "sentences": [
+        [
+          "Na let out the string little by little, and up went the kite.",
+          "Na thả dây từ từ, từng chút một, và cánh diều vút lên cao."
+        ],
+        [
+          "Higher and higher it went, until it danced among the pink evening clouds.",
+          "Cao mãi, cao mãi, cho đến khi nó nhảy múa giữa những đám mây hồng."
+        ],
+        [
+          "Its little bamboo flute sang “vi vu, vi vu” in the wind.",
+          "Chiếc sáo tre nhỏ trên diều cất tiếng “vi vu, vi vu” trong gió."
+        ]
+      ]
+    },
+    {
+      "prompt": "lavender dusk with the first star, father and girl winding the kite string, walking home along the dyke",
+      "sentences": [
+        [
+          "When the first star appeared, Na and Dad brought the kite gently down.",
+          "Khi ngôi sao đầu tiên hiện lên, hai bố con nhẹ nhàng thu diều về."
+        ],
+        [
+          "“Good night, sky,” Na whispered. “I'll fly again tomorrow.”",
+          "Na thì thầm: “Chúc bầu trời ngủ ngon. Mai con lại bay nhé.”"
+        ],
+        [
+          "And that night, she dreamed she was soaring with the kites.",
+          "Đêm ấy, Na mơ thấy mình bay lượn cùng những cánh diều."
+        ]
+      ]
+    }
+  ]
+}

@@ -24,6 +24,12 @@ import { DOM_DOM_SOI_DUONG } from './domDomSoiDuong';
 import { MAY_NHO_LAM_MUA } from './mayNhoLamMua';
 import { THUYEN_GIAY_DAM_SEN } from './thuyenGiayDamSen';
 import { NGOI_SAO_BE_TI } from './ngoiSaoBeTi';
+import { ECH_CON_HAT_RU } from './echConHatRu';
+import { DEN_ONG_SAO_CUA_BA } from './denOngSaoCuaBa';
+import { VOI_CON_BAN_DON } from './voiConBanDon';
+import { HAT_BI_CUA_BE_SU } from './hatBiCuaBeSu';
+import { CANH_DIEU_CUA_NA } from './canhDieuCuaNa';
+import { RUA_CON_RA_BIEN } from './ruaConRaBien';
 
 export const STORY_SCENES: Record<string, StoryScenes> = {
   'chu-cuoi': CHU_CUOI,
@@ -46,4 +52,10 @@ export const STORY_SCENES: Record<string, StoryScenes> = {
   'may-nho-lam-mua': MAY_NHO_LAM_MUA,
   'thuyen-giay-dam-sen': THUYEN_GIAY_DAM_SEN,
   'ngoi-sao-be-ti': NGOI_SAO_BE_TI,
+  'ech-con-hat-ru': ECH_CON_HAT_RU,
+  'den-ong-sao-cua-ba': DEN_ONG_SAO_CUA_BA,
+  'voi-con-ban-don': VOI_CON_BAN_DON,
+  'hat-bi-cua-be-su': HAT_BI_CUA_BE_SU,
+  'canh-dieu-cua-na': CANH_DIEU_CUA_NA,
+  'rua-con-ra-bien': RUA_CON_RA_BIEN,
 };

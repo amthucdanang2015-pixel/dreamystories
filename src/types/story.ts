@@ -99,6 +99,26 @@ export interface Story {
   pages: StoryPage[];
   /** Story-specific art direction; drives the vector illustrations and UI accents. */
   art?: StoryArtDirection;
+  /**
+   * Present only on online stories (src/data/onlineStories): text, metadata
+   * and cover are local, sentence audio is streamed from HOST_ONLINE.
+   * Bundled stories never have this field.
+   */
+  online?: OnlineStoryInfo;
+}
+
+/** Why online narration cannot be played (HOST_ONLINE problem). */
+export type OnlineHostProblem = 'missing' | 'placeholder' | 'invalid';
+
+export interface OnlineStoryInfo {
+  requiresInternet: true;
+  /** True when every sentence has a remote URL in both languages
+   *  (an exact `audioUrl`, or the HOST_ONLINE fallback). */
+  audioReady: boolean;
+  /** Set when audioReady is false: why URLs are missing. */
+  hostProblem?: OnlineHostProblem;
+  /** Total narration length (both languages), from the generated MP3s. */
+  estimatedDurationSec?: number | null;
 }
 
 // ============================================================

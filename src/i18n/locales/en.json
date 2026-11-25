@@ -42,6 +42,8 @@
     "eyebrowWithCategory": "{{eyebrow}} · {{category}}",
     "premiumLocked": "Premium story, locked",
     "premium": "Premium story",
+    "free": "Free story",
+    "freeBadge": "FREE",
     "finished": "Finished",
     "a11yWithEyebrow": "{{eyebrow}}: {{label}}"
   },
@@ -122,6 +124,11 @@
     "statusReading": "Reading",
     "statusFinished": "Finished",
     "categoryAll": "All",
+    "freeEyebrow_one": "{{count}} story · always free",
+    "freeEyebrow_other": "{{count}} stories · always free",
+    "freeTitle": "Free Stories",
+    "premiumEyebrow": "Dreamy Stories Premium",
+    "premiumTitle": "Premium Stories",
     "noMatchTitle": "No stories match “{{query}}”",
     "noMatchMessage": "Try another word, like a character, a place or a feeling. You can search in English or Tiếng Việt.",
     "noMatchFilteredMessage": "Try another word, or look across every shelf. You can search in English or Tiếng Việt.",
@@ -366,6 +373,7 @@
     "activeWeekly": "Premium · Weekly plan",
     "activeYearly": "Premium · Yearly plan",
     "active": "Premium",
+    "statusActive": "Active",
     "renews": "Renews {{date}}",
     "seePlans": "See Dreamy Stories Premium plans",
     "unlock": "Unlock every story",
@@ -378,6 +386,7 @@
     "restoreNothing": "No active Dreamy Stories subscription was found.",
     "restoreErrorDefault": "Couldn’t check your purchases.",
     "restoreIdle": "Already subscribed on another device? Restore it here.",
+    "restoreIdleSubscriber": "Premium missing on this device? Restore it here.",
     "manage": "Manage subscription",
     "manageDescription": "Change plan or cancel in your App Store account.",
     "manageA11y": "Manage subscription. Opens your App Store subscription settings.",
@@ -463,5 +472,17 @@
     "restoreCancelled": "Restore was cancelled.",
     "subscriptionsUnavailable": "Subscriptions are only available in the iPhone and iPad app right now. You have not been charged.",
     "subscriptionsWeb": "Subscriptions are available in the Dreamy Stories app for iPhone and iPad. Nothing can be purchased in the browser."
+  },
+  "online": {
+    "sectionTitle": "Online Stories",
+    "sectionEyebrow_one": "{{count}} story · narration needs internet",
+    "sectionEyebrow_other": "{{count}} stories · narration needs internet",
+    "needsInternet": "Narration streams over the internet. Titles, covers and story text work offline.",
+    "notConfigured": "Online narration isn’t available yet. You can still read the story.",
+    "playbackFailed": "Couldn’t play the narration. Check the internet connection and try again.",
+    "retry": "Try again",
+    "badge": "ONLINE",
+    "badgeA11y": "Online story, narration needs an internet connection",
+    "pill": "Online narration"
   }
 }

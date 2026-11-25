@@ -10,6 +10,7 @@ import { ImageSourcePropType } from 'react-native';
 import { BilingualText, Story, StoryArtDirection, StoryPalette } from '../../types/story';
 import { LITTLE_RABBIT_STORY } from './littleRabbit';
 import { STORY_ASSETS } from './storyAssets.generated';
+import { ONLINE_STORIES } from '../onlineStories';
 
 import everydayConversations from './content/100-everyday-conversations.json';
 import chuCuoi from './content/chu-cuoi.json';
@@ -32,6 +33,12 @@ import domDomSoiDuong from './content/dom-dom-soi-duong.json';
 import mayNhoLamMua from './content/may-nho-lam-mua.json';
 import thuyenGiayDamSen from './content/thuyen-giay-dam-sen.json';
 import ngoiSaoBeTi from './content/ngoi-sao-be-ti.json';
+import echConHatRu from './content/ech-con-hat-ru.json';
+import denOngSaoCuaBa from './content/den-ong-sao-cua-ba.json';
+import voiConBanDon from './content/voi-con-ban-don.json';
+import hatBiCuaBeSu from './content/hat-bi-cua-be-su.json';
+import canhDieuCuaNa from './content/canh-dieu-cua-na.json';
+import ruaConRaBien from './content/rua-con-ra-bien.json';
 
 interface StoryContent {
   id: string;
@@ -103,6 +110,12 @@ export const ORIGINAL_STORIES: Story[] = [
   mayNhoLamMua,
   thuyenGiayDamSen,
   ngoiSaoBeTi,
+  echConHatRu,
+  denOngSaoCuaBa,
+  voiConBanDon,
+  hatBiCuaBeSu,
+  canhDieuCuaNa,
+  ruaConRaBien,
 ].map((c) => buildStory(c as StoryContent));
 
 export const ALL_STORIES: Story[] = [
@@ -112,17 +125,25 @@ export const ALL_STORIES: Story[] = [
   ...ORIGINAL_STORIES,
 ];
 
+/**
+ * Online stories (src/data/onlineStories) are a separate catalogue: they are
+ * not in ALL_STORIES (bundled only), but story lookup and cover images
+ * resolve both, so Story Detail and the reader open either kind.
+ */
+export { ONLINE_STORIES };
+
 /** Illustration lookup by key ('<storyId>/cover' or '<storyId>/page-NN'). */
 const IMAGE_BY_KEY: Record<string, ImageSourcePropType> = {};
-for (const s of ALL_STORIES) {
+for (const s of [...ALL_STORIES, ...ONLINE_STORIES]) {
   if (s.coverImageSource) IMAGE_BY_KEY[s.coverImage] = s.coverImageSource;
   for (const p of s.pages) {
     if (p.imageSource) IMAGE_BY_KEY[p.image] = p.imageSource;
   }
 }
 
+/** A bundled or online story by id. */
 export function getStoryById(id: string): Story | undefined {
-  return ALL_STORIES.find((s) => s.id === id);
+  return ALL_STORIES.find((s) => s.id === id) ?? ONLINE_STORIES.find((s) => s.id === id);
 }
 
 export function getStoryImageSource(key: string): ImageSourcePropType | undefined {

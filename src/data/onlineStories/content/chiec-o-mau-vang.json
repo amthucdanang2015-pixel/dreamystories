@@ -1,0 +1,147 @@
+{
+  "id": "chiec-o-mau-vang",
+  "title": {
+    "en": "The Yellow Umbrella",
+    "vi": "Chiếc Ô Màu Vàng"
+  },
+  "description": {
+    "en": "On a rainy afternoon, Na shares her small yellow umbrella with a duckling, a snail, a frog and a tiny bird, until a rainbow appears.",
+    "vi": "Một chiều mưa, bé Na chia sẻ chiếc ô vàng nhỏ với vịt con, ốc sên, bạn ếch và chú chim nhỏ, cho đến khi cầu vồng hiện ra."
+  },
+  "theme": {
+    "en": "Sharing makes even a small thing big enough for friends.",
+    "vi": "Khi biết chia sẻ, điều nhỏ bé cũng đủ rộng cho bạn bè."
+  },
+  "origin": "Original StoryMoon online story, written in English and Vietnamese.",
+  "category": "Animal Tale",
+  "ageRange": "3–7 years",
+  "duration": "3 min",
+  "estimatedDurationSec": 67,
+  "requiresInternet": true,
+  "artDirection": {
+    "palette": {
+      "sky": "#5D7A8C",
+      "skyLow": "#9DB7BF",
+      "ground": "#5E8A5A",
+      "groundDeep": "#355536",
+      "accent": "#F2C230",
+      "glow": "#FFF4C7",
+      "ink": "#1C2A2E",
+      "paper": "#F3F2E6"
+    }
+  },
+  "pages": [
+    {
+      "sentences": [
+        {
+          "en": "One rainy afternoon, Na walked home under her bright yellow umbrella.",
+          "vi": "Một buổi chiều mưa, bé Na đi bộ về nhà dưới chiếc ô màu vàng tươi.",
+          "audio": {
+            "en": "chiec-o-mau-vang/page-01/sentence-01-en.mp3",
+            "vi": "chiec-o-mau-vang/page-01/sentence-01-vi.mp3"
+          },
+          "audioUrl": {
+            "en": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795350382/chiec-o-mau-vang/page-01/sentence-01-en_jmyze9.mp3",
+            "vi": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795350382/chiec-o-mau-vang/page-01/sentence-01-vi_ydk8yg.mp3"
+          }
+        },
+        {
+          "en": "Pitter-patter, sang the raindrops on top.",
+          "vi": "Lộp độp, lộp độp, những hạt mưa hát vang trên mái ô.",
+          "audio": {
+            "en": "chiec-o-mau-vang/page-01/sentence-02-en.mp3",
+            "vi": "chiec-o-mau-vang/page-01/sentence-02-vi.mp3"
+          },
+          "audioUrl": {
+            "en": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795350381/chiec-o-mau-vang/page-01/sentence-02-en_uuwlzq.mp3",
+            "vi": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795350381/chiec-o-mau-vang/page-01/sentence-02-vi_akmqyt.mp3"
+          }
+        }
+      ]
+    },
+    {
+      "sentences": [
+        {
+          "en": "By the pond, a little duckling was shivering under a lotus leaf.",
+          "vi": "Bên bờ ao, một chú vịt con đang run run dưới chiếc lá sen.",
+          "audio": {
+            "en": "chiec-o-mau-vang/page-02/sentence-01-en.mp3",
+            "vi": "chiec-o-mau-vang/page-02/sentence-01-vi.mp3"
+          },
+          "audioUrl": {
+            "en": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795350379/chiec-o-mau-vang/page-02/sentence-01-en_pglpqr.mp3",
+            "vi": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795350378/chiec-o-mau-vang/page-02/sentence-01-vi_im0k1s.mp3"
+          }
+        },
+        {
+          "en": "“Come in, there is room for you,” said Na.",
+          "vi": "“Vào đây với mình, còn chỗ cho bạn mà,” Na nói.",
+          "audio": {
+            "en": "chiec-o-mau-vang/page-02/sentence-02-en.mp3",
+            "vi": "chiec-o-mau-vang/page-02/sentence-02-vi.mp3"
+          },
+          "audioUrl": {
+            "en": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795350378/chiec-o-mau-vang/page-02/sentence-02-en_kmjmpw.mp3",
+            "vi": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795350378/chiec-o-mau-vang/page-02/sentence-02-vi_yriiqr.mp3"
+          }
+        }
+      ]
+    },
+    {
+      "sentences": [
+        {
+          "en": "Soon a snail, a frog and a tiny bird joined them, too.",
+          "vi": "Chẳng mấy chốc, một chú ốc sên, một bạn ếch và một chú chim nhỏ cũng đến trú mưa cùng.",
+          "audio": {
+            "en": "chiec-o-mau-vang/page-03/sentence-01-en.mp3",
+            "vi": "chiec-o-mau-vang/page-03/sentence-01-vi.mp3"
+          },
+          "audioUrl": {
+            "en": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795350381/chiec-o-mau-vang/page-03/sentence-01-en_x4vqff.mp3",
+            "vi": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795350381/chiec-o-mau-vang/page-03/sentence-01-vi_zfajsf.mp3"
+          }
+        },
+        {
+          "en": "The umbrella was small, but everyone squeezed close and laughed.",
+          "vi": "Chiếc ô nhỏ thôi, nhưng ai cũng nép sát vào nhau và cười vui vẻ.",
+          "audio": {
+            "en": "chiec-o-mau-vang/page-03/sentence-02-en.mp3",
+            "vi": "chiec-o-mau-vang/page-03/sentence-02-vi.mp3"
+          },
+          "audioUrl": {
+            "en": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795350380/chiec-o-mau-vang/page-03/sentence-02-en_fmkjsz.mp3",
+            "vi": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795350380/chiec-o-mau-vang/page-03/sentence-02-vi_ccozub.mp3"
+          }
+        }
+      ]
+    },
+    {
+      "sentences": [
+        {
+          "en": "When the rain stopped, a rainbow stretched across the sky.",
+          "vi": "Khi mưa tạnh, một cầu vồng hiện ra vắt ngang bầu trời.",
+          "audio": {
+            "en": "chiec-o-mau-vang/page-04/sentence-01-en.mp3",
+            "vi": "chiec-o-mau-vang/page-04/sentence-01-vi.mp3"
+          },
+          "audioUrl": {
+            "en": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795350380/chiec-o-mau-vang/page-04/sentence-01-en_ntujnb.mp3",
+            "vi": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795350380/chiec-o-mau-vang/page-04/sentence-01-vi_pilnlh.mp3"
+          }
+        },
+        {
+          "en": "“Sharing makes even a small umbrella big enough,” Na smiled.",
+          "vi": "“Khi biết chia sẻ, chiếc ô nhỏ cũng hóa thật rộng,” Na mỉm cười.",
+          "audio": {
+            "en": "chiec-o-mau-vang/page-04/sentence-02-en.mp3",
+            "vi": "chiec-o-mau-vang/page-04/sentence-02-vi.mp3"
+          },
+          "audioUrl": {
+            "en": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795350379/chiec-o-mau-vang/page-04/sentence-02-en_jnn71l.mp3",
+            "vi": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795350379/chiec-o-mau-vang/page-04/sentence-02-vi_kv9od2.mp3"
+          }
+        }
+      ]
+    }
+  ]
+}

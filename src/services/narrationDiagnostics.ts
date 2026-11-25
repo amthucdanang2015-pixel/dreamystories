@@ -21,7 +21,7 @@ export interface NarrationDiagnostic {
   page: number;
   sentence: number;
   language: 'en' | 'vi';
-  fallback: 'tts' | 'none';
+  fallback: 'tts' | 'none' | 'retry';
   reason?: string;
   progress?: number;
   status?: unknown;
@@ -50,7 +50,8 @@ export function setNarrationLogger(l: { warn: Logger; error: Logger }): void {
 export function formatNarrationDiagnostic(d: NarrationDiagnostic): string {
   const where = `story=${d.storyId} page=${d.page} sentence=${d.sentence} lang=${d.language}`;
   if (d.kind === 'no-recording') return `[narration] no recording → TTS | ${where}`;
-  const action = d.fallback === 'tts' ? 'TTS fallback' : 'no fallback (mostly heard)';
+  const action =
+    d.fallback === 'tts' ? 'TTS fallback' : d.fallback === 'retry' ? 'stopped for retry (online)' : 'no fallback (mostly heard)';
   const heard = d.progress !== undefined ? ` heard=${Math.round(d.progress * 100)}%` : '';
   return `[narration] clip failed → ${action} | ${where} | ${d.reason ?? 'unknown'}${heard}`;
 }

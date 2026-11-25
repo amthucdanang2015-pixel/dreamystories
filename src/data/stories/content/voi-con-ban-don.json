@@ -1,0 +1,164 @@
+{
+  "id": "voi-con-ban-don",
+  "title": {
+    "en": "Bin, the Baby Elephant Who Shared",
+    "vi": "Voi Con Bin Ở Bản Đôn"
+  },
+  "description": {
+    "en": "In a long dry season, baby elephant Bin finds the last cool pool in the forest, and discovers that sharing it is even more fun than splashing alone.",
+    "vi": "Giữa mùa khô dài, voi con Bin tìm thấy vũng nước mát cuối cùng trong rừng, và nhận ra rằng chia sẻ còn vui hơn cả nghịch nước một mình."
+  },
+  "theme": {
+    "en": "Sharing makes happiness bigger.",
+    "vi": "Chia sẻ làm niềm vui lớn thêm."
+  },
+  "origin": "Original StoryMoon story, written in Vietnamese with an English companion text.",
+  "category": "Animal Tale",
+  "ageRange": "3–7 years",
+  "duration": "5 min",
+  "characters": [
+    {
+      "name": "Bin",
+      "look": "small round grey baby elephant with big floppy ears, pinkish ear edges and a curly little trunk"
+    },
+    {
+      "name": "the little deer",
+      "look": "slender fawn-brown barking deer with large dark eyes"
+    },
+    {
+      "name": "the squirrel",
+      "look": "red-bellied squirrel with a fluffy tail"
+    },
+    {
+      "name": "two sunbirds",
+      "look": "tiny olive-backed sunbirds with yellow breasts"
+    }
+  ],
+  "artDirection": {
+    "mood": "Warm, sunny and kind; the hush of a hot afternoon, then the joy of first rain.",
+    "setting": "Dry dipterocarp forest of the Central Highlands near Bản Đôn: tall straight trunks, golden fallen leaves, a shrinking stream with smooth rocks, distant blue hills.",
+    "light": "Honey-gold dry-season sunlight filtering through tall trees, ending with soft grey rain clouds.",
+    "motifs": [
+      "a small cool pool in deep shade",
+      "a trunk spraying a sparkling shower",
+      "golden fallen leaves",
+      "smooth river stones",
+      "first raindrops"
+    ],
+    "avoid": [
+      "dead or suffering animals",
+      "harsh drought cracks with bones",
+      "people riding elephants"
+    ],
+    "palette": {
+      "sky": "#E9C98A",
+      "skyLow": "#F3DDB0",
+      "ground": "#9A7A4A",
+      "groundDeep": "#5A4A2E",
+      "accent": "#7FA7B5",
+      "glow": "#FFF0C8",
+      "ink": "#2A2218",
+      "paper": "#FAF2E2"
+    }
+  },
+  "cover": {
+    "prompt": "a baby elephant spraying a sparkling shower from its trunk over a little deer, a squirrel and two sunbirds beside a shady forest pool"
+  },
+  "pages": [
+    {
+      "prompt": "a baby elephant splashing happily in a clear forest stream among tall highland trees",
+      "sentences": [
+        [
+          "In the forest of Bản Đôn lived a baby elephant named Bin.",
+          "Ở rừng Bản Đôn có một chú voi con tên là Bin."
+        ],
+        [
+          "Bin loved splashing in the cool stream more than anything.",
+          "Bin thích nhất là được nghịch nước dưới con suối mát."
+        ]
+      ]
+    },
+    {
+      "prompt": "a thin, shrinking stream between smooth stones, golden leaves on the ground, one small pool in deep shade",
+      "sentences": [
+        [
+          "But that year the dry season was long, and the stream grew thinner and thinner.",
+          "Nhưng năm ấy mùa khô kéo dài, con suối cứ cạn dần, cạn dần."
+        ],
+        [
+          "Only one small pool was left, deep in the shade of the big trees.",
+          "Chỉ còn lại một vũng nước nhỏ dưới bóng những cây cổ thụ."
+        ]
+      ]
+    },
+    {
+      "prompt": "the baby elephant drinking from the shady pool, ears flapping, looking pleased with himself",
+      "sentences": [
+        [
+          "Bin found it first and drank and drank, happily flapping his ears.",
+          "Bin tìm thấy trước, uống mãi, uống mãi, đôi tai phe phẩy vui sướng."
+        ],
+        [
+          "“This is my pool,” he thought.",
+          "Bin nghĩ: “Vũng nước này là của mình.”"
+        ]
+      ]
+    },
+    {
+      "prompt": "a little deer, a squirrel and two sunbirds peeking out of the bushes at the edge of a steep-banked pool",
+      "sentences": [
+        [
+          "Then a little deer, a squirrel and two sunbirds came out of the bushes.",
+          "Rồi một chú nai nhỏ, một chị sóc và hai chú chim hút mật bước ra từ bụi cây."
+        ],
+        [
+          "They were very thirsty, but the banks were steep and they were too small to reach the water.",
+          "Chúng khát lắm, nhưng bờ vũng dốc quá, mà chúng thì bé, chẳng với tới được."
+        ]
+      ]
+    },
+    {
+      "prompt": "the baby elephant looking thoughtfully at the small animals, then dipping his trunk into the pool",
+      "sentences": [
+        [
+          "Bin looked at their dry little faces and thought for a moment.",
+          "Bin nhìn những gương mặt khô khát ấy và nghĩ một lúc."
+        ],
+        [
+          "Then he dipped his trunk into the pool and filled it to the brim.",
+          "Rồi chú nhúng vòi xuống vũng, hút đầy một vòi nước."
+        ]
+      ]
+    },
+    {
+      "prompt": "the baby elephant spraying a gentle sparkling shower over the deer, squirrel and sunbirds, everyone laughing",
+      "sentences": [
+        [
+          "Whoosh! Bin sprayed a gentle shower over his new friends.",
+          "Phù! Bin phun một cơn mưa nhẹ lên các bạn."
+        ],
+        [
+          "The deer drank, the squirrel giggled, and the sunbirds bathed in the sparkles.",
+          "Nai uống nước, sóc cười khúc khích, chim hút mật tắm trong những giọt nước lấp lánh."
+        ],
+        [
+          "Bin laughed too. Sharing felt even better than splashing alone.",
+          "Bin cũng bật cười. Chia sẻ còn vui hơn cả nghịch nước một mình."
+        ]
+      ]
+    },
+    {
+      "prompt": "soft grey rain clouds over the hills and the first rain falling, the friends dancing, then sleeping side by side under a big tree",
+      "sentences": [
+        [
+          "That evening, clouds rolled over the hills, and the first rain of the season began to fall.",
+          "Chiều hôm ấy, mây kéo về trên những ngọn đồi, cơn mưa đầu mùa bắt đầu rơi."
+        ],
+        [
+          "The friends danced together in the rain, and that night they slept side by side under the big trees.",
+          "Các bạn cùng nhau nhảy múa dưới mưa, rồi đêm ấy cùng ngủ bên nhau dưới tán cây cổ thụ."
+        ]
+      ]
+    }
+  ]
+}

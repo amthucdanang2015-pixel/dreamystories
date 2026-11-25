@@ -1,0 +1,168 @@
+{
+  "id": "hat-bi-cua-be-su",
+  "title": {
+    "en": "Su's Pumpkin Seed",
+    "vi": "Hạt Bí Của Bé Su"
+  },
+  "description": {
+    "en": "Su plants a pumpkin seed with Grandpa and checks it every morning. Nothing happens, until Grandpa explains that seeds grow in the dark first.",
+    "vi": "Su cùng ông gieo một hạt bí và sáng nào cũng ra xem. Mãi chẳng thấy gì, cho đến khi ông bảo rằng hạt giống lớn trong bóng tối trước."
+  },
+  "theme": {
+    "en": "Good things grow with care and a little patience.",
+    "vi": "Điều tốt đẹp lớn lên nhờ sự chăm sóc và một chút kiên nhẫn."
+  },
+  "origin": "Original StoryMoon story, written in Vietnamese with an English companion text.",
+  "category": "Family Tale",
+  "ageRange": "3–7 years",
+  "duration": "5 min",
+  "characters": [
+    {
+      "name": "Su",
+      "look": "boy around five with short spiky black hair, in green shorts and a cream T-shirt, carrying a small tin watering can"
+    },
+    {
+      "name": "Grandpa (Ông)",
+      "look": "slim grandfather with a short white beard, a faded indigo shirt and rolled-up trousers"
+    }
+  ],
+  "artDirection": {
+    "mood": "Fresh, bright and patient; a slow, happy garden story.",
+    "setting": "A northern Vietnamese village garden: a bamboo pumpkin trellis, a clay water jar, a brick well, banana plants and a tiled-roof house.",
+    "light": "Clear spring and early-summer mornings, ending in a warm lamplit family dinner.",
+    "motifs": [
+      "a flat white seed",
+      "two tiny sprout leaves",
+      "a bamboo trellis with curling tendrils",
+      "big yellow pumpkin flowers and bees",
+      "a bowl of pumpkin soup"
+    ],
+    "avoid": [
+      "garden pests or wilting plants",
+      "a tantrum",
+      "gardening tools used dangerously"
+    ],
+    "palette": {
+      "sky": "#CFE6EC",
+      "skyLow": "#F6EBC8",
+      "ground": "#7A9A4E",
+      "groundDeep": "#4A6A32",
+      "accent": "#E3A23B",
+      "glow": "#FFF3C4",
+      "ink": "#23281A",
+      "paper": "#FBF8EC"
+    }
+  },
+  "cover": {
+    "prompt": "a little boy and his grandfather under a bamboo trellis heavy with yellow pumpkin flowers and a round green pumpkin, morning light"
+  },
+  "pages": [
+    {
+      "prompt": "a village garden on a spring morning, a grandfather placing a flat white seed in a little boy's open palm",
+      "sentences": [
+        [
+          "One spring morning, Grandpa gave Su a flat white seed.",
+          "Một sáng mùa xuân, ông đưa cho Su một hạt giống trắng, dẹt."
+        ],
+        [
+          "“This is a pumpkin seed. Let's plant it together.”",
+          "“Đây là hạt bí. Ông cháu mình cùng gieo nhé.”"
+        ]
+      ]
+    },
+    {
+      "prompt": "the boy kneeling to pat the soil over the seed, then watering it from a small tin watering can",
+      "sentences": [
+        [
+          "Su dug a little hole, dropped in the seed and patted the soil gently.",
+          "Su đào một cái hố nhỏ, thả hạt bí vào rồi vỗ nhẹ lớp đất."
+        ],
+        [
+          "Then he gave it a drink from his small watering can.",
+          "Rồi bé tưới cho hạt một chút nước bằng bình tưới bé xinh."
+        ]
+      ]
+    },
+    {
+      "prompt": "the boy crouching over a bare patch of soil, puzzled, grandfather watching from the doorway",
+      "sentences": [
+        [
+          "The next morning, Su ran outside. Nothing!",
+          "Sáng hôm sau, Su chạy ra vườn. Chẳng thấy gì cả!"
+        ],
+        [
+          "The morning after that, still nothing.",
+          "Sáng hôm sau nữa, vẫn chẳng thấy gì."
+        ],
+        [
+          "“Maybe I should dig it up and look,” Su said.",
+          "Su bảo: “Hay cháu đào lên xem thử nhé ông?”"
+        ]
+      ]
+    },
+    {
+      "prompt": "grandfather kneeling beside the boy, a cut-away view of the soil showing the seed growing tiny roots in the dark",
+      "sentences": [
+        [
+          "Grandpa laughed softly. “Seeds grow in the dark first. It is busy making roots.”",
+          "Ông cười hiền: “Hạt giống lớn trong bóng tối trước cháu ạ. Nó đang bận mọc rễ đấy.”"
+        ],
+        [
+          "“All it needs from you is water, sunshine and a little patience.”",
+          "“Cháu chỉ cần cho nó nước, nắng và một chút kiên nhẫn.”"
+        ]
+      ]
+    },
+    {
+      "prompt": "two tiny green sprout leaves peeking out of the soil, the boy jumping with joy",
+      "sentences": [
+        [
+          "So Su watered the soil each morning and sang to it each evening.",
+          "Thế là sáng nào Su cũng tưới nước, chiều nào cũng hát cho hạt nghe."
+        ],
+        [
+          "One day, two tiny green leaves peeked out of the ground.",
+          "Rồi một ngày, hai chiếc lá xanh bé xíu ló lên khỏi mặt đất."
+        ],
+        [
+          "“Ông ơi! It's awake!” Su shouted.",
+          "Su reo lên: “Ông ơi! Hạt bí dậy rồi!”"
+        ]
+      ]
+    },
+    {
+      "prompt": "a pumpkin vine climbing a bamboo trellis with curling tendrils, big yellow flowers, bees, and a round green pumpkin under the leaves",
+      "sentences": [
+        [
+          "The vine climbed up the bamboo trellis, curling and growing every day.",
+          "Dây bí leo lên giàn tre, mỗi ngày một vươn dài, cuộn tròn những tua xoăn."
+        ],
+        [
+          "Big yellow flowers opened, and bees came to visit.",
+          "Những bông hoa vàng to nở rộ, ong bướm kéo nhau về thăm."
+        ],
+        [
+          "Under the leaves, a round green pumpkin grew bigger and bigger.",
+          "Dưới tán lá, một quả bí xanh tròn cứ lớn dần, lớn dần."
+        ]
+      ]
+    },
+    {
+      "prompt": "grandfather and boy carrying the pumpkin together, then the family around a lamplit table with bowls of pumpkin soup",
+      "sentences": [
+        [
+          "At last, Su and Grandpa picked the pumpkin together.",
+          "Cuối cùng, hai ông cháu cùng hái quả bí."
+        ],
+        [
+          "That evening, the whole family shared a warm pumpkin soup.",
+          "Tối hôm ấy, cả nhà quây quần bên bát canh bí nóng hổi."
+        ],
+        [
+          "Su smiled. The best things grow slowly, with a little patience.",
+          "Su mỉm cười. Những điều tốt đẹp lớn lên chậm rãi, nhờ một chút kiên nhẫn."
+        ]
+      ]
+    }
+  ]
+}

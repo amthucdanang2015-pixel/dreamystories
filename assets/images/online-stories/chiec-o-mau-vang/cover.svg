@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="720" viewBox="0 0 360 360">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5D7A8C"/><stop offset="1" stop-color="#A9C2C6"/></linearGradient>
+    <linearGradient id="pond" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6F9BA6"/><stop offset="1" stop-color="#3F6E78"/></linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.45" r="0.5"><stop offset="0" stop-color="#FFF4C7" stop-opacity="0.55"/><stop offset="1" stop-color="#FFF4C7" stop-opacity="0"/></radialGradient>
+    <radialGradient id="vig" cx="0.5" cy="0.5" r="0.75"><stop offset="0.6" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity="0.28"/></radialGradient>
+  </defs>
+  <rect width="360" height="360" fill="url(#sky)"/>
+  <!-- soft rainbow peeking -->
+  <g fill="none" stroke-width="7" opacity="0.32">
+    <path d="M40 200 a140 140 0 0 1 280 0" stroke="#E86A5A"/>
+    <path d="M47 200 a133 133 0 0 1 266 0" stroke="#F2C230"/>
+    <path d="M54 200 a126 126 0 0 1 252 0" stroke="#7FB069"/>
+    <path d="M61 200 a119 119 0 0 1 238 0" stroke="#5B8FC7"/>
+  </g>
+  <!-- distant hills -->
+  <path d="M0 198 q60 -26 120 -6 q60 -22 120 0 q60 -20 120 4 v30 H0 z" fill="#7FA28A"/>
+  <!-- bank + pond -->
+  <path d="M0 214 q90 -12 180 -4 q90 -8 180 2 v148 H0 z" fill="#5E8A5A"/>
+  <ellipse cx="96" cy="300" rx="110" ry="34" fill="url(#pond)"/>
+  <ellipse cx="60" cy="296" rx="22" ry="7" fill="#4F8A4A"/><path d="M60 296 l18 -4" stroke="#3F6E78" stroke-width="2"/>
+  <ellipse cx="120" cy="312" rx="16" ry="5" fill="#4F8A4A"/>
+  <circle cx="62" cy="290" r="4" fill="#F4B6C2"/>
+  <!-- rain -->
+  <g stroke="#E6F0F2" stroke-width="1.6" stroke-linecap="round" opacity="0.75">
+    <line x1="30" y1="40" x2="26" y2="52"/><line x1="70" y1="90" x2="66" y2="102"/><line x1="54" y1="150" x2="50" y2="162"/>
+    <line x1="300" y1="36" x2="296" y2="48"/><line x1="330" y1="110" x2="326" y2="122"/><line x1="290" y1="160" x2="286" y2="172"/>
+    <line x1="110" y1="30" x2="106" y2="42"/><line x1="250" y1="24" x2="246" y2="36"/><line x1="24" y1="230" x2="20" y2="242"/>
+    <line x1="338" y1="226" x2="334" y2="238"/><line x1="314" y1="280" x2="310" y2="292"/><line x1="44" y1="332" x2="40" y2="344"/>
+  </g>
+  <circle cx="180" cy="190" r="120" fill="url(#glow)"/>
+  <!-- umbrella -->
+  <path d="M84 168 q96 -110 192 0 q-16 -10 -32 0 q-16 -10 -32 0 q-16 -10 -32 0 q-16 -10 -32 0 q-16 -10 -32 0 q-16 -10 -32 0 z" fill="#F2C230"/>
+  <path d="M180 74 q-30 40 -32 94 M180 74 q30 40 32 94 M180 74 q-62 34 -96 94 M180 74 q62 34 96 94" stroke="#D9A514" stroke-width="2" fill="none"/>
+  <path d="M180 74 v-12" stroke="#5A4A30" stroke-width="3" stroke-linecap="round"/>
+  <path d="M180 168 v96 q0 12 -10 12" stroke="#5A4A30" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <!-- girl Na -->
+  <path d="M158 278 q4 -56 22 -58 q18 2 22 58 z" fill="#E86A5A"/>
+  <circle cx="180" cy="204" r="17" fill="#F1C9A5"/>
+  <path d="M163 202 q2 -22 17 -22 q16 0 18 22 q-6 -10 -18 -10 q-11 0 -17 10 z" fill="#2E2420"/>
+  <circle cx="174" cy="206" r="1.8" fill="#2E2420"/><circle cx="186" cy="206" r="1.8" fill="#2E2420"/>
+  <path d="M176 212 q4 3 8 0" stroke="#B5523F" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+  <path d="M168 280 v10 M192 280 v10" stroke="#2E2420" stroke-width="4" stroke-linecap="round"/>
+  <!-- duckling -->
+  <ellipse cx="128" cy="270" rx="16" ry="12" fill="#F8D74A"/>
+  <circle cx="138" cy="254" r="9" fill="#F8D74A"/>
+  <path d="M146 254 l8 2 l-8 3 z" fill="#F08A2C"/><circle cx="140" cy="252" r="1.5" fill="#2E2420"/>
+  <path d="M116 266 q-6 -4 -4 -10" stroke="#E8C230" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- frog -->
+  <ellipse cx="232" cy="276" rx="15" ry="10" fill="#7FB069"/>
+  <circle cx="224" cy="264" r="5" fill="#7FB069"/><circle cx="240" cy="264" r="5" fill="#7FB069"/>
+  <circle cx="224" cy="263" r="2" fill="#2E2420"/><circle cx="240" cy="263" r="2" fill="#2E2420"/>
+  <path d="M226 278 q6 4 12 0" stroke="#3F6E3A" stroke-width="1.6" fill="none"/>
+  <!-- snail -->
+  <path d="M248 292 h24 q4 0 6 -6" stroke="#C9B48E" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <circle cx="258" cy="284" r="9" fill="#C77B55"/><path d="M258 284 m-4 0 a4 4 0 1 0 4 -4" stroke="#8C5A3C" stroke-width="1.6" fill="none"/>
+  <!-- tiny bird on handle side -->
+  <ellipse cx="206" cy="232" rx="8" ry="6" fill="#6FA8D6"/><circle cx="212" cy="226" r="4.5" fill="#6FA8D6"/>
+  <path d="M216 226 l4 1 l-4 2 z" fill="#F08A2C"/><circle cx="213" cy="225" r="1" fill="#2E2420"/>
+  <rect width="360" height="360" fill="url(#vig)"/>
+</svg>

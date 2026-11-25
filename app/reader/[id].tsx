@@ -3,7 +3,7 @@ import { View, Text, StyleSheet, FlatList, ScrollView } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import { X, SlidersHorizontal, MoonStar, RotateCcw, Sparkles } from 'lucide-react-native';
+import { X, SlidersHorizontal, MoonStar, RotateCcw, Sparkles, CloudOff } from 'lucide-react-native';
 import { useTranslation } from 'react-i18next';
 import {
   Typography,
@@ -15,7 +15,7 @@ import {
   PremiumColors,
 } from '../../src/constants/theme';
 import { Button, IconButton, MoonMark } from '../../src/components/ui';
-import { ALL_STORIES } from '../../src/data/stories';
+import { getStoryById } from '../../src/data/stories';
 import { usePlaybackStore } from '../../src/store/playbackStore';
 import { usePreferencesStore } from '../../src/store/preferencesStore';
 import { useProgressStore } from '../../src/store/progressStore';
@@ -23,7 +23,7 @@ import { useSubscriptionStore } from '../../src/store/subscriptionStore';
 import { canAccessStory } from '../../src/constants/entitlements';
 import { paywallHref } from '../../src/hooks/usePremiumGate';
 import { usePlaybackKeepAwake } from '../../src/hooks/usePlaybackKeepAwake';
-import { playbackController } from '../../src/services/playbackController';
+import { ONLINE_AUDIO_ERROR, playbackController } from '../../src/services/playbackController';
 import { soundEffectService } from '../../src/services/soundEffectService';
 import { speechService } from '../../src/services/speechService';
 import { narrationAudioService } from '../../src/services/narrationAudioService';
@@ -81,6 +81,8 @@ export default function ReaderScreen() {
 
   const [selectedWord, setSelectedWord] = useState<WordDefinition | null>(null);
   const [sleepTimerEnded, setSleepTimerEnded] = useState(false);
+  /** Online stories only: why narration could not be played (shown with Retry). */
+  const [onlineError, setOnlineError] = useState<'notConfigured' | 'playbackFailed' | null>(null);
 
   const flatListRef = useRef<FlatList>(null);
   const isNarratingRef = useRef(false);
@@ -114,7 +116,7 @@ export default function ReaderScreen() {
 
   // Load story if not already loaded, respecting pageParam if provided
   useEffect(() => {
-    const found = ALL_STORIES.find((s) => s.id === id);
+    const found = id ? getStoryById(id) : undefined;
     if (found && !canAccessStory(found.id, isPremiumUser)) {
       // Premium gate for deep links / direct routes: never open a locked story.
       router.replace(paywallHref('premium_story', found.id));
@@ -202,6 +204,19 @@ export default function ReaderScreen() {
   const startNarration = useCallback(async (opts?: { fromStart?: boolean }) => {
     if (!story || isNarratingRef.current) return;
 
+    // Online story without a usable HOST_ONLINE: say so instead of narrating.
+    // The text stays readable; bundled stories never take this path.
+    if (story.online && !story.online.audioReady) {
+      console.warn(
+        `[online] narration unavailable (${story.online.hostProblem}): add audioUrl entries to the story JSON or set HOST_ONLINE in src/constants/onlineStories.ts`
+      );
+      shouldAutoPlayRef.current = false;
+      setOnlineError('notConfigured');
+      setStatus('paused');
+      return;
+    }
+    setOnlineError(null);
+
     // Capture the position before anything else can move it.
     const resume = opts?.fromStart || pageFinishedRef.current
       ? null
@@ -247,6 +262,7 @@ export default function ReaderScreen() {
         readingMode,
         speed,
         startAt: resume,
+        remoteAudio: !!story.online,
       },
       {
         onSentenceStart: (sentenceIndex, phase) => {
@@ -290,6 +306,8 @@ export default function ReaderScreen() {
         onError: (err) => {
           console.warn('Narration error:', err);
           isNarratingRef.current = false;
+          shouldAutoPlayRef.current = false;
+          if (err.startsWith(ONLINE_AUDIO_ERROR)) setOnlineError('playbackFailed');
           setStatus('paused');
         },
         // A call, alarm, unplugged headphones or the notification's pause
@@ -428,8 +446,13 @@ export default function ReaderScreen() {
       if (!story) return;
       const page = story.pages[currentPageIndex];
       if (!page || !page.sentences[sentenceIndex]) return;
+      if (story.online && !story.online.audioReady) {
+        setOnlineError('notConfigured');
+        return;
+      }
 
       stopNarration();
+      setOnlineError(null);
       // Play afterwards continues the page from this sentence.
       pageFinishedRef.current = false;
       setCurrentSentence(sentenceIndex);
@@ -445,12 +468,16 @@ export default function ReaderScreen() {
           language: phase,
           readingMode: phase === 'vi' ? 'single_vi' : 'single_en',
           speed,
+          remoteAudio: !!story.online,
         },
         {
           onSentenceStart: () => { },
           onSentenceDone: () => { },
           onPageDone: () => setStatus('paused'),
-          onError: () => setStatus('paused'),
+          onError: (err) => {
+            if (err.startsWith(ONLINE_AUDIO_ERROR)) setOnlineError('playbackFailed');
+            setStatus('paused');
+          },
         }
       );
     },
@@ -576,6 +603,30 @@ export default function ReaderScreen() {
           <Text style={[styles.sleepBannerText, { color: t.textSecondary }]}>
             {tr('reader.sleepEnded')}
           </Text>
+        </View>
+      )}
+
+      {onlineError && status !== 'playing' && (
+        <View
+          style={[styles.onlineBanner, { backgroundColor: t.highlightBg, maxWidth: column.maxWidth }]}
+          accessibilityLiveRegion="polite"
+        >
+          <CloudOff size={16} color={t.highlightBar} strokeWidth={2.2} />
+          <Text style={[styles.onlineBannerText, { color: t.textSecondary }]}>
+            {onlineError === 'notConfigured' ? tr('online.notConfigured') : tr('online.playbackFailed')}
+          </Text>
+          {onlineError === 'playbackFailed' ? (
+            <Button
+              label={tr('online.retry')}
+              variant="ghost"
+              textColor={t.text}
+              icon={<RotateCcw size={14} color={t.text} strokeWidth={2.4} />}
+              onPress={() => {
+                setOnlineError(null);
+                startNarration();
+              }}
+            />
+          ) : null}
         </View>
       )}
 
@@ -716,6 +767,19 @@ const styles = StyleSheet.create({
     marginTop: 4,
   },
   sleepBannerText: { fontSize: Typography.xs, fontWeight: '600' },
+  onlineBanner: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    alignSelf: 'center',
+    gap: Spacing.sm,
+    paddingVertical: 4,
+    paddingLeft: 14,
+    paddingRight: 4,
+    borderRadius: BorderRadius.lg,
+    marginTop: 4,
+    marginHorizontal: Spacing.md,
+  },
+  onlineBannerText: { flex: 1, fontSize: Typography.xs, fontWeight: '600', paddingVertical: 6 },
   readerArea: { flex: 1 },
   finishedOverlay: { ...StyleSheet.absoluteFill, zIndex: 100 },
   // Scrolls when the card is taller than the screen (small phones, large text),

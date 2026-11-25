@@ -9,7 +9,7 @@ import {
   Easing,
   Keyboard,
 } from 'react-native';
-import { Search } from 'lucide-react-native';
+import { Cloud, Search } from 'lucide-react-native';
 import { useTranslation } from 'react-i18next';
 import { useRouter } from 'expo-router';
 import { Layout, Spacing, Typography, TouchTarget } from '../../src/constants/theme';
@@ -23,9 +23,10 @@ import {
   IconButton,
   ScreenHeader,
   SearchField,
+  SectionHeader,
   Segmented,
 } from '../../src/components/ui';
-import { ALL_STORIES } from '../../src/data/stories';
+import { ALL_STORIES, ONLINE_STORIES } from '../../src/data/stories';
 import { Story } from '../../src/types/story';
 import { useProgressStore } from '../../src/store/progressStore';
 import { describeProgress, ReadingState } from '../../src/hooks/useStoryProgress';
@@ -33,12 +34,15 @@ import { storyMatchesQuery } from '../../src/utils/storySearch';
 import { storyCategory } from '../../src/i18n/storyMeta';
 import { useResponsiveLayout } from '../../src/hooks/useResponsiveLayout';
 import { gridColumns, gridItemWidth } from '../../src/utils/responsiveLayout';
+import { FREE_STORY_IDS, isFreeStory } from '../../src/constants/entitlements';
 
 type StatusFilter = 'all' | 'reading' | 'finished';
 /** Category filter: a story category from the data, or every category. */
 const ALL_CATEGORIES = null;
 
 const MAX_CONTENT = Layout.maxWidth.browse;
+/** Bundled + online stories: what the Library's filters, counts and search cover. */
+const LIBRARY_STORIES: Story[] = [...ALL_STORIES, ...ONLINE_STORIES];
 
 export default function LibraryScreen() {
   const router = useRouter();
@@ -97,21 +101,30 @@ export default function LibraryScreen() {
   // Filters come from the stories' real categories, in first-seen order.
   const categories = useMemo(() => {
     const counts = new Map<string, number>();
-    for (const s of ALL_STORIES) counts.set(s.category, (counts.get(s.category) ?? 0) + 1);
-    return [[ALL_CATEGORIES, ALL_STORIES.length] as const, ...Array.from(counts.entries())];
+    for (const s of LIBRARY_STORIES) counts.set(s.category, (counts.get(s.category) ?? 0) + 1);
+    return [[ALL_CATEGORIES, LIBRARY_STORIES.length] as const, ...Array.from(counts.entries())];
   }, []);
 
   const stateOf = (s: Story): ReadingState => describeProgress(s, progressMap[s.id] ?? null).state;
-  const finished = ALL_STORIES.filter((s) => stateOf(s) === 'finished').length;
-  const reading = ALL_STORIES.filter((s) => stateOf(s) === 'reading').length;
+  const finished = LIBRARY_STORIES.filter((s) => stateOf(s) === 'finished').length;
+  const reading = LIBRARY_STORIES.filter((s) => stateOf(s) === 'reading').length;
 
   // Search, status and category filters all apply together.
-  const visibleStories = ALL_STORIES.filter(
+  const visibleStories = LIBRARY_STORIES.filter(
     (s) =>
       (category === ALL_CATEGORIES || s.category === category) &&
       (status === 'all' || stateOf(s) === status) &&
       storyMatchesQuery(s, query)
   );
+  // Free stories always come first, in their own section, in the order
+  // FREE_STORY_IDS lists them; Premium stories follow in catalogue order.
+  // Online stories (narration streamed from HOST_ONLINE) have their own section.
+  const bundledVisible = visibleStories.filter((s) => !s.online);
+  const onlineStories = visibleStories.filter((s) => !!s.online);
+  const freeStories = bundledVisible
+    .filter((s) => isFreeStory(s.id))
+    .sort((a, b) => FREE_STORY_IDS.indexOf(a.id) - FREE_STORY_IDS.indexOf(b.id));
+  const premiumStories = bundledVisible.filter((s) => !isFreeStory(s.id));
   const searching = query.trim().length > 0;
   const filtersActive = category !== ALL_CATEGORIES || status !== 'all';
 
@@ -121,7 +134,7 @@ export default function LibraryScreen() {
   const cardW = gridItemWidth(contentW, cols, gap);
 
   const openStory = (story: Story) => router.push(`/story/${story.id}`);
-  const subtitleVars = { count: ALL_STORIES.length, reading, finished };
+  const subtitleVars = { count: LIBRARY_STORIES.length, reading, finished };
   const subtitle =
     reading && finished
       ? t('library.subtitleReadingFinished', subtitleVars)
@@ -230,11 +243,48 @@ export default function LibraryScreen() {
 
       <View style={styles.center}>
         {visibleStories.length > 0 ? (
-          <View style={[styles.grid, { gap, paddingHorizontal: layout.gutter }]}>
-            {visibleStories.map((story) => (
-              <StoryCard key={story.id} story={story} onPress={openStory} width={cardW} />
-            ))}
-          </View>
+          <>
+            {freeStories.length > 0 ? (
+              <View style={styles.section}>
+                <SectionHeader
+                  eyebrow={t('library.freeEyebrow', { count: freeStories.length })}
+                  title={t('library.freeTitle')}
+                />
+                <View style={[styles.grid, { gap, paddingHorizontal: layout.gutter }]}>
+                  {freeStories.map((story) => (
+                    <StoryCard key={story.id} story={story} onPress={openStory} width={cardW} />
+                  ))}
+                </View>
+              </View>
+            ) : null}
+            {onlineStories.length > 0 ? (
+              <View style={styles.section}>
+                <SectionHeader
+                  eyebrow={t('online.sectionEyebrow', { count: onlineStories.length })}
+                  title={t('online.sectionTitle')}
+                />
+                <View style={[styles.onlineNote, { marginHorizontal: layout.gutter }]}>
+                  <Cloud size={14} color={colors.textMuted} strokeWidth={2.2} />
+                  <Text style={styles.onlineNoteText}>{t('online.needsInternet')}</Text>
+                </View>
+                <View style={[styles.grid, { gap, paddingHorizontal: layout.gutter }]}>
+                  {onlineStories.map((story) => (
+                    <StoryCard key={story.id} story={story} onPress={openStory} width={cardW} />
+                  ))}
+                </View>
+              </View>
+            ) : null}
+            {premiumStories.length > 0 ? (
+              <View style={styles.section}>
+                <SectionHeader eyebrow={t('library.premiumEyebrow')} title={t('library.premiumTitle')} />
+                <View style={[styles.grid, { gap, paddingHorizontal: layout.gutter }]}>
+                  {premiumStories.map((story) => (
+                    <StoryCard key={story.id} story={story} onPress={openStory} width={cardW} />
+                  ))}
+                </View>
+              </View>
+            ) : null}
+          </>
         ) : (
           searching ? (
             <EmptyState
@@ -303,6 +353,9 @@ const useStyles = createThemedStyles((t) => ({
   statusRowWide: { maxWidth: 520 },
   filterRow: { gap: Spacing.sm, paddingBottom: Spacing.lg },
   grid: { flexDirection: 'row', flexWrap: 'wrap', rowGap: Spacing.lg },
+  section: { marginBottom: Spacing.xl },
+  onlineNote: { flexDirection: 'row', alignItems: 'flex-start', gap: Spacing.xs, marginBottom: Spacing.md },
+  onlineNoteText: { flex: 1, fontSize: Typography.sm, lineHeight: Typography.sm * 1.4, color: t.colors.textMuted },
   // Same box as ScreenHeader, so opening search never shifts the page.
   searchHeader: {
     paddingTop: Spacing.xs,

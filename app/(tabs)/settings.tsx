@@ -11,7 +11,7 @@ import { useResponsiveLayout } from '../../src/hooks/useResponsiveLayout';
 import { ALL_STORIES } from '../../src/data/stories';
 import { useProgressStore } from '../../src/store/progressStore';
 
-const APP_VERSION = '1.0.2';
+const APP_VERSION = '1.0.4';
 
 export default function SettingsScreen() {
   const { t } = useTranslation();

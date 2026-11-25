@@ -1,6 +1,6 @@
 {
   "schema": "storymoon-asset-manifest/1",
-  "generatedAt": "2026-11-18T10:04:06.198Z",
+  "generatedAt": "2026-11-21T04:39:45.970Z",
   "pathConventions": {
     "cover": "assets/images/stories/<story-id>/cover.png",
     "pageImage": "assets/images/stories/<story-id>/page-NN.png",
@@ -10,7 +10,7 @@
     "source": "VoiceStudio (see assets/audio/narration-log.json)",
     "tool": "VoiceStudio (https://github.com/debpalash/VoiceStudio, AGPL-3.0 app)",
     "endpoint": "http://127.0.0.1:3900/v1/audio/speech",
-    "model": "tts-1",
+    "model": "omnivoice",
     "availableModels": [
       "tts-1",
       "tts-1-hd",
@@ -24,21 +24,21 @@
       "faster-whisper"
     ],
     "voiceEn": "demo0001",
-    "voiceVi": "abf73455",
+    "voiceVi": "746d2063",
     "speed": 0.95,
-    "lastRunAt": "2026-11-18T09:48:39.257Z",
+    "lastRunAt": "2026-11-21T04:11:38.776Z",
     "licenseNote": "Check the per-model licence in VoiceStudio Model Manager. Default k2-fsa/OmniVoice weights are CC-BY-NC (non-commercial)."
   },
   "totals": {
-    "stories": 21,
+    "stories": 27,
     "completeStories": 0,
     "images": {
-      "expected": 185,
+      "expected": 233,
       "present": 0
     },
     "audio": {
-      "expected": 854,
-      "present": 782
+      "expected": 1054,
+      "present": 982
     }
   },
   "orphans": [],
@@ -2567,6 +2567,472 @@
       }
     },
     {
+      "id": "canh-dieu-cua-na",
+      "title": {
+        "en": "Na's Kite and the Evening Wind",
+        "vi": "Cánh Diều Của Bé Na"
+      },
+      "theme": {
+        "en": "When something doesn't work, rest, breathe and try again.",
+        "vi": "Khi chưa thành công, hãy nghỉ một chút, bình tĩnh rồi thử lại."
+      },
+      "origin": "Original StoryMoon story, written in Vietnamese with an English companion text.",
+      "characters": [
+        {
+          "name": "Na",
+          "look": "girl around five with two high pigtails, in a sunflower-yellow dress"
+        },
+        {
+          "name": "Dad (Bố)",
+          "look": "tall young father with short hair, a white short-sleeved shirt and rolled trousers"
+        },
+        {
+          "name": "the kite",
+          "look": "diamond-shaped blue paper kite with a long ribbon tail and a small bamboo flute"
+        }
+      ],
+      "artDirection": {
+        "mood": "Open, breezy and gently hopeful, settling into a peaceful dusk.",
+        "setting": "A long grassy river dyke in the northern countryside: rice fields on one side, a wide river on the other, a water buffalo walking home, a bamboo grove.",
+        "light": "Late-afternoon gold turning into a pink and lavender sunset, then the first evening star.",
+        "motifs": [
+          "a blue diamond kite with a ribbon tail",
+          "a bamboo kite flute",
+          "swaying rice",
+          "a water buffalo on the dyke",
+          "pink evening clouds"
+        ],
+        "avoid": [
+          "power lines",
+          "falling or injured children",
+          "stormy weather"
+        ],
+        "palette": {
+          "sky": "#E79A7A",
+          "skyLow": "#F6CF9A",
+          "ground": "#6E8A4A",
+          "groundDeep": "#3E5532",
+          "accent": "#3E7CB1",
+          "glow": "#FFE2A8",
+          "ink": "#2A1E22",
+          "paper": "#FCF1E6"
+        }
+      },
+      "coverPrompt": "a little girl and her father on a grassy dyke at sunset, a blue diamond kite soaring among pink clouds above rice fields and a river",
+      "coverFullPrompt": "Premium hand-painted picture-book illustration: gouache and soft watercolour textures on warm paper, rounded friendly shapes, gentle rim light, subtle paper grain and a soft vignette. Calm, comforting, never frightening. Respectful, accurate Vietnamese settings and dress. Keep each character identical on every page (see the character sheet). No text, letters, logos, signatures or watermarks. Story identity — mood: Open, breezy and gently hopeful, settling into a peaceful dusk. Setting: A long grassy river dyke in the northern countryside: rice fields on one side, a wide river on the other, a water buffalo walking home, a bamboo grove. Light: Late-afternoon gold turning into a pink and lavender sunset, then the first evening star. Signature motifs: a blue diamond kite with a ribbon tail, a bamboo kite flute, swaying rice, a water buffalo on the dyke, pink evening clouds. Palette: #E79A7A, #F6CF9A, #6E8A4A, #3E5532, #3E7CB1, #FFE2A8, #2A1E22, #FCF1E6. Avoid: power lines, falling or injured children, stormy weather. Characters: Na — girl around five with two high pigtails, in a sunflower-yellow dress; Dad (Bố) — tall young father with short hair, a white short-sleeved shirt and rolled trousers; the kite — diamond-shaped blue paper kite with a long ribbon tail and a small bamboo flute. Scene: a little girl and her father on a grassy dyke at sunset, a blue diamond kite soaring among pink clouds above rice fields and a river.",
+      "cover": {
+        "path": "assets/images/stories/canh-dieu-cua-na/cover.png",
+        "exists": false
+      },
+      "pages": [
+        {
+          "id": "page-01",
+          "prompt": "a long green dyke on a summer evening, children with kites, a little girl holding a new blue kite next to her father",
+          "image": {
+            "path": "assets/images/stories/canh-dieu-cua-na/page-01.png",
+            "exists": false
+          },
+          "sentences": [
+            {
+              "id": "p01-s01",
+              "en": "On summer evenings, children flew kites on the long green dyke.",
+              "vi": "Những chiều hè, bọn trẻ thả diều trên con đê dài xanh cỏ.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/canh-dieu-cua-na/page-01/sentence-01-en.mp3",
+                  "exists": true,
+                  "bytes": 63020,
+                  "durationSec": 3.94
+                },
+                "vi": {
+                  "path": "assets/audio/canh-dieu-cua-na/page-01/sentence-01-vi.mp3",
+                  "exists": true,
+                  "bytes": 76460,
+                  "durationSec": 4.78
+                }
+              }
+            },
+            {
+              "id": "p01-s02",
+              "en": "Na had a new kite that she and Dad had made from bamboo and paper.",
+              "vi": "Na có một cánh diều mới, bố con Na đã cùng làm từ tre và giấy.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/canh-dieu-cua-na/page-01/sentence-02-en.mp3",
+                  "exists": true,
+                  "bytes": 65708,
+                  "durationSec": 4.1
+                },
+                "vi": {
+                  "path": "assets/audio/canh-dieu-cua-na/page-01/sentence-02-vi.mp3",
+                  "exists": true,
+                  "bytes": 80684,
+                  "durationSec": 5.04
+                }
+              }
+            }
+          ],
+          "fullPrompt": "Premium hand-painted picture-book illustration: gouache and soft watercolour textures on warm paper, rounded friendly shapes, gentle rim light, subtle paper grain and a soft vignette. Calm, comforting, never frightening. Respectful, accurate Vietnamese settings and dress. Keep each character identical on every page (see the character sheet). No text, letters, logos, signatures or watermarks. Story identity — mood: Open, breezy and gently hopeful, settling into a peaceful dusk. Setting: A long grassy river dyke in the northern countryside: rice fields on one side, a wide river on the other, a water buffalo walking home, a bamboo grove. Light: Late-afternoon gold turning into a pink and lavender sunset, then the first evening star. Signature motifs: a blue diamond kite with a ribbon tail, a bamboo kite flute, swaying rice, a water buffalo on the dyke, pink evening clouds. Palette: #E79A7A, #F6CF9A, #6E8A4A, #3E5532, #3E7CB1, #FFE2A8, #2A1E22, #FCF1E6. Avoid: power lines, falling or injured children, stormy weather. Characters: Na — girl around five with two high pigtails, in a sunflower-yellow dress; Dad (Bố) — tall young father with short hair, a white short-sleeved shirt and rolled trousers; the kite — diamond-shaped blue paper kite with a long ribbon tail and a small bamboo flute. Scene: a long green dyke on a summer evening, children with kites, a little girl holding a new blue kite next to her father."
+        },
+        {
+          "id": "page-02",
+          "prompt": "the girl running along the dyke with the kite string, the kite wobbling and tumbling into the grass",
+          "image": {
+            "path": "assets/images/stories/canh-dieu-cua-na/page-02.png",
+            "exists": false
+          },
+          "sentences": [
+            {
+              "id": "p02-s01",
+              "en": "She held the string tight and ran as fast as she could.",
+              "vi": "Na nắm chặt dây diều, chạy thật nhanh.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/canh-dieu-cua-na/page-02/sentence-01-en.mp3",
+                  "exists": true,
+                  "bytes": 56108,
+                  "durationSec": 3.5
+                },
+                "vi": {
+                  "path": "assets/audio/canh-dieu-cua-na/page-02/sentence-01-vi.mp3",
+                  "exists": true,
+                  "bytes": 52652,
+                  "durationSec": 3.29
+                }
+              }
+            },
+            {
+              "id": "p02-s02",
+              "en": "But the kite wobbled, flipped and landed, plop, in the grass.",
+              "vi": "Nhưng cánh diều chao đảo, lộn một vòng rồi rơi “bộp” xuống bãi cỏ.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/canh-dieu-cua-na/page-02/sentence-02-en.mp3",
+                  "exists": true,
+                  "bytes": 59564,
+                  "durationSec": 3.72
+                },
+                "vi": {
+                  "path": "assets/audio/canh-dieu-cua-na/page-02/sentence-02-vi.mp3",
+                  "exists": true,
+                  "bytes": 87596,
+                  "durationSec": 5.47
+                }
+              }
+            }
+          ],
+          "fullPrompt": "Premium hand-painted picture-book illustration: gouache and soft watercolour textures on warm paper, rounded friendly shapes, gentle rim light, subtle paper grain and a soft vignette. Calm, comforting, never frightening. Respectful, accurate Vietnamese settings and dress. Keep each character identical on every page (see the character sheet). No text, letters, logos, signatures or watermarks. Story identity — mood: Open, breezy and gently hopeful, settling into a peaceful dusk. Setting: A long grassy river dyke in the northern countryside: rice fields on one side, a wide river on the other, a water buffalo walking home, a bamboo grove. Light: Late-afternoon gold turning into a pink and lavender sunset, then the first evening star. Signature motifs: a blue diamond kite with a ribbon tail, a bamboo kite flute, swaying rice, a water buffalo on the dyke, pink evening clouds. Palette: #E79A7A, #F6CF9A, #6E8A4A, #3E5532, #3E7CB1, #FFE2A8, #2A1E22, #FCF1E6. Avoid: power lines, falling or injured children, stormy weather. Characters: Na — girl around five with two high pigtails, in a sunflower-yellow dress; Dad (Bố) — tall young father with short hair, a white short-sleeved shirt and rolled trousers; the kite — diamond-shaped blue paper kite with a long ribbon tail and a small bamboo flute. Scene: the girl running along the dyke with the kite string, the kite wobbling and tumbling into the grass."
+        },
+        {
+          "id": "page-03",
+          "prompt": "the girl sitting on the dyke with her chin in her hands, the blue kite lying in the grass beside her",
+          "image": {
+            "path": "assets/images/stories/canh-dieu-cua-na/page-03.png",
+            "exists": false
+          },
+          "sentences": [
+            {
+              "id": "p03-s01",
+              "en": "Na tried again, and again it fell.",
+              "vi": "Na thử lần nữa, diều lại rơi.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/canh-dieu-cua-na/page-03/sentence-01-en.mp3",
+                  "exists": true,
+                  "bytes": 34604,
+                  "durationSec": 2.16
+                },
+                "vi": {
+                  "path": "assets/audio/canh-dieu-cua-na/page-03/sentence-01-vi.mp3",
+                  "exists": true,
+                  "bytes": 39212,
+                  "durationSec": 2.45
+                }
+              }
+            },
+            {
+              "id": "p03-s02",
+              "en": "“My kite doesn't want to fly,” she sighed, sitting down on the dyke.",
+              "vi": "Na ngồi phịch xuống đê, thở dài: “Diều của con không chịu bay.”",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/canh-dieu-cua-na/page-03/sentence-02-en.mp3",
+                  "exists": true,
+                  "bytes": 66476,
+                  "durationSec": 4.15
+                },
+                "vi": {
+                  "path": "assets/audio/canh-dieu-cua-na/page-03/sentence-02-vi.mp3",
+                  "exists": true,
+                  "bytes": 84140,
+                  "durationSec": 5.26
+                }
+              }
+            }
+          ],
+          "fullPrompt": "Premium hand-painted picture-book illustration: gouache and soft watercolour textures on warm paper, rounded friendly shapes, gentle rim light, subtle paper grain and a soft vignette. Calm, comforting, never frightening. Respectful, accurate Vietnamese settings and dress. Keep each character identical on every page (see the character sheet). No text, letters, logos, signatures or watermarks. Story identity — mood: Open, breezy and gently hopeful, settling into a peaceful dusk. Setting: A long grassy river dyke in the northern countryside: rice fields on one side, a wide river on the other, a water buffalo walking home, a bamboo grove. Light: Late-afternoon gold turning into a pink and lavender sunset, then the first evening star. Signature motifs: a blue diamond kite with a ribbon tail, a bamboo kite flute, swaying rice, a water buffalo on the dyke, pink evening clouds. Palette: #E79A7A, #F6CF9A, #6E8A4A, #3E5532, #3E7CB1, #FFE2A8, #2A1E22, #FCF1E6. Avoid: power lines, falling or injured children, stormy weather. Characters: Na — girl around five with two high pigtails, in a sunflower-yellow dress; Dad (Bố) — tall young father with short hair, a white short-sleeved shirt and rolled trousers; the kite — diamond-shaped blue paper kite with a long ribbon tail and a small bamboo flute. Scene: the girl sitting on the dyke with her chin in her hands, the blue kite lying in the grass beside her."
+        },
+        {
+          "id": "page-04",
+          "prompt": "father sitting beside the girl on the dyke, pointing to the sky, both listening",
+          "image": {
+            "path": "assets/images/stories/canh-dieu-cua-na/page-04.png",
+            "exists": false
+          },
+          "sentences": [
+            {
+              "id": "p04-s01",
+              "en": "Dad sat beside her. “Kites need the wind, and the wind likes to take its time.”",
+              "vi": "Bố ngồi xuống bên Na: “Diều cần có gió, mà gió thì thong thả lắm con ạ.”",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/canh-dieu-cua-na/page-04/sentence-01-en.mp3",
+                  "exists": true,
+                  "bytes": 76844,
+                  "durationSec": 4.8
+                },
+                "vi": {
+                  "path": "assets/audio/canh-dieu-cua-na/page-04/sentence-01-vi.mp3",
+                  "exists": true,
+                  "bytes": 94124,
+                  "durationSec": 5.88
+                }
+              }
+            },
+            {
+              "id": "p04-s02",
+              "en": "“Let's wait and listen for it together.”",
+              "vi": "“Mình cùng ngồi đợi và lắng nghe gió nhé.”",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/canh-dieu-cua-na/page-04/sentence-02-en.mp3",
+                  "exists": true,
+                  "bytes": 39980,
+                  "durationSec": 2.5
+                },
+                "vi": {
+                  "path": "assets/audio/canh-dieu-cua-na/page-04/sentence-02-vi.mp3",
+                  "exists": true,
+                  "bytes": 56108,
+                  "durationSec": 3.5
+                }
+              }
+            }
+          ],
+          "fullPrompt": "Premium hand-painted picture-book illustration: gouache and soft watercolour textures on warm paper, rounded friendly shapes, gentle rim light, subtle paper grain and a soft vignette. Calm, comforting, never frightening. Respectful, accurate Vietnamese settings and dress. Keep each character identical on every page (see the character sheet). No text, letters, logos, signatures or watermarks. Story identity — mood: Open, breezy and gently hopeful, settling into a peaceful dusk. Setting: A long grassy river dyke in the northern countryside: rice fields on one side, a wide river on the other, a water buffalo walking home, a bamboo grove. Light: Late-afternoon gold turning into a pink and lavender sunset, then the first evening star. Signature motifs: a blue diamond kite with a ribbon tail, a bamboo kite flute, swaying rice, a water buffalo on the dyke, pink evening clouds. Palette: #E79A7A, #F6CF9A, #6E8A4A, #3E5532, #3E7CB1, #FFE2A8, #2A1E22, #FCF1E6. Avoid: power lines, falling or injured children, stormy weather. Characters: Na — girl around five with two high pigtails, in a sunflower-yellow dress; Dad (Bố) — tall young father with short hair, a white short-sleeved shirt and rolled trousers; the kite — diamond-shaped blue paper kite with a long ribbon tail and a small bamboo flute. Scene: father sitting beside the girl on the dyke, pointing to the sky, both listening."
+        },
+        {
+          "id": "page-05",
+          "prompt": "a water buffalo walking home along the dyke, the river turning gold, rice stalks swaying, the girl's pigtails fluttering",
+          "image": {
+            "path": "assets/images/stories/canh-dieu-cua-na/page-05.png",
+            "exists": false
+          },
+          "sentences": [
+            {
+              "id": "p05-s01",
+              "en": "They watched the buffalo walking home and the river turning gold.",
+              "vi": "Hai bố con ngắm chú trâu thong thả về nhà, dòng sông nhuộm ánh vàng.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/canh-dieu-cua-na/page-05/sentence-01-en.mp3",
+                  "exists": true,
+                  "bytes": 67628,
+                  "durationSec": 4.22
+                },
+                "vi": {
+                  "path": "assets/audio/canh-dieu-cua-na/page-05/sentence-01-vi.mp3",
+                  "exists": true,
+                  "bytes": 93356,
+                  "durationSec": 5.83
+                }
+              }
+            },
+            {
+              "id": "p05-s02",
+              "en": "Then the rice began to sway, and Na's pigtails fluttered.",
+              "vi": "Rồi những ngọn lúa bắt đầu đung đưa, tóc Na bay bay.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/canh-dieu-cua-na/page-05/sentence-02-en.mp3",
+                  "exists": true,
+                  "bytes": 59180,
+                  "durationSec": 3.7
+                },
+                "vi": {
+                  "path": "assets/audio/canh-dieu-cua-na/page-05/sentence-02-vi.mp3",
+                  "exists": true,
+                  "bytes": 68396,
+                  "durationSec": 4.27
+                }
+              }
+            },
+            {
+              "id": "p05-s03",
+              "en": "“Bố ơi, the wind is here!”",
+              "vi": "“Bố ơi, gió về rồi!”",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/canh-dieu-cua-na/page-05/sentence-03-en.mp3",
+                  "exists": true,
+                  "bytes": 31532,
+                  "durationSec": 1.97
+                },
+                "vi": {
+                  "path": "assets/audio/canh-dieu-cua-na/page-05/sentence-03-vi.mp3",
+                  "exists": true,
+                  "bytes": 31148,
+                  "durationSec": 1.94
+                }
+              }
+            }
+          ],
+          "fullPrompt": "Premium hand-painted picture-book illustration: gouache and soft watercolour textures on warm paper, rounded friendly shapes, gentle rim light, subtle paper grain and a soft vignette. Calm, comforting, never frightening. Respectful, accurate Vietnamese settings and dress. Keep each character identical on every page (see the character sheet). No text, letters, logos, signatures or watermarks. Story identity — mood: Open, breezy and gently hopeful, settling into a peaceful dusk. Setting: A long grassy river dyke in the northern countryside: rice fields on one side, a wide river on the other, a water buffalo walking home, a bamboo grove. Light: Late-afternoon gold turning into a pink and lavender sunset, then the first evening star. Signature motifs: a blue diamond kite with a ribbon tail, a bamboo kite flute, swaying rice, a water buffalo on the dyke, pink evening clouds. Palette: #E79A7A, #F6CF9A, #6E8A4A, #3E5532, #3E7CB1, #FFE2A8, #2A1E22, #FCF1E6. Avoid: power lines, falling or injured children, stormy weather. Characters: Na — girl around five with two high pigtails, in a sunflower-yellow dress; Dad (Bố) — tall young father with short hair, a white short-sleeved shirt and rolled trousers; the kite — diamond-shaped blue paper kite with a long ribbon tail and a small bamboo flute. Scene: a water buffalo walking home along the dyke, the river turning gold, rice stalks swaying, the girl's pigtails fluttering."
+        },
+        {
+          "id": "page-06",
+          "prompt": "the blue kite soaring high among pink evening clouds, the girl letting out the string, father cheering",
+          "image": {
+            "path": "assets/images/stories/canh-dieu-cua-na/page-06.png",
+            "exists": false
+          },
+          "sentences": [
+            {
+              "id": "p06-s01",
+              "en": "Na let out the string little by little, and up went the kite.",
+              "vi": "Na thả dây từ từ, từng chút một, và cánh diều vút lên cao.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/canh-dieu-cua-na/page-06/sentence-01-en.mp3",
+                  "exists": true,
+                  "bytes": 62636,
+                  "durationSec": 3.91
+                },
+                "vi": {
+                  "path": "assets/audio/canh-dieu-cua-na/page-06/sentence-01-vi.mp3",
+                  "exists": true,
+                  "bytes": 77612,
+                  "durationSec": 4.85
+                }
+              }
+            },
+            {
+              "id": "p06-s02",
+              "en": "Higher and higher it went, until it danced among the pink evening clouds.",
+              "vi": "Cao mãi, cao mãi, cho đến khi nó nhảy múa giữa những đám mây hồng.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/canh-dieu-cua-na/page-06/sentence-02-en.mp3",
+                  "exists": true,
+                  "bytes": 74156,
+                  "durationSec": 4.63
+                },
+                "vi": {
+                  "path": "assets/audio/canh-dieu-cua-na/page-06/sentence-02-vi.mp3",
+                  "exists": true,
+                  "bytes": 87596,
+                  "durationSec": 5.47
+                }
+              }
+            },
+            {
+              "id": "p06-s03",
+              "en": "Its little bamboo flute sang “vi vu, vi vu” in the wind.",
+              "vi": "Chiếc sáo tre nhỏ trên diều cất tiếng “vi vu, vi vu” trong gió.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/canh-dieu-cua-na/page-06/sentence-03-en.mp3",
+                  "exists": true,
+                  "bytes": 55340,
+                  "durationSec": 3.46
+                },
+                "vi": {
+                  "path": "assets/audio/canh-dieu-cua-na/page-06/sentence-03-vi.mp3",
+                  "exists": true,
+                  "bytes": 82604,
+                  "durationSec": 5.16
+                }
+              }
+            }
+          ],
+          "fullPrompt": "Premium hand-painted picture-book illustration: gouache and soft watercolour textures on warm paper, rounded friendly shapes, gentle rim light, subtle paper grain and a soft vignette. Calm, comforting, never frightening. Respectful, accurate Vietnamese settings and dress. Keep each character identical on every page (see the character sheet). No text, letters, logos, signatures or watermarks. Story identity — mood: Open, breezy and gently hopeful, settling into a peaceful dusk. Setting: A long grassy river dyke in the northern countryside: rice fields on one side, a wide river on the other, a water buffalo walking home, a bamboo grove. Light: Late-afternoon gold turning into a pink and lavender sunset, then the first evening star. Signature motifs: a blue diamond kite with a ribbon tail, a bamboo kite flute, swaying rice, a water buffalo on the dyke, pink evening clouds. Palette: #E79A7A, #F6CF9A, #6E8A4A, #3E5532, #3E7CB1, #FFE2A8, #2A1E22, #FCF1E6. Avoid: power lines, falling or injured children, stormy weather. Characters: Na — girl around five with two high pigtails, in a sunflower-yellow dress; Dad (Bố) — tall young father with short hair, a white short-sleeved shirt and rolled trousers; the kite — diamond-shaped blue paper kite with a long ribbon tail and a small bamboo flute. Scene: the blue kite soaring high among pink evening clouds, the girl letting out the string, father cheering."
+        },
+        {
+          "id": "page-07",
+          "prompt": "lavender dusk with the first star, father and girl winding the kite string, walking home along the dyke",
+          "image": {
+            "path": "assets/images/stories/canh-dieu-cua-na/page-07.png",
+            "exists": false
+          },
+          "sentences": [
+            {
+              "id": "p07-s01",
+              "en": "When the first star appeared, Na and Dad brought the kite gently down.",
+              "vi": "Khi ngôi sao đầu tiên hiện lên, hai bố con nhẹ nhàng thu diều về.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/canh-dieu-cua-na/page-07/sentence-01-en.mp3",
+                  "exists": true,
+                  "bytes": 73388,
+                  "durationSec": 4.58
+                },
+                "vi": {
+                  "path": "assets/audio/canh-dieu-cua-na/page-07/sentence-01-vi.mp3",
+                  "exists": true,
+                  "bytes": 86828,
+                  "durationSec": 5.42
+                }
+              }
+            },
+            {
+              "id": "p07-s02",
+              "en": "“Good night, sky,” Na whispered. “I'll fly again tomorrow.”",
+              "vi": "Na thì thầm: “Chúc bầu trời ngủ ngon. Mai con lại bay nhé.”",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/canh-dieu-cua-na/page-07/sentence-02-en.mp3",
+                  "exists": true,
+                  "bytes": 57260,
+                  "durationSec": 3.58
+                },
+                "vi": {
+                  "path": "assets/audio/canh-dieu-cua-na/page-07/sentence-02-vi.mp3",
+                  "exists": true,
+                  "bytes": 76844,
+                  "durationSec": 4.8
+                }
+              }
+            },
+            {
+              "id": "p07-s03",
+              "en": "And that night, she dreamed she was soaring with the kites.",
+              "vi": "Đêm ấy, Na mơ thấy mình bay lượn cùng những cánh diều.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/canh-dieu-cua-na/page-07/sentence-03-en.mp3",
+                  "exists": true,
+                  "bytes": 60332,
+                  "durationSec": 3.77
+                },
+                "vi": {
+                  "path": "assets/audio/canh-dieu-cua-na/page-07/sentence-03-vi.mp3",
+                  "exists": true,
+                  "bytes": 73004,
+                  "durationSec": 4.56
+                }
+              }
+            }
+          ],
+          "fullPrompt": "Premium hand-painted picture-book illustration: gouache and soft watercolour textures on warm paper, rounded friendly shapes, gentle rim light, subtle paper grain and a soft vignette. Calm, comforting, never frightening. Respectful, accurate Vietnamese settings and dress. Keep each character identical on every page (see the character sheet). No text, letters, logos, signatures or watermarks. Story identity — mood: Open, breezy and gently hopeful, settling into a peaceful dusk. Setting: A long grassy river dyke in the northern countryside: rice fields on one side, a wide river on the other, a water buffalo walking home, a bamboo grove. Light: Late-afternoon gold turning into a pink and lavender sunset, then the first evening star. Signature motifs: a blue diamond kite with a ribbon tail, a bamboo kite flute, swaying rice, a water buffalo on the dyke, pink evening clouds. Palette: #E79A7A, #F6CF9A, #6E8A4A, #3E5532, #3E7CB1, #FFE2A8, #2A1E22, #FCF1E6. Avoid: power lines, falling or injured children, stormy weather. Characters: Na — girl around five with two high pigtails, in a sunflower-yellow dress; Dad (Bố) — tall young father with short hair, a white short-sleeved shirt and rolled trousers; the kite — diamond-shaped blue paper kite with a long ribbon tail and a small bamboo flute. Scene: lavender dusk with the first star, father and girl winding the kite string, walking home along the dyke."
+        }
+      ],
+      "status": {
+        "images": "0/8",
+        "audio": "34/34",
+        "complete": false
+      }
+    },
+    {
       "id": "cay-khe",
       "title": {
         "en": "The Star Fruit Tree",
@@ -4022,6 +4488,472 @@
       }
     },
     {
+      "id": "den-ong-sao-cua-ba",
+      "title": {
+        "en": "Grandma's Star Lantern",
+        "vi": "Chiếc Đèn Ông Sao Của Bà"
+      },
+      "theme": {
+        "en": "Things made with love shine brightest, especially when shared.",
+        "vi": "Những gì làm bằng cả tấm lòng sẽ sáng nhất, nhất là khi được sẻ chia."
+      },
+      "origin": "Original StoryMoon story, written in Vietnamese with an English companion text.",
+      "characters": [
+        {
+          "name": "Mai",
+          "look": "girl around six with a short black bob and a fringe, in a coral-red áo bà ba"
+        },
+        {
+          "name": "Grandma (Bà)",
+          "look": "kind grandmother with grey hair in a low bun, glasses, a plum-coloured áo dài and a jade bracelet"
+        },
+        {
+          "name": "the little boy",
+          "look": "boy around four with a round face, in a pale-blue shirt, carrying a carp lantern"
+        }
+      ],
+      "artDirection": {
+        "mood": "Warm, glowing and festive, yet gentle; a family evening by the river.",
+        "setting": "An old riverside town in central Vietnam: yellow-walled shophouses with tiled roofs, a wooden courtyard table, the river with floating paper lanterns.",
+        "light": "Golden afternoon in the courtyard, then a full-moon night lit by red and gold lanterns.",
+        "motifs": [
+          "a five-pointed star lantern with one crooked point",
+          "bamboo sticks and red cellophane",
+          "mooncakes",
+          "floating flower lanterns",
+          "a carp lantern"
+        ],
+        "avoid": [
+          "crowded chaotic streets",
+          "open flames near faces",
+          "neon colours"
+        ],
+        "palette": {
+          "sky": "#2A1830",
+          "skyLow": "#6B2E3A",
+          "ground": "#5A3A2A",
+          "groundDeep": "#2C1C18",
+          "accent": "#D9483B",
+          "glow": "#FFD58A",
+          "ink": "#160C12",
+          "paper": "#F8ECE0"
+        }
+      },
+      "coverPrompt": "a girl holding a glowing red star lantern with one crooked point, her grandmother beside her, lanterns floating on the river under a full moon",
+      "coverFullPrompt": "Premium hand-painted picture-book illustration: gouache and soft watercolour textures on warm paper, rounded friendly shapes, gentle rim light, subtle paper grain and a soft vignette. Calm, comforting, never frightening. Respectful, accurate Vietnamese settings and dress. Keep each character identical on every page (see the character sheet). No text, letters, logos, signatures or watermarks. Story identity — mood: Warm, glowing and festive, yet gentle; a family evening by the river. Setting: An old riverside town in central Vietnam: yellow-walled shophouses with tiled roofs, a wooden courtyard table, the river with floating paper lanterns. Light: Golden afternoon in the courtyard, then a full-moon night lit by red and gold lanterns. Signature motifs: a five-pointed star lantern with one crooked point, bamboo sticks and red cellophane, mooncakes, floating flower lanterns, a carp lantern. Palette: #2A1830, #6B2E3A, #5A3A2A, #2C1C18, #D9483B, #FFD58A, #160C12, #F8ECE0. Avoid: crowded chaotic streets, open flames near faces, neon colours. Characters: Mai — girl around six with a short black bob and a fringe, in a coral-red áo bà ba; Grandma (Bà) — kind grandmother with grey hair in a low bun, glasses, a plum-coloured áo dài and a jade bracelet; the little boy — boy around four with a round face, in a pale-blue shirt, carrying a carp lantern. Scene: a girl holding a glowing red star lantern with one crooked point, her grandmother beside her, lanterns floating on the river under a full moon.",
+      "cover": {
+        "path": "assets/images/stories/den-ong-sao-cua-ba/cover.png",
+        "exists": false
+      },
+      "pages": [
+        {
+          "id": "page-01",
+          "prompt": "an old-town courtyard in golden afternoon light, a girl running to her grandmother, mooncakes on a tray",
+          "image": {
+            "path": "assets/images/stories/den-ong-sao-cua-ba/page-01.png",
+            "exists": false
+          },
+          "sentences": [
+            {
+              "id": "p01-s01",
+              "en": "The Mid-Autumn Festival was coming, and the old town smelled of mooncakes.",
+              "vi": "Tết Trung thu sắp đến, phố cổ thơm mùi bánh nướng.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/den-ong-sao-cua-ba/page-01/sentence-01-en.mp3",
+                  "exists": true,
+                  "bytes": 78380,
+                  "durationSec": 4.9
+                },
+                "vi": {
+                  "path": "assets/audio/den-ong-sao-cua-ba/page-01/sentence-01-vi.mp3",
+                  "exists": true,
+                  "bytes": 68012,
+                  "durationSec": 4.25
+                }
+              }
+            },
+            {
+              "id": "p01-s02",
+              "en": "Mai ran to Grandma. “Bà ơi, can we make a star lantern?”",
+              "vi": "Mai chạy đến bên bà: “Bà ơi, mình làm đèn ông sao nhé?”",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/den-ong-sao-cua-ba/page-01/sentence-02-en.mp3",
+                  "exists": true,
+                  "bytes": 54956,
+                  "durationSec": 3.43
+                },
+                "vi": {
+                  "path": "assets/audio/den-ong-sao-cua-ba/page-01/sentence-02-vi.mp3",
+                  "exists": true,
+                  "bytes": 70316,
+                  "durationSec": 4.39
+                }
+              }
+            }
+          ],
+          "fullPrompt": "Premium hand-painted picture-book illustration: gouache and soft watercolour textures on warm paper, rounded friendly shapes, gentle rim light, subtle paper grain and a soft vignette. Calm, comforting, never frightening. Respectful, accurate Vietnamese settings and dress. Keep each character identical on every page (see the character sheet). No text, letters, logos, signatures or watermarks. Story identity — mood: Warm, glowing and festive, yet gentle; a family evening by the river. Setting: An old riverside town in central Vietnam: yellow-walled shophouses with tiled roofs, a wooden courtyard table, the river with floating paper lanterns. Light: Golden afternoon in the courtyard, then a full-moon night lit by red and gold lanterns. Signature motifs: a five-pointed star lantern with one crooked point, bamboo sticks and red cellophane, mooncakes, floating flower lanterns, a carp lantern. Palette: #2A1830, #6B2E3A, #5A3A2A, #2C1C18, #D9483B, #FFD58A, #160C12, #F8ECE0. Avoid: crowded chaotic streets, open flames near faces, neon colours. Characters: Mai — girl around six with a short black bob and a fringe, in a coral-red áo bà ba; Grandma (Bà) — kind grandmother with grey hair in a low bun, glasses, a plum-coloured áo dài and a jade bracelet; the little boy — boy around four with a round face, in a pale-blue shirt, carrying a carp lantern. Scene: an old-town courtyard in golden afternoon light, a girl running to her grandmother, mooncakes on a tray."
+        },
+        {
+          "id": "page-02",
+          "prompt": "grandmother and girl at a wooden table with thin bamboo sticks, red cellophane and a bowl of rice glue, tying a star frame",
+          "image": {
+            "path": "assets/images/stories/den-ong-sao-cua-ba/page-02.png",
+            "exists": false
+          },
+          "sentences": [
+            {
+              "id": "p02-s01",
+              "en": "Grandma brought thin bamboo sticks, red paper and a little bowl of rice glue.",
+              "vi": "Bà mang ra những nan tre mỏng, giấy bóng đỏ và một bát hồ dán.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/den-ong-sao-cua-ba/page-02/sentence-01-en.mp3",
+                  "exists": true,
+                  "bytes": 76076,
+                  "durationSec": 4.75
+                },
+                "vi": {
+                  "path": "assets/audio/den-ong-sao-cua-ba/page-02/sentence-01-vi.mp3",
+                  "exists": true,
+                  "bytes": 82988,
+                  "durationSec": 5.18
+                }
+              }
+            },
+            {
+              "id": "p02-s02",
+              "en": "Together they tied the sticks into a star with five points.",
+              "vi": "Hai bà cháu buộc nan tre thành một ngôi sao năm cánh.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/den-ong-sao-cua-ba/page-02/sentence-02-en.mp3",
+                  "exists": true,
+                  "bytes": 63020,
+                  "durationSec": 3.94
+                },
+                "vi": {
+                  "path": "assets/audio/den-ong-sao-cua-ba/page-02/sentence-02-vi.mp3",
+                  "exists": true,
+                  "bytes": 72236,
+                  "durationSec": 4.51
+                }
+              }
+            }
+          ],
+          "fullPrompt": "Premium hand-painted picture-book illustration: gouache and soft watercolour textures on warm paper, rounded friendly shapes, gentle rim light, subtle paper grain and a soft vignette. Calm, comforting, never frightening. Respectful, accurate Vietnamese settings and dress. Keep each character identical on every page (see the character sheet). No text, letters, logos, signatures or watermarks. Story identity — mood: Warm, glowing and festive, yet gentle; a family evening by the river. Setting: An old riverside town in central Vietnam: yellow-walled shophouses with tiled roofs, a wooden courtyard table, the river with floating paper lanterns. Light: Golden afternoon in the courtyard, then a full-moon night lit by red and gold lanterns. Signature motifs: a five-pointed star lantern with one crooked point, bamboo sticks and red cellophane, mooncakes, floating flower lanterns, a carp lantern. Palette: #2A1830, #6B2E3A, #5A3A2A, #2C1C18, #D9483B, #FFD58A, #160C12, #F8ECE0. Avoid: crowded chaotic streets, open flames near faces, neon colours. Characters: Mai — girl around six with a short black bob and a fringe, in a coral-red áo bà ba; Grandma (Bà) — kind grandmother with grey hair in a low bun, glasses, a plum-coloured áo dài and a jade bracelet; the little boy — boy around four with a round face, in a pale-blue shirt, carrying a carp lantern. Scene: grandmother and girl at a wooden table with thin bamboo sticks, red cellophane and a bowl of rice glue, tying a star frame."
+        },
+        {
+          "id": "page-03",
+          "prompt": "close view of the finished red star lantern with one crooked point, the girl pouting, grandmother smiling kindly",
+          "image": {
+            "path": "assets/images/stories/den-ong-sao-cua-ba/page-03.png",
+            "exists": false
+          },
+          "sentences": [
+            {
+              "id": "p03-s01",
+              "en": "But one point of Mai's star came out crooked.",
+              "vi": "Nhưng một cánh sao của Mai bị lệch.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/den-ong-sao-cua-ba/page-03/sentence-01-en.mp3",
+                  "exists": true,
+                  "bytes": 46508,
+                  "durationSec": 2.9
+                },
+                "vi": {
+                  "path": "assets/audio/den-ong-sao-cua-ba/page-03/sentence-01-vi.mp3",
+                  "exists": true,
+                  "bytes": 46508,
+                  "durationSec": 2.9
+                }
+              }
+            },
+            {
+              "id": "p03-s02",
+              "en": "“Oh, it's not as pretty as yours,” Mai said with a pout.",
+              "vi": "Mai phụng phịu: “Ôi, nó không đẹp bằng của bà.”",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/den-ong-sao-cua-ba/page-03/sentence-02-en.mp3",
+                  "exists": true,
+                  "bytes": 52268,
+                  "durationSec": 3.26
+                },
+                "vi": {
+                  "path": "assets/audio/den-ong-sao-cua-ba/page-03/sentence-02-vi.mp3",
+                  "exists": true,
+                  "bytes": 61868,
+                  "durationSec": 3.86
+                }
+              }
+            },
+            {
+              "id": "p03-s03",
+              "en": "Grandma smiled. “A lantern made with love shines just as bright.”",
+              "vi": "Bà cười hiền: “Đèn làm bằng cả tấm lòng thì sáng chẳng kém đâu cháu.”",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/den-ong-sao-cua-ba/page-03/sentence-03-en.mp3",
+                  "exists": true,
+                  "bytes": 63020,
+                  "durationSec": 3.94
+                },
+                "vi": {
+                  "path": "assets/audio/den-ong-sao-cua-ba/page-03/sentence-03-vi.mp3",
+                  "exists": true,
+                  "bytes": 93356,
+                  "durationSec": 5.83
+                }
+              }
+            }
+          ],
+          "fullPrompt": "Premium hand-painted picture-book illustration: gouache and soft watercolour textures on warm paper, rounded friendly shapes, gentle rim light, subtle paper grain and a soft vignette. Calm, comforting, never frightening. Respectful, accurate Vietnamese settings and dress. Keep each character identical on every page (see the character sheet). No text, letters, logos, signatures or watermarks. Story identity — mood: Warm, glowing and festive, yet gentle; a family evening by the river. Setting: An old riverside town in central Vietnam: yellow-walled shophouses with tiled roofs, a wooden courtyard table, the river with floating paper lanterns. Light: Golden afternoon in the courtyard, then a full-moon night lit by red and gold lanterns. Signature motifs: a five-pointed star lantern with one crooked point, bamboo sticks and red cellophane, mooncakes, floating flower lanterns, a carp lantern. Palette: #2A1830, #6B2E3A, #5A3A2A, #2C1C18, #D9483B, #FFD58A, #160C12, #F8ECE0. Avoid: crowded chaotic streets, open flames near faces, neon colours. Characters: Mai — girl around six with a short black bob and a fringe, in a coral-red áo bà ba; Grandma (Bà) — kind grandmother with grey hair in a low bun, glasses, a plum-coloured áo dài and a jade bracelet; the little boy — boy around four with a round face, in a pale-blue shirt, carrying a carp lantern. Scene: close view of the finished red star lantern with one crooked point, the girl pouting, grandmother smiling kindly."
+        },
+        {
+          "id": "page-04",
+          "prompt": "full-moon night in the courtyard, grandmother placing a small candle inside the star lantern, warm red glow on their faces",
+          "image": {
+            "path": "assets/images/stories/den-ong-sao-cua-ba/page-04.png",
+            "exists": false
+          },
+          "sentences": [
+            {
+              "id": "p04-s01",
+              "en": "On the night of the full moon, Grandma lit a little candle inside.",
+              "vi": "Đêm rằm, bà thắp một ngọn nến nhỏ bên trong.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/den-ong-sao-cua-ba/page-04/sentence-01-en.mp3",
+                  "exists": true,
+                  "bytes": 66092,
+                  "durationSec": 4.13
+                },
+                "vi": {
+                  "path": "assets/audio/den-ong-sao-cua-ba/page-04/sentence-01-vi.mp3",
+                  "exists": true,
+                  "bytes": 59180,
+                  "durationSec": 3.7
+                }
+              }
+            },
+            {
+              "id": "p04-s02",
+              "en": "The crooked star glowed warm and red.",
+              "vi": "Ngôi sao lệch cánh bừng lên ánh đỏ ấm áp.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/den-ong-sao-cua-ba/page-04/sentence-02-en.mp3",
+                  "exists": true,
+                  "bytes": 38444,
+                  "durationSec": 2.4
+                },
+                "vi": {
+                  "path": "assets/audio/den-ong-sao-cua-ba/page-04/sentence-02-vi.mp3",
+                  "exists": true,
+                  "bytes": 54188,
+                  "durationSec": 3.38
+                }
+              }
+            }
+          ],
+          "fullPrompt": "Premium hand-painted picture-book illustration: gouache and soft watercolour textures on warm paper, rounded friendly shapes, gentle rim light, subtle paper grain and a soft vignette. Calm, comforting, never frightening. Respectful, accurate Vietnamese settings and dress. Keep each character identical on every page (see the character sheet). No text, letters, logos, signatures or watermarks. Story identity — mood: Warm, glowing and festive, yet gentle; a family evening by the river. Setting: An old riverside town in central Vietnam: yellow-walled shophouses with tiled roofs, a wooden courtyard table, the river with floating paper lanterns. Light: Golden afternoon in the courtyard, then a full-moon night lit by red and gold lanterns. Signature motifs: a five-pointed star lantern with one crooked point, bamboo sticks and red cellophane, mooncakes, floating flower lanterns, a carp lantern. Palette: #2A1830, #6B2E3A, #5A3A2A, #2C1C18, #D9483B, #FFD58A, #160C12, #F8ECE0. Avoid: crowded chaotic streets, open flames near faces, neon colours. Characters: Mai — girl around six with a short black bob and a fringe, in a coral-red áo bà ba; Grandma (Bà) — kind grandmother with grey hair in a low bun, glasses, a plum-coloured áo dài and a jade bracelet; the little boy — boy around four with a round face, in a pale-blue shirt, carrying a carp lantern. Scene: full-moon night in the courtyard, grandmother placing a small candle inside the star lantern, warm red glow on their faces."
+        },
+        {
+          "id": "page-05",
+          "prompt": "children walking with lanterns along the river at night, a small drum, flower lanterns floating on the water, the full moon above",
+          "image": {
+            "path": "assets/images/stories/den-ong-sao-cua-ba/page-05.png",
+            "exists": false
+          },
+          "sentences": [
+            {
+              "id": "p05-s01",
+              "en": "Mai joined the children walking with their lanterns along the river.",
+              "vi": "Mai cùng các bạn rước đèn dọc bờ sông.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/den-ong-sao-cua-ba/page-05/sentence-01-en.mp3",
+                  "exists": true,
+                  "bytes": 69548,
+                  "durationSec": 4.34
+                },
+                "vi": {
+                  "path": "assets/audio/den-ong-sao-cua-ba/page-05/sentence-01-vi.mp3",
+                  "exists": true,
+                  "bytes": 50732,
+                  "durationSec": 3.17
+                }
+              }
+            },
+            {
+              "id": "p05-s02",
+              "en": "The drums went tùng tùng cắc, and little lanterns floated on the water.",
+              "vi": "Trống “tùng tùng cắc” rộn ràng, đèn hoa đăng trôi lững lờ trên mặt nước.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/den-ong-sao-cua-ba/page-05/sentence-02-en.mp3",
+                  "exists": true,
+                  "bytes": 72620,
+                  "durationSec": 4.54
+                },
+                "vi": {
+                  "path": "assets/audio/den-ong-sao-cua-ba/page-05/sentence-02-vi.mp3",
+                  "exists": true,
+                  "bytes": 95276,
+                  "durationSec": 5.95
+                }
+              }
+            }
+          ],
+          "fullPrompt": "Premium hand-painted picture-book illustration: gouache and soft watercolour textures on warm paper, rounded friendly shapes, gentle rim light, subtle paper grain and a soft vignette. Calm, comforting, never frightening. Respectful, accurate Vietnamese settings and dress. Keep each character identical on every page (see the character sheet). No text, letters, logos, signatures or watermarks. Story identity — mood: Warm, glowing and festive, yet gentle; a family evening by the river. Setting: An old riverside town in central Vietnam: yellow-walled shophouses with tiled roofs, a wooden courtyard table, the river with floating paper lanterns. Light: Golden afternoon in the courtyard, then a full-moon night lit by red and gold lanterns. Signature motifs: a five-pointed star lantern with one crooked point, bamboo sticks and red cellophane, mooncakes, floating flower lanterns, a carp lantern. Palette: #2A1830, #6B2E3A, #5A3A2A, #2C1C18, #D9483B, #FFD58A, #160C12, #F8ECE0. Avoid: crowded chaotic streets, open flames near faces, neon colours. Characters: Mai — girl around six with a short black bob and a fringe, in a coral-red áo bà ba; Grandma (Bà) — kind grandmother with grey hair in a low bun, glasses, a plum-coloured áo dài and a jade bracelet; the little boy — boy around four with a round face, in a pale-blue shirt, carrying a carp lantern. Scene: children walking with lanterns along the river at night, a small drum, flower lanterns floating on the water, the full moon above."
+        },
+        {
+          "id": "page-06",
+          "prompt": "the girl holding out her star lantern so a small boy can relight the candle in his carp lantern",
+          "image": {
+            "path": "assets/images/stories/den-ong-sao-cua-ba/page-06.png",
+            "exists": false
+          },
+          "sentences": [
+            {
+              "id": "p06-s01",
+              "en": "Then a little boy stopped. A gust of wind had blown out his candle.",
+              "vi": "Bỗng một cậu bé dừng lại. Cơn gió đã thổi tắt nến của cậu.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/den-ong-sao-cua-ba/page-06/sentence-01-en.mp3",
+                  "exists": true,
+                  "bytes": 66092,
+                  "durationSec": 4.13
+                },
+                "vi": {
+                  "path": "assets/audio/den-ong-sao-cua-ba/page-06/sentence-01-vi.mp3",
+                  "exists": true,
+                  "bytes": 76076,
+                  "durationSec": 4.75
+                }
+              }
+            },
+            {
+              "id": "p06-s02",
+              "en": "Mai held out her star. “Here, light yours from mine.”",
+              "vi": "Mai giơ ngôi sao ra: “Đây, bạn mồi lửa từ đèn của tớ nhé.”",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/den-ong-sao-cua-ba/page-06/sentence-02-en.mp3",
+                  "exists": true,
+                  "bytes": 51884,
+                  "durationSec": 3.24
+                },
+                "vi": {
+                  "path": "assets/audio/den-ong-sao-cua-ba/page-06/sentence-02-vi.mp3",
+                  "exists": true,
+                  "bytes": 74924,
+                  "durationSec": 4.68
+                }
+              }
+            },
+            {
+              "id": "p06-s03",
+              "en": "Soon his carp lantern was glowing again.",
+              "vi": "Chẳng mấy chốc, chiếc đèn cá chép của cậu lại sáng lung linh.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/den-ong-sao-cua-ba/page-06/sentence-03-en.mp3",
+                  "exists": true,
+                  "bytes": 40364,
+                  "durationSec": 2.52
+                },
+                "vi": {
+                  "path": "assets/audio/den-ong-sao-cua-ba/page-06/sentence-03-vi.mp3",
+                  "exists": true,
+                  "bytes": 82604,
+                  "durationSec": 5.16
+                }
+              }
+            }
+          ],
+          "fullPrompt": "Premium hand-painted picture-book illustration: gouache and soft watercolour textures on warm paper, rounded friendly shapes, gentle rim light, subtle paper grain and a soft vignette. Calm, comforting, never frightening. Respectful, accurate Vietnamese settings and dress. Keep each character identical on every page (see the character sheet). No text, letters, logos, signatures or watermarks. Story identity — mood: Warm, glowing and festive, yet gentle; a family evening by the river. Setting: An old riverside town in central Vietnam: yellow-walled shophouses with tiled roofs, a wooden courtyard table, the river with floating paper lanterns. Light: Golden afternoon in the courtyard, then a full-moon night lit by red and gold lanterns. Signature motifs: a five-pointed star lantern with one crooked point, bamboo sticks and red cellophane, mooncakes, floating flower lanterns, a carp lantern. Palette: #2A1830, #6B2E3A, #5A3A2A, #2C1C18, #D9483B, #FFD58A, #160C12, #F8ECE0. Avoid: crowded chaotic streets, open flames near faces, neon colours. Characters: Mai — girl around six with a short black bob and a fringe, in a coral-red áo bà ba; Grandma (Bà) — kind grandmother with grey hair in a low bun, glasses, a plum-coloured áo dài and a jade bracelet; the little boy — boy around four with a round face, in a pale-blue shirt, carrying a carp lantern. Scene: the girl holding out her star lantern so a small boy can relight the candle in his carp lantern."
+        },
+        {
+          "id": "page-07",
+          "prompt": "grandmother and girl walking home hand in hand along the moonlit river, then the star lantern hanging by a window",
+          "image": {
+            "path": "assets/images/stories/den-ong-sao-cua-ba/page-07.png",
+            "exists": false
+          },
+          "sentences": [
+            {
+              "id": "p07-s01",
+              "en": "Walking home, Mai held Grandma's hand and her crooked little star.",
+              "vi": "Trên đường về, Mai nắm tay bà, tay kia cầm ngôi sao nhỏ lệch cánh.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/den-ong-sao-cua-ba/page-07/sentence-01-en.mp3",
+                  "exists": true,
+                  "bytes": 67628,
+                  "durationSec": 4.22
+                },
+                "vi": {
+                  "path": "assets/audio/den-ong-sao-cua-ba/page-07/sentence-01-vi.mp3",
+                  "exists": true,
+                  "bytes": 87596,
+                  "durationSec": 5.47
+                }
+              }
+            },
+            {
+              "id": "p07-s02",
+              "en": "“Bà ơi, you were right. It shines just as bright.”",
+              "vi": "“Bà ơi, bà nói đúng. Đèn của cháu sáng lắm.”",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/den-ong-sao-cua-ba/page-07/sentence-02-en.mp3",
+                  "exists": true,
+                  "bytes": 48812,
+                  "durationSec": 3.05
+                },
+                "vi": {
+                  "path": "assets/audio/den-ong-sao-cua-ba/page-07/sentence-02-vi.mp3",
+                  "exists": true,
+                  "bytes": 56108,
+                  "durationSec": 3.5
+                }
+              }
+            },
+            {
+              "id": "p07-s03",
+              "en": "That night, Mai hung her lantern by the window and fell asleep smiling.",
+              "vi": "Đêm ấy, Mai treo đèn bên cửa sổ và ngủ với nụ cười trên môi.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/den-ong-sao-cua-ba/page-07/sentence-03-en.mp3",
+                  "exists": true,
+                  "bytes": 71468,
+                  "durationSec": 4.46
+                },
+                "vi": {
+                  "path": "assets/audio/den-ong-sao-cua-ba/page-07/sentence-03-vi.mp3",
+                  "exists": true,
+                  "bytes": 80300,
+                  "durationSec": 5.02
+                }
+              }
+            }
+          ],
+          "fullPrompt": "Premium hand-painted picture-book illustration: gouache and soft watercolour textures on warm paper, rounded friendly shapes, gentle rim light, subtle paper grain and a soft vignette. Calm, comforting, never frightening. Respectful, accurate Vietnamese settings and dress. Keep each character identical on every page (see the character sheet). No text, letters, logos, signatures or watermarks. Story identity — mood: Warm, glowing and festive, yet gentle; a family evening by the river. Setting: An old riverside town in central Vietnam: yellow-walled shophouses with tiled roofs, a wooden courtyard table, the river with floating paper lanterns. Light: Golden afternoon in the courtyard, then a full-moon night lit by red and gold lanterns. Signature motifs: a five-pointed star lantern with one crooked point, bamboo sticks and red cellophane, mooncakes, floating flower lanterns, a carp lantern. Palette: #2A1830, #6B2E3A, #5A3A2A, #2C1C18, #D9483B, #FFD58A, #160C12, #F8ECE0. Avoid: crowded chaotic streets, open flames near faces, neon colours. Characters: Mai — girl around six with a short black bob and a fringe, in a coral-red áo bà ba; Grandma (Bà) — kind grandmother with grey hair in a low bun, glasses, a plum-coloured áo dài and a jade bracelet; the little boy — boy around four with a round face, in a pale-blue shirt, carrying a carp lantern. Scene: grandmother and girl walking home hand in hand along the moonlit river, then the star lantern hanging by a window."
+        }
+      ],
+      "status": {
+        "images": "0/8",
+        "audio": "34/34",
+        "complete": false
+      }
+    },
+    {
       "id": "dom-dom-soi-duong",
       "title": {
         "en": "The Little Firefly Lights the Way",
@@ -4478,6 +5410,957 @@
       "status": {
         "images": "0/9",
         "audio": "18/36",
+        "complete": false
+      }
+    },
+    {
+      "id": "ech-con-hat-ru",
+      "title": {
+        "en": "The Little Frog's Lullaby",
+        "vi": "Bài Hát Ru Của Ếch Con"
+      },
+      "theme": {
+        "en": "A small, gentle voice can be just what someone needs.",
+        "vi": "Giọng nói nhỏ nhẹ cũng có thể là điều ai đó cần nhất."
+      },
+      "origin": "Original StoryMoon story, written in Vietnamese with an English companion text.",
+      "characters": [
+        {
+          "name": "Ếch Con",
+          "look": "small bright-green frog with round golden eyes and a pale cream belly"
+        },
+        {
+          "name": "the big frogs",
+          "look": "plump olive-brown frogs with puffed throats, kindly faces"
+        },
+        {
+          "name": "Vịt Con",
+          "look": "fluffy pale-yellow duckling with a small orange beak"
+        },
+        {
+          "name": "Mother Duck",
+          "look": "white farm duck with a soft grey wing band"
+        }
+      ],
+      "artDirection": {
+        "mood": "Hushed and cosy; the soft hum of a rice field settling into night.",
+        "setting": "Mekong Delta rice paddies at dusk: a narrow canal, water-lily leaves, a coconut palm and a thatched house on the far bank.",
+        "light": "Blue-green dusk turning to a calm starry night, fireflies and one warm window.",
+        "motifs": [
+          "water-lily leaves on still water",
+          "rows of young rice",
+          "fireflies",
+          "a tiny frog on a lily leaf",
+          "a duckling's ripples"
+        ],
+        "avoid": [
+          "snakes or predators",
+          "a frightened, crying duckling",
+          "harsh bright colours"
+        ],
+        "palette": {
+          "sky": "#1F3A4A",
+          "skyLow": "#4F7A78",
+          "ground": "#3F6B3A",
+          "groundDeep": "#1F3B24",
+          "accent": "#8CC07A",
+          "glow": "#F2E6B0",
+          "ink": "#0E1A1C",
+          "paper": "#EEF3E6"
+        }
+      },
+      "coverPrompt": "a tiny green frog singing softly on a water-lily leaf beside a sleeping duckling, rice field and fireflies at blue dusk",
+      "coverFullPrompt": "Premium hand-painted picture-book illustration: gouache and soft watercolour textures on warm paper, rounded friendly shapes, gentle rim light, subtle paper grain and a soft vignette. Calm, comforting, never frightening. Respectful, accurate Vietnamese settings and dress. Keep each character identical on every page (see the character sheet). No text, letters, logos, signatures or watermarks. Story identity — mood: Hushed and cosy; the soft hum of a rice field settling into night. Setting: Mekong Delta rice paddies at dusk: a narrow canal, water-lily leaves, a coconut palm and a thatched house on the far bank. Light: Blue-green dusk turning to a calm starry night, fireflies and one warm window. Signature motifs: water-lily leaves on still water, rows of young rice, fireflies, a tiny frog on a lily leaf, a duckling's ripples. Palette: #1F3A4A, #4F7A78, #3F6B3A, #1F3B24, #8CC07A, #F2E6B0, #0E1A1C, #EEF3E6. Avoid: snakes or predators, a frightened, crying duckling, harsh bright colours. Characters: Ếch Con — small bright-green frog with round golden eyes and a pale cream belly; the big frogs — plump olive-brown frogs with puffed throats, kindly faces; Vịt Con — fluffy pale-yellow duckling with a small orange beak; Mother Duck — white farm duck with a soft grey wing band. Scene: a tiny green frog singing softly on a water-lily leaf beside a sleeping duckling, rice field and fireflies at blue dusk.",
+      "cover": {
+        "path": "assets/images/stories/ech-con-hat-ru/cover.png",
+        "exists": false
+      },
+      "pages": [
+        {
+          "id": "page-01",
+          "prompt": "a rice field at dusk with a narrow canal, a small green frog on a water-lily leaf, big frogs singing on the bank",
+          "image": {
+            "path": "assets/images/stories/ech-con-hat-ru/page-01.png",
+            "exists": false
+          },
+          "sentences": [
+            {
+              "id": "p01-s01",
+              "en": "At the edge of a rice field lived a little green frog called Ếch Con.",
+              "vi": "Ở bờ ruộng lúa có một chú ếch xanh nhỏ tên là Ếch Con.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/ech-con-hat-ru/page-01/sentence-01-en.mp3",
+                  "exists": true,
+                  "bytes": 67628,
+                  "durationSec": 4.22
+                },
+                "vi": {
+                  "path": "assets/audio/ech-con-hat-ru/page-01/sentence-01-vi.mp3",
+                  "exists": true,
+                  "bytes": 71468,
+                  "durationSec": 4.46
+                }
+              }
+            },
+            {
+              "id": "p01-s02",
+              "en": "Every evening, the big frogs sang loud songs to the first stars.",
+              "vi": "Chiều nào các bác ếch cũng cất tiếng hát vang chào những vì sao đầu tiên.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/ech-con-hat-ru/page-01/sentence-02-en.mp3",
+                  "exists": true,
+                  "bytes": 67244,
+                  "durationSec": 4.2
+                },
+                "vi": {
+                  "path": "assets/audio/ech-con-hat-ru/page-01/sentence-02-vi.mp3",
+                  "exists": true,
+                  "bytes": 94892,
+                  "durationSec": 5.93
+                }
+              }
+            }
+          ],
+          "fullPrompt": "Premium hand-painted picture-book illustration: gouache and soft watercolour textures on warm paper, rounded friendly shapes, gentle rim light, subtle paper grain and a soft vignette. Calm, comforting, never frightening. Respectful, accurate Vietnamese settings and dress. Keep each character identical on every page (see the character sheet). No text, letters, logos, signatures or watermarks. Story identity — mood: Hushed and cosy; the soft hum of a rice field settling into night. Setting: Mekong Delta rice paddies at dusk: a narrow canal, water-lily leaves, a coconut palm and a thatched house on the far bank. Light: Blue-green dusk turning to a calm starry night, fireflies and one warm window. Signature motifs: water-lily leaves on still water, rows of young rice, fireflies, a tiny frog on a lily leaf, a duckling's ripples. Palette: #1F3A4A, #4F7A78, #3F6B3A, #1F3B24, #8CC07A, #F2E6B0, #0E1A1C, #EEF3E6. Avoid: snakes or predators, a frightened, crying duckling, harsh bright colours. Characters: Ếch Con — small bright-green frog with round golden eyes and a pale cream belly; the big frogs — plump olive-brown frogs with puffed throats, kindly faces; Vịt Con — fluffy pale-yellow duckling with a small orange beak; Mother Duck — white farm duck with a soft grey wing band. Scene: a rice field at dusk with a narrow canal, a small green frog on a water-lily leaf, big frogs singing on the bank."
+        },
+        {
+          "id": "page-02",
+          "prompt": "the little frog trying to sing with a tiny open mouth while the big frogs croak loudly, nobody noticing",
+          "image": {
+            "path": "assets/images/stories/ech-con-hat-ru/page-02.png",
+            "exists": false
+          },
+          "sentences": [
+            {
+              "id": "p02-s01",
+              "en": "Ếch Con wanted to sing too, but his voice was very small.",
+              "vi": "Ếch Con cũng muốn hát, nhưng giọng của chú bé xíu.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/ech-con-hat-ru/page-02/sentence-01-en.mp3",
+                  "exists": true,
+                  "bytes": 56876,
+                  "durationSec": 3.55
+                },
+                "vi": {
+                  "path": "assets/audio/ech-con-hat-ru/page-02/sentence-01-vi.mp3",
+                  "exists": true,
+                  "bytes": 67628,
+                  "durationSec": 4.22
+                }
+              }
+            },
+            {
+              "id": "p02-s02",
+              "en": "“Ộp… ộp…” he tried softly, and nobody heard.",
+              "vi": "Chú thử khẽ: “Ộp… ộp…”, mà chẳng ai nghe thấy.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/ech-con-hat-ru/page-02/sentence-02-en.mp3",
+                  "exists": true,
+                  "bytes": 44588,
+                  "durationSec": 2.78
+                },
+                "vi": {
+                  "path": "assets/audio/ech-con-hat-ru/page-02/sentence-02-vi.mp3",
+                  "exists": true,
+                  "bytes": 59180,
+                  "durationSec": 3.7
+                }
+              }
+            },
+            {
+              "id": "p02-s03",
+              "en": "So he sat quietly on his lily leaf and listened.",
+              "vi": "Thế là chú ngồi im trên chiếc lá súng, lắng nghe.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/ech-con-hat-ru/page-02/sentence-03-en.mp3",
+                  "exists": true,
+                  "bytes": 47660,
+                  "durationSec": 2.98
+                },
+                "vi": {
+                  "path": "assets/audio/ech-con-hat-ru/page-02/sentence-03-vi.mp3",
+                  "exists": true,
+                  "bytes": 66092,
+                  "durationSec": 4.13
+                }
+              }
+            }
+          ],
+          "fullPrompt": "Premium hand-painted picture-book illustration: gouache and soft watercolour textures on warm paper, rounded friendly shapes, gentle rim light, subtle paper grain and a soft vignette. Calm, comforting, never frightening. Respectful, accurate Vietnamese settings and dress. Keep each character identical on every page (see the character sheet). No text, letters, logos, signatures or watermarks. Story identity — mood: Hushed and cosy; the soft hum of a rice field settling into night. Setting: Mekong Delta rice paddies at dusk: a narrow canal, water-lily leaves, a coconut palm and a thatched house on the far bank. Light: Blue-green dusk turning to a calm starry night, fireflies and one warm window. Signature motifs: water-lily leaves on still water, rows of young rice, fireflies, a tiny frog on a lily leaf, a duckling's ripples. Palette: #1F3A4A, #4F7A78, #3F6B3A, #1F3B24, #8CC07A, #F2E6B0, #0E1A1C, #EEF3E6. Avoid: snakes or predators, a frightened, crying duckling, harsh bright colours. Characters: Ếch Con — small bright-green frog with round golden eyes and a pale cream belly; the big frogs — plump olive-brown frogs with puffed throats, kindly faces; Vịt Con — fluffy pale-yellow duckling with a small orange beak; Mother Duck — white farm duck with a soft grey wing band. Scene: the little frog trying to sing with a tiny open mouth while the big frogs croak loudly, nobody noticing."
+        },
+        {
+          "id": "page-03",
+          "prompt": "a little yellow duckling paddling alone along a dark canal, small ripples behind her, thatched house far away",
+          "image": {
+            "path": "assets/images/stories/ech-con-hat-ru/page-03.png",
+            "exists": false
+          },
+          "sentences": [
+            {
+              "id": "p03-s01",
+              "en": "One night, a little duckling came paddling along the canal all alone.",
+              "vi": "Một đêm, có chú vịt con bơi dọc con mương một mình.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/ech-con-hat-ru/page-03/sentence-01-en.mp3",
+                  "exists": true,
+                  "bytes": 71852,
+                  "durationSec": 4.49
+                },
+                "vi": {
+                  "path": "assets/audio/ech-con-hat-ru/page-03/sentence-01-vi.mp3",
+                  "exists": true,
+                  "bytes": 68012,
+                  "durationSec": 4.25
+                }
+              }
+            },
+            {
+              "id": "p03-s02",
+              "en": "She had drifted away from her mother and could not fall asleep.",
+              "vi": "Vịt con lạc mẹ, cứ trằn trọc mãi không ngủ được.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/ech-con-hat-ru/page-03/sentence-02-en.mp3",
+                  "exists": true,
+                  "bytes": 61868,
+                  "durationSec": 3.86
+                },
+                "vi": {
+                  "path": "assets/audio/ech-con-hat-ru/page-03/sentence-02-vi.mp3",
+                  "exists": true,
+                  "bytes": 64172,
+                  "durationSec": 4.01
+                }
+              }
+            }
+          ],
+          "fullPrompt": "Premium hand-painted picture-book illustration: gouache and soft watercolour textures on warm paper, rounded friendly shapes, gentle rim light, subtle paper grain and a soft vignette. Calm, comforting, never frightening. Respectful, accurate Vietnamese settings and dress. Keep each character identical on every page (see the character sheet). No text, letters, logos, signatures or watermarks. Story identity — mood: Hushed and cosy; the soft hum of a rice field settling into night. Setting: Mekong Delta rice paddies at dusk: a narrow canal, water-lily leaves, a coconut palm and a thatched house on the far bank. Light: Blue-green dusk turning to a calm starry night, fireflies and one warm window. Signature motifs: water-lily leaves on still water, rows of young rice, fireflies, a tiny frog on a lily leaf, a duckling's ripples. Palette: #1F3A4A, #4F7A78, #3F6B3A, #1F3B24, #8CC07A, #F2E6B0, #0E1A1C, #EEF3E6. Avoid: snakes or predators, a frightened, crying duckling, harsh bright colours. Characters: Ếch Con — small bright-green frog with round golden eyes and a pale cream belly; the big frogs — plump olive-brown frogs with puffed throats, kindly faces; Vịt Con — fluffy pale-yellow duckling with a small orange beak; Mother Duck — white farm duck with a soft grey wing band. Scene: a little yellow duckling paddling alone along a dark canal, small ripples behind her, thatched house far away."
+        },
+        {
+          "id": "page-04",
+          "prompt": "the big frogs croaking loudly with puffed throats, the duckling tucking her head under her wing",
+          "image": {
+            "path": "assets/images/stories/ech-con-hat-ru/page-04.png",
+            "exists": false
+          },
+          "sentences": [
+            {
+              "id": "p04-s01",
+              "en": "“ỘP! ỘP! ỘP!” sang the big frogs, so loudly that the duckling tucked her head under her wing.",
+              "vi": "Các bác ếch hát “Ộp! Ộp! Ộp!” to quá, vịt con phải rúc đầu vào cánh.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/ech-con-hat-ru/page-04/sentence-01-en.mp3",
+                  "exists": true,
+                  "bytes": 92972,
+                  "durationSec": 5.81
+                },
+                "vi": {
+                  "path": "assets/audio/ech-con-hat-ru/page-04/sentence-01-vi.mp3",
+                  "exists": true,
+                  "bytes": 86828,
+                  "durationSec": 5.42
+                }
+              }
+            },
+            {
+              "id": "p04-s02",
+              "en": "“I want my mama,” she peeped.",
+              "vi": "Vịt con khẽ kêu: “Con muốn về với mẹ.”",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/ech-con-hat-ru/page-04/sentence-02-en.mp3",
+                  "exists": true,
+                  "bytes": 31148,
+                  "durationSec": 1.94
+                },
+                "vi": {
+                  "path": "assets/audio/ech-con-hat-ru/page-04/sentence-02-vi.mp3",
+                  "exists": true,
+                  "bytes": 48812,
+                  "durationSec": 3.05
+                }
+              }
+            }
+          ],
+          "fullPrompt": "Premium hand-painted picture-book illustration: gouache and soft watercolour textures on warm paper, rounded friendly shapes, gentle rim light, subtle paper grain and a soft vignette. Calm, comforting, never frightening. Respectful, accurate Vietnamese settings and dress. Keep each character identical on every page (see the character sheet). No text, letters, logos, signatures or watermarks. Story identity — mood: Hushed and cosy; the soft hum of a rice field settling into night. Setting: Mekong Delta rice paddies at dusk: a narrow canal, water-lily leaves, a coconut palm and a thatched house on the far bank. Light: Blue-green dusk turning to a calm starry night, fireflies and one warm window. Signature motifs: water-lily leaves on still water, rows of young rice, fireflies, a tiny frog on a lily leaf, a duckling's ripples. Palette: #1F3A4A, #4F7A78, #3F6B3A, #1F3B24, #8CC07A, #F2E6B0, #0E1A1C, #EEF3E6. Avoid: snakes or predators, a frightened, crying duckling, harsh bright colours. Characters: Ếch Con — small bright-green frog with round golden eyes and a pale cream belly; the big frogs — plump olive-brown frogs with puffed throats, kindly faces; Vịt Con — fluffy pale-yellow duckling with a small orange beak; Mother Duck — white farm duck with a soft grey wing band. Scene: the big frogs croaking loudly with puffed throats, the duckling tucking her head under her wing."
+        },
+        {
+          "id": "page-05",
+          "prompt": "the little frog hopping close to the duckling and singing softly, a few fireflies gathering around them",
+          "image": {
+            "path": "assets/images/stories/ech-con-hat-ru/page-05.png",
+            "exists": false
+          },
+          "sentences": [
+            {
+              "id": "p05-s01",
+              "en": "Ếch Con hopped close and sang his tiny song, as soft as a breeze.",
+              "vi": "Ếch Con nhảy lại gần, hát bài hát bé xíu của mình, nhẹ như gió thoảng.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/ech-con-hat-ru/page-05/sentence-01-en.mp3",
+                  "exists": true,
+                  "bytes": 65324,
+                  "durationSec": 4.08
+                },
+                "vi": {
+                  "path": "assets/audio/ech-con-hat-ru/page-05/sentence-01-vi.mp3",
+                  "exists": true,
+                  "bytes": 93740,
+                  "durationSec": 5.86
+                }
+              }
+            },
+            {
+              "id": "p05-s02",
+              "en": "“Ộp… ộp… sleep now, little one. Your mama will find you.”",
+              "vi": "“Ộp… ộp… ngủ đi nào, mẹ sẽ tìm thấy bạn thôi.”",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/ech-con-hat-ru/page-05/sentence-02-en.mp3",
+                  "exists": true,
+                  "bytes": 56492,
+                  "durationSec": 3.53
+                },
+                "vi": {
+                  "path": "assets/audio/ech-con-hat-ru/page-05/sentence-02-vi.mp3",
+                  "exists": true,
+                  "bytes": 59180,
+                  "durationSec": 3.7
+                }
+              }
+            }
+          ],
+          "fullPrompt": "Premium hand-painted picture-book illustration: gouache and soft watercolour textures on warm paper, rounded friendly shapes, gentle rim light, subtle paper grain and a soft vignette. Calm, comforting, never frightening. Respectful, accurate Vietnamese settings and dress. Keep each character identical on every page (see the character sheet). No text, letters, logos, signatures or watermarks. Story identity — mood: Hushed and cosy; the soft hum of a rice field settling into night. Setting: Mekong Delta rice paddies at dusk: a narrow canal, water-lily leaves, a coconut palm and a thatched house on the far bank. Light: Blue-green dusk turning to a calm starry night, fireflies and one warm window. Signature motifs: water-lily leaves on still water, rows of young rice, fireflies, a tiny frog on a lily leaf, a duckling's ripples. Palette: #1F3A4A, #4F7A78, #3F6B3A, #1F3B24, #8CC07A, #F2E6B0, #0E1A1C, #EEF3E6. Avoid: snakes or predators, a frightened, crying duckling, harsh bright colours. Characters: Ếch Con — small bright-green frog with round golden eyes and a pale cream belly; the big frogs — plump olive-brown frogs with puffed throats, kindly faces; Vịt Con — fluffy pale-yellow duckling with a small orange beak; Mother Duck — white farm duck with a soft grey wing band. Scene: the little frog hopping close to the duckling and singing softly, a few fireflies gathering around them."
+        },
+        {
+          "id": "page-06",
+          "prompt": "pale dawn over the canal, a white mother duck swimming up to her sleeping duckling beside the lily leaf, the frog watching",
+          "image": {
+            "path": "assets/images/stories/ech-con-hat-ru/page-06.png",
+            "exists": false
+          },
+          "sentences": [
+            {
+              "id": "p06-s01",
+              "en": "The duckling's eyes grew heavy, and she fell asleep beside the lily leaf.",
+              "vi": "Mắt vịt con díu lại, rồi bé ngủ thiếp đi bên chiếc lá súng.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/ech-con-hat-ru/page-06/sentence-01-en.mp3",
+                  "exists": true,
+                  "bytes": 75308,
+                  "durationSec": 4.7
+                },
+                "vi": {
+                  "path": "assets/audio/ech-con-hat-ru/page-06/sentence-01-vi.mp3",
+                  "exists": true,
+                  "bytes": 78380,
+                  "durationSec": 4.9
+                }
+              }
+            },
+            {
+              "id": "p06-s02",
+              "en": "At dawn, Mother Duck came paddling along the canal and found her.",
+              "vi": "Sáng sớm, vịt Mẹ bơi dọc con mương và tìm thấy con.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/ech-con-hat-ru/page-06/sentence-02-en.mp3",
+                  "exists": true,
+                  "bytes": 67244,
+                  "durationSec": 4.2
+                },
+                "vi": {
+                  "path": "assets/audio/ech-con-hat-ru/page-06/sentence-02-vi.mp3",
+                  "exists": true,
+                  "bytes": 68012,
+                  "durationSec": 4.25
+                }
+              }
+            },
+            {
+              "id": "p06-s03",
+              "en": "“Thank you for singing to my baby,” said Mother Duck.",
+              "vi": "Vịt Mẹ nói: “Cảm ơn cháu đã hát ru cho con cô.”",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/ech-con-hat-ru/page-06/sentence-03-en.mp3",
+                  "exists": true,
+                  "bytes": 53420,
+                  "durationSec": 3.34
+                },
+                "vi": {
+                  "path": "assets/audio/ech-con-hat-ru/page-06/sentence-03-vi.mp3",
+                  "exists": true,
+                  "bytes": 61484,
+                  "durationSec": 3.84
+                }
+              }
+            }
+          ],
+          "fullPrompt": "Premium hand-painted picture-book illustration: gouache and soft watercolour textures on warm paper, rounded friendly shapes, gentle rim light, subtle paper grain and a soft vignette. Calm, comforting, never frightening. Respectful, accurate Vietnamese settings and dress. Keep each character identical on every page (see the character sheet). No text, letters, logos, signatures or watermarks. Story identity — mood: Hushed and cosy; the soft hum of a rice field settling into night. Setting: Mekong Delta rice paddies at dusk: a narrow canal, water-lily leaves, a coconut palm and a thatched house on the far bank. Light: Blue-green dusk turning to a calm starry night, fireflies and one warm window. Signature motifs: water-lily leaves on still water, rows of young rice, fireflies, a tiny frog on a lily leaf, a duckling's ripples. Palette: #1F3A4A, #4F7A78, #3F6B3A, #1F3B24, #8CC07A, #F2E6B0, #0E1A1C, #EEF3E6. Avoid: snakes or predators, a frightened, crying duckling, harsh bright colours. Characters: Ếch Con — small bright-green frog with round golden eyes and a pale cream belly; the big frogs — plump olive-brown frogs with puffed throats, kindly faces; Vịt Con — fluffy pale-yellow duckling with a small orange beak; Mother Duck — white farm duck with a soft grey wing band. Scene: pale dawn over the canal, a white mother duck swimming up to her sleeping duckling beside the lily leaf, the frog watching."
+        },
+        {
+          "id": "page-07",
+          "prompt": "a calm starry night over the rice field, the little frog singing while the big frogs listen with sleepy eyes",
+          "image": {
+            "path": "assets/images/stories/ech-con-hat-ru/page-07.png",
+            "exists": false
+          },
+          "sentences": [
+            {
+              "id": "p07-s01",
+              "en": "That night, the big frogs asked Ếch Con to sing the very last song.",
+              "vi": "Tối hôm ấy, các bác ếch mời Ếch Con hát bài cuối cùng.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/ech-con-hat-ru/page-07/sentence-01-en.mp3",
+                  "exists": true,
+                  "bytes": 65324,
+                  "durationSec": 4.08
+                },
+                "vi": {
+                  "path": "assets/audio/ech-con-hat-ru/page-07/sentence-01-vi.mp3",
+                  "exists": true,
+                  "bytes": 72236,
+                  "durationSec": 4.51
+                }
+              }
+            },
+            {
+              "id": "p07-s02",
+              "en": "His small, soft lullaby drifted over the rice field, and everyone fell fast asleep.",
+              "vi": "Bài hát ru nhỏ nhẹ của chú lan khắp cánh đồng, và ai nấy đều ngủ say.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/ech-con-hat-ru/page-07/sentence-02-en.mp3",
+                  "exists": true,
+                  "bytes": 87980,
+                  "durationSec": 5.5
+                },
+                "vi": {
+                  "path": "assets/audio/ech-con-hat-ru/page-07/sentence-02-vi.mp3",
+                  "exists": true,
+                  "bytes": 91436,
+                  "durationSec": 5.71
+                }
+              }
+            },
+            {
+              "id": "p07-s03",
+              "en": "Ếch Con smiled. A small voice can sing a whole field to sleep.",
+              "vi": "Ếch Con mỉm cười. Giọng hát nhỏ cũng có thể ru cả cánh đồng vào giấc ngủ.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/ech-con-hat-ru/page-07/sentence-03-en.mp3",
+                  "exists": true,
+                  "bytes": 63404,
+                  "durationSec": 3.96
+                },
+                "vi": {
+                  "path": "assets/audio/ech-con-hat-ru/page-07/sentence-03-vi.mp3",
+                  "exists": true,
+                  "bytes": 97196,
+                  "durationSec": 6.07
+                }
+              }
+            }
+          ],
+          "fullPrompt": "Premium hand-painted picture-book illustration: gouache and soft watercolour textures on warm paper, rounded friendly shapes, gentle rim light, subtle paper grain and a soft vignette. Calm, comforting, never frightening. Respectful, accurate Vietnamese settings and dress. Keep each character identical on every page (see the character sheet). No text, letters, logos, signatures or watermarks. Story identity — mood: Hushed and cosy; the soft hum of a rice field settling into night. Setting: Mekong Delta rice paddies at dusk: a narrow canal, water-lily leaves, a coconut palm and a thatched house on the far bank. Light: Blue-green dusk turning to a calm starry night, fireflies and one warm window. Signature motifs: water-lily leaves on still water, rows of young rice, fireflies, a tiny frog on a lily leaf, a duckling's ripples. Palette: #1F3A4A, #4F7A78, #3F6B3A, #1F3B24, #8CC07A, #F2E6B0, #0E1A1C, #EEF3E6. Avoid: snakes or predators, a frightened, crying duckling, harsh bright colours. Characters: Ếch Con — small bright-green frog with round golden eyes and a pale cream belly; the big frogs — plump olive-brown frogs with puffed throats, kindly faces; Vịt Con — fluffy pale-yellow duckling with a small orange beak; Mother Duck — white farm duck with a soft grey wing band. Scene: a calm starry night over the rice field, the little frog singing while the big frogs listen with sleepy eyes."
+        }
+      ],
+      "status": {
+        "images": "0/8",
+        "audio": "34/34",
+        "complete": false
+      }
+    },
+    {
+      "id": "hat-bi-cua-be-su",
+      "title": {
+        "en": "Su's Pumpkin Seed",
+        "vi": "Hạt Bí Của Bé Su"
+      },
+      "theme": {
+        "en": "Good things grow with care and a little patience.",
+        "vi": "Điều tốt đẹp lớn lên nhờ sự chăm sóc và một chút kiên nhẫn."
+      },
+      "origin": "Original StoryMoon story, written in Vietnamese with an English companion text.",
+      "characters": [
+        {
+          "name": "Su",
+          "look": "boy around five with short spiky black hair, in green shorts and a cream T-shirt, carrying a small tin watering can"
+        },
+        {
+          "name": "Grandpa (Ông)",
+          "look": "slim grandfather with a short white beard, a faded indigo shirt and rolled-up trousers"
+        }
+      ],
+      "artDirection": {
+        "mood": "Fresh, bright and patient; a slow, happy garden story.",
+        "setting": "A northern Vietnamese village garden: a bamboo pumpkin trellis, a clay water jar, a brick well, banana plants and a tiled-roof house.",
+        "light": "Clear spring and early-summer mornings, ending in a warm lamplit family dinner.",
+        "motifs": [
+          "a flat white seed",
+          "two tiny sprout leaves",
+          "a bamboo trellis with curling tendrils",
+          "big yellow pumpkin flowers and bees",
+          "a bowl of pumpkin soup"
+        ],
+        "avoid": [
+          "garden pests or wilting plants",
+          "a tantrum",
+          "gardening tools used dangerously"
+        ],
+        "palette": {
+          "sky": "#CFE6EC",
+          "skyLow": "#F6EBC8",
+          "ground": "#7A9A4E",
+          "groundDeep": "#4A6A32",
+          "accent": "#E3A23B",
+          "glow": "#FFF3C4",
+          "ink": "#23281A",
+          "paper": "#FBF8EC"
+        }
+      },
+      "coverPrompt": "a little boy and his grandfather under a bamboo trellis heavy with yellow pumpkin flowers and a round green pumpkin, morning light",
+      "coverFullPrompt": "Premium hand-painted picture-book illustration: gouache and soft watercolour textures on warm paper, rounded friendly shapes, gentle rim light, subtle paper grain and a soft vignette. Calm, comforting, never frightening. Respectful, accurate Vietnamese settings and dress. Keep each character identical on every page (see the character sheet). No text, letters, logos, signatures or watermarks. Story identity — mood: Fresh, bright and patient; a slow, happy garden story. Setting: A northern Vietnamese village garden: a bamboo pumpkin trellis, a clay water jar, a brick well, banana plants and a tiled-roof house. Light: Clear spring and early-summer mornings, ending in a warm lamplit family dinner. Signature motifs: a flat white seed, two tiny sprout leaves, a bamboo trellis with curling tendrils, big yellow pumpkin flowers and bees, a bowl of pumpkin soup. Palette: #CFE6EC, #F6EBC8, #7A9A4E, #4A6A32, #E3A23B, #FFF3C4, #23281A, #FBF8EC. Avoid: garden pests or wilting plants, a tantrum, gardening tools used dangerously. Characters: Su — boy around five with short spiky black hair, in green shorts and a cream T-shirt, carrying a small tin watering can; Grandpa (Ông) — slim grandfather with a short white beard, a faded indigo shirt and rolled-up trousers. Scene: a little boy and his grandfather under a bamboo trellis heavy with yellow pumpkin flowers and a round green pumpkin, morning light.",
+      "cover": {
+        "path": "assets/images/stories/hat-bi-cua-be-su/cover.png",
+        "exists": false
+      },
+      "pages": [
+        {
+          "id": "page-01",
+          "prompt": "a village garden on a spring morning, a grandfather placing a flat white seed in a little boy's open palm",
+          "image": {
+            "path": "assets/images/stories/hat-bi-cua-be-su/page-01.png",
+            "exists": false
+          },
+          "sentences": [
+            {
+              "id": "p01-s01",
+              "en": "One spring morning, Grandpa gave Su a flat white seed.",
+              "vi": "Một sáng mùa xuân, ông đưa cho Su một hạt giống trắng, dẹt.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/hat-bi-cua-be-su/page-01/sentence-01-en.mp3",
+                  "exists": true,
+                  "bytes": 55340,
+                  "durationSec": 3.46
+                },
+                "vi": {
+                  "path": "assets/audio/hat-bi-cua-be-su/page-01/sentence-01-vi.mp3",
+                  "exists": true,
+                  "bytes": 77996,
+                  "durationSec": 4.87
+                }
+              }
+            },
+            {
+              "id": "p01-s02",
+              "en": "“This is a pumpkin seed. Let's plant it together.”",
+              "vi": "“Đây là hạt bí. Ông cháu mình cùng gieo nhé.”",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/hat-bi-cua-be-su/page-01/sentence-02-en.mp3",
+                  "exists": true,
+                  "bytes": 51116,
+                  "durationSec": 3.19
+                },
+                "vi": {
+                  "path": "assets/audio/hat-bi-cua-be-su/page-01/sentence-02-vi.mp3",
+                  "exists": true,
+                  "bytes": 59564,
+                  "durationSec": 3.72
+                }
+              }
+            }
+          ],
+          "fullPrompt": "Premium hand-painted picture-book illustration: gouache and soft watercolour textures on warm paper, rounded friendly shapes, gentle rim light, subtle paper grain and a soft vignette. Calm, comforting, never frightening. Respectful, accurate Vietnamese settings and dress. Keep each character identical on every page (see the character sheet). No text, letters, logos, signatures or watermarks. Story identity — mood: Fresh, bright and patient; a slow, happy garden story. Setting: A northern Vietnamese village garden: a bamboo pumpkin trellis, a clay water jar, a brick well, banana plants and a tiled-roof house. Light: Clear spring and early-summer mornings, ending in a warm lamplit family dinner. Signature motifs: a flat white seed, two tiny sprout leaves, a bamboo trellis with curling tendrils, big yellow pumpkin flowers and bees, a bowl of pumpkin soup. Palette: #CFE6EC, #F6EBC8, #7A9A4E, #4A6A32, #E3A23B, #FFF3C4, #23281A, #FBF8EC. Avoid: garden pests or wilting plants, a tantrum, gardening tools used dangerously. Characters: Su — boy around five with short spiky black hair, in green shorts and a cream T-shirt, carrying a small tin watering can; Grandpa (Ông) — slim grandfather with a short white beard, a faded indigo shirt and rolled-up trousers. Scene: a village garden on a spring morning, a grandfather placing a flat white seed in a little boy's open palm."
+        },
+        {
+          "id": "page-02",
+          "prompt": "the boy kneeling to pat the soil over the seed, then watering it from a small tin watering can",
+          "image": {
+            "path": "assets/images/stories/hat-bi-cua-be-su/page-02.png",
+            "exists": false
+          },
+          "sentences": [
+            {
+              "id": "p02-s01",
+              "en": "Su dug a little hole, dropped in the seed and patted the soil gently.",
+              "vi": "Su đào một cái hố nhỏ, thả hạt bí vào rồi vỗ nhẹ lớp đất.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/hat-bi-cua-be-su/page-02/sentence-01-en.mp3",
+                  "exists": true,
+                  "bytes": 68780,
+                  "durationSec": 4.3
+                },
+                "vi": {
+                  "path": "assets/audio/hat-bi-cua-be-su/page-02/sentence-01-vi.mp3",
+                  "exists": true,
+                  "bytes": 72620,
+                  "durationSec": 4.54
+                }
+              }
+            },
+            {
+              "id": "p02-s02",
+              "en": "Then he gave it a drink from his small watering can.",
+              "vi": "Rồi bé tưới cho hạt một chút nước bằng bình tưới bé xinh.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/hat-bi-cua-be-su/page-02/sentence-02-en.mp3",
+                  "exists": true,
+                  "bytes": 49964,
+                  "durationSec": 3.12
+                },
+                "vi": {
+                  "path": "assets/audio/hat-bi-cua-be-su/page-02/sentence-02-vi.mp3",
+                  "exists": true,
+                  "bytes": 76844,
+                  "durationSec": 4.8
+                }
+              }
+            }
+          ],
+          "fullPrompt": "Premium hand-painted picture-book illustration: gouache and soft watercolour textures on warm paper, rounded friendly shapes, gentle rim light, subtle paper grain and a soft vignette. Calm, comforting, never frightening. Respectful, accurate Vietnamese settings and dress. Keep each character identical on every page (see the character sheet). No text, letters, logos, signatures or watermarks. Story identity — mood: Fresh, bright and patient; a slow, happy garden story. Setting: A northern Vietnamese village garden: a bamboo pumpkin trellis, a clay water jar, a brick well, banana plants and a tiled-roof house. Light: Clear spring and early-summer mornings, ending in a warm lamplit family dinner. Signature motifs: a flat white seed, two tiny sprout leaves, a bamboo trellis with curling tendrils, big yellow pumpkin flowers and bees, a bowl of pumpkin soup. Palette: #CFE6EC, #F6EBC8, #7A9A4E, #4A6A32, #E3A23B, #FFF3C4, #23281A, #FBF8EC. Avoid: garden pests or wilting plants, a tantrum, gardening tools used dangerously. Characters: Su — boy around five with short spiky black hair, in green shorts and a cream T-shirt, carrying a small tin watering can; Grandpa (Ông) — slim grandfather with a short white beard, a faded indigo shirt and rolled-up trousers. Scene: the boy kneeling to pat the soil over the seed, then watering it from a small tin watering can."
+        },
+        {
+          "id": "page-03",
+          "prompt": "the boy crouching over a bare patch of soil, puzzled, grandfather watching from the doorway",
+          "image": {
+            "path": "assets/images/stories/hat-bi-cua-be-su/page-03.png",
+            "exists": false
+          },
+          "sentences": [
+            {
+              "id": "p03-s01",
+              "en": "The next morning, Su ran outside. Nothing!",
+              "vi": "Sáng hôm sau, Su chạy ra vườn. Chẳng thấy gì cả!",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/hat-bi-cua-be-su/page-03/sentence-01-en.mp3",
+                  "exists": true,
+                  "bytes": 44972,
+                  "durationSec": 2.81
+                },
+                "vi": {
+                  "path": "assets/audio/hat-bi-cua-be-su/page-03/sentence-01-vi.mp3",
+                  "exists": true,
+                  "bytes": 63788,
+                  "durationSec": 3.98
+                }
+              }
+            },
+            {
+              "id": "p03-s02",
+              "en": "The morning after that, still nothing.",
+              "vi": "Sáng hôm sau nữa, vẫn chẳng thấy gì.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/hat-bi-cua-be-su/page-03/sentence-02-en.mp3",
+                  "exists": true,
+                  "bytes": 39980,
+                  "durationSec": 2.5
+                },
+                "vi": {
+                  "path": "assets/audio/hat-bi-cua-be-su/page-03/sentence-02-vi.mp3",
+                  "exists": true,
+                  "bytes": 49196,
+                  "durationSec": 3.07
+                }
+              }
+            },
+            {
+              "id": "p03-s03",
+              "en": "“Maybe I should dig it up and look,” Su said.",
+              "vi": "Su bảo: “Hay cháu đào lên xem thử nhé ông?”",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/hat-bi-cua-be-su/page-03/sentence-03-en.mp3",
+                  "exists": true,
+                  "bytes": 42284,
+                  "durationSec": 2.64
+                },
+                "vi": {
+                  "path": "assets/audio/hat-bi-cua-be-su/page-03/sentence-03-vi.mp3",
+                  "exists": true,
+                  "bytes": 54956,
+                  "durationSec": 3.43
+                }
+              }
+            }
+          ],
+          "fullPrompt": "Premium hand-painted picture-book illustration: gouache and soft watercolour textures on warm paper, rounded friendly shapes, gentle rim light, subtle paper grain and a soft vignette. Calm, comforting, never frightening. Respectful, accurate Vietnamese settings and dress. Keep each character identical on every page (see the character sheet). No text, letters, logos, signatures or watermarks. Story identity — mood: Fresh, bright and patient; a slow, happy garden story. Setting: A northern Vietnamese village garden: a bamboo pumpkin trellis, a clay water jar, a brick well, banana plants and a tiled-roof house. Light: Clear spring and early-summer mornings, ending in a warm lamplit family dinner. Signature motifs: a flat white seed, two tiny sprout leaves, a bamboo trellis with curling tendrils, big yellow pumpkin flowers and bees, a bowl of pumpkin soup. Palette: #CFE6EC, #F6EBC8, #7A9A4E, #4A6A32, #E3A23B, #FFF3C4, #23281A, #FBF8EC. Avoid: garden pests or wilting plants, a tantrum, gardening tools used dangerously. Characters: Su — boy around five with short spiky black hair, in green shorts and a cream T-shirt, carrying a small tin watering can; Grandpa (Ông) — slim grandfather with a short white beard, a faded indigo shirt and rolled-up trousers. Scene: the boy crouching over a bare patch of soil, puzzled, grandfather watching from the doorway."
+        },
+        {
+          "id": "page-04",
+          "prompt": "grandfather kneeling beside the boy, a cut-away view of the soil showing the seed growing tiny roots in the dark",
+          "image": {
+            "path": "assets/images/stories/hat-bi-cua-be-su/page-04.png",
+            "exists": false
+          },
+          "sentences": [
+            {
+              "id": "p04-s01",
+              "en": "Grandpa laughed softly. “Seeds grow in the dark first. It is busy making roots.”",
+              "vi": "Ông cười hiền: “Hạt giống lớn trong bóng tối trước cháu ạ. Nó đang bận mọc rễ đấy.”",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/hat-bi-cua-be-su/page-04/sentence-01-en.mp3",
+                  "exists": true,
+                  "bytes": 81452,
+                  "durationSec": 5.09
+                },
+                "vi": {
+                  "path": "assets/audio/hat-bi-cua-be-su/page-04/sentence-01-vi.mp3",
+                  "exists": true,
+                  "bytes": 110252,
+                  "durationSec": 6.89
+                }
+              }
+            },
+            {
+              "id": "p04-s02",
+              "en": "“All it needs from you is water, sunshine and a little patience.”",
+              "vi": "“Cháu chỉ cần cho nó nước, nắng và một chút kiên nhẫn.”",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/hat-bi-cua-be-su/page-04/sentence-02-en.mp3",
+                  "exists": true,
+                  "bytes": 64172,
+                  "durationSec": 4.01
+                },
+                "vi": {
+                  "path": "assets/audio/hat-bi-cua-be-su/page-04/sentence-02-vi.mp3",
+                  "exists": true,
+                  "bytes": 72620,
+                  "durationSec": 4.54
+                }
+              }
+            }
+          ],
+          "fullPrompt": "Premium hand-painted picture-book illustration: gouache and soft watercolour textures on warm paper, rounded friendly shapes, gentle rim light, subtle paper grain and a soft vignette. Calm, comforting, never frightening. Respectful, accurate Vietnamese settings and dress. Keep each character identical on every page (see the character sheet). No text, letters, logos, signatures or watermarks. Story identity — mood: Fresh, bright and patient; a slow, happy garden story. Setting: A northern Vietnamese village garden: a bamboo pumpkin trellis, a clay water jar, a brick well, banana plants and a tiled-roof house. Light: Clear spring and early-summer mornings, ending in a warm lamplit family dinner. Signature motifs: a flat white seed, two tiny sprout leaves, a bamboo trellis with curling tendrils, big yellow pumpkin flowers and bees, a bowl of pumpkin soup. Palette: #CFE6EC, #F6EBC8, #7A9A4E, #4A6A32, #E3A23B, #FFF3C4, #23281A, #FBF8EC. Avoid: garden pests or wilting plants, a tantrum, gardening tools used dangerously. Characters: Su — boy around five with short spiky black hair, in green shorts and a cream T-shirt, carrying a small tin watering can; Grandpa (Ông) — slim grandfather with a short white beard, a faded indigo shirt and rolled-up trousers. Scene: grandfather kneeling beside the boy, a cut-away view of the soil showing the seed growing tiny roots in the dark."
+        },
+        {
+          "id": "page-05",
+          "prompt": "two tiny green sprout leaves peeking out of the soil, the boy jumping with joy",
+          "image": {
+            "path": "assets/images/stories/hat-bi-cua-be-su/page-05.png",
+            "exists": false
+          },
+          "sentences": [
+            {
+              "id": "p05-s01",
+              "en": "So Su watered the soil each morning and sang to it each evening.",
+              "vi": "Thế là sáng nào Su cũng tưới nước, chiều nào cũng hát cho hạt nghe.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/hat-bi-cua-be-su/page-05/sentence-01-en.mp3",
+                  "exists": true,
+                  "bytes": 66092,
+                  "durationSec": 4.13
+                },
+                "vi": {
+                  "path": "assets/audio/hat-bi-cua-be-su/page-05/sentence-01-vi.mp3",
+                  "exists": true,
+                  "bytes": 90284,
+                  "durationSec": 5.64
+                }
+              }
+            },
+            {
+              "id": "p05-s02",
+              "en": "One day, two tiny green leaves peeked out of the ground.",
+              "vi": "Rồi một ngày, hai chiếc lá xanh bé xíu ló lên khỏi mặt đất.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/hat-bi-cua-be-su/page-05/sentence-02-en.mp3",
+                  "exists": true,
+                  "bytes": 57260,
+                  "durationSec": 3.58
+                },
+                "vi": {
+                  "path": "assets/audio/hat-bi-cua-be-su/page-05/sentence-02-vi.mp3",
+                  "exists": true,
+                  "bytes": 77612,
+                  "durationSec": 4.85
+                }
+              }
+            },
+            {
+              "id": "p05-s03",
+              "en": "“Ông ơi! It's awake!” Su shouted.",
+              "vi": "Su reo lên: “Ông ơi! Hạt bí dậy rồi!”",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/hat-bi-cua-be-su/page-05/sentence-03-en.mp3",
+                  "exists": true,
+                  "bytes": 32684,
+                  "durationSec": 2.04
+                },
+                "vi": {
+                  "path": "assets/audio/hat-bi-cua-be-su/page-05/sentence-03-vi.mp3",
+                  "exists": true,
+                  "bytes": 48044,
+                  "durationSec": 3
+                }
+              }
+            }
+          ],
+          "fullPrompt": "Premium hand-painted picture-book illustration: gouache and soft watercolour textures on warm paper, rounded friendly shapes, gentle rim light, subtle paper grain and a soft vignette. Calm, comforting, never frightening. Respectful, accurate Vietnamese settings and dress. Keep each character identical on every page (see the character sheet). No text, letters, logos, signatures or watermarks. Story identity — mood: Fresh, bright and patient; a slow, happy garden story. Setting: A northern Vietnamese village garden: a bamboo pumpkin trellis, a clay water jar, a brick well, banana plants and a tiled-roof house. Light: Clear spring and early-summer mornings, ending in a warm lamplit family dinner. Signature motifs: a flat white seed, two tiny sprout leaves, a bamboo trellis with curling tendrils, big yellow pumpkin flowers and bees, a bowl of pumpkin soup. Palette: #CFE6EC, #F6EBC8, #7A9A4E, #4A6A32, #E3A23B, #FFF3C4, #23281A, #FBF8EC. Avoid: garden pests or wilting plants, a tantrum, gardening tools used dangerously. Characters: Su — boy around five with short spiky black hair, in green shorts and a cream T-shirt, carrying a small tin watering can; Grandpa (Ông) — slim grandfather with a short white beard, a faded indigo shirt and rolled-up trousers. Scene: two tiny green sprout leaves peeking out of the soil, the boy jumping with joy."
+        },
+        {
+          "id": "page-06",
+          "prompt": "a pumpkin vine climbing a bamboo trellis with curling tendrils, big yellow flowers, bees, and a round green pumpkin under the leaves",
+          "image": {
+            "path": "assets/images/stories/hat-bi-cua-be-su/page-06.png",
+            "exists": false
+          },
+          "sentences": [
+            {
+              "id": "p06-s01",
+              "en": "The vine climbed up the bamboo trellis, curling and growing every day.",
+              "vi": "Dây bí leo lên giàn tre, mỗi ngày một vươn dài, cuộn tròn những tua xoăn.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/hat-bi-cua-be-su/page-06/sentence-01-en.mp3",
+                  "exists": true,
+                  "bytes": 73772,
+                  "durationSec": 4.61
+                },
+                "vi": {
+                  "path": "assets/audio/hat-bi-cua-be-su/page-06/sentence-01-vi.mp3",
+                  "exists": true,
+                  "bytes": 97964,
+                  "durationSec": 6.12
+                }
+              }
+            },
+            {
+              "id": "p06-s02",
+              "en": "Big yellow flowers opened, and bees came to visit.",
+              "vi": "Những bông hoa vàng to nở rộ, ong bướm kéo nhau về thăm.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/hat-bi-cua-be-su/page-06/sentence-02-en.mp3",
+                  "exists": true,
+                  "bytes": 49964,
+                  "durationSec": 3.12
+                },
+                "vi": {
+                  "path": "assets/audio/hat-bi-cua-be-su/page-06/sentence-02-vi.mp3",
+                  "exists": true,
+                  "bytes": 74924,
+                  "durationSec": 4.68
+                }
+              }
+            },
+            {
+              "id": "p06-s03",
+              "en": "Under the leaves, a round green pumpkin grew bigger and bigger.",
+              "vi": "Dưới tán lá, một quả bí xanh tròn cứ lớn dần, lớn dần.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/hat-bi-cua-be-su/page-06/sentence-03-en.mp3",
+                  "exists": true,
+                  "bytes": 65324,
+                  "durationSec": 4.08
+                },
+                "vi": {
+                  "path": "assets/audio/hat-bi-cua-be-su/page-06/sentence-03-vi.mp3",
+                  "exists": true,
+                  "bytes": 70700,
+                  "durationSec": 4.42
+                }
+              }
+            }
+          ],
+          "fullPrompt": "Premium hand-painted picture-book illustration: gouache and soft watercolour textures on warm paper, rounded friendly shapes, gentle rim light, subtle paper grain and a soft vignette. Calm, comforting, never frightening. Respectful, accurate Vietnamese settings and dress. Keep each character identical on every page (see the character sheet). No text, letters, logos, signatures or watermarks. Story identity — mood: Fresh, bright and patient; a slow, happy garden story. Setting: A northern Vietnamese village garden: a bamboo pumpkin trellis, a clay water jar, a brick well, banana plants and a tiled-roof house. Light: Clear spring and early-summer mornings, ending in a warm lamplit family dinner. Signature motifs: a flat white seed, two tiny sprout leaves, a bamboo trellis with curling tendrils, big yellow pumpkin flowers and bees, a bowl of pumpkin soup. Palette: #CFE6EC, #F6EBC8, #7A9A4E, #4A6A32, #E3A23B, #FFF3C4, #23281A, #FBF8EC. Avoid: garden pests or wilting plants, a tantrum, gardening tools used dangerously. Characters: Su — boy around five with short spiky black hair, in green shorts and a cream T-shirt, carrying a small tin watering can; Grandpa (Ông) — slim grandfather with a short white beard, a faded indigo shirt and rolled-up trousers. Scene: a pumpkin vine climbing a bamboo trellis with curling tendrils, big yellow flowers, bees, and a round green pumpkin under the leaves."
+        },
+        {
+          "id": "page-07",
+          "prompt": "grandfather and boy carrying the pumpkin together, then the family around a lamplit table with bowls of pumpkin soup",
+          "image": {
+            "path": "assets/images/stories/hat-bi-cua-be-su/page-07.png",
+            "exists": false
+          },
+          "sentences": [
+            {
+              "id": "p07-s01",
+              "en": "At last, Su and Grandpa picked the pumpkin together.",
+              "vi": "Cuối cùng, hai ông cháu cùng hái quả bí.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/hat-bi-cua-be-su/page-07/sentence-01-en.mp3",
+                  "exists": true,
+                  "bytes": 53420,
+                  "durationSec": 3.34
+                },
+                "vi": {
+                  "path": "assets/audio/hat-bi-cua-be-su/page-07/sentence-01-vi.mp3",
+                  "exists": true,
+                  "bytes": 53804,
+                  "durationSec": 3.36
+                }
+              }
+            },
+            {
+              "id": "p07-s02",
+              "en": "That evening, the whole family shared a warm pumpkin soup.",
+              "vi": "Tối hôm ấy, cả nhà quây quần bên bát canh bí nóng hổi.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/hat-bi-cua-be-su/page-07/sentence-02-en.mp3",
+                  "exists": true,
+                  "bytes": 60332,
+                  "durationSec": 3.77
+                },
+                "vi": {
+                  "path": "assets/audio/hat-bi-cua-be-su/page-07/sentence-02-vi.mp3",
+                  "exists": true,
+                  "bytes": 72236,
+                  "durationSec": 4.51
+                }
+              }
+            },
+            {
+              "id": "p07-s03",
+              "en": "Su smiled. The best things grow slowly, with a little patience.",
+              "vi": "Su mỉm cười. Những điều tốt đẹp lớn lên chậm rãi, nhờ một chút kiên nhẫn.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/hat-bi-cua-be-su/page-07/sentence-03-en.mp3",
+                  "exists": true,
+                  "bytes": 63404,
+                  "durationSec": 3.96
+                },
+                "vi": {
+                  "path": "assets/audio/hat-bi-cua-be-su/page-07/sentence-03-vi.mp3",
+                  "exists": true,
+                  "bytes": 97196,
+                  "durationSec": 6.07
+                }
+              }
+            }
+          ],
+          "fullPrompt": "Premium hand-painted picture-book illustration: gouache and soft watercolour textures on warm paper, rounded friendly shapes, gentle rim light, subtle paper grain and a soft vignette. Calm, comforting, never frightening. Respectful, accurate Vietnamese settings and dress. Keep each character identical on every page (see the character sheet). No text, letters, logos, signatures or watermarks. Story identity — mood: Fresh, bright and patient; a slow, happy garden story. Setting: A northern Vietnamese village garden: a bamboo pumpkin trellis, a clay water jar, a brick well, banana plants and a tiled-roof house. Light: Clear spring and early-summer mornings, ending in a warm lamplit family dinner. Signature motifs: a flat white seed, two tiny sprout leaves, a bamboo trellis with curling tendrils, big yellow pumpkin flowers and bees, a bowl of pumpkin soup. Palette: #CFE6EC, #F6EBC8, #7A9A4E, #4A6A32, #E3A23B, #FFF3C4, #23281A, #FBF8EC. Avoid: garden pests or wilting plants, a tantrum, gardening tools used dangerously. Characters: Su — boy around five with short spiky black hair, in green shorts and a cream T-shirt, carrying a small tin watering can; Grandpa (Ông) — slim grandfather with a short white beard, a faded indigo shirt and rolled-up trousers. Scene: grandfather and boy carrying the pumpkin together, then the family around a lamplit table with bowls of pumpkin soup."
+        }
+      ],
+      "status": {
+        "images": "0/8",
+        "audio": "36/36",
         "complete": false
       }
     },
@@ -7107,6 +8990,453 @@
       "status": {
         "images": "0/7",
         "audio": "24/24",
+        "complete": false
+      }
+    },
+    {
+      "id": "rua-con-ra-bien",
+      "title": {
+        "en": "Little Turtle Finds the Sea",
+        "vi": "Rùa Con Tìm Đường Ra Biển"
+      },
+      "theme": {
+        "en": "Even the smallest traveller finds the way, one step at a time.",
+        "vi": "Dù nhỏ bé đến đâu, từng bước một, ta sẽ tìm được đường."
+      },
+      "origin": "Original StoryMoon story, written in Vietnamese with an English companion text.",
+      "characters": [
+        {
+          "name": "Rùa Con",
+          "look": "tiny dark-olive baby green sea turtle with a heart-shaped shell and bright curious eyes"
+        },
+        {
+          "name": "the crab",
+          "look": "small pale-sand ghost crab with tall stalk eyes and a friendly wave of one claw"
+        },
+        {
+          "name": "the brothers and sisters",
+          "look": "a few more baby sea turtles, same colouring, swimming in the moonlit water"
+        }
+      ],
+      "artDirection": {
+        "mood": "Quiet, wide and reassuring; a brave little journey under a gentle moon.",
+        "setting": "A protected island beach at Côn Đảo: pale soft sand, sea grape plants at the top of the beach, smooth dark rocks, low green hills behind.",
+        "light": "Deep blue night with a low full moon laying a silver path across the sea.",
+        "motifs": [
+          "a silver moon path on the water",
+          "small turtle tracks in the sand",
+          "a ghost crab by its hole",
+          "a single seashell",
+          "gentle curling waves"
+        ],
+        "avoid": [
+          "predators, gulls or danger",
+          "beach lights or litter",
+          "rough stormy seas"
+        ],
+        "palette": {
+          "sky": "#0F2440",
+          "skyLow": "#24476A",
+          "ground": "#C9B48E",
+          "groundDeep": "#8C7A5E",
+          "accent": "#5FB3A8",
+          "glow": "#EAF2FF",
+          "ink": "#08121F",
+          "paper": "#ECF2F4"
+        }
+      },
+      "coverPrompt": "a tiny baby sea turtle crawling across pale moonlit sand toward a silver moon path on the sea, a small ghost crab watching",
+      "coverFullPrompt": "Premium hand-painted picture-book illustration: gouache and soft watercolour textures on warm paper, rounded friendly shapes, gentle rim light, subtle paper grain and a soft vignette. Calm, comforting, never frightening. Respectful, accurate Vietnamese settings and dress. Keep each character identical on every page (see the character sheet). No text, letters, logos, signatures or watermarks. Story identity — mood: Quiet, wide and reassuring; a brave little journey under a gentle moon. Setting: A protected island beach at Côn Đảo: pale soft sand, sea grape plants at the top of the beach, smooth dark rocks, low green hills behind. Light: Deep blue night with a low full moon laying a silver path across the sea. Signature motifs: a silver moon path on the water, small turtle tracks in the sand, a ghost crab by its hole, a single seashell, gentle curling waves. Palette: #0F2440, #24476A, #C9B48E, #8C7A5E, #5FB3A8, #EAF2FF, #08121F, #ECF2F4. Avoid: predators, gulls or danger, beach lights or litter, rough stormy seas. Characters: Rùa Con — tiny dark-olive baby green sea turtle with a heart-shaped shell and bright curious eyes; the crab — small pale-sand ghost crab with tall stalk eyes and a friendly wave of one claw; the brothers and sisters — a few more baby sea turtles, same colouring, swimming in the moonlit water. Scene: a tiny baby sea turtle crawling across pale moonlit sand toward a silver moon path on the sea, a small ghost crab watching.",
+      "cover": {
+        "path": "assets/images/stories/rua-con-ra-bien/cover.png",
+        "exists": false
+      },
+      "pages": [
+        {
+          "id": "page-01",
+          "prompt": "a quiet island beach at night, a small egg cracking open in the sand, a tiny baby sea turtle wriggling out",
+          "image": {
+            "path": "assets/images/stories/rua-con-ra-bien/page-01.png",
+            "exists": false
+          },
+          "sentences": [
+            {
+              "id": "p01-s01",
+              "en": "On a quiet beach at Côn Đảo, a little egg cracked open in the warm sand.",
+              "vi": "Trên bãi cát yên tĩnh ở Côn Đảo, một quả trứng nhỏ nứt ra trong lớp cát ấm.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/rua-con-ra-bien/page-01/sentence-01-en.mp3",
+                  "exists": true,
+                  "bytes": 67244,
+                  "durationSec": 4.2
+                },
+                "vi": {
+                  "path": "assets/audio/rua-con-ra-bien/page-01/sentence-01-vi.mp3",
+                  "exists": true,
+                  "bytes": 99116,
+                  "durationSec": 6.19
+                }
+              }
+            },
+            {
+              "id": "p01-s02",
+              "en": "Out wriggled a baby sea turtle, no bigger than a leaf.",
+              "vi": "Một chú rùa biển con bò ra, chỉ nhỏ bằng chiếc lá.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/rua-con-ra-bien/page-01/sentence-02-en.mp3",
+                  "exists": true,
+                  "bytes": 52652,
+                  "durationSec": 3.29
+                },
+                "vi": {
+                  "path": "assets/audio/rua-con-ra-bien/page-01/sentence-02-vi.mp3",
+                  "exists": true,
+                  "bytes": 66860,
+                  "durationSec": 4.18
+                }
+              }
+            }
+          ],
+          "fullPrompt": "Premium hand-painted picture-book illustration: gouache and soft watercolour textures on warm paper, rounded friendly shapes, gentle rim light, subtle paper grain and a soft vignette. Calm, comforting, never frightening. Respectful, accurate Vietnamese settings and dress. Keep each character identical on every page (see the character sheet). No text, letters, logos, signatures or watermarks. Story identity — mood: Quiet, wide and reassuring; a brave little journey under a gentle moon. Setting: A protected island beach at Côn Đảo: pale soft sand, sea grape plants at the top of the beach, smooth dark rocks, low green hills behind. Light: Deep blue night with a low full moon laying a silver path across the sea. Signature motifs: a silver moon path on the water, small turtle tracks in the sand, a ghost crab by its hole, a single seashell, gentle curling waves. Palette: #0F2440, #24476A, #C9B48E, #8C7A5E, #5FB3A8, #EAF2FF, #08121F, #ECF2F4. Avoid: predators, gulls or danger, beach lights or litter, rough stormy seas. Characters: Rùa Con — tiny dark-olive baby green sea turtle with a heart-shaped shell and bright curious eyes; the crab — small pale-sand ghost crab with tall stalk eyes and a friendly wave of one claw; the brothers and sisters — a few more baby sea turtles, same colouring, swimming in the moonlit water. Scene: a quiet island beach at night, a small egg cracking open in the sand, a tiny baby sea turtle wriggling out."
+        },
+        {
+          "id": "page-02",
+          "prompt": "the baby turtle alone by the empty nest, many small tracks leading away, looking around under the stars",
+          "image": {
+            "path": "assets/images/stories/rua-con-ra-bien/page-02.png",
+            "exists": false
+          },
+          "sentences": [
+            {
+              "id": "p02-s01",
+              "en": "Rùa Con looked around. His brothers and sisters had already gone.",
+              "vi": "Rùa Con nhìn quanh. Các anh chị đã đi hết cả rồi.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/rua-con-ra-bien/page-02/sentence-01-en.mp3",
+                  "exists": true,
+                  "bytes": 67244,
+                  "durationSec": 4.2
+                },
+                "vi": {
+                  "path": "assets/audio/rua-con-ra-bien/page-02/sentence-01-vi.mp3",
+                  "exists": true,
+                  "bytes": 64940,
+                  "durationSec": 4.06
+                }
+              }
+            },
+            {
+              "id": "p02-s02",
+              "en": "“Which way is the sea?” he wondered.",
+              "vi": "Rùa Con tự hỏi: “Biển ở phía nào nhỉ?”",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/rua-con-ra-bien/page-02/sentence-02-en.mp3",
+                  "exists": true,
+                  "bytes": 35756,
+                  "durationSec": 2.23
+                },
+                "vi": {
+                  "path": "assets/audio/rua-con-ra-bien/page-02/sentence-02-vi.mp3",
+                  "exists": true,
+                  "bytes": 48812,
+                  "durationSec": 3.05
+                }
+              }
+            }
+          ],
+          "fullPrompt": "Premium hand-painted picture-book illustration: gouache and soft watercolour textures on warm paper, rounded friendly shapes, gentle rim light, subtle paper grain and a soft vignette. Calm, comforting, never frightening. Respectful, accurate Vietnamese settings and dress. Keep each character identical on every page (see the character sheet). No text, letters, logos, signatures or watermarks. Story identity — mood: Quiet, wide and reassuring; a brave little journey under a gentle moon. Setting: A protected island beach at Côn Đảo: pale soft sand, sea grape plants at the top of the beach, smooth dark rocks, low green hills behind. Light: Deep blue night with a low full moon laying a silver path across the sea. Signature motifs: a silver moon path on the water, small turtle tracks in the sand, a ghost crab by its hole, a single seashell, gentle curling waves. Palette: #0F2440, #24476A, #C9B48E, #8C7A5E, #5FB3A8, #EAF2FF, #08121F, #ECF2F4. Avoid: predators, gulls or danger, beach lights or litter, rough stormy seas. Characters: Rùa Con — tiny dark-olive baby green sea turtle with a heart-shaped shell and bright curious eyes; the crab — small pale-sand ghost crab with tall stalk eyes and a friendly wave of one claw; the brothers and sisters — a few more baby sea turtles, same colouring, swimming in the moonlit water. Scene: the baby turtle alone by the empty nest, many small tracks leading away, looking around under the stars."
+        },
+        {
+          "id": "page-03",
+          "prompt": "a small ghost crab popping out of its hole and pointing a claw toward the moonlit sea",
+          "image": {
+            "path": "assets/images/stories/rua-con-ra-bien/page-03.png",
+            "exists": false
+          },
+          "sentences": [
+            {
+              "id": "p03-s01",
+              "en": "A little ghost crab popped out of its hole.",
+              "vi": "Một chú còng nhỏ ló ra khỏi hang.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/rua-con-ra-bien/page-03/sentence-01-en.mp3",
+                  "exists": true,
+                  "bytes": 43052,
+                  "durationSec": 2.69
+                },
+                "vi": {
+                  "path": "assets/audio/rua-con-ra-bien/page-03/sentence-01-vi.mp3",
+                  "exists": true,
+                  "bytes": 44588,
+                  "durationSec": 2.78
+                }
+              }
+            },
+            {
+              "id": "p03-s02",
+              "en": "“Follow the silver light,” said the crab. “The moon always shines on the sea.”",
+              "vi": "Còng bảo: “Cứ đi theo ánh bạc ấy. Trăng luôn soi sáng mặt biển mà.”",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/rua-con-ra-bien/page-03/sentence-02-en.mp3",
+                  "exists": true,
+                  "bytes": 78764,
+                  "durationSec": 4.92
+                },
+                "vi": {
+                  "path": "assets/audio/rua-con-ra-bien/page-03/sentence-02-vi.mp3",
+                  "exists": true,
+                  "bytes": 87596,
+                  "durationSec": 5.47
+                }
+              }
+            }
+          ],
+          "fullPrompt": "Premium hand-painted picture-book illustration: gouache and soft watercolour textures on warm paper, rounded friendly shapes, gentle rim light, subtle paper grain and a soft vignette. Calm, comforting, never frightening. Respectful, accurate Vietnamese settings and dress. Keep each character identical on every page (see the character sheet). No text, letters, logos, signatures or watermarks. Story identity — mood: Quiet, wide and reassuring; a brave little journey under a gentle moon. Setting: A protected island beach at Côn Đảo: pale soft sand, sea grape plants at the top of the beach, smooth dark rocks, low green hills behind. Light: Deep blue night with a low full moon laying a silver path across the sea. Signature motifs: a silver moon path on the water, small turtle tracks in the sand, a ghost crab by its hole, a single seashell, gentle curling waves. Palette: #0F2440, #24476A, #C9B48E, #8C7A5E, #5FB3A8, #EAF2FF, #08121F, #ECF2F4. Avoid: predators, gulls or danger, beach lights or litter, rough stormy seas. Characters: Rùa Con — tiny dark-olive baby green sea turtle with a heart-shaped shell and bright curious eyes; the crab — small pale-sand ghost crab with tall stalk eyes and a friendly wave of one claw; the brothers and sisters — a few more baby sea turtles, same colouring, swimming in the moonlit water. Scene: a small ghost crab popping out of its hole and pointing a claw toward the moonlit sea."
+        },
+        {
+          "id": "page-04",
+          "prompt": "a shining silver moon path on the water, the baby turtle crawling across the sand leaving little tracks",
+          "image": {
+            "path": "assets/images/stories/rua-con-ra-bien/page-04.png",
+            "exists": false
+          },
+          "sentences": [
+            {
+              "id": "p04-s01",
+              "en": "Rùa Con looked up and saw a shining path of moonlight on the water.",
+              "vi": "Rùa Con ngước lên, thấy một con đường ánh trăng lấp lánh trên mặt nước.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/rua-con-ra-bien/page-04/sentence-01-en.mp3",
+                  "exists": true,
+                  "bytes": 65708,
+                  "durationSec": 4.1
+                },
+                "vi": {
+                  "path": "assets/audio/rua-con-ra-bien/page-04/sentence-01-vi.mp3",
+                  "exists": true,
+                  "bytes": 96044,
+                  "durationSec": 6
+                }
+              }
+            },
+            {
+              "id": "p04-s02",
+              "en": "He began to crawl, flip-flap, flip-flap, across the sand.",
+              "vi": "Chú bắt đầu bò, lạch bạch, lạch bạch, băng qua bãi cát.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/rua-con-ra-bien/page-04/sentence-02-en.mp3",
+                  "exists": true,
+                  "bytes": 56492,
+                  "durationSec": 3.53
+                },
+                "vi": {
+                  "path": "assets/audio/rua-con-ra-bien/page-04/sentence-02-vi.mp3",
+                  "exists": true,
+                  "bytes": 72620,
+                  "durationSec": 4.54
+                }
+              }
+            }
+          ],
+          "fullPrompt": "Premium hand-painted picture-book illustration: gouache and soft watercolour textures on warm paper, rounded friendly shapes, gentle rim light, subtle paper grain and a soft vignette. Calm, comforting, never frightening. Respectful, accurate Vietnamese settings and dress. Keep each character identical on every page (see the character sheet). No text, letters, logos, signatures or watermarks. Story identity — mood: Quiet, wide and reassuring; a brave little journey under a gentle moon. Setting: A protected island beach at Côn Đảo: pale soft sand, sea grape plants at the top of the beach, smooth dark rocks, low green hills behind. Light: Deep blue night with a low full moon laying a silver path across the sea. Signature motifs: a silver moon path on the water, small turtle tracks in the sand, a ghost crab by its hole, a single seashell, gentle curling waves. Palette: #0F2440, #24476A, #C9B48E, #8C7A5E, #5FB3A8, #EAF2FF, #08121F, #ECF2F4. Avoid: predators, gulls or danger, beach lights or litter, rough stormy seas. Characters: Rùa Con — tiny dark-olive baby green sea turtle with a heart-shaped shell and bright curious eyes; the crab — small pale-sand ghost crab with tall stalk eyes and a friendly wave of one claw; the brothers and sisters — a few more baby sea turtles, same colouring, swimming in the moonlit water. Scene: a shining silver moon path on the water, the baby turtle crawling across the sand leaving little tracks."
+        },
+        {
+          "id": "page-05",
+          "prompt": "the baby turtle resting beside a seashell halfway down the beach, small waves curling in the distance",
+          "image": {
+            "path": "assets/images/stories/rua-con-ra-bien/page-05.png",
+            "exists": false
+          },
+          "sentences": [
+            {
+              "id": "p05-s01",
+              "en": "The sand was soft, and the way was long.",
+              "vi": "Cát mềm mà đường thì xa.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/rua-con-ra-bien/page-05/sentence-01-en.mp3",
+                  "exists": true,
+                  "bytes": 40364,
+                  "durationSec": 2.52
+                },
+                "vi": {
+                  "path": "assets/audio/rua-con-ra-bien/page-05/sentence-01-vi.mp3",
+                  "exists": true,
+                  "bytes": 34604,
+                  "durationSec": 2.16
+                }
+              }
+            },
+            {
+              "id": "p05-s02",
+              "en": "Rùa Con stopped to rest by a seashell, his little flippers tired.",
+              "vi": "Rùa Con dừng lại nghỉ bên một vỏ ốc, đôi chân chèo bé nhỏ mỏi nhừ.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/rua-con-ra-bien/page-05/sentence-02-en.mp3",
+                  "exists": true,
+                  "bytes": 65708,
+                  "durationSec": 4.1
+                },
+                "vi": {
+                  "path": "assets/audio/rua-con-ra-bien/page-05/sentence-02-vi.mp3",
+                  "exists": true,
+                  "bytes": 87212,
+                  "durationSec": 5.45
+                }
+              }
+            },
+            {
+              "id": "p05-s03",
+              "en": "Then he heard the waves whispering, “Shhh… shhh… come home.”",
+              "vi": "Rồi chú nghe tiếng sóng thì thầm: “Rì rào… rì rào… về đây nào.”",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/rua-con-ra-bien/page-05/sentence-03-en.mp3",
+                  "exists": true,
+                  "bytes": 58796,
+                  "durationSec": 3.67
+                },
+                "vi": {
+                  "path": "assets/audio/rua-con-ra-bien/page-05/sentence-03-vi.mp3",
+                  "exists": true,
+                  "bytes": 82220,
+                  "durationSec": 5.14
+                }
+              }
+            }
+          ],
+          "fullPrompt": "Premium hand-painted picture-book illustration: gouache and soft watercolour textures on warm paper, rounded friendly shapes, gentle rim light, subtle paper grain and a soft vignette. Calm, comforting, never frightening. Respectful, accurate Vietnamese settings and dress. Keep each character identical on every page (see the character sheet). No text, letters, logos, signatures or watermarks. Story identity — mood: Quiet, wide and reassuring; a brave little journey under a gentle moon. Setting: A protected island beach at Côn Đảo: pale soft sand, sea grape plants at the top of the beach, smooth dark rocks, low green hills behind. Light: Deep blue night with a low full moon laying a silver path across the sea. Signature motifs: a silver moon path on the water, small turtle tracks in the sand, a ghost crab by its hole, a single seashell, gentle curling waves. Palette: #0F2440, #24476A, #C9B48E, #8C7A5E, #5FB3A8, #EAF2FF, #08121F, #ECF2F4. Avoid: predators, gulls or danger, beach lights or litter, rough stormy seas. Characters: Rùa Con — tiny dark-olive baby green sea turtle with a heart-shaped shell and bright curious eyes; the crab — small pale-sand ghost crab with tall stalk eyes and a friendly wave of one claw; the brothers and sisters — a few more baby sea turtles, same colouring, swimming in the moonlit water. Scene: the baby turtle resting beside a seashell halfway down the beach, small waves curling in the distance."
+        },
+        {
+          "id": "page-06",
+          "prompt": "a gentle wave lifting the baby turtle off the wet sand, the turtle starting to swim in the silver water",
+          "image": {
+            "path": "assets/images/stories/rua-con-ra-bien/page-06.png",
+            "exists": false
+          },
+          "sentences": [
+            {
+              "id": "p06-s01",
+              "en": "With one last push, Rùa Con reached the wet sand, and a gentle wave lifted him up.",
+              "vi": "Cố thêm một chút nữa, Rùa Con đã tới bãi cát ướt, và một con sóng hiền nâng chú lên.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/rua-con-ra-bien/page-06/sentence-01-en.mp3",
+                  "exists": true,
+                  "bytes": 81836,
+                  "durationSec": 5.11
+                },
+                "vi": {
+                  "path": "assets/audio/rua-con-ra-bien/page-06/sentence-01-vi.mp3",
+                  "exists": true,
+                  "bytes": 110252,
+                  "durationSec": 6.89
+                }
+              }
+            },
+            {
+              "id": "p06-s02",
+              "en": "He was swimming! The sea felt cool and soft, like a blanket.",
+              "vi": "Chú đang bơi! Nước biển mát rượi, êm như tấm chăn.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/rua-con-ra-bien/page-06/sentence-02-en.mp3",
+                  "exists": true,
+                  "bytes": 60716,
+                  "durationSec": 3.79
+                },
+                "vi": {
+                  "path": "assets/audio/rua-con-ra-bien/page-06/sentence-02-vi.mp3",
+                  "exists": true,
+                  "bytes": 66860,
+                  "durationSec": 4.18
+                }
+              }
+            }
+          ],
+          "fullPrompt": "Premium hand-painted picture-book illustration: gouache and soft watercolour textures on warm paper, rounded friendly shapes, gentle rim light, subtle paper grain and a soft vignette. Calm, comforting, never frightening. Respectful, accurate Vietnamese settings and dress. Keep each character identical on every page (see the character sheet). No text, letters, logos, signatures or watermarks. Story identity — mood: Quiet, wide and reassuring; a brave little journey under a gentle moon. Setting: A protected island beach at Côn Đảo: pale soft sand, sea grape plants at the top of the beach, smooth dark rocks, low green hills behind. Light: Deep blue night with a low full moon laying a silver path across the sea. Signature motifs: a silver moon path on the water, small turtle tracks in the sand, a ghost crab by its hole, a single seashell, gentle curling waves. Palette: #0F2440, #24476A, #C9B48E, #8C7A5E, #5FB3A8, #EAF2FF, #08121F, #ECF2F4. Avoid: predators, gulls or danger, beach lights or litter, rough stormy seas. Characters: Rùa Con — tiny dark-olive baby green sea turtle with a heart-shaped shell and bright curious eyes; the crab — small pale-sand ghost crab with tall stalk eyes and a friendly wave of one claw; the brothers and sisters — a few more baby sea turtles, same colouring, swimming in the moonlit water. Scene: a gentle wave lifting the baby turtle off the wet sand, the turtle starting to swim in the silver water."
+        },
+        {
+          "id": "page-07",
+          "prompt": "several baby sea turtles swimming together along the moon path under a sky full of stars",
+          "image": {
+            "path": "assets/images/stories/rua-con-ra-bien/page-07.png",
+            "exists": false
+          },
+          "sentences": [
+            {
+              "id": "p07-s01",
+              "en": "Out in the moonlit water, his brothers and sisters were waiting.",
+              "vi": "Ngoài làn nước ánh trăng, các anh chị đang đợi chú.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/rua-con-ra-bien/page-07/sentence-01-en.mp3",
+                  "exists": true,
+                  "bytes": 65324,
+                  "durationSec": 4.08
+                },
+                "vi": {
+                  "path": "assets/audio/rua-con-ra-bien/page-07/sentence-01-vi.mp3",
+                  "exists": true,
+                  "bytes": 68780,
+                  "durationSec": 4.3
+                }
+              }
+            },
+            {
+              "id": "p07-s02",
+              "en": "Together they swam toward their new home, under a sky full of stars.",
+              "vi": "Cả nhà cùng bơi về ngôi nhà mới, dưới bầu trời đầy sao.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/rua-con-ra-bien/page-07/sentence-02-en.mp3",
+                  "exists": true,
+                  "bytes": 71084,
+                  "durationSec": 4.44
+                },
+                "vi": {
+                  "path": "assets/audio/rua-con-ra-bien/page-07/sentence-02-vi.mp3",
+                  "exists": true,
+                  "bytes": 73388,
+                  "durationSec": 4.58
+                }
+              }
+            },
+            {
+              "id": "p07-s03",
+              "en": "And the moon kept shining softly, lighting the way for every little one.",
+              "vi": "Còn ông trăng vẫn dịu dàng soi sáng, dẫn lối cho mọi bạn nhỏ.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/rua-con-ra-bien/page-07/sentence-03-en.mp3",
+                  "exists": true,
+                  "bytes": 75308,
+                  "durationSec": 4.7
+                },
+                "vi": {
+                  "path": "assets/audio/rua-con-ra-bien/page-07/sentence-03-vi.mp3",
+                  "exists": true,
+                  "bytes": 81836,
+                  "durationSec": 5.11
+                }
+              }
+            }
+          ],
+          "fullPrompt": "Premium hand-painted picture-book illustration: gouache and soft watercolour textures on warm paper, rounded friendly shapes, gentle rim light, subtle paper grain and a soft vignette. Calm, comforting, never frightening. Respectful, accurate Vietnamese settings and dress. Keep each character identical on every page (see the character sheet). No text, letters, logos, signatures or watermarks. Story identity — mood: Quiet, wide and reassuring; a brave little journey under a gentle moon. Setting: A protected island beach at Côn Đảo: pale soft sand, sea grape plants at the top of the beach, smooth dark rocks, low green hills behind. Light: Deep blue night with a low full moon laying a silver path across the sea. Signature motifs: a silver moon path on the water, small turtle tracks in the sand, a ghost crab by its hole, a single seashell, gentle curling waves. Palette: #0F2440, #24476A, #C9B48E, #8C7A5E, #5FB3A8, #EAF2FF, #08121F, #ECF2F4. Avoid: predators, gulls or danger, beach lights or litter, rough stormy seas. Characters: Rùa Con — tiny dark-olive baby green sea turtle with a heart-shaped shell and bright curious eyes; the crab — small pale-sand ghost crab with tall stalk eyes and a friendly wave of one claw; the brothers and sisters — a few more baby sea turtles, same colouring, swimming in the moonlit water. Scene: several baby sea turtles swimming together along the moon path under a sky full of stars."
+        }
+      ],
+      "status": {
+        "images": "0/8",
+        "audio": "32/32",
         "complete": false
       }
     },
@@ -11236,6 +13566,438 @@
       "status": {
         "images": "0/9",
         "audio": "32/32",
+        "complete": false
+      }
+    },
+    {
+      "id": "voi-con-ban-don",
+      "title": {
+        "en": "Bin, the Baby Elephant Who Shared",
+        "vi": "Voi Con Bin Ở Bản Đôn"
+      },
+      "theme": {
+        "en": "Sharing makes happiness bigger.",
+        "vi": "Chia sẻ làm niềm vui lớn thêm."
+      },
+      "origin": "Original StoryMoon story, written in Vietnamese with an English companion text.",
+      "characters": [
+        {
+          "name": "Bin",
+          "look": "small round grey baby elephant with big floppy ears, pinkish ear edges and a curly little trunk"
+        },
+        {
+          "name": "the little deer",
+          "look": "slender fawn-brown barking deer with large dark eyes"
+        },
+        {
+          "name": "the squirrel",
+          "look": "red-bellied squirrel with a fluffy tail"
+        },
+        {
+          "name": "two sunbirds",
+          "look": "tiny olive-backed sunbirds with yellow breasts"
+        }
+      ],
+      "artDirection": {
+        "mood": "Warm, sunny and kind; the hush of a hot afternoon, then the joy of first rain.",
+        "setting": "Dry dipterocarp forest of the Central Highlands near Bản Đôn: tall straight trunks, golden fallen leaves, a shrinking stream with smooth rocks, distant blue hills.",
+        "light": "Honey-gold dry-season sunlight filtering through tall trees, ending with soft grey rain clouds.",
+        "motifs": [
+          "a small cool pool in deep shade",
+          "a trunk spraying a sparkling shower",
+          "golden fallen leaves",
+          "smooth river stones",
+          "first raindrops"
+        ],
+        "avoid": [
+          "dead or suffering animals",
+          "harsh drought cracks with bones",
+          "people riding elephants"
+        ],
+        "palette": {
+          "sky": "#E9C98A",
+          "skyLow": "#F3DDB0",
+          "ground": "#9A7A4A",
+          "groundDeep": "#5A4A2E",
+          "accent": "#7FA7B5",
+          "glow": "#FFF0C8",
+          "ink": "#2A2218",
+          "paper": "#FAF2E2"
+        }
+      },
+      "coverPrompt": "a baby elephant spraying a sparkling shower from its trunk over a little deer, a squirrel and two sunbirds beside a shady forest pool",
+      "coverFullPrompt": "Premium hand-painted picture-book illustration: gouache and soft watercolour textures on warm paper, rounded friendly shapes, gentle rim light, subtle paper grain and a soft vignette. Calm, comforting, never frightening. Respectful, accurate Vietnamese settings and dress. Keep each character identical on every page (see the character sheet). No text, letters, logos, signatures or watermarks. Story identity — mood: Warm, sunny and kind; the hush of a hot afternoon, then the joy of first rain. Setting: Dry dipterocarp forest of the Central Highlands near Bản Đôn: tall straight trunks, golden fallen leaves, a shrinking stream with smooth rocks, distant blue hills. Light: Honey-gold dry-season sunlight filtering through tall trees, ending with soft grey rain clouds. Signature motifs: a small cool pool in deep shade, a trunk spraying a sparkling shower, golden fallen leaves, smooth river stones, first raindrops. Palette: #E9C98A, #F3DDB0, #9A7A4A, #5A4A2E, #7FA7B5, #FFF0C8, #2A2218, #FAF2E2. Avoid: dead or suffering animals, harsh drought cracks with bones, people riding elephants. Characters: Bin — small round grey baby elephant with big floppy ears, pinkish ear edges and a curly little trunk; the little deer — slender fawn-brown barking deer with large dark eyes; the squirrel — red-bellied squirrel with a fluffy tail; two sunbirds — tiny olive-backed sunbirds with yellow breasts. Scene: a baby elephant spraying a sparkling shower from its trunk over a little deer, a squirrel and two sunbirds beside a shady forest pool.",
+      "cover": {
+        "path": "assets/images/stories/voi-con-ban-don/cover.png",
+        "exists": false
+      },
+      "pages": [
+        {
+          "id": "page-01",
+          "prompt": "a baby elephant splashing happily in a clear forest stream among tall highland trees",
+          "image": {
+            "path": "assets/images/stories/voi-con-ban-don/page-01.png",
+            "exists": false
+          },
+          "sentences": [
+            {
+              "id": "p01-s01",
+              "en": "In the forest of Bản Đôn lived a baby elephant named Bin.",
+              "vi": "Ở rừng Bản Đôn có một chú voi con tên là Bin.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/voi-con-ban-don/page-01/sentence-01-en.mp3",
+                  "exists": true,
+                  "bytes": 56108,
+                  "durationSec": 3.5
+                },
+                "vi": {
+                  "path": "assets/audio/voi-con-ban-don/page-01/sentence-01-vi.mp3",
+                  "exists": true,
+                  "bytes": 59180,
+                  "durationSec": 3.7
+                }
+              }
+            },
+            {
+              "id": "p01-s02",
+              "en": "Bin loved splashing in the cool stream more than anything.",
+              "vi": "Bin thích nhất là được nghịch nước dưới con suối mát.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/voi-con-ban-don/page-01/sentence-02-en.mp3",
+                  "exists": true,
+                  "bytes": 59948,
+                  "durationSec": 3.74
+                },
+                "vi": {
+                  "path": "assets/audio/voi-con-ban-don/page-01/sentence-02-vi.mp3",
+                  "exists": true,
+                  "bytes": 73004,
+                  "durationSec": 4.56
+                }
+              }
+            }
+          ],
+          "fullPrompt": "Premium hand-painted picture-book illustration: gouache and soft watercolour textures on warm paper, rounded friendly shapes, gentle rim light, subtle paper grain and a soft vignette. Calm, comforting, never frightening. Respectful, accurate Vietnamese settings and dress. Keep each character identical on every page (see the character sheet). No text, letters, logos, signatures or watermarks. Story identity — mood: Warm, sunny and kind; the hush of a hot afternoon, then the joy of first rain. Setting: Dry dipterocarp forest of the Central Highlands near Bản Đôn: tall straight trunks, golden fallen leaves, a shrinking stream with smooth rocks, distant blue hills. Light: Honey-gold dry-season sunlight filtering through tall trees, ending with soft grey rain clouds. Signature motifs: a small cool pool in deep shade, a trunk spraying a sparkling shower, golden fallen leaves, smooth river stones, first raindrops. Palette: #E9C98A, #F3DDB0, #9A7A4A, #5A4A2E, #7FA7B5, #FFF0C8, #2A2218, #FAF2E2. Avoid: dead or suffering animals, harsh drought cracks with bones, people riding elephants. Characters: Bin — small round grey baby elephant with big floppy ears, pinkish ear edges and a curly little trunk; the little deer — slender fawn-brown barking deer with large dark eyes; the squirrel — red-bellied squirrel with a fluffy tail; two sunbirds — tiny olive-backed sunbirds with yellow breasts. Scene: a baby elephant splashing happily in a clear forest stream among tall highland trees."
+        },
+        {
+          "id": "page-02",
+          "prompt": "a thin, shrinking stream between smooth stones, golden leaves on the ground, one small pool in deep shade",
+          "image": {
+            "path": "assets/images/stories/voi-con-ban-don/page-02.png",
+            "exists": false
+          },
+          "sentences": [
+            {
+              "id": "p02-s01",
+              "en": "But that year the dry season was long, and the stream grew thinner and thinner.",
+              "vi": "Nhưng năm ấy mùa khô kéo dài, con suối cứ cạn dần, cạn dần.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/voi-con-ban-don/page-02/sentence-01-en.mp3",
+                  "exists": true,
+                  "bytes": 80300,
+                  "durationSec": 5.02
+                },
+                "vi": {
+                  "path": "assets/audio/voi-con-ban-don/page-02/sentence-01-vi.mp3",
+                  "exists": true,
+                  "bytes": 78380,
+                  "durationSec": 4.9
+                }
+              }
+            },
+            {
+              "id": "p02-s02",
+              "en": "Only one small pool was left, deep in the shade of the big trees.",
+              "vi": "Chỉ còn lại một vũng nước nhỏ dưới bóng những cây cổ thụ.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/voi-con-ban-don/page-02/sentence-02-en.mp3",
+                  "exists": true,
+                  "bytes": 64172,
+                  "durationSec": 4.01
+                },
+                "vi": {
+                  "path": "assets/audio/voi-con-ban-don/page-02/sentence-02-vi.mp3",
+                  "exists": true,
+                  "bytes": 77228,
+                  "durationSec": 4.82
+                }
+              }
+            }
+          ],
+          "fullPrompt": "Premium hand-painted picture-book illustration: gouache and soft watercolour textures on warm paper, rounded friendly shapes, gentle rim light, subtle paper grain and a soft vignette. Calm, comforting, never frightening. Respectful, accurate Vietnamese settings and dress. Keep each character identical on every page (see the character sheet). No text, letters, logos, signatures or watermarks. Story identity — mood: Warm, sunny and kind; the hush of a hot afternoon, then the joy of first rain. Setting: Dry dipterocarp forest of the Central Highlands near Bản Đôn: tall straight trunks, golden fallen leaves, a shrinking stream with smooth rocks, distant blue hills. Light: Honey-gold dry-season sunlight filtering through tall trees, ending with soft grey rain clouds. Signature motifs: a small cool pool in deep shade, a trunk spraying a sparkling shower, golden fallen leaves, smooth river stones, first raindrops. Palette: #E9C98A, #F3DDB0, #9A7A4A, #5A4A2E, #7FA7B5, #FFF0C8, #2A2218, #FAF2E2. Avoid: dead or suffering animals, harsh drought cracks with bones, people riding elephants. Characters: Bin — small round grey baby elephant with big floppy ears, pinkish ear edges and a curly little trunk; the little deer — slender fawn-brown barking deer with large dark eyes; the squirrel — red-bellied squirrel with a fluffy tail; two sunbirds — tiny olive-backed sunbirds with yellow breasts. Scene: a thin, shrinking stream between smooth stones, golden leaves on the ground, one small pool in deep shade."
+        },
+        {
+          "id": "page-03",
+          "prompt": "the baby elephant drinking from the shady pool, ears flapping, looking pleased with himself",
+          "image": {
+            "path": "assets/images/stories/voi-con-ban-don/page-03.png",
+            "exists": false
+          },
+          "sentences": [
+            {
+              "id": "p03-s01",
+              "en": "Bin found it first and drank and drank, happily flapping his ears.",
+              "vi": "Bin tìm thấy trước, uống mãi, uống mãi, đôi tai phe phẩy vui sướng.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/voi-con-ban-don/page-03/sentence-01-en.mp3",
+                  "exists": true,
+                  "bytes": 66860,
+                  "durationSec": 4.18
+                },
+                "vi": {
+                  "path": "assets/audio/voi-con-ban-don/page-03/sentence-01-vi.mp3",
+                  "exists": true,
+                  "bytes": 89516,
+                  "durationSec": 5.59
+                }
+              }
+            },
+            {
+              "id": "p03-s02",
+              "en": "“This is my pool,” he thought.",
+              "vi": "Bin nghĩ: “Vũng nước này là của mình.”",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/voi-con-ban-don/page-03/sentence-02-en.mp3",
+                  "exists": true,
+                  "bytes": 31148,
+                  "durationSec": 1.94
+                },
+                "vi": {
+                  "path": "assets/audio/voi-con-ban-don/page-03/sentence-02-vi.mp3",
+                  "exists": true,
+                  "bytes": 50732,
+                  "durationSec": 3.17
+                }
+              }
+            }
+          ],
+          "fullPrompt": "Premium hand-painted picture-book illustration: gouache and soft watercolour textures on warm paper, rounded friendly shapes, gentle rim light, subtle paper grain and a soft vignette. Calm, comforting, never frightening. Respectful, accurate Vietnamese settings and dress. Keep each character identical on every page (see the character sheet). No text, letters, logos, signatures or watermarks. Story identity — mood: Warm, sunny and kind; the hush of a hot afternoon, then the joy of first rain. Setting: Dry dipterocarp forest of the Central Highlands near Bản Đôn: tall straight trunks, golden fallen leaves, a shrinking stream with smooth rocks, distant blue hills. Light: Honey-gold dry-season sunlight filtering through tall trees, ending with soft grey rain clouds. Signature motifs: a small cool pool in deep shade, a trunk spraying a sparkling shower, golden fallen leaves, smooth river stones, first raindrops. Palette: #E9C98A, #F3DDB0, #9A7A4A, #5A4A2E, #7FA7B5, #FFF0C8, #2A2218, #FAF2E2. Avoid: dead or suffering animals, harsh drought cracks with bones, people riding elephants. Characters: Bin — small round grey baby elephant with big floppy ears, pinkish ear edges and a curly little trunk; the little deer — slender fawn-brown barking deer with large dark eyes; the squirrel — red-bellied squirrel with a fluffy tail; two sunbirds — tiny olive-backed sunbirds with yellow breasts. Scene: the baby elephant drinking from the shady pool, ears flapping, looking pleased with himself."
+        },
+        {
+          "id": "page-04",
+          "prompt": "a little deer, a squirrel and two sunbirds peeking out of the bushes at the edge of a steep-banked pool",
+          "image": {
+            "path": "assets/images/stories/voi-con-ban-don/page-04.png",
+            "exists": false
+          },
+          "sentences": [
+            {
+              "id": "p04-s01",
+              "en": "Then a little deer, a squirrel and two sunbirds came out of the bushes.",
+              "vi": "Rồi một chú nai nhỏ, một chị sóc và hai chú chim hút mật bước ra từ bụi cây.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/voi-con-ban-don/page-04/sentence-01-en.mp3",
+                  "exists": true,
+                  "bytes": 71852,
+                  "durationSec": 4.49
+                },
+                "vi": {
+                  "path": "assets/audio/voi-con-ban-don/page-04/sentence-01-vi.mp3",
+                  "exists": true,
+                  "bytes": 99884,
+                  "durationSec": 6.24
+                }
+              }
+            },
+            {
+              "id": "p04-s02",
+              "en": "They were very thirsty, but the banks were steep and they were too small to reach the water.",
+              "vi": "Chúng khát lắm, nhưng bờ vũng dốc quá, mà chúng thì bé, chẳng với tới được.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/voi-con-ban-don/page-04/sentence-02-en.mp3",
+                  "exists": true,
+                  "bytes": 94892,
+                  "durationSec": 5.93
+                },
+                "vi": {
+                  "path": "assets/audio/voi-con-ban-don/page-04/sentence-02-vi.mp3",
+                  "exists": true,
+                  "bytes": 99500,
+                  "durationSec": 6.22
+                }
+              }
+            }
+          ],
+          "fullPrompt": "Premium hand-painted picture-book illustration: gouache and soft watercolour textures on warm paper, rounded friendly shapes, gentle rim light, subtle paper grain and a soft vignette. Calm, comforting, never frightening. Respectful, accurate Vietnamese settings and dress. Keep each character identical on every page (see the character sheet). No text, letters, logos, signatures or watermarks. Story identity — mood: Warm, sunny and kind; the hush of a hot afternoon, then the joy of first rain. Setting: Dry dipterocarp forest of the Central Highlands near Bản Đôn: tall straight trunks, golden fallen leaves, a shrinking stream with smooth rocks, distant blue hills. Light: Honey-gold dry-season sunlight filtering through tall trees, ending with soft grey rain clouds. Signature motifs: a small cool pool in deep shade, a trunk spraying a sparkling shower, golden fallen leaves, smooth river stones, first raindrops. Palette: #E9C98A, #F3DDB0, #9A7A4A, #5A4A2E, #7FA7B5, #FFF0C8, #2A2218, #FAF2E2. Avoid: dead or suffering animals, harsh drought cracks with bones, people riding elephants. Characters: Bin — small round grey baby elephant with big floppy ears, pinkish ear edges and a curly little trunk; the little deer — slender fawn-brown barking deer with large dark eyes; the squirrel — red-bellied squirrel with a fluffy tail; two sunbirds — tiny olive-backed sunbirds with yellow breasts. Scene: a little deer, a squirrel and two sunbirds peeking out of the bushes at the edge of a steep-banked pool."
+        },
+        {
+          "id": "page-05",
+          "prompt": "the baby elephant looking thoughtfully at the small animals, then dipping his trunk into the pool",
+          "image": {
+            "path": "assets/images/stories/voi-con-ban-don/page-05.png",
+            "exists": false
+          },
+          "sentences": [
+            {
+              "id": "p05-s01",
+              "en": "Bin looked at their dry little faces and thought for a moment.",
+              "vi": "Bin nhìn những gương mặt khô khát ấy và nghĩ một lúc.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/voi-con-ban-don/page-05/sentence-01-en.mp3",
+                  "exists": true,
+                  "bytes": 62636,
+                  "durationSec": 3.91
+                },
+                "vi": {
+                  "path": "assets/audio/voi-con-ban-don/page-05/sentence-01-vi.mp3",
+                  "exists": true,
+                  "bytes": 71084,
+                  "durationSec": 4.44
+                }
+              }
+            },
+            {
+              "id": "p05-s02",
+              "en": "Then he dipped his trunk into the pool and filled it to the brim.",
+              "vi": "Rồi chú nhúng vòi xuống vũng, hút đầy một vòi nước.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/voi-con-ban-don/page-05/sentence-02-en.mp3",
+                  "exists": true,
+                  "bytes": 64940,
+                  "durationSec": 4.06
+                },
+                "vi": {
+                  "path": "assets/audio/voi-con-ban-don/page-05/sentence-02-vi.mp3",
+                  "exists": true,
+                  "bytes": 68396,
+                  "durationSec": 4.27
+                }
+              }
+            }
+          ],
+          "fullPrompt": "Premium hand-painted picture-book illustration: gouache and soft watercolour textures on warm paper, rounded friendly shapes, gentle rim light, subtle paper grain and a soft vignette. Calm, comforting, never frightening. Respectful, accurate Vietnamese settings and dress. Keep each character identical on every page (see the character sheet). No text, letters, logos, signatures or watermarks. Story identity — mood: Warm, sunny and kind; the hush of a hot afternoon, then the joy of first rain. Setting: Dry dipterocarp forest of the Central Highlands near Bản Đôn: tall straight trunks, golden fallen leaves, a shrinking stream with smooth rocks, distant blue hills. Light: Honey-gold dry-season sunlight filtering through tall trees, ending with soft grey rain clouds. Signature motifs: a small cool pool in deep shade, a trunk spraying a sparkling shower, golden fallen leaves, smooth river stones, first raindrops. Palette: #E9C98A, #F3DDB0, #9A7A4A, #5A4A2E, #7FA7B5, #FFF0C8, #2A2218, #FAF2E2. Avoid: dead or suffering animals, harsh drought cracks with bones, people riding elephants. Characters: Bin — small round grey baby elephant with big floppy ears, pinkish ear edges and a curly little trunk; the little deer — slender fawn-brown barking deer with large dark eyes; the squirrel — red-bellied squirrel with a fluffy tail; two sunbirds — tiny olive-backed sunbirds with yellow breasts. Scene: the baby elephant looking thoughtfully at the small animals, then dipping his trunk into the pool."
+        },
+        {
+          "id": "page-06",
+          "prompt": "the baby elephant spraying a gentle sparkling shower over the deer, squirrel and sunbirds, everyone laughing",
+          "image": {
+            "path": "assets/images/stories/voi-con-ban-don/page-06.png",
+            "exists": false
+          },
+          "sentences": [
+            {
+              "id": "p06-s01",
+              "en": "Whoosh! Bin sprayed a gentle shower over his new friends.",
+              "vi": "Phù! Bin phun một cơn mưa nhẹ lên các bạn.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/voi-con-ban-don/page-06/sentence-01-en.mp3",
+                  "exists": true,
+                  "bytes": 57644,
+                  "durationSec": 3.6
+                },
+                "vi": {
+                  "path": "assets/audio/voi-con-ban-don/page-06/sentence-01-vi.mp3",
+                  "exists": true,
+                  "bytes": 55724,
+                  "durationSec": 3.48
+                }
+              }
+            },
+            {
+              "id": "p06-s02",
+              "en": "The deer drank, the squirrel giggled, and the sunbirds bathed in the sparkles.",
+              "vi": "Nai uống nước, sóc cười khúc khích, chim hút mật tắm trong những giọt nước lấp lánh.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/voi-con-ban-don/page-06/sentence-02-en.mp3",
+                  "exists": true,
+                  "bytes": 81068,
+                  "durationSec": 5.06
+                },
+                "vi": {
+                  "path": "assets/audio/voi-con-ban-don/page-06/sentence-02-vi.mp3",
+                  "exists": true,
+                  "bytes": 114476,
+                  "durationSec": 7.15
+                }
+              }
+            },
+            {
+              "id": "p06-s03",
+              "en": "Bin laughed too. Sharing felt even better than splashing alone.",
+              "vi": "Bin cũng bật cười. Chia sẻ còn vui hơn cả nghịch nước một mình.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/voi-con-ban-don/page-06/sentence-03-en.mp3",
+                  "exists": true,
+                  "bytes": 65324,
+                  "durationSec": 4.08
+                },
+                "vi": {
+                  "path": "assets/audio/voi-con-ban-don/page-06/sentence-03-vi.mp3",
+                  "exists": true,
+                  "bytes": 85676,
+                  "durationSec": 5.35
+                }
+              }
+            }
+          ],
+          "fullPrompt": "Premium hand-painted picture-book illustration: gouache and soft watercolour textures on warm paper, rounded friendly shapes, gentle rim light, subtle paper grain and a soft vignette. Calm, comforting, never frightening. Respectful, accurate Vietnamese settings and dress. Keep each character identical on every page (see the character sheet). No text, letters, logos, signatures or watermarks. Story identity — mood: Warm, sunny and kind; the hush of a hot afternoon, then the joy of first rain. Setting: Dry dipterocarp forest of the Central Highlands near Bản Đôn: tall straight trunks, golden fallen leaves, a shrinking stream with smooth rocks, distant blue hills. Light: Honey-gold dry-season sunlight filtering through tall trees, ending with soft grey rain clouds. Signature motifs: a small cool pool in deep shade, a trunk spraying a sparkling shower, golden fallen leaves, smooth river stones, first raindrops. Palette: #E9C98A, #F3DDB0, #9A7A4A, #5A4A2E, #7FA7B5, #FFF0C8, #2A2218, #FAF2E2. Avoid: dead or suffering animals, harsh drought cracks with bones, people riding elephants. Characters: Bin — small round grey baby elephant with big floppy ears, pinkish ear edges and a curly little trunk; the little deer — slender fawn-brown barking deer with large dark eyes; the squirrel — red-bellied squirrel with a fluffy tail; two sunbirds — tiny olive-backed sunbirds with yellow breasts. Scene: the baby elephant spraying a gentle sparkling shower over the deer, squirrel and sunbirds, everyone laughing."
+        },
+        {
+          "id": "page-07",
+          "prompt": "soft grey rain clouds over the hills and the first rain falling, the friends dancing, then sleeping side by side under a big tree",
+          "image": {
+            "path": "assets/images/stories/voi-con-ban-don/page-07.png",
+            "exists": false
+          },
+          "sentences": [
+            {
+              "id": "p07-s01",
+              "en": "That evening, clouds rolled over the hills, and the first rain of the season began to fall.",
+              "vi": "Chiều hôm ấy, mây kéo về trên những ngọn đồi, cơn mưa đầu mùa bắt đầu rơi.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/voi-con-ban-don/page-07/sentence-01-en.mp3",
+                  "exists": true,
+                  "bytes": 92588,
+                  "durationSec": 5.78
+                },
+                "vi": {
+                  "path": "assets/audio/voi-con-ban-don/page-07/sentence-01-vi.mp3",
+                  "exists": true,
+                  "bytes": 98348,
+                  "durationSec": 6.14
+                }
+              }
+            },
+            {
+              "id": "p07-s02",
+              "en": "The friends danced together in the rain, and that night they slept side by side under the big trees.",
+              "vi": "Các bạn cùng nhau nhảy múa dưới mưa, rồi đêm ấy cùng ngủ bên nhau dưới tán cây cổ thụ.",
+              "audio": {
+                "en": {
+                  "path": "assets/audio/voi-con-ban-don/page-07/sentence-02-en.mp3",
+                  "exists": true,
+                  "bytes": 103340,
+                  "durationSec": 6.46
+                },
+                "vi": {
+                  "path": "assets/audio/voi-con-ban-don/page-07/sentence-02-vi.mp3",
+                  "exists": true,
+                  "bytes": 115628,
+                  "durationSec": 7.22
+                }
+              }
+            }
+          ],
+          "fullPrompt": "Premium hand-painted picture-book illustration: gouache and soft watercolour textures on warm paper, rounded friendly shapes, gentle rim light, subtle paper grain and a soft vignette. Calm, comforting, never frightening. Respectful, accurate Vietnamese settings and dress. Keep each character identical on every page (see the character sheet). No text, letters, logos, signatures or watermarks. Story identity — mood: Warm, sunny and kind; the hush of a hot afternoon, then the joy of first rain. Setting: Dry dipterocarp forest of the Central Highlands near Bản Đôn: tall straight trunks, golden fallen leaves, a shrinking stream with smooth rocks, distant blue hills. Light: Honey-gold dry-season sunlight filtering through tall trees, ending with soft grey rain clouds. Signature motifs: a small cool pool in deep shade, a trunk spraying a sparkling shower, golden fallen leaves, smooth river stones, first raindrops. Palette: #E9C98A, #F3DDB0, #9A7A4A, #5A4A2E, #7FA7B5, #FFF0C8, #2A2218, #FAF2E2. Avoid: dead or suffering animals, harsh drought cracks with bones, people riding elephants. Characters: Bin — small round grey baby elephant with big floppy ears, pinkish ear edges and a curly little trunk; the little deer — slender fawn-brown barking deer with large dark eyes; the squirrel — red-bellied squirrel with a fluffy tail; two sunbirds — tiny olive-backed sunbirds with yellow breasts. Scene: soft grey rain clouds over the hills and the first rain falling, the friends dancing, then sleeping side by side under a big tree."
+        }
+      ],
+      "status": {
+        "images": "0/8",
+        "audio": "30/30",
         "complete": false
       }
     }

@@ -1,0 +1,147 @@
+{
+  "id": "meo-con-chuc-ngu-ngon",
+  "title": {
+    "en": "Kitten Says Goodnight",
+    "vi": "Mèo Con Chúc Ngủ Ngon"
+  },
+  "description": {
+    "en": "Before bed, little kitten Mun says goodnight to the fish, the clock, the flowers and the moon, and the whole house says goodnight back.",
+    "vi": "Trước khi ngủ, mèo con Mun chúc ngủ ngon bạn cá, bác đồng hồ, những bông hoa và ông trăng, và cả ngôi nhà cũng chúc Mun ngủ ngon."
+  },
+  "theme": {
+    "en": "A gentle goodnight makes the whole house feel warm.",
+    "vi": "Một lời chúc ngủ ngon dịu dàng làm cả ngôi nhà thêm ấm áp."
+  },
+  "origin": "Original StoryMoon online story, written in English and Vietnamese.",
+  "category": "Bedtime",
+  "ageRange": "2–6 years",
+  "duration": "3 min",
+  "estimatedDurationSec": 69,
+  "requiresInternet": true,
+  "artDirection": {
+    "palette": {
+      "sky": "#2A2350",
+      "skyLow": "#5B4A86",
+      "ground": "#6E5A48",
+      "groundDeep": "#3E3128",
+      "accent": "#E8A86B",
+      "glow": "#F6E3B4",
+      "ink": "#151129",
+      "paper": "#F1ECF6"
+    }
+  },
+  "pages": [
+    {
+      "sentences": [
+        {
+          "en": "When the sky turned violet, little kitten Mun yawned a big, round yawn.",
+          "vi": "Khi bầu trời chuyển sang màu tím, mèo con Mun ngáp một cái thật to, thật tròn.",
+          "audio": {
+            "en": "meo-con-chuc-ngu-ngon/page-01/sentence-01-en.mp3",
+            "vi": "meo-con-chuc-ngu-ngon/page-01/sentence-01-vi.mp3"
+          },
+          "audioUrl": {
+            "en": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795350386/meo-con-chuc-ngu-ngon/page-01/sentence-01-en_giwomc.mp3",
+            "vi": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795350386/meo-con-chuc-ngu-ngon/page-01/sentence-01-vi_hjc6id.mp3"
+          }
+        },
+        {
+          "en": "“Before I sleep, I will say goodnight to everyone,” she whispered.",
+          "vi": "“Trước khi ngủ, mình sẽ chúc ngủ ngon mọi người,” Mun thì thầm.",
+          "audio": {
+            "en": "meo-con-chuc-ngu-ngon/page-01/sentence-02-en.mp3",
+            "vi": "meo-con-chuc-ngu-ngon/page-01/sentence-02-vi.mp3"
+          },
+          "audioUrl": {
+            "en": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795350385/meo-con-chuc-ngu-ngon/page-01/sentence-02-en_wua8sk.mp3",
+            "vi": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795350385/meo-con-chuc-ngu-ngon/page-01/sentence-02-vi_bq2klt.mp3"
+          }
+        }
+      ]
+    },
+    {
+      "sentences": [
+        {
+          "en": "Goodnight, little fish, swimming slowly in your bowl.",
+          "vi": "Chúc ngủ ngon nhé, bạn cá nhỏ đang bơi chầm chậm trong bình.",
+          "audio": {
+            "en": "meo-con-chuc-ngu-ngon/page-02/sentence-01-en.mp3",
+            "vi": "meo-con-chuc-ngu-ngon/page-02/sentence-01-vi.mp3"
+          },
+          "audioUrl": {
+            "en": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795350383/meo-con-chuc-ngu-ngon/page-02/sentence-01-en_odtrpz.mp3",
+            "vi": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795350383/meo-con-chuc-ngu-ngon/page-02/sentence-01-vi_kcccqw.mp3"
+          }
+        },
+        {
+          "en": "Goodnight, old clock, ticking softly on the wall.",
+          "vi": "Chúc ngủ ngon nhé, bác đồng hồ đang tích tắc khe khẽ trên tường.",
+          "audio": {
+            "en": "meo-con-chuc-ngu-ngon/page-02/sentence-02-en.mp3",
+            "vi": "meo-con-chuc-ngu-ngon/page-02/sentence-02-vi.mp3"
+          },
+          "audioUrl": {
+            "en": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795350382/meo-con-chuc-ngu-ngon/page-02/sentence-02-en_jbtboj.mp3",
+            "vi": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795350382/meo-con-chuc-ngu-ngon/page-02/sentence-02-vi_qgnzsv.mp3"
+          }
+        }
+      ]
+    },
+    {
+      "sentences": [
+        {
+          "en": "Goodnight, flowers on the windowsill, folding your petals for the night.",
+          "vi": "Chúc ngủ ngon nhé, những bông hoa bên cửa sổ đang khép cánh lại.",
+          "audio": {
+            "en": "meo-con-chuc-ngu-ngon/page-03/sentence-01-en.mp3",
+            "vi": "meo-con-chuc-ngu-ngon/page-03/sentence-01-vi.mp3"
+          },
+          "audioUrl": {
+            "en": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795350385/meo-con-chuc-ngu-ngon/page-03/sentence-01-en_v2iuo6.mp3",
+            "vi": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795350385/meo-con-chuc-ngu-ngon/page-03/sentence-01-vi_oby5wx.mp3"
+          }
+        },
+        {
+          "en": "Goodnight, round moon, shining over the rooftops.",
+          "vi": "Chúc ngủ ngon nhé, ông trăng tròn đang chiếu sáng trên những mái nhà.",
+          "audio": {
+            "en": "meo-con-chuc-ngu-ngon/page-03/sentence-02-en.mp3",
+            "vi": "meo-con-chuc-ngu-ngon/page-03/sentence-02-vi.mp3"
+          },
+          "audioUrl": {
+            "en": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795350384/meo-con-chuc-ngu-ngon/page-03/sentence-02-en_ptm15q.mp3",
+            "vi": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795350384/meo-con-chuc-ngu-ngon/page-03/sentence-02-vi_xvev0c.mp3"
+          }
+        }
+      ]
+    },
+    {
+      "sentences": [
+        {
+          "en": "Then Mun curled up in her basket, warm and soft as a cloud.",
+          "vi": "Rồi Mun cuộn tròn trong chiếc giỏ, ấm áp và mềm mại như một đám mây.",
+          "audio": {
+            "en": "meo-con-chuc-ngu-ngon/page-04/sentence-01-en.mp3",
+            "vi": "meo-con-chuc-ngu-ngon/page-04/sentence-01-vi.mp3"
+          },
+          "audioUrl": {
+            "en": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795350384/meo-con-chuc-ngu-ngon/page-04/sentence-01-en_d5slaz.mp3",
+            "vi": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795350383/meo-con-chuc-ngu-ngon/page-04/sentence-01-vi_wbtjti.mp3"
+          }
+        },
+        {
+          "en": "The whole house whispered back, “Goodnight, little Mun.”",
+          "vi": "Cả ngôi nhà khẽ thì thầm đáp lại: “Chúc Mun ngủ ngon.”",
+          "audio": {
+            "en": "meo-con-chuc-ngu-ngon/page-04/sentence-02-en.mp3",
+            "vi": "meo-con-chuc-ngu-ngon/page-04/sentence-02-vi.mp3"
+          },
+          "audioUrl": {
+            "en": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795350383/meo-con-chuc-ngu-ngon/page-04/sentence-02-en_fkk2yp.mp3",
+            "vi": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795350383/meo-con-chuc-ngu-ngon/page-04/sentence-02-vi_pgzn4a.mp3"
+          }
+        }
+      ]
+    }
+  ]
+}

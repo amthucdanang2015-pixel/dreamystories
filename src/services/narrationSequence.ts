@@ -90,7 +90,7 @@ export interface NarrationLocation {
 }
 
 export type NarrationEvent =
-  | { kind: 'clip-failed'; fallback: 'tts' | 'none'; reason: string; progress: number; status?: unknown }
+  | { kind: 'clip-failed'; fallback: 'tts' | 'none' | 'retry'; reason: string; progress: number; status?: unknown }
   | { kind: 'no-recording' };
 
 export interface NarrateItemDeps {
@@ -99,10 +99,21 @@ export interface NarrateItemDeps {
   /** False once narration was stopped or superseded. */
   isCurrent: () => boolean;
   report: (event: NarrationEvent, item: NarrationItem, where: NarrationLocation) => void;
+  /**
+   * Read the sentence with text-to-speech when its clip is missing or fails
+   * (default true: bundled stories). Online stories pass false so a network
+   * or host problem is reported as `failed` and the reader can offer Retry.
+   */
+  fallbackToSpeech?: boolean;
 }
 
-/** How a sentence was actually voiced. */
-export type NarratedWith = 'clip' | 'clip-partial' | 'tts' | 'stopped' | 'paused';
+/** How a sentence was actually voiced. `failed`: no clip played and speech fallback is off. */
+export type NarratedWith = 'clip' | 'clip-partial' | 'tts' | 'stopped' | 'paused' | 'failed';
+
+/** Why the last `failed` sentence could not be played (set by narrateItem). */
+export interface NarrationFailure {
+  reason: string;
+}
 
 /**
  * Voice one sentence: the bundled recording when there is one; text-to-speech
@@ -113,8 +124,10 @@ export async function narrateItem(
   item: NarrationItem,
   rate: number,
   where: NarrationLocation,
-  deps: NarrateItemDeps
+  deps: NarrateItemDeps,
+  failure?: NarrationFailure
 ): Promise<NarratedWith> {
+  const speechFallback = deps.fallbackToSpeech !== false;
   if (item.audio !== undefined && item.audio !== null) {
     const outcome = await deps.playClip(item.audio, rate);
     if (outcome.result === 'finished') return 'clip';
@@ -126,7 +139,7 @@ export async function narrateItem(
     deps.report(
       {
         kind: 'clip-failed',
-        fallback: skipTts ? 'none' : 'tts',
+        fallback: skipTts ? 'none' : speechFallback ? 'tts' : 'retry',
         reason: outcome.reason ?? 'unknown',
         progress,
         status: outcome.status,
@@ -135,8 +148,16 @@ export async function narrateItem(
       where
     );
     if (skipTts) return 'clip-partial';
+    if (!speechFallback) {
+      if (failure) failure.reason = outcome.reason ?? 'unknown';
+      return 'failed';
+    }
   } else {
     deps.report({ kind: 'no-recording' }, item, where);
+    if (!speechFallback) {
+      if (failure) failure.reason = 'no recording';
+      return 'failed';
+    }
   }
 
   if (!deps.isCurrent()) return 'stopped';

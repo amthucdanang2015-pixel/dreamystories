@@ -1,0 +1,458 @@
+{
+  "settings": {
+    "tool": "VoiceStudio (https://github.com/debpalash/VoiceStudio, AGPL-3.0 app)",
+    "endpoint": "http://127.0.0.1:3900/v1/audio/speech",
+    "model": "omnivoice",
+    "availableModels": [
+      "tts-1",
+      "tts-1-hd",
+      "gpt-4o-mini-tts",
+      "whisper-1",
+      "gpt-4o-transcribe",
+      "gpt-4o-mini-transcribe",
+      "omnivoice",
+      "kittentts",
+      "mlx-audio",
+      "faster-whisper"
+    ],
+    "voiceEn": "demo0001",
+    "voiceVi": "abf73455",
+    "speed": 0.95,
+    "lastRunAt": "2026-11-22T13:29:23.192Z",
+    "licenseNote": "Check the per-model licence in VoiceStudio Model Manager. Default k2-fsa/OmniVoice weights are CC-BY-NC (non-commercial)."
+  },
+  "files": {
+    "ca-vang-dem-sao/page-01/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "In a quiet pond, a little goldfish named Cam loved looking up at the night sky.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 79916,
+      "durationSec": 4.99,
+      "generatedAt": "2026-11-22T09:05:44.333Z"
+    },
+    "ca-vang-dem-sao/page-01/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Trong một chiếc ao yên tĩnh, có chú cá vàng tên Cam rất thích ngắm bầu trời đêm.",
+      "voice": "abf73455",
+      "model": "omnivoice",
+      "bytes": 92972,
+      "durationSec": 5.81,
+      "generatedAt": "2026-11-22T13:29:37.869Z"
+    },
+    "ca-vang-dem-sao/page-01/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "“How many stars are there?” Cam wondered.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 41900,
+      "durationSec": 2.62,
+      "generatedAt": "2026-11-22T09:06:56.362Z"
+    },
+    "ca-vang-dem-sao/page-01/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "“Trên trời có bao nhiêu ngôi sao nhỉ?” Cam tự hỏi.",
+      "voice": "abf73455",
+      "model": "omnivoice",
+      "bytes": 67628,
+      "durationSec": 4.22,
+      "generatedAt": "2026-11-22T13:29:48.850Z"
+    },
+    "ca-vang-dem-sao/page-02/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "One, two, three… Cam counted the stars reflected on the water.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 62636,
+      "durationSec": 3.91,
+      "generatedAt": "2026-11-22T09:07:26.790Z"
+    },
+    "ca-vang-dem-sao/page-02/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Một, hai, ba… Cam đếm những ngôi sao in bóng trên mặt nước.",
+      "voice": "abf73455",
+      "model": "omnivoice",
+      "bytes": 80684,
+      "durationSec": 5.04,
+      "generatedAt": "2026-11-22T13:30:00.454Z"
+    },
+    "ca-vang-dem-sao/page-02/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "But every time a breeze passed, the stars wobbled and Cam lost count.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 71468,
+      "durationSec": 4.46,
+      "generatedAt": "2026-11-22T09:07:58.953Z"
+    },
+    "ca-vang-dem-sao/page-02/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "Nhưng mỗi lần làn gió thổi qua, những ngôi sao lại rung rinh và Cam đếm lẫn mất.",
+      "voice": "abf73455",
+      "model": "omnivoice",
+      "bytes": 99500,
+      "durationSec": 6.22,
+      "generatedAt": "2026-11-22T13:30:13.838Z"
+    },
+    "ca-vang-dem-sao/page-03/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "An old turtle swam by and smiled kindly.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 40748,
+      "durationSec": 2.54,
+      "generatedAt": "2026-11-22T09:08:30.879Z"
+    },
+    "ca-vang-dem-sao/page-03/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Một bác rùa già bơi ngang qua và mỉm cười hiền hậu.",
+      "voice": "abf73455",
+      "model": "omnivoice",
+      "bytes": 72620,
+      "durationSec": 4.54,
+      "generatedAt": "2026-11-22T13:30:25.727Z"
+    },
+    "ca-vang-dem-sao/page-03/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "“Some things are not for counting, little one, only for loving,” he said.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 72236,
+      "durationSec": 4.51,
+      "generatedAt": "2026-11-22T09:09:02.281Z"
+    },
+    "ca-vang-dem-sao/page-03/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "“Có những điều không phải để đếm đâu cháu ạ, mà để yêu thương thôi,” bác nói.",
+      "voice": "abf73455",
+      "model": "omnivoice",
+      "bytes": 93356,
+      "durationSec": 5.83,
+      "generatedAt": "2026-11-22T13:30:38.310Z"
+    },
+    "ca-vang-dem-sao/page-04/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "So Cam stopped counting and simply watched the stars twinkle.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 62636,
+      "durationSec": 3.91,
+      "generatedAt": "2026-11-22T09:09:35.391Z"
+    },
+    "ca-vang-dem-sao/page-04/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Thế là Cam thôi không đếm nữa, chỉ lặng ngắm những vì sao lấp lánh.",
+      "voice": "abf73455",
+      "model": "omnivoice",
+      "bytes": 80684,
+      "durationSec": 5.04,
+      "generatedAt": "2026-11-22T13:30:49.968Z"
+    },
+    "ca-vang-dem-sao/page-04/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "Soon his eyes grew heavy, and he drifted into a sparkling dream.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 65324,
+      "durationSec": 4.08,
+      "generatedAt": "2026-11-22T09:10:07.796Z"
+    },
+    "ca-vang-dem-sao/page-04/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "Chẳng mấy chốc, mắt Cam díu lại, và chú chìm vào một giấc mơ lấp lánh.",
+      "voice": "abf73455",
+      "model": "omnivoice",
+      "bytes": 89132,
+      "durationSec": 5.57,
+      "generatedAt": "2026-11-22T13:31:01.478Z"
+    },
+    "chiec-o-mau-vang/page-01/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "One rainy afternoon, Na walked home under her bright yellow umbrella.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 72236,
+      "durationSec": 4.51,
+      "generatedAt": "2026-11-22T09:10:41.128Z"
+    },
+    "chiec-o-mau-vang/page-01/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Một buổi chiều mưa, bé Na đi bộ về nhà dưới chiếc ô màu vàng tươi.",
+      "voice": "abf73455",
+      "model": "omnivoice",
+      "bytes": 79532,
+      "durationSec": 4.97,
+      "generatedAt": "2026-11-22T13:31:12.410Z"
+    },
+    "chiec-o-mau-vang/page-01/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "Pitter-patter, sang the raindrops on top.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 44588,
+      "durationSec": 2.78,
+      "generatedAt": "2026-11-22T09:11:12.198Z"
+    },
+    "chiec-o-mau-vang/page-01/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "Lộp độp, lộp độp, những hạt mưa hát vang trên mái ô.",
+      "voice": "abf73455",
+      "model": "omnivoice",
+      "bytes": 63404,
+      "durationSec": 3.96,
+      "generatedAt": "2026-11-22T13:31:22.955Z"
+    },
+    "chiec-o-mau-vang/page-02/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "By the pond, a little duckling was shivering under a lotus leaf.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 66092,
+      "durationSec": 4.13,
+      "generatedAt": "2026-11-22T09:11:45.014Z"
+    },
+    "chiec-o-mau-vang/page-02/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Bên bờ ao, một chú vịt con đang run run dưới chiếc lá sen.",
+      "voice": "abf73455",
+      "model": "omnivoice",
+      "bytes": 69548,
+      "durationSec": 4.34,
+      "generatedAt": "2026-11-22T13:31:33.684Z"
+    },
+    "chiec-o-mau-vang/page-02/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "“Come in, there is room for you,” said Na.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 38828,
+      "durationSec": 2.42,
+      "generatedAt": "2026-11-22T09:12:17.738Z"
+    },
+    "chiec-o-mau-vang/page-02/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "“Vào đây với mình, còn chỗ cho bạn mà,” Na nói.",
+      "voice": "abf73455",
+      "model": "omnivoice",
+      "bytes": 58028,
+      "durationSec": 3.62,
+      "generatedAt": "2026-11-22T13:31:43.481Z"
+    },
+    "chiec-o-mau-vang/page-03/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "Soon a snail, a frog and a tiny bird joined them, too.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 50732,
+      "durationSec": 3.17,
+      "generatedAt": "2026-11-22T09:12:48.296Z"
+    },
+    "chiec-o-mau-vang/page-03/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Chẳng mấy chốc, một chú ốc sên, một bạn ếch và một chú chim nhỏ cũng đến trú mưa cùng.",
+      "voice": "abf73455",
+      "model": "omnivoice",
+      "bytes": 112172,
+      "durationSec": 7.01,
+      "generatedAt": "2026-11-22T13:31:57.942Z"
+    },
+    "chiec-o-mau-vang/page-03/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "The umbrella was small, but everyone squeezed close and laughed.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 68780,
+      "durationSec": 4.3,
+      "generatedAt": "2026-11-22T09:13:23.071Z"
+    },
+    "chiec-o-mau-vang/page-03/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "Chiếc ô nhỏ thôi, nhưng ai cũng nép sát vào nhau và cười vui vẻ.",
+      "voice": "abf73455",
+      "model": "omnivoice",
+      "bytes": 80300,
+      "durationSec": 5.02,
+      "generatedAt": "2026-11-22T13:32:11.473Z"
+    },
+    "chiec-o-mau-vang/page-04/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "When the rain stopped, a rainbow stretched across the sky.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 59564,
+      "durationSec": 3.72,
+      "generatedAt": "2026-11-22T09:13:55.902Z"
+    },
+    "chiec-o-mau-vang/page-04/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Khi mưa tạnh, một cầu vồng hiện ra vắt ngang bầu trời.",
+      "voice": "abf73455",
+      "model": "omnivoice",
+      "bytes": 66476,
+      "durationSec": 4.15,
+      "generatedAt": "2026-11-22T13:32:23.058Z"
+    },
+    "chiec-o-mau-vang/page-04/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "“Sharing makes even a small umbrella big enough,” Na smiled.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 61100,
+      "durationSec": 3.82,
+      "generatedAt": "2026-11-22T09:14:27.437Z"
+    },
+    "chiec-o-mau-vang/page-04/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "“Khi biết chia sẻ, chiếc ô nhỏ cũng hóa thật rộng,” Na mỉm cười.",
+      "voice": "abf73455",
+      "model": "omnivoice",
+      "bytes": 83372,
+      "durationSec": 5.21,
+      "generatedAt": "2026-11-22T13:32:34.767Z"
+    },
+    "meo-con-chuc-ngu-ngon/page-01/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "When the sky turned violet, little kitten Mun yawned a big, round yawn.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 70700,
+      "durationSec": 4.42,
+      "generatedAt": "2026-11-22T09:15:00.495Z"
+    },
+    "meo-con-chuc-ngu-ngon/page-01/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Khi bầu trời chuyển sang màu tím, mèo con Mun ngáp một cái thật to, thật tròn.",
+      "voice": "abf73455",
+      "model": "omnivoice",
+      "bytes": 97196,
+      "durationSec": 6.07,
+      "generatedAt": "2026-11-22T13:32:49.090Z"
+    },
+    "meo-con-chuc-ngu-ngon/page-01/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "“Before I sleep, I will say goodnight to everyone,” she whispered.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 64556,
+      "durationSec": 4.03,
+      "generatedAt": "2026-11-22T09:15:34.757Z"
+    },
+    "meo-con-chuc-ngu-ngon/page-01/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "“Trước khi ngủ, mình sẽ chúc ngủ ngon mọi người,” Mun thì thầm.",
+      "voice": "abf73455",
+      "model": "omnivoice",
+      "bytes": 81452,
+      "durationSec": 5.09,
+      "generatedAt": "2026-11-22T13:33:01.649Z"
+    },
+    "meo-con-chuc-ngu-ngon/page-02/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "Goodnight, little fish, swimming slowly in your bowl.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 54572,
+      "durationSec": 3.41,
+      "generatedAt": "2026-11-22T09:16:04.746Z"
+    },
+    "meo-con-chuc-ngu-ngon/page-02/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Chúc ngủ ngon nhé, bạn cá nhỏ đang bơi chầm chậm trong bình.",
+      "voice": "abf73455",
+      "model": "omnivoice",
+      "bytes": 68012,
+      "durationSec": 4.25,
+      "generatedAt": "2026-11-22T13:33:13.122Z"
+    },
+    "meo-con-chuc-ngu-ngon/page-02/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "Goodnight, old clock, ticking softly on the wall.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 49196,
+      "durationSec": 3.07,
+      "generatedAt": "2026-11-22T09:16:36.274Z"
+    },
+    "meo-con-chuc-ngu-ngon/page-02/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "Chúc ngủ ngon nhé, bác đồng hồ đang tích tắc khe khẽ trên tường.",
+      "voice": "abf73455",
+      "model": "omnivoice",
+      "bytes": 70316,
+      "durationSec": 4.39,
+      "generatedAt": "2026-11-22T13:33:24.557Z"
+    },
+    "meo-con-chuc-ngu-ngon/page-03/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "Goodnight, flowers on the windowsill, folding your petals for the night.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 74540,
+      "durationSec": 4.66,
+      "generatedAt": "2026-11-22T09:17:08.714Z"
+    },
+    "meo-con-chuc-ngu-ngon/page-03/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Chúc ngủ ngon nhé, những bông hoa bên cửa sổ đang khép cánh lại.",
+      "voice": "abf73455",
+      "model": "omnivoice",
+      "bytes": 73004,
+      "durationSec": 4.56,
+      "generatedAt": "2026-11-22T13:33:35.983Z"
+    },
+    "meo-con-chuc-ngu-ngon/page-03/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "Goodnight, round moon, shining over the rooftops.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 50348,
+      "durationSec": 3.14,
+      "generatedAt": "2026-11-22T09:17:39.964Z"
+    },
+    "meo-con-chuc-ngu-ngon/page-03/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "Chúc ngủ ngon nhé, ông trăng tròn đang chiếu sáng trên những mái nhà.",
+      "voice": "abf73455",
+      "model": "omnivoice",
+      "bytes": 76076,
+      "durationSec": 4.75,
+      "generatedAt": "2026-11-22T13:33:48.057Z"
+    },
+    "meo-con-chuc-ngu-ngon/page-04/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "Then Mun curled up in her basket, warm and soft as a cloud.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 58412,
+      "durationSec": 3.65,
+      "generatedAt": "2026-11-22T09:18:11.045Z"
+    },
+    "meo-con-chuc-ngu-ngon/page-04/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Rồi Mun cuộn tròn trong chiếc giỏ, ấm áp và mềm mại như một đám mây.",
+      "voice": "abf73455",
+      "model": "omnivoice",
+      "bytes": 87212,
+      "durationSec": 5.45,
+      "generatedAt": "2026-11-22T13:34:00.266Z"
+    },
+    "meo-con-chuc-ngu-ngon/page-04/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "The whole house whispered back, “Goodnight, little Mun.”",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 55340,
+      "durationSec": 3.46,
+      "generatedAt": "2026-11-22T09:18:42.391Z"
+    },
+    "meo-con-chuc-ngu-ngon/page-04/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "Cả ngôi nhà khẽ thì thầm đáp lại: “Chúc Mun ngủ ngon.”",
+      "voice": "abf73455",
+      "model": "omnivoice",
+      "bytes": 70316,
+      "durationSec": 4.39,
+      "generatedAt": "2026-11-22T13:34:12.853Z"
+    }
+  }
+}

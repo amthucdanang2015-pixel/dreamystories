@@ -30,7 +30,7 @@ import {
   AudioSource,
   AudioStatus,
 } from 'expo-audio';
-import { ClipPlaybackWatch } from './clipPlaybackWatch';
+import { ClipPlaybackWatch, type ClipWatchOptions } from './clipPlaybackWatch';
 import type { ClipOutcome } from './narrationSequence';
 
 export type NarrationResult = ClipOutcome['result'];
@@ -182,8 +182,10 @@ class NarrationAudioService {
   /**
    * Play one narration clip. Resolves when it finishes, fails, or is stopped.
    * Never rejects. A failed outcome carries the reason and how much was heard.
+   * `watchOptions` overrides the watchdog timings (remote clips need time to buffer);
+   * bundled clips use the defaults.
    */
-  async play(source: AudioSource, rate = 1.0): Promise<ClipOutcome> {
+  async play(source: AudioSource, rate = 1.0, watchOptions?: Partial<ClipWatchOptions>): Promise<ClipOutcome> {
     this.stop();
     holdNarrationSession();
 
@@ -195,7 +197,7 @@ class NarrationAudioService {
     }
 
     return new Promise<ClipOutcome>((resolve) => {
-      const watch = new ClipPlaybackWatch(Date.now());
+      const watch = new ClipPlaybackWatch(Date.now(), watchOptions);
       let done = false;
       let ticker: ReturnType<typeof setInterval> | null = null;
       let sub: { remove: () => void } | null = null;

@@ -6,7 +6,14 @@
 import { Sentence, Language, ReadingMode } from '../types/story';
 import { speechService } from './speechService';
 import { narrationAudioService, scheduleNarrationSessionRelease } from './narrationAudioService';
-import { buildNarrationSequence, narrateItem, resumeIndex, type NarrationPosition } from './narrationSequence';
+import {
+  buildNarrationSequence,
+  narrateItem,
+  resumeIndex,
+  type NarrationFailure,
+  type NarrationPosition,
+} from './narrationSequence';
+import type { ClipWatchOptions } from './clipPlaybackWatch';
 import { reportNarrationEvent } from './narrationDiagnostics';
 
 export interface PageNarrationContext {
@@ -20,7 +27,23 @@ export interface PageNarrationContext {
   sentenceIndexBase?: number;
   /** Resume at this sentence/phase (e.g. after Pause) instead of the page start. */
   startAt?: NarrationPosition | null;
+  /**
+   * Online story: clips are streamed from HOST_ONLINE. Gives them time to
+   * buffer, and reports a failed clip through onError (narration stops at
+   * that sentence so Retry resumes there) instead of reading it with TTS.
+   */
+  remoteAudio?: boolean;
 }
+
+/** Streaming clips: allow for connection setup and buffering on slow networks. */
+const REMOTE_CLIP_WATCH: Partial<ClipWatchOptions> = {
+  startNudgeMs: 3000,
+  startTimeoutMs: 15_000,
+  stallMs: 10_000,
+};
+
+/** Prefix of the onError message for a failed online clip (reader shows Retry). */
+export const ONLINE_AUDIO_ERROR = 'online-audio-failed';
 
 export interface PlaybackCallbacks {
   onSentenceStart: (sentenceIndex: number, phase: 'en' | 'vi') => void;
@@ -68,6 +91,9 @@ class PlaybackController {
     const base = ctx.sentenceIndexBase ?? 0;
     const where = { storyId: ctx.storyId, pageIndex: ctx.pageIndex };
 
+    const remote = !!ctx.remoteAudio;
+    const watch = remote ? REMOTE_CLIP_WATCH : undefined;
+
     for (let i = resumeIndex(sequence, ctx.startAt); i < sequence.length; i++) {
       if (!isCurrent()) return;
 
@@ -75,14 +101,27 @@ class PlaybackController {
       callbacks.onSentenceStart(item.sentenceIndex, item.phase);
       this._currentSentenceIndex = item.sentenceIndex;
 
-      const voiced = await narrateItem(item, speed, where, {
-        playClip: (source, rate) => narrationAudioService.play(source, rate),
-        speak: (text, phase, rate) => this._speakAsync(text, phase, rate),
-        isCurrent,
-        report: (event, it, loc) =>
-          reportNarrationEvent(event, { ...it, sentenceIndex: it.sentenceIndex + base }, loc),
-      });
+      const failure: NarrationFailure = { reason: '' };
+      const voiced = await narrateItem(
+        item,
+        speed,
+        where,
+        {
+          playClip: (source, rate) => narrationAudioService.play(source, rate, watch),
+          speak: (text, phase, rate) => this._speakAsync(text, phase, rate),
+          isCurrent,
+          report: (event, it, loc) =>
+            reportNarrationEvent(event, { ...it, sentenceIndex: it.sentenceIndex + base }, loc),
+          fallbackToSpeech: !remote,
+        },
+        failure
+      );
 
+      if (voiced === 'failed' && isCurrent()) {
+        this.stop();
+        callbacks.onError(`${ONLINE_AUDIO_ERROR}: ${failure.reason}`);
+        return;
+      }
       if (voiced === 'paused' && isCurrent()) {
         this.stop();
         callbacks.onExternalPause?.();

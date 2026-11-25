@@ -21,6 +21,7 @@ import {
   SlidersHorizontal,
   ChevronRight,
   Lock,
+  Cloud,
 } from 'lucide-react-native';
 import { useTranslation } from 'react-i18next';
 import {
@@ -34,7 +35,7 @@ import {
 import { createThemedStyles, useTheme } from '../../src/theme';
 import { StoryIllustration } from '../../src/components/illustrations/StoryIllustration';
 import { Button, EmptyState, IconButton, MetaPill, ProgressBar } from '../../src/components/ui';
-import { ALL_STORIES, getStoryPalette } from '../../src/data/stories';
+import { getStoryById, getStoryPalette } from '../../src/data/stories';
 import { ReadingMode } from '../../src/types/story';
 import { usePlaybackStore } from '../../src/store/playbackStore';
 import { usePreferencesStore } from '../../src/store/preferencesStore';
@@ -105,7 +106,7 @@ export default function StoryDetailScreen() {
   );
   const infoOffset = coverHeight - coverTop + Spacing.md;
 
-  const story = ALL_STORIES.find((s) => s.id === id);
+  const story = id ? getStoryById(id) : undefined;
   const access = useStoryAccess(story?.id);
   const { shareStory, sharing, gate } = useShare();
 
@@ -183,7 +184,20 @@ export default function StoryDetailScreen() {
         <MetaPill icon={<Users size={12} color={colors.textMuted} />} label={storyAge(t, story.ageRange)} />
         <MetaPill icon={<Languages size={12} color={colors.textMuted} />} label={t('storyDetail.languagesPill')} />
         <MetaPill icon={<BookOpen size={12} color={colors.textMuted} />} label={storyPages(t, story)} />
+        {story.online ? (
+          <MetaPill icon={<Cloud size={12} color={colors.textMuted} />} label={t('online.pill')} />
+        ) : null}
       </View>
+
+      {/* Online story: the text works offline, narration needs a connection. */}
+      {story.online ? (
+        <View style={styles.onlineNote}>
+          <Cloud size={14} color={colors.textMuted} strokeWidth={2.2} />
+          <Text style={styles.onlineNoteText}>
+            {story.online.audioReady ? t('online.needsInternet') : t('online.notConfigured')}
+          </Text>
+        </View>
+      ) : null}
 
       {/* Reading progress */}
       {info.state !== 'new' ? (
@@ -489,6 +503,8 @@ const useStyles = createThemedStyles((t) => ({
   progressLabel: { fontSize: Typography.sm, color: t.colors.textSecondary, fontWeight: '500' },
   cta: { marginTop: Spacing.lg },
   ctaPremiumEdge: { borderWidth: 1, borderColor: PremiumColors.borderGold },
+  onlineNote: { flexDirection: 'row', alignItems: 'flex-start', gap: Spacing.xs, marginBottom: Spacing.md },
+  onlineNoteText: { flex: 1, fontSize: Typography.sm, lineHeight: 19, color: t.colors.textMuted },
   lockNote: {
     fontSize: Typography.sm,
     lineHeight: 19,

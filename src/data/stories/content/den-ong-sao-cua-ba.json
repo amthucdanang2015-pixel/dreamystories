@@ -1,0 +1,168 @@
+{
+  "id": "den-ong-sao-cua-ba",
+  "title": {
+    "en": "Grandma's Star Lantern",
+    "vi": "Chiếc Đèn Ông Sao Của Bà"
+  },
+  "description": {
+    "en": "Mai and Grandma make a star lantern for the Mid-Autumn Festival. One point comes out crooked, but on the night of the full moon it shines just as bright.",
+    "vi": "Mai cùng bà làm đèn ông sao đón Trung thu. Một cánh sao bị lệch, nhưng đêm rằm, chiếc đèn vẫn sáng chẳng kém ai."
+  },
+  "theme": {
+    "en": "Things made with love shine brightest, especially when shared.",
+    "vi": "Những gì làm bằng cả tấm lòng sẽ sáng nhất, nhất là khi được sẻ chia."
+  },
+  "origin": "Original StoryMoon story, written in Vietnamese with an English companion text.",
+  "category": "Family Tale",
+  "ageRange": "3–8 years",
+  "duration": "5 min",
+  "characters": [
+    {
+      "name": "Mai",
+      "look": "girl around six with a short black bob and a fringe, in a coral-red áo bà ba"
+    },
+    {
+      "name": "Grandma (Bà)",
+      "look": "kind grandmother with grey hair in a low bun, glasses, a plum-coloured áo dài and a jade bracelet"
+    },
+    {
+      "name": "the little boy",
+      "look": "boy around four with a round face, in a pale-blue shirt, carrying a carp lantern"
+    }
+  ],
+  "artDirection": {
+    "mood": "Warm, glowing and festive, yet gentle; a family evening by the river.",
+    "setting": "An old riverside town in central Vietnam: yellow-walled shophouses with tiled roofs, a wooden courtyard table, the river with floating paper lanterns.",
+    "light": "Golden afternoon in the courtyard, then a full-moon night lit by red and gold lanterns.",
+    "motifs": [
+      "a five-pointed star lantern with one crooked point",
+      "bamboo sticks and red cellophane",
+      "mooncakes",
+      "floating flower lanterns",
+      "a carp lantern"
+    ],
+    "avoid": [
+      "crowded chaotic streets",
+      "open flames near faces",
+      "neon colours"
+    ],
+    "palette": {
+      "sky": "#2A1830",
+      "skyLow": "#6B2E3A",
+      "ground": "#5A3A2A",
+      "groundDeep": "#2C1C18",
+      "accent": "#D9483B",
+      "glow": "#FFD58A",
+      "ink": "#160C12",
+      "paper": "#F8ECE0"
+    }
+  },
+  "cover": {
+    "prompt": "a girl holding a glowing red star lantern with one crooked point, her grandmother beside her, lanterns floating on the river under a full moon"
+  },
+  "pages": [
+    {
+      "prompt": "an old-town courtyard in golden afternoon light, a girl running to her grandmother, mooncakes on a tray",
+      "sentences": [
+        [
+          "The Mid-Autumn Festival was coming, and the old town smelled of mooncakes.",
+          "Tết Trung thu sắp đến, phố cổ thơm mùi bánh nướng."
+        ],
+        [
+          "Mai ran to Grandma. “Bà ơi, can we make a star lantern?”",
+          "Mai chạy đến bên bà: “Bà ơi, mình làm đèn ông sao nhé?”"
+        ]
+      ]
+    },
+    {
+      "prompt": "grandmother and girl at a wooden table with thin bamboo sticks, red cellophane and a bowl of rice glue, tying a star frame",
+      "sentences": [
+        [
+          "Grandma brought thin bamboo sticks, red paper and a little bowl of rice glue.",
+          "Bà mang ra những nan tre mỏng, giấy bóng đỏ và một bát hồ dán."
+        ],
+        [
+          "Together they tied the sticks into a star with five points.",
+          "Hai bà cháu buộc nan tre thành một ngôi sao năm cánh."
+        ]
+      ]
+    },
+    {
+      "prompt": "close view of the finished red star lantern with one crooked point, the girl pouting, grandmother smiling kindly",
+      "sentences": [
+        [
+          "But one point of Mai's star came out crooked.",
+          "Nhưng một cánh sao của Mai bị lệch."
+        ],
+        [
+          "“Oh, it's not as pretty as yours,” Mai said with a pout.",
+          "Mai phụng phịu: “Ôi, nó không đẹp bằng của bà.”"
+        ],
+        [
+          "Grandma smiled. “A lantern made with love shines just as bright.”",
+          "Bà cười hiền: “Đèn làm bằng cả tấm lòng thì sáng chẳng kém đâu cháu.”"
+        ]
+      ]
+    },
+    {
+      "prompt": "full-moon night in the courtyard, grandmother placing a small candle inside the star lantern, warm red glow on their faces",
+      "sentences": [
+        [
+          "On the night of the full moon, Grandma lit a little candle inside.",
+          "Đêm rằm, bà thắp một ngọn nến nhỏ bên trong."
+        ],
+        [
+          "The crooked star glowed warm and red.",
+          "Ngôi sao lệch cánh bừng lên ánh đỏ ấm áp."
+        ]
+      ]
+    },
+    {
+      "prompt": "children walking with lanterns along the river at night, a small drum, flower lanterns floating on the water, the full moon above",
+      "sentences": [
+        [
+          "Mai joined the children walking with their lanterns along the river.",
+          "Mai cùng các bạn rước đèn dọc bờ sông."
+        ],
+        [
+          "The drums went tùng tùng cắc, and little lanterns floated on the water.",
+          "Trống “tùng tùng cắc” rộn ràng, đèn hoa đăng trôi lững lờ trên mặt nước."
+        ]
+      ]
+    },
+    {
+      "prompt": "the girl holding out her star lantern so a small boy can relight the candle in his carp lantern",
+      "sentences": [
+        [
+          "Then a little boy stopped. A gust of wind had blown out his candle.",
+          "Bỗng một cậu bé dừng lại. Cơn gió đã thổi tắt nến của cậu."
+        ],
+        [
+          "Mai held out her star. “Here, light yours from mine.”",
+          "Mai giơ ngôi sao ra: “Đây, bạn mồi lửa từ đèn của tớ nhé.”"
+        ],
+        [
+          "Soon his carp lantern was glowing again.",
+          "Chẳng mấy chốc, chiếc đèn cá chép của cậu lại sáng lung linh."
+        ]
+      ]
+    },
+    {
+      "prompt": "grandmother and girl walking home hand in hand along the moonlit river, then the star lantern hanging by a window",
+      "sentences": [
+        [
+          "Walking home, Mai held Grandma's hand and her crooked little star.",
+          "Trên đường về, Mai nắm tay bà, tay kia cầm ngôi sao nhỏ lệch cánh."
+        ],
+        [
+          "“Bà ơi, you were right. It shines just as bright.”",
+          "“Bà ơi, bà nói đúng. Đèn của cháu sáng lắm.”"
+        ],
+        [
+          "That night, Mai hung her lantern by the window and fell asleep smiling.",
+          "Đêm ấy, Mai treo đèn bên cửa sổ và ngủ với nụ cười trên môi."
+        ]
+      ]
+    }
+  ]
+}

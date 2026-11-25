@@ -40,6 +40,8 @@
     "eyebrowWithCategory": "{{eyebrow}} · {{category}}",
     "premiumLocked": "Truyện Premium, đang khoá",
     "premium": "Truyện Premium",
+    "free": "Truyện miễn phí",
+    "freeBadge": "MIỄN PHÍ",
     "finished": "Đã đọc xong",
     "a11yWithEyebrow": "{{eyebrow}}: {{label}}"
   },
@@ -113,6 +115,10 @@
     "statusReading": "Đang đọc",
     "statusFinished": "Đã đọc xong",
     "categoryAll": "Tất cả",
+    "freeEyebrow_other": "{{count}} truyện · luôn miễn phí",
+    "freeTitle": "Truyện miễn phí",
+    "premiumEyebrow": "Dreamy Stories Premium",
+    "premiumTitle": "Truyện Premium",
     "noMatchTitle": "Không có truyện nào khớp với “{{query}}”",
     "noMatchMessage": "Hãy thử từ khác, như tên nhân vật, một nơi chốn hay một cảm xúc. Bạn có thể tìm bằng tiếng Việt hoặc tiếng Anh.",
     "noMatchFilteredMessage": "Hãy thử từ khác, hoặc tìm trên mọi kệ sách. Bạn có thể tìm bằng tiếng Việt hoặc tiếng Anh.",
@@ -346,6 +352,7 @@
     "activeWeekly": "Premium · Gói tuần",
     "activeYearly": "Premium · Gói năm",
     "active": "Premium",
+    "statusActive": "Đang dùng",
     "renews": "Gia hạn ngày {{date}}",
     "seePlans": "Xem các gói Dreamy Stories Premium",
     "unlock": "Mở khoá mọi truyện",
@@ -357,6 +364,7 @@
     "restoreNothing": "Không tìm thấy gói Dreamy Stories nào đang hoạt động.",
     "restoreErrorDefault": "Không kiểm tra được giao dịch của bạn.",
     "restoreIdle": "Đã đăng ký trên thiết bị khác? Khôi phục tại đây.",
+    "restoreIdleSubscriber": "Premium chưa hiện trên thiết bị này? Khôi phục tại đây.",
     "manage": "Quản lý gói đăng ký",
     "manageDescription": "Đổi gói hoặc huỷ trong tài khoản App Store của bạn.",
     "manageA11y": "Quản lý gói đăng ký. Mở phần cài đặt gói đăng ký trong App Store.",
@@ -442,5 +450,16 @@
     "restoreCancelled": "Đã huỷ khôi phục.",
     "subscriptionsUnavailable": "Hiện chỉ có thể đăng ký trong ứng dụng trên iPhone và iPad. Bạn chưa bị trừ tiền.",
     "subscriptionsWeb": "Gói đăng ký có trong ứng dụng Dreamy Stories trên iPhone và iPad. Không thể mua trong trình duyệt."
+  },
+  "online": {
+    "sectionTitle": "Truyện trực tuyến",
+    "sectionEyebrow_other": "{{count}} truyện · cần internet để nghe đọc",
+    "needsInternet": "Giọng đọc được phát qua internet. Tên truyện, ảnh bìa và nội dung truyện vẫn xem được khi không có mạng.",
+    "notConfigured": "Giọng đọc trực tuyến chưa sẵn sàng. Bé vẫn có thể đọc truyện.",
+    "playbackFailed": "Không phát được giọng đọc. Hãy kiểm tra kết nối internet và thử lại.",
+    "retry": "Thử lại",
+    "badge": "TRỰC TUYẾN",
+    "badgeA11y": "Truyện trực tuyến, cần kết nối internet để nghe đọc",
+    "pill": "Đọc trực tuyến"
   }
 }
