@@ -9,7 +9,7 @@
 // ============================================================
 
 import React from 'react';
-import { View, Text, StyleSheet, Switch, useWindowDimensions } from 'react-native';
+import { View, Text, StyleSheet, Switch, Pressable, useWindowDimensions } from 'react-native';
 import {
   Globe,
   BookOpen,
@@ -304,6 +304,36 @@ export function SettingsSection({ title, children }: { title: string; children: 
       <Text style={[sectionStyles.title, { fontSize: Typography.sm * tabletScale }]} accessibilityRole="header">{title}</Text>
       <View style={sectionStyles.card}>{children}</View>
     </View>
+  );
+}
+
+/** A tappable settings row: wrap a SettingsItem to make it a button. */
+export function SettingsRow({
+  onPress,
+  disabled,
+  accessibilityLabel,
+  accessibilityHint,
+  children,
+}: {
+  onPress: () => void;
+  disabled?: boolean;
+  accessibilityLabel: string;
+  accessibilityHint?: string;
+  children: React.ReactNode;
+}) {
+  const { colors } = useTheme();
+  return (
+    <Pressable
+      onPress={onPress}
+      disabled={disabled}
+      accessibilityRole="button"
+      accessibilityLabel={accessibilityLabel}
+      accessibilityHint={accessibilityHint}
+      accessibilityState={{ disabled: !!disabled }}
+      style={({ pressed }) => [pressed && { backgroundColor: colors.surfaceSunken }]}
+    >
+      {children}
+    </Pressable>
   );
 }
 

@@ -1,0 +1,175 @@
+{
+  "id": "vit-con-xau-xi",
+  "title": {
+    "en": "The Ugly Duckling",
+    "vi": "Vịt Con Xấu Xí"
+  },
+  "description": {
+    "en": "A grey duckling who is laughed at for looking different waits out a long, lonely winter, and discovers in spring that he has grown into a swan.",
+    "vi": "Chú vịt con lông xám bị chê cười vì trông khác biệt, trải qua một mùa đông dài cô đơn, và đến mùa xuân thì nhận ra mình đã lớn thành thiên nga."
+  },
+  "theme": {
+    "en": "Everyone grows into who they are in their own time.",
+    "vi": "Ai cũng sẽ lớn lên và tỏa sáng theo cách riêng của mình."
+  },
+  "origin": "Hans Christian Andersen’s fairy tale “The Ugly Duckling” (1843, public domain), gently retold for StoryMoon in English and Vietnamese.",
+  "category": "Animal Tale",
+  "ageRange": "3–8 years",
+  "duration": "3 min",
+  "estimatedDurationSec": 100,
+  "requiresInternet": true,
+  "artDirection": {
+    "palette": {
+      "sky": "#BFD9E8",
+      "skyLow": "#E6F1F2",
+      "ground": "#7FA66A",
+      "groundDeep": "#4E7344",
+      "accent": "#F2C94C",
+      "glow": "#FFFFFF",
+      "ink": "#2A3640",
+      "paper": "#F7F4EC"
+    }
+  },
+  "pages": [
+    {
+      "sentences": [
+        {
+          "en": "On a sunny farm, a mother duck sat on her nest until, one by one, her eggs cracked open.",
+          "vi": "Ở một trang trại đầy nắng, vịt mẹ ấp trứng cho đến khi từng quả trứng lần lượt nứt ra.",
+          "audio": {
+            "en": "vit-con-xau-xi/page-01/sentence-01-en.mp3",
+            "vi": "vit-con-xau-xi/page-01/sentence-01-vi.mp3"
+          },
+          "audioUrl": {
+            "en": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795763576/vit-con-xau-xi/page-01/sentence-01-en_fyycxq.mp3",
+            "vi": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795763578/vit-con-xau-xi/page-01/sentence-01-vi_uan8ra.mp3"
+          }
+        },
+        {
+          "en": "Out came fluffy yellow ducklings, and last of all, a big grey one.",
+          "vi": "Những chú vịt con vàng óng lần lượt chui ra, và sau cùng là một chú vịt to, lông xám.",
+          "audio": {
+            "en": "vit-con-xau-xi/page-01/sentence-02-en.mp3",
+            "vi": "vit-con-xau-xi/page-01/sentence-02-vi.mp3"
+          },
+          "audioUrl": {
+            "en": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795763574/vit-con-xau-xi/page-01/sentence-02-en_koqk1w.mp3",
+            "vi": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795763580/vit-con-xau-xi/page-01/sentence-02-vi_sa72ln.mp3"
+          }
+        }
+      ]
+    },
+    {
+      "sentences": [
+        {
+          "en": "The other animals laughed. “What an ugly duckling!” they quacked.",
+          "vi": "Các con vật khác cười chê: “Con vịt này xấu xí quá!”",
+          "audio": {
+            "en": "vit-con-xau-xi/page-02/sentence-01-en.mp3",
+            "vi": "vit-con-xau-xi/page-02/sentence-01-vi.mp3"
+          },
+          "audioUrl": {
+            "en": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795763812/vit-con-xau-xi/page-02/sentence-01-en_irzuoq.mp3",
+            "vi": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795763810/vit-con-xau-xi/page-02/sentence-01-vi_gvlkqk.mp3"
+          }
+        },
+        {
+          "en": "The grey duckling felt so sad that he waddled far away from home.",
+          "vi": "Chú vịt xám buồn lắm, nên lạch bạch bỏ đi thật xa.",
+          "audio": {
+            "en": "vit-con-xau-xi/page-02/sentence-02-en.mp3",
+            "vi": "vit-con-xau-xi/page-02/sentence-02-vi.mp3"
+          },
+          "audioUrl": {
+            "en": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795763814/vit-con-xau-xi/page-02/sentence-02-en_feli2e.mp3",
+            "vi": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795763816/vit-con-xau-xi/page-02/sentence-02-vi_hsbe9q.mp3"
+          }
+        }
+      ]
+    },
+    {
+      "sentences": [
+        {
+          "en": "All through the cold winter, he hid among the reeds by a frozen lake.",
+          "vi": "Suốt mùa đông giá lạnh, chú nép mình trong đám lau sậy bên mặt hồ đóng băng.",
+          "audio": {
+            "en": "vit-con-xau-xi/page-03/sentence-01-en.mp3",
+            "vi": "vit-con-xau-xi/page-03/sentence-01-vi.mp3"
+          },
+          "audioUrl": {
+            "en": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795763839/vit-con-xau-xi/page-03/sentence-01-en_zpoxdd.mp3",
+            "vi": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795763837/vit-con-xau-xi/page-03/sentence-01-vi_tjwdf7.mp3"
+          }
+        },
+        {
+          "en": "He was lonely, but he never stopped hoping for spring.",
+          "vi": "Chú cô đơn lắm, nhưng vẫn luôn mong chờ mùa xuân.",
+          "audio": {
+            "en": "vit-con-xau-xi/page-03/sentence-02-en.mp3",
+            "vi": "vit-con-xau-xi/page-03/sentence-02-vi.mp3"
+          },
+          "audioUrl": {
+            "en": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795763834/vit-con-xau-xi/page-03/sentence-02-en_i5igmw.mp3",
+            "vi": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795763833/vit-con-xau-xi/page-03/sentence-02-vi_pngyxz.mp3"
+          }
+        }
+      ]
+    },
+    {
+      "sentences": [
+        {
+          "en": "When the warm days came back, he saw beautiful white swans gliding on the water.",
+          "vi": "Khi những ngày ấm áp trở lại, chú thấy những con thiên nga trắng xinh đẹp lướt trên mặt nước.",
+          "audio": {
+            "en": "vit-con-xau-xi/page-04/sentence-01-en.mp3",
+            "vi": "vit-con-xau-xi/page-04/sentence-01-vi.mp3"
+          },
+          "audioUrl": {
+            "en": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795763856/vit-con-xau-xi/page-04/sentence-01-en_mqerr1.mp3",
+            "vi": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795763858/vit-con-xau-xi/page-04/sentence-01-vi_xekwfw.mp3"
+          }
+        },
+        {
+          "en": "He bowed his head shyly, and there in the water he saw his own reflection.",
+          "vi": "Chú bẽn lẽn cúi đầu, và nhìn thấy bóng mình in dưới nước.",
+          "audio": {
+            "en": "vit-con-xau-xi/page-04/sentence-02-en.mp3",
+            "vi": "vit-con-xau-xi/page-04/sentence-02-vi.mp3"
+          },
+          "audioUrl": {
+            "en": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795763852/vit-con-xau-xi/page-04/sentence-02-en_rqrkkb.mp3",
+            "vi": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795763854/vit-con-xau-xi/page-04/sentence-02-vi_tgtkvb.mp3"
+          }
+        }
+      ]
+    },
+    {
+      "sentences": [
+        {
+          "en": "He was not an ugly duckling at all. He had grown into a graceful swan!",
+          "vi": "Chú đâu phải là vịt con xấu xí. Chú đã lớn lên thành một chú thiên nga duyên dáng!",
+          "audio": {
+            "en": "vit-con-xau-xi/page-05/sentence-01-en.mp3",
+            "vi": "vit-con-xau-xi/page-05/sentence-01-vi.mp3"
+          },
+          "audioUrl": {
+            "en": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795763876/vit-con-xau-xi/page-05/sentence-01-en_zu1ag6.mp3",
+            "vi": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795763881/vit-con-xau-xi/page-05/sentence-01-vi_pidbtl.mp3"
+          }
+        },
+        {
+          "en": "The swans welcomed him, and he spread his wings, happier than he had ever dreamed.",
+          "vi": "Đàn thiên nga chào đón chú, và chú dang rộng đôi cánh, hạnh phúc hơn cả trong mơ.",
+          "audio": {
+            "en": "vit-con-xau-xi/page-05/sentence-02-en.mp3",
+            "vi": "vit-con-xau-xi/page-05/sentence-02-vi.mp3"
+          },
+          "audioUrl": {
+            "en": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795763878/vit-con-xau-xi/page-05/sentence-02-en_gl1mqu.mp3",
+            "vi": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795763910/vit-con-xau-xi/page-05/sentence-02-vi_dzdpnr.mp3"
+          }
+        }
+      ]
+    }
+  ]
+}

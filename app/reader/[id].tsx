@@ -35,6 +35,7 @@ import { ReaderShadow } from '../../src/components/reader/readerShadow';
 import { WordDefinition } from '../../src/data/vocabulary';
 import { useResponsiveLayout } from '../../src/hooks/useResponsiveLayout';
 import { readerColumn } from '../../src/utils/responsiveLayout';
+import { createWordModalPlayback } from '../../src/utils/wordModalPlayback';
 
 export default function ReaderScreen() {
   const { id, page: pageParam } = useLocalSearchParams<{ id: string; page?: string }>();
@@ -181,6 +182,7 @@ export default function ReaderScreen() {
     if (status === 'playing' && prefs.sleepTimerMinutes > 0 && !sleepTimerRef.current) {
       sleepTimerRef.current = setTimeout(() => {
         sleepTimerRef.current = null;
+        wordModalPlayback.cancelResume();
         stopNarration();
         setStatus('paused');
         setSleepTimerEnded(true);
@@ -195,6 +197,34 @@ export default function ReaderScreen() {
   );
 
   // ─── Narration Logic ──────────────────────────────────────
+
+  /**
+   * After a page was read to its end with Auto-Turn on: go to the next page and
+   * keep reading (or start the English round, or finish the story).
+   */
+  const turnAfterPageDone = () => {
+    if (!story) return;
+    // End of the Vietnamese round in vi_first_en_second: start English round
+    if (
+      readingMode === 'vi_first_en_second' &&
+      viFirstPhase === 'vi' &&
+      currentPageIndex >= story.pages.length - 1
+    ) {
+      setViFirstPhase('en');
+      shouldAutoPlayRef.current = true;
+      setCurrentPage(0);
+      return;
+    }
+
+    if (currentPageIndex < story.pages.length - 1) {
+      shouldAutoPlayRef.current = true;
+      nextPage();
+    } else {
+      setStatus('finished');
+    }
+  };
+  const turnAfterPageDoneRef = useRef(turnAfterPageDone);
+  turnAfterPageDoneRef.current = turnAfterPageDone;
 
   /**
    * Narrate the current page. By default resumes at the stored reading
@@ -282,25 +312,7 @@ export default function ReaderScreen() {
           // Natural pause, then turn the page (unless stopped meanwhile)
           setTimeout(() => {
             if (session !== narrationSessionRef.current) return;
-
-            // End of the Vietnamese round in vi_first_en_second: start English round
-            if (
-              readingMode === 'vi_first_en_second' &&
-              viFirstPhase === 'vi' &&
-              currentPageIndex >= story.pages.length - 1
-            ) {
-              setViFirstPhase('en');
-              shouldAutoPlayRef.current = true;
-              setCurrentPage(0);
-              return;
-            }
-
-            if (currentPageIndex < story.pages.length - 1) {
-              shouldAutoPlayRef.current = true;
-              nextPage();
-            } else {
-              setStatus('finished');
-            }
+            turnAfterPageDoneRef.current();
           }, 700);
         },
         onError: (err) => {
@@ -372,6 +384,36 @@ export default function ReaderScreen() {
     stopNarration();
     setStatus('paused');
   }, [stopNarration]);
+
+  // ─── Learning Mode word card pauses and resumes narration ──
+  const latestRef = useRef({ handlePlay, handlePause, autoTurnPage, isLearningMode });
+  latestRef.current = { handlePlay, handlePause, autoTurnPage, isLearningMode };
+  const [wordModalPlayback] = useState(() =>
+    createWordModalPlayback({
+      getStatus: () => usePlaybackStore.getState().status,
+      isLearningMode: () => latestRef.current.isLearningMode,
+      pause: () => latestRef.current.handlePause(),
+      resume: () => {
+        // Paused in the short gap between a finished page and the automatic
+        // page turn: carry on with that turn instead of re-reading the page.
+        if (pageFinishedRef.current && latestRef.current.autoTurnPage) {
+          turnAfterPageDoneRef.current();
+          return;
+        }
+        latestRef.current.handlePlay();
+      },
+    })
+  );
+
+  const handleWordSelect = useCallback((def: WordDefinition) => {
+    wordModalPlayback.opened();
+    setSelectedWord(def);
+  }, [wordModalPlayback]);
+
+  const handleWordModalClose = useCallback(() => {
+    setSelectedWord(null);
+    wordModalPlayback.closed();
+  }, [wordModalPlayback]);
 
   const handleReplay = useCallback(() => {
     stopNarration();
@@ -646,7 +688,7 @@ export default function ReaderScreen() {
             maxPageWidth={column.maxWidth}
             margin={column.margin}
             onPageChange={handleManualPageChange}
-            onWordSelect={(def) => setSelectedWord(def)}
+            onWordSelect={handleWordSelect}
             onReplaySentence={handleReplaySentence}
           />
         ) : (
@@ -661,7 +703,7 @@ export default function ReaderScreen() {
             isNarrating={isNarrating}
             maxPageWidth={column.maxWidth}
             margin={column.margin}
-            onWordSelect={(def) => setSelectedWord(def)}
+            onWordSelect={handleWordSelect}
             onReplaySentence={handleReplaySentence}
           />
         )}
@@ -730,7 +772,7 @@ export default function ReaderScreen() {
       )}
 
       {/* Word Definition Modal */}
-      <WordModal definition={selectedWord} onClose={() => setSelectedWord(null)} readerTheme={t} />
+      <WordModal definition={selectedWord} onClose={handleWordModalClose} readerTheme={t} />
     </View>
   );
 }

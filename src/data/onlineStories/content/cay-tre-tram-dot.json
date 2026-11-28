@@ -1,0 +1,175 @@
+{
+  "id": "cay-tre-tram-dot",
+  "title": {
+    "en": "The Hundred-Knot Bamboo",
+    "vi": "Cây Tre Trăm Đốt"
+  },
+  "description": {
+    "en": "Hardworking Khoai is sent to find a bamboo with one hundred knots, and with a little help from the kind spirit Bụt, he makes a rich landlord keep his promise.",
+    "vi": "Anh Khoai chăm chỉ bị bắt đi tìm cây tre trăm đốt, và nhờ ông Bụt hiền lành giúp đỡ, anh khiến lão phú ông phải giữ lời hứa."
+  },
+  "theme": {
+    "en": "Honest hard work is rewarded, and a promise must be kept.",
+    "vi": "Chăm chỉ, thật thà sẽ được đền đáp; đã hứa thì phải giữ lời."
+  },
+  "origin": "Vietnamese folk tale Cây tre trăm đốt (traditional, public domain), gently retold for StoryMoon in Vietnamese and English.",
+  "category": "Folk Tale",
+  "ageRange": "4–8 years",
+  "duration": "3 min",
+  "estimatedDurationSec": 114,
+  "requiresInternet": true,
+  "artDirection": {
+    "palette": {
+      "sky": "#F3D9A4",
+      "skyLow": "#F8EBCB",
+      "ground": "#6E9A4E",
+      "groundDeep": "#3F6634",
+      "accent": "#C9772B",
+      "glow": "#FFF6DA",
+      "ink": "#2B2A1F",
+      "paper": "#F8F2E3"
+    }
+  },
+  "pages": [
+    {
+      "sentences": [
+        {
+          "en": "Long ago, a hardworking young man named Khoai worked for a rich landlord.",
+          "vi": "Ngày xưa, có anh Khoai chăm chỉ đi làm thuê cho một lão phú ông giàu có.",
+          "audio": {
+            "en": "cay-tre-tram-dot/page-01/sentence-01-en.mp3",
+            "vi": "cay-tre-tram-dot/page-01/sentence-01-vi.mp3"
+          },
+          "audioUrl": {
+            "en": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795763424/cay-tre-tram-dot/page-01/sentence-01-en_dxwy0u.mp3",
+            "vi": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795763424/cay-tre-tram-dot/page-01/sentence-01-vi_erin8r.mp3"
+          }
+        },
+        {
+          "en": "“Work hard for three years,” said the landlord, “and you may marry my daughter.”",
+          "vi": "Phú ông hứa: “Con cứ chịu khó làm ba năm, ta sẽ gả con gái cho.”",
+          "audio": {
+            "en": "cay-tre-tram-dot/page-01/sentence-02-en.mp3",
+            "vi": "cay-tre-tram-dot/page-01/sentence-02-vi.mp3"
+          },
+          "audioUrl": {
+            "en": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795763425/cay-tre-tram-dot/page-01/sentence-02-en_gafmv1.mp3",
+            "vi": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795763426/cay-tre-tram-dot/page-01/sentence-02-vi_s5t3zd.mp3"
+          }
+        }
+      ]
+    },
+    {
+      "sentences": [
+        {
+          "en": "Khoai worked from sunrise to sunset, and the landlord grew richer and richer.",
+          "vi": "Anh Khoai làm lụng từ sáng sớm đến tối mịt, nhà phú ông ngày càng giàu thêm.",
+          "audio": {
+            "en": "cay-tre-tram-dot/page-02/sentence-01-en.mp3",
+            "vi": "cay-tre-tram-dot/page-02/sentence-01-vi.mp3"
+          },
+          "audioUrl": {
+            "en": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795763444/cay-tre-tram-dot/page-02/sentence-01-en_xyt6ze.mp3",
+            "vi": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795763445/cay-tre-tram-dot/page-02/sentence-01-vi_rr5wqn.mp3"
+          }
+        },
+        {
+          "en": "But when the three years were over, the landlord did not want to keep his promise.",
+          "vi": "Nhưng hết ba năm, phú ông lại không muốn giữ lời hứa.",
+          "audio": {
+            "en": "cay-tre-tram-dot/page-02/sentence-02-en.mp3",
+            "vi": "cay-tre-tram-dot/page-02/sentence-02-vi.mp3"
+          },
+          "audioUrl": {
+            "en": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795763446/cay-tre-tram-dot/page-02/sentence-02-en_mta3pp.mp3",
+            "vi": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795763443/cay-tre-tram-dot/page-02/sentence-02-vi_afjtsw.mp3"
+          }
+        }
+      ]
+    },
+    {
+      "sentences": [
+        {
+          "en": "“First, bring me a bamboo with one hundred knots,” he said, knowing there was no such thing.",
+          "vi": "Lão bảo: “Con hãy vào rừng tìm cho ta một cây tre trăm đốt,” vì lão biết làm gì có cây tre nào như thế.",
+          "audio": {
+            "en": "cay-tre-tram-dot/page-03/sentence-01-en.mp3",
+            "vi": "cay-tre-tram-dot/page-03/sentence-01-vi.mp3"
+          },
+          "audioUrl": {
+            "en": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795763503/cay-tre-tram-dot/page-03/sentence-01-en_dg5tcm.mp3",
+            "vi": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795763502/cay-tre-tram-dot/page-03/sentence-01-vi_philco.mp3"
+          }
+        },
+        {
+          "en": "Khoai searched the forest all day, then sat down beside the bamboo and cried.",
+          "vi": "Anh Khoai tìm khắp rừng cả ngày, rồi ngồi khóc bên bụi tre.",
+          "audio": {
+            "en": "cay-tre-tram-dot/page-03/sentence-02-en.mp3",
+            "vi": "cay-tre-tram-dot/page-03/sentence-02-vi.mp3"
+          },
+          "audioUrl": {
+            "en": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795763500/cay-tre-tram-dot/page-03/sentence-02-en_dn72sm.mp3",
+            "vi": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795763499/cay-tre-tram-dot/page-03/sentence-02-vi_va7jpe.mp3"
+          }
+        }
+      ]
+    },
+    {
+      "sentences": [
+        {
+          "en": "A kind spirit called Bụt appeared and said, “Cut one hundred pieces, then say: Khắc nhập, khắc nhập!”",
+          "vi": "Bỗng ông Bụt hiện lên bảo: “Con hãy chặt đủ trăm đốt tre, rồi đọc: Khắc nhập, khắc nhập!”",
+          "audio": {
+            "en": "cay-tre-tram-dot/page-04/sentence-01-en.mp3",
+            "vi": "cay-tre-tram-dot/page-04/sentence-01-vi.mp3"
+          },
+          "audioUrl": {
+            "en": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795763516/cay-tre-tram-dot/page-04/sentence-01-en_zhkw88.mp3",
+            "vi": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795763519/cay-tre-tram-dot/page-04/sentence-01-vi_u3lhy7.mp3"
+          }
+        },
+        {
+          "en": "Khoai said the magic words, and the hundred pieces joined into one long bamboo.",
+          "vi": "Anh Khoai đọc câu thần chú, và trăm đốt tre liền nối lại thành một cây tre thật dài.",
+          "audio": {
+            "en": "cay-tre-tram-dot/page-04/sentence-02-en.mp3",
+            "vi": "cay-tre-tram-dot/page-04/sentence-02-vi.mp3"
+          },
+          "audioUrl": {
+            "en": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795763517/cay-tre-tram-dot/page-04/sentence-02-en_jfljr7.mp3",
+            "vi": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795763520/cay-tre-tram-dot/page-04/sentence-02-vi_njlyim.mp3"
+          }
+        }
+      ]
+    },
+    {
+      "sentences": [
+        {
+          "en": "When the landlord touched it, Khoai said “Khắc nhập!”, and the landlord stuck fast to the bamboo.",
+          "vi": "Phú ông vừa chạm vào, anh Khoai đọc “Khắc nhập!”, thế là lão dính chặt vào cây tre.",
+          "audio": {
+            "en": "cay-tre-tram-dot/page-05/sentence-01-en.mp3",
+            "vi": "cay-tre-tram-dot/page-05/sentence-01-vi.mp3"
+          },
+          "audioUrl": {
+            "en": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795763535/cay-tre-tram-dot/page-05/sentence-01-en_mkshjo.mp3",
+            "vi": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795763538/cay-tre-tram-dot/page-05/sentence-01-vi_cjedq7.mp3"
+          }
+        },
+        {
+          "en": "The landlord said sorry and kept his promise, so Khoai said “Khắc xuất!” and set him free.",
+          "vi": "Phú ông xin lỗi và giữ đúng lời hứa, anh Khoai liền đọc “Khắc xuất!” để thả lão ra.",
+          "audio": {
+            "en": "cay-tre-tram-dot/page-05/sentence-02-en.mp3",
+            "vi": "cay-tre-tram-dot/page-05/sentence-02-vi.mp3"
+          },
+          "audioUrl": {
+            "en": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795763539/cay-tre-tram-dot/page-05/sentence-02-en_ai3zoc.mp3",
+            "vi": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795763536/cay-tre-tram-dot/page-05/sentence-02-vi_spktcr.mp3"
+          }
+        }
+      ]
+    }
+  ]
+}

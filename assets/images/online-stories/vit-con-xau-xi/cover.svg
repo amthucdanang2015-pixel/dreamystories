@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="720" viewBox="0 0 360 360">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#BFD9E8"/><stop offset="1" stop-color="#E6F1F2"/></linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7FB3C9"/><stop offset="1" stop-color="#4F8AA3"/></linearGradient>
+    <radialGradient id="vig" cx="0.5" cy="0.5" r="0.75"><stop offset="0.6" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity="0.22"/></radialGradient>
+  </defs>
+  <rect width="360" height="360" fill="url(#sky)"/>
+  <circle cx="290" cy="70" r="26" fill="#FFF6D8"/>
+  <path d="M0 170 Q90 140 180 160 T360 150 V200 H0 Z" fill="#7FA66A"/>
+  <rect y="190" width="360" height="170" fill="url(#water)"/>
+  <!-- reeds -->
+  <g stroke="#4E7344" stroke-width="4" stroke-linecap="round">
+    <path d="M30 230 q-4 -60 6 -100"/><path d="M44 236 q2 -50 -8 -84"/><path d="M326 228 q4 -54 -6 -92"/><path d="M314 236 q-2 -46 8 -78"/>
+  </g>
+  <g fill="#6B4B2A"><rect x="32" y="122" width="7" height="22" rx="3.5"/><rect x="319" y="130" width="7" height="22" rx="3.5"/></g>
+  <!-- swan -->
+  <g transform="translate(180 236)">
+    <ellipse cx="0" cy="12" rx="62" ry="26" fill="#FFFFFF"/>
+    <path d="M-50 6 Q-70 -24 -40 -18 Q-20 -10 -6 6 Z" fill="#F1F4F6"/>
+    <path d="M36 4 Q50 -10 44 -40 Q40 -66 58 -72 Q76 -74 76 -58" stroke="#FFFFFF" stroke-width="16" fill="none" stroke-linecap="round"/>
+    <circle cx="66" cy="-66" r="13" fill="#FFFFFF"/>
+    <path d="M77 -66 l16 5 l-16 5 z" fill="#F2A33A"/>
+    <circle cx="69" cy="-69" r="2.4" fill="#2A3640"/>
+  </g>
+  <!-- reflection -->
+  <g opacity="0.35" transform="translate(180 300) scale(1 -0.5)">
+    <ellipse cx="0" cy="12" rx="62" ry="26" fill="#FFFFFF"/>
+  </g>
+  <g stroke="#E6F1F2" stroke-width="2" stroke-linecap="round" opacity="0.6">
+    <path d="M60 300 h40"/><path d="M250 312 h50"/><path d="M120 330 h30"/>
+  </g>
+  <!-- little yellow ducklings -->
+  <g transform="translate(78 290)"><ellipse cx="0" cy="0" rx="14" ry="9" fill="#F2C94C"/><circle cx="10" cy="-10" r="7" fill="#F2C94C"/><path d="M16 -10 l6 2 l-6 2 z" fill="#E08A2E"/><circle cx="12" cy="-12" r="1.4" fill="#2A3640"/></g>
+  <g transform="translate(286 286)"><ellipse cx="0" cy="0" rx="12" ry="8" fill="#F2C94C"/><circle cx="-9" cy="-9" r="6" fill="#F2C94C"/><path d="M-14 -9 l-6 2 l6 2 z" fill="#E08A2E"/><circle cx="-10" cy="-11" r="1.3" fill="#2A3640"/></g>
+  <rect width="360" height="360" fill="url(#vig)"/>
+</svg>

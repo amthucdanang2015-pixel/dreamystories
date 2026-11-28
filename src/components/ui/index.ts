@@ -4,6 +4,7 @@ export { Chip, Segmented } from './Chip';
 export { MetaPill } from './MetaPill';
 export { ProgressBar, PageTrack } from './ProgressBar';
 export { SectionHeader } from './SectionHeader';
+export type { SectionCollapse } from './SectionHeader';
 export { ScreenHeader } from './ScreenHeader';
 export { EmptyState } from './EmptyState';
 export { MoonMark } from './MoonMark';

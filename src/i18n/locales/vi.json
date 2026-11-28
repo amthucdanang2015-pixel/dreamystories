@@ -119,6 +119,8 @@
     "freeTitle": "Truyện miễn phí",
     "premiumEyebrow": "Dreamy Stories Premium",
     "premiumTitle": "Truyện Premium",
+    "collapseSection": "Thu gọn {{title}}",
+    "expandSection": "Mở rộng {{title}}",
     "noMatchTitle": "Không có truyện nào khớp với “{{query}}”",
     "noMatchMessage": "Hãy thử từ khác, như tên nhân vật, một nơi chốn hay một cảm xúc. Bạn có thể tìm bằng tiếng Việt hoặc tiếng Anh.",
     "noMatchFilteredMessage": "Hãy thử từ khác, hoặc tìm trên mọi kệ sách. Bạn có thể tìm bằng tiếng Việt hoặc tiếng Anh.",
@@ -270,7 +272,19 @@
     "sleepTimer": "Hẹn giờ ngủ",
     "sleepOff": "Tắt",
     "sleepMinutes_other": "{{count}} phút",
-    "sleepDescription_other": "Giọng đọc dừng sau {{count}} phút kể từ khi bắt đầu đọc"
+    "sleepDescription_other": "Giọng đọc dừng sau {{count}} phút kể từ khi bắt đầu đọc",
+    "sectionGeneral": "Chung",
+    "shareAppDescription": "Giới thiệu Dreamy Stories với bạn bè và gia đình",
+    "rateUs": "Đánh giá ứng dụng",
+    "rateUsDescription": "Bạn thích các câu chuyện? Đánh giá của bạn giúp nhiều gia đình khác tìm thấy ứng dụng",
+    "rateUsHint": "Mở phần đánh giá Dreamy Stories trên cửa hàng ứng dụng",
+    "rateUsUnavailable": "Hiện chưa thể đánh giá trên thiết bị này",
+    "rateUsFailed": "Không mở được cửa hàng ứng dụng. Vui lòng thử lại sau.",
+    "support": "Hỗ trợ",
+    "supportDescription": "Trợ giúp, câu hỏi và góp ý",
+    "supportHint": "Mở trang hỗ trợ Dreamy Stories trong trình duyệt",
+    "supportUnavailable": "Trang hỗ trợ sẽ sớm ra mắt",
+    "supportFailed": "Không mở được trang hỗ trợ. Vui lòng thử lại sau."
   },
   "plans": {
     "weeklyCaps": "HẰNG TUẦN",
@@ -399,7 +413,8 @@
       "seven": "bảy",
       "eight": "tám",
       "nine": "chín"
-    }
+    },
+    "reasonRate": "Để đánh giá ứng dụng, vui lòng trả lời câu hỏi này."
   },
   "legal": {
     "draft": "Bản tóm tắt nháp cho giai đoạn phát triển. Văn bản pháp lý đầy đủ sẽ thay thế trang này trước khi phát hành.",

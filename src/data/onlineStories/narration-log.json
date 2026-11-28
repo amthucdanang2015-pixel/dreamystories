@@ -18,7 +18,7 @@
     "voiceEn": "demo0001",
     "voiceVi": "abf73455",
     "speed": 0.95,
-    "lastRunAt": "2026-11-22T13:29:23.192Z",
+    "lastRunAt": "2026-11-27T03:20:41.112Z",
     "licenseNote": "Check the per-model licence in VoiceStudio Model Manager. Default k2-fsa/OmniVoice weights are CC-BY-NC (non-commercial)."
   },
   "files": {
@@ -453,6 +453,546 @@
       "bytes": 70316,
       "durationSec": 4.39,
       "generatedAt": "2026-11-22T13:34:12.853Z"
+    },
+    "cay-tre-tram-dot/page-01/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "Long ago, a hardworking young man named Khoai worked for a rich landlord.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 75692,
+      "durationSec": 4.73,
+      "generatedAt": "2026-11-27T03:20:56.727Z"
+    },
+    "cay-tre-tram-dot/page-01/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Ngày xưa, có anh Khoai chăm chỉ đi làm thuê cho một lão phú ông giàu có.",
+      "voice": "abf73455",
+      "model": "omnivoice",
+      "bytes": 84524,
+      "durationSec": 5.28,
+      "generatedAt": "2026-11-27T03:21:09.083Z"
+    },
+    "cay-tre-tram-dot/page-01/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "“Work hard for three years,” said the landlord, “and you may marry my daughter.”",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 79916,
+      "durationSec": 4.99,
+      "generatedAt": "2026-11-27T03:21:21.979Z"
+    },
+    "cay-tre-tram-dot/page-01/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "Phú ông hứa: “Con cứ chịu khó làm ba năm, ta sẽ gả con gái cho.”",
+      "voice": "abf73455",
+      "model": "omnivoice",
+      "bytes": 84524,
+      "durationSec": 5.28,
+      "generatedAt": "2026-11-27T03:21:32.914Z"
+    },
+    "cay-tre-tram-dot/page-02/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "Khoai worked from sunrise to sunset, and the landlord grew richer and richer.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 77996,
+      "durationSec": 4.87,
+      "generatedAt": "2026-11-27T03:21:45.872Z"
+    },
+    "cay-tre-tram-dot/page-02/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Anh Khoai làm lụng từ sáng sớm đến tối mịt, nhà phú ông ngày càng giàu thêm.",
+      "voice": "abf73455",
+      "model": "omnivoice",
+      "bytes": 84908,
+      "durationSec": 5.3,
+      "generatedAt": "2026-11-27T03:21:58.231Z"
+    },
+    "cay-tre-tram-dot/page-02/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "But when the three years were over, the landlord did not want to keep his promise.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 82220,
+      "durationSec": 5.14,
+      "generatedAt": "2026-11-27T03:22:11.560Z"
+    },
+    "cay-tre-tram-dot/page-02/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "Nhưng hết ba năm, phú ông lại không muốn giữ lời hứa.",
+      "voice": "abf73455",
+      "model": "omnivoice",
+      "bytes": 65324,
+      "durationSec": 4.08,
+      "generatedAt": "2026-11-27T03:22:21.547Z"
+    },
+    "cay-tre-tram-dot/page-03/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "“First, bring me a bamboo with one hundred knots,” he said, knowing there was no such thing.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 93740,
+      "durationSec": 5.86,
+      "generatedAt": "2026-11-27T03:22:35.652Z"
+    },
+    "cay-tre-tram-dot/page-03/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Lão bảo: “Con hãy vào rừng tìm cho ta một cây tre trăm đốt,” vì lão biết làm gì có cây tre nào như thế.",
+      "voice": "abf73455",
+      "model": "omnivoice",
+      "bytes": 130988,
+      "durationSec": 8.18,
+      "generatedAt": "2026-11-27T03:22:50.562Z"
+    },
+    "cay-tre-tram-dot/page-03/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "Khoai searched the forest all day, then sat down beside the bamboo and cried.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 78380,
+      "durationSec": 4.9,
+      "generatedAt": "2026-11-27T03:23:03.877Z"
+    },
+    "cay-tre-tram-dot/page-03/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "Anh Khoai tìm khắp rừng cả ngày, rồi ngồi khóc bên bụi tre.",
+      "voice": "abf73455",
+      "model": "omnivoice",
+      "bytes": 76460,
+      "durationSec": 4.78,
+      "generatedAt": "2026-11-27T03:23:14.507Z"
+    },
+    "cay-tre-tram-dot/page-04/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "A kind spirit called Bụt appeared and said, “Cut one hundred pieces, then say: Khắc nhập, khắc nhập!”",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 103340,
+      "durationSec": 6.46,
+      "generatedAt": "2026-11-27T03:23:29.292Z"
+    },
+    "cay-tre-tram-dot/page-04/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Bỗng ông Bụt hiện lên bảo: “Con hãy chặt đủ trăm đốt tre, rồi đọc: Khắc nhập, khắc nhập!”",
+      "voice": "abf73455",
+      "model": "omnivoice",
+      "bytes": 115244,
+      "durationSec": 7.2,
+      "generatedAt": "2026-11-27T03:23:43.082Z"
+    },
+    "cay-tre-tram-dot/page-04/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "Khoai said the magic words, and the hundred pieces joined into one long bamboo.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 79532,
+      "durationSec": 4.97,
+      "generatedAt": "2026-11-27T03:23:56.474Z"
+    },
+    "cay-tre-tram-dot/page-04/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "Anh Khoai đọc câu thần chú, và trăm đốt tre liền nối lại thành một cây tre thật dài.",
+      "voice": "abf73455",
+      "model": "omnivoice",
+      "bytes": 98732,
+      "durationSec": 6.17,
+      "generatedAt": "2026-11-27T03:24:09.590Z"
+    },
+    "cay-tre-tram-dot/page-05/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "When the landlord touched it, Khoai said “Khắc nhập!”, and the landlord stuck fast to the bamboo.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 97580,
+      "durationSec": 6.1,
+      "generatedAt": "2026-11-27T03:24:24.173Z"
+    },
+    "cay-tre-tram-dot/page-05/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Phú ông vừa chạm vào, anh Khoai đọc “Khắc nhập!”, thế là lão dính chặt vào cây tre.",
+      "voice": "abf73455",
+      "model": "omnivoice",
+      "bytes": 109868,
+      "durationSec": 6.86,
+      "generatedAt": "2026-11-27T03:24:37.195Z"
+    },
+    "cay-tre-tram-dot/page-05/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "The landlord said sorry and kept his promise, so Khoai said “Khắc xuất!” and set him free.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 90668,
+      "durationSec": 5.66,
+      "generatedAt": "2026-11-27T03:24:51.468Z"
+    },
+    "cay-tre-tram-dot/page-05/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "Phú ông xin lỗi và giữ đúng lời hứa, anh Khoai liền đọc “Khắc xuất!” để thả lão ra.",
+      "voice": "abf73455",
+      "model": "omnivoice",
+      "bytes": 110252,
+      "durationSec": 6.89,
+      "generatedAt": "2026-11-27T03:25:04.666Z"
+    },
+    "gio-bac-va-mat-troi/page-01/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "One cool morning, the North Wind and the Sun began to argue about who was stronger.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 86060,
+      "durationSec": 5.38,
+      "generatedAt": "2026-11-27T03:25:18.347Z"
+    },
+    "gio-bac-va-mat-troi/page-01/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Vào một buổi sáng se lạnh, Gió Bấc và Ông Mặt Trời tranh cãi xem ai mạnh hơn.",
+      "voice": "abf73455",
+      "model": "omnivoice",
+      "bytes": 97964,
+      "durationSec": 6.12,
+      "generatedAt": "2026-11-27T03:25:30.797Z"
+    },
+    "gio-bac-va-mat-troi/page-01/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "Just then, a traveller came walking down the road, wrapped in a warm cloak.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 77228,
+      "durationSec": 4.82,
+      "generatedAt": "2026-11-27T03:25:43.591Z"
+    },
+    "gio-bac-va-mat-troi/page-01/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "Đúng lúc ấy, có một bác lữ khách đi trên đường, khoác chiếc áo choàng ấm áp.",
+      "voice": "abf73455",
+      "model": "omnivoice",
+      "bytes": 85676,
+      "durationSec": 5.35,
+      "generatedAt": "2026-11-27T03:25:55.832Z"
+    },
+    "gio-bac-va-mat-troi/page-02/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "“Whoever can make him take off his cloak is the strongest,” said the Sun.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 73388,
+      "durationSec": 4.58,
+      "generatedAt": "2026-11-27T03:26:08.661Z"
+    },
+    "gio-bac-va-mat-troi/page-02/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "“Ai làm cho bác ấy cởi được áo choàng thì người đó mạnh nhất,” Ông Mặt Trời nói.",
+      "voice": "abf73455",
+      "model": "omnivoice",
+      "bytes": 87980,
+      "durationSec": 5.5,
+      "generatedAt": "2026-11-27T03:26:21.484Z"
+    },
+    "gio-bac-va-mat-troi/page-02/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "The North Wind went first, and he blew with all his might.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 58796,
+      "durationSec": 3.67,
+      "generatedAt": "2026-11-27T03:26:34.264Z"
+    },
+    "gio-bac-va-mat-troi/page-02/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "Gió Bấc thử trước, và gió thổi thật mạnh, thật mạnh.",
+      "voice": "abf73455",
+      "model": "omnivoice",
+      "bytes": 64172,
+      "durationSec": 4.01,
+      "generatedAt": "2026-11-27T03:26:44.598Z"
+    },
+    "gio-bac-va-mat-troi/page-03/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "But the harder he blew, the tighter the traveller held on to his cloak.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 70316,
+      "durationSec": 4.39,
+      "generatedAt": "2026-11-27T03:26:57.231Z"
+    },
+    "gio-bac-va-mat-troi/page-03/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Nhưng gió càng thổi mạnh, bác lữ khách càng giữ chặt áo choàng hơn.",
+      "voice": "abf73455",
+      "model": "omnivoice",
+      "bytes": 76460,
+      "durationSec": 4.78,
+      "generatedAt": "2026-11-27T03:27:08.649Z"
+    },
+    "gio-bac-va-mat-troi/page-03/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "At last, the tired wind gave up and grew quiet.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 46124,
+      "durationSec": 2.88,
+      "generatedAt": "2026-11-27T03:27:19.536Z"
+    },
+    "gio-bac-va-mat-troi/page-03/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "Cuối cùng, Gió Bấc mệt lả, đành chịu thua và lặng im.",
+      "voice": "abf73455",
+      "model": "omnivoice",
+      "bytes": 75308,
+      "durationSec": 4.7,
+      "generatedAt": "2026-11-27T03:27:30.084Z"
+    },
+    "gio-bac-va-mat-troi/page-04/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "Then the Sun came out from behind the clouds and shone softly and warmly.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 77228,
+      "durationSec": 4.82,
+      "generatedAt": "2026-11-27T03:27:43.042Z"
+    },
+    "gio-bac-va-mat-troi/page-04/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Rồi Ông Mặt Trời ló ra khỏi đám mây, tỏa nắng dịu dàng và ấm áp.",
+      "voice": "abf73455",
+      "model": "omnivoice",
+      "bytes": 82988,
+      "durationSec": 5.18,
+      "generatedAt": "2026-11-27T03:27:54.211Z"
+    },
+    "gio-bac-va-mat-troi/page-04/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "Soon the traveller smiled, wiped his brow, and took off his cloak.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 67244,
+      "durationSec": 4.2,
+      "generatedAt": "2026-11-27T03:28:06.340Z"
+    },
+    "gio-bac-va-mat-troi/page-04/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "Chẳng bao lâu, bác lữ khách mỉm cười, lau mồ hôi trán và cởi áo choàng ra.",
+      "voice": "abf73455",
+      "model": "omnivoice",
+      "bytes": 93356,
+      "durationSec": 5.83,
+      "generatedAt": "2026-11-27T03:28:18.636Z"
+    },
+    "gio-bac-va-mat-troi/page-05/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "The North Wind was surprised. “How did you do that so gently?”",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 61100,
+      "durationSec": 3.82,
+      "generatedAt": "2026-11-27T03:28:30.491Z"
+    },
+    "gio-bac-va-mat-troi/page-05/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Gió Bấc ngạc nhiên lắm: “Sao bạn làm được nhẹ nhàng thế?”",
+      "voice": "abf73455",
+      "model": "omnivoice",
+      "bytes": 71468,
+      "durationSec": 4.46,
+      "generatedAt": "2026-11-27T03:28:41.242Z"
+    },
+    "gio-bac-va-mat-troi/page-05/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "“Kindness and warmth can do what force cannot,” the Sun said with a smile.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 76460,
+      "durationSec": 4.78,
+      "generatedAt": "2026-11-27T03:28:54.015Z"
+    },
+    "gio-bac-va-mat-troi/page-05/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "Ông Mặt Trời mỉm cười: “Sự dịu dàng và ấm áp làm được điều mà sức mạnh không làm được.”",
+      "voice": "abf73455",
+      "model": "omnivoice",
+      "bytes": 104492,
+      "durationSec": 6.53,
+      "generatedAt": "2026-11-27T03:29:07.778Z"
+    },
+    "vit-con-xau-xi/page-01/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "On a sunny farm, a mother duck sat on her nest until, one by one, her eggs cracked open.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 87212,
+      "durationSec": 5.45,
+      "generatedAt": "2026-11-27T03:29:21.663Z"
+    },
+    "vit-con-xau-xi/page-01/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Ở một trang trại đầy nắng, vịt mẹ ấp trứng cho đến khi từng quả trứng lần lượt nứt ra.",
+      "voice": "abf73455",
+      "model": "omnivoice",
+      "bytes": 102188,
+      "durationSec": 6.38,
+      "generatedAt": "2026-11-27T03:29:34.976Z"
+    },
+    "vit-con-xau-xi/page-01/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "Out came fluffy yellow ducklings, and last of all, a big grey one.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 63020,
+      "durationSec": 3.94,
+      "generatedAt": "2026-11-27T03:29:47.036Z"
+    },
+    "vit-con-xau-xi/page-01/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "Những chú vịt con vàng óng lần lượt chui ra, và sau cùng là một chú vịt to, lông xám.",
+      "voice": "abf73455",
+      "model": "omnivoice",
+      "bytes": 99884,
+      "durationSec": 6.24,
+      "generatedAt": "2026-11-27T03:30:00.308Z"
+    },
+    "vit-con-xau-xi/page-02/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "The other animals laughed. “What an ugly duckling!” they quacked.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 67244,
+      "durationSec": 4.2,
+      "generatedAt": "2026-11-27T03:30:12.592Z"
+    },
+    "vit-con-xau-xi/page-02/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Các con vật khác cười chê: “Con vịt này xấu xí quá!”",
+      "voice": "abf73455",
+      "model": "omnivoice",
+      "bytes": 64556,
+      "durationSec": 4.03,
+      "generatedAt": "2026-11-27T03:30:22.536Z"
+    },
+    "vit-con-xau-xi/page-02/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "The grey duckling felt so sad that he waddled far away from home.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 66476,
+      "durationSec": 4.15,
+      "generatedAt": "2026-11-27T03:30:34.419Z"
+    },
+    "vit-con-xau-xi/page-02/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "Chú vịt xám buồn lắm, nên lạch bạch bỏ đi thật xa.",
+      "voice": "abf73455",
+      "model": "omnivoice",
+      "bytes": 70700,
+      "durationSec": 4.42,
+      "generatedAt": "2026-11-27T03:30:44.366Z"
+    },
+    "vit-con-xau-xi/page-03/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "All through the cold winter, he hid among the reeds by a frozen lake.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 70316,
+      "durationSec": 4.39,
+      "generatedAt": "2026-11-27T03:30:56.588Z"
+    },
+    "vit-con-xau-xi/page-03/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Suốt mùa đông giá lạnh, chú nép mình trong đám lau sậy bên mặt hồ đóng băng.",
+      "voice": "abf73455",
+      "model": "omnivoice",
+      "bytes": 100652,
+      "durationSec": 6.29,
+      "generatedAt": "2026-11-27T03:31:08.747Z"
+    },
+    "vit-con-xau-xi/page-03/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "He was lonely, but he never stopped hoping for spring.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 55340,
+      "durationSec": 3.46,
+      "generatedAt": "2026-11-27T03:31:20.040Z"
+    },
+    "vit-con-xau-xi/page-03/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "Chú cô đơn lắm, nhưng vẫn luôn mong chờ mùa xuân.",
+      "voice": "abf73455",
+      "model": "omnivoice",
+      "bytes": 61484,
+      "durationSec": 3.84,
+      "generatedAt": "2026-11-27T03:31:29.736Z"
+    },
+    "vit-con-xau-xi/page-04/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "When the warm days came back, he saw beautiful white swans gliding on the water.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 77612,
+      "durationSec": 4.85,
+      "generatedAt": "2026-11-27T03:31:42.713Z"
+    },
+    "vit-con-xau-xi/page-04/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Khi những ngày ấm áp trở lại, chú thấy những con thiên nga trắng xinh đẹp lướt trên mặt nước.",
+      "voice": "abf73455",
+      "model": "omnivoice",
+      "bytes": 96812,
+      "durationSec": 6.05,
+      "generatedAt": "2026-11-27T03:31:56.807Z"
+    },
+    "vit-con-xau-xi/page-04/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "He bowed his head shyly, and there in the water he saw his own reflection.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 76076,
+      "durationSec": 4.75,
+      "generatedAt": "2026-11-27T03:32:09.540Z"
+    },
+    "vit-con-xau-xi/page-04/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "Chú bẽn lẽn cúi đầu, và nhìn thấy bóng mình in dưới nước.",
+      "voice": "abf73455",
+      "model": "omnivoice",
+      "bytes": 72236,
+      "durationSec": 4.51,
+      "generatedAt": "2026-11-27T03:32:20.055Z"
+    },
+    "vit-con-xau-xi/page-05/sentence-01-en.mp3": {
+      "lang": "en",
+      "text": "He was not an ugly duckling at all. He had grown into a graceful swan!",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 69932,
+      "durationSec": 4.37,
+      "generatedAt": "2026-11-27T03:32:32.260Z"
+    },
+    "vit-con-xau-xi/page-05/sentence-01-vi.mp3": {
+      "lang": "vi",
+      "text": "Chú đâu phải là vịt con xấu xí. Chú đã lớn lên thành một chú thiên nga duyên dáng!",
+      "voice": "abf73455",
+      "model": "omnivoice",
+      "bytes": 112172,
+      "durationSec": 7.01,
+      "generatedAt": "2026-11-27T03:32:45.230Z"
+    },
+    "vit-con-xau-xi/page-05/sentence-02-en.mp3": {
+      "lang": "en",
+      "text": "The swans welcomed him, and he spread his wings, happier than he had ever dreamed.",
+      "voice": "demo0001",
+      "model": "omnivoice",
+      "bytes": 83372,
+      "durationSec": 5.21,
+      "generatedAt": "2026-11-27T03:32:58.624Z"
+    },
+    "vit-con-xau-xi/page-05/sentence-02-vi.mp3": {
+      "lang": "vi",
+      "text": "Đàn thiên nga chào đón chú, và chú dang rộng đôi cánh, hạnh phúc hơn cả trong mơ.",
+      "voice": "abf73455",
+      "model": "omnivoice",
+      "bytes": 99116,
+      "durationSec": 6.19,
+      "generatedAt": "2026-11-27T03:33:11.399Z"
     }
   }
 }

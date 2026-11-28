@@ -1,0 +1,175 @@
+{
+  "id": "gio-bac-va-mat-troi",
+  "title": {
+    "en": "The North Wind and the Sun",
+    "vi": "Gió Bấc và Ông Mặt Trời"
+  },
+  "description": {
+    "en": "The North Wind and the Sun hold a contest to see who can make a traveller take off his cloak, and learn that gentle warmth is the greatest strength.",
+    "vi": "Gió Bấc và Ông Mặt Trời thi xem ai làm người lữ khách cởi được áo choàng, và nhận ra rằng sự ấm áp dịu dàng mới là sức mạnh lớn nhất."
+  },
+  "theme": {
+    "en": "Gentleness can do what force cannot.",
+    "vi": "Dịu dàng làm được điều mà sức mạnh không làm được."
+  },
+  "origin": "Aesop's fable (public domain), retold for StoryMoon in English and Vietnamese.",
+  "category": "Fable",
+  "ageRange": "3–7 years",
+  "duration": "3 min",
+  "estimatedDurationSec": 96,
+  "requiresInternet": true,
+  "artDirection": {
+    "palette": {
+      "sky": "#7FB7D9",
+      "skyLow": "#CFE6F0",
+      "ground": "#8DB26B",
+      "groundDeep": "#56783F",
+      "accent": "#F4B63F",
+      "glow": "#FFF3C4",
+      "ink": "#22303A",
+      "paper": "#F5F1E6"
+    }
+  },
+  "pages": [
+    {
+      "sentences": [
+        {
+          "en": "One cool morning, the North Wind and the Sun began to argue about who was stronger.",
+          "vi": "Vào một buổi sáng se lạnh, Gió Bấc và Ông Mặt Trời tranh cãi xem ai mạnh hơn.",
+          "audio": {
+            "en": "gio-bac-va-mat-troi/page-01/sentence-01-en.mp3",
+            "vi": "gio-bac-va-mat-troi/page-01/sentence-01-vi.mp3"
+          },
+          "audioUrl": {
+            "en": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795763272/gio-bac-va-mat-troi/page-01/sentence-01-en_myszcf.mp3",
+            "vi": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795763272/gio-bac-va-mat-troi/page-01/sentence-01-vi_gkzedr.mp3"
+          }
+        },
+        {
+          "en": "Just then, a traveller came walking down the road, wrapped in a warm cloak.",
+          "vi": "Đúng lúc ấy, có một bác lữ khách đi trên đường, khoác chiếc áo choàng ấm áp.",
+          "audio": {
+            "en": "gio-bac-va-mat-troi/page-01/sentence-02-en.mp3",
+            "vi": "gio-bac-va-mat-troi/page-01/sentence-02-vi.mp3"
+          },
+          "audioUrl": {
+            "en": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795763272/gio-bac-va-mat-troi/page-01/sentence-02-en_t9ef1d.mp3",
+            "vi": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795763272/gio-bac-va-mat-troi/page-01/sentence-02-vi_lmnxsv.mp3"
+          }
+        }
+      ]
+    },
+    {
+      "sentences": [
+        {
+          "en": "“Whoever can make him take off his cloak is the strongest,” said the Sun.",
+          "vi": "“Ai làm cho bác ấy cởi được áo choàng thì người đó mạnh nhất,” Ông Mặt Trời nói.",
+          "audio": {
+            "en": "gio-bac-va-mat-troi/page-02/sentence-01-en.mp3",
+            "vi": "gio-bac-va-mat-troi/page-02/sentence-01-vi.mp3"
+          },
+          "audioUrl": {
+            "en": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795763329/gio-bac-va-mat-troi/page-02/sentence-01-en_gbl522.mp3",
+            "vi": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795763330/gio-bac-va-mat-troi/page-02/sentence-01-vi_qfdvsc.mp3"
+          }
+        },
+        {
+          "en": "The North Wind went first, and he blew with all his might.",
+          "vi": "Gió Bấc thử trước, và gió thổi thật mạnh, thật mạnh.",
+          "audio": {
+            "en": "gio-bac-va-mat-troi/page-02/sentence-02-en.mp3",
+            "vi": "gio-bac-va-mat-troi/page-02/sentence-02-vi.mp3"
+          },
+          "audioUrl": {
+            "en": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795763328/gio-bac-va-mat-troi/page-02/sentence-02-en_mvyina.mp3",
+            "vi": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795763328/gio-bac-va-mat-troi/page-02/sentence-02-vi_yela1f.mp3"
+          }
+        }
+      ]
+    },
+    {
+      "sentences": [
+        {
+          "en": "But the harder he blew, the tighter the traveller held on to his cloak.",
+          "vi": "Nhưng gió càng thổi mạnh, bác lữ khách càng giữ chặt áo choàng hơn.",
+          "audio": {
+            "en": "gio-bac-va-mat-troi/page-03/sentence-01-en.mp3",
+            "vi": "gio-bac-va-mat-troi/page-03/sentence-01-vi.mp3"
+          },
+          "audioUrl": {
+            "en": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795763348/gio-bac-va-mat-troi/page-03/sentence-01-en_bkwinz.mp3",
+            "vi": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795763348/gio-bac-va-mat-troi/page-03/sentence-01-vi_nlii0a.mp3"
+          }
+        },
+        {
+          "en": "At last, the tired wind gave up and grew quiet.",
+          "vi": "Cuối cùng, Gió Bấc mệt lả, đành chịu thua và lặng im.",
+          "audio": {
+            "en": "gio-bac-va-mat-troi/page-03/sentence-02-en.mp3",
+            "vi": "gio-bac-va-mat-troi/page-03/sentence-02-vi.mp3"
+          },
+          "audioUrl": {
+            "en": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795763347/gio-bac-va-mat-troi/page-03/sentence-02-en_flb6va.mp3",
+            "vi": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795763348/gio-bac-va-mat-troi/page-03/sentence-02-vi_s5ioka.mp3"
+          }
+        }
+      ]
+    },
+    {
+      "sentences": [
+        {
+          "en": "Then the Sun came out from behind the clouds and shone softly and warmly.",
+          "vi": "Rồi Ông Mặt Trời ló ra khỏi đám mây, tỏa nắng dịu dàng và ấm áp.",
+          "audio": {
+            "en": "gio-bac-va-mat-troi/page-04/sentence-01-en.mp3",
+            "vi": "gio-bac-va-mat-troi/page-04/sentence-01-vi.mp3"
+          },
+          "audioUrl": {
+            "en": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795763364/gio-bac-va-mat-troi/page-04/sentence-01-en_sy6g9n.mp3",
+            "vi": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795763362/gio-bac-va-mat-troi/page-04/sentence-01-vi_alfpm3.mp3"
+          }
+        },
+        {
+          "en": "Soon the traveller smiled, wiped his brow, and took off his cloak.",
+          "vi": "Chẳng bao lâu, bác lữ khách mỉm cười, lau mồ hôi trán và cởi áo choàng ra.",
+          "audio": {
+            "en": "gio-bac-va-mat-troi/page-04/sentence-02-en.mp3",
+            "vi": "gio-bac-va-mat-troi/page-04/sentence-02-vi.mp3"
+          },
+          "audioUrl": {
+            "en": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795763363/gio-bac-va-mat-troi/page-04/sentence-02-en_uvq36x.mp3",
+            "vi": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795763362/gio-bac-va-mat-troi/page-04/sentence-02-vi_iv6jjn.mp3"
+          }
+        }
+      ]
+    },
+    {
+      "sentences": [
+        {
+          "en": "The North Wind was surprised. “How did you do that so gently?”",
+          "vi": "Gió Bấc ngạc nhiên lắm: “Sao bạn làm được nhẹ nhàng thế?”",
+          "audio": {
+            "en": "gio-bac-va-mat-troi/page-05/sentence-01-en.mp3",
+            "vi": "gio-bac-va-mat-troi/page-05/sentence-01-vi.mp3"
+          },
+          "audioUrl": {
+            "en": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795763378/gio-bac-va-mat-troi/page-05/sentence-01-en_vqbbkw.mp3",
+            "vi": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795763378/gio-bac-va-mat-troi/page-05/sentence-01-vi_ptflc5.mp3"
+          }
+        },
+        {
+          "en": "“Kindness and warmth can do what force cannot,” the Sun said with a smile.",
+          "vi": "Ông Mặt Trời mỉm cười: “Sự dịu dàng và ấm áp làm được điều mà sức mạnh không làm được.”",
+          "audio": {
+            "en": "gio-bac-va-mat-troi/page-05/sentence-02-en.mp3",
+            "vi": "gio-bac-va-mat-troi/page-05/sentence-02-vi.mp3"
+          },
+          "audioUrl": {
+            "en": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795763380/gio-bac-va-mat-troi/page-05/sentence-02-en_v33gbr.mp3",
+            "vi": "https://res.cloudinary.com/dpmczirwo/video/upload/v1795763379/gio-bac-va-mat-troi/page-05/sentence-02-vi_enx43i.mp3"
+          }
+        }
+      ]
+    }
+  ]
+}

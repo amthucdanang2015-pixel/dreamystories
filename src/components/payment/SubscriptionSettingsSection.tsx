@@ -17,7 +17,7 @@ import { ALL_STORIES } from '../../data/stories';
 import { iapService } from '../../services/iapService';
 import { useSubscriptionStore } from '../../store/subscriptionStore';
 import { paywallHref } from '../../hooks/usePremiumGate';
-import { SettingsItem, SettingsSection } from '../settings/SettingsPanel';
+import { SettingsItem, SettingsRow, SettingsSection } from '../settings/SettingsPanel';
 import { PremiumStatusPill } from './PremiumBadge';
 import { MoonMark } from '../ui/MoonMark';
 import { useParentalGate } from './ParentalGate';
@@ -109,7 +109,7 @@ export function SubscriptionSettingsSection() {
         </Pressable>
       )}
 
-      <Row
+      <SettingsRow
         onPress={() => guard(restore, t('parentalGate.reasonRestore'))}
         disabled={restoreState.status === 'restoring'}
         accessibilityLabel={t('premiumSettings.restoreA11y', { status: restoreDescription })}
@@ -121,10 +121,10 @@ export function SubscriptionSettingsSection() {
         >
           {restoreState.status === 'restoring' ? <ActivityIndicator size="small" color={ICON} /> : null}
         </SettingsItem>
-      </Row>
+      </SettingsRow>
 
       {canManage ? (
-        <Row onPress={openManage} accessibilityLabel={t('premiumSettings.manageA11y')}>
+        <SettingsRow onPress={openManage} accessibilityLabel={t('premiumSettings.manageA11y')}>
           <SettingsItem
             icon={<CreditCard size={17} color={ICON} />}
             label={t('premiumSettings.manage')}
@@ -133,7 +133,7 @@ export function SubscriptionSettingsSection() {
           >
             <ExternalLink size={16} color={colors.textMuted} />
           </SettingsItem>
-        </Row>
+        </SettingsRow>
       ) : (
         <View accessible accessibilityLabel={t('premiumSettings.manageUnavailable')}>
           <SettingsItem
@@ -146,32 +146,6 @@ export function SubscriptionSettingsSection() {
       )}
       {gate}
     </SettingsSection>
-  );
-}
-
-function Row({
-  onPress,
-  disabled,
-  accessibilityLabel,
-  children,
-}: {
-  onPress: () => void;
-  disabled?: boolean;
-  accessibilityLabel: string;
-  children: React.ReactNode;
-}) {
-  const { colors } = useTheme();
-  return (
-    <Pressable
-      onPress={onPress}
-      disabled={disabled}
-      accessibilityRole="button"
-      accessibilityLabel={accessibilityLabel}
-      accessibilityState={{ disabled: !!disabled }}
-      style={({ pressed }) => [pressed && { backgroundColor: colors.surfaceSunken }]}
-    >
-      {children}
-    </Pressable>
   );
 }
 

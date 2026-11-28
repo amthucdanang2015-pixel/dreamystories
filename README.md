@@ -1,8 +1,8 @@
-# StoryMoon — Premium Bilingual Children's Storybook Mobile App
+# Dreamy Stories — Premium Bilingual Children's Storybook Mobile App
 
 > *"A little story every night. A little language every day."*
 
-StoryMoon is a production-minded digital storybook for iOS, Android, and Web built with **React Native**, **Expo SDK 57**, **Expo Router**, and **TypeScript**. It offers an editorial, physical storybook aesthetic designed for bedtime storytelling and natural bilingual English & Vietnamese language learning.
+Dreamy Stories (formerly StoryMoon; bundle ID and internal identifiers keep that name) is a production-minded digital storybook for iOS, Android, and Web built with **React Native**, **Expo SDK 57**, **Expo Router**, and **TypeScript**. It offers an editorial, physical storybook aesthetic designed for bedtime storytelling and natural bilingual English & Vietnamese language learning.
 
 ---
 
@@ -125,7 +125,7 @@ npx expo start --android
 
 ## 🎙️ Narration & Vietnamese Folk Tale Asset Pack
 
-StoryMoon ships 10 gentle bilingual adaptations of Vietnamese folk tales (plus the original rabbit story). Each sentence can have its own recorded MP3 per language; anything missing falls back to on-device TTS (`expo-speech`), and missing illustrations fall back to the built-in vector art.
+Dreamy Stories ships 10 gentle bilingual adaptations of Vietnamese folk tales (plus the original rabbit story). Each sentence can have its own recorded MP3 per language; anything missing falls back to on-device TTS (`expo-speech`), and missing illustrations fall back to the built-in vector art.
 
 - **Story text:** `src/data/stories/content/<story-id>.json` (titles, descriptions, theme, character sheets, illustration prompts, `[en, vi]` sentence pairs).
 - **Assets:** `assets/images/stories/<id>/cover.png`, `assets/images/stories/<id>/page-NN.png`, `assets/audio/<id>/page-NN/sentence-NN-<en|vi>.mp3`.
@@ -169,13 +169,13 @@ See [docs/ONLINE_STORIES.md](docs/ONLINE_STORIES.md) for host setup, URL mapping
 
 ## 🔗 Sharing
 
-"Share StoryMoon" (Settings → About) and "Share story" (Story Detail header) open the native share sheet through React Native's `Share` API, after the same grown-up check used for purchases and external links. Shared text contains only public catalogue text (title, theme, age range), never reading progress, purchases, preferences or device data.
+"Share Dreamy Stories" (Settings → About) and "Share story" (Story Detail header) open the native share sheet through React Native's `Share` API, after the same grown-up check used for purchases and external links. Shared text contains only public catalogue text (title, theme, age range), never reading progress, purchases, preferences or device data.
 
 Before release, fill in `src/constants/sharing.ts`. Every value is `null` until set, and links are left out of shared text while they are null:
 
 - `appStoreUrl`: `https://apps.apple.com/app/id<APPLE_APP_ID>`
 - `googlePlayUrl`: `https://play.google.com/store/apps/details?id=com.storymoon.app`
-- `publicLandingUrl`: the public StoryMoon website, if any
+- `publicLandingUrl`: the public Dreamy Stories website, if any
 - `storyLinkBaseUrl`: an https origin for universal / app links. Story links are `<base>/story/<id>`. Only set it once the domain serves `apple-app-site-association` and `assetlinks.json`, and `app.json` has `ios.associatedDomains` and `android.intentFilters` for it.
 
 Inside the app, `storymoon://story/<id>` already opens Story Detail (Expo Router), but it is never put in share text: most messaging apps don't make it tappable, and it does nothing when the app isn't installed.

@@ -25,6 +25,7 @@ import {
   SearchField,
   SectionHeader,
   Segmented,
+  type SectionCollapse,
 } from '../../src/components/ui';
 import { ALL_STORIES, ONLINE_STORIES } from '../../src/data/stories';
 import { Story } from '../../src/types/story';
@@ -37,6 +38,9 @@ import { gridColumns, gridItemWidth } from '../../src/utils/responsiveLayout';
 import { FREE_STORY_IDS, isFreeStory } from '../../src/constants/entitlements';
 
 type StatusFilter = 'all' | 'reading' | 'finished';
+type SectionKey = 'free' | 'online' | 'premium';
+/** Sections with more stories than this get a collapse control. */
+const COLLAPSIBLE_MIN = 2;
 /** Category filter: a story category from the data, or every category. */
 const ALL_CATEGORIES = null;
 
@@ -50,10 +54,15 @@ export default function LibraryScreen() {
   const styles = useStyles();
   const { colors, type } = useTheme();
   const layout = useResponsiveLayout();
-  const { contentWidth: contentW, inset } = layout.frame(MAX_CONTENT);
+  const { contentWidth: contentW } = layout.frame(MAX_CONTENT);
   const progressMap = useProgressStore((s) => s.progressMap);
   const [category, setCategory] = useState<string | null>(ALL_CATEGORIES);
   const [status, setStatus] = useState<StatusFilter>('all');
+  const [collapsed, setCollapsed] = useState<Record<SectionKey, boolean>>({
+    free: false,
+    online: false,
+    premium: false,
+  });
 
   // ── Search mode ──────────────────────────────────────────────
   const [searchOpen, setSearchOpen] = useState(false);
@@ -134,6 +143,28 @@ export default function LibraryScreen() {
   const cardW = gridItemWidth(contentW, cols, gap);
 
   const openStory = (story: Story) => router.push(`/story/${story.id}`);
+
+  // Sections with more than two stories can be folded away; all start open,
+  // and filtering or searching never changes what the user chose.
+  const toggleSection = (key: SectionKey) => setCollapsed((c) => ({ ...c, [key]: !c[key] }));
+  const collapseFor = (key: SectionKey, title: string, count: number): SectionCollapse | undefined =>
+    count > COLLAPSIBLE_MIN
+      ? {
+          expanded: !collapsed[key],
+          onToggle: () => toggleSection(key),
+          accessibilityLabel: collapsed[key]
+            ? t('library.expandSection', { title })
+            : t('library.collapseSection', { title }),
+        }
+      : undefined;
+  const renderGrid = (key: SectionKey, stories: Story[]) =>
+    stories.length > COLLAPSIBLE_MIN && collapsed[key] ? null : (
+      <View style={[styles.grid, { gap, paddingHorizontal: layout.gutter }]}>
+        {stories.map((story) => (
+          <StoryCard key={story.id} story={story} onPress={openStory} width={cardW} />
+        ))}
+      </View>
+    );
   const subtitleVars = { count: LIBRARY_STORIES.length, reading, finished };
   const subtitle =
     reading && finished
@@ -224,22 +255,26 @@ export default function LibraryScreen() {
         </View>
       }
     >
-      <ScrollView
-        horizontal
-        showsHorizontalScrollIndicator={false}
-        // Scrolls edge to edge, but starts in line with the grid.
-        contentContainerStyle={[styles.filterRow, { paddingHorizontal: inset }]}
-      >
-        {categories.map(([cat, count]) => (
-          <Chip
-            key={cat ?? 'all'}
-            label={cat === ALL_CATEGORIES ? t('library.categoryAll') : storyCategory(t, cat)}
-            count={count}
-            active={cat === category}
-            onPress={() => setCategory(cat)}
-          />
-        ))}
-      </ScrollView>
+      {/* Clipped to the centred column, with a gutter at both ends so the first
+          and last chips never sit against the screen edge. */}
+      <View style={[styles.center, styles.filterClip]}>
+        <ScrollView
+          horizontal
+          showsHorizontalScrollIndicator={false}
+          style={styles.filterScroll}
+          contentContainerStyle={[styles.filterRow, { paddingHorizontal: layout.gutter }]}
+        >
+          {categories.map(([cat, count]) => (
+            <Chip
+              key={cat ?? 'all'}
+              label={cat === ALL_CATEGORIES ? t('library.categoryAll') : storyCategory(t, cat)}
+              count={count}
+              active={cat === category}
+              onPress={() => setCategory(cat)}
+            />
+          ))}
+        </ScrollView>
+      </View>
 
       <View style={styles.center}>
         {visibleStories.length > 0 ? (
@@ -249,12 +284,9 @@ export default function LibraryScreen() {
                 <SectionHeader
                   eyebrow={t('library.freeEyebrow', { count: freeStories.length })}
                   title={t('library.freeTitle')}
+                  collapse={collapseFor('free', t('library.freeTitle'), freeStories.length)}
                 />
-                <View style={[styles.grid, { gap, paddingHorizontal: layout.gutter }]}>
-                  {freeStories.map((story) => (
-                    <StoryCard key={story.id} story={story} onPress={openStory} width={cardW} />
-                  ))}
-                </View>
+                {renderGrid('free', freeStories)}
               </View>
             ) : null}
             {onlineStories.length > 0 ? (
@@ -262,26 +294,23 @@ export default function LibraryScreen() {
                 <SectionHeader
                   eyebrow={t('online.sectionEyebrow', { count: onlineStories.length })}
                   title={t('online.sectionTitle')}
+                  collapse={collapseFor('online', t('online.sectionTitle'), onlineStories.length)}
                 />
                 <View style={[styles.onlineNote, { marginHorizontal: layout.gutter }]}>
                   <Cloud size={14} color={colors.textMuted} strokeWidth={2.2} />
                   <Text style={styles.onlineNoteText}>{t('online.needsInternet')}</Text>
                 </View>
-                <View style={[styles.grid, { gap, paddingHorizontal: layout.gutter }]}>
-                  {onlineStories.map((story) => (
-                    <StoryCard key={story.id} story={story} onPress={openStory} width={cardW} />
-                  ))}
-                </View>
+                {renderGrid('online', onlineStories)}
               </View>
             ) : null}
             {premiumStories.length > 0 ? (
               <View style={styles.section}>
-                <SectionHeader eyebrow={t('library.premiumEyebrow')} title={t('library.premiumTitle')} />
-                <View style={[styles.grid, { gap, paddingHorizontal: layout.gutter }]}>
-                  {premiumStories.map((story) => (
-                    <StoryCard key={story.id} story={story} onPress={openStory} width={cardW} />
-                  ))}
-                </View>
+                <SectionHeader
+                  eyebrow={t('library.premiumEyebrow')}
+                  title={t('library.premiumTitle')}
+                  collapse={collapseFor('premium', t('library.premiumTitle'), premiumStories.length)}
+                />
+                {renderGrid('premium', premiumStories)}
               </View>
             ) : null}
           </>
@@ -351,7 +380,9 @@ const useStyles = createThemedStyles((t) => ({
   center: { width: '100%', maxWidth: MAX_CONTENT, alignSelf: 'center' },
   // Three short options don't need the whole width of a tablet.
   statusRowWide: { maxWidth: 520 },
-  filterRow: { gap: Spacing.sm, paddingBottom: Spacing.lg },
+  filterClip: { overflow: 'hidden', marginBottom: Spacing.lg },
+  filterScroll: { flexGrow: 0 },
+  filterRow: { gap: Spacing.sm, alignItems: 'center' },
   grid: { flexDirection: 'row', flexWrap: 'wrap', rowGap: Spacing.lg },
   section: { marginBottom: Spacing.xl },
   onlineNote: { flexDirection: 'row', alignItems: 'flex-start', gap: Spacing.xs, marginBottom: Spacing.md },

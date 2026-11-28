@@ -129,6 +129,8 @@
     "freeTitle": "Free Stories",
     "premiumEyebrow": "Dreamy Stories Premium",
     "premiumTitle": "Premium Stories",
+    "collapseSection": "Hide {{title}}",
+    "expandSection": "Show {{title}}",
     "noMatchTitle": "No stories match “{{query}}”",
     "noMatchMessage": "Try another word, like a character, a place or a feeling. You can search in English or Tiếng Việt.",
     "noMatchFilteredMessage": "Try another word, or look across every shelf. You can search in English or Tiếng Việt.",
@@ -284,7 +286,19 @@
     "sleepMinutes_one": "{{count}} min",
     "sleepMinutes_other": "{{count}} min",
     "sleepDescription_one": "Narration stops {{count}} minute after reading starts",
-    "sleepDescription_other": "Narration stops {{count}} minutes after reading starts"
+    "sleepDescription_other": "Narration stops {{count}} minutes after reading starts",
+    "sectionGeneral": "General",
+    "shareAppDescription": "Tell friends and family about Dreamy Stories",
+    "rateUs": "Rate Us",
+    "rateUsDescription": "Enjoying the stories? A rating helps other families find us",
+    "rateUsHint": "Asks for a rating of Dreamy Stories in the app store",
+    "rateUsUnavailable": "Rating isn’t available on this device yet",
+    "rateUsFailed": "Couldn’t open the app store. Please try again later.",
+    "support": "Support",
+    "supportDescription": "Help, questions and feedback",
+    "supportHint": "Opens the Dreamy Stories support page in your browser",
+    "supportUnavailable": "The support page is coming soon",
+    "supportFailed": "Couldn’t open the support page. Please try again later."
   },
   "plans": {
     "weeklyCaps": "WEEKLY",
@@ -421,7 +435,8 @@
       "seven": "seven",
       "eight": "eight",
       "nine": "nine"
-    }
+    },
+    "reasonRate": "To rate the app, please answer this question."
   },
   "legal": {
     "draft": "Draft summary for development. The full legal text will replace this page before release.",

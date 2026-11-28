@@ -4,13 +4,19 @@
 
 import type { ImageSourcePropType } from 'react-native';
 import c0 from './content/ca-vang-dem-sao.json';
-import c1 from './content/chiec-o-mau-vang.json';
-import c2 from './content/meo-con-chuc-ngu-ngon.json';
+import c1 from './content/cay-tre-tram-dot.json';
+import c2 from './content/chiec-o-mau-vang.json';
+import c3 from './content/gio-bac-va-mat-troi.json';
+import c4 from './content/meo-con-chuc-ngu-ngon.json';
+import c5 from './content/vit-con-xau-xi.json';
 
-export const ONLINE_STORY_CONTENT = [c0, c1, c2];
+export const ONLINE_STORY_CONTENT = [c0, c1, c2, c3, c4, c5];
 
 export const ONLINE_STORY_COVERS: Record<string, ImageSourcePropType | undefined> = {
   'ca-vang-dem-sao': require('../../../assets/images/online-stories/ca-vang-dem-sao/cover.png'),
+  'cay-tre-tram-dot': require('../../../assets/images/online-stories/cay-tre-tram-dot/cover.png'),
   'chiec-o-mau-vang': require('../../../assets/images/online-stories/chiec-o-mau-vang/cover.png'),
+  'gio-bac-va-mat-troi': require('../../../assets/images/online-stories/gio-bac-va-mat-troi/cover.png'),
   'meo-con-chuc-ngu-ngon': require('../../../assets/images/online-stories/meo-con-chuc-ngu-ngon/cover.png'),
+  'vit-con-xau-xi': require('../../../assets/images/online-stories/vit-con-xau-xi/cover.png'),
 };

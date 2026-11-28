@@ -43,6 +43,9 @@ export const FREE_ONLINE_STORY_IDS: readonly string[] = [
   'meo-con-chuc-ngu-ngon',
   'chiec-o-mau-vang',
   'ca-vang-dem-sao',
+  'gio-bac-va-mat-troi',
+  'vit-con-xau-xi',
+  'cay-tre-tram-dot',
 ];
 
 export function isFreeStory(storyId: string): boolean {
